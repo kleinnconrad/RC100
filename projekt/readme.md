@@ -1,4 +1,8 @@
-# Projektablauf: 100 km/h RC-Auto
+# Projektstruktur: 100 km/h RC-Auto
+
+## Meilenstein A: Aufbau Chassis mit Antrieb
+## A1. Smoke Test
+## A2. Drehzahltest auf Stand (ohne Reifen)
 
 ## 1. Mechanik
 * **1.1 Plattform/Chassis**
