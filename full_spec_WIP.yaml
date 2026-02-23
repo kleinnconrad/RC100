@@ -4,7 +4,7 @@
 # Status: Planung (Build-Phase geplant für 2026)
 # Target Top-Speed: 100+ km/h (62+ mph)
 
-version: "1.1.0"
+version: "1.2.0"
 last_updated: "2026-02-23"
 
 chassis:
