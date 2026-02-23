@@ -68,3 +68,12 @@ wheels_and_aero:
       - "ZooRacing Dogsbollox"
       - "ZooRacing Hellcat"
       - "Protoform Turismo"
+
+telemetry_and_measurement:
+  primary_speed_sensor: 
+    type: "Standalone GNSS/GPS Logger (z.B. SkyRC GSM020/030)"
+    purpose: "Liefert die absolute, reale Geschwindigkeit über Grund."
+  diagnostic_sensor:
+    type: "ESC Telemetrie (Motordrehzahl / RPM)"
+    purpose: "Liefert die theoretische Rad-Geschwindigkeit."
+  sensor_fusion_goal: "Abgleich von theoretischer Telemetrie-Geschwindigkeit und realem GPS-Speed zur Ermittlung des exakten Reifen-Schlupfs (Tire Slip) und der aerodynamischen Effizienz."
