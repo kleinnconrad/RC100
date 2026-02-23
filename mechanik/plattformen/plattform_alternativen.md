@@ -11,4 +11,4 @@
 | **Risiko bei 3S / 100 km/h**| Gering (Welle extrem robust) | Mittel (FRP flattern möglich) | Hoch (Riemen-Überspringen) | Mittel (Riemen-Risiko) | Sehr gering (Perfekte Mechanik) |
 | **Ca. Preis (Nur Bausatz)** | **~ 180 €** | **~ 150 €** | **~ 150 €** | **~ 140 €** | **~ 750 €** |
 
-Differantial Zahnräder aus Kunstoff / Composite stellen ein Risiko dar.
+Anmerkung: Differential Zahnräder aus Kunstoff / Composite stellen ein Risiko dar. Zumindest fraglich
