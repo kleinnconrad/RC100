@@ -4,7 +4,7 @@
 # Status: Planung (Build-Phase geplant für 2026)
 # Target Top-Speed: 100+ km/h (62+ mph)
 
-version: "1.1.0"
+version: "1.2.0"
 last_updated: "2026-02-23"
 
 chassis:
@@ -12,59 +12,49 @@ chassis:
   type: "1:10 4WD Touring Car Bausatz (Kit)"
   drivetrain: "Kardanwelle (Aluminium, schwimmend gelagert)"
   material_base: "3mm Kohlefaser (Carbon)"
-  material_topdeck: "2mm Kohlefaser (Carbon)"
   wheelbase: 258mm
 
 drivetrain_setup:
-  # Ziel-FDR (Final Drive Ratio) für 100 km/h: ~4.26
   internal_ratio: 2.53
   spur_gear:
     teeth: 64
     pitch: "48dp"
-    material: "Kunststoff / Composite"
   pinion_gear:
     teeth: 38
     pitch: "48dp"
-    material: "Gehärteter Stahl"
   differentials:
-    type: "Metal Gear (Sintermetall)"
-    front_oil_cst: 100000  # Extrem zäh für sturen Geradeauslauf
-    rear_oil_cst: 10000    # Etwas weicher für Traktion am Heck
+    front_oil_cst: 100000
+    rear_oil_cst: 10000
 
 electronics:
   esc:
     brand: "Hobbywing / Robitronic"
     amp_rating: 120A
     battery_limit: "3S LiPo"
-    settings:
-      punch: "Level 3 (Soft-Start zur Schonung des Antriebs)"
-      timing: "0 Grad (Sicherheits-Setup für erste Runs)"
   motor:
-    size: "540er / 3650"
     kv_rating: 4000kV
     poles: 4
-    cooling: "Passiver Aluminium-Kühlkörper empfohlen"
   battery:
     cells: "3S (11.1V)"
     capacity_mah: 5000
     c_rating: "Mindestens 50C Dauerlast"
-  servo:
-    speed: "< 0.10 sec/60°"
-    torque: "> 10 kg"
-    type: "Low-Profile (für besseren Schwerpunkt)"
 
 wheels_and_aero:
   tires:
-    type: "Belted (Gewebeverstärkt gegen Aufblähen)"
-    compound: "Medium-Hard (Asphalt)"
-    diameter: 65mm
+    type: "Gewebeverstärkt (Belted) Hohlkammer ODER harte Moosgummi"
+    diameter_static: 64mm
+    ballooning_risk: "Nahezu 0% (Verhindert dynamische Umfangsänderung bei Top-Speed)"
   body:
     type: "1:10 Standard Tourenwagen (TC) Aero-Karosserie"
     width: "190mm"
-    thickness: "0.7mm (Regular) - Zwingend erforderlich für 100 km/h Winddruck"
-    features: ["Frontsplitter", "Heckflügel (flach eingestellt)"]
-    compatibility_warning: "ACHTUNG: Keine LMH / Hypercar Karosserien (wie ZooRacing Hyrax) kaufen! Diese benötigen Ultra-Low-Profile Dämpfer und kollidieren mit den Standard-Dämpferbrücken des Carten."
-    verified_models: 
-      - "ZooRacing Dogsbollox"
-      - "ZooRacing Hellcat"
-      - "Protoform Turismo"
+    thickness: "0.7mm (Regular)"
+    compatibility_warning: "Keine LMH/Hypercar Karosserien (benötigen Ultra-Low-Profile Dämpfer)."
+
+telemetry_and_measurement:
+  primary_speed_sensor: 
+    type: "Standalone GNSS/GPS Logger (z.B. SkyRC GSM020/030)"
+    purpose: "Liefert die absolute, reale Geschwindigkeit über Grund."
+  diagnostic_sensor:
+    type: "ESC Telemetrie (Motordrehzahl / RPM)"
+    purpose: "Liefert die theoretische Rad-Geschwindigkeit."
+  sensor_fusion_goal: "Abgleich von theoretischer Telemetrie-Geschwindigkeit und realem GPS-Speed zur Ermittlung des exakten Reifen-Schlupfs (Tire Slip) und der aerodynamischen Effizienz."
