@@ -35,7 +35,19 @@ Da wir am Auto kontinuierlich Parameter (Öl-Viskosität, Ritzel, Fahrwerk) ver�
 > * Sitzt die Kardanwelle spielfrei (Floating Check)?
 > * Sind die Belted-Reifen intakt und fest verschraubt?
 
-Benchmarks:
-- Schumacher Mi9 Chassis 649€
-- Awesomatix A800RR 780€
-- Xray X4 702€
+---
+
+## 🏆 High-End Benchmarks (Zum Vergleich)
+Um das Preis-Leistungs-Verhältnis und den ingenieurstechnischen Ansatz unseres 100 km/h-Projekts richtig einzuordnen, betrachten wir hier die aktuellen Referenz-Chassis aus dem professionellen Tourenwagen-Wettbewerb. 
+
+Diese Modelle repräsentieren das absolute obere Ende des Marktes in Sachen Toleranzen, extrem tiefem Schwerpunkt und Materialgüte:
+
+| Hersteller & Modell | Antriebsart | Technisches Highlight | Ca. Preis (Bausatz) |
+| :--- | :--- | :--- | :--- |
+| **Schumacher Mi9** | Riemen | Britisches Top-Engineering, extrem tiefer Schwerpunkt | ~ 649 € |
+| **Xray X4** | Riemen | Ultra-Low-Profile Dämpfer, Referenzklasse bei Qualität | ~ 702 € |
+| **Awesomatix A800RR** | Riemen | Revolutionäres Rotationsdämpfer-System (ohne Federn) | ~ 780 € |
+
+> **Unser Fazit:** Mit dem Carten T410R (~180 €) setzen wir bewusst auf eine mechanisch extrem robuste und wartungsarme **Kardan-Plattform**. Wir zahlen nur einen Bruchteil der Wettbewerbs-Boliden, treffen für reine Geradeaus-Speedruns aber den absoluten Sweet Spot aus Steifigkeit, Stabilität und Budget.
+
+---
