@@ -1,0 +1,47 @@
+carten_t410r:
+  allgemein:
+    fahrzeugtyp: "1:10 Elektro Tourenwagen (EP Touring Car)"
+    lieferzustand: "Bausatz (Kit) - unmontiert"
+    einsatzbereich: "On-Road / Asphalt / Teppich"
+    
+  abmessungen:
+    spurbreite_mm: 190
+    radstand_mm: 258
+    
+  chassis_und_aufbau:
+    bodenplatte: "2,25 mm Eco-Carbon (kohlefaserverstärktes Verbundmaterial)"
+    oberdeck: "2,0 mm Eco-Carbon"
+    daempferbruecken: "3,0 mm Eco-Carbon (vorne & hinten, diverse Montagepunkte)"
+    motorhalterung: "CNC-gefrästes Aluminium"
+    servohalterung: "Floating Servo Mount (Aluminium)"
+    akkuhalterung: "Vorbereitet für 2S Standard-LiPo (Stickpack) oder Shorty-LiPo"
+    karosseriehalter: "Verstellbare Kunststoff-Pfosten"
+    
+  antriebsstrang:
+    antriebsart: "4WD Allrad, zentraler Kardanantrieb (Wellenantrieb)"
+    mittelantriebswelle: "Aluminium (rot eloxiert)"
+    differentiale: "Gekapselte Kegeldifferentiale (vorne & hinten)"
+    differential_zahnraeder: "Metallzahnräder"
+    antriebswellen: "Stahl CVD (Constant Velocity Drives) an Vorder- und Hinterachse"
+    hauptzahnradhalterung: "Aluminium"
+    radmitnehmer: "12 mm Sechskant, Aluminium"
+    interne_untersetzung: "1:2.47 bis 1:2.53"
+    kugellager: "Komplett kugelgelagert (mit Gummidichtungen)"
+    
+  fahrwerk_und_federung:
+    stossdaempfer: "Aluminium Öldruckstoßdämpfer (mit Gewindefahrwerk)"
+    querlenkerhalter: "Aluminium (Toe Blocks)"
+    stabilisatoren: "Vorne und hinten enthalten"
+    geometrie_einstellung: "Stufenlos einstellbar über R/L Gewindestangen (Turnbuckles)"
+    einstellbare_parameter: 
+      - "Sturz"
+      - "Spur"
+      - "Nachlauf (Caster)"
+      - "Ausfederweg (Droop)"
+      - "Bodenfreiheit (Ride Height)"
+      - "Ackermann"
+      
+  lenkung:
+    lenksystem: "Kugelgelagertes Dual-Bellcrank-System (Doppelarm)"
+    lenkhebel_c_hubs: "Composite-Kunststoff"
+    
