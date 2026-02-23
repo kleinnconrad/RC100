@@ -1,0 +1,1 @@
+Dieser Ordner enthält allgemeine Dokumente zum Projekt/Projektablauf
