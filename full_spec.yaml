@@ -1,0 +1,63 @@
+# ==========================================
+# Projekt: Carten T410R - 100 km/h Speedrun
+# ==========================================
+# Status: Planung (Build-Phase geplant für 2026)
+# Target Top-Speed: 100+ km/h (62+ mph)
+
+version: "1.0.0"
+last_updated: "2026-02-23"
+
+chassis:
+  model: "Carten T410R"
+  type: "1:10 4WD Touring Car Bausatz (Kit)"
+  drivetrain: "Kardanwelle (Aluminium, schwimmend gelagert)"
+  material_base: "3mm Kohlefaser (Carbon)"
+  material_topdeck: "2mm Kohlefaser (Carbon)"
+  wheelbase: 258mm
+
+drivetrain_setup:
+  # Ziel-FDR (Final Drive Ratio) für 100 km/h: ~4.26
+  internal_ratio: 2.53
+  spur_gear:
+    teeth: 64
+    pitch: "48dp"
+    material: "Kunststoff / Composite"
+  pinion_gear:
+    teeth: 38
+    pitch: "48dp"
+    material: "Gehärteter Stahl"
+  differentials:
+    type: "Metal Gear (Sintermetall)"
+    front_oil_cst: 100000  # Extrem zäh für sturen Geradeauslauf
+    rear_oil_cst: 10000    # Etwas weicher für Traktion am Heck
+
+electronics:
+  esc:
+    brand: "Hobbywing / Robitronic"
+    amp_rating: 120A
+    battery_limit: "3S LiPo"
+    settings:
+      punch: "Level 3 (Soft-Start zur Schonung des Antriebs)"
+      timing: "0 Grad (Sicherheits-Setup für erste Runs)"
+  motor:
+    size: "540er / 3650"
+    kv_rating: 4000kV
+    poles: 4
+    cooling: "Passiver Aluminium-Kühlkörper empfohlen"
+  battery:
+    cells: "3S (11.1V)"
+    capacity_mah: 5000
+    c_rating: "Mindestens 50C Dauerlast"
+  servo:
+    speed: "< 0.10 sec/60°"
+    torque: "> 10 kg"
+    type: "Low-Profile (für besseren Schwerpunkt)"
+
+wheels_and_aero:
+  tires:
+    type: "Belted (Gewebeverstärkt gegen Aufblähen)"
+    compound: "Medium-Hard (Asphalt)"
+    diameter: 65mm
+  body:
+    type: "Aero Speedrun / Tourenwagen (z.B. Protoform)"
+    features: ["Frontsplitter", "Heckflügel (flach eingestellt)"]
