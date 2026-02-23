@@ -1,0 +1,7 @@
+- [cite_start]Kunststoff schwierig wegen Torsion [cite: 1]
+- [cite_start]Carten Chassis könnte problematisch werden bei nötiger Untersetzungsveränderung: [Link](https://www.modellbau-berlinski.de/rc-fahrzeuge-und-zubehoer/autos-und-zubehoer/elektro-onroad/t410r-1_10-4wd-touring-car-racing-kit) [cite: 1]
+- [cite_start]Gibt es Anforderungen an das Gewicht? [cite: 1]
+- [cite_start]Drehzahl der Räder > 8000 rpm [cite: 1]
+- [cite_start]Möglicher Antrieb: [Link](https://www.rcfox.de/HW38030210-HobbyWing-Quicrun-Brushless-Combo-WP10BL120G2-mit-3660SL-3150KV-G2) [cite: 1]
+- [cite_start]Riemen ggf besser als Kardanwelle? [cite: 1]
+- “Hochstrom - Antriebselektronik” wird sehr heiß! [cite_start]Vor allem muss geprüft werden, ob die Komponenten hineinpassen [cite: 1]
