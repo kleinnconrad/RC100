@@ -9,6 +9,7 @@ Dieses Verzeichnis enthält alle grundlegenden Architektur- und Hardwareentschei
 | **ADR-001** | 2026-02-24 | Auswahl der Chassis-Plattform und Make-or-Buy-Entscheidung (100 km/h Benchmark) | 🟡 Offen | MAKE - Carten T410R |
 | **ADR-002** | 2026-02-24 | Auswahl der Brushless-Antriebseinheit (ESC & Motor) für 100 km/h Speedruns | 🟡 Offen | Hobbywing QuicRun WP 10BL120 G2 Combo |
 | **ADR-003** | 2026-02-24 | Auswahl des LiPo-Akkus für 100 km/h Ziel | 🟡 Offen | Absima GreenHorn Line V2 (3S / 5000mAh / 50C / Hardcase) |
+| **ADR-004** | 2026-02-24 | Auswahl des Ladegeräts für 3S LiPo-Akkus | 🟡 Offen | SkyRC S100neo |
 
 ---
 
@@ -108,6 +109,37 @@ garantiert einen geringen Übergangswiderstand für die hohen Ströme.
 - Chassis-Modifikation: Da 3S Hardcase-Akkus ca. 35mm hoch sind, muss die obere Carbon-Akkustrebe im Carten T410R mit 10mm Spacern und längeren M3-Schrauben erhöht werden.
 - Stecker-Kompatibilität: Der Hobbywing-Regler muss zwingend mit einem passenden XT60-Stecker verlötet werden (keine Tamiya-Stecker bei diesen Strömen!).
 - Sicherheit: Laden und Lagern des Akkus (55.5 Wh) darf nur unter Aufsicht in einem Bat-Safe oder einer feuerfesten LiPo-Tasche erfolgen.
+
+
+---
+
+### ADR-004: Auswahl des Ladegeräts für 3S LiPo-Akkus
+**Status:** Offen | **Datum:** 2026-02-24
+
+#### Kontext
+Das Laden des im ADR-003 definierten 3S LiPo-Akkus (11.1V, 5000mAh, 55.5 Wh) erfordert ein 
+sicheres und leistungsfähiges Ladegerät. Um den Akku schonend mit 1C (5 Ampere) zu laden, 
+wird eine Ladeleistung von mindestens 63 Watt (5 Ampere * 12.6V Ladeschlussspannung) benötigt. 
+Zudem muss das Ladegerät die Zellenspannungen (Balancing) exakt überwachen und den internen 
+Widerstand der Zellen messen können, um Brandgefahr vorzubeugen. Der Anschluss muss die 
+hohen Ströme sicher über einen XT60-Stecker übertragen können.
+
+
+#### Entscheidung
+> **SkyRC S100neo**
+
+#### Begründung (Rationale)
+Die Entscheidung fällt auf das SkyRC S100neo. Es deckt den "Sweet Spot" zwischen Sicherheit, 
+Leistung und Budget perfekt ab. Die 100 Watt interne Leistung (AC) sind mehr als ausreichend, 
+um den 3S 5000mAh LiPo in etwa einer Stunde schonend vollzuladen. Besonders vorteilhaft ist 
+der fest in der Frontblende integrierte XT60-Anschluss, der gefährliche und fehleranfällige 
+Adapterkabel überflüssig macht. Dies passt perfekt zur Architektur-Entscheidung des Absima-Akkus.
+
+
+#### Konsequenzen
+- Sicherheit beim Laden: Neben dem XT60-Hauptstecker muss zwingend das weiße JST-XH Balancer-Kabel des Akkus in den Port des Ladegeräts gesteckt werden, da sonst die Einzelzellen nicht überwacht werden.
+- Kabel-Minimalismus: Es werden keine zusätzlichen Ladekabel benötigt (Akku wird direkt an das Gerät gesteckt).
+- Kühlung: Das Ladegerät verfügt über einen aktiven Lüfter. Beim Laden muss auf einen sicheren Stand und freie Luftzufuhr geachtet werden.
 
 
 ---
