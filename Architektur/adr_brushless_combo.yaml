@@ -1,7 +1,7 @@
 # ==========================================
 # Architectural Decision Record (ADR-002)
 # ==========================================
-# Thema: Auswahl der Brushless-Antriebseinheit (ESC & Motor)
+# Thema: Auswahl der Brushless-Antriebseinheit (ESC & Motor) x
 
 adr_brushless_combo:
   id: "ADR-002"
