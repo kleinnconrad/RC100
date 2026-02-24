@@ -1,0 +1,49 @@
+name: Generate ADR README
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      # Pfade auf kleingeschriebenes 'architektur' angepasst
+      - 'architektur/adr_*.yaml'
+      - 'architektur/adr_*.yml'
+      - 'generate_adr_readme.py'
+  workflow_dispatch:
+
+jobs:
+  build-readme:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: 📥 Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: 🐍 Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: 📦 Install Dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install pyyaml
+
+      - name: ⚙️ Run ADR Generator Script
+        run: python generate_adr_readme.py
+
+      - name: 🚀 Commit and Push README.md
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          
+          # Pfade beim Check und Commit auf 'architektur' angepasst
+          if [[ -f "architektur/README.md" ]] && [[ -n "$(git status --porcelain architektur/README.md)" ]]; then
+            git add architektur/README.md
+            git commit -m "docs(adr): auto-update architektur/README.md [skip ci]"
+            git push
+          else
+            echo "Keine Änderungen an der architektur/README.md erkannt."
+          fi
