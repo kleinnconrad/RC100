@@ -12,6 +12,7 @@ Dieses Verzeichnis enthält alle grundlegenden Architektur- und Hardwareentschei
 | **ADR-004** | 2026-02-24 | Auswahl des Ladegeräts für 3S LiPo-Akkus | 🟡 Offen | SkyRC S100neo |
 | **ADR-005** | 2026-02-24 | Auswahl der Fernsteuerungsanlage für 100 km/h Speedruns | 🟡 Offen | DumboRC X6 |
 | **ADR-006** | 2026-02-24 | Auswahl des Lenkservos für präzise High-Speed-Kontrolle | 🟡 Offen | Savöx SC-1251MG+ |
+| **ADR-007** | 2026-02-24 | Auswahl der aktiven und passiven Motorkühlung für 3S-Speedruns | 🟡 Offen | Passiver 36mm Alu-Kühlkörper kombiniert mit aktivem 40x40mm High-Speed Alu-Lüfter |
 
 ---
 
@@ -208,6 +209,38 @@ Zahnradbruch wird durch das Vollmetallgetriebe quasi eliminiert.
 - Servohorn-Upgrade: Das dem Carten-Bausatz beiliegende Plastik-Servohorn muss zwingend gegen ein steifes Aluminium-Servohorn mit 25 Zähnen (25T - passend für Savöx/Futaba) getauscht werden, da Plastik bei High-Speed flext.
 - BEC-Spannung: Das BEC (Battery Eliminator Circuit) des Hobbywing-Reglers muss auf 6.0V eingestellt werden, um die volle Leistung des Servos abzurufen.
 - Stromhunger: Savöx-Servos ziehen kurzzeitig hohe Anlaufströme. Das 5A BEC des Hobbywing 10BL120 G2 ist dafür aber stark genug dimensioniert (kein externer Kondensator/Glitch-Buster nötig).
+
+
+---
+
+### ADR-007: Auswahl der aktiven und passiven Motorkühlung für 3S-Speedruns
+**Status:** Offen | **Datum:** 2026-02-24
+
+#### Kontext
+Das anvisierte Ziel von 100 km/h erfordert den Einsatz eines 4000kV Motors an einem 
+3S LiPo (11.1V), was zu extremen Drehzahlen von ca. 44.400 U/min und einer enormen 
+länger übersetzten Last (64Z/38Z) führt. Unter diesen Bedingungen entsteht im Motor 
+binnen Sekunden massiv nutzlose Abwärme. Ohne angemessene Kühlung droht die 
+Entmagnetisierung des Rotors (Hitzetod) oder das Schmelzen der Isolierung. 
+Daher ist ein kompromissloses thermisches Management-System zwingend erforderlich.
+
+
+#### Entscheidung
+> **Passiver 36mm Alu-Kühlkörper kombiniert mit aktivem 40x40mm High-Speed Alu-Lüfter**
+
+#### Begründung (Rationale)
+Die Entscheidung fällt auf ein duales Kühlsystem (aktiv und passiv). Der 36mm 
+Alu-Aufsteckkühlkörper passt perfekt auf den Hobbywing 3652SL Motor. Der 40mm 
+High-Speed-Lüfter mit Aluminiumrahmen bietet durch Drehzahlen von bis zu 20.000 U/min 
+den nötigen Orkan, um die Hitze wegzublasen. Ein Aluminiumrahmen beim Lüfter 
+verhindert zudem, dass sich dieser bei Stauhitze verformt, und dient als zusätzlicher 
+Mini-Kühlkörper.
+
+
+#### Konsequenzen
+- Stromversorgung: Der Lüfter muss in einen freien Steckplatz des DumboRC-Empfängers (z.B. CH3 oder CH4) gesteckt werden, um Strom vom Regler-BEC zu beziehen.
+- Kabelmanagement: Durch den extremen Sog des High-Speed-Lüfters müssen alle Kabel (insbesondere Antenne und Servokabel) zwingend mit Kabelbindern gesichert werden, damit sie nicht in die Rotorblätter geraten.
+- Wärmeleitpaste: Es wird dringend empfohlen, zwischen Motor und Alu-Kühlkörper einen Tropfen PC-Wärmeleitpaste aufzutragen, um den thermischen Übergangswiderstand zu minimieren.
 
 
 ---
