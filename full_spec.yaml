@@ -133,6 +133,41 @@ calibration_and_setup:
     zum sofortigen Überschlag.
   throttle_trim: Die Trimmung für das Gas (TH Trim) muss zwingend auf dem Nullpunkt
     (Mitte) stehen, bevor der Hobbywing-Regler zum ersten Mal kalibriert wird.
+cooling_motor:
+  component: Hobbywing QuicRun 3652SL (4000kV)
+  heatsink:
+    size: 36mm (Passend für 540er / 3650 / 3652 Baugröße)
+    material: Aluminium
+    mounting: Aufsteck-Kühlkörper (Clip-On)
+  fan_active:
+    size: 40x40mm High-Speed Lüfter
+    rpm: 16.000 - 20.000 U/min
+    frame_material: Aluminium (für bessere Wärmeableitung)
+    suggested_brands:
+    - Surpass Hobby (Rocket Serie)
+    - Yeah Racing (Tornado)
+    - WTF (Wild Turbo Fan)
+    power_supply: Anschluss an freien Empfänger-Kanal (z.B. CH3 oder CH4), Stromversorgung
+      direkt über das BEC des Reglers (6.0V/7.4V)
+cooling_esc:
+  component: Hobbywing QuicRun WP 10BL120 G2
+  status: Keine Modifikation notwendig
+  description: Der Regler verfügt ab Werk über einen verschraubten Kühlkörper und
+    einen aktiven Lüfter, der auf die 120A Dauerlast abgestimmt ist und für 3S-Speedruns
+    ausreicht.
+cooling_best_practices:
+  thermal_paste:
+    issue: Wärmeübertragung
+    action: Ein winziger Tropfen PC-Wärmeleitpaste zwischen Motorgehäuse und Alu-Kühlkörper
+      verbessert die Hitzeübertragung massiv.
+  cable_management:
+    issue: Sog des High-Speed-Lüfters
+    action: Alle Sensorkabel und Antennen zwingend mit Kabelbindern fixieren, damit
+      sie nicht vom starken Luftzug in die Rotorblätter gesaugt werden.
+  body_airflow:
+    issue: Hitzestau unter der Karosserie
+    action: Für Speedruns zwingend Lüftungslöcher in die Frontscheibe oder die hinteren
+      Seitenfenster schneiden, damit ein kühlender Durchzug (Airflow) entsteht.
 servo_meta:
   brand: Savöx
   model: SC-1251MG+
