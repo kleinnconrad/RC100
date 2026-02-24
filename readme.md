@@ -34,12 +34,12 @@ Dieses Repository nutzt einen **"Docs-as-Code"** Ansatz. Die Fahrzeugspezifikati
 ```
 
 ## ⚙️ Der Automatisierungs-Workflow
-Um Konsistenz zu gewährleisten, wird die Datei full_spec.yaml niemals manuell bearbeitet. Der Prozess ist vollständig automatisiert:
-Änderung: Eine Spezifikation im Ordner specs/ wird angepasst (z. B. Zellenzahl im Akku-Modul).
-Push: Die Änderung wird auf den main-Branch gepusht.
-CI-Pipeline: GitHub Actions erkennt die Änderung und startet einen virtuellen Runner.
-Merge: Das Skript merge_specs.py sucht rekursiv nach allen spec_*.yaml Dateien und führt sie zusammen.
-Sync: Der GitHub-Bot committet die aktualisierte full_spec.yaml automatisch zurück in das Repository.
+* Um Konsistenz zu gewährleisten, wird die Datei full_spec.yaml niemals manuell bearbeitet. Der Prozess ist vollständig automatisiert:
+* Änderung: Eine Spezifikation im Ordner specs/ wird angepasst (z. B. Zellenzahl im Akku-Modul).
+* Push: Die Änderung wird auf den main-Branch gepusht.
+* CI-Pipeline: GitHub Actions erkennt die Änderung und startet einen virtuellen Runner.
+* Merge: Das Skript merge_specs.py sucht rekursiv nach allen spec_*.yaml Dateien und führt sie zusammen.
+* Sync: Der GitHub-Bot committet die aktualisierte full_spec.yaml automatisch zurück in das Repository.
 
 ## 🛠 Manuelle Synchronisation
 Sollte die Pipeline lokal getestet werden müssen, kann das Skript manuell ausgeführt werden (erfordert PyYAML):
@@ -50,9 +50,9 @@ python merge_specs.py
 ```
 
 ## ⚠️ Wichtige Hinweise für Mitwirkende
-Präfix-Regel: Alle Quelldateien müssen mit spec_ beginnen und auf .yaml enden.
-Schreibrechte: Die GitHub Action benötigt Read and write permissions (einstellbar unter Settings > Actions > General), um die generierte Datei speichern zu können.
-Single Source of Truth: Fachliche Details immer nur in den Modul-Dateien ändern, da die full_spec.yaml bei jedem Push überschrieben wird.
+* Präfix-Regel: Alle Quelldateien müssen mit spec_ beginnen und auf .yaml enden.
+* Schreibrechte: Die GitHub Action benötigt Read and write permissions (einstellbar unter Settings > Actions > General), um die generierte Datei speichern zu können.
+* Single Source of Truth: Fachliche Details immer nur in den Modul-Dateien ändern, da die full_spec.yaml bei jedem Push überschrieben wird.
 
 ## ⚠️ Safety First & Pre-Flight Checks
 > Bei Rad-Drehzahlen jenseits der 8.000 U/min herrschen extreme Fliehkräfte. 
