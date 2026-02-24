@@ -11,6 +11,7 @@ Dieses Verzeichnis enthält alle grundlegenden Architektur- und Hardwareentschei
 | **ADR-003** | 2026-02-24 | Auswahl des LiPo-Akkus für 100 km/h Ziel | 🟡 Offen | Absima GreenHorn Line V2 (3S / 5000mAh / 50C / Hardcase) |
 | **ADR-004** | 2026-02-24 | Auswahl des Ladegeräts für 3S LiPo-Akkus | 🟡 Offen | SkyRC S100neo |
 | **ADR-005** | 2026-02-24 | Auswahl der Fernsteuerungsanlage für 100 km/h Speedruns | 🟡 Offen | DumboRC X6 |
+| **ADR-006** | 2026-02-24 | Auswahl des Lenkservos für präzise High-Speed-Kontrolle | 🟡 Offen | Savöx SC-1251MG+ |
 
 ---
 
@@ -174,6 +175,39 @@ sondern ein effizienter Ressourceneinsatz.
 - Empfänger-Wahl: Es muss zwingend der Empfänger 'X6FG' (das 'G' steht für Gyro) verbaut werden. Der Standard-Empfänger X6F hat keine Stabilisierung.
 - Setup: Der Gyro (Kanal 6 Drehregler am Sender) muss vor dem ersten Run auf einer sicheren Fläche präzise eingestellt werden (Sensitivität), damit sich die Lenkung bei High-Speed nicht aufschaukelt (Speed-Wobble).
 - Batterien: Der Sender benötigt 4x AA Batterien. Für konstante Sendeleistung sollten hochwertige Akkus (z.B. Eneloop) verwendet werden.
+
+
+---
+
+### ADR-006: Auswahl des Lenkservos für präzise High-Speed-Kontrolle
+**Status:** Offen | **Datum:** 2026-02-24
+
+#### Kontext
+Bei Geschwindigkeiten von 100 km/h wirken enorme aerodynamische und mechanische Kräfte 
+auf die Vorderräder des Carten T410R. Ein minimales Zittern, Spiel oder eine zu langsame 
+Reaktionszeit des Lenkservos können sofort zum Kontrollverlust und Totalausfall führen. 
+Zudem ist der Platz in einem 1:10 Tourenwagen-Chassis begrenzt, weshalb Standardgrößen 
+oft das Kabelmanagement erschweren oder den Schwerpunkt unnötig nach oben verlagern. 
+Gefordert ist ein Servo mit Metallgetriebe (Robustheit), hoher Stellgeschwindigkeit 
+(unter 0.10s) und ausreichender Stellkraft (ca. 8-10 kg).
+
+
+#### Entscheidung
+> **Savöx SC-1251MG+**
+
+#### Begründung (Rationale)
+Die Entscheidung fällt auf das Savöx SC-1251MG+. Es bietet die exakt benötigte Balance aus 
+Geschwindigkeit (0.09s), Kraft (9.0 kg bei 6.0V) und Bauform (Low-Profile). Die verringerte 
+Bauhöhe senkt den Schwerpunkt des Chassis und schafft Platz für die Kabelführung des 120A Reglers. 
+Das '+' im Namen steht für den Softstart und die Sanwa-SSR-Kompatibilität, was eine extrem 
+feinfühlige und hochauflösende Ansteuerung ermöglicht. Ein Ausfall der Lenkung durch 
+Zahnradbruch wird durch das Vollmetallgetriebe quasi eliminiert.
+
+
+#### Konsequenzen
+- Servohorn-Upgrade: Das dem Carten-Bausatz beiliegende Plastik-Servohorn muss zwingend gegen ein steifes Aluminium-Servohorn mit 25 Zähnen (25T - passend für Savöx/Futaba) getauscht werden, da Plastik bei High-Speed flext.
+- BEC-Spannung: Das BEC (Battery Eliminator Circuit) des Hobbywing-Reglers muss auf 6.0V eingestellt werden, um die volle Leistung des Servos abzurufen.
+- Stromhunger: Savöx-Servos ziehen kurzzeitig hohe Anlaufströme. Das 5A BEC des Hobbywing 10BL120 G2 ist dafür aber stark genug dimensioniert (kein externer Kondensator/Glitch-Buster nötig).
 
 
 ---
