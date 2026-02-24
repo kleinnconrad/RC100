@@ -1,0 +1,40 @@
+# ==========================================
+# Spezifikation: Lenkservo (Steering)
+# ==========================================
+# Hersteller: Savöx
+# Modell: SC-1251MG+ (mit Softstart)
+# Ziel-Einsatz: Präziser Geradeauslauf für 100 km/h (Carten T410R)
+
+servo_meta:
+  brand: "Savöx"
+  model: "SC-1251MG+"
+  type: "Digitales Low-Profile Servo"
+  features: "Softstart (Verhindert hartes Zucken beim Einschalten, schont die Mechanik)"
+  price_class: "Mid-Range (~55 EUR)"
+
+mechanical_specifications:
+  gears: "Metallgetriebe (Titan/Aluminium)"
+  case: "Teil-Aluminium (für bessere Wärmeableitung)"
+  spline_teeth: "25T (WICHTIG: Standard Savöx/Futaba Zahnkranz)"
+  dimensions_mm:
+    length: 40.8
+    width: 20.2
+    height: 25.4  # Low-Profile! Schafft dringend benötigten Platz auf dem Chassis und senkt den Schwerpunkt.
+  weight_g: 44.5
+
+performance_specifications:
+  operating_voltage: "4.8V - 6.0V"
+  torque_6v: "9.0 kg-cm" # Mehr als genug Stellkraft für die aerodynamische Last bei 1:10 On-Road
+  speed_6v: "0.09 sec / 60°"
+  return_to_center_accuracy: "Sehr hoch (Kritisch für stabilen Geradeauslauf bei 100 km/h)"
+
+# ==========================================
+# ⚠️ WICHTIGE BAU- & SETUP-HINWEISE
+# ==========================================
+mandatory_upgrades:
+  part: "Aluminium-Servohorn (Zwingend 25T Verzahnung für Savöx kaufen!)"
+  reason: "Das Baukasten-Plastikhorn verbiegt sich (Flex) bei 100 km/h unter dem extremen Winddruck auf die Vorderräder. Das Alu-Horn garantiert eine absolut steife, spielfreie Lenkverbindung."
+  installation: "Die Schraube, die das Horn auf dem Servo hält, zwingend mit Schraubensicherungslack (z. B. Loctite mittelfest) fixieren, damit sie sich durch Vibrationen nicht löst."
+
+transmitter_setup:
+  dual_rate: "Für den 100 km/h Run muss an der Fernsteuerung zwingend das 'Dual Rate' (D/R) oder der Lenkausschlag (EPA) auf ca. 30-40% reduziert werden. Minimale Lenkbewegungen reichen bei Top-Speed völlig aus. Voller Ausschlag führt zum sofortigen Überschlag."
