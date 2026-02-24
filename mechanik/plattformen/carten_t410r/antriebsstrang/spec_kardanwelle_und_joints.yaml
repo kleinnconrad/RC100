@@ -1,0 +1,42 @@
+# ==========================================
+# Spezifikation: Carten T410R Zentrale Antriebswelle (Center Shaft)
+# ==========================================
+# Ziel-Einsatz: 100 km/h Speedrun (3S)
+
+center_shaft_meta:
+  component: "Zentrale Antriebswelle (Center Shaft)"
+
+material_and_suitability:
+  driveshaft:
+    component: "Kardanwelle (Welle)"
+    material: "Aluminium (eloxiert), hohl oder massiv (je nach Batch)"
+    suitability_100kmh_3s: "JA. Aluminium ist hier besser als Stahl, da die geringere rotierende Masse bei ca. 26.000 U/min weniger Vibrationen erzeugt."
+  
+  joint_cups:
+    component: "Verbindungsstücke (Diff-Inputs)"
+    material: "Stahl (Gehärtet)"
+    suitability_100kmh_3s: "JA. Die Aufnahmen am Differentialeingang sind aus Stahl und halten dem Drehmoment des 3S-Antriebs stand."
+  
+  rpm_load:
+    component: "Drehzahl-Belastung"
+    specification: "Welle rotiert mit ca. 26.000 U/min"
+    suitability_100kmh_3s: "Kritisch, aber für das Baukasten-Teil machbar, solange keine Unwucht vorliegt."
+
+# ==========================================
+# ⚠️ ZWINGENDE MASSNAHMEN FÜR DIE HALTBARKEIT
+# ==========================================
+mandatory_durability_measures:
+  centering_floating_problem:
+    issue: "Zentrierung (Das 'Floating' Problem)"
+    description: "Die Welle darf in den Bechern (Cups) nicht hin und her schlagen ('chatter')."
+    action: "Zwingend kleine O-Ringe oder Schaumstoff-Plättchen (oft im Baukasten enthalten oder aus alten Dämpfer-Gummis geschnitten) in die Becher legen, bevor die Welle eingesetzt wird. Die Welle muss 'schwimmend', aber spielfrei zwischen den Diffs sitzen."
+  
+  joint_lubrication:
+    issue: "Schmierung der Gelenke"
+    description: "Die Enden der Kardanwelle (Dogbones), die in den Stahlbechern laufen, sind Metall auf Metall. Bei 3S-Power entsteht hier massiver Verschleiß ('Einschlagen')."
+    action: "Diese Kontaktpunkte mit zähem Molybdän-Fett (schwarz) oder speziellem 'Joint Grease' schmieren, um die Reibung zu minimieren."
+  
+  runout_check:
+    issue: "Prüfung auf Rundlauf"
+    description: "Roll die Welle vor dem Einbau über eine Glasplatte (oder einen Spiegel)."
+    action: "Wenn sie auch nur minimal 'eiert' (verbogen ist), wird sie bei 26.000 U/min das ganze Chassis in zerstörerische Vibrationen versetzen. In diesem Fall muss sie sofort ersetzt werden."
