@@ -1,0 +1,271 @@
+battery_meta:
+  brand: Absima
+  series: GreenHorn Line V2
+  part_number: '4140014'
+  type: LiPo (Lithium-Polymer)
+electrical_specifications:
+  voltage: 11.1V (Nennspannung)
+  cells: 3S
+  capacity: 5000 mAh
+  energy: 55.5 Wh
+  discharge_rate_continuous: 50C
+  max_continuous_amp_draw: 250A
+connectors:
+  main_power: XT60 (Plug & Play mit Hobbywing QuicRun G2 ESC)
+  balancer: XH (Standard-Balancer für das Ladegerät)
+physical_specifications:
+  display: Farb-LCD-Bildschirm
+  dimensions_mm:
+    length: 105
+    width: 105
+    height: 62
+  weight_g: 340
+  control_interface: Einfache 3-Tasten-Steuerung
+chassis_integration_notes:
+  issue: Der Carten T410R ist ab Werk für 2S-Akkus (25mm Höhe) konzipiert. Dieser
+    3S-Akku ist 35mm hoch.
+  solution: Die obere Carbon-Akkustrebe des Chassis muss 'höhergelegt' werden.
+  required_parts:
+  - 2x Distanzhülsen/Spacers (Kunststoff oder Alu) mit ca. 10mm Höhe
+  - 2x minimal längere M3-Schrauben (ca. M3x16 oder M3x18)
+  execution: Spacers auf die originalen Alu-Pfosten legen, Carbon-Strebe darauf verschrauben.
+    Kein Dremeln oder Fräsen am Chassis notwendig.
+charger_meta:
+  brand: SkyRC
+  model: S100neo
+  type: Smart AC/DC Ladegerät
+  architecture_fit: Perfekt. Hat XT60-Buchse direkt im Gehäuse verbaut. Kein Adapter-Chaos.
+power_specifications:
+  input_voltage_ac: 100-240V (Integriertes Netzteil für normale Steckdose)
+  input_voltage_dc: 6-30V
+  charge_power_max_ac: 100W
+  charge_power_max_dc: 200W
+  discharge_power_max: 5W (Hauptanschluss) / 20W (Balanceport)
+charging_capabilities:
+  supported_chemistries:
+  - LiPo
+  - LiIon
+  - LiFe
+  - LiHV
+  - NiMH
+  - NiCd
+  - Pb
+  supported_cells_lipo: 1S bis 6S
+  charge_current_range: 0.1A - 12.0A
+  discharge_current_range: 0.1A - 2.0A
+  balancer_current_max: 1.0A
+lipo_safety_and_workflow:
+  charging_rule: Den 5000mAh Akku immer mit '1C' laden. Am Ladegerät den Ladestrom
+    auf exakt 5.0A einstellen.
+  storage_rule: Nach dem Fahren NIEMALS den Akku leer in die Ecke legen. Immer das
+    'Storage'-Programm am S100neo starten, um die Zellen auf 3.8V Einlagerungsspannung
+    zu bringen.
+  fire_safety: Akkus immer in einem feuerfesten LiPo-Safe-Bag laden und aufbewahren.
+combo_meta:
+  brand: Hobbywing
+  series: QuicRun Generation 2 (G2)
+  part_number: HW38030208
+  waterproof_rating: IP67 (Regler)
+esc_specifications:
+  model: QuicRun WP 10BL120 G2
+  type: Brushless (Sensored & Sensorless unterstützt)
+  current_continuous: 120A
+  current_burst: 760A
+  voltage_input: 2S - 4S LiPo
+  bec_output: 6.0V / 7.4V schaltbar bei 5A
+  cooling_fan: Ja (wird über das BEC betrieben)
+  programming_options:
+  - LED Programmierkarte
+  - LCD Programmierbox (G2)
+  battery_connector: XT60 (ab Werk verlötet)
+  motor_limits:
+    limit_3s: <= 4000kV (Baugröße max. 3660)
+    limit_4s: <= 2600kV (Baugröße max. 4268)
+  dimensions:
+    length_mm: 52.8
+    width_mm: 39.8
+    height_mm: 38.2
+  weight_g: 119
+motor_specifications:
+  model: QuicRun 3652SL G2
+  type: Brushless (Sensorlos / Sensorless)
+  poles: 4
+  kv_rating: 4000
+  voltage_input: 2S - 3S LiPo
+  no_load_current: 5.3A
+  dimensions:
+    diameter_mm: 36.0
+    length_mm: 52.0
+  shaft:
+    diameter_mm: 3.175
+    length_mm: 15.0
+  weight_g: 224
+  housing: CNC-gefrästes Aluminium
+compatibility_check:
+  chassis_fit: Perfekt. Motor-Durchmesser 36mm passt exakt in den T410R Motorhalter.
+  gearing_fit: Perfekt. 3.175mm Welle nimmt Standard 48dp Ritzel auf.
+  power_headroom: Gut. Motor ist an der Obergrenze des ESCs bei 3S, aber die 120A
+    Dauerleistung fangen die Spitzen sicher ab.
+tx_meta_transmitter:
+  brand: DumboRC
+  model: X6
+  type: 2.4 GHz Pistolengriff-Sender (Surface)
+  channels: 6
+  price_class: Budget / MVP (~35 - 45 EUR)
+tx_performance:
+  protocol: FHSS (Frequency-Hopping Spread Spectrum)
+  range_ground: 300 - 400 Meter (Überlebenswichtig für 100 km/h Runs)
+  response_time: 12 ms (Extrem niedrige Latenz)
+  power_supply: '4x AA Batterien (Alternative: 2S LiPo im Batteriefach)'
+rx_meta_receiver:
+  model: X6FG (Das 'G' ist das kritische Feature!)
+  channels: 6
+  integrated_features:
+  - Elektronischer Gyroskop-Kreisel (Gyro)
+  input_voltage: 4.8V - 10.0V (Kompatibel mit dem 6.0V/7.4V BEC des Hobbywing-Reglers)
+calibration_and_setup:
+  gyro_activation: Der Gyro muss am Empfänger meist per Knopf-Kombination (schnelles
+    Drücken) aktiviert werden (LED wechselt die Farbe, meist auf Grün oder Orange).
+    Vor dem Fahren unbedingt aufbocken und prüfen, ob der Gyro in die korrekte Richtung
+    gegenlenkt!
+  steering_dual_rate: Über den CH1-Drehregler an der Fernsteuerung den maximalen Lenkausschlag
+    (Dual Rate) zwingend auf ca. 30 % reduzieren. Bei 100 km/h führt ein voller Lenkausschlag
+    zum sofortigen Überschlag.
+  throttle_trim: Die Trimmung für das Gas (TH Trim) muss zwingend auf dem Nullpunkt
+    (Mitte) stehen, bevor der Hobbywing-Regler zum ersten Mal kalibriert wird.
+servo_meta:
+  brand: Savöx
+  model: SC-1251MG+
+  type: Digitales Low-Profile Servo
+  features: Softstart (Verhindert hartes Zucken beim Einschalten, schont die Mechanik)
+  price_class: Mid-Range (~55 EUR)
+mechanical_specifications:
+  gears: Metallgetriebe (Titan/Aluminium)
+  case: Teil-Aluminium (für bessere Wärmeableitung)
+  spline_teeth: '25T (WICHTIG: Standard Savöx/Futaba Zahnkranz)'
+  dimensions_mm:
+    length: 40.8
+    width: 20.2
+    height: 25.4
+  weight_g: 44.5
+performance_specifications:
+  operating_voltage: 4.8V - 6.0V
+  torque_6v: 9.0 kg-cm
+  speed_6v: 0.09 sec / 60°
+  return_to_center_accuracy: Sehr hoch (Kritisch für stabilen Geradeauslauf bei 100
+    km/h)
+mandatory_upgrades:
+  part: Aluminium-Servohorn (Zwingend 25T Verzahnung für Savöx kaufen!)
+  reason: Das Baukasten-Plastikhorn verbiegt sich (Flex) bei 100 km/h unter dem extremen
+    Winddruck auf die Vorderräder. Das Alu-Horn garantiert eine absolut steife, spielfreie
+    Lenkverbindung.
+  installation: Die Schraube, die das Horn auf dem Servo hält, zwingend mit Schraubensicherungslack
+    (z. B. Loctite mittelfest) fixieren, damit sie sich durch Vibrationen nicht löst.
+transmitter_setup:
+  dual_rate: Für den 100 km/h Run muss an der Fernsteuerung zwingend das 'Dual Rate'
+    (D/R) oder der Lenkausschlag (EPA) auf ca. 30-40% reduziert werden. Minimale Lenkbewegungen
+    reichen bei Top-Speed völlig aus. Voller Ausschlag führt zum sofortigen Überschlag.
+differential_meta:
+  type: Öldruck-Kegeldifferential (Metal Gear)
+  mechanical_load_capacity: '> 100 km/h (ca. 8.300 U/min Achsdrehzahl)'
+material_and_construction:
+  gears_ring_and_bevel: Sintermetall / Stahl
+  diff_outdrives_cup_joints: Gehärteter Stahl
+  diff_case_cup: Faserverstärkter Verbundkunststoff (Composite)
+mandatory_modifications:
+  perfect_shimming:
+    issue: Spielfreiheit
+    description: Die inneren Metallzahnräder müssen beim Zusammenbau mit hauchdünnen
+      Passscheiben (Shims) absolut spielfrei eingestellt werden. Nur so wird verhindert,
+      dass die Zähne unter dem extremen Drehmoment des 3S-Motors überspringen oder
+      abreißen.
+  reinforced_sealing:
+    issue: O-Ring Abdichtung
+    description: Bei 8.300 U/min erzeugt das Öl im Inneren einen massiven Fliehkraftdruck
+      nach außen. Die Gummi-O-Ringe müssen mit zähem Spezialfett (z. B. 'Green Slime')
+      abgedichtet werden, damit das Differential nicht trockenläuft.
+  oil_viscosity:
+    issue: Sperrwirkung & Geradeauslauf
+    description: Das Baukasten-Öl ist zu weich und führt bei Speedruns zu unkontrollierbarem
+      Ausbrechen, wenn ein Rad minimal Grip verliert. Es muss extrem zähes Silikonöl
+      verwendet werden, um das Auto auf einen sturen Geradeauslauf zu zwingen.
+    setup_recommendation:
+      front_axle: ca. 100.000 cSt (oder ein komplett starrer Spool/Starrachse)
+      rear_axle: ca. 10.000 cSt
+center_shaft_meta:
+  component: Zentrale Antriebswelle (Center Shaft)
+material_and_suitability:
+  driveshaft:
+    component: Kardanwelle (Welle)
+    material: Aluminium (eloxiert), hohl oder massiv (je nach Batch)
+    suitability_100kmh_3s: JA. Aluminium ist hier besser als Stahl, da die geringere
+      rotierende Masse bei ca. 26.000 U/min weniger Vibrationen erzeugt.
+  joint_cups:
+    component: Verbindungsstücke (Diff-Inputs)
+    material: Stahl (Gehärtet)
+    suitability_100kmh_3s: JA. Die Aufnahmen am Differentialeingang sind aus Stahl
+      und halten dem Drehmoment des 3S-Antriebs stand.
+  rpm_load:
+    component: Drehzahl-Belastung
+    specification: Welle rotiert mit ca. 26.000 U/min
+    suitability_100kmh_3s: Kritisch, aber für das Baukasten-Teil machbar, solange
+      keine Unwucht vorliegt.
+mandatory_durability_measures:
+  centering_floating_problem:
+    issue: Zentrierung (Das 'Floating' Problem)
+    description: Die Welle darf in den Bechern (Cups) nicht hin und her schlagen ('chatter').
+    action: Zwingend kleine O-Ringe oder Schaumstoff-Plättchen (oft im Baukasten enthalten
+      oder aus alten Dämpfer-Gummis geschnitten) in die Becher legen, bevor die Welle
+      eingesetzt wird. Die Welle muss 'schwimmend', aber spielfrei zwischen den Diffs
+      sitzen.
+  joint_lubrication:
+    issue: Schmierung der Gelenke
+    description: Die Enden der Kardanwelle (Dogbones), die in den Stahlbechern laufen,
+      sind Metall auf Metall. Bei 3S-Power entsteht hier massiver Verschleiß ('Einschlagen').
+    action: Diese Kontaktpunkte mit zähem Molybdän-Fett (schwarz) oder speziellem
+      'Joint Grease' schmieren, um die Reibung zu minimieren.
+  runout_check:
+    issue: Prüfung auf Rundlauf
+    description: Roll die Welle vor dem Einbau über eine Glasplatte (oder einen Spiegel).
+    action: Wenn sie auch nur minimal 'eiert' (verbogen ist), wird sie bei 26.000
+      U/min das ganze Chassis in zerstörerische Vibrationen versetzen. In diesem Fall
+      muss sie sofort ersetzt werden.
+compatibility_check_gearing:
+  status: PASS
+  fitment_type: Drop-In-Fit
+  modifications_required: Keine (Kein Fräsen oder Dremeln notwendig)
+  tooth_sum_theory:
+    description: Der Abstand zwischen Motorwelle und Hauptwelle ist durch die Langlöcher
+      im Aluminium-Motorhalter begrenzt. Die Passgenauigkeit lässt sich bei gleichem
+      Pitch (48dp) über die Summe der Zähne beider Zahnräder berechnen.
+  setups_comparison:
+    standard_setup:
+      spur_gear_teeth: 72
+      pinion_gear_teeth: 30
+      total_teeth: 102
+    speedrun_setup:
+      spur_gear_teeth: 64
+      pinion_gear_teeth: 38
+      total_teeth: 102
+  conclusion:
+    result: Da die Zähnesumme (102 Zähne) und damit der physische Gesamtdurchmesser
+      beider Setups exakt identisch ist, bleibt der Motor sicher im Verstellbereich
+      der Langlöcher.
+    gear_mesh_setup: Es gibt ausreichend Spielraum, um das Zahnflankenspiel (Gear
+      Mesh) mit dem Papier-Trick perfekt einzustellen.
+purchasing_and_installation_tips:
+  spur_gear:
+    teeth: 64
+    pitch: 48dp
+    mounting_requirement: Muss Standard-Bohrungen in der Mitte haben (meist 3 oder
+      4 Löcher im Kreis), um auf den Carten-Aluminium-Mitnehmer geschraubt werden
+      zu können.
+    suggested_brands:
+    - Arrowmax
+    - Kimbrough
+  pinion_gear:
+    teeth: 38
+    pitch: 48dp
+    clearance_warning: Ein 38Z Ritzel ist physisch massiv. Beim Einbau zwingend prüfen,
+      dass das große Ritzel nicht an der rotierenden Aluminium-Kardanwelle in der
+      Mitte schleift. Ein minimaler Sicherheitsabstand muss zwingend erhalten bleiben.
