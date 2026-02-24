@@ -2,7 +2,7 @@ import yaml
 import glob
 import os
 
-def build_full_spec(output_file='full_spec.yaml', input_pattern='spec_*.yaml'):
+def build_full_spec(output_file='full_spec.yaml', input_pattern='**/spec_*.yaml'):
     merged_data = {}
     
     # Alle passenden Dateien im Verzeichnis finden
