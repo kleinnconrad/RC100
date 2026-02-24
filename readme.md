@@ -54,6 +54,64 @@ python merge_specs.py
 * Schreibrechte: Die GitHub Action benötigt Read and write permissions (einstellbar unter Settings > Actions > General), um die generierte Datei speichern zu können.
 * Single Source of Truth: Fachliche Details immer nur in den Modul-Dateien ändern, da die full_spec.yaml bei jedem Push überschrieben wird.
 
+---
+
+# 🏛️ Architecture Decision Records (ADR) Automatisierung
+
+Um Architekturentscheidungen (Hardware, Komponenten, Design) transparent und nachvollziehbar zu dokumentieren, nutzen wir automatisierte **Architecture Decision Records (ADRs)**. 
+
+Anstatt eine unübersichtliche Textdatei manuell zu pflegen, werden Entscheidungen als strukturierte YAML-Dateien abgelegt und per CI/CD-Pipeline automatisch zu einer übersichtlichen Dokumentation zusammengebaut.
+
+## 📂 Ordnerstruktur
+
+```text
+.
+├── .github/workflows/
+│   └── build_adr_readme.yml     # GitHub Action für die ADR-Generierung
+├── Architektur/                 # Zentraler Ordner für Entscheidungen
+│   ├── adr_chassis.yaml         # Einzelner ADR (YAML)
+│   ├── adr_brushless.yaml       # Einzelner ADR (YAML)
+│   └── README.md                # 🤖 Automatisch generierte Übersicht
+└── generate_adr_readme.py       # Python-Skript (Parser & Markdown-Generator)
+```
+
+## ⚙️ Der Automatisierungs-Workflow
+
+Die Datei `Architektur/README.md` wird **niemals manuell bearbeitet**. Der Prozess ist zu 100 % automatisiert:
+
+1.  **Neuer ADR**: Eine neue Architekturentscheidung wird als Datei nach dem Namensschema `adr_*.yaml` im Ordner `Architektur/` angelegt (oder eine bestehende wird geändert).
+2.  **Push**: Die Änderung wird in den `main`-Branch gepusht.
+3.  **CI-Pipeline**: GitHub Actions erkennt die Änderung im Ordner `Architektur/` und startet einen Runner.
+4.  **Generierung**: Das Skript `generate_adr_readme.py` parst alle YAML-Dateien, sortiert sie nach ihrer ID und generiert dynamisch eine Markdown-Datei mit Inhaltsverzeichnis, Status-Indikatoren (🟢/🟡) und Detailbeschreibungen.
+5.  **Sync**: Der GitHub-Bot (`github-actions[bot]`) committet die aktualisierte `README.md` automatisch zurück in den `Architektur/`-Ordner.
+
+## 📝 Einen neuen ADR anlegen
+
+Um eine neue Entscheidung zu dokumentieren, erstelle einfach eine neue Datei (z. B. `adr_servo.yaml`) im Ordner `Architektur/` mit folgender Grundstruktur:
+
+```yaml
+adr_beispiel_entscheidung:
+  id: "ADR-00X"
+  title: "Kurzer, prägnanter Titel"
+  status: "Offen" # oder "Akzeptiert"
+  date: "YYYY-MM-DD"
+  context: "Warum müssen wir diese Entscheidung treffen?"
+  decision: "Was wurde entschieden?"
+  rationale: "Warum wurde so entschieden?"
+  consequences:
+    - "Welche Auswirkungen hat das auf das Projekt?"
+```
+
+## 🛠 Manuelle Synchronisation (Lokal)
+
+Um die Generierung der README vor dem Push lokal zu testen:
+
+```bash
+pip install pyyaml
+python generate_adr_readme.py
+```
+---
+
 ## ⚠️ Safety First & Pre-Flight Checks
 > Bei Rad-Drehzahlen jenseits der 8.000 U/min herrschen extreme Fliehkräfte. 
 > **Vor jedem Speedrun zwingend prüfen:**
