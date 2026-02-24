@@ -1,0 +1,77 @@
+# ==========================================
+# Architectural Decision Record (ADR-001)
+# ==========================================
+# Thema: Chassis-Plattform & Make-or-Buy
+
+adr_chassis_platform:
+  id: "ADR-001"
+  title: "Auswahl der Chassis-Plattform und Make-or-Buy-Entscheidung (100 km/h Benchmark)"
+  status: "Offen"
+  date: "2026-02-24"
+  
+  context: |
+    Für das 100 km/h-Speedrun-Projekt wird eine mechanisch stabile Basis benötigt. Die Plattform muss 
+    extremen Belastungen (ca. 44.000 U/min am Motor, massive Fliehkräfte an den Achsen) standhalten. 
+    Die grundlegende Architektur-Frage (Make or Buy) vergleicht den Aufbau eines eigenen Budget-Kits ("Make") 
+    mit dem Kauf eines teuren, vormontierten High-End-Wettbewerbschassis ("Buy"). 
+    Ein kritisches Risiko für den 3S-Einsatz stellen Differentialzahnräder aus Kunststoff/Composite dar, 
+    die dem Drehmoment oft nicht standhalten.
+
+  make_or_buy_evaluation:
+    buy_option: 
+      description: "Kauf eines High-End Wettbewerbs-Chassis (Benchmark: Xray X4 '24)."
+      pros: 
+        - "Perfekte Mechanik und Torsionssteifigkeit (Premium Carbon)."
+        - "Pivot-Ball / Active-Toe Aufhängung für extrem präzises Setup."
+        - "Risiko bei 3S / 100 km/h ist sehr gering."
+      cons: 
+        - "Extrem hohes Budget erforderlich (~ 750 € nur für den Bausatz)."
+        - "Differentiale sind trotz Wettbewerbs-Güte aus Kunststoff."
+    
+    make_option:
+      description: "Eigenaufbau basierend auf einem Budget-Kit (~ 140 - 180 €) und Modifikation für High-Speed."
+      pros: 
+        - "Volle Architekturkontrolle und tiefes Systemverständnis."
+        - "Signifikant budgetfreundlicher, lässt Spielraum für Best-of-Breed Elektronik."
+      cons: 
+        - "Hoher initialer Tuning-Aufwand (Shimming, Öl-Viskositäten, Vermeidung von Chassis-Flex)."
+
+  considered_alternatives:
+    - option_id: 1
+      name: "Xray X4 '24 (Benchmark / Buy-Option)"
+      type: "2-Riemen (Belt)"
+      price_class: "~ 750 €"
+      evaluation: "Referenzklasse. Perfekt berechneter Flex und Ultra-Low Mid-Motor. Wird jedoch aus Budgetgründen und der 'Buy'-Klassifizierung abgelehnt."
+      
+    - option_id: 2
+      name: "Xpress Arrow AT1S"
+      type: "Kardanwelle (Shaft)"
+      price_class: "~ 150 €"
+      evaluation: "Kardanantrieb ist gut, aber die FRP-Bodenplatte (Glasfaser) flext zu stark (Flattern bei 100 km/h möglich). Kritisch: Kunststoff-Differentiale."
+      
+    - option_id: 3
+      name: "Xpress Execute XQ2S"
+      type: "2-Riemen (Belt)"
+      price_class: "~ 150 €"
+      evaluation: "Riemenantrieb birgt bei 3S hohes Risiko des Überspringens. FRP-Chassis und Kunststoff-Diffs sind für das Drehmoment ungeeignet."
+      
+    - option_id: 4
+      name: "SNRC R23 / R3G"
+      type: "2-Riemen (Belt)"
+      price_class: "~ 140 €"
+      evaluation: "Bietet zwar eine steife Carbon-Platte, scheitert aber am Riemenantrieb-Risiko und den fraglichen Kunststoff-Differentialen."
+
+  decision: "MAKE - Carten T410R"
+  
+  rationale: |
+    Die Entscheidung fällt auf die "Make"-Option mit dem Carten T410R (~ 180 €). 
+    Es ist das einzige Kit im Benchmark-Feld dieser Preisklasse, das die essenziellen Anforderungen 
+    für einen 3S/100 km/h-Run ab Werk vereint: 
+    1. Eine steife 3mm Carbon-Bodenplatte (verhindert gefährliches Flattern). 
+    2. Einen robusten Kardanantrieb (eliminiert das Risiko überspringender Riemen). 
+    3. Differential-Zahnräder aus Sintermetall (löst das KO-Kriterium der abscherenden Kunststoff-Diffs). 
+    Der massive Preisvorteil gegenüber dem Xray X4 '24 rechtfertigt den erhöhten manuellen Setup-Aufwand vollkommen.
+    
+  consequences:
+    - "Die Metall-Differentiale des T410R müssen zwingend präzise geshimmt werden, um Spielfreiheit zu garantieren."
+    - "Die zentrale Aluminium-Kardanwelle muss vor dem Einbau auf Rundlauf geprüft werden, da bei Kardan-Setups starke Vibrationen entstehen können."
