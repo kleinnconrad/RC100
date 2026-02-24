@@ -1,0 +1,44 @@
+# ==========================================
+# Spezifikation: Ladetechnik (Smart Charger)
+# ==========================================
+# Hersteller: SkyRC
+# Modell: S100neo AC/DC
+# Artikelnummer: SK100202-01 (Berlinski: ROSK100202-01)
+# Ziel-Einsatz: Sicheres Laden & Lagern des 3S LiPo-Akkus
+
+charger_meta:
+  brand: "SkyRC"
+  model: "S100neo"
+  type: "Smart AC/DC Ladegerät"
+  architecture_fit: "Perfekt. Hat XT60-Buchse direkt im Gehäuse verbaut. Kein Adapter-Chaos."
+
+power_specifications:
+  input_voltage_ac: "100-240V (Integriertes Netzteil für normale Steckdose)"
+  input_voltage_dc: "6-30V"
+  charge_power_max_ac: "100W"  # Völlig ausreichend für unsere 63W Anforderung beim 3S Akku
+  charge_power_max_dc: "200W"
+  discharge_power_max: "5W (Hauptanschluss) / 20W (Balanceport)"
+
+charging_capabilities:
+  supported_chemistries: ["LiPo", "LiIon", "LiFe", "LiHV", "NiMH", "NiCd", "Pb"]
+  supported_cells_lipo: "1S bis 6S"  # Unterstützt unseren 3S Akku problemlos
+  charge_current_range: "0.1A - 12.0A"
+  discharge_current_range: "0.1A - 2.0A"
+  balancer_current_max: "1.0A"
+
+physical_specifications:
+  display: "Farb-LCD-Bildschirm"
+  dimensions_mm:
+    length: 105
+    width: 105
+    height: 62
+  weight_g: 340
+  control_interface: "Einfache 3-Tasten-Steuerung"
+
+# ==========================================
+# ⚠️ WICHTIGE LiPo WORKFLOW-REGELN
+# ==========================================
+lipo_safety_and_workflow:
+  charging_rule: "Den 5000mAh Akku immer mit '1C' laden. Am Ladegerät den Ladestrom auf exakt 5.0A einstellen."
+  storage_rule: "Nach dem Fahren NIEMALS den Akku leer in die Ecke legen. Immer das 'Storage'-Programm am S100neo starten, um die Zellen auf 3.8V Einlagerungsspannung zu bringen."
+  fire_safety: "Akkus immer in einem feuerfesten LiPo-Safe-Bag laden und aufbewahren."
