@@ -2,15 +2,16 @@ name: Generate Full Spec Markdown
 
 on:
   workflow_run:
-    workflows: ["Generate Full Spec"] # Name deiner ersten Action
+    # Dieser Name muss EXAKT mit dem 'name:' Feld in build_spec.yml übereinstimmen
+    workflows: ["Generate Full Spec"] 
     types:
       - completed
-  workflow_dispatch: # Erlaubt weiterhin manuellen Start
+  workflow_dispatch:
 
 jobs:
   build-markdown:
     runs-on: ubuntu-latest
-    # Nur ausführen, wenn die erste Action erfolgreich war
+    # Wir prüfen explizit auf Erfolg der Vor-Action
     if: ${{ github.event.workflow_run.conclusion == 'success' }}
     permissions:
       contents: write
@@ -42,5 +43,5 @@ jobs:
             git commit -m "docs(spec): auto-generate full_spec.md [skip ci]"
             git push
           else
-            echo "Keine Änderungen an der full_spec.md erkannt."
+            echo "Keine Änderungen an der full_spec.md erkannt oder Datei fehlt."
           fi
