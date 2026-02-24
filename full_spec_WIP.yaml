@@ -33,14 +33,14 @@ drivetrain_setup:
 
 electronics:
   esc:
-    brand: "Hobbywing / Robitronic"
+    brand: "Hobbywing QuicRun WP 10BL120 G2"
     amp_rating: 120A
     battery_limit: "3S LiPo"
     settings:
       punch: "Level 3 (Soft-Start zur Schonung des Antriebs)"
       timing: "0 Grad (Sicherheits-Setup für erste Runs)"
   motor:
-    size: "540er / 3650"
+    size: "Hobbywing QuicRun 3652SL G2"
     kv_rating: 4000kV
     poles: 4
     cooling: "Passiver Aluminium-Kühlkörper empfohlen"
