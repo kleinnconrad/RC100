@@ -3,25 +3,23 @@ import glob
 import os
 
 def generate_adr_readme():
-    # Pfade anpassen: Wir gehen davon aus, dass alles im Ordner "Architektur" liegt
-    adr_folder = 'Architektur'
+    # Pfad auf kleingeschriebenes 'architektur' angepasst
+    adr_folder = 'architektur'
     readme_path = os.path.join(adr_folder, 'README.md')
     search_pattern = os.path.join(adr_folder, 'adr_*.y*ml')
     
     files = sorted(glob.glob(search_pattern))
     
     if not files:
-        print("Keine ADR-Dateien gefunden.")
+        print(f"Keine ADR-Dateien im Ordner '{adr_folder}' gefunden.")
         return
 
     adrs = []
     
-    # 1. Alle YAMLs einlesen und strukturieren
     for file in files:
         with open(file, 'r', encoding='utf-8') as f:
             try:
                 data = yaml.safe_load(f)
-                # Das root-element extrahieren (z.B. adr_chassis_platform)
                 if data:
                     root_key = list(data.keys())[0]
                     adr_content = data[root_key]
@@ -29,15 +27,12 @@ def generate_adr_readme():
             except Exception as e:
                 print(f"Fehler beim Lesen von {file}: {e}")
 
-    # ADRs nach ID sortieren (ADR-001, ADR-002...)
     adrs = sorted(adrs, key=lambda x: x.get('id', ''))
 
-    # 2. Markdown zusammenbauen
     md_lines = []
     md_lines.append("# 🏛️ Architecture Decision Records (ADRs)\n")
     md_lines.append("Dieses Verzeichnis enthält alle grundlegenden Architektur- und Hardwareentscheidungen für das RC100 Projekt. **Diese Datei wird automatisch generiert. Bitte nicht manuell bearbeiten.**\n")
     
-    # -- Übersichtstabelle --
     md_lines.append("## 📋 Übersicht\n")
     md_lines.append("| ID | Datum | Titel | Status | Entscheidung |")
     md_lines.append("| :--- | :--- | :--- | :--- | :--- |")
@@ -49,7 +44,6 @@ def generate_adr_readme():
         status_str = adr.get('status', 'N/A')
         decision_str = adr.get('decision', 'N/A')
         
-        # Status mit Emojis aufwerten
         if status_str.lower() == 'offen':
             status_str = f"🟡 {status_str}"
         elif status_str.lower() in ['akzeptiert', 'geschlossen', 'entschieden']:
@@ -59,7 +53,6 @@ def generate_adr_readme():
         
     md_lines.append("\n---\n")
     
-    # -- Detail-Bereich --
     md_lines.append("## 📖 Detail-Protokolle\n")
     
     for adr in adrs:
@@ -81,4 +74,12 @@ def generate_adr_readme():
                 md_lines.append(f"- {cons}")
             md_lines.append("\n")
             
-        md_lines.append("--
+        md_lines.append("---\n")
+
+    with open(readme_path, 'w', encoding='utf-8') as f:
+        f.write('\n'.join(md_lines))
+        
+    print(f"🚀 README.md erfolgreich im Ordner {adr_folder} generiert!")
+
+if __name__ == '__main__':
+    generate_adr_readme()
