@@ -1,0 +1,45 @@
+# ==========================================
+# Spezifikation: Energiequelle (LiPo Akku)
+# ==========================================
+# Hersteller: Absima
+# Modell: Greenhorn Vol.2 LiPo Akku
+# Artikelnummer: 4140014 (oder AB4140014)
+# Ziel-Einsatz: 100 km/h Speedrun (Carten T410R)
+
+battery_meta:
+  brand: "Absima"
+  series: "GreenHorn Line V2"
+  part_number: "4140014"
+  type: "LiPo (Lithium-Polymer)"
+
+electrical_specifications:
+  voltage: "11.1V (Nennspannung)"
+  cells: "3S"
+  capacity: "5000 mAh"
+  energy: "55.5 Wh"
+  discharge_rate_continuous: "50C"
+  max_continuous_amp_draw: 250A  # Berechnet: 5000mAh * 50C (Massiver Puffer für den 120A Regler)
+
+connectors:
+  main_power: "XT60 (Plug & Play mit Hobbywing QuicRun G2 ESC)"
+  balancer: "XH (Standard-Balancer für das Ladegerät)"
+
+physical_specifications:
+  case_type: "Hardcase (HC) - Hartplastik Box"
+  safety: "Zwingend erforderlich für Speedruns zum Schutz vor Kardanwelle/Crashes."
+  weight_g: 370
+  dimensions:
+    length_mm: 138
+    width_mm: 46
+    height_mm: 35  # Achtung: 10mm höher als Standard-2S-Akkus!
+
+# ==========================================
+# ⚠️ WICHTIGER BAU-HINWEIS FÜR CARTEN T410R
+# ==========================================
+chassis_integration_notes:
+  issue: "Der Carten T410R ist ab Werk für 2S-Akkus (25mm Höhe) konzipiert. Dieser 3S-Akku ist 35mm hoch."
+  solution: "Die obere Carbon-Akkustrebe des Chassis muss 'höhergelegt' werden."
+  required_parts:
+    - "2x Distanzhülsen/Spacers (Kunststoff oder Alu) mit ca. 10mm Höhe"
+    - "2x minimal längere M3-Schrauben (ca. M3x16 oder M3x18)"
+  execution: "Spacers auf die originalen Alu-Pfosten legen, Carbon-Strebe darauf verschrauben. Kein Dremeln oder Fräsen am Chassis notwendig."
