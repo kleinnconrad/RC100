@@ -1,16 +1,17 @@
 name: Generate Full Spec Markdown
 
 on:
-  push:
-    branches:
-      - main  # (Auch hier: ggf. auf master ändern, falls dein Branch so heißt)
-    paths:
-      - 'full_spec.yaml' # <--- Der Trigger! Startet nur, wenn die full_spec.yaml aktualisiert wurde.
-  workflow_dispatch:
+  workflow_run:
+    workflows: ["Generate Full Spec"] # Name deiner ersten Action
+    types:
+      - completed
+  workflow_dispatch: # Erlaubt weiterhin manuellen Start
 
 jobs:
   build-markdown:
     runs-on: ubuntu-latest
+    # Nur ausführen, wenn die erste Action erfolgreich war
+    if: ${{ github.event.workflow_run.conclusion == 'success' }}
     permissions:
       contents: write
 
@@ -36,7 +37,6 @@ jobs:
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
           
-          # Prüfen ob die Markdown-Datei existiert und ob es Änderungen gab
           if [[ -f "full_spec.md" ]] && [[ -n "$(git status --porcelain full_spec.md)" ]]; then
             git add full_spec.md
             git commit -m "docs(spec): auto-generate full_spec.md [skip ci]"
