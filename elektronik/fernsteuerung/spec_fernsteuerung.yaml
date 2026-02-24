@@ -1,0 +1,34 @@
+# ==========================================
+# Spezifikation: Fernsteuerung & Empfänger (TX/RX)
+# ==========================================
+# Hersteller: DumboRC
+# Modell: X6 (Sender) + X6FG (Empfänger)
+# Ziel-Einsatz: Maximale Reichweite und Signalstabilität für 100 km/h Speedruns
+
+tx_meta_transmitter:
+  brand: "DumboRC"
+  model: "X6"
+  type: "2.4 GHz Pistolengriff-Sender (Surface)"
+  channels: 6
+  price_class: "Budget / MVP (~35 - 45 EUR)"
+
+tx_performance:
+  protocol: "FHSS (Frequency-Hopping Spread Spectrum)"
+  range_ground: "300 - 400 Meter (Überlebenswichtig für 100 km/h Runs)"
+  response_time: "12 ms (Extrem niedrige Latenz)"
+  power_supply: "4x AA Batterien (Alternative: 2S LiPo im Batteriefach)"
+
+rx_meta_receiver:
+  model: "X6FG (Das 'G' ist das kritische Feature!)"
+  channels: 6
+  integrated_features:
+    - "Elektronischer Gyroskop-Kreisel (Gyro)"
+  input_voltage: "4.8V - 10.0V (Kompatibel mit dem 6.0V/7.4V BEC des Hobbywing-Reglers)"
+
+# ==========================================
+# ⚠️ WICHTIGE SETUP-HINWEISE FÜR DEN CARTEN T410R
+# ==========================================
+calibration_and_setup:
+  gyro_activation: "Der Gyro muss am Empfänger meist per Knopf-Kombination (schnelles Drücken) aktiviert werden (LED wechselt die Farbe, meist auf Grün oder Orange). Vor dem Fahren unbedingt aufbocken und prüfen, ob der Gyro in die korrekte Richtung gegenlenkt!"
+  steering_dual_rate: "Über den CH1-Drehregler an der Fernsteuerung den maximalen Lenkausschlag (Dual Rate) zwingend auf ca. 30 % reduzieren. Bei 100 km/h führt ein voller Lenkausschlag zum sofortigen Überschlag."
+  throttle_trim: "Die Trimmung für das Gas (TH Trim) muss zwingend auf dem Nullpunkt (Mitte) stehen, bevor der Hobbywing-Regler zum ersten Mal kalibriert wird."
