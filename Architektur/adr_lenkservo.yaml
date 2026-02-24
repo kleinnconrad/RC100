@@ -1,0 +1,55 @@
+# ==========================================
+# Architectural Decision Record (ADR-006)
+# ==========================================
+# Thema: Auswahl des Lenkservos (Steering Servo)
+
+adr_servo_selection:
+  id: "ADR-006"
+  title: "Auswahl des Lenkservos für präzise High-Speed-Kontrolle"
+  status: "Offen"
+  date: "2026-02-24"
+  
+  context: |
+    Bei Geschwindigkeiten von 100 km/h wirken enorme aerodynamische und mechanische Kräfte 
+    auf die Vorderräder des Carten T410R. Ein minimales Zittern, Spiel oder eine zu langsame 
+    Reaktionszeit des Lenkservos können sofort zum Kontrollverlust und Totalausfall führen. 
+    Zudem ist der Platz in einem 1:10 Tourenwagen-Chassis begrenzt, weshalb Standardgrößen 
+    oft das Kabelmanagement erschweren oder den Schwerpunkt unnötig nach oben verlagern. 
+    Gefordert ist ein Servo mit Metallgetriebe (Robustheit), hoher Stellgeschwindigkeit 
+    (unter 0.10s) und ausreichender Stellkraft (ca. 8-10 kg).
+
+  considered_alternatives:
+    - option_id: 1
+      name: "Standard RTR / Plastikgetriebe-Servo (3-6 kg)"
+      type: "Low-End / Standardgröße"
+      evaluation: "Sehr günstig (oft < 15 €), aber lebensgefährlich für das Projekt. Plastikzahnräder scheren bei den Rückstellkräften bei 100 km/h sofort ab. Mit oft > 0.15s Stellzeit viel zu langsam für Korrekturen des DumboRC-Gyros."
+      
+    - option_id: 2
+      name: "High-End Brushless Full-Size Servo (z.B. Savöx SB-2290SG)"
+      type: "Premium / Standardgröße / 50+ kg"
+      evaluation: "Monströse Stellkraft und extrem schnell. Aber: Völlig überdimensioniert (Over-Engineering), extrem teuer (> 130 €) und vor allem als Full-Size-Servo zu groß/schwer für das kompakte 1:10 Carten T410R Chassis."
+      
+    - option_id: 3
+      name: "Savöx SC-1251MG+"
+      type: "Mid-Range / Low-Profile / Metallgetriebe"
+      evaluation: "Der absolute Goldstandard im 1:10 Tourenwagen-Bereich. Durch die Low-Profile-Bauweise spart es Platz und Gewicht. Das Metallgetriebe hält Stößen stand, und die Stellzeit von 0.09s bei 6.0V harmoniert perfekt mit schnellen Gyro-Korrekturen. 9kg Stellkraft sind für 1:10 On-Road mehr als ausreichend."
+
+  decision: "Savöx SC-1251MG+"
+  
+  servo_meta:
+    brand: "Savöx"
+    model: "SC-1251MG+"
+    type: "Digitales Low-Profile Servo"
+
+  rationale: |
+    Die Entscheidung fällt auf das Savöx SC-1251MG+. Es bietet die exakt benötigte Balance aus 
+    Geschwindigkeit (0.09s), Kraft (9.0 kg bei 6.0V) und Bauform (Low-Profile). Die verringerte 
+    Bauhöhe senkt den Schwerpunkt des Chassis und schafft Platz für die Kabelführung des 120A Reglers. 
+    Das '+' im Namen steht für den Softstart und die Sanwa-SSR-Kompatibilität, was eine extrem 
+    feinfühlige und hochauflösende Ansteuerung ermöglicht. Ein Ausfall der Lenkung durch 
+    Zahnradbruch wird durch das Vollmetallgetriebe quasi eliminiert.
+    
+  consequences:
+    - "Servohorn-Upgrade: Das dem Carten-Bausatz beiliegende Plastik-Servohorn muss zwingend gegen ein steifes Aluminium-Servohorn mit 25 Zähnen (25T - passend für Savöx/Futaba) getauscht werden, da Plastik bei High-Speed flext."
+    - "BEC-Spannung: Das BEC (Battery Eliminator Circuit) des Hobbywing-Reglers muss auf 6.0V eingestellt werden, um die volle Leistung des Servos abzurufen."
+    - "Stromhunger: Savöx-Servos ziehen kurzzeitig hohe Anlaufströme. Das 5A BEC des Hobbywing 10BL120 G2 ist dafür aber stark genug dimensioniert (kein externer Kondensator/Glitch-Buster nötig)."
