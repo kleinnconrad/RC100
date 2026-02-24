@@ -10,6 +10,7 @@ Dieses Verzeichnis enthält alle grundlegenden Architektur- und Hardwareentschei
 | **ADR-002** | 2026-02-24 | Auswahl der Brushless-Antriebseinheit (ESC & Motor) für 100 km/h Speedruns | 🟡 Offen | Hobbywing QuicRun WP 10BL120 G2 Combo |
 | **ADR-003** | 2026-02-24 | Auswahl des LiPo-Akkus für 100 km/h Ziel | 🟡 Offen | Absima GreenHorn Line V2 (3S / 5000mAh / 50C / Hardcase) |
 | **ADR-004** | 2026-02-24 | Auswahl des Ladegeräts für 3S LiPo-Akkus | 🟡 Offen | SkyRC S100neo |
+| **ADR-005** | 2026-02-24 | Auswahl der Fernsteuerungsanlage für 100 km/h Speedruns | 🟡 Offen | DumboRC X6 |
 
 ---
 
@@ -140,6 +141,39 @@ Adapterkabel überflüssig macht. Dies passt perfekt zur Architektur-Entscheidun
 - Sicherheit beim Laden: Neben dem XT60-Hauptstecker muss zwingend das weiße JST-XH Balancer-Kabel des Akkus in den Port des Ladegeräts gesteckt werden, da sonst die Einzelzellen nicht überwacht werden.
 - Kabel-Minimalismus: Es werden keine zusätzlichen Ladekabel benötigt (Akku wird direkt an das Gerät gesteckt).
 - Kühlung: Das Ladegerät verfügt über einen aktiven Lüfter. Beim Laden muss auf einen sicheren Stand und freie Luftzufuhr geachtet werden.
+
+
+---
+
+### ADR-005: Auswahl der Fernsteuerungsanlage für 100 km/h Speedruns
+**Status:** Offen | **Datum:** 2026-02-24
+
+#### Kontext
+Ein RC-Car, das mit 100 km/h (ca. 27,7 Meter pro Sekunde) fährt, legt in wenigen Sekunden 
+enorme Distanzen zurück. Die Fernsteuerung (Transmitter) und der Empfänger (Receiver) 
+müssen daher zwingend eine extrem hohe und stabile Reichweite (300 bis 400 Meter) aufweisen, 
+damit das Fahrzeug am Ende der Beschleunigungsstrecke nicht außer Kontrolle gerät. 
+Zudem ist bei diesen Geschwindigkeiten eine elektronische Stabilisierungshilfe (Gyro) 
+im Empfänger hochgradig empfehlenswert, um das Fahrzeug beim kleinsten Ausbrechen 
+automatisch in der Spur zu halten.
+
+
+#### Entscheidung
+> **DumboRC X6**
+
+#### Begründung (Rationale)
+Die Entscheidung fällt auf die DumboRC X6. Sie bietet exakt die zwei Features, die für 
+das Projekt überlebenswichtig sind, ohne das Budget zu sprengen: Eine außergewöhnlich 
+hohe Reichweite und die Möglichkeit, kostengünstige Gyro-Empfänger zu nutzen. Da bei einem 
+Speedrun keine komplexen Mischer, Dual-Rate-Kurven oder Telemetriedaten auf einem 
+Senderdisplay benötigt werden, ist das spartanische Design der X6 kein technischer Nachteil, 
+sondern ein effizienter Ressourceneinsatz.
+
+
+#### Konsequenzen
+- Empfänger-Wahl: Es muss zwingend der Empfänger 'X6FG' (das 'G' steht für Gyro) verbaut werden. Der Standard-Empfänger X6F hat keine Stabilisierung.
+- Setup: Der Gyro (Kanal 6 Drehregler am Sender) muss vor dem ersten Run auf einer sicheren Fläche präzise eingestellt werden (Sensitivität), damit sich die Lenkung bei High-Speed nicht aufschaukelt (Speed-Wobble).
+- Batterien: Der Sender benötigt 4x AA Batterien. Für konstante Sendeleistung sollten hochwertige Akkus (z.B. Eneloop) verwendet werden.
 
 
 ---
