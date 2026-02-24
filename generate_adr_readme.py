@@ -4,7 +4,7 @@ import os
 
 def generate_adr_readme():
     # Pfad auf kleingeschriebenes 'architektur' angepasst
-    adr_folder = 'architektur'
+    adr_folder = 'Architektur'
     readme_path = os.path.join(adr_folder, 'README.md')
     search_pattern = os.path.join(adr_folder, 'adr_*.y*ml')
     
