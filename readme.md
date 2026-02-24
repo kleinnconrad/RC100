@@ -15,16 +15,22 @@ Das Ziel ist es, ein Carten T410R Tourenwagen-Chassis mechanisch und elektronisc
 
 ---
 
-## 🔄 Unser Git-Workflow (Der digitale Boxenstopp)
-Da wir am Auto kontinuierlich Parameter (Öl-Viskosität, Ritzel, Fahrwerk) verändern werden, nutzen wir Git, um kein funktionierendes Setup versehentlich zu überschreiben.
+## 🚀 Architektur-Dokumentation & Automatisierung
 
-### Die goldenen Regeln:
-1. **Der Main-Branch (`main`):** Hier liegt *ausschließlich* das aktuell stabile und fahrbare Setup.
-2. **Neues Setup testen (Branching):** * Bevor etwas am Auto umgebaut wird, erstellen wir einen neuen Branch (z.B. `setup/diff-oil-100k`).
-   * Die Änderungen werden dort im YAML dokumentiert und committet.
-3. **Der Track-Test:** Das Auto wird mit dem neuen Setup gefahren.
-4. **Auswertung (Pull Request):** * **Erfolg:** Das Auto lag stabil bei Top-Speed -> Wir öffnen einen PR und mergen das neue Setup in `main`.
-   * **Fehlschlag:** Das Auto war unfahrbar -> Wir verwerfen den Branch und bauen das Auto mechanisch wieder auf den Stand von `main` zurück.
+Dieses Repository nutzt einen **"Docs-as-Code"** Ansatz. Die Fahrzeugspezifikationen sind modular in einzelnen YAML-Dateien abgelegt und werden automatisch zu einer Gesamtspezifikation zusammengeführt.
+
+## 📂 Ordnerstruktur
+
+```text
+.
+├── .github/workflows/
+│   └── build_spec.yml      # GitHub Action (Pipeline-Logik)
+├── specs/                  # Fachmodule (Einzel-Spezifikationen)
+│   ├── spec_motor.yaml
+│   ├── spec_akku.yaml
+│   └── ...
+├── merge_specs.py          # Python-Merge-Skript (SSOT-Logik)
+└── full_spec.yaml          # Generierte Gesamtspezifikation (Build-Artefakt)
 
 ---
 
