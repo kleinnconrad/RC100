@@ -1,0 +1,49 @@
+# ==========================================
+# Architectural Decision Record (ADR-003)
+# ==========================================
+# Thema: Auswahl des LiPo-Akkus (Energiequelle)
+
+adr_battery_selection:
+  id: "ADR-003"
+  title: "Auswahl des LiPo-Akkus für 100 km/h Ziel"
+  status: "Offen"
+  date: "2026-02-24"
+  
+  context: |
+    Um das RC100 Projekt auf über 100 km/h zu beschleunigen, muss die Energiequelle perfekt 
+    auf den 4000kV Motor und den 120A ESC (Hobbywing QuicRun) abgestimmt sein. 
+    Ein 2S LiPo (7.4V) würde nur ca. 29.600 U/min liefern, was für 100 km/h bei normaler 
+    Übersetzung nicht ausreicht. Daher ist ein 3S LiPo (11.1V) zwingend erforderlich, um 
+    die rechnerischen ~44.400 U/min zu erreichen. Zudem muss der Akku kurzzeitig extreme 
+    Ströme liefern können, ohne in der Spannung einzubrechen (Voltage Sag), und bei einem 
+    eventuellen Crash bei hoher Geschwindigkeit physisch geschützt sein.
+
+  considered_alternatives:
+    - option_id: 1
+      name: "Standard 2S LiPo (7.4V) / Low-C 3S LiPo (30C)"
+      type: "Budget / Softcase"
+      evaluation: "2S liefert zu wenig Spannung für das Speed-Ziel. Ein 3S Akku mit nur 30C Entladerate bricht bei den 120A+ Peak-Strömen der langen Übersetzung ein, wird heiß und bläht sich auf (Brandgefahr). Softcases bieten bei 100 km/h keinen Crash-Schutz."
+      
+    - option_id: 2
+      name: "High-End Graphene 3S LiPo (z.B. Gens Ace Redline 130C)"
+      type: "Premium / Hardcase"
+      evaluation: "Bietet extrem stabile Spannungslagen (kaum Voltage Sag) und gigantische Stromreserven. Ist jedoch sehr teuer (> 90 €) und oft so massiv gebaut, dass er ohne starke Modifikationen am Chassis-Layout nicht in einen 1:10 Tourenwagen passt."
+      
+    - option_id: 3
+      name: "Absima GreenHorn Line V2 3S (Art. 4140014)"
+      type: "Mid-Range / Hardcase"
+      evaluation: "Bietet 11.1V, 5000mAh und eine konstante Entladerate von 50C (theoretisch 250A Dauerlast), was den 120A Regler perfekt abdeckt. Das Hardcase schützt die Zellen. Bietet das beste Preis-Leistungs-Verhältnis (~ 45 €) für das Projektbudget."
+
+  decision: "Absima GreenHorn Line V2 (3S / 5000mAh / 50C / Hardcase)"
+  
+  rationale: |
+    Die Entscheidung fällt auf den Absima GreenHorn V2 3S LiPo. Mit 50C Entladerate bietet er 
+    genügend Puffer für die massiven Stromspitzen beim Beschleunigen der 64Z/38Z Übersetzung. 
+    Das Hardcase ist ein absolutes Sicherheits-Muss für Speedruns, da ein Einschlag bei 100 km/h 
+    einen Softcase-LiPo sofort zerstören und entzünden würde. Der vorkonfektionierte XT60-Stecker 
+    garantiert einen geringen Übergangswiderstand für die hohen Ströme.
+    
+  consequences:
+    - "Chassis-Modifikation: Da 3S Hardcase-Akkus ca. 35mm hoch sind, muss die obere Carbon-Akkustrebe im Carten T410R mit 10mm Spacern und längeren M3-Schrauben erhöht werden."
+    - "Stecker-Kompatibilität: Der Hobbywing-Regler muss zwingend mit einem passenden XT60-Stecker verlötet werden (keine Tamiya-Stecker bei diesen Strömen!)."
+    - "Sicherheit: Laden und Lagern des Akkus (55.5 Wh) darf nur unter Aufsicht in einem Bat-Safe oder einer feuerfesten LiPo-Tasche erfolgen."
