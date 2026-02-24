@@ -8,6 +8,7 @@ Dieses Verzeichnis enthält alle grundlegenden Architektur- und Hardwareentschei
 | :--- | :--- | :--- | :--- | :--- |
 | **ADR-001** | 2026-02-24 | Auswahl der Chassis-Plattform und Make-or-Buy-Entscheidung (100 km/h Benchmark) | 🟡 Offen | MAKE - Carten T410R |
 | **ADR-002** | 2026-02-24 | Auswahl der Brushless-Antriebseinheit (ESC & Motor) für 100 km/h Speedruns | 🟡 Offen | Hobbywing QuicRun WP 10BL120 G2 Combo |
+| **ADR-003** | 2026-02-24 | Auswahl des LiPo-Akkus für 100 km/h Ziel | 🟡 Offen | Absima GreenHorn Line V2 (3S / 5000mAh / 50C / Hardcase) |
 
 ---
 
@@ -75,6 +76,38 @@ und ein stabiles BEC, was bei über 100 km/h einen Ausfall der Lenkung verhinder
 - System ist sensorlos (Sensorless): Beim langsamen Anfahren kann leichtes 'Cogging' (Stottern) auftreten. Dies ist für das Speedrun-Ziel irrelevant.
 - Zusätzliche Kühlung erforderlich: Der 3652SL Motor muss bei 3S zwingend mit einem passiven Alu-Kühlkörper und einem aktiven 40mm High-Speed-Lüfter nachgerüstet werden (siehe spec_cooling.yaml).
 - Kein integriertes Data-Logging: Topspeed und Temperaturen müssen extern gemessen werden (z. B. GPS-Logger und Infrarot-Thermometer).
+
+
+---
+
+### ADR-003: Auswahl des LiPo-Akkus für 100 km/h Ziel
+**Status:** Offen | **Datum:** 2026-02-24
+
+#### Kontext
+Um das RC100 Projekt auf über 100 km/h zu beschleunigen, muss die Energiequelle perfekt 
+auf den 4000kV Motor und den 120A ESC (Hobbywing QuicRun) abgestimmt sein. 
+Ein 2S LiPo (7.4V) würde nur ca. 29.600 U/min liefern, was für 100 km/h bei normaler 
+Übersetzung nicht ausreicht. Daher ist ein 3S LiPo (11.1V) zwingend erforderlich, um 
+die rechnerischen ~44.400 U/min zu erreichen. Zudem muss der Akku kurzzeitig extreme 
+Ströme liefern können, ohne in der Spannung einzubrechen (Voltage Sag), und bei einem 
+eventuellen Crash bei hoher Geschwindigkeit physisch geschützt sein.
+
+
+#### Entscheidung
+> **Absima GreenHorn Line V2 (3S / 5000mAh / 50C / Hardcase)**
+
+#### Begründung (Rationale)
+Die Entscheidung fällt auf den Absima GreenHorn V2 3S LiPo. Mit 50C Entladerate bietet er 
+genügend Puffer für die massiven Stromspitzen beim Beschleunigen der 64Z/38Z Übersetzung. 
+Das Hardcase ist ein absolutes Sicherheits-Muss für Speedruns, da ein Einschlag bei 100 km/h 
+einen Softcase-LiPo sofort zerstören und entzünden würde. Der vorkonfektionierte XT60-Stecker 
+garantiert einen geringen Übergangswiderstand für die hohen Ströme.
+
+
+#### Konsequenzen
+- Chassis-Modifikation: Da 3S Hardcase-Akkus ca. 35mm hoch sind, muss die obere Carbon-Akkustrebe im Carten T410R mit 10mm Spacern und längeren M3-Schrauben erhöht werden.
+- Stecker-Kompatibilität: Der Hobbywing-Regler muss zwingend mit einem passenden XT60-Stecker verlötet werden (keine Tamiya-Stecker bei diesen Strömen!).
+- Sicherheit: Laden und Lagern des Akkus (55.5 Wh) darf nur unter Aufsicht in einem Bat-Safe oder einer feuerfesten LiPo-Tasche erfolgen.
 
 
 ---
