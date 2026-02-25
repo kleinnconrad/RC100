@@ -1,0 +1,27 @@
+reifen_meta:
+  brand: "Sweep Racing"
+  model: "HANKOOK Tread Belted tires Pre-glued set Pro-compound 36deg for Asphalt"
+  part_number: "SR-SSF-36AWPG"
+  type: "Gewebeverstärkte Gummireifen (Belted), fertig verklebt"
+
+physical_specifications:
+  width: "24mm (Standard 1:10 Tourenwagen)"
+  hex_size: "12mm"
+  compound: "36 Shore (Hart / optimiert für Asphalt)"
+  tread_pattern: "Hankook lizenziertes Profil (Rillen)"
+  wheel_design: "12-Speichen-Felge (Weiß)"
+  surface_recommendation: "Asphalt (Alltag / ungesäubert)"
+
+performance_features:
+  anti_ballooning: "Ein eingegossener Kevlar-/Aramid-Gürtel verhindert das lebensgefährliche Ausdehnen (Pizza-Cutter-Effekt) bei den angepeilten 44.000 U/min (100 km/h)."
+  pre_glued: "Ab Werk industriell verklebt, was das Risiko minimiert, dass sich der Reifen bei extremen Fliehkräften von der Felge löst."
+
+architecture_rationale:
+  why_not_slicks: |
+    Ein profilloser Voll-Slick (z. B. Sweep EXP Belted Slicks) bietet theoretisch die absolute 
+    Höchstleistung, maximale Kontaktfläche (100 % Gummi) und extreme Laufruhe bei 100 km/h. 
+    Dieser Vorteil gilt jedoch nur auf perfekt präparierten, staubfreien Rennstrecken. 
+    Im realen Einsatz auf normalen Straßen oder Parkplätzen sammeln Slicks den feinen Staub auf 
+    und verlieren massiv an Traktion. Das gewählte Hankook-Profil mit seinen Rillen kann diesen 
+    Straßenschmutz abtransportieren und bietet auf ungesäubertem Asphalt ein deutlich sichereres, 
+    gutmütigeres Fahrverhalten bei voller Anti-Ballooning-Sicherheit.
