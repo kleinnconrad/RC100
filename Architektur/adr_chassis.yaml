@@ -61,6 +61,12 @@ adr_chassis_platform:
       price_class: "~ 140 €"
       evaluation: "Bietet zwar eine steife Carbon-Platte, scheitert aber am Riemenantrieb-Risiko und den fraglichen Kunststoff-Differentialen."
 
+    - option_id: 5
+      name: "Schumacher Vibe TC"
+      type: "2-Riemen (Belt) / S2 Composite"
+      price_class: "~ 140 €"
+      evaluation: "Exzellentes Club-Racing Chassis, aber für 100 km/h an 3S ungeeignet. Der Riemenantrieb birgt das Risiko des Überspringens bei extremem Drehmoment. Das weiche S2 Composite (Glasfaser) Chassis flext zu stark (Gefahr des Abhebens bei High-Speed). Radmitnehmer aus Kunststoff halten der 3S-Leistung nicht stand."
+
   decision: "MAKE - Carten T410R"
   
   rationale: |
