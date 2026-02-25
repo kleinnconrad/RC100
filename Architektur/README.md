@@ -13,6 +13,7 @@ Dieses Verzeichnis enthält alle grundlegenden Architektur- und Hardwareentschei
 | **ADR-005** | 2026-02-24 | Auswahl der Fernsteuerungsanlage für 100 km/h Speedruns | 🟡 Offen | DumboRC X6 |
 | **ADR-006** | 2026-02-24 | Auswahl des Lenkservos für präzise High-Speed-Kontrolle | 🟡 Offen | Savöx SC-1251MG+ |
 | **ADR-007** | 2026-02-24 | Auswahl der aktiven und passiven Motorkühlung für 3S-Speedruns | 🟡 Offen | Passiver 36mm Alu-Kühlkörper kombiniert mit aktivem 40x40mm High-Speed Alu-Lüfter |
+| **ADR-008** | 2026-02-25 | Auswahl der Bereifung (Belted Gummireifen für Asphalt) für 100 km/h Speedruns | 🟡 Offen | Sweep HANKOOK Tread Belted tires Pre-glued set Pro-compound 36deg for Asphalt (SR-SSF-36AWPG) |
 
 ---
 
@@ -241,6 +242,43 @@ Mini-Kühlkörper.
 - Stromversorgung: Der Lüfter muss in einen freien Steckplatz des DumboRC-Empfängers (z.B. CH3 oder CH4) gesteckt werden, um Strom vom Regler-BEC zu beziehen.
 - Kabelmanagement: Durch den extremen Sog des High-Speed-Lüfters müssen alle Kabel (insbesondere Antenne und Servokabel) zwingend mit Kabelbindern gesichert werden, damit sie nicht in die Rotorblätter geraten.
 - Wärmeleitpaste: Es wird dringend empfohlen, zwischen Motor und Alu-Kühlkörper einen Tropfen PC-Wärmeleitpaste aufzutragen, um den thermischen Übergangswiderstand zu minimieren.
+
+
+---
+
+### ADR-008: Auswahl der Bereifung (Belted Gummireifen für Asphalt) für 100 km/h Speedruns
+**Status:** Offen | **Datum:** 2026-02-25
+
+#### Kontext
+Bei einer Zielgeschwindigkeit von 100 km/h und den damit verbundenen extremen Drehzahlen 
+der Räder dehnen sich Standard-Gummireifen durch die Fliehkraft massiv in der Mitte aus 
+(der sogenannte "Pizza-Cutter-Effekt" oder "Ballooning"). Das führt zu einem sofortigen 
+Kontrollverlust und oft zum Platzen des Reifens. Gefordert sind fertig verklebte Reifen 
+auf Felgen mit einem 12mm-Sechskant-Mitnehmer (passend für das Carten T410R Chassis), 
+die ihre Form unter extremen Fliehkräften zu 100 % beibehalten und deren Gummimischung 
+der hohen Reibungshitze auf rauem Asphalt standhält.
+Zusätzlich muss die reale Streckenbeschaffenheit (nicht staubfreier Normal-Asphalt vs. 
+sauber präparierte Rennstrecke) bei der Wahl des Reifenprofils (Slick vs. Rillen) 
+beachtet werden.
+
+
+#### Entscheidung
+> **Sweep HANKOOK Tread Belted tires Pre-glued set Pro-compound 36deg for Asphalt (SR-SSF-36AWPG)**
+
+#### Begründung (Rationale)
+Die Entscheidung fällt auf die fertig verklebten Sweep HANKOOK Tread Belted Reifen mit 
+der härteren 36-Shore Asphalt-Mischung. Obwohl ein profilloser Voll-Slick physikalisch 
+die absolute Höchstleistung und maximale Laufruhe bei 100 km/h bietet, ist er im realen 
+Einsatz auf nicht perfekt gekehrten Parkplätzen zu empfindlich gegen feinen Staub (Verlust 
+der Traktion). Das Hankook-Profil kann leichten Schmutz abtransportieren und bietet 
+auf Normal-Asphalt das sicherere und gutmütigere Fahrverhalten. Gleichzeitig garantiert 
+das essenzielle Kevlar-Gewebe (Belt) absolute Sicherheit gegen das lebensgefährliche Ausdehnen.
+
+
+#### Konsequenzen
+- Vorab-Check: Auch ab Werk fertig verklebte Reifen müssen vor dem ersten Run zwingend auf Verarbeitungsfehler an der Klebenaht geprüft werden (kurz an der Reifenflanke ziehen).
+- Auswuchten: Da bei 100 km/h kleinste Unwuchten das Fahrwerk destabilisieren, sollten die Räder idealerweise mit einer RC-Reifenwaage und Knetblei ausgewuchtet werden.
+- Temperaturfenster: Die 36-Shore Mischung ist relativ hart. Um maximalen mechanischen Grip aufzubauen, müssen die Reifen vor dem eigentlichen Speedrun durch 1-2 langsame Runden warmgefahren werden.
 
 
 ---
