@@ -6,8 +6,8 @@ on:
       - main
     paths:
       # Pfade auf kleingeschriebenes 'architektur' angepasst
-      - 'Architektur/adr_*.yaml'
-      - 'Architektur/adr_*.yml'
+      - 'architektur/adr_*.yaml'
+      - 'architektur/adr_*.yml'
       - 'generate_adr_readme.py'
   workflow_dispatch:
 
@@ -40,10 +40,10 @@ jobs:
           git config --local user.name "github-actions[bot]"
           
           # Pfade beim Check und Commit auf 'architektur' angepasst
-          if [[ -f "Architektur/README.md" ]] && [[ -n "$(git status --porcelain Architektur/README.md)" ]]; then
-            git add Architektur/README.md
-            git commit -m "docs(adr): auto-update Architektur/README.md [skip ci]"
+          if [[ -f "architektur/README.md" ]] && [[ -n "$(git status --porcelain architektur/README.md)" ]]; then
+            git add architektur/README.md
+            git commit -m "docs(adr): auto-update architektur/README.md [skip ci]"
             git push
           else
-            echo "Keine Änderungen an der Architektur/README.md erkannt."
+            echo "Keine Änderungen an der architektur/README.md erkannt."
           fi

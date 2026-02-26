@@ -4,7 +4,7 @@ import os
 
 def generate_adr_readme():
     # Pfad auf kleingeschriebenes 'architektur' angepasst
-    adr_folder = 'Architektur'
+    adr_folder = 'architektur'
     readme_path = os.path.join(adr_folder, 'README.md')
     search_pattern = os.path.join(adr_folder, 'adr_*.y*ml')
     
@@ -31,7 +31,7 @@ def generate_adr_readme():
 
     md_lines = []
     md_lines.append("# 🏛️ Architecture Decision Records (ADRs)\n")
-    md_lines.append("Dieses Verzeichnis enthält alle grundlegenden Architektur- und Hardwareentscheidungen für das RC100 Projekt. **Diese Datei wird automatisch generiert. Bitte nicht manuell bearbeiten.**\n")
+    md_lines.append("Dieses Verzeichnis enthält alle grundlegenden architektur- und Hardwareentscheidungen für das RC100 Projekt. **Diese Datei wird automatisch generiert. Bitte nicht manuell bearbeiten.**\n")
     
     md_lines.append("## 📋 Übersicht\n")
     md_lines.append("| ID | Datum | Titel | Status | Entscheidung |")
