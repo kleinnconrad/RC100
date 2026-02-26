@@ -1,11 +1,11 @@
-name: Build Specs and Shopping List
+name: Build Specs, Docs and Shopping List
 
 on:
   push:
     branches:
       - main
     paths:
-      - '**/spec_*.yaml' # Läuft an, sobald du EGAL WELCHE spec_ änderst
+      - '**/spec_*.yaml' # Reagiert auf jede Änderung an einer Spezifikation
 
 jobs:
   build-all:
@@ -22,20 +22,28 @@ jobs:
       - name: Install Dependencies
         run: pip install pyyaml
 
+      # Schritt 1: YAMLs zusammenführen
       - name: Run Merge Script
         run: python merge_specs.py
 
+      # Schritt 2: Markdown-Doku generieren (DAS HAT GEFEHLT!)
+      - name: Run Markdown Generator
+        run: python yaml_to_md.py
+
+      # Schritt 3: Einkaufsliste generieren
       - name: Run Shopping List Generator
         run: python generate_shopping_list.py
 
+      # Schritt 4: Alles zusammen committen
       - name: Commit and Push all changes
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           
-          # Fügt beide generierten Dateien hinzu
+          # Fügt alle drei generierten Dateien hinzu
           git add full_spec.yaml
+          git add full_spec.md
           git add projekt/kosten/shopping_list.md
           
-          git commit -m "chore(docs): auto-update full spec and shopping list [skip ci]" || echo "Keine Änderungen zu committen."
+          git commit -m "chore(docs): auto-update specs, docs and shopping list [skip ci]" || echo "Keine Änderungen zu committen."
           git push
