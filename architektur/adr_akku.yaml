@@ -5,7 +5,7 @@
 
 adr_battery_selection:
   id: "ADR-003"
-  title: "Auswahl des LiPo-Akkus für 100 km/h Ziel"
+  title: "Auswahl des LiPo-Akkus für 100 km/h Ziel."
   status: "Offen"
   date: "2026-02-24"
   
