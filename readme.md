@@ -22,7 +22,7 @@ Alle Mitwirkenden können Standard-Git-Praktiken (Branching, Committing, Pulling
 Systemspezifikationen werden thematisch verteilt in den entsprechenden Unterordnern verwaltet. 
 
 * **Format:** YAML
-* **Namenskonvention:** `spec_<beschreibender_name>.yaml` (z. B. `spec_motor_controller.yaml`)
+* **Namenskonvention:** `spec_<beschreibender_name>.yaml` (z. B. `spec_motor.yaml`)
 * **Speicherort:** Platziere die Datei in dem Unterordner, der thematisch am besten passt (z. B. `/elektronik`).
 * **Workflow:** Datei einfach committen und pushen. Unsere automatisierte Pipeline fasst alle individuellen Spezifikationen in einer zentralen `full_spec.yaml` und einer formatierten `full_spec.md` im Hauptverzeichnis zusammen.
 
@@ -32,7 +32,7 @@ Systemspezifikationen werden thematisch verteilt in den entsprechenden Unterordn
 Wann immer eine wichtige Designentscheidung getroffen wird (z. B. die Wahl eines bestimmten Motorprotokolls), sollte diese als ADR dokumentiert werden.
 
 * **Format:** YAML
-* **Namenskonvention:** `adr_<beschreibender_name>.yaml` (z. B. `adr_001_batteriechemie.yaml`)
+* **Namenskonvention:** `adr_<beschreibender_name>.yaml` (z. B. `adr_batteriechemie.yaml`)
 * **Speicherort:** Muss im Ordner `/architektur` abgelegt werden.
 * **Workflow:** Datei committen und pushen. Eine automatisierte Pipeline kompiliert alle ADRs sofort in eine gut lesbare `README.md` im Ordner `/architektur`.
 
