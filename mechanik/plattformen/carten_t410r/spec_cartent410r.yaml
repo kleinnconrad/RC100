@@ -1,3 +1,8 @@
+chassis_meta:
+  brand: "Carten"
+  model: "T410R Tourenwagen Bausatz"
+  part_number: "NHA413"
+
 carten_t410r:
   allgemein:
     fahrzeugtyp: "1:10 Elektro Tourenwagen (EP Touring Car)"
