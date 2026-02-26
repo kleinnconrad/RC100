@@ -31,7 +31,7 @@
 ### 📦 Physical Specifications
 
 * **Case Type:** Hardcase (HC) - Hartplastik Box
-* **Safety:** Zwingend erforderlich für Speedruns zum Schutz vor Kardanwelle/Crashes.
+* **Safety:** Zwingend erforderlich für Speedruns zum Schutz vor Kardanwelle/Crashes
 * **Weight G:** 370
 
 #### 🔹 Dimensions
