@@ -32,7 +32,7 @@ jobs:
           pip install pyyaml
 
       - name: ⚙️ Run ADR Generator Script
-        run: python generate_adr_readme.py
+        run: python scripts/generate_adr_readme.py
 
       - name: 🚀 Commit and Push README.md
         run: |

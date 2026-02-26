@@ -31,7 +31,7 @@ jobs:
           pip install pyyaml
 
       - name: ⚙️ Run YAML to Markdown Script
-        run: python yaml_to_md.py
+        run: python scripts/yaml_to_md.py
 
       - name: 🚀 Commit and Push full_spec.md
         run: |

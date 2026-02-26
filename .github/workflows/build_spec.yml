@@ -24,15 +24,15 @@ jobs:
 
       # Schritt 1: YAMLs zusammenführen
       - name: Run Merge Script
-        run: python merge_specs.py
+        run: python scripts/merge_specs.py
 
       # Schritt 2: Markdown-Doku generieren (DAS HAT GEFEHLT!)
       - name: Run Markdown Generator
-        run: python yaml_to_md.py
+        run: python scripts/yaml_to_md.py
 
       # Schritt 3: Einkaufsliste generieren
       - name: Run Shopping List Generator
-        run: python generate_shopping_list.py
+        run: python scripts/generate_shopping_list.py
 
       # Schritt 4: Alles zusammen committen
       - name: Commit and Push all changes
