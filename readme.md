@@ -56,6 +56,10 @@ Dieses Repository nutzt GitHub Actions (im Ordner `.github/workflows/`), um auto
     * **Auslöser:** Startet automatisch, wenn eine Datei mit dem Muster `adr_*.yaml` im Ordner `/architektur` hinzugefügt oder geändert wird.
     * **Aktion:** Führt `generate_adr_readme.py` aus, um alle ADRs in einer zentralen `architektur/README.md` zusammenzustellen, die eine chronologische Übersicht der Projektentscheidungen bietet.
 
+4. **Build shopping list (`shopping-list.yml`)**
+    * **Auslöser:** Startet automatisch, wenn eine Datei mit dem Muster `spec_*.yaml` in einem Unterordner hinzugefügt oder geändert wird.
+    * **Aktion:** Führt `generate_shopping_list.py` aus, um eine shopping list im Ordner `projekt/kosten`zu erstellen.
+
 ### Workflows manuell auslösen
 Wenn du Änderungen an den Python-Skripten testest oder die Dokumentation neu generieren möchtest, ohne eine Spec/ADR zu ändern, kannst du diese Aktionen manuell starten:
 1. Navigiere zum Tab **Actions** oben im GitHub-Repository.
