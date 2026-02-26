@@ -1,116 +1,64 @@
-# 🏎️ Projekt: RC100 - The 100 km/h Build
+# RC100: 100 km/h RC-Auto-Projekt
 
-## 📌 Mission Briefing
-Dieses Repository dient als "Single Source of Truth" für unser 1:10 RC-Speedrun-Projekt. 
-Das Ziel ist es, ein 1:10 Tourenwagen-Chassis mechanisch und elektronisch so abzustimmen, dass es reproduzierbar und stabil die **100 km/h (62 mph) Marke** knackt, ohne dabei strukturell zu versagen.
+Willkommen im RC100 Projekt-Repository. Dies ist ein privates Projekt mit dem Ziel, ein ferngesteuertes Auto (RC-Auto) zu entwerfen und zu bauen, das Geschwindigkeiten mindestens 100 km/h erreicht. Das primäre technische Ziel ist es, die Leistung zu maximieren und den Bau gleichzeitig so **günstig** und **zuverlässig** wie möglich zu halten.
 
-*Die exakten und aktuellen technischen Parameter liegen in der `full_spec.yaml`.*
+## 📂 Repository-Struktur
 
----
+Das Projekt ist in themenspezifische Unterordner gegliedert, um Spezifikationen, Daten und Designs übersichtlich zu strukturieren:
 
-## 🚀 Dokumentation & Automatisierung
-
-Dieses Repository nutzt einen **"Docs-as-Code"** Ansatz. Die Fahrzeugspezifikationen sind modular in einzelnen YAML-Dateien abgelegt und werden automatisch zu einer Gesamtspezifikation zusammengeführt.
-
-## 📂 Ordnerstruktur
-
-```text
-.
-├── .github/workflows/
-│   └── build_spec.yml      # GitHub Action (Pipeline-Logik)
-├── specs/                  # Fachmodule (Einzel-Spezifikationen)
-│   ├── spec_motor.yaml
-│   ├── spec_akku.yaml
-│   └── ...
-├── merge_specs.py          # Python-Merge-Skript (SSOT-Logik)
-└── full_spec.yaml          # Generierte Gesamtspezifikation (Build-Artefakt)
-```
-
-## ⚙️ Der Automatisierungs-Workflow
-* Um Konsistenz zu gewährleisten, wird die Datei full_spec.yaml niemals manuell bearbeitet. Der Prozess ist vollständig automatisiert:
-* Änderung: Eine Spezifikation im Ordner specs/ wird angepasst (z. B. Zellenzahl im Akku-Modul).
-* Push: Die Änderung wird auf den main-Branch gepusht.
-* CI-Pipeline: GitHub Actions erkennt die Änderung und startet einen virtuellen Runner.
-* Merge: Das Skript merge_specs.py sucht rekursiv nach allen spec_*.yaml Dateien und führt sie zusammen.
-* Sync: Der GitHub-Bot committet die aktualisierte full_spec.yaml automatisch zurück in das Repository.
-
-## 🛠 Manuelle Synchronisation
-Sollte die Pipeline lokal getestet werden müssen, kann das Skript manuell ausgeführt werden (erfordert PyYAML):
-
-```text
-pip install pyyaml
-python merge_specs.py
-```
-
-## ⚠️ Wichtige Hinweise für Mitwirkende
-* Präfix-Regel: Alle Quelldateien müssen mit spec_ beginnen und auf .yaml enden.
-* Schreibrechte: Die GitHub Action benötigt Read and write permissions (einstellbar unter Settings > Actions > General), um die generierte Datei speichern zu können.
-* Single Source of Truth: Fachliche Details immer nur in den Modul-Dateien ändern, da die full_spec.yaml bei jedem Push überschrieben wird.
+* **/architektur** - Für Architectural Decision Records (ADRs) und grundlegende Systemdesigns.
+* **/elektronik** - Für elektronische Komponenten, Schaltpläne und zugehörige Spezifikationen.
+* **/mechanik** - Für mechanische Teile, CAD-Modelle, Chassis-Design und physische Spezifikationen.
+* **/messdaten** - Für Telemetrie, Testergebnisse und Leistungsmessdaten.
+* **/projekt** - Für allgemeines Projektmanagement, Planung und Übersichten.
 
 ---
 
-# 🏛️ Architecture Decision Records (ADR) Automatisierung
+## 🛠️ Arbeitsweise in diesem Repository
 
-Um Architekturentscheidungen (Hardware, Komponenten, Design) transparent und nachvollziehbar zu dokumentieren, nutzen wir automatisierte **Architecture Decision Records (ADRs)**. 
+Alle Mitwirkenden können Standard-Git-Praktiken (Branching, Committing, Pulling, Pushing) nutzen, um allgemeine Projektinformationen, CAD-Dateien oder Testdaten in die jeweiligen Unterordner hochzuladen. Für Spezifikationen und Architektur-Entscheidungen gelten die folgenden spezifischen Workflows.
 
-Anstatt eine unübersichtliche Textdatei manuell zu pflegen, werden Entscheidungen als strukturierte YAML-Dateien abgelegt und per CI/CD-Pipeline automatisch zu einer übersichtlichen Dokumentation zusammengebaut.
+### 1. Hinzufügen oder Ändern von Spezifikationen
+Systemspezifikationen werden thematisch verteilt in den entsprechenden Unterordnern verwaltet. 
 
-## 📂 Ordnerstruktur
+* **Format:** YAML
+* **Namenskonvention:** `spec_<beschreibender_name>.yaml` (z. B. `spec_motor_controller.yaml`)
+* **Speicherort:** Platziere die Datei in dem Unterordner, der thematisch am besten passt (z. B. `/elektronik`).
+* **Workflow:** Datei einfach committen und pushen. Unsere automatisierte Pipeline fasst alle individuellen Spezifikationen in einer zentralen `full_spec.yaml` und einer formatierten `full_spec.md` im Hauptverzeichnis zusammen.
 
-```text
-.
-├── .github/workflows/
-│   └── build_adr_readme.yml     # GitHub Action für die ADR-Generierung
-├── Architektur/                 # Zentraler Ordner für Entscheidungen
-│   ├── adr_chassis.yaml         # Einzelner ADR (YAML)
-│   ├── adr_brushless.yaml       # Einzelner ADR (YAML)
-│   └── README.md                # 🤖 Automatisch generierte Übersicht
-└── generate_adr_readme.py       # Python-Skript (Parser & Markdown-Generator)
-```
+> **Tipp:** Wenn du mit der YAML-Syntax nicht vertraut bist, empfehlen wir dringend, ein LLM (Large Language Model wie Gemini oder ChatGPT) zu verwenden, um die YAML-Struktur für dich zu generieren. Beschreibe deine Spezifikation einfach als normalen Text und bitte das LLM, sie als saubere YAML-Datei zu formatieren.
 
-## ⚙️ Der Automatisierungs-Workflow
+### 2. Dokumentation von Architektur-Entscheidungen (ADRs)
+Wann immer eine wichtige Designentscheidung getroffen wird (z. B. die Wahl eines bestimmten Motorprotokolls), sollte diese als ADR dokumentiert werden.
 
-Die Datei `Architektur/README.md` wird **niemals manuell bearbeitet**. Der Prozess ist zu 100 % automatisiert:
+* **Format:** YAML
+* **Namenskonvention:** `adr_<beschreibender_name>.yaml` (z. B. `adr_001_batteriechemie.yaml`)
+* **Speicherort:** Muss im Ordner `/architektur` abgelegt werden.
+* **Workflow:** Datei committen und pushen. Eine automatisierte Pipeline kompiliert alle ADRs sofort in eine gut lesbare `README.md` im Ordner `/architektur`.
 
-1.  **Neuer ADR**: Eine neue Architekturentscheidung wird als Datei nach dem Namensschema `adr_*.yaml` im Ordner `Architektur/` angelegt (oder eine bestehende wird geändert).
-2.  **Push**: Die Änderung wird in den `main`-Branch gepusht.
-3.  **CI-Pipeline**: GitHub Actions erkennt die Änderung im Ordner `Architektur/` und startet einen Runner.
-4.  **Generierung**: Das Skript `generate_adr_readme.py` parst alle YAML-Dateien, sortiert sie nach ihrer ID und generiert dynamisch eine Markdown-Datei mit Inhaltsverzeichnis, Status-Indikatoren (🟢/🟡) und Detailbeschreibungen.
-5.  **Sync**: Der GitHub-Bot (`github-actions[bot]`) committet die aktualisierte `README.md` automatisch zurück in den `Architektur/`-Ordner.
-
-## 📝 Einen neuen ADR anlegen
-
-Um eine neue Entscheidung zu dokumentieren, erstelle einfach eine neue Datei (z. B. `adr_servo.yaml`) im Ordner `Architektur/` mit folgender Grundstruktur:
-
-```yaml
-adr_beispiel_entscheidung:
-  id: "ADR-00X"
-  title: "Kurzer, prägnanter Titel"
-  status: "Offen" # oder "Akzeptiert"
-  date: "YYYY-MM-DD"
-  context: "Warum müssen wir diese Entscheidung treffen?"
-  decision: "Was wurde entschieden?"
-  rationale: "Warum wurde so entschieden?"
-  consequences:
-    - "Welche Auswirkungen hat das auf das Projekt?"
-```
-
-## 🛠 Manuelle Synchronisation (Lokal)
-
-Um die Generierung der README vor dem Push lokal zu testen:
-
-```bash
-pip install pyyaml
-python generate_adr_readme.py
-```
----
-
-## Benchmarks
-
- (Bausatz) |
-| :--- | :--- | :--- | :--- |
-| **Schumacher Mi9** | Riemen | Britisches Top-Engineering, extrem tiefer Schwerpunkt | ~ 649 € |
-| **Xray X4** | Riemen | Ultra-Low-Profile Dämpfer, Referenzklasse bei Qualität | ~ 702 € |
-| **Awesomatix A800RR** | Riemen | Revolutionäres Rotationsdämpfer-System (ohne Federn) | ~ 780 € |
+> **Tipp:** Genau wie bei den Spezifikationen gilt: Wenn du nicht weißt, wie man ein ADR in YAML strukturiert, nutze ein LLM, um deine Entscheidungsnotizen in eine korrekt formatierte YAML-Datei zu übersetzen.
 
 ---
+
+## 🤖 Automatisierung & GitHub Actions
+
+Dieses Repository nutzt GitHub Actions (im Ordner `.github/workflows/`), um automatisch Dokumentationen zu generieren und Konfigurationen zusammenzuführen. Du musst im Normalfall nichts tun, um diese auszulösen – sie starten automatisch, wenn entsprechende Dateien hochgeladen oder geändert werden.
+
+### Verfügbare Workflows
+
+1. **Build Spec (`build_spec.yml`)**
+    * **Auslöser:** Startet automatisch, wenn eine Datei mit dem Muster `spec_*.yaml` in einem Unterordner hinzugefügt oder geändert wird.
+    * **Aktion:** Führt `merge_specs.py` aus, um alle einzelnen Spezifikationsdateien zu einer einzigen, zentralen `full_spec.yaml` im Hauptverzeichnis zusammenzuführen.
+2. **Build Full Spec MD (`build_full_spec_md.yml`)**
+    * **Auslöser:** Startet *automatisch als abhängige Aktion* direkt nach dem erfolgreichen Abschluss von `build_spec.yml`.
+    * **Aktion:** Führt `yaml_to_md.py` aus, um die rohe `full_spec.yaml` in eine ansprechende, gut lesbare `full_spec.md` im Hauptverzeichnis umzuwandeln.
+3. **Build ADR Readme (`build_adr_readme.yml`)**
+    * **Auslöser:** Startet automatisch, wenn eine Datei mit dem Muster `adr_*.yaml` im Ordner `/architektur` hinzugefügt oder geändert wird.
+    * **Aktion:** Führt `generate_adr_readme.py` aus, um alle ADRs in einer zentralen `architektur/README.md` zusammenzustellen, die eine chronologische Übersicht der Projektentscheidungen bietet.
+
+### Workflows manuell auslösen
+Wenn du Änderungen an den Python-Skripten testest oder die Dokumentation neu generieren möchtest, ohne eine Spec/ADR zu ändern, kannst du diese Aktionen manuell starten:
+1. Navigiere zum Tab **Actions** oben im GitHub-Repository.
+2. Klicke in der linken Seitenleiste auf den Workflow, den du ausführen möchtest (z. B. `build_spec`).
+3. Klicke auf den Button **Run workflow** auf der rechten Seite.
+4. Wähle den gewünschten Branch aus und klicke auf den grünen Button **Run workflow**.
