@@ -56,7 +56,7 @@ Dieses Repository nutzt GitHub Actions (im Ordner `.github/workflows/`), um auto
     * **Auslöser:** Startet automatisch, wenn eine Datei mit dem Muster `adr_*.yaml` im Ordner `/architektur` hinzugefügt oder geändert wird.
     * **Aktion:** Führt `generate_adr_readme.py` aus, um alle ADRs in einer zentralen `architektur/README.md` zusammenzustellen, die eine chronologische Übersicht der Projektentscheidungen bietet.
 
-4. **Build shopping list (`shopping-list.yml`)**
+4. **Build shopping list (`build_spec.yml`)**
     * **Auslöser:** Startet automatisch, wenn eine Datei mit dem Muster `spec_*.yaml` in einem Unterordner hinzugefügt oder geändert wird.
     * **Aktion:** Führt `generate_shopping_list.py` aus, um eine shopping list im Ordner `projekt/kosten`zu erstellen.
 
