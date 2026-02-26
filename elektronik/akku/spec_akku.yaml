@@ -26,7 +26,7 @@ connectors:
 
 physical_specifications:
   case_type: "Hardcase (HC) - Hartplastik Box"
-  safety: "Zwingend erforderlich für Speedruns zum Schutz vor Kardanwelle/Crashes."
+  safety: "Zwingend erforderlich für Speedruns zum Schutz vor Kardanwelle/Crashes"
   weight_g: 370
   dimensions:
     length_mm: 138
