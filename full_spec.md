@@ -425,7 +425,7 @@
 * **Brand:** Sweep Racing
 * **Model:** HANKOOK Tread Belted tires Pre-glued set Pro-compound 36deg for Asphalt
 * **Part Number:** SR-SSF-36AWPG
-* **Type:** Gewebeverstärkte Gummireifen (Belted), fertig verklebt
+* **Type:** Gewebeverstärkte Gummireifen (Belted), fertig verklebt.
 
 ### 📦 Physical Specifications
 
