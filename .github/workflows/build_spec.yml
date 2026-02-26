@@ -40,10 +40,8 @@ jobs:
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           
-          # Fügt alle drei generierten Dateien hinzu
-          git add full_spec.yaml
-          git add full_spec.md
-          git add projekt/kosten/shopping_list.md
+          # Das -A (All) zwingt Git, jede noch so kleine Änderung im Projekt aufzunehmen!
+          git add -A
           
           git commit -m "chore(docs): auto-update specs, docs and shopping list [skip ci]" || echo "Keine Änderungen zu committen."
           git push
