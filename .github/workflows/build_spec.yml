@@ -1,53 +1,41 @@
-name: Generate Full Spec
+name: Build Specs and Shopping List
 
-# Die Pipeline startet nur, wenn eine der Einzel-Spezifikationen 
-# oder das Skript selbst verändert und auf den main-Branch gepusht wird.
 on:
   push:
     branches:
       - main
     paths:
-      - '**/spec_*.yaml'
-      - 'merge_specs.py'
+      - '**/spec_*.yaml' # Läuft an, sobald du EGAL WELCHE spec_ änderst
 
 jobs:
-  merge-yamls:
+  build-all:
     runs-on: ubuntu-latest
-    
-    # Wichtig: Der GitHub Token braucht Schreibrechte, um den Commit zu pushen
-    permissions:
-      contents: write
-
     steps:
-      - name: 📥 Checkout Repository
-        uses: actions/checkout@v4
+      - name: Checkout Repository
+        uses: actions/checkout@v3
 
-      - name: 🐍 Setup Python
-        uses: actions/setup-python@v5
+      - name: Setup Python
+        uses: actions/setup-python@v4
         with:
-          python-version: '3.12'
+          python-version: '3.x'
 
-      - name: 📦 Install Dependencies
-        run: |
-          python -m pip install --upgrade pip
-          pip install pyyaml
+      - name: Install Dependencies
+        run: pip install pyyaml
 
-      - name: ⚙️ Run Merge Script
+      - name: Run Merge Script
         run: python merge_specs.py
 
-      - name: 🚀 Commit and Push full_spec.yaml
+      - name: Run Shopping List Generator
+        run: python generate_shopping_list.py
+
+      - name: Commit and Push all changes
         run: |
-          # Git für den Bot-User konfigurieren
-          git config --local user.email "github-actions[bot]@users.noreply.github.com"
-          git config --local user.name "github-actions[bot]"
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
           
-          # Prüfen, ob das Skript die full_spec.yaml überhaupt verändert hat
-          if [[ -n "$(git status --porcelain full_spec.yaml)" ]]; then
-            git add full_spec.yaml
-            # Das [skip ci] ist überlebenswichtig, damit dieser automatisierte 
-            # Commit nicht direkt wieder die Pipeline auslöst (Endlosschleife)!
-            git commit -m "chore(docs): auto-update full_spec.yaml [skip ci]"
-            git push
-          else
-            echo "Keine Änderungen an der full_spec.yaml erkannt. Nichts zu committen."
-          fi
+          # Fügt beide generierten Dateien hinzu
+          git add full_spec.yaml
+          git add projekt/kosten/shopping_list.md
+          
+          git commit -m "chore(docs): auto-update full spec and shopping list [skip ci]" || echo "Keine Änderungen zu committen."
+          git push
