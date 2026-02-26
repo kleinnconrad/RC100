@@ -1,0 +1,55 @@
+# ==========================================
+# Architectural Decision Record (ADR-005)
+# ==========================================
+# Thema: Auswahl der Fernsteuerungsanlage (Transmitter)
+
+adr_transmitter_selection:
+  id: "ADR-005"
+  title: "Auswahl der Fernsteuerungsanlage für 100 km/h Speedruns"
+  status: "Offen"
+  date: "2026-02-24"
+  
+  context: |
+    Ein RC-Car, das mit 100 km/h (ca. 27,7 Meter pro Sekunde) fährt, legt in wenigen Sekunden 
+    enorme Distanzen zurück. Die Fernsteuerung (Transmitter) und der Empfänger (Receiver) 
+    müssen daher zwingend eine extrem hohe und stabile Reichweite (300 bis 400 Meter) aufweisen, 
+    damit das Fahrzeug am Ende der Beschleunigungsstrecke nicht außer Kontrolle gerät. 
+    Zudem ist bei diesen Geschwindigkeiten eine elektronische Stabilisierungshilfe (Gyro) 
+    im Empfänger hochgradig empfehlenswert, um das Fahrzeug beim kleinsten Ausbrechen 
+    automatisch in der Spur zu halten.
+
+  considered_alternatives:
+    - option_id: 1
+      name: "Standard RTR / Budget-Sender (z.B. FlySky FS-GT2)"
+      type: "Low-End / Basic 2.4 GHz"
+      evaluation: "Sehr günstig, aber die Reichweite ist oft auf 100-150 Meter begrenzt. Ein massives Sicherheitsrisiko bei Speedruns. Bietet zudem keine Gyro-Unterstützung im Standard-Empfänger."
+      
+    - option_id: 2
+      name: "High-End Wettbewerbs-Sender (z.B. Sanwa MT-44 / Futaba 4PM)"
+      type: "Premium / Ultra-Low Latency"
+      evaluation: "Bietet extrem geringe Latenzzeiten und detaillierte Setup-Möglichkeiten auf einem Display. Perfekt für verwinkelte Rennstrecken, aber für das reine Geradeausfahren (Speedrun) völlig überdimensioniert. Preislich oft weit über 250 €."
+      
+    - option_id: 3
+      name: "DumboRC X6"
+      type: "Mid-Range Budget-Geheimtipp"
+      evaluation: "Verzichtet auf ein Display und Telemetrie, bietet aber eine für diese Preisklasse (~35 €) gigantische Reichweite von oft über 400 Metern. Die passenden Empfänger (X6FG) verfügen über einen integrierten, einstellbaren Gyro für perfekten Geradeauslauf."
+
+  decision: "DumboRC X6"
+  
+  tx_meta_transmitter:
+    brand: "DumboRC"
+    model: "X6"
+    type: "2.4 GHz Pistolengriff-Sender (Surface)"
+
+  rationale: |
+    Die Entscheidung fällt auf die DumboRC X6. Sie bietet exakt die zwei Features, die für 
+    das Projekt überlebenswichtig sind, ohne das Budget zu sprengen: Eine außergewöhnlich 
+    hohe Reichweite und die Möglichkeit, kostengünstige Gyro-Empfänger zu nutzen. Da bei einem 
+    Speedrun keine komplexen Mischer, Dual-Rate-Kurven oder Telemetriedaten auf einem 
+    Senderdisplay benötigt werden, ist das spartanische Design der X6 kein technischer Nachteil, 
+    sondern ein effizienter Ressourceneinsatz.
+    
+  consequences:
+    - "Empfänger-Wahl: Es muss zwingend der Empfänger 'X6FG' (das 'G' steht für Gyro) verbaut werden. Der Standard-Empfänger X6F hat keine Stabilisierung."
+    - "Setup: Der Gyro (Kanal 6 Drehregler am Sender) muss vor dem ersten Run auf einer sicheren Fläche präzise eingestellt werden (Sensitivität), damit sich die Lenkung bei High-Speed nicht aufschaukelt (Speed-Wobble)."
+    - "Batterien: Der Sender benötigt 4x AA Batterien. Für konstante Sendeleistung sollten hochwertige Akkus (z.B. Eneloop) verwendet werden."
