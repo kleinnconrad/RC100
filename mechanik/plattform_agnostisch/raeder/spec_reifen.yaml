@@ -2,7 +2,7 @@ reifen_meta:
   brand: "Sweep Racing"
   model: "HANKOOK Tread Belted tires Pre-glued set Pro-compound 36deg for Asphalt"
   part_number: "SR-SSF-36AWPG"
-  type: "Gewebeverstärkte Gummireifen (Belted), fertig verklebt"
+  type: "Gewebeverstärkte Gummireifen (Belted), fertig verklebt."
 
 physical_specifications:
   width: "24mm (Standard 1:10 Tourenwagen)"
