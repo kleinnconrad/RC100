@@ -125,6 +125,12 @@
 ## ⚙️ CARTENT410R
 
 
+### 📦 Chassis Meta
+
+* **Brand:** Carten
+* **Model:** T410R Tourenwagen Bausatz
+* **Part Number:** NHA413
+
 ### 📦 Carten T410R
 
 
