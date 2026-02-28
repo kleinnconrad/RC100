@@ -1,0 +1,36 @@
+getriebe_meta:
+  brand: "Arrowmax" # Alternativen: Ruddog, Robinson Racing, Tekin
+  model: "Motorritzel 42Z (48dp / 3.17mm Welle)" 
+  part_number: "42T-48P"
+
+getriebe_setup:
+  hauptzahnrad_spur: 
+    zähne: 72
+    typ: "Baukasten Standard"
+    modul: "48dp" 
+  motorritzel_pinion:
+    zähne: 42
+    material: "Hardcoated Alu oder Stahl"
+  berechnete_werte:
+    interne_uebersetzung: 2.47 # Kegeldiff T410R (42/17)
+    gesamt_ratio: 4.23
+    zielgeschwindigkeit: "> 100 km/h"
+
+einstellbereich_mit_72z_hauptzahnrad:
+  hinweis: "Laut Carten Handbuch (T410R mit Gear Diff 2.47) ohne Umbau des 72Z Hauptzahnrads fahrbar:"
+  max_beschleunigung:
+    ritzel: 21
+    ratio: 8.47
+  mid_range:
+    ritzel: 31
+    ratio: 5.74
+  high_speed_bereich:
+    ritzel_34: 5.23
+    ritzel_35: 5.08
+    ritzel_36: 4.94
+    ritzel_37: 4.81
+  max_top_speed:
+    ritzel_41: 4.34
+    ritzel_42: 4.23 # <- Unser aktuelles 100 km/h Setup!
+    ritzel_43: 4.14
+    ritzel_44: 4.04
