@@ -5,7 +5,7 @@ werkzeug_liste:
   inbus_schraubendreher:
     typ: "Innensechskant-Schraubendreher (Hex Wrenches)"
     groessen: "1.5 mm, 2.0 mm, 2.5 mm"
-    hinweis: "Pflichtkauf! Bitte keine billigen Winkelschlüssel (IKEA-Style) verwenden, diese machen die Schraubenköpfe sofort kaputt."
+    hinweis: "Pflichtkauf! Carten nutzt im gesamten Auto metrische M3-Maschinenschrauben (keine selbstschneidenden Schrauben). Ein hochwertiger Inbus ist hier extrem wichtig, um die Schraubenköpfe und das harte Plastikgewinde beim Eindrehen nicht zu beschädigen."
     brand: "Neewer" 
     model: "Titan RC Inbus Set (1.5/2.0/2.5/3.0)"
 
@@ -18,14 +18,13 @@ werkzeug_liste:
   klebstoffe_und_chemie:
     schraubensicherung:
       typ: "Schraubensicherungslack (Screw Cement / Threadlocker)"
-      hinweis: "Extrem wichtig! Kommt an alle Schrauben, die in Metall gedreht werden (z. B. Motorritzel). Niemals für Plastik verwenden!"
+      hinweis: "Extrem wichtig! Kommt an alle Schrauben, die in Metall gedreht werden (z. B. Motorritzel). In der Carten-Anleitung oft fälschlicherweise als 'GLUE' beschriftet. Niemals für Plastik verwenden!"
       brand: "Loctite"
       model: "243 Mittelfest (Blau)"
-    sekundenkleber:
-      typ: "Sekundenkleber (Instant Glue / CA Glue)"
-      hinweis: "Für allgemeine Reparaturen oder um Karosserie-Risse zu kleben."
 
   klebebaender:
     panzertape:
-      typ: "Glasfaserklebeband / Panzertape (Glass or Vinyl Tape)"
-      hinweis: "Perfekt, um den 3S-Akku zusätzlich zu sichern oder Kabel im Chassis ordentlich festzukleben."
+      typ: "Glasfaserklebeband (Glass Tape)"
+      hinweis: "Pflicht für den T410R! Das Auto besitzt keine klassischen Plastik-Akkuhalterungen. Das Klebeband wird laut Anleitung durch die Schlitze im Carbon-Chassis gezogen, um den LiPo-Akku festzuschnallen."
+      brand: "Arrowmax"
+      model: "Fibre Tape / Battery Tape"
