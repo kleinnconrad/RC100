@@ -76,3 +76,12 @@ Der Rechner simuliert anhand des Reifendurchmessers und der gewünschten Zielges
 **So startest du das Tool lokal:**
 ```bash
 python scripts/calc/getriebe_calc.py
+```
+## 🚀 Top-Speed & Limit Rechner (CLI-Tool)
+
+Dieser "Reverse-Calculator" ergänzt den Getriebe-Rechner, indem er die maximal mögliche Höchstgeschwindigkeit des Carten T410R auf Basis der physischen Hardware-Limits berechnet. Anstatt eine Wunschgeschwindigkeit vorzugeben, berechnet das Skript anhand deiner Motor- und Akku-Daten sowie deiner persönlichen Schmerzgrenze für die thermische Belastung (Radlast), was das Auto wirklich hergibt.
+
+**So startest du das Tool lokal:**
+```bash
+python scripts/calc/max_speed.py
+```
