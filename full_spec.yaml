@@ -262,6 +262,57 @@ Cartent410R:
     lenkung:
       lenksystem: Kugelgelagertes Dual-Bellcrank-System (Doppelarm)
       lenkhebel_c_hubs: Composite-Kunststoff
+Werkzeug:
+  werkzeug_meta:
+    beschreibung: Benötigtes Werkzeug für den Zusammenbau des Carten T410R (übersetzt
+      aus Baukasten-Anleitung).
+  werkzeug_liste:
+    inbus_schraubendreher:
+      typ: Innensechskant-Schraubendreher (Hex Wrenches)
+      groessen: 1.5 mm, 2.0 mm, 2.5 mm
+      hinweis: Pflichtkauf! Bitte keine billigen Winkelschlüssel (IKEA-Style) verwenden,
+        diese machen die Schraubenköpfe sofort kaputt.
+      brand: Neewer
+      model: Titan RC Inbus Set (1.5/2.0/2.5/3.0)
+    steckschluessel:
+      typ: Steckschlüssel / Radmutternschlüssel (Box Wrench)
+      groessen: 5.5 mm, 7.0 mm, 10.0 mm
+      hinweis: Der 7.0 mm Schlüssel ist extrem wichtig für die Radmuttern. Oft als
+        handliches 'Radkreuz' erhältlich.
+      brand: Arrowmax
+      model: Radmutternschlüssel 7.0mm
+    zangen_und_messer:
+      spitzzange:
+        typ: Spitzzange / Flachrundzange (Needle Nose Pliers)
+        hinweis: Zum Greifen von kleinen Teilen und Halten der Dämpferstangen. (Baumarkt-Zange
+          reicht).
+      bastelmesser:
+        typ: Bastelmesser / Skalpell (Hobby Knife)
+        hinweis: Zum sauberen Entgraten der Plastikteile vom Gussbaum. (Cutter-Messer
+          reicht oft auch).
+      schere:
+        typ: Schere (Scissors)
+        hinweis: Falls du die Karosserie selbst ausschneidest, brauchst du eine gebogene
+          'Lexanschere'.
+    klebstoffe_und_chemie:
+      schraubensicherung:
+        typ: Schraubensicherungslack (Screw Cement / Threadlocker)
+        hinweis: Extrem wichtig! Kommt an alle Schrauben, die in Metall gedreht werden
+          (z. B. Motorritzel). Niemals für Plastik verwenden!
+        brand: Loctite
+        model: 243 Mittelfest (Blau)
+      sekundenkleber:
+        typ: Sekundenkleber (Instant Glue / CA Glue)
+        hinweis: Für allgemeine Reparaturen oder um Karosserie-Risse zu kleben.
+      reifenkleber:
+        typ: Reifenkleber (Rubber Glue)
+        hinweis: Spezial-Sekundenkleber für Reifen. (Brauchst du nur, wenn deine Sweep-Reifen
+          nicht schon auf der Felge verklebt geliefert werden).
+    klebebaender:
+      panzertape:
+        typ: Glasfaserklebeband / Panzertape (Glass or Vinyl Tape)
+        hinweis: Perfekt, um den 3S-Akku zusätzlich zu sichern oder Kabel im Chassis
+          ordentlich festzukleben.
 Getriebe:
   getriebe_meta:
     brand: Arrowmax

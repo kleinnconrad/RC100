@@ -564,3 +564,64 @@
 
 
 ---
+
+## ⚙️ WERKZEUG
+
+
+### 📦 Werkzeug Meta
+
+* **Beschreibung:** Benötigtes Werkzeug für den Zusammenbau des Carten T410R (übersetzt aus Baukasten-Anleitung).
+
+### 📦 Werkzeug Liste
+
+
+#### 🔹 Inbus Schraubendreher
+
+  * **Typ:** Innensechskant-Schraubendreher (Hex Wrenches)
+  * **Groessen:** 1.5 mm, 2.0 mm, 2.5 mm
+  * **Hinweis:** Pflichtkauf! Bitte keine billigen Winkelschlüssel (IKEA-Style) verwenden, diese machen die Schraubenköpfe sofort kaputt.
+  * **Brand:** Neewer
+  * **Model:** Titan RC Inbus Set (1.5/2.0/2.5/3.0)
+
+#### 🔹 Steckschluessel
+
+  * **Typ:** Steckschlüssel / Radmutternschlüssel (Box Wrench)
+  * **Groessen:** 5.5 mm, 7.0 mm, 10.0 mm
+  * **Hinweis:** Der 7.0 mm Schlüssel ist extrem wichtig für die Radmuttern. Oft als handliches 'Radkreuz' erhältlich.
+  * **Brand:** Arrowmax
+  * **Model:** Radmutternschlüssel 7.0mm
+
+#### 🔹 Zangen Und Messer
+
+  * **Spitzzange:**
+    * **Typ:** Spitzzange / Flachrundzange (Needle Nose Pliers)
+    * **Hinweis:** Zum Greifen von kleinen Teilen und Halten der Dämpferstangen. (Baumarkt-Zange reicht).
+  * **Bastelmesser:**
+    * **Typ:** Bastelmesser / Skalpell (Hobby Knife)
+    * **Hinweis:** Zum sauberen Entgraten der Plastikteile vom Gussbaum. (Cutter-Messer reicht oft auch).
+  * **Schere:**
+    * **Typ:** Schere (Scissors)
+    * **Hinweis:** Falls du die Karosserie selbst ausschneidest, brauchst du eine gebogene 'Lexanschere'.
+
+#### 🔹 Klebstoffe Und Chemie
+
+  * **Schraubensicherung:**
+    * **Typ:** Schraubensicherungslack (Screw Cement / Threadlocker)
+    * **Hinweis:** Extrem wichtig! Kommt an alle Schrauben, die in Metall gedreht werden (z. B. Motorritzel). Niemals für Plastik verwenden!
+    * **Brand:** Loctite
+    * **Model:** 243 Mittelfest (Blau)
+  * **Sekundenkleber:**
+    * **Typ:** Sekundenkleber (Instant Glue / CA Glue)
+    * **Hinweis:** Für allgemeine Reparaturen oder um Karosserie-Risse zu kleben.
+  * **Reifenkleber:**
+    * **Typ:** Reifenkleber (Rubber Glue)
+    * **Hinweis:** Spezial-Sekundenkleber für Reifen. (Brauchst du nur, wenn deine Sweep-Reifen nicht schon auf der Felge verklebt geliefert werden).
+
+#### 🔹 Klebebaender
+
+  * **Panzertape:**
+    * **Typ:** Glasfaserklebeband / Panzertape (Glass or Vinyl Tape)
+    * **Hinweis:** Perfekt, um den 3S-Akku zusätzlich zu sichern oder Kabel im Chassis ordentlich festzukleben.
+
+
+---
