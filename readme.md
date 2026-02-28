@@ -66,3 +66,13 @@ Wenn du Änderungen an den Python-Skripten testest oder die Dokumentation neu ge
 2. Klicke in der linken Seitenleiste auf den Workflow, den du ausführen möchtest (z. B. `build_spec`).
 3. Klicke auf den Button **Run workflow** auf der rechten Seite.
 4. Wähle den gewünschten Branch aus und klicke auf den grünen Button **Run workflow**.
+
+## 🧮 Speed & Getriebe Rechner (CLI-Tool)
+
+Um bei 100 km/h nicht blindlings die Elektronik zu überlasten, enthält dieses Repository ein maßgeschneidertes Python-Skript zur Berechnung der optimalen Getriebeübersetzung für den **Carten T410R**. 
+
+Der Rechner simuliert anhand des Reifendurchmessers und der gewünschten Zielgeschwindigkeit die exakte mechanische Belastung (Radlast) für den Motor bei allen passenden Motorritzeln (21Z - 44Z am 72Z Hauptzahnrad). Er warnt vor Überlastung und teilt die möglichen Setups automatisch in Belastungs-Zonen (Grün, Gelb, Rot) für einen 4000kV / 3S Antrieb ein.
+
+**So startest du das Tool lokal:**
+```bash
+python scripts/calc/getriebe_calc.py
