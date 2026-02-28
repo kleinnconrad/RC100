@@ -1,5 +1,5 @@
 werkzeug_meta:
-  beschreibung: "Benötigtes Werkzeug für den Zusammenbau des Carten T410R (übersetzt aus Baukasten-Anleitung)."
+  beschreibung: "Benötigtes Werkzeug für den Zusammenbau des Carten T410R."
 
 werkzeug_liste:
   inbus_schraubendreher:
@@ -10,22 +10,10 @@ werkzeug_liste:
     model: "Titan RC Inbus Set (1.5/2.0/2.5/3.0)"
 
   steckschluessel:
-    typ: "Steckschlüssel / Radmutternschlüssel (Box Wrench)"
-    groessen: "5.5 mm, 7.0 mm, 10.0 mm"
-    hinweis: "Der 7.0 mm Schlüssel ist extrem wichtig für die Radmuttern. Oft als handliches 'Radkreuz' erhältlich."
-    brand: "Arrowmax"
-    model: "Radmutternschlüssel 7.0mm"
-
-  zangen_und_messer:
-    spitzzange:
-      typ: "Spitzzange / Flachrundzange (Needle Nose Pliers)"
-      hinweis: "Zum Greifen von kleinen Teilen und Halten der Dämpferstangen. (Baumarkt-Zange reicht)."
-    bastelmesser:
-      typ: "Bastelmesser / Skalpell (Hobby Knife)"
-      hinweis: "Zum sauberen Entgraten der Plastikteile vom Gussbaum. (Cutter-Messer reicht oft auch)."
-    schere:
-      typ: "Schere (Scissors)"
-      hinweis: "Falls du die Karosserie selbst ausschneidest, brauchst du eine gebogene 'Lexanschere'."
+    typ: "RC Radkreuz / Steckschlüssel (Box Wrench)"
+    groessen: "5.5 mm und 7.0 mm"
+    hinweis: "Die 5.5 mm brauchst du permanent für alle M3-Muttern im Chassis. Die 7.0 mm sind für die Radmuttern. Die in der Carten-Anleitung erwähnten 10.0 mm werden bei diesem 1/10 Modell überhaupt nicht benötigt."
+    status: "Vorhanden (Kein Kauf nötig)"
 
   klebstoffe_und_chemie:
     schraubensicherung:
@@ -36,9 +24,6 @@ werkzeug_liste:
     sekundenkleber:
       typ: "Sekundenkleber (Instant Glue / CA Glue)"
       hinweis: "Für allgemeine Reparaturen oder um Karosserie-Risse zu kleben."
-    reifenkleber:
-      typ: "Reifenkleber (Rubber Glue)"
-      hinweis: "Spezial-Sekundenkleber für Reifen. (Brauchst du nur, wenn deine Sweep-Reifen nicht schon auf der Felge verklebt geliefert werden)."
 
   klebebaender:
     panzertape:
