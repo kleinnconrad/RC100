@@ -262,47 +262,42 @@ Cartent410R:
     lenkung:
       lenksystem: Kugelgelagertes Dual-Bellcrank-System (Doppelarm)
       lenkhebel_c_hubs: Composite-Kunststoff
-Zahnflankenspiel:
-  compatibility_check_gearing:
-    status: PASS
-    fitment_type: Drop-In-Fit
-    modifications_required: Keine (Kein Fräsen oder Dremeln notwendig)
-    tooth_sum_theory:
-      description: Der Abstand zwischen Motorwelle und Hauptwelle ist durch die Langlöcher
-        im Aluminium-Motorhalter begrenzt. Die Passgenauigkeit lässt sich bei gleichem
-        Pitch (48dp) über die Summe der Zähne beider Zahnräder berechnen.
-    setups_comparison:
-      standard_setup:
-        spur_gear_teeth: 72
-        pinion_gear_teeth: 30
-        total_teeth: 102
-      speedrun_setup:
-        spur_gear_teeth: 64
-        pinion_gear_teeth: 38
-        total_teeth: 102
-    conclusion:
-      result: Da die Zähnesumme (102 Zähne) und damit der physische Gesamtdurchmesser
-        beider Setups exakt identisch ist, bleibt der Motor sicher im Verstellbereich
-        der Langlöcher.
-      gear_mesh_setup: Es gibt ausreichend Spielraum, um das Zahnflankenspiel (Gear
-        Mesh) mit dem Papier-Trick perfekt einzustellen.
-  purchasing_and_installation_tips:
-    spur_gear:
-      teeth: 64
-      pitch: 48dp
-      mounting_requirement: Muss Standard-Bohrungen in der Mitte haben (meist 3 oder
-        4 Löcher im Kreis), um auf den Carten-Aluminium-Mitnehmer geschraubt werden
-        zu können.
-      suggested_brands:
-      - Arrowmax
-      - Kimbrough
-    pinion_gear:
-      teeth: 38
-      pitch: 48dp
-      clearance_warning: Ein 38Z Ritzel ist physisch massiv. Beim Einbau zwingend
-        prüfen, dass das große Ritzel nicht an der rotierenden Aluminium-Kardanwelle
-        in der Mitte schleift. Ein minimaler Sicherheitsabstand muss zwingend erhalten
-        bleiben.
+Getriebe:
+  getriebe_meta:
+    brand: Arrowmax
+    model: Motorritzel 42Z (48dp / 3.17mm Welle)
+    part_number: 42T-48P
+  getriebe_setup:
+    hauptzahnrad_spur:
+      zähne: 72
+      typ: Baukasten Standard
+      modul: 48dp
+    motorritzel_pinion:
+      zähne: 42
+      material: Hardcoated Alu oder Stahl
+    berechnete_werte:
+      interne_uebersetzung: 2.47
+      gesamt_ratio: 4.23
+      zielgeschwindigkeit: '> 100 km/h'
+  einstellbereich_mit_72z_hauptzahnrad:
+    hinweis: 'Laut Carten Handbuch (T410R mit Gear Diff 2.47) ohne Umbau des 72Z Hauptzahnrads
+      fahrbar:'
+    max_beschleunigung:
+      ritzel: 21
+      ratio: 8.47
+    mid_range:
+      ritzel: 31
+      ratio: 5.74
+    high_speed_bereich:
+      ritzel_34: 5.23
+      ritzel_35: 5.08
+      ritzel_36: 4.94
+      ritzel_37: 4.81
+    max_top_speed:
+      ritzel_41: 4.34
+      ritzel_42: 4.23
+      ritzel_43: 4.14
+      ritzel_44: 4.04
 Differentiale:
   differential_meta:
     type: Öldruck-Kegeldifferential (Metal Gear)

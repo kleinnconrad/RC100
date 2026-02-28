@@ -264,6 +264,66 @@
 
 ---
 
+## ⚙️ GETRIEBE
+
+
+### 📦 Getriebe Meta
+
+* **Brand:** Arrowmax
+* **Model:** Motorritzel 42Z (48dp / 3.17mm Welle)
+* **Part Number:** 42T-48P
+
+### 📦 Getriebe Setup
+
+
+#### 🔹 Hauptzahnrad Spur
+
+  * **Zähne:** 72
+  * **Typ:** Baukasten Standard
+  * **Modul:** 48dp
+
+#### 🔹 Motorritzel Pinion
+
+  * **Zähne:** 42
+  * **Material:** Hardcoated Alu oder Stahl
+
+#### 🔹 Berechnete Werte
+
+  * **Interne Uebersetzung:** 2.47
+  * **Gesamt Ratio:** 4.23
+  * **Zielgeschwindigkeit:** > 100 km/h
+
+### 📦 Einstellbereich Mit 72Z Hauptzahnrad
+
+* **Hinweis:** Laut Carten Handbuch (T410R mit Gear Diff 2.47) ohne Umbau des 72Z Hauptzahnrads fahrbar:
+
+#### 🔹 Max Beschleunigung
+
+  * **Ritzel:** 21
+  * **Ratio:** 8.47
+
+#### 🔹 Mid Range
+
+  * **Ritzel:** 31
+  * **Ratio:** 5.74
+
+#### 🔹 High Speed Bereich
+
+  * **Ritzel 34:** 5.23
+  * **Ritzel 35:** 5.08
+  * **Ritzel 36:** 4.94
+  * **Ritzel 37:** 4.81
+
+#### 🔹 Max Top Speed
+
+  * **Ritzel 41:** 4.34
+  * **Ritzel 42:** 4.23
+  * **Ritzel 43:** 4.14
+  * **Ritzel 44:** 4.04
+
+
+---
+
 ## ⚙️ KARDANWELLE UND JOINTS
 
 
@@ -501,56 +561,6 @@
 ### 📦 Transmitter Setup
 
 * **Dual Rate:** Für den 100 km/h Run muss an der Fernsteuerung zwingend das 'Dual Rate' (D/R) oder der Lenkausschlag (EPA) auf ca. 30-40% reduziert werden. Minimale Lenkbewegungen reichen bei Top-Speed völlig aus. Voller Ausschlag führt zum sofortigen Überschlag.
-
-
----
-
-## ⚙️ ZAHNFLANKENSPIEL
-
-
-### 📦 Compatibility Check Gearing
-
-* **Status:** PASS
-* **Fitment Type:** Drop-In-Fit
-* **Modifications Required:** Keine (Kein Fräsen oder Dremeln notwendig)
-
-#### 🔹 Tooth Sum Theory
-
-  * **Description:** Der Abstand zwischen Motorwelle und Hauptwelle ist durch die Langlöcher im Aluminium-Motorhalter begrenzt. Die Passgenauigkeit lässt sich bei gleichem Pitch (48dp) über die Summe der Zähne beider Zahnräder berechnen.
-
-#### 🔹 Setups Comparison
-
-  * **Standard Setup:**
-    * **Spur Gear Teeth:** 72
-    * **Pinion Gear Teeth:** 30
-    * **Total Teeth:** 102
-  * **Speedrun Setup:**
-    * **Spur Gear Teeth:** 64
-    * **Pinion Gear Teeth:** 38
-    * **Total Teeth:** 102
-
-#### 🔹 Conclusion
-
-  * **Result:** Da die Zähnesumme (102 Zähne) und damit der physische Gesamtdurchmesser beider Setups exakt identisch ist, bleibt der Motor sicher im Verstellbereich der Langlöcher.
-  * **Gear Mesh Setup:** Es gibt ausreichend Spielraum, um das Zahnflankenspiel (Gear Mesh) mit dem Papier-Trick perfekt einzustellen.
-
-### 📦 Purchasing And Installation Tips
-
-
-#### 🔹 Spur Gear
-
-  * **Teeth:** 64
-  * **Pitch:** 48dp
-  * **Mounting Requirement:** Muss Standard-Bohrungen in der Mitte haben (meist 3 oder 4 Löcher im Kreis), um auf den Carten-Aluminium-Mitnehmer geschraubt werden zu können.
-  * **Suggested Brands:**
-    * Arrowmax
-    * Kimbrough
-
-#### 🔹 Pinion Gear
-
-  * **Teeth:** 38
-  * **Pitch:** 48dp
-  * **Clearance Warning:** Ein 38Z Ritzel ist physisch massiv. Beim Einbau zwingend prüfen, dass das große Ritzel nicht an der rotierenden Aluminium-Kardanwelle in der Mitte schleift. Ein minimaler Sicherheitsabstand muss zwingend erhalten bleiben.
 
 
 ---
