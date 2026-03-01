@@ -59,65 +59,33 @@
 
 ### 📦 Combo Meta
 
-* **Brand:** Hobbywing
-* **Series:** QuicRun Generation 2 (G2)
-* **Part Number:** HW38030208
-* **Waterproof Rating:** IP67 (Regler)
+* **Beschreibung:** Spezifikation des Brushless-Antriebsstrangs für 100 km/h an 3S.
+* **Architektur Status:** ADR-002: 3660 Baugröße akzeptiert
 
-### 📦 Esc Specifications
+### 📦 Elektronischer Fahrtenregler Esc
 
-* **Model:** QuicRun WP 10BL120 G2
-* **Type:** Brushless (Sensored & Sensorless unterstützt)
-* **Current Continuous:** 120A
-* **Current Burst:** 760A
-* **Voltage Input:** 2S - 4S LiPo
-* **Bec Output:** 6.0V / 7.4V schaltbar bei 5A
-* **Cooling Fan:** Ja (wird über das BEC betrieben)
+* **Typ:** Brushless ESC (Sensorless)
+* **Ampere Dauerlast:** Min. 120A
+* **Lipo Support:** 2S - 3S (optional bis 4S)
+* **Bec Spannung:** 6.0V oder 7.4V (einstellbar für Servo)
+* **Steckersystem Akku:** XT60 oder XT90
+* **Steckersystem Motor:** 4.0mm Goldkontakt
+* **Referenz Modell:** Hobbywing QuicRun WP10BL120 G2
+* **Hinweis Packaging:** Aufgrund des längeren Motors muss der ESC im T410R Chassis möglichst weit nach hinten oder leicht versetzt montiert werden.
 
-#### 🔹 Programming Options
+### 📦 Brushless Motor
 
-  * LED Programmierkarte
-  * LCD Programmierbox (G2)
-* **Battery Connector:** XT60 (ab Werk verlötet)
+* **Baugroesse:** 3660 (36 mm Durchmesser, 60 mm Länge)
+* **Kv Wert:** 3700kV bis 4000kV
+* **Wellendurchmesser:** 3.175 mm (Standard für Carten) ODER 5.0 mm (Erfordert 48dp Ritzel mit 5mm Bohrung!)
+* **Pol Anzahl:** 4-Pol (für hohes Drehmoment)
+* **Referenz Modell:** Hobbywing 3660SL (3700kV)
+* **Thermische Toleranz:** Max. 25.0 % berechnete Radlast
 
-#### 🔹 Motor Limits
+### 📦 Kuehlung
 
-  * **Limit 3S:** <= 4000kV (Baugröße max. 3660)
-  * **Limit 4S:** <= 2600kV (Baugröße max. 4268)
-
-#### 🔹 Dimensions
-
-  * **Length Mm:** 52.8
-  * **Width Mm:** 39.8
-  * **Height Mm:** 38.2
-* **Weight G:** 119
-
-### 📦 Motor Specifications
-
-* **Model:** QuicRun 3652SL G2
-* **Type:** Brushless (Sensorlos / Sensorless)
-* **Poles:** 4
-* **Kv Rating:** 4000
-* **Voltage Input:** 2S - 3S LiPo
-* **No Load Current:** 5.3A
-
-#### 🔹 Dimensions
-
-  * **Diameter Mm:** 36.0
-  * **Length Mm:** 52.0
-
-#### 🔹 Shaft
-
-  * **Diameter Mm:** 3.175
-  * **Length Mm:** 15.0
-* **Weight G:** 224
-* **Housing:** CNC-gefrästes Aluminium
-
-### 📦 Compatibility Check
-
-* **Chassis Fit:** Perfekt. Motor-Durchmesser 36mm passt exakt in den T410R Motorhalter.
-* **Gearing Fit:** Perfekt. 3.175mm Welle nimmt Standard 48dp Ritzel auf.
-* **Power Headroom:** Gut. Motor ist an der Obergrenze des ESCs bei 3S, aber die 120A Dauerleistung fangen die Spitzen sicher ab.
+* **Motor Kuehler:** Passiver Aluminium-Kühlkörper für 36mm Motoren
+* **Motor Luefter:** Optional: 30mm oder 40mm High-Speed Lüfter (Betrieb über freien Steckplatz am Empfänger)
 
 
 ---

@@ -4,7 +4,6 @@
 
 | Kategorie | Bauteil | Artikelnummer | Status | Preis-Check |
 | :--- | :--- | :--- | :--- | :--- |
-| **Brushless Combo** | Hobbywing QuicRun 3652SL G2 | `HW38030208` | [ ] Offen | [🔍 Google Shopping](https://www.google.com/search?tbm=shop&q=Hobbywing+QuicRun+3652SL+G2+HW38030208)<br>[🛒 Berlinski](https://www.modellbau-berlinski.de/katalog/artikelinfo/x/x/x?q=Hobbywing+QuicRun+3652SL+G2+HW38030208)<br>[🛒 Ruddog](https://www.ruddog.eu/Search?ke=Hobbywing+QuicRun+3652SL+G2+HW38030208) |
 | **Ladegeraet** | SkyRC S100neo | `-` | [ ] Offen | [🔍 Google Shopping](https://www.google.com/search?tbm=shop&q=SkyRC+S100neo)<br>[🛒 Berlinski](https://www.modellbau-berlinski.de/katalog/artikelinfo/x/x/x?q=SkyRC+S100neo)<br>[🛒 Ruddog](https://www.ruddog.eu/Search?ke=SkyRC+S100neo) |
 | **Akku** | Absima | `4140014` | [ ] Offen | [🔍 Google Shopping](https://www.google.com/search?tbm=shop&q=Absima+4140014)<br>[🛒 Berlinski](https://www.modellbau-berlinski.de/katalog/artikelinfo/x/x/x?q=Absima+4140014)<br>[🛒 Ruddog](https://www.ruddog.eu/Search?ke=Absima+4140014) |
 | **Fernsteuerung** | DumboRC X6FG (Das 'G' ist das kritische Feature!) | `-` | [ ] Offen | [🔍 Google Shopping](https://www.google.com/search?tbm=shop&q=DumboRC+X6FG+%28Das+%27G%27+ist+das+kritische+Feature%21%29)<br>[🛒 Berlinski](https://www.modellbau-berlinski.de/katalog/artikelinfo/x/x/x?q=DumboRC+X6FG+%28Das+%27G%27+ist+das+kritische+Feature%21%29)<br>[🛒 Ruddog](https://www.ruddog.eu/Search?ke=DumboRC+X6FG+%28Das+%27G%27+ist+das+kritische+Feature%21%29) |
