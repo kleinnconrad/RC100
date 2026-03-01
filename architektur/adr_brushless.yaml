@@ -1,7 +1,7 @@
 adr_meta:
   id: "002"
   titel: "Auswahl der Brushless-Motor-Combo (3660 Baugröße)"
-  status: "Akzeptiert"
+  status: "offen"
   datum: "2026-03-01"
 
 kontext:
@@ -21,5 +21,6 @@ konsequenzen:
   negativ:
     - "Packaging: Der Motor ist 10 mm länger. Weniger Bauraum für ESC und Empfänger im Chassis."
     - "Verschleiß: Höheres Drehmoment belastet Hauptzahnrad und Reifen stärker."
+    - "5 mm Welle kann ein echtes PROBLEM sein!!!"
   beachten:
     - "Wellendurchmesser des Motors prüfen! (3.175 mm vs. 5.0 mm erfordert den Kauf passender 48dp Ritzel)."
