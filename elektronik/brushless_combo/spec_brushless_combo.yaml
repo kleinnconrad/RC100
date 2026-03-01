@@ -1,55 +1,25 @@
-# ==========================================
-# Spezifikation: Antriebsstrang (Brushless Combo) x
-# ==========================================
-# Hersteller: Hobbywing
-# Artikelnummer: HW38030208
-# Modell: Quicrun Brushless Combo WP10BL120G2 mit 3652SL-4000KV-G2
-# Ziel-Einsatz: 100 km/h Speedrun (Carten T410R)
-
 combo_meta:
-  brand: "Hobbywing"
-  series: "QuicRun Generation 2 (G2)"
-  part_number: "HW38030208"
-  waterproof_rating: "IP67 (Regler)"
+  beschreibung: "Spezifikation des Brushless-Antriebsstrangs für 100 km/h an 3S."
+  architektur_status: "ADR-002: 3660 Baugröße akzeptiert"
 
-esc_specifications:
-  model: "QuicRun WP 10BL120 G2"
-  type: "Brushless (Sensored & Sensorless unterstützt)"
-  current_continuous: 120A
-  current_burst: 760A
-  voltage_input: "2S - 4S LiPo"
-  bec_output: "6.0V / 7.4V schaltbar bei 5A"
-  cooling_fan: "Ja (wird über das BEC betrieben)"
-  programming_options: 
-    - "LED Programmierkarte"
-    - "LCD Programmierbox (G2)"
-  battery_connector: "XT60 (ab Werk verlötet)"
-  motor_limits:
-    limit_3s: "<= 4000kV (Baugröße max. 3660)"
-    limit_4s: "<= 2600kV (Baugröße max. 4268)"
-  dimensions:
-    length_mm: 52.8
-    width_mm: 39.8
-    height_mm: 38.2
-  weight_g: 119
+elektronischer_fahrtenregler_esc:
+  typ: "Brushless ESC (Sensorless)"
+  ampere_dauerlast: "Min. 120A"
+  lipo_support: "2S - 3S (optional bis 4S)"
+  bec_spannung: "6.0V oder 7.4V (einstellbar für Servo)"
+  steckersystem_akku: "XT60 oder XT90"
+  steckersystem_motor: "4.0mm Goldkontakt"
+  referenz_modell: "Hobbywing QuicRun WP10BL120 G2"
+  hinweis_packaging: "Aufgrund des längeren Motors muss der ESC im T410R Chassis möglichst weit nach hinten oder leicht versetzt montiert werden."
 
-motor_specifications:
-  model: "QuicRun 3652SL G2"
-  type: "Brushless (Sensorlos / Sensorless)"
-  poles: 4
-  kv_rating: 4000
-  voltage_input: "2S - 3S LiPo"
-  no_load_current: 5.3A
-  dimensions:
-    diameter_mm: 36.0
-    length_mm: 52.0
-  shaft:
-    diameter_mm: 3.175  # Wichtig für die Ritzel-Kompatibilität!
-    length_mm: 15.0
-  weight_g: 224
-  housing: "CNC-gefrästes Aluminium"
+brushless_motor:
+  baugroesse: "3660 (36 mm Durchmesser, 60 mm Länge)"
+  kv_wert: "3700kV bis 4000kV"
+  wellendurchmesser: "3.175 mm (Standard für Carten) ODER 5.0 mm (Erfordert 48dp Ritzel mit 5mm Bohrung!)"
+  pol_anzahl: "4-Pol (für hohes Drehmoment)"
+  referenz_modell: "Hobbywing 3660SL (3700kV)"
+  thermische_toleranz: "Max. 25.0 % berechnete Radlast"
 
-compatibility_check:
-  chassis_fit: "Perfekt. Motor-Durchmesser 36mm passt exakt in den T410R Motorhalter."
-  gearing_fit: "Perfekt. 3.175mm Welle nimmt Standard 48dp Ritzel auf."
-  power_headroom: "Gut. Motor ist an der Obergrenze des ESCs bei 3S, aber die 120A Dauerleistung fangen die Spitzen sicher ab."
+kuehlung:
+  motor_kuehler: "Passiver Aluminium-Kühlkörper für 36mm Motoren"
+  motor_luefter: "Optional: 30mm oder 40mm High-Speed Lüfter (Betrieb über freien Steckplatz am Empfänger)"
