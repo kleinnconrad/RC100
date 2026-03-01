@@ -10,7 +10,7 @@ kontext:
 
 entscheidung:
   beschreibung: "Spezifikation eines 3660er Brushless-Motors (ca. 3700kV - 4000kV) in Kombination mit einem 120A Fahrtenregler (ESC)."
-  referenz_implementierung: "Hobbywing Combo WP10BL120G2 mit 3660SL-3700KV-G2."
+  referenz_implementierung: "Robitronic Combo WP10BL120G2 mit 3660SL-3700KV-G2."
 
 konsequenzen:
   positiv:
