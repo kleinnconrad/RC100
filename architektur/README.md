@@ -7,7 +7,6 @@ Dieses Verzeichnis enthält alle grundlegenden architektur- und Hardwareentschei
 | ID | Datum | Titel | Status | Entscheidung |
 | :--- | :--- | :--- | :--- | :--- |
 | **ADR-001** | 2026-02-24 | Auswahl der Chassis-Plattform und Make-or-Buy-Entscheidung (100 km/h Benchmark) | 🟡 Offen | MAKE - Carten T410R |
-| **ADR-002** | 2026-02-24 | Auswahl der Brushless-Antriebseinheit (ESC & Motor) für 100 km/h Speedruns | 🟡 Offen | Hobbywing QuicRun WP 10BL120 G2 Combo |
 | **ADR-003** | 2026-02-24 | Auswahl des LiPo-Akkus für 100 km/h Ziel. | 🟡 Offen | Absima GreenHorn Line V2 (3S / 5000mAh / 50C / Hardcase) |
 | **ADR-004** | 2026-02-24 | Auswahl des Ladegeräts für 3S LiPo-Akkus | 🟡 Offen | SkyRC S100neo |
 | **ADR-005** | 2026-02-24 | Auswahl der Fernsteuerungsanlage für 100 km/h Speedruns | 🟡 Offen | DumboRC X6 |
@@ -47,40 +46,6 @@ Der massive Preisvorteil gegenüber dem Xray X4 '24 rechtfertigt den erhöhten m
 #### Konsequenzen
 - Die Metall-Differentiale des T410R müssen zwingend präzise geshimmt werden, um Spielfreiheit zu garantieren.
 - Die zentrale Aluminium-Kardanwelle muss vor dem Einbau auf Rundlauf geprüft werden, da bei Kardan-Setups starke Vibrationen entstehen können.
-
-
----
-
-### ADR-002: Auswahl der Brushless-Antriebseinheit (ESC & Motor) für 100 km/h Speedruns
-**Status:** Offen | **Datum:** 2026-02-24
-
-#### Kontext
-Für das Carten T410R Chassis wird ein Antriebssystem benötigt, das in der Lage ist, 
-das Fahrzeug auf über 100 km/h zu beschleunigen. Dies erfordert den Betrieb an einem 
-3S LiPo-Akku (11.1V Nennspannung) und eine extreme Übersetzung (64Z/38Z). 
-Durch die lange Übersetzung entstehen beim Beschleunigen massive Stromspitzen (Ampere). 
-Ein Standard-Regler (60A bis 80A) würde hier sofort in die thermische Abschaltung gehen 
-oder durchbrennen. Benötigt wird eine Kombination aus hoher Spannungsfestigkeit, 
-ausreichendem Ampere-Puffer (Headroom) und einer Motordrehzahl von ca. 4000kV.
-
-
-#### Entscheidung
-> **Hobbywing QuicRun WP 10BL120 G2 Combo**
-
-#### Begründung (Rationale)
-Die Entscheidung fällt auf die Hobbywing QuicRun 120A Combo. Sie bietet das beste 
-Kosten-Nutzen-Verhältnis für diese spezifische Architektur. 120 Ampere Dauerlast 
-bieten das zwingend notwendige thermische und elektrische Sicherheitsnetz für die 
-extreme 64Z/38Z Übersetzung. Da bei Speedruns hauptsächlich im oberen Drehzahlbereich 
-gefahren wird, kann auf ein teures Sensorkabel-Setup (Option 2 & 3) verzichtet werden. 
-Im Gegensatz zu Option 1 (Surpass) garantiert Hobbywing hier reproduzierbare Qualität 
-und ein stabiles BEC, was bei über 100 km/h einen Ausfall der Lenkung verhindert.
-
-
-#### Konsequenzen
-- System ist sensorlos (Sensorless): Beim langsamen Anfahren kann leichtes 'Cogging' (Stottern) auftreten. Dies ist für das Speedrun-Ziel irrelevant.
-- Zusätzliche Kühlung erforderlich: Der 3652SL Motor muss bei 3S zwingend mit einem passiven Alu-Kühlkörper und einem aktiven 40mm High-Speed-Lüfter nachgerüstet werden (siehe spec_cooling.yaml).
-- Kein integriertes Data-Logging: Topspeed und Temperaturen müssen extern gemessen werden (z. B. GPS-Logger und Infrarot-Thermometer).
 
 
 ---
