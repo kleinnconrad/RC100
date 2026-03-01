@@ -1,18 +1,25 @@
-# ADR 002: Auswahl der Brushless-Motor-Combo (3660 Baugröße)
+adr_meta:
+  id: "002"
+  titel: "Auswahl der Brushless-Motor-Combo (3660 Baugröße)"
+  status: "Akzeptiert"
+  datum: "2026-03-01"
 
-## Status
-Akzeptiert
+kontext:
+  ziel: "100 km/h mit dem 1/10 Carten T410R an 3S LiPo (11.1V)."
+  problem: "Ein Standard-3650er Motor arbeitet bei der nötigen Getriebeübersetzung (Radlast > 20 %) extrem nah am thermischen Limit und riskiert die Zerstörung der Elektronik."
 
-## Kontext
-Für das Ziel, den 1/10 Tourenwagen (Carten T410R) auf 100 km/h zu beschleunigen, wird ein Brushless-Antriebssystem für den Betrieb mit 3S LiPo-Akkus (11,1 V) benötigt. Die Standard-Baugröße für 1/10 Modelle ist ein 3650er Motor. Berechnungen der Radlast-Dynamik haben jedoch gezeigt, dass ein 3650er Motor bei den für 100 km/h nötigen Getriebeübersetzungen (FDR < 5.0, Radlast > 20 %) extrem nah an seinem thermischen Limit ("Magic Smoke") operiert. 
+entscheidung:
+  beschreibung: "Spezifikation eines 3660er Brushless-Motors (ca. 3700kV - 4000kV) in Kombination mit einem 120A Fahrtenregler (ESC)."
+  referenz_implementierung: "Hobbywing QuicRun WP10BL120 G2 Combo (3700kV) oder vergleichbar."
 
-## Entscheidung
-Wir entscheiden uns gegen den Standard-3650er und spezifizieren den Einsatz eines **3660er Brushless-Motors (ca. 3700kV - 4000kV)** in Kombination mit einem **120A Fahrtenregler (ESC)**.
-Als Referenz-Implementierung dient die *Hobbywing QuicRun WP10BL120 G2 Combo (3700kV)*.
-
-## Konsequenzen (Trade-offs)
-* **Positiv:** Deutlich höheres Drehmoment durch den 10 mm längeren Rotor.
-* **Positiv:** Massiv erweiterter thermischer Headroom. Das mechanische Limit des Carten-Chassis (Ritzel 44Z = 24,7 % Radlast) kann nun voll ausgereizt werden, ohne den Motor zwangsläufig zu überhitzen.
-* **Positiv:** Die nominale Drehzahl von ca. 41.000 U/min (bei 3700kV an 3S) ist effizienter und belastet die Kugellager des Motors weniger als absolute High-kV Setups.
-* **Negativ (Packaging):** Der Motor ist 10 mm länger. Das reduziert den physischen Bauraum auf dem Chassis direkt hinter dem Motor. Die Platzierung von ESC und Empfänger erfordert präzises Kabelmanagement.
-* **Negativ (Verschleiß):** Das erhöhte Drehmoment wird den Verschleiß am 72Z Hauptzahnrad und den Reifen leicht erhöhen.
+konsequenzen:
+  positiv:
+    - "Deutlich höheres Drehmoment durch den 10 mm längeren Rotor."
+    - "Massiv erweiterter thermischer Headroom (bis ca. 25.0 % Radlast sicher)."
+    - "Mechanisches Limit des Carten-Chassis (Ritzel 44Z = 24.7 % Radlast) kann nun voll ausgereizt werden."
+    - "Effizientere Zieldrehzahl (ca. 41.000 U/min) schont die Motor-Kugellager."
+  negativ:
+    - "Packaging: Der Motor ist 10 mm länger. Weniger Bauraum für ESC und Empfänger im Chassis."
+    - "Verschleiß: Höheres Drehmoment belastet Hauptzahnrad und Reifen stärker."
+  beachten:
+    - "Wellendurchmesser des Motors prüfen! (3.175 mm vs. 5.0 mm erfordert den Kauf passender 48dp Ritzel)."
