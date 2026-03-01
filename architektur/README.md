@@ -6,7 +6,7 @@ Dieses Verzeichnis enthält alle grundlegenden architektur- und Hardwareentschei
 
 | ID | Datum | Titel | Status | Entscheidung |
 | :--- | :--- | :--- | :--- | :--- |
-| **002** | N/A | N/A | 🟢 Akzeptiert | N/A |
+| **002** | N/A | N/A | 🟡 offen | N/A |
 | **ADR-001** | 2026-02-24 | Auswahl der Chassis-Plattform und Make-or-Buy-Entscheidung (100 km/h Benchmark) | 🟡 Offen | MAKE - Carten T410R |
 | **ADR-003** | 2026-02-24 | Auswahl des LiPo-Akkus für 100 km/h Ziel. | 🟡 Offen | Absima GreenHorn Line V2 (3S / 5000mAh / 50C / Hardcase) |
 | **ADR-004** | 2026-02-24 | Auswahl des Ladegeräts für 3S LiPo-Akkus | 🟡 Offen | SkyRC S100neo |
@@ -20,7 +20,7 @@ Dieses Verzeichnis enthält alle grundlegenden architektur- und Hardwareentschei
 ## 📖 Detail-Protokolle
 
 ### 002: 
-**Status:** Akzeptiert | **Datum:** 
+**Status:** offen | **Datum:** 
 
 #### Kontext
 Kein Kontext angegeben.
