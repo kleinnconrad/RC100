@@ -6,8 +6,8 @@
 adr_charger_selection:
   id: "ADR-004"
   title: "Auswahl des Ladegeräts für 3S LiPo-Akkus"
-  status: "Offen"
-  date: "2026-02-24"
+  status: "entschieden"
+  date: "2026-03-06"
   
   context: |
     Das Laden des im ADR-003 definierten 3S LiPo-Akkus (11.1V, 5000mAh, 55.5 Wh) erfordert ein 
