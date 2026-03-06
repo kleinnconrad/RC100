@@ -492,6 +492,33 @@
 
 ---
 
+## ⚙️ LASERTACHOMETER
+
+
+### 📦 Messwerkzeug Meta
+
+* **Typ:** Berührungsloses Laser-Drehzahlmessgerät
+* **Referenz Modell:** DT-2234C+ (oder baugleiche Klone wie Neoteck/Proster)
+* **Messbereich:** 2.5 bis 99.999 RPM
+* **Messgenauigkeit:** +/- 0.05%
+
+#### 🔹 Shopping Item
+
+  * **In Liste Aufnehmen:** True
+  * **Artikel Name:** Digitaler Laser Tachometer (DT-2234C+)
+  * **Kategorie:** Werkstatt & Tools
+  * **Referenz Link:** Suche bei Amazon nach 'Laser Tachometer DT-2234C+'
+  * **Geschaetzter Preis Eur:** 18.0
+
+### 📦 Test Protokoll
+
+* **Vorbereitung:** Reflektorstreifen (beiliegend) auf Reifenflanke oder Ritzel kleben.
+* **Durchfuehrung:** Fahrzeug sicher aufbocken. Funke einschalten, Vollgas geben und Laser auf den rotierenden Streifen richten.
+* **Sicherheitswarnung:** WICHTIG: Bei 100 km/h Radumdrehungsgeschwindigkeit blähen sich Gummireifen extrem auf (Ballooning). Schutzbrille tragen und nicht direkt in der Fliehkraft-Linie der Räder stehen, falls sich die Verklebung des Reifens löst!
+
+
+---
+
 ## ⚙️ REIFEN
 
 
