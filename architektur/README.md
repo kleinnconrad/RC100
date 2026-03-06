@@ -10,7 +10,7 @@ Dieses Verzeichnis enthält alle grundlegenden architektur- und Hardwareentschei
 | **ADR-001** | 2026-02-24 | Auswahl der Chassis-Plattform und Make-or-Buy-Entscheidung (100 km/h Benchmark) | 🟡 Offen | MAKE - Carten T410R |
 | **ADR-003** | 2026-02-24 | Auswahl des LiPo-Akkus für 100 km/h Ziel. | 🟡 Offen | Absima GreenHorn Line V2 (3S / 5000mAh / 50C / Hardcase) |
 | **ADR-004** | 2026-02-24 | Auswahl des Ladegeräts für 3S LiPo-Akkus | 🟡 Offen | SkyRC S100neo |
-| **ADR-005** | 2026-02-24 | Auswahl der Fernsteuerungsanlage für 100 km/h Speedruns | 🟡 Offen | DumboRC X6 |
+| **ADR-005** | 2026-03-06 | Auswahl der Fernsteuerungsanlage für 100 km/h Speedruns | 🟢 entschieden | Carson Reflex Wheel X1 |
 | **ADR-006** | 2026-02-24 | Auswahl des Lenkservos für präzise High-Speed-Kontrolle | 🟡 Offen | Savöx SC-1251MG+ |
 | **ADR-007** | 2026-02-24 | Auswahl der aktiven und passiven Motorkühlung für 3S-Speedruns | 🟡 Offen | Passiver 36mm Alu-Kühlkörper kombiniert mit aktivem 40x40mm High-Speed Alu-Lüfter |
 | **ADR-008** | 2026-02-25 | Auswahl der Bereifung (Belted Gummireifen für Asphalt) für 100 km/h Speedruns | 🟡 Offen | Sweep HANKOOK Tread Belted tires Pre-glued set Pro-compound 36deg for Asphalt (SR-SSF-36AWPG) |
@@ -129,34 +129,35 @@ Adapterkabel überflüssig macht. Dies passt perfekt zur Architektur-Entscheidun
 ---
 
 ### ADR-005: Auswahl der Fernsteuerungsanlage für 100 km/h Speedruns
-**Status:** Offen | **Datum:** 2026-02-24
+**Status:** entschieden | **Datum:** 2026-03-06
 
 #### Kontext
 Ein RC-Car, das mit 100 km/h (ca. 27,7 Meter pro Sekunde) fährt, legt in wenigen Sekunden 
 enorme Distanzen zurück. Die Fernsteuerung (Transmitter) und der Empfänger (Receiver) 
-müssen daher zwingend eine extrem hohe und stabile Reichweite (300 bis 400 Meter) aufweisen, 
-damit das Fahrzeug am Ende der Beschleunigungsstrecke nicht außer Kontrolle gerät. 
-Zudem ist bei diesen Geschwindigkeiten eine elektronische Stabilisierungshilfe (Gyro) 
-im Empfänger hochgradig empfehlenswert, um das Fahrzeug beim kleinsten Ausbrechen 
-automatisch in der Spur zu halten.
+müssen daher zwingend eine stabile Funkverbindung und ein absolut verlässliches Fail-Safe 
+aufweisen, damit das Fahrzeug am Ende der Beschleunigungsstrecke nicht außer Kontrolle gerät. 
+Es muss abgewogen werden zwischen maximaler Reichweite inkl. Gyro-Unterstützung und einem 
+robusten, ausfallsicheren MVP-Ansatz (Minimum Viable Product), der die Komplexität im Setup reduziert.
 
 
 #### Entscheidung
-> **DumboRC X6**
+> **Carson Reflex Wheel X1**
 
 #### Begründung (Rationale)
-Die Entscheidung fällt auf die DumboRC X6. Sie bietet exakt die zwei Features, die für 
-das Projekt überlebenswichtig sind, ohne das Budget zu sprengen: Eine außergewöhnlich 
-hohe Reichweite und die Möglichkeit, kostengünstige Gyro-Empfänger zu nutzen. Da bei einem 
-Speedrun keine komplexen Mischer, Dual-Rate-Kurven oder Telemetriedaten auf einem 
-Senderdisplay benötigt werden, ist das spartanische Design der X6 kein technischer Nachteil, 
-sondern ein effizienter Ressourceneinsatz.
+Die Entscheidung fällt im Sinne eines sauberen MVP-Ansatzes auf die Carson Reflex Wheel X1. 
+Obwohl die DumboRC auf dem Papier mehr Reichweite und einen Gyro bietet, reicht die Carson 
+für die ersten validen 100 km/h-Runs auf übersichtlichen Parkplätzen oder Strecken vollkommen aus. 
+Sie ist ein bewährter Industrie-Standard im Einstiegssegment, bietet eine extrem zuverlässige 
+Fail-Safe-Funktion und die überlebenswichtige Steering Dual-Rate Einstellung. Dieser 
+pragmatische Ansatz spart Komplexität beim Setup (kein Gyro-Wobble-Risiko) und liefert 
+genau die Baseline an Funktionalität, die aktuell benötigt wird.
 
 
 #### Konsequenzen
-- Empfänger-Wahl: Es muss zwingend der Empfänger 'X6FG' (das 'G' steht für Gyro) verbaut werden. Der Standard-Empfänger X6F hat keine Stabilisierung.
-- Setup: Der Gyro (Kanal 6 Drehregler am Sender) muss vor dem ersten Run auf einer sicheren Fläche präzise eingestellt werden (Sensitivität), damit sich die Lenkung bei High-Speed nicht aufschaukelt (Speed-Wobble).
-- Batterien: Der Sender benötigt 4x AA Batterien. Für konstante Sendeleistung sollten hochwertige Akkus (z.B. Eneloop) verwendet werden.
+- Sicherheitsarchitektur (Fail-Safe): Das Fail-Safe des beiliegenden Carson Micro-Empfängers muss vor der ersten Fahrt zwingend auf 'Bremse/Neutral' programmiert werden. Bei Signalverlust darf der 3660er Motor kein Gas mehr annehmen.
+- Spannungs-Constraint (BEC): Der Hobbywing 120A Regler darf maximal 6.0V an den Empfänger liefern. Die 7.4V Option des ESC darf nicht aktiviert werden, da der Carson Empfänger sonst durchbrennen könnte.
+- Fahrverhalten (Dual Rate): Da kein Gyro vorhanden ist, der das Auto automatisch stabilisiert, muss der maximale Lenkausschlag über das Dual-Rate-Rad am Sender für Speedruns zwingend auf ca. 30 % reduziert werden, um ein Aufschaukeln der Lenkung zu verhindern.
+- Batterien: Der Sender benötigt 4x AA Batterien. Für eine absolut konstante Sendeleistung ohne Einbrüche sollten hochwertige Akkus (z.B. Eneloop) verwendet werden.
 
 
 ---
