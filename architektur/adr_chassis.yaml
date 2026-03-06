@@ -6,8 +6,8 @@
 adr_chassis_platform:
   id: "ADR-001"
   title: "Auswahl der Chassis-Plattform und Make-or-Buy-Entscheidung (100 km/h Benchmark)"
-  status: "Offen"
-  date: "2026-02-24"
+  status: "entschieden"
+  date: "2026-03-06"
   
   context: |
     Für das 100 km/h-Speedrun-Projekt wird eine mechanisch stabile Basis benötigt. Die Plattform muss 
