@@ -12,7 +12,7 @@ Dieses Verzeichnis enthält alle grundlegenden architektur- und Hardwareentschei
 | **ADR-004** | 2026-02-24 | Auswahl des Ladegeräts für 3S LiPo-Akkus | 🟡 Offen | SkyRC S100neo |
 | **ADR-005** | 2026-03-06 | Auswahl der Fernsteuerungsanlage für 100 km/h Speedruns | 🟢 entschieden | Carson Reflex Wheel X1 |
 | **ADR-006** | 2026-03-06 | Auswahl des Lenkservos für präzise High-Speed-Kontrolle | 🟢 entschieden | JX PDI-4409MG |
-| **ADR-007** | 2026-02-24 | Auswahl der aktiven und passiven Motorkühlung für 3S-Speedruns | 🟡 Offen | Passiver 36mm Alu-Kühlkörper kombiniert mit aktivem 40x40mm High-Speed Alu-Lüfter |
+| **ADR-007** | 2026-03-06 | Auswahl der aktiven und passiven Motorkühlung für 3S-Speedruns | 🟢 entschieden | Passiver 36mm Alu-Kühlkörper kombiniert mit aktivem 40x40mm High-Speed Alu-Lüfter |
 | **ADR-008** | 2026-02-25 | Auswahl der Bereifung (Belted Gummireifen für Asphalt) für 100 km/h Speedruns | 🟡 Offen | Sweep HANKOOK Tread Belted tires Pre-glued set Pro-compound 36deg for Asphalt (SR-SSF-36AWPG) |
 
 ---
@@ -215,7 +215,7 @@ Trade-off für reine Geradeaus-Speedruns.
 ---
 
 ### ADR-007: Auswahl der aktiven und passiven Motorkühlung für 3S-Speedruns
-**Status:** Offen | **Datum:** 2026-02-24
+**Status:** entschieden | **Datum:** 2026-03-06
 
 #### Kontext
 Das anvisierte Ziel von 100 km/h erfordert den Einsatz eines 4000kV Motors an einem 
