@@ -1,25 +1,48 @@
 combo_meta:
   beschreibung: "Spezifikation des Brushless-Antriebsstrangs für 100 km/h an 3S."
-  architektur_status: "ADR-002: 3660 Baugröße akzeptiert"
+  architektur_status: "ADR-002: Hobbywing QuicRun WP10BL120 G2 Combo (3660SL 3700KV) akzeptiert"
 
 elektronischer_fahrtenregler_esc:
   typ: "Brushless ESC (Sensorless)"
   ampere_dauerlast: "Min. 120A"
   lipo_support: "2S - 3S (optional bis 4S)"
-  bec_spannung: "6.0V oder 7.4V (einstellbar für Servo)"
-  steckersystem_akku: "XT60 oder XT90"
+  bec_spannung: "6.0V oder 7.4V (einstellbar für Servo - ACHTUNG: Auf 6.0V für Carson Empfänger belassen!)"
+  steckersystem_akku: "XT60 (Ab Werk bei der G2 Combo verlötet)"
   steckersystem_motor: "4.0mm Goldkontakt"
   referenz_modell: "Hobbywing QuicRun WP10BL120 G2"
   hinweis_packaging: "Aufgrund des längeren Motors muss der ESC im T410R Chassis möglichst weit nach hinten oder leicht versetzt montiert werden."
+  shopping_item:
+    in_liste_aufnehmen: true
+    artikel_name: "Hobbywing QuicRun Brushless Combo WP10BL120 G2 (inkl. 3660SL 3700KV Motor)"
+    kategorie: "Antrieb & Elektronik"
+    referenz_link: "https://www.rcfox.de/HW38030211-HobbyWing-Quicrun-Brushless-Combo-WP10BL120G2-mit-3660SL-3700KV-G2"
+    geschaetzter_preis_eur: 89.00
 
 brushless_motor:
   baugroesse: "3660 (36 mm Durchmesser, 60 mm Länge)"
-  kv_wert: "3700kV bis 4000kV"
-  wellendurchmesser: "3.175 mm (Standard für Carten) ODER 5.0 mm (Erfordert 48dp Ritzel mit 5mm Bohrung!)"
+  kv_wert: "3700KV"
+  wellendurchmesser: "5.0 mm (Erfordert zwingend 48dp Ritzel mit 5mm Bohrung!)"
   pol_anzahl: "4-Pol (für hohes Drehmoment)"
-  referenz_modell: "Hobbywing 3660SL (3700kV)"
+  referenz_modell: "Hobbywing 3660SL G2 (3700KV)"
   thermische_toleranz: "Max. 25.0 % berechnete Radlast"
+  shopping_item:
+    in_liste_aufnehmen: false # Wird bereits durch den ESC-Combo-Link abgedeckt
+
+motor_ritzel:
+  typ: "Large Bore Pinion Gear"
+  zahnflankenprofil_pitch: "48dp"
+  zaehnezahl: "43Z"
+  bohrung: "5.0 mm (Zwingend für die Welle des Hobbywing 3660 Motors!)"
+  material: "Gehärteter Stahl"
+  shopping_item:
+    in_liste_aufnehmen: true
+    artikel_name: "Robinson Racing RRP-2043 (48dp, 43T, 5mm Bore)"
+    kategorie: "Antrieb & Mechanik"
+    referenz_link: "https://www.ebay.com/itm/234242275376"
+    geschaetzter_preis_eur: 15.00
 
 kuehlung:
   motor_kuehler: "Passiver Aluminium-Kühlkörper für 36mm Motoren"
   motor_luefter: "Optional: 30mm oder 40mm High-Speed Lüfter (Betrieb über freien Steckplatz am Empfänger)"
+  shopping_item:
+    in_liste_aufnehmen: false
