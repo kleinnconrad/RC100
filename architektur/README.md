@@ -9,7 +9,7 @@ Dieses Verzeichnis enthält alle grundlegenden architektur- und Hardwareentschei
 | **ADR-001** | 2026-02-24 | Auswahl der Chassis-Plattform und Make-or-Buy-Entscheidung (100 km/h Benchmark) | 🟡 Offen | MAKE - Carten T410R |
 | **ADR-002** | 2026-03-06 | Auswahl der Brushless-Motor-Combo für 100 km/h Speedruns | 🟢 entschieden | Hobbywing QuicRun WP10BL120 G2 Combo (3660SL 3700KV) |
 | **ADR-003** | 2026-03-06 | Auswahl des LiPo-Akkus für 100 km/h Ziel. | 🟢 entschieden | Absima GreenHorn Line V2 (3S / 5000mAh / 50C / Hardcase) |
-| **ADR-004** | 2026-02-24 | Auswahl des Ladegeräts für 3S LiPo-Akkus | 🟡 Offen | SkyRC S100neo |
+| **ADR-004** | 2026-03-06 | Auswahl des Ladegeräts für 3S LiPo-Akkus | 🟢 entschieden | SkyRC S100neo |
 | **ADR-005** | 2026-03-06 | Auswahl der Fernsteuerungsanlage für 100 km/h Speedruns | 🟢 entschieden | Carson Reflex Wheel X1 |
 | **ADR-006** | 2026-03-06 | Auswahl des Lenkservos für präzise High-Speed-Kontrolle | 🟢 entschieden | JX PDI-4409MG |
 | **ADR-007** | 2026-03-06 | Auswahl der aktiven und passiven Motorkühlung für 3S-Speedruns | 🟢 entschieden | Passiver 36mm Alu-Kühlkörper kombiniert mit aktivem 40x40mm High-Speed Alu-Lüfter |
@@ -116,7 +116,7 @@ garantiert einen geringen Übergangswiderstand für die hohen Ströme.
 ---
 
 ### ADR-004: Auswahl des Ladegeräts für 3S LiPo-Akkus
-**Status:** Offen | **Datum:** 2026-02-24
+**Status:** entschieden | **Datum:** 2026-03-06
 
 #### Kontext
 Das Laden des im ADR-003 definierten 3S LiPo-Akkus (11.1V, 5000mAh, 55.5 Wh) erfordert ein 
