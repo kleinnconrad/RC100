@@ -200,34 +200,43 @@
 
 ### 📦 Tx Meta Transmitter
 
-* **Brand:** DumboRC
-* **Model:** X6
+* **Brand:** Carson
+* **Model:** Reflex Wheel X1
 * **Type:** 2.4 GHz Pistolengriff-Sender (Surface)
-* **Channels:** 6
-* **Price Class:** Budget / MVP (~35 - 45 EUR)
+* **Channels:** 2
+* **Price Class:** Budget / MVP (~35 EUR)
+
+#### 🔹 Shopping Item
+
+  * **In Liste Aufnehmen:** True
+  * **Artikel Name:** Carson Reflex Wheel X1 2.4Ghz Fernsteuerungs-Set (inkl. Empfänger)
+  * **Kategorie:** Steuerung & Elektronik
+  * **Referenz Link:** Suche bei Modellbau-Fachhändler (z.B. Tamico, Berlinski, Amazon)
+  * **Geschaetzter Preis Eur:** 35.0
 
 ### 📦 Tx Performance
 
 * **Protocol:** FHSS (Frequency-Hopping Spread Spectrum)
-* **Range Ground:** 300 - 400 Meter (Überlebenswichtig für 100 km/h Runs)
-* **Response Time:** 12 ms (Extrem niedrige Latenz)
-* **Power Supply:** 4x AA Batterien (Alternative: 2S LiPo im Batteriefach)
+* **Range Ground:** ~150 Meter (Ausreichend für übersichtliche Speedruns)
+* **Response Time:** Standard 2.4Ghz Latenz
+* **Power Supply:** 4x AA Batterien
 
 ### 📦 Rx Meta Receiver
 
-* **Model:** X6FG (Das 'G' ist das kritische Feature!)
-* **Channels:** 6
+* **Model:** Carson Micro-Empfänger (im Set enthalten)
+* **Channels:** 4 (Physische Steckplätze, 2 aktiv nutzbar)
 
 #### 🔹 Integrated Features
 
-  * Elektronischer Gyroskop-Kreisel (Gyro)
-* **Input Voltage:** 4.8V - 10.0V (Kompatibel mit dem 6.0V/7.4V BEC des Hobbywing-Reglers)
+  * Fail-Safe Funktion (Schutz bei Signalverlust)
+* **Input Voltage:** 4.8V - 6.0V (Achtung: BEC des ESC darf nicht auf 7.4V stehen!)
 
 ### 📦 Calibration And Setup
 
-* **Gyro Activation:** Der Gyro muss am Empfänger meist per Knopf-Kombination (schnelles Drücken) aktiviert werden (LED wechselt die Farbe, meist auf Grün oder Orange). Vor dem Fahren unbedingt aufbocken und prüfen, ob der Gyro in die korrekte Richtung gegenlenkt!
-* **Steering Dual Rate:** Über den CH1-Drehregler an der Fernsteuerung den maximalen Lenkausschlag (Dual Rate) zwingend auf ca. 30 % reduzieren. Bei 100 km/h führt ein voller Lenkausschlag zum sofortigen Überschlag.
-* **Throttle Trim:** Die Trimmung für das Gas (TH Trim) muss zwingend auf dem Nullpunkt (Mitte) stehen, bevor der Hobbywing-Regler zum ersten Mal kalibriert wird.
+* **Fail Safe Activation:** Das Fail-Safe muss zwingend programmiert werden! Auto aufbocken, Vollbremsung an der Funke halten und den Setup-Knopf am Empfänger drücken. Beim Ausschalten der Funke muss das Auto sofort bremsen.
+* **Steering Dual Rate:** Über den Dual Rate (D/R) Drehregler an der Fernsteuerung den maximalen Lenkausschlag zwingend auf ca. 30 % reduzieren. Bei 100 km/h führt ein voller Lenkausschlag zum sofortigen Überschlag.
+* **Throttle Trim:** Die Trimmung für das Gas (TH Trim) muss zwingend exakt auf dem Nullpunkt (Mitte) stehen, bevor der Hobbywing-Regler zum ersten Mal kalibriert wird.
+* **Bec Voltage Warning:** Der Hobbywing 120A Regler hat ein einstellbares BEC (Stromversorgung für Empfänger/Servo). Dieses muss zwingend auf 6.0V eingestellt bleiben, da der Carson Empfänger bei 7.4V durchbrennen kann.
 
 
 ---
