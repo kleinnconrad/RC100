@@ -1,0 +1,23 @@
+# ==========================================
+# Spezifikation: Messwerkzeug (Validation)
+# ==========================================
+# Tool: Digitaler Laser-Tachometer
+# Ziel-Einsatz: Messung von Motor- und Achsdrehzahl (U/min)
+
+messwerkzeug_meta:
+  typ: "Berührungsloses Laser-Drehzahlmessgerät"
+  referenz_modell: "DT-2234C+ (oder baugleiche Klone wie Neoteck/Proster)"
+  messbereich: "2.5 bis 99.999 RPM"
+  messgenauigkeit: "+/- 0.05%"
+  shopping_item:
+    in_liste_aufnehmen: true
+    artikel_name: "Digitaler Laser Tachometer (DT-2234C+)"
+    kategorie: "Werkstatt & Tools"
+    referenz_link: "Suche bei Amazon nach 'Laser Tachometer DT-2234C+'"
+    geschaetzter_preis_eur: 18.00
+
+test_protokoll:
+  vorbereitung: "Reflektorstreifen (beiliegend) auf Reifenflanke oder Ritzel kleben."
+  durchfuehrung: "Fahrzeug sicher aufbocken. Funke einschalten, Vollgas geben und Laser auf den rotierenden Streifen richten."
+  sicherheitswarnung: "WICHTIG: Bei 100 km/h Radumdrehungsgeschwindigkeit blähen sich Gummireifen extrem auf (Ballooning). Schutzbrille tragen und nicht direkt in der Fliehkraft-Linie der Räder stehen, falls sich die Verklebung des Reifens löst!"
+  
