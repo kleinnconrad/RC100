@@ -11,7 +11,7 @@ Dieses Verzeichnis enthält alle grundlegenden architektur- und Hardwareentschei
 | **ADR-003** | 2026-03-06 | Auswahl des LiPo-Akkus für 100 km/h Ziel. | 🟢 entschieden | Absima GreenHorn Line V2 (3S / 5000mAh / 50C / Hardcase) |
 | **ADR-004** | 2026-02-24 | Auswahl des Ladegeräts für 3S LiPo-Akkus | 🟡 Offen | SkyRC S100neo |
 | **ADR-005** | 2026-03-06 | Auswahl der Fernsteuerungsanlage für 100 km/h Speedruns | 🟢 entschieden | Carson Reflex Wheel X1 |
-| **ADR-006** | 2026-02-24 | Auswahl des Lenkservos für präzise High-Speed-Kontrolle | 🟡 Offen | Savöx SC-1251MG+ |
+| **ADR-006** | 2026-03-06 | Auswahl des Lenkservos für präzise High-Speed-Kontrolle | 🟢 entschieden | JX PDI-4409MG |
 | **ADR-007** | 2026-02-24 | Auswahl der aktiven und passiven Motorkühlung für 3S-Speedruns | 🟡 Offen | Passiver 36mm Alu-Kühlkörper kombiniert mit aktivem 40x40mm High-Speed Alu-Lüfter |
 | **ADR-008** | 2026-02-25 | Auswahl der Bereifung (Belted Gummireifen für Asphalt) für 100 km/h Speedruns | 🟡 Offen | Sweep HANKOOK Tread Belted tires Pre-glued set Pro-compound 36deg for Asphalt (SR-SSF-36AWPG) |
 
@@ -181,34 +181,35 @@ genau die Baseline an Funktionalität, die aktuell benötigt wird.
 ---
 
 ### ADR-006: Auswahl des Lenkservos für präzise High-Speed-Kontrolle
-**Status:** Offen | **Datum:** 2026-02-24
+**Status:** entschieden | **Datum:** 2026-03-06
 
 #### Kontext
 Bei Geschwindigkeiten von 100 km/h wirken enorme aerodynamische und mechanische Kräfte 
 auf die Vorderräder des Carten T410R. Ein minimales Zittern, Spiel oder eine zu langsame 
 Reaktionszeit des Lenkservos können sofort zum Kontrollverlust und Totalausfall führen. 
-Zudem ist der Platz in einem 1:10 Tourenwagen-Chassis begrenzt, weshalb Standardgrößen 
-oft das Kabelmanagement erschweren oder den Schwerpunkt unnötig nach oben verlagern. 
-Gefordert ist ein Servo mit Metallgetriebe (Robustheit), hoher Stellgeschwindigkeit 
-(unter 0.10s) und ausreichender Stellkraft (ca. 8-10 kg).
+Zudem ist der Platz in einem 1:10 Tourenwagen-Chassis begrenzt. Da unsere MVP-Fernsteuerung 
+(Carson Reflex Wheel X1) über keinen elektronischen Gyro verfügt, muss das Servo den 
+Geradeauslauf mechanisch extrem präzise und kraftvoll halten. Gefordert ist ein Servo 
+mit Metallgetriebe (Robustheit), hoher Stellgeschwindigkeit (~0.11s) und ausreichender 
+Stellkraft (ca. 9 kg).
 
 
 #### Entscheidung
-> **Savöx SC-1251MG+**
+> **JX PDI-4409MG**
 
 #### Begründung (Rationale)
-Die Entscheidung fällt auf das Savöx SC-1251MG+. Es bietet die exakt benötigte Balance aus 
-Geschwindigkeit (0.09s), Kraft (9.0 kg bei 6.0V) und Bauform (Low-Profile). Die verringerte 
-Bauhöhe senkt den Schwerpunkt des Chassis und schafft Platz für die Kabelführung des 120A Reglers. 
-Das '+' im Namen steht für den Softstart und die Sanwa-SSR-Kompatibilität, was eine extrem 
-feinfühlige und hochauflösende Ansteuerung ermöglicht. Ein Ausfall der Lenkung durch 
-Zahnradbruch wird durch das Vollmetallgetriebe quasi eliminiert.
+Die Entscheidung fällt im Sinne der Budget-Optimierung auf das JX PDI-4409MG. Es erfüllt 
+alle harten Architektur-Constraints: Ein Metallgetriebe verhindert Zahnausfall bei 100 km/h, 
+die 9.2 kg Stellkraft halten die Vorderräder stabil gegen den Winddruck, und die Low-Profile-
+Bauform schafft zwingend benötigten Platz für den Hobbywing 120A ESC auf dem engen Chassis. 
+Der Verzicht auf das Premium-Zentrierverhalten eines Savöx-Servos ist ein akzeptabler 
+Trade-off für reine Geradeaus-Speedruns.
 
 
 #### Konsequenzen
-- Servohorn-Upgrade: Das dem Carten-Bausatz beiliegende Plastik-Servohorn muss zwingend gegen ein steifes Aluminium-Servohorn mit 25 Zähnen (25T - passend für Savöx/Futaba) getauscht werden, da Plastik bei High-Speed flext.
-- BEC-Spannung: Das BEC (Battery Eliminator Circuit) des Hobbywing-Reglers muss auf 6.0V eingestellt werden, um die volle Leistung des Servos abzurufen.
-- Stromhunger: Savöx-Servos ziehen kurzzeitig hohe Anlaufströme. Das 5A BEC des Hobbywing 10BL120 G2 ist dafür aber stark genug dimensioniert (kein externer Kondensator/Glitch-Buster nötig).
+- Servohorn-Upgrade: Das Plastik-Servohorn des Carten-Bausatzes muss zwingend gegen ein steifes Aluminium-Servohorn mit 25 Zähnen (25T - Standard für JX/Futaba/Savöx) getauscht werden.
+- BEC-Spannung: Das BEC des Hobbywing-Reglers wird auf 6.0V belassen. Dies liefert die volle Leistung für das Servo (9.2kg / 0.11s) und schützt gleichzeitig den Carson-Empfänger vor Überspannung.
+- Dual-Rate Setup: Da das Servo sehr schnell reagiert, muss der maximale Lenkausschlag an der Carson-Funke für den High-Speed-Run stark limitiert werden (ca. 30%), um ein Verreißen der Lenkung bei 100 km/h zu verhindern.
 
 
 ---
