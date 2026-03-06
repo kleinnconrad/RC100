@@ -6,8 +6,8 @@
 adr_motor_cooling:
   id: "ADR-007"
   title: "Auswahl der aktiven und passiven Motorkühlung für 3S-Speedruns"
-  status: "Offen"
-  date: "2026-02-24"
+  status: "entschieden"
+  date: "2026-03-06"
   
   context: |
     Das anvisierte Ziel von 100 km/h erfordert den Einsatz eines 4000kV Motors an einem 
