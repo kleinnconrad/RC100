@@ -7,9 +7,9 @@ Willkommen im RC100 Projekt-Repository. Dies ist ein privates Projekt mit dem Zi
 Das Projekt ist in themenspezifische Unterordner gegliedert, um Spezifikationen, Daten und Designs übersichtlich zu strukturieren:
 
 * **/architektur** - Für Architectural Decision Records (ADRs) und grundlegende Systemdesigns.
-* **/elektronik** - Für elektronische Komponenten, Schaltpläne und zugehörige Spezifikationen.
-* **/mechanik** - Für mechanische Teile, CAD-Modelle, Chassis-Design und physische Spezifikationen.
-* **/messdaten** - Für Telemetrie, Testergebnisse und Leistungsmessdaten.
+* **/elektronik** - Für elektronische Komponenten und zugehörige Spezifikationen.
+* **/mechanik** - Für mechanische Teile,  Chassis-Design und physische Spezifikationen.
+* **/messdaten** - Für Testergebnisse und Leistungsmessdaten.
 * **/projekt** - Für allgemeines Projektmanagement, Planung und Übersichten.
 
 ---
