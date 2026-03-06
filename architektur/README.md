@@ -6,8 +6,8 @@ Dieses Verzeichnis enthält alle grundlegenden architektur- und Hardwareentschei
 
 | ID | Datum | Titel | Status | Entscheidung |
 | :--- | :--- | :--- | :--- | :--- |
-| **002** | N/A | N/A | 🟡 offen | N/A |
 | **ADR-001** | 2026-02-24 | Auswahl der Chassis-Plattform und Make-or-Buy-Entscheidung (100 km/h Benchmark) | 🟡 Offen | MAKE - Carten T410R |
+| **ADR-002** | 2026-03-06 | Auswahl der Brushless-Motor-Combo für 100 km/h Speedruns | 🟢 entschieden | Hobbywing QuicRun WP10BL120 G2 Combo (3660SL 3700KV) |
 | **ADR-003** | 2026-02-24 | Auswahl des LiPo-Akkus für 100 km/h Ziel. | 🟡 Offen | Absima GreenHorn Line V2 (3S / 5000mAh / 50C / Hardcase) |
 | **ADR-004** | 2026-02-24 | Auswahl des Ladegeräts für 3S LiPo-Akkus | 🟡 Offen | SkyRC S100neo |
 | **ADR-005** | 2026-03-06 | Auswahl der Fernsteuerungsanlage für 100 km/h Speedruns | 🟢 entschieden | Carson Reflex Wheel X1 |
@@ -18,20 +18,6 @@ Dieses Verzeichnis enthält alle grundlegenden architektur- und Hardwareentschei
 ---
 
 ## 📖 Detail-Protokolle
-
-### 002: 
-**Status:** offen | **Datum:** 
-
-#### Kontext
-Kein Kontext angegeben.
-
-#### Entscheidung
-> **Ausstehend**
-
-#### Begründung (Rationale)
-Keine Begründung angegeben.
-
----
 
 ### ADR-001: Auswahl der Chassis-Plattform und Make-or-Buy-Entscheidung (100 km/h Benchmark)
 **Status:** Offen | **Datum:** 2026-02-24
@@ -61,6 +47,38 @@ Der massive Preisvorteil gegenüber dem Xray X4 '24 rechtfertigt den erhöhten m
 #### Konsequenzen
 - Die Metall-Differentiale des T410R müssen zwingend präzise geshimmt werden, um Spielfreiheit zu garantieren.
 - Die zentrale Aluminium-Kardanwelle muss vor dem Einbau auf Rundlauf geprüft werden, da bei Kardan-Setups starke Vibrationen entstehen können.
+
+
+---
+
+### ADR-002: Auswahl der Brushless-Motor-Combo für 100 km/h Speedruns
+**Status:** entschieden | **Datum:** 2026-03-06
+
+#### Kontext
+Um einen 1/10 Tourenwagen (Carten T410R) auf 100 km/h zu beschleunigen, muss das Getriebe extrem 
+'lang' übersetzt werden (hohe Radlast > 22 %). Ein klassischer 3650er-Motor (50 mm Länge) operiert 
+hierbei an seiner thermischen Belastungsgrenze. Es wird zwingend ein Antriebsstrang benötigt, 
+der bei 3S-Spannung (11.1V) genügend mechanisches Drehmoment (Motorbaugröße 3660) liefert und 
+dessen Fahrtenregler (ESC) die hohen Blockierströme beim Beschleunigen sicher verarbeiten 
+kann (min. 120A).
+
+
+#### Entscheidung
+> **Hobbywing QuicRun WP10BL120 G2 Combo (3660SL 3700KV)**
+
+#### Begründung (Rationale)
+Die Entscheidung fällt auf die Hobbywing QuicRun G2 Combo. Sie eliminiert das Ausfallrisiko von 
+No-Name-Motoren und bietet eine perfekt aufeinander abgestimmte Architektur (Firmware von ESC 
+und Motor-Timing sind optimal verzahnt). Der 3660er Motor liefert mit seinen 3700KV an 3S 
+(ca. 41.000 U/min) die perfekte Drehzahl und hat durch den längeren Rotor genug Drehmoment, 
+um die errechnete Radlast von ca. 24 % souverän zu stemmen. Dies ist die sicherste und 
+effizienteste Lösung im Budget unter 100 €.
+
+
+#### Konsequenzen
+- Packaging (Bauraum): Der 3660er Motor ist 10 mm länger als das Standardmaß. Der ESC und der Empfänger müssen im T410R-Chassis entsprechend weiter hinten platziert werden.
+- Ritzel-Bohrung (WICHTIG): Hobbywing liefert den 3660SL G2 in der Regel mit einer 5.0 mm Welle aus (Spezifikationen beim Händler vor der Ritzelbestellung final verifizieren). Ein 48dp-Ritzel mit 5 mm Bohrung (z.B. Robinson Racing) ist zwingend erforderlich.
+- Stromversorgung: Die Systemspannung ist hart auf 3S LiPo limitiert. Ein 4S-Betrieb würde die maximal zulässige Rotordrehzahl des Motors überschreiten.
 
 
 ---
