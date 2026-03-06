@@ -6,8 +6,8 @@
 adr_battery_selection:
   id: "ADR-003"
   title: "Auswahl des LiPo-Akkus für 100 km/h Ziel."
-  status: "Offen"
-  date: "2026-02-24"
+  status: "entschieden"
+  date: "2026-03-06"
   
   context: |
     Um das RC100 Projekt auf über 100 km/h zu beschleunigen, muss die Energiequelle perfekt 
