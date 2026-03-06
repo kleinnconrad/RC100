@@ -14,6 +14,7 @@ Dieses Verzeichnis enthält alle grundlegenden architektur- und Hardwareentschei
 | **ADR-006** | 2026-03-06 | Auswahl des Lenkservos für präzise High-Speed-Kontrolle | 🟢 entschieden | JX PDI-4409MG |
 | **ADR-007** | 2026-03-06 | Auswahl der aktiven und passiven Motorkühlung für 3S-Speedruns | 🟢 entschieden | Passiver 36mm Alu-Kühlkörper kombiniert mit aktivem 40x40mm High-Speed Alu-Lüfter |
 | **ADR-008** | 2026-02-25 | Auswahl der Bereifung (Belted Gummireifen für Asphalt) für 100 km/h Speedruns | 🟡 Offen | Sweep HANKOOK Tread Belted tires Pre-glued set Pro-compound 36deg for Asphalt (SR-SSF-36AWPG) |
+| **ADR-009** | 2026-03-06 | Auswahl der aerodynamischen Karosserie für 100 km/h Speedruns | 🟡 Offen | Noch nicht entschieden (Status: Offen) |
 
 ---
 
@@ -279,6 +280,38 @@ das essenzielle Kevlar-Gewebe (Belt) absolute Sicherheit gegen das lebensgefähr
 - Vorab-Check: Auch ab Werk fertig verklebte Reifen müssen vor dem ersten Run zwingend auf Verarbeitungsfehler an der Klebenaht geprüft werden (kurz an der Reifenflanke ziehen).
 - Auswuchten: Da bei 100 km/h kleinste Unwuchten das Fahrwerk destabilisieren, sollten die Räder idealerweise mit einer RC-Reifenwaage und Knetblei ausgewuchtet werden.
 - Temperaturfenster: Die 36-Shore Mischung ist relativ hart. Um maximalen mechanischen Grip aufzubauen, müssen die Reifen vor dem eigentlichen Speedrun durch 1-2 langsame Runden warmgefahren werden.
+
+
+---
+
+### ADR-009: Auswahl der aerodynamischen Karosserie für 100 km/h Speedruns
+**Status:** Offen | **Datum:** 2026-03-06
+
+#### Kontext
+Bei einer Zielgeschwindigkeit von 100 km/h (ca. 27,7 m/s) ist die Karosserie kein rein optisches 
+Bauteil mehr, sondern die primäre aerodynamische Schutzschicht. Eine eckige Karosserie fängt 
+Luft unter der Frontschürze ein, was unweigerlich zu einem 'Blow-over' (Rückwärtssalto durch 
+Staudruck) führt. Gleichzeitig darf der Luftwiderstand (cW-Wert) den 3660er Motor nicht 
+unnötig einbremsen. Das Carten T410R Chassis erfordert eine Breite von 190 mm. Zudem ist die 
+Materialstärke kritisch: Dünnes Lexan (< 0.5 mm) verformt sich bei 100 km/h massiv, drückt 
+auf die Reifen und zerstört den Geradeauslauf.
+
+
+#### Entscheidung
+> **Noch nicht entschieden (Status: Offen)**
+
+#### Begründung (Rationale)
+Die Entscheidung bleibt vorerst offen, um zu evaluieren, ob der Fokus auf dem absoluten 
+aerodynamischen Optimum (Option 3: LMP), einem perfekten Allrounder mit modernster 
+CFD-Technik (Option 2: ZooRacing Wolverine) oder einer sportlichen Scale-Optik (Option 4) 
+liegen soll. Zwingend ist jedoch der Ausschluss von Option 1, um die Hardware bei 
+100 km/h nicht zu gefährden.
+
+
+#### Konsequenzen
+- Material-Constraint: Egal welche Karosserie gewählt wird, es muss zwingend die Standard-Dicke (meist 0.7 mm bis 1.0 mm) bestellt werden. Leichtbau-Karosserien würden bei dem Winddruck auf die Reifen gepresst werden.
+- Montage-Constraint: Der Heckflügel muss extrem steif verschraubt werden, da er bei 100 km/h maßgeblich verhindert, dass das Heck ausbricht. Die Karosserielöcher müssen passgenau gerieben werden, um Vibrationen zu minimieren.
+- Chassis-Vorbereitung: Der Schaumstoff-Bumper an der Front des Carten T410R muss exakt bündig mit der Innenseite der gewählten Karosserie abschließen, damit diese bei High-Speed nicht nach unten durchbiegt.
 
 
 ---
