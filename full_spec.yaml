@@ -196,28 +196,27 @@ Kuehlung:
         Seitenfenster schneiden, damit ein kühlender Durchzug (Airflow) entsteht.
 Servo:
   servo_meta:
-    brand: Savöx
-    model: SC-1251MG+
+    brand: JX
+    model: PDI-4409MG
     type: Digitales Low-Profile Servo
-    features: Softstart (Verhindert hartes Zucken beim Einschalten, schont die Mechanik)
-    price_class: Mid-Range (~55 EUR)
+    features: Coreless Motor (schnelles Ansprechverhalten), exzellentes Preis-Leistungs-Verhältnis
+    price_class: Budget (~15 - 22 EUR)
   mechanical_specifications:
-    gears: Metallgetriebe (Titan/Aluminium)
-    case: Teil-Aluminium (für bessere Wärmeableitung)
-    spline_teeth: '25T (WICHTIG: Standard Savöx/Futaba Zahnkranz)'
+    gears: Metallgetriebe (Aluminium/Kupfer - überlebenswichtig bei 100 km/h)
+    case: Kunststoff mit Aluminium-Mittelteil (als Kühlkörper für den Motor)
+    spline_teeth: '25T (WICHTIG: Standard Futaba/Savöx/JX Zahnkranz)'
     dimensions_mm:
-      length: 40.8
+      length: 40.3
       width: 20.2
-      height: 25.4
+      height: 26.1
     weight_g: 44.5
   performance_specifications:
     operating_voltage: 4.8V - 6.0V
-    torque_6v: 9.0 kg-cm
-    speed_6v: 0.09 sec / 60°
-    return_to_center_accuracy: Sehr hoch (Kritisch für stabilen Geradeauslauf bei
-      100 km/h)
+    torque_6v: 9.2 kg-cm
+    speed_6v: 0.11 sec / 60°
+    return_to_center_accuracy: Gut (Völlig ausreichend für das angepeilte Speedrun-Projekt)
   mandatory_upgrades:
-    part: Aluminium-Servohorn (Zwingend 25T Verzahnung für Savöx kaufen!)
+    part: Aluminium-Servohorn (Zwingend 25T Verzahnung für JX/Futaba kaufen!)
     reason: Das Baukasten-Plastikhorn verbiegt sich (Flex) bei 100 km/h unter dem
       extremen Winddruck auf die Vorderräder. Das Alu-Horn garantiert eine absolut
       steife, spielfreie Lenkverbindung.

@@ -535,35 +535,35 @@
 
 ### 📦 Servo Meta
 
-* **Brand:** Savöx
-* **Model:** SC-1251MG+
+* **Brand:** JX
+* **Model:** PDI-4409MG
 * **Type:** Digitales Low-Profile Servo
-* **Features:** Softstart (Verhindert hartes Zucken beim Einschalten, schont die Mechanik)
-* **Price Class:** Mid-Range (~55 EUR)
+* **Features:** Coreless Motor (schnelles Ansprechverhalten), exzellentes Preis-Leistungs-Verhältnis
+* **Price Class:** Budget (~15 - 22 EUR)
 
 ### 📦 Mechanical Specifications
 
-* **Gears:** Metallgetriebe (Titan/Aluminium)
-* **Case:** Teil-Aluminium (für bessere Wärmeableitung)
-* **Spline Teeth:** 25T (WICHTIG: Standard Savöx/Futaba Zahnkranz)
+* **Gears:** Metallgetriebe (Aluminium/Kupfer - überlebenswichtig bei 100 km/h)
+* **Case:** Kunststoff mit Aluminium-Mittelteil (als Kühlkörper für den Motor)
+* **Spline Teeth:** 25T (WICHTIG: Standard Futaba/Savöx/JX Zahnkranz)
 
 #### 🔹 Dimensions Mm
 
-  * **Length:** 40.8
+  * **Length:** 40.3
   * **Width:** 20.2
-  * **Height:** 25.4
+  * **Height:** 26.1
 * **Weight G:** 44.5
 
 ### 📦 Performance Specifications
 
 * **Operating Voltage:** 4.8V - 6.0V
-* **Torque 6V:** 9.0 kg-cm
-* **Speed 6V:** 0.09 sec / 60°
-* **Return To Center Accuracy:** Sehr hoch (Kritisch für stabilen Geradeauslauf bei 100 km/h)
+* **Torque 6V:** 9.2 kg-cm
+* **Speed 6V:** 0.11 sec / 60°
+* **Return To Center Accuracy:** Gut (Völlig ausreichend für das angepeilte Speedrun-Projekt)
 
 ### 📦 Mandatory Upgrades
 
-* **Part:** Aluminium-Servohorn (Zwingend 25T Verzahnung für Savöx kaufen!)
+* **Part:** Aluminium-Servohorn (Zwingend 25T Verzahnung für JX/Futaba kaufen!)
 * **Reason:** Das Baukasten-Plastikhorn verbiegt sich (Flex) bei 100 km/h unter dem extremen Winddruck auf die Vorderräder. Das Alu-Horn garantiert eine absolut steife, spielfreie Lenkverbindung.
 * **Installation:** Die Schraube, die das Horn auf dem Servo hält, zwingend mit Schraubensicherungslack (z. B. Loctite mittelfest) fixieren, damit sie sich durch Vibrationen nicht löst.
 
