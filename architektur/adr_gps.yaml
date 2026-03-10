@@ -1,0 +1,53 @@
+# ==========================================
+# Architectural Decision Record (ADR-008)
+# ==========================================
+# Thema: Auswahl der Telemetrie/GPS-Messung für Speedruns
+
+adr_gps_telemetry:
+  id: "ADR-010"
+  title: "Auswahl des GPS-Messsystems zur Validierung der 100 km/h Marke"
+  status: "entschieden"
+  date: "2026-03-10"
+  
+  context: |
+    Die berechneten mathematischen Modelle (Achsdrehzahl, Rollwiderstand, Spannungseinbruch) 
+    müssen in der Realität ('Integration Test' auf der Straße) durch harte Telemetriedaten 
+    validiert werden. Da das Fahrzeug den Topspeed von 100 km/h oft nur für ein Zeitfenster 
+    von 2 bis 3 Sekunden hält, ist eine extrem hohe Abtastrate (Update-Frequenz) des 
+    Messgeräts zwingend erforderlich. Gleichzeitig darf das Modul das Fahrzeuggewicht (CG) 
+    und die Aerodynamik nicht negativ beeinflussen.
+
+  considered_alternatives:
+    - option_id: 1
+      name: "Smartphone mit GPS-App"
+      type: "Free / 1Hz Standard-GPS"
+      evaluation: "Kostenlos, aber architektonisch unbrauchbar. Ein Smartphone wiegt zu viel (>150g), stört die Fahrzeugbalance massiv und die Standard-Abtastrate von 1Hz ist zu langsam, um den echten Peak-Speed zu erfassen. Zudem besteht ein extremes Risiko, ein teures Gerät bei einem Crash zu zerstören."
+      
+    - option_id: 2
+      name: "Günstiger Fahrrad-Tacho / Mini-GPS-Tracker"
+      type: "Budget / 1Hz bis 2Hz"
+      evaluation: "Sehr günstig (~20 €), aber oft zu ungenau bei rasanter Beschleunigung. Keine passenden Apps zur Auswertung von Beschleunigungskurven."
+      
+    - option_id: 3
+      name: "Ruddog GPS Performance Analyzer"
+      type: "RC-spezifischer 10Hz GNSS-Logger"
+      evaluation: "Kompakt, mit ca. 38g extrem leicht und bietet eine Abtastrate von 10 Messungen pro Sekunde (10Hz). Erfasst neben dem Topspeed auch G-Kräfte, Beschleunigungszeiten und durchschnittliche Geschwindigkeiten. Bequemes Auslesen per Bluetooth und Smartphone-App."
+
+  decision: "Ruddog GPS Performance Analyzer"
+  
+  gps_meta_hardware:
+    brand: "Ruddog"
+    model: "GPS Performance Analyzer"
+    type: "10Hz GNSS Telemetrie-Modul mit Bluetooth"
+
+  rationale: |
+    Die Entscheidung fällt auf den Ruddog GPS Performance Analyzer. Er ist das perfekte 'Fit-for-Purpose'-
+    Tool für dieses Projekt. Die 10Hz Abtastrate garantiert, dass die exakte Höchstgeschwindigkeit 
+    erfasst wird, selbst wenn diese nur für den Bruchteil einer Sekunde anliegt. Das geringe Gewicht 
+    von 38g verändert das Fahrverhalten des Carten T410R nicht, und die Bluetooth-App-Schnittstelle 
+    erspart ein schweres, ablesbares Display direkt auf dem Fahrzeug.
+    
+  consequences:
+    - "Signal-Constraint: Das GPS-Signal geht problemlos durch Lexan-Karosserien, wird aber von Karbonfasern massiv geblockt. Das Modul darf im Carten T410R nicht direkt *unter* dem Karbon-Oberdeck montiert werden. Die optimale Position ist auf dem Schaumstoff-Bumper vorne."
+    - "Befestigung: Das Gerät muss extrem sicher (z.B. mit starkem Klettband oder 3M Dual Lock) fixiert werden, damit es bei einem Überschlag bei 100 km/h nicht als Projektil wegfliegt."
+    
