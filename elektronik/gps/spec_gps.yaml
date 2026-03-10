@@ -1,0 +1,32 @@
+# ==========================================
+# Spezifikation: GPS-Telemetrie & Validierung
+# ==========================================
+# Tool: Ruddog GPS Performance Analyzer
+# Ziel-Einsatz: Exakte Ermittlung von Topspeed und Beschleunigungskurven
+
+telemetrie_meta:
+  typ: "GNSS Performance Analyzer (GPS/GLONASS)"
+  referenz_modell: "Ruddog GPS Performance Analyzer"
+  messfrequenz: "10 Hz (10 Updates pro Sekunde - kritisch für RC Speedruns!)"
+  schnittstelle: "Bluetooth 4.0 (Auslesen per iOS/Android App)"
+  stromversorgung: "Integrierter LiPo-Akku (via USB ladbar)"
+  gewicht: "ca. 38 Gramm"
+  shopping_item:
+    in_liste_aufnehmen: true
+    artikel_name: "Ruddog GPS Performance Analyzer"
+    kategorie: "Testing & Validierung"
+    referenz_link: "Suche bei Modellbau-Fachhändler (z.B. RC-KleinKram, Tamico, Monster Hopups)"
+    geschaetzter_preis_eur: 85.00
+
+app_integration:
+  software: "RC Gears / Ruddog App (oder baugleiche SkyRC App)"
+  funktionen: "Top-Speed Messung, 0-100 km/h Zeitmessung, Track-Logging"
+
+# ==========================================
+# ⚠️ WICHTIGE BAU- & SETUP-HINWEISE
+# ==========================================
+mounting_and_setup:
+  positionierung: "Zwingend an einer Stelle montieren, die freie Sicht zum Himmel hat. Karbonbauteile (wie das Upper-Deck des Carten) schirmen das Satellitensignal ab! Bester Montageort: Auf dem vorderen Schaumstoff-Rammschutz (Bumper)."
+  fixierung: "Das Modul bei Speedruns zwingend mit Klettverschluss UND einem zusätzlichen Kabelbinder oder Tape sichern. Die G-Kräfte bei einem Crash sind enorm."
+  bedienung: "Das Modul blinkt während der Satellitensuche. Erst losfahren, wenn das GPS-Signal (meist durch durchgehendes Leuchten) als 'Locked' bestätigt ist, sonst fehlen die ersten Meter in der Messung."
+  
