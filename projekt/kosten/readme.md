@@ -22,6 +22,8 @@
 
 | Beschreibung | Betrag |
 |:---|---:|
+| **Reine Fahrzeugkosten (ohne Tools & Versand):** | **373,28 €** |
+| Kosten für Tools & Infrastruktur (Pos. 7 & 9): | 69,85 € |
 | **Zwischensumme Hardware:** | **443,13 €** |
 | Versandkosten RC-KleinKram: | 0,00 € |
 | Versandkosten Monster Hopups: | 0,00 € |
