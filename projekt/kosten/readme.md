@@ -1,6 +1,6 @@
 # Bill of Materials (BOM) - Carten T410R Speedrun Projekt
 
-**Stand:** 06.03.2026
+**Stand:** 10.03.2026
 
 ## 📦 Komponenten & Hardware
 
@@ -14,7 +14,7 @@
 | 6 | **Kühlung** | Hobbywing Lüfter mit Kühlrippen für 36mm Motor (60mm) | HW86080120 | Monster Hopups | 1 | 9,99 € |
 | 7 | **Ladetechnik** | SkyRC S100 Neo LiPo 1-6s 10A 100W AC | SK100202-01 | Monster Hopups | 1 | 44,95 € |
 | 8 | **Lenkung** | Amewi 4409MG AMX Digital-Servo Low-Profile | AW-28995 | Tamico Shop | 1 | 23,99 € |
-| 9 | **Testing** | QWORK Digital Tachometer (Laser-Drehzahlmesser) | - | Amazon | 1 | 13,88 € |
+| 9 | **Testing** | Digital Laser Tachometer (Non-Contact RPM Meter 10-99999) | B0FJX5PBDR | Amazon | 1 | 24,90 € |
 
 ---
 
@@ -22,9 +22,9 @@
 
 | Beschreibung | Betrag |
 |:---|---:|
-| **Zwischensumme Hardware:** | **432,11 €** |
+| **Zwischensumme Hardware:** | **443,13 €** |
 | Versandkosten RC-KleinKram: | 0,00 € |
 | Versandkosten Monster Hopups: | 0,00 € |
 | Versandkosten Tamico Shop: | 4,99 € |
 | Versandkosten Amazon: | 3,99 € |
-| **Gesamtkosten Projekt (Brutto):** | **441,09 €** |
+| **Gesamtkosten Projekt (Brutto):** | **452,11 €** |
