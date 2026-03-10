@@ -15,6 +15,7 @@ Dieses Verzeichnis enthält alle grundlegenden architektur- und Hardwareentschei
 | **ADR-007** | 2026-03-06 | Auswahl der aktiven und passiven Motorkühlung für 3S-Speedruns | 🟢 entschieden | Passiver 36mm Alu-Kühlkörper kombiniert mit aktivem 40x40mm High-Speed Alu-Lüfter |
 | **ADR-008** | 2026-02-25 | Auswahl der Bereifung (Belted Gummireifen für Asphalt) für 100 km/h Speedruns | 🟡 Offen | Sweep HANKOOK Tread Belted tires Pre-glued set Pro-compound 36deg for Asphalt (SR-SSF-36AWPG) |
 | **ADR-009** | 2026-03-06 | Auswahl der aerodynamischen Karosserie für 100 km/h Speedruns | 🟡 Offen | Noch nicht entschieden (Status: Offen) |
+| **ADR-010** | 2026-03-10 | Auswahl des GPS-Messsystems zur Validierung der 100 km/h Marke | 🟢 entschieden | Ruddog GPS Performance Analyzer |
 
 ---
 
@@ -312,6 +313,36 @@ liegen soll. Zwingend ist jedoch der Ausschluss von Option 1, um die Hardware be
 - Material-Constraint: Egal welche Karosserie gewählt wird, es muss zwingend die Standard-Dicke (meist 0.7 mm bis 1.0 mm) bestellt werden. Leichtbau-Karosserien würden bei dem Winddruck auf die Reifen gepresst werden.
 - Montage-Constraint: Der Heckflügel muss extrem steif verschraubt werden, da er bei 100 km/h maßgeblich verhindert, dass das Heck ausbricht. Die Karosserielöcher müssen passgenau gerieben werden, um Vibrationen zu minimieren.
 - Chassis-Vorbereitung: Der Schaumstoff-Bumper an der Front des Carten T410R muss exakt bündig mit der Innenseite der gewählten Karosserie abschließen, damit diese bei High-Speed nicht nach unten durchbiegt.
+
+
+---
+
+### ADR-010: Auswahl des GPS-Messsystems zur Validierung der 100 km/h Marke
+**Status:** entschieden | **Datum:** 2026-03-10
+
+#### Kontext
+Die berechneten mathematischen Modelle (Achsdrehzahl, Rollwiderstand, Spannungseinbruch) 
+müssen in der Realität ('Integration Test' auf der Straße) durch harte Telemetriedaten 
+validiert werden. Da das Fahrzeug den Topspeed von 100 km/h oft nur für ein Zeitfenster 
+von 2 bis 3 Sekunden hält, ist eine extrem hohe Abtastrate (Update-Frequenz) des 
+Messgeräts zwingend erforderlich. Gleichzeitig darf das Modul das Fahrzeuggewicht (CG) 
+und die Aerodynamik nicht negativ beeinflussen.
+
+
+#### Entscheidung
+> **Ruddog GPS Performance Analyzer**
+
+#### Begründung (Rationale)
+Die Entscheidung fällt auf den Ruddog GPS Performance Analyzer. Er ist das perfekte 'Fit-for-Purpose'-
+Tool für dieses Projekt. Die 10Hz Abtastrate garantiert, dass die exakte Höchstgeschwindigkeit 
+erfasst wird, selbst wenn diese nur für den Bruchteil einer Sekunde anliegt. Das geringe Gewicht 
+von 38g verändert das Fahrverhalten des Carten T410R nicht, und die Bluetooth-App-Schnittstelle 
+erspart ein schweres, ablesbares Display direkt auf dem Fahrzeug.
+
+
+#### Konsequenzen
+- Signal-Constraint: Das GPS-Signal geht problemlos durch Lexan-Karosserien, wird aber von Karbonfasern massiv geblockt. Das Modul darf im Carten T410R nicht direkt *unter* dem Karbon-Oberdeck montiert werden. Die optimale Position ist auf dem Schaumstoff-Bumper vorne.
+- Befestigung: Das Gerät muss extrem sicher (z.B. mit starkem Klettband oder 3M Dual Lock) fixiert werden, damit es bei einem Überschlag bei 100 km/h nicht als Projektil wegfliegt.
 
 
 ---
