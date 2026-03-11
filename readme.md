@@ -12,6 +12,7 @@ Das Projekt ist in themenspezifische Unterordner gegliedert, um Spezifikationen,
 * **/messdaten** - Für Testergebnisse und Leistungsmessdaten.
 * **/projekt** - Für allgemeines Projektmanagement, Planung und Übersichten.
 * **/fotos** - Für sämtliche Fotos, die das Projekt dokumentieren.
+* **/scripts** - Für Automatisierungen und Berechnungen.
 
 ---
 
