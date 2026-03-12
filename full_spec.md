@@ -595,6 +595,39 @@
 
 ---
 
+## ⚙️ PAINT
+
+
+### 📦 Lackierung Meta
+
+* **Brand:** Tamiya
+* **Color:** PS-15 Metallic Red
+* **Typ:** Polycarbonat-Spray (PS-Serie)
+* **Gebindegroesse:** 100 ml (Ausreichend für 3-4 dünne Schichten bei 1:10)
+* **Eigenschaften:** Hochelastisch. Die Farbe ätzt sich mikroskopisch in das Lexan ein und blättert selbst bei extremen Vibrationen oder Crashes nicht ab (im Gegensatz zu normalen Acryl- oder TS-Farben).
+
+#### 🔹 Shopping Item
+
+  * **In Liste Aufnehmen:** True
+  * **Artikel Name:** Tamiya PS-15 Metallic Rot (100ml Sprühdose)
+  * **Kategorie:** Karosserie & Aerodynamik
+  * **Referenz Link:** Suche bei RC-KleinKram, Tamico oder Monster Hopups nach 'Tamiya PS-15'
+  * **Geschaetzter Preis Eur:** 8.5
+
+### 📦 Lackier Prozess
+
+* **Grundregel:** Lexan-Karosserien werden immer von INNEN lackiert! Die äußere Schutzfolie bleibt bis ganz zum Schluss auf dem Auto.
+* **Vorbereitung:** Die Innenseite zwingend mit lauwarmem Wasser und Spülmittel auswaschen, um Trennfett aus der Tiefzieh-Produktion zu entfernen. Danach Fenster mit den beiliegenden Maskierfolien abkleben.
+* **Auftrag:** In 3 bis 4 sehr feinen, dünnen Schichten sprühen ('Nebel'). Zwischen den Schichten 10-15 Minuten ablüften lassen. Niemals versuchen, beim ersten Durchgang deckend zu lackieren (Gefahr von Tropfen/Nasen).
+
+### 📦 Mandatory Upgrades
+
+* **Part:** Backing-Color (Hinterlegungsfarbe) - z.B. Tamiya PS-12 (Silber) oder PS-1 (Weiß)
+* **Reason:** KRITISCH: PS-15 Metallic Red ist nicht blickdicht. Wenn die 3-4 Schichten Rot trocken sind, MUSS zwingend eine Schicht Silber oder Weiß als Abschluss darüber gesprüht werden. Das reflektiert das Licht durch das Rot nach außen und macht die Karosserie blickdicht und leuchtend.
+
+
+---
+
 ## ⚙️ REIFEN
 
 

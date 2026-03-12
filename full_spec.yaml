@@ -463,6 +463,38 @@ Kardanwelle Und Joints:
       action: Wenn sie auch nur minimal 'eiert' (verbogen ist), wird sie bei 26.000
         U/min das ganze Chassis in zerstörerische Vibrationen versetzen. In diesem
         Fall muss sie sofort ersetzt werden.
+Paint:
+  lackierung_meta:
+    brand: Tamiya
+    color: PS-15 Metallic Red
+    typ: Polycarbonat-Spray (PS-Serie)
+    gebindegroesse: 100 ml (Ausreichend für 3-4 dünne Schichten bei 1:10)
+    eigenschaften: Hochelastisch. Die Farbe ätzt sich mikroskopisch in das Lexan ein
+      und blättert selbst bei extremen Vibrationen oder Crashes nicht ab (im Gegensatz
+      zu normalen Acryl- oder TS-Farben).
+    shopping_item:
+      in_liste_aufnehmen: true
+      artikel_name: Tamiya PS-15 Metallic Rot (100ml Sprühdose)
+      kategorie: Karosserie & Aerodynamik
+      referenz_link: Suche bei RC-KleinKram, Tamico oder Monster Hopups nach 'Tamiya
+        PS-15'
+      geschaetzter_preis_eur: 8.5
+  lackier_prozess:
+    grundregel: Lexan-Karosserien werden immer von INNEN lackiert! Die äußere Schutzfolie
+      bleibt bis ganz zum Schluss auf dem Auto.
+    vorbereitung: Die Innenseite zwingend mit lauwarmem Wasser und Spülmittel auswaschen,
+      um Trennfett aus der Tiefzieh-Produktion zu entfernen. Danach Fenster mit den
+      beiliegenden Maskierfolien abkleben.
+    auftrag: In 3 bis 4 sehr feinen, dünnen Schichten sprühen ('Nebel'). Zwischen
+      den Schichten 10-15 Minuten ablüften lassen. Niemals versuchen, beim ersten
+      Durchgang deckend zu lackieren (Gefahr von Tropfen/Nasen).
+  mandatory_upgrades:
+    part: Backing-Color (Hinterlegungsfarbe) - z.B. Tamiya PS-12 (Silber) oder PS-1
+      (Weiß)
+    reason: 'KRITISCH: PS-15 Metallic Red ist nicht blickdicht. Wenn die 3-4 Schichten
+      Rot trocken sind, MUSS zwingend eine Schicht Silber oder Weiß als Abschluss
+      darüber gesprüht werden. Das reflektiert das Licht durch das Rot nach außen
+      und macht die Karosserie blickdicht und leuchtend.'
 Reifen:
   reifen_meta:
     brand: Sweep Racing
