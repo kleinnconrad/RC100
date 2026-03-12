@@ -1,0 +1,41 @@
+# ==========================================
+# Spezifikation: Karosserie & Aerodynamik
+# ==========================================
+# Hersteller: ZooRacing
+# Modell: Hellcat (190mm)
+# Ziel-Einsatz: Minimierung des Luftwiderstands und Erzeugung von Downforce bei 100 km/h
+
+aerodynamik_meta:
+  brand: "ZooRacing"
+  modell: "Hellcat"
+  fahrzeugklasse: "1:10 On-Road Tourenwagen"
+  breite_mm: 190
+  radstand_mm: 257 # Standard 1:10 Radstand, passend für Carten T410R
+  material: "Polycarbonat (Lexan)"
+  materialstaerke_mm: 0.7 # WICHTIG: Regular/Standard Weight. Nicht ULW oder LW kaufen!
+  
+  shopping_item:
+    in_liste_aufnehmen: true
+    artikel_name: "ZooRacing Hellcat 190mm Tourenwagen Karosserie (0.7mm Regular)"
+    kategorie: "Karosserie & Aerodynamik"
+    referenz_link: "Suche bei RC-KleinKram oder Tonisport nach 'ZooRacing Hellcat 0.7mm'"
+    geschaetzter_preis_eur: 32.90
+
+aerodynamic_features:
+  front: "Tief gezogene Nase und sanfter Haubenwinkel reduzieren den Staudruck und verhindern Lift."
+  roofline: "Flach abfallendes Dach leitet die Luft laminar und störungsfrei zum Heckflügel."
+  rear_wing: "Inkludierter High-Downforce Flügel sorgt für zwingend benötigte Heckstabilität bei High-Speed."
+
+# ==========================================
+# ⚠️ WICHTIGE BAU- & SETUP-HINWEISE
+# ==========================================
+preparation_and_painting:
+  reinigung: "Die Innenseite der Karosserie vor dem Lackieren zwingend mit Spülmittel auswaschen, um Trennmittelreste aus der Produktion zu entfernen."
+  lack_typ: "Ausschließlich Polycarbonat-Spray (z.B. Tamiya PS-Farben) verwenden. Von innen in mehreren dünnen Schichten lackieren."
+  schutzfolie: "Die äußere Overspray-Schutzfolie erst nach dem kompletten Lackieren und Bohren der Löcher abziehen."
+
+mounting_instructions:
+  karosserieloecher: "Löcher nicht stechen, sondern mit einem speziellen Karosseriebohrer (Reamer) bohren, um Risse im Lexan zu vermeiden."
+  bumper_support: "Der Front-Schaumstoffbumper des Chassis muss den vorderen Karosserieüberhang mechanisch abstützen."
+  radkaesten: "Radkästen mit einer gebogenen Lexanschere ausschneiden und Kanten mit feinem Schleifpapier glätten, um Einreißen bei Vibrationen zu verhindern."
+  
