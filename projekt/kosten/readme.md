@@ -1,6 +1,6 @@
 # Bill of Materials (BOM) - Carten T410R Speedrun Projekt
 
-**Stand:** 10.03.2026
+**Stand:** 12.03.2026
 
 ## 📦 Komponenten & Hardware
 
@@ -14,7 +14,13 @@
 | 6 | **Kühlung** | Hobbywing Lüfter mit Kühlrippen für 36mm Motor (60mm) | HW86080120 | Monster Hopups | 1 | 9,99 € |
 | 7 | **Ladetechnik** | SkyRC S100 Neo LiPo 1-6s 10A 100W AC | SK100202-01 | Monster Hopups | 1 | 44,95 € |
 | 8 | **Lenkung** | Amewi 4409MG AMX Digital-Servo Low-Profile | AW-28995 | Tamico Shop | 1 | 23,99 € |
-| 9 | **Testing** | Digital Laser Tachometer (Non-Contact RPM Meter 10-99999) | B0FJX5PBDR | Amazon | 1 | 24,90 € |
+| 9 | **Testing** | QWORK Digital Tachometer | - | Amazon | 1 | 13,88 € |
+| 10 | **Karosserie** | ZooRacing ZR-0006-07 - HellCat - 1:10 Tourenwagen | 10-ZR-0006-07 | RC-KleinKram | 1 | 30,99 € |
+| 11 | **Werkzeug** | Tamiya 86015 - PS-15 Metallic Rot (100ml) | 17-86015 | RC-KleinKram | 1 | 8,99 € |
+| 12 | **Werkzeug** | Tamiya 86012 - PS-12 Silber (100ml) | 17-86012 | RC-KleinKram | 1 | 8,99 € |
+| 13 | **Werkzeug** | Tamiya 86005 - PS-5 Schwarz (100ml) | 17-86005 | RC-KleinKram | 1 | 8,99 € |
+| 14 | **Werkzeug** | Bittydesign BDSS-37855-C Curved gebogene Schere | 18-BDSS-37855-C | RC-KleinKram | 1 | 10,99 € |
+| 15 | **Räder & Reifen** | Sweep HANKOOK Tread Belted tires Pre-glued 36deg | SR-SSF-36AWPG | LMI-Racing | 1 | 29,99 € |
 
 ---
 
@@ -22,11 +28,13 @@
 
 | Beschreibung | Betrag |
 |:---|---:|
-| **Reine Fahrzeugkosten (ohne Tools & Versand):** | **373,28 €** |
-| Kosten für Tools & Infrastruktur (Pos. 7 & 9): | 69,85 € |
-| **Zwischensumme Hardware:** | **443,13 €** |
-| Versandkosten RC-KleinKram: | 0,00 € |
+| **Reine Fahrzeugkosten (ohne Tools & Versand):** | **434,26 €** |
+| Kosten für Tools & Infrastruktur (Pos. 7, 9, 11-14): | 96,79 € |
+| **Zwischensumme Hardware:** | **531,05 €** |
+| Versandkosten RC-KleinKram (Chassis & Funke): | 0,00 € |
 | Versandkosten Monster Hopups: | 0,00 € |
 | Versandkosten Tamico Shop: | 4,99 € |
 | Versandkosten Amazon: | 3,99 € |
-| **Gesamtkosten Projekt (Brutto):** | **452,11 €** |
+| Versandkosten RC-KleinKram (Karosserie & Zubehör): | 6,49 € |
+| Versandkosten LMI-Racing: | 5,99 € |
+| **Gesamtkosten Projekt (Brutto):** | **552,51 €** |
