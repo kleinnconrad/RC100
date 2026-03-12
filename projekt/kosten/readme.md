@@ -21,6 +21,7 @@
 | 13 | **Werkzeug** | Tamiya 86005 - PS-5 Schwarz (100ml) | 17-86005 | RC-KleinKram | 1 | 8,99 € |
 | 14 | **Werkzeug** | Bittydesign BDSS-37855-C Curved gebogene Schere | 18-BDSS-37855-C | RC-KleinKram | 1 | 10,99 € |
 | 15 | **Räder & Reifen** | Sweep HANKOOK Tread Belted tires Pre-glued 36deg | SR-SSF-36AWPG | LMI-Racing | 1 | 29,99 € |
+| 16 | **Telemetrie** | Ruddog GPS/GNSS Speed & Performance Analyzer | RP-0525 | RCFOX | 1 | 54,85 € |
 
 ---
 
@@ -28,13 +29,14 @@
 
 | Beschreibung | Betrag |
 |:---|---:|
-| **Reine Fahrzeugkosten (ohne Tools & Versand):** | **434,26 €** |
+| **Reine Fahrzeugkosten (ohne Tools & Versand):** | **489,11 €** |
 | Kosten für Tools & Infrastruktur (Pos. 7, 9, 11-14): | 96,79 € |
-| **Zwischensumme Hardware:** | **531,05 €** |
+| **Zwischensumme Hardware:** | **585,90 €** |
 | Versandkosten RC-KleinKram (Chassis & Funke): | 0,00 € |
 | Versandkosten Monster Hopups: | 0,00 € |
 | Versandkosten Tamico Shop: | 4,99 € |
 | Versandkosten Amazon: | 3,99 € |
 | Versandkosten RC-KleinKram (Karosserie & Zubehör): | 6,49 € |
 | Versandkosten LMI-Racing: | 5,99 € |
-| **Gesamtkosten Projekt (Brutto):** | **552,51 €** |
+| Versandkosten RCFOX (GPS Modul): | 4,90 € |
+| **Gesamtkosten Projekt (Brutto):** | **612,26 €** |
