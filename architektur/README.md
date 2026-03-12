@@ -13,7 +13,7 @@ Dieses Verzeichnis enthält alle grundlegenden architektur- und Hardwareentschei
 | **ADR-005** | 2026-03-06 | Auswahl der Fernsteuerungsanlage für 100 km/h Speedruns | 🟢 entschieden | Carson Reflex Wheel X1 |
 | **ADR-006** | 2026-03-06 | Auswahl des Lenkservos für präzise High-Speed-Kontrolle | 🟢 entschieden | JX PDI-4409MG |
 | **ADR-007** | 2026-03-06 | Auswahl der aktiven und passiven Motorkühlung für 3S-Speedruns | 🟢 entschieden | Passiver 36mm Alu-Kühlkörper kombiniert mit aktivem 40x40mm High-Speed Alu-Lüfter |
-| **ADR-008** | 2026-02-25 | Auswahl der Bereifung (Belted Gummireifen für Asphalt) für 100 km/h Speedruns | 🟡 Offen | Sweep HANKOOK Tread Belted tires Pre-glued set Pro-compound 36deg for Asphalt (SR-SSF-36AWPG) |
+| **ADR-008** | 2026-02-25 | Auswahl der Bereifung (Belted Gummireifen für Asphalt) für 100 km/h Speedruns | 🟢 Entschieden | Sweep HANKOOK Tread Belted tires Pre-glued set Pro-compound 36deg for Asphalt (SR-SSF-36AWPG) |
 | **ADR-009** | 2026-03-12 | Auswahl der aerodynamischen Karosserie für 100 km/h Speedruns | 🟢 entschieden | ZooRacing Hellcat (190 mm, 0.7mm Stärke) |
 | **ADR-010** | 2026-03-10 | Auswahl des GPS-Messsystems zur Validierung der 100 km/h Marke | 🟢 entschieden | Ruddog GPS Performance Analyzer |
 
@@ -249,7 +249,7 @@ Mini-Kühlkörper.
 ---
 
 ### ADR-008: Auswahl der Bereifung (Belted Gummireifen für Asphalt) für 100 km/h Speedruns
-**Status:** Offen | **Datum:** 2026-02-25
+**Status:** Entschieden | **Datum:** 2026-02-25
 
 #### Kontext
 Bei einer Zielgeschwindigkeit von 100 km/h und den damit verbundenen extremen Drehzahlen 
