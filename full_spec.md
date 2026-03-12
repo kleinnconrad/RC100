@@ -54,6 +54,48 @@
 
 ---
 
+## ⚙️ BODY
+
+
+### 📦 Aerodynamik Meta
+
+* **Brand:** ZooRacing
+* **Modell:** Hellcat
+* **Fahrzeugklasse:** 1:10 On-Road Tourenwagen
+* **Breite Mm:** 190
+* **Radstand Mm:** 257
+* **Material:** Polycarbonat (Lexan)
+* **Materialstaerke Mm:** 0.7
+
+#### 🔹 Shopping Item
+
+  * **In Liste Aufnehmen:** True
+  * **Artikel Name:** ZooRacing Hellcat 190mm Tourenwagen Karosserie (0.7mm Regular)
+  * **Kategorie:** Karosserie & Aerodynamik
+  * **Referenz Link:** Suche bei RC-KleinKram oder Tonisport nach 'ZooRacing Hellcat 0.7mm'
+  * **Geschaetzter Preis Eur:** 32.9
+
+### 📦 Aerodynamic Features
+
+* **Front:** Tief gezogene Nase und sanfter Haubenwinkel reduzieren den Staudruck und verhindern Lift.
+* **Roofline:** Flach abfallendes Dach leitet die Luft laminar und störungsfrei zum Heckflügel.
+* **Rear Wing:** Inkludierter High-Downforce Flügel sorgt für zwingend benötigte Heckstabilität bei High-Speed.
+
+### 📦 Preparation And Painting
+
+* **Reinigung:** Die Innenseite der Karosserie vor dem Lackieren zwingend mit Spülmittel auswaschen, um Trennmittelreste aus der Produktion zu entfernen.
+* **Lack Typ:** Ausschließlich Polycarbonat-Spray (z.B. Tamiya PS-Farben) verwenden. Von innen in mehreren dünnen Schichten lackieren.
+* **Schutzfolie:** Die äußere Overspray-Schutzfolie erst nach dem kompletten Lackieren und Bohren der Löcher abziehen.
+
+### 📦 Mounting Instructions
+
+* **Karosserieloecher:** Löcher nicht stechen, sondern mit einem speziellen Karosseriebohrer (Reamer) bohren, um Risse im Lexan zu vermeiden.
+* **Bumper Support:** Der Front-Schaumstoffbumper des Chassis muss den vorderen Karosserieüberhang mechanisch abstützen.
+* **Radkaesten:** Radkästen mit einer gebogenen Lexanschere ausschneiden und Kanten mit feinem Schleifpapier glätten, um Einreißen bei Vibrationen zu verhindern.
+
+
+---
+
 ## ⚙️ BRUSHLESS COMBO
 
 
