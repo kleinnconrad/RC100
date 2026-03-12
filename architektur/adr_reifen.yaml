@@ -6,7 +6,7 @@
 adr_tires_selection:
   id: "ADR-008"
   title: "Auswahl der Bereifung (Belted Gummireifen für Asphalt) für 100 km/h Speedruns"
-  status: "Offen"
+  status: "Entschieden"
   date: "2026-02-25"
   
   context: |
