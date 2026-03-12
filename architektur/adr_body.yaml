@@ -1,58 +1,61 @@
 # ==========================================
-# Architectural Decision Record (ADR-007)
+# Architectural Decision Record (ADR-009)
 # ==========================================
 # Thema: Auswahl der Karosserie (Aerodynamik / Body Shell)
 
 adr_body_selection:
   id: "ADR-009"
   title: "Auswahl der aerodynamischen Karosserie für 100 km/h Speedruns"
-  status: "Offen"
-  date: "2026-03-06"
+  status: "entschieden"
+  date: "2026-03-12"
   
   context: |
     Bei einer Zielgeschwindigkeit von 100 km/h (ca. 27,7 m/s) ist die Karosserie kein rein optisches 
-    Bauteil mehr, sondern die primäre aerodynamische Schutzschicht. Eine eckige Karosserie fängt 
-    Luft unter der Frontschürze ein, was unweigerlich zu einem 'Blow-over' (Rückwärtssalto durch 
-    Staudruck) führt. Gleichzeitig darf der Luftwiderstand (cW-Wert) den 3660er Motor nicht 
-    unnötig einbremsen. Das Carten T410R Chassis erfordert eine Breite von 190 mm. Zudem ist die 
-    Materialstärke kritisch: Dünnes Lexan (< 0.5 mm) verformt sich bei 100 km/h massiv, drückt 
-    auf die Reifen und zerstört den Geradeauslauf.
+    Bauteil mehr, sondern die primäre aerodynamische Schutzschicht. Eine klassische, eckige Karosserie 
+    fängt Luft unter der Frontschürze ein, was unweigerlich zu einem 'Blow-over' (Abheben durch 
+    Staudruck) führt. Gleichzeitig darf der Luftwiderstand (cW-Wert) den Motor nicht unnötig einbremsen. 
+    Das Carten T410R Chassis erfordert eine Breite von 190 mm. Die Materialstärke ist kritisch: 
+    Dünnes Lexan (< 0.5 mm) verformt sich bei 100 km/h massiv.
 
   considered_alternatives:
     - option_id: 1
       name: "Standard Tourenwagen / Bash-Karosserie (z.B. Nissan Skyline, BMW M3)"
       type: "Scale-Optik / High Drag"
-      evaluation: "Optisch ansprechend, aber aerodynamisch ein Fallschirm. Die steile Front und hohe Dachlinie sorgen für massiven Luftwiderstand. Hohes Risiko für Blow-overs. Für 100 km/h architektonisch ungeeignet."
+      evaluation: "Optisch ansprechend, aber aerodynamisch ein Fallschirm. Hohes Risiko für Blow-overs. Für 100 km/h architektonisch ungeeignet."
       
     - option_id: 2
       name: "ZooRacing Wolverine (190 mm)"
       type: "CFD-optimierte Wettbewerbs-Karosserie"
-      evaluation: "Der aktuelle Goldstandard im 1:10 Tourenwagen-Bereich. Im Windkanal und per CFD (Computational Fluid Dynamics) entwickelt. Bietet extrem effiziente Strömungsführung, viel Anpressdruck auf der Vorderachse (verhindert Abheben) und ist als 0.7 mm 'Regular' Version robust genug gegen Verformungen bei Topspeed."
+      evaluation: "Bietet extrem effiziente Strömungsführung und viel Anpressdruck auf der Vorderachse. Eher auf enge Kurven (Steering) ausgelegt."
       
     - option_id: 3
-      name: "Le Mans Prototype / Gruppe C (z.B. Mon-Tech M-10 oder Delta Plastik LMP)"
-      type: "Keilform / Low Drag / Maximum Downforce"
-      evaluation: "Die absolute Geheimwaffe für reine Speedruns. Bietet die geringstmögliche Stirnfläche und schneidet wie ein Keil durch die Luft. Nachteil: Sehr flache Bauform vorne kann Konflikte mit den vorderen Stoßdämpferbrücken des Carten T410R verursachen. Erfordert genaues Ausmessen."
+      name: "Le Mans Prototype / Gruppe C (z.B. Mon-Tech M-10)"
+      type: "Keilform / Low Drag"
+      evaluation: "Die absolute Geheimwaffe für reine Speedruns. Bietet die geringstmögliche Stirnfläche. Nachteil: Sehr flache Bauform vorne verursacht oft Konflikte mit den vorderen Stoßdämpferbrücken des Carten T410R."
 
     - option_id: 4
-      name: "Flacher Supersportler (z.B. Protoform Ford GT oder Corvette C8)"
-      type: "Low-Slung Supercar (190 mm)"
-      evaluation: "Ein exzellenter Mittelweg zwischen realistischer Auto-Optik und sehr guter Aerodynamik. Flache Schnauze und niedriges Dach verhindern Lift, kommen aber aerodynamisch nicht ganz an die reine Effizienz der ZooRacing Wolverine heran."
+      name: "ZooRacing Hellcat (190 mm, 0.7mm Regular)"
+      type: "CFD-optimierte High-Speed Tourenwagen-Karosserie"
+      evaluation: "Bietet eine noch flachere Dachlinie und Frontscheibe als die Wolverine. Exzellenter Luftstrom zum Heckflügel, extrem geringer Luftwiderstand für hohen Top-Speed bei gleichzeitig überragender Geradeauslauf-Stabilität."
 
-  decision: "Noch nicht entschieden (Status: Offen)"
+  decision: "ZooRacing Hellcat (190 mm, 0.7mm Stärke)"
   
   body_meta:
+    brand: "ZooRacing"
+    model: "Hellcat"
     required_width: "190 mm"
-    required_thickness: "Mindestens 0.7 mm (Regular / Standard). Zwingend Finger weg von 'Ultra Light Weight' (ULW)!"
+    required_thickness: "0.7 mm (Regular Weight)"
 
   rationale: |
-    Die Entscheidung bleibt vorerst offen, um zu evaluieren, ob der Fokus auf dem absoluten 
-    aerodynamischen Optimum (Option 3: LMP), einem perfekten Allrounder mit modernster 
-    CFD-Technik (Option 2: ZooRacing Wolverine) oder einer sportlichen Scale-Optik (Option 4) 
-    liegen soll. Zwingend ist jedoch der Ausschluss von Option 1, um die Hardware bei 
-    100 km/h nicht zu gefährden.
+    Die Entscheidung fällt auf die ZooRacing Hellcat in der 0.7mm Standard-Stärke. Sie stellt den 
+    optimalen Kompromiss aus minimalem Luftwiderstand (für das Erreichen der 100 km/h) und sicherem 
+    Anpressdruck (Verhinderung von Blow-overs) dar. Im Gegensatz zu extrem flachen LMP-Karosserien 
+    passt sie problemlos über die Stoßdämpferbrücken des Carten T410R. Die Materialstärke von 0.7mm 
+    garantiert, dass die Karosserie dem massiven Staudruck bei Top-Speed standhält und nicht zu 
+    vibrieren oder auf die Reifen zu schleifen beginnt.
     
   consequences:
-    - "Material-Constraint: Egal welche Karosserie gewählt wird, es muss zwingend die Standard-Dicke (meist 0.7 mm bis 1.0 mm) bestellt werden. Leichtbau-Karosserien würden bei dem Winddruck auf die Reifen gepresst werden."
-    - "Montage-Constraint: Der Heckflügel muss extrem steif verschraubt werden, da er bei 100 km/h maßgeblich verhindert, dass das Heck ausbricht. Die Karosserielöcher müssen passgenau gerieben werden, um Vibrationen zu minimieren."
-    - "Chassis-Vorbereitung: Der Schaumstoff-Bumper an der Front des Carten T410R muss exakt bündig mit der Innenseite der gewählten Karosserie abschließen, damit diese bei High-Speed nicht nach unten durchbiegt."
+    - "Lackierung: Die Karosserie wird unlackiert geliefert. Es muss zwingend spezielle Lexan-Farbe (Polycarbonat-Farbe, z.B. Tamiya PS-Serie) verwendet werden, da normale Farbe abblättern würde."
+    - "Montage: Der mitgelieferte Heckflügel muss extrem steif verschraubt werden. Die Karosserielöcher müssen passgenau mit einer Lexanschere und einem Karosseriebohrer bearbeitet werden."
+    - "Chassis-Vorbereitung: Der Schaumstoff-Bumper an der Front des Carten T410R muss exakt bündig mit der Innenseite der Frontschürze abschließen, um ein Eindrücken bei High-Speed zu verhindern."
+    
