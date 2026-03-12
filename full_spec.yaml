@@ -466,35 +466,54 @@ Kardanwelle Und Joints:
 Paint:
   lackierung_meta:
     brand: Tamiya
-    color: PS-15 Metallic Red
-    typ: Polycarbonat-Spray (PS-Serie)
-    gebindegroesse: 100 ml (Ausreichend für 3-4 dünne Schichten bei 1:10)
-    eigenschaften: Hochelastisch. Die Farbe ätzt sich mikroskopisch in das Lexan ein
-      und blättert selbst bei extremen Vibrationen oder Crashes nicht ab (im Gegensatz
-      zu normalen Acryl- oder TS-Farben).
-    shopping_item:
-      in_liste_aufnehmen: true
-      artikel_name: Tamiya PS-15 Metallic Rot (100ml Sprühdose)
-      kategorie: Karosserie & Aerodynamik
-      referenz_link: Suche bei RC-KleinKram, Tamico oder Monster Hopups nach 'Tamiya
-        PS-15'
+    system: 3-Schicht Metallic-Aufbau
+    typ: Spezial-Polycarbonatspray (Lexan) - Ätzt sich in den Kunststoff ein
+    eigenschaften: Hochflexibel, extrem widerstandsfähig gegen Abblättern bei Crashes.
+    shopping_items:
+    - artikel_name: Tamiya PS-15 Metallic Rot (100ml)
+      referenz_link: Suche nach Tamiya PS-15 bei RC-Shops
       geschaetzter_preis_eur: 8.5
-  lackier_prozess:
-    grundregel: Lexan-Karosserien werden immer von INNEN lackiert! Die äußere Schutzfolie
-      bleibt bis ganz zum Schluss auf dem Auto.
-    vorbereitung: Die Innenseite zwingend mit lauwarmem Wasser und Spülmittel auswaschen,
-      um Trennfett aus der Tiefzieh-Produktion zu entfernen. Danach Fenster mit den
-      beiliegenden Maskierfolien abkleben.
-    auftrag: In 3 bis 4 sehr feinen, dünnen Schichten sprühen ('Nebel'). Zwischen
-      den Schichten 10-15 Minuten ablüften lassen. Niemals versuchen, beim ersten
-      Durchgang deckend zu lackieren (Gefahr von Tropfen/Nasen).
-  mandatory_upgrades:
-    part: Backing-Color (Hinterlegungsfarbe) - z.B. Tamiya PS-12 (Silber) oder PS-1
-      (Weiß)
-    reason: 'KRITISCH: PS-15 Metallic Red ist nicht blickdicht. Wenn die 3-4 Schichten
-      Rot trocken sind, MUSS zwingend eine Schicht Silber oder Weiß als Abschluss
-      darüber gesprüht werden. Das reflektiert das Licht durch das Rot nach außen
-      und macht die Karosserie blickdicht und leuchtend.'
+    - artikel_name: Tamiya PS-12 Silber (100ml)
+      referenz_link: Suche nach Tamiya PS-12 bei RC-Shops
+      geschaetzter_preis_eur: 8.5
+    - artikel_name: Tamiya PS-5 Schwarz (100ml)
+      referenz_link: Suche nach Tamiya PS-5 bei RC-Shops
+      geschaetzter_preis_eur: 8.5
+  vorbereitung_prep:
+    schritt_1_waschen: Karosserie von INNEN gründlich mit lauwarmem Wasser und einfachem
+      Spülmittel (ohne Pflegezusätze) auswaschen. Mit Küchenpapier trocknen. Das entfernt
+      Produktionsfett und verhindert, dass die Farbe abperlt.
+    schritt_2_abkleben: Die beiliegenden Scheibenaufkleber von INNEN auf die Fenster
+      kleben. Die Ränder der Aufkleber mit dem Fingernagel oder einem Zahnstocher
+      fest anrubbeln, damit später keine Farbe darunterlaufen kann.
+    schritt_3_anwaermen: Alle drei Sprühdosen für 10 Minuten in eine Schüssel mit
+      warmem (nicht kochendem!) Leitungswasser stellen. Der Druck steigt leicht, die
+      Farbe zerstäubt viel feiner und bildet keine dicken Tropfen beim Sprühen.
+  durchfuehrung_3_schicht:
+    regel_nummer_1: LEXAN WIRD IMMER VON INNEN LACKIERT! Die äußere, matte Schutzfolie
+      bleibt bis zum allerletzten Schritt auf der Karosserie!
+    phase_1_hauptfarbe_ps15:
+      durchgaenge: 3 bis 4 hauchdünne Schichten
+      technik: Die ERSTE Schicht ist nur ein feiner Nebel (Klebeschicht). Sie MUSS
+        fleckig und durchsichtig aussehen! Nicht versuchen, es sofort deckend zu machen.
+        10 Minuten warten. Dann die nächste dünne Schicht sprühen. Wiederholen, bis
+        das Rot aufgebraucht ist.
+    phase_2_brillanz_ps12:
+      durchgaenge: 2 dünne Schichten
+      technik: Wenn das Rot komplett trocken ist (mindestens 30 Min warten), sprühst
+        du das Silber in 2 Durchgängen (mit 10 Min Pause) direkt auf das Rot. Dies
+        wirkt als Reflektor für die Metallic-Partikel und lässt das Rot extrem leuchten.
+    phase_3_versiegelung_ps5:
+      durchgaenge: 1 bis 2 dünne Schichten
+      technik: Wenn das Silber trocken ist, sprühst du das Schwarz als letzte Schicht
+        darüber. Das blockt jegliches Licht von unten, macht das Rot extrem satt und
+        sorgt dafür, dass dein Auto von innen hochprofessionell schwarz und sauber
+        aussieht.
+  finish_und_montage:
+    schritt_1_masken_entfernen: Wenn das Schwarz handtrocken ist (nach ca. 1-2 Stunden),
+      die Fenstermasken von innen vorsichtig abziehen.
+    schritt_2_magic_moment: Jetzt die äußere, matte Schutzfolie der Karosserie abziehen.
+      Darunter kommt das spiegelglatte, perfekte Metallic-Rot zum Vorschein!
 Reifen:
   reifen_meta:
     brand: Sweep Racing
