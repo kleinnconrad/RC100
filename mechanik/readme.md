@@ -19,6 +19,6 @@
 
 ## 📸 Visuelle Dokumentation
 
-![Mechanik Aufbau Detail 1](mechanik/fotos/PXL_20260313_223025406.jpg)
-![Mechanik Aufbau Detail 2](mechanik/fotos/PXL_20260313_223029415.jpg)
-![Mechanik Aufbau Detail 3](mechanik/fotos/PXL_20260313_223034370.jpg)
+![Mechanik Aufbau Detail 1](https://github.com/kleinnconrad/RC100/blob/main/mechanik/fotos/PXL_20260313_223025406.jpg?raw=true)
+![Mechanik Aufbau Detail 2](https://github.com/kleinnconrad/RC100/blob/main/mechanik/fotos/PXL_20260313_223029415.jpg?raw=true)
+![Mechanik Aufbau Detail 3](https://github.com/kleinnconrad/RC100/blob/main/mechanik/fotos/PXL_20260313_223034370.jpg?raw=true)
