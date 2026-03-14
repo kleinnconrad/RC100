@@ -48,3 +48,4 @@
 ![Fahrwerksgeometrie & Lenkung Detail 2](https://github.com/kleinnconrad/RC100/blob/main/mechanik/fotos/PXL_20260314_163954210.jpg?raw=true)
 ![Fahrwerksgeometrie & Lenkung Detail 3](https://github.com/kleinnconrad/RC100/blob/main/mechanik/fotos/PXL_20260314_164003786.jpg?raw=true)
 ![Fahrwerksgeometrie & Lenkung Detail 4](https://github.com/kleinnconrad/RC100/blob/main/mechanik/fotos/PXL_20260314_164056785.jpg?raw=true)
+![Fahrwerksgeometrie & Lenkung Detail 5](https://github.com/kleinnconrad/RC100/blob/main/mechanik/fotos/PXL_20260314_170154252.jpg)
