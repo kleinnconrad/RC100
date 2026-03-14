@@ -1,6 +1,6 @@
 # 🛠️ Build Log - Carten T410R Speedrun Projekt
 
-**Meilenstein:** Tag 1 - Mechanische Grundstruktur & Fahrwerk
+## Meilenstein: Tag 1 - Mechanische Grundstruktur & Fahrwerk
 **Datum:** 14.03.2026
 **Status:** In Progress
 
@@ -23,7 +23,7 @@
 ![Mechanik Aufbau Detail 2](https://github.com/kleinnconrad/RC100/blob/main/mechanik/fotos/PXL_20260313_223029415.jpg?raw=true)
 ![Mechanik Aufbau Detail 3](https://github.com/kleinnconrad/RC100/blob/main/mechanik/fotos/PXL_20260313_223034370.jpg?raw=true)
 
-**Meilenstein:** Tag 2 - Fahrwerksgeometrie, Lenkung & Elektronik-Prep
+## Meilenstein: Tag 2 - Fahrwerksgeometrie, Lenkung & Elektronik-Prep
 **Datum:** 15.03.2026
 **Status:** In Progress
 
