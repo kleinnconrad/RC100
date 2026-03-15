@@ -26,3 +26,6 @@
 ![Elektronik Detail 2](https://github.com/kleinnconrad/RC100/blob/main/elektronik/fotos/PXL_20260315_082910089.jpg?raw=true)
 ![Elektronik Detail 3](https://github.com/kleinnconrad/RC100/blob/main/elektronik/fotos/PXL_20260315_091731103.jpg?raw=true)
 ![Elektronik Detail 4](https://github.com/kleinnconrad/RC100/blob/main/elektronik/fotos/PXL_20260315_110323844.jpg?raw=true)
+![Elektronik Detail 5](https://github.com/kleinnconrad/RC100/blob/main/elektronik/fotos/PXL_20260315_101819221.MP.jpg?raw=true)
+![Elektronik Detail 6](https://github.com/kleinnconrad/RC100/blob/main/elektronik/fotos/PXL_20260315_113015136.jpg?raw=true)
+![Elektronik Detail 7](https://github.com/kleinnconrad/RC100/blob/main/elektronik/fotos/PXL_20260315_115227327.jpg?raw=true)
