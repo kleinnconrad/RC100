@@ -1,4 +1,4 @@
-# RC100: 100 km/h RC-Auto-Projekt
+# RC100: 100 km/h 1:10 RC-Auto-Projekt
 
 Willkommen im RC100 Projekt-Repository. Dies ist ein privates Projekt mit dem Ziel, einen **RC Onroad Tourenwagen im Maßstab 1:10** zu entwerfen und zu bauen, der Geschwindigkeiten von **mindestens 100 km/h** erreicht. Das primäre technische Ziel ist es, die Leistung zu maximieren und den Bau gleichzeitig so **günstig** und **zuverlässig** wie möglich zu halten.
 
