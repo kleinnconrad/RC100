@@ -1,4 +1,4 @@
-* **Karosserie-Montage (Lehrgeld gezahlt):** Bei den Bohrungen für die Karosseriehalterung kam es zu leichten Fehlbohrungen (Abweichungen), da die Positionen auf der gewölbten Hülle nur grob gepeilt und gemessen wurden.
+* **Karosserie-Montage (Lehrgeld gezahlt):** Bei den Bohrungen für die Karosseriehalterung kam es zu Fehlbohrungen (Abweichungen), da die Positionen auf der gewölbten Hülle nur grob gepeilt und gemessen wurden.
   > **Learning für künftige Builds:** Manuelles Ausmessen ist bei Lexan zu fehleranfällig. Zukünftige Markierungen sollten mit einem Nivelliergerät (Kreuzlinienlaser) exakt vom Chassis auf die Karosserie projiziert werden, um millimetergenaue Bohrungen zu garantieren.
 
 * **Aerodynamik-Beschnitt (Score & Snap):** Das Ausschneiden der Hülle erfolgte nicht rein mechanisch mit der Schere, sondern durch das Einritzen von Sollbruchstellen (mit einem Skalpell/Cuttermesser) und dem anschließenden, sauberen Abknicken des Lexans. Diese Methode verhindert Mikrorisse im Material und liefert hochpräzise Kanten.
