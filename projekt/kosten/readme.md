@@ -1,6 +1,6 @@
 # Bill of Materials (BOM) - Carten T410R Speedrun Projekt
 
-**Stand:** 12.03.2026
+**Stand:** 15.03.2026
 
 ## 📦 Komponenten & Hardware
 
@@ -29,8 +29,8 @@
 
 | Beschreibung | Betrag |
 |:---|---:|
-| **Reine Fahrzeugkosten (ohne Tools & Versand):** | **489,11 €** |
-| Kosten für Tools & Infrastruktur (Pos. 7, 9, 11-14): | 96,79 € |
+| **Reine Fahrzeugkosten (ohne Tools & Versand):** | **434,26 €** |
+| Kosten für Tools & Infrastruktur (Pos. 7, 9, 11-14, 16): | 151,64 € |
 | **Zwischensumme Hardware:** | **585,90 €** |
 | Versandkosten RC-KleinKram (Chassis & Funke): | 0,00 € |
 | Versandkosten Monster Hopups: | 0,00 € |
