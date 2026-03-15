@@ -1,6 +1,6 @@
 # 🛠️ Build Log - Carten T410R Speedrun Projekt
 
-**Meilenstein:** Tag 3 - Elektronik-Integration & Antriebsstrang
+## Tag 3 - Elektronik-Integration & Antriebsstrang
 **Datum:** 15.03.2026
 **Status:** In Progress
 
