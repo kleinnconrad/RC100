@@ -25,7 +25,7 @@
 
 ## Tag 2 - Fahrwerksgeometrie, Lenkung & Elektronik-Prep
 **Datum:** 15.03.2026
-**Status:** In Progress
+**Status:** Erledigt
 
 ## 📝 Fortschritt & Technische Erkenntnisse
 
