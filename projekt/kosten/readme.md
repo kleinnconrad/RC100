@@ -22,6 +22,7 @@
 | 14 | **Werkzeug** | Bittydesign BDSS-37855-C Curved gebogene Schere | 18-BDSS-37855-C | RC-KleinKram | 1 | 10,99 € |
 | 15 | **Räder & Reifen** | Sweep HANKOOK Tread Belted tires Pre-glued 36deg | SR-SSF-36AWPG | LMI-Racing | 1 | 29,99 € |
 | 16 | **Telemetrie** | Ruddog GPS/GNSS Speed & Performance Analyzer | RP-0525 | RCFOX | 1 | 54,85 € |
+| 17 | **ESC Programmierung** | 	Hobbywing Programmierbox LED Universal | HW30501003 | Modellbau Metz | 1 | 11,49 € |
 
 ---
 
@@ -30,13 +31,14 @@
 | Beschreibung | Betrag |
 |:---|---:|
 | **Reine Fahrzeugkosten (ohne Tools & Versand):** | **434,26 €** |
-| Kosten für Tools & Infrastruktur (Pos. 7, 9, 11-14, 16): | 151,64 € |
-| **Zwischensumme Hardware:** | **585,90 €** |
+| Kosten für Tools & Infrastruktur (Pos. 7, 9, 11-14, 16, 17): | 163,13 € |
+| **Zwischensumme Hardware:** | **597,39 €** |
 | Versandkosten RC-KleinKram (Chassis & Funke): | 0,00 € |
 | Versandkosten Monster Hopups: | 0,00 € |
 | Versandkosten Tamico Shop: | 4,99 € |
 | Versandkosten Amazon: | 3,99 € |
 | Versandkosten RC-KleinKram (Karosserie & Zubehör): | 6,49 € |
 | Versandkosten LMI-Racing: | 5,99 € |
+| Versandkosten Modellbau Metz: | 3,95 € |
 | Versandkosten RCFOX (GPS Modul): | 4,90 € |
-| **Gesamtkosten Projekt (Brutto):** | **612,26 €** |
+| **Gesamtkosten Projekt (Brutto):** | **627,70 €** |
