@@ -2,7 +2,7 @@
 
 ## Tag 1 - Mechanische Grundstruktur & Fahrwerk
 **Datum:** 14.03.2026
-**Status:** In Progress
+**Status:** Erledigt
 
 ## 📝 Fortschritt & Technische Erkenntnisse
 
