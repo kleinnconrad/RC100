@@ -409,6 +409,41 @@
 
 ---
 
+## ⚙️ HAUPTZAHNRAD
+
+
+### 📦 Spur Gear Meta
+
+* **Type:** CNC-gefrästes Hauptzahnrad (48 DP, 72T)
+* **Mechanical Load Capacity:** > 100 km/h (ausgelegt für 3S / 120A Brushless-Systeme)
+
+### 📦 Material And Construction
+
+* **Gear Body:** POM (Polyoxymethylen / Delrin) - CNC gefräst
+* **Mounting Interface:** Standard 1:10 Tourenwagen 4-Loch-Aufnahme
+* **Mating Pinion:** Gehärteter Stahl (zwingend erforderlich)
+
+### 📦 Mandatory Modifications
+
+
+#### 🔹 Pinion Securing
+
+  * **Issue:** Verrutschen des Motorritzels (Ursache für Getriebeschaden)
+  * **Description:** Um ein erneutes Verrutschen und Zerstören des Hauptzahnrads durch asymmetrischen Eingriff zu verhindern, muss die Madenschraube des Hartstahl-Ritzels zwingend mit mittelfester Schraubensicherung (z. B. Loctite 243 / blau) auf der flachen Stelle der Motorwelle gesichert werden.
+
+#### 🔹 Gear Mesh Calibration
+
+  * **Issue:** Zahnflankenspiel bei > 11.000 U/min
+  * **Description:** Das Spiel zwischen Stahlritzel und Delrin-Hauptzahnrad muss mit der bewährten Papiermethode exakt kalibriert werden. Ein zu enges Spiel führt zu extremer Reibungshitze und Leistungsverlust, ein zu weites Spiel zum sofortigen 'Strippen' der Delrin-Zähne durch das hohe Drehmoment.
+
+#### 🔹 Material Selection
+
+  * **Issue:** Vermeidung von Stahl-Hauptzahnrädern
+  * **Description:** Bewusster Verzicht auf ein Hauptzahnrad aus Stahl. Dies hält die rotierende Masse gering (bessere Beschleunigung) und fungiert im Falle einer Blockade im Antriebsstrang als mechanische Sollbruchstelle (Fail-Safe), um die Motorwelle und den ESC vor Überlastung zu schützen.
+
+
+---
+
 ## ⚙️ KARDANWELLE UND JOINTS
 
 
