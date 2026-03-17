@@ -1,0 +1,30 @@
+# ==========================================
+# Spezifikation: Upgrade Hauptzahnrad (Spur Gear)
+# ==========================================
+# Ziel-Einsatz: 100 km/h Speedrun (Iteration 2.0)
+
+spur_gear_meta:
+  type: "CNC-gefrästes Hauptzahnrad (48 DP, 72T)"
+  mechanical_load_capacity: "> 100 km/h (ausgelegt für 3S / 120A Brushless-Systeme)"
+
+material_and_construction:
+  gear_body: "POM (Polyoxymethylen / Delrin) - CNC gefräst"
+  mounting_interface: "Standard 1:10 Tourenwagen 4-Loch-Aufnahme"
+  mating_pinion: "Gehärteter Stahl (zwingend erforderlich)"
+
+# ==========================================
+# ⚠️ ZWINGENDE ANPASSUNGEN FÜR DAS 100 KM/H-ZIEL
+# ==========================================
+mandatory_modifications:
+  pinion_securing:
+    issue: "Verrutschen des Motorritzels (Ursache für Getriebeschaden)"
+    description: "Um ein erneutes Verrutschen und Zerstören des Hauptzahnrads durch asymmetrischen Eingriff zu verhindern, muss die Madenschraube des Hartstahl-Ritzels zwingend mit mittelfester Schraubensicherung (z. B. Loctite 243 / blau) auf der flachen Stelle der Motorwelle gesichert werden."
+  
+  gear_mesh_calibration:
+    issue: "Zahnflankenspiel bei > 11.000 U/min"
+    description: "Das Spiel zwischen Stahlritzel und Delrin-Hauptzahnrad muss mit der bewährten Papiermethode exakt kalibriert werden. Ein zu enges Spiel führt zu extremer Reibungshitze und Leistungsverlust, ein zu weites Spiel zum sofortigen 'Strippen' der Delrin-Zähne durch das hohe Drehmoment."
+  
+  material_selection:
+    issue: "Vermeidung von Stahl-Hauptzahnrädern"
+    description: "Bewusster Verzicht auf ein Hauptzahnrad aus Stahl. Dies hält die rotierende Masse gering (bessere Beschleunigung) und fungiert im Falle einer Blockade im Antriebsstrang als mechanische Sollbruchstelle (Fail-Safe), um die Motorwelle und den ESC vor Überlastung zu schützen."
+    
