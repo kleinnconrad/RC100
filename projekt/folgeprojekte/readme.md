@@ -1,4 +1,4 @@
-# 🚀 Roadmap: Ideen für Folgeprojekte
+# Ideen für Folgeprojekte
 
 **Hardware-Skalierung**
 * Dual Motor Konfiguration für das Carten T410R Chassis (CAD Projekt)
