@@ -8,7 +8,7 @@
 
 ## Testbericht & Problemstellung
 Beim initialen Smoke Test hat sich gezeigt, dass der **Punch (Startverhalten/Beschleunigungsaggressivität) zu hart** eingestellt ist. 
-Durch die Kombination aus der 3660er / 3700 KV Motorisierung und der 43Z Übersetzung ist das Fahrzeug mit dem Standard-Punch-Level von 5 schwer und unkontrolliert anzufahren.
+Durch die Kombination aus der 3660er / 3700 KV Motorisierung und der 43Z Übersetzung ist das Fahrzeug mit dem Standard-Punch-Level von 5 schwer anzufahren.
 
 ## Lösung & Next Steps
 * **Maßnahme:** Bestellung einer Hobbywing Programmierkarte.
