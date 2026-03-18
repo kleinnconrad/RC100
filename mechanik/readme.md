@@ -1,10 +1,10 @@
-# 🛠️ Build Log - Carten T410R Speedrun Projekt
+# Build Log - Carten T410R Speedrun Projekt
 
 ## Tag 1 - Mechanische Grundstruktur & Fahrwerk
 **Datum:** 14.03.2026
 **Status:** Erledigt
 
-## 📝 Fortschritt & Technische Erkenntnisse
+## Fortschritt & Technische Erkenntnisse
 
 * **Differential-Setup:** Die Differentiale wurden gemäß der Baukastenanleitung vorerst komplett leer gelassen (ungesperrt). 
   > **Note für spätere Iterationen:** Bei den ersten Testläufen muss das Ausbrechverhalten überwacht werden. Für strikte 100 km/h Geradeausläufe könnte es später notwendig sein, zumindest das vordere Differential mit extrem zähem Silikonöl (z.B. 100.000 cSt bis 1.000.000 cSt) teilweise zu sperren, um ein "Ausbluten" der Leistung an ein einzelnes Rad zu verhindern.
@@ -17,7 +17,7 @@
 
 * **Antriebsstrang:** Für die Lagerung der drehenden Massen wurden die beiliegenden Baukasten-Standardkugellager verwendet und im gesamten Antriebsstrang implementiert.
 
-## 📸 Visuelle Dokumentation
+## Visuelle Dokumentation
 
 ![Mechanik Aufbau Detail 1](https://github.com/kleinnconrad/RC100/blob/main/mechanik/fotos/PXL_20260313_223025406.jpg?raw=true)
 ![Mechanik Aufbau Detail 2](https://github.com/kleinnconrad/RC100/blob/main/mechanik/fotos/PXL_20260313_223029415.jpg?raw=true)
@@ -27,7 +27,7 @@
 **Datum:** 15.03.2026
 **Status:** Erledigt
 
-## 📝 Fortschritt & Technische Erkenntnisse
+## Fortschritt & Technische Erkenntnisse
 
 * **Radstand & Fahrwerksgeometrie:** An der Hinterradaufhängung wurden 3mm Spacer in Richtung Vorderrad verbaut. Dies kalibriert den Radstand exakt auf die vom Hersteller vorgesehenen 258 mm. 
   > **Technische Erkenntnis:** Ein Verbauen der Spacer in Richtung Heck würde den Radstand auf 255 mm verkürzen. Durch diese Anpassbarkeit lässt sich das Chassis bei Bedarf perfekt in den Radkästen der Karosserie zentrieren.
@@ -42,7 +42,7 @@
 
 * **Energie-Management:** Der Absima 3S LiPo-Akku wurde zur Akkupflege und Sicherheit an das Ladegerät angeschlossen und auf Lagerspannung (Storage-Spannung, ca. 3.8V pro Zelle) gebracht, bis der Antriebsstrang final verkabelt und einsatzbereit ist.
 
-## 📸 Visuelle Dokumentation
+## Visuelle Dokumentation
 
 ![Fahrwerksgeometrie & Lenkung Detail 1](https://github.com/kleinnconrad/RC100/blob/main/mechanik/fotos/PXL_20260314_163940602.jpg?raw=true)
 ![Fahrwerksgeometrie & Lenkung Detail 2](https://github.com/kleinnconrad/RC100/blob/main/mechanik/fotos/PXL_20260314_163954210.jpg?raw=true)
