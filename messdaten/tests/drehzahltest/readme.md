@@ -26,3 +26,5 @@ Durch die extreme Drehzahl sind die O Ringe, welche die Arretierungsstifte in de
 Zusätzlich hat sich bei > 25000 RPM an der Kardanwelle, diese soweit aufgepeitscht, dass sie den Servohalter touchiert hat. An beiden Komponenten sind passende Spuren zu sehen. Ein Rolltest mit der Kardanwelle legt nahe, dass sie noch gerade ist und der Kontakt daher nicht intensiv war.
 
 ![Kratzer an der Kardanwelle](https://github.com/kleinnconrad/RC100/blob/main/messdaten/fotos/PXL_20260318_134312851.jpg)
+
+![Kratzer Servohalter](https://github.com/kleinnconrad/RC100/blob/main/messdaten/fotos/PXL_20260318_134339657.MP.jpg)
