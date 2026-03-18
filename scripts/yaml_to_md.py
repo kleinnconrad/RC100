@@ -12,7 +12,7 @@ def format_data(data, depth=1):
             
             if isinstance(value, dict):
                 if depth == 1:
-                    md += f"\n### 📦 {formatted_key}\n\n"
+                    md += f"\n### {formatted_key}\n\n"
                     md += format_data(value, depth + 1)
                 elif depth == 2:
                     md += f"\n#### 🔹 {formatted_key}\n\n"
@@ -22,7 +22,7 @@ def format_data(data, depth=1):
                     md += format_data(value, depth + 1)
             elif isinstance(value, list):
                 if depth == 1:
-                    md += f"\n### 📋 {formatted_key}\n\n"
+                    md += f"\n### {formatted_key}\n\n"
                     md += format_data(value, depth + 1)
                 elif depth == 2:
                     md += f"\n#### 🔹 {formatted_key}\n\n"
@@ -63,21 +63,21 @@ def generate_markdown():
         return
 
     md_lines = []
-    md_lines.append("# 🏎️ RC100 Gesamtspezifikation (Full Spec)\n")
+    md_lines.append("# RC100 Gesamtspezifikation (Full Spec)\n")
     md_lines.append("> **Automatischer Build:** Diese Datei wird aus den modularen Spezifikationen generiert.\n")
     md_lines.append("---\n")
 
     # Hauptkategorien (die Dateinamen, z.B. Akku, Chassis)
     for section_key, section_data in sorted(data.items()):
         title = str(section_key).replace('_', ' ').upper()
-        md_lines.append(f"## ⚙️ {title}\n")
+        md_lines.append(f"## {title}\n")
         md_lines.append(format_data(section_data, depth=1))
         md_lines.append("\n---\n")
 
     with open(output_file, 'w', encoding='utf-8') as f:
         f.write('\n'.join(md_lines))
         
-    print("🚀 full_spec.md erfolgreich mit schönen Unterüberschriften generiert!")
+    print("full_spec.md erfolgreich mit schönen Unterüberschriften generiert!")
 
 if __name__ == '__main__':
     generate_markdown()
