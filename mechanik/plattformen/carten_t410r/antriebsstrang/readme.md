@@ -1,4 +1,4 @@
-## 📊 Antriebs-Dashboard: Speed-Ziele & Thermische Zonen
+## Antriebs-Dashboard: Speed-Ziele & Thermische Zonen
 
 Das folgende Dashboard visualisiert die physikalischen Grenzen des **Carten T410R** in Kombination mit dem spezifizierten **3660 Brushless Motor (3700KV an 3S)**. 
 
@@ -18,7 +18,7 @@ Es zeigt den direkten Zusammenhang zwischen der gewählten Ritzelgröße, der re
 **Fazit der Visualisierung:** Das primäre Projektziel von **100 km/h** wird ab einem **35Z/36Z Ritzel** erreicht. Die Radlast befindet sich an diesem Punkt noch absolut sicher in der tiefgrünen Zone. Das Setup bietet mechanische Reserven bis ca. 125 km/h.
 
 
-## 📐 Die "Radlast %" Formel erklärt
+## Die "Radlast %" Formel
 
 Die in unseren Skripten berechnete **Radlast in Prozent** ist ein empirischer Indikator für die mechanische Belastung des Motors. Sie basiert auf dem Kehrwert der Gesamtübersetzung (Final Drive Ratio, kurz FDR). 
 
