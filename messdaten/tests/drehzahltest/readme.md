@@ -1,16 +1,16 @@
-# 🧪 Testprotokoll - Leerlaufdrehzahl & Schadensbericht
+# Testprotokoll - Leerlaufdrehzahl & Schadensbericht
 
 **Datum:** 17.03.2026
 **Status:** Erfolgreich abgeschlossen
 
-## 📝 Versuchsaufbau & Methodik
+## Versuchsaufbau & Methodik
 
 * **Messmethode:** Optische Drehzahlerfassung (RPM) mittels Lasertachometer.
 * **Testumgebung:** Unloaded Test (Fahrzeug aufgebockt, Antriebsstrang läuft ohne Bodenkontakt/Lastwiderstand).
 * **Durchführung:** Ein Reflexionsstreifen wurde zur sauberen Signalgebung auf die Außenflanke des rechten Hinterrades geklebt. Die Messung erfolgte bei 100 % Gashebelstellung über die Carson-Fernsteuerung.
 * **Ergebnis:** Das System lief stabil und ohne Aussetzer. Dennoch ist ein Schaden aufgetreten. Es wurde eine maximale Raddrehzahl von **11.200 RPM** erfasst.
 
-## 🧮 Theoretische Höchstgeschwindigkeit
+## Theoretische Höchstgeschwindigkeit
 
 v = (d * π * rpm * 60) / 1.000.000
 
