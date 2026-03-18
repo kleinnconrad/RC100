@@ -1,20 +1,20 @@
-# 🏎️ RC100 Gesamtspezifikation (Full Spec)
+# RC100 Gesamtspezifikation (Full Spec)
 
 > **Automatischer Build:** Diese Datei wird aus den modularen Spezifikationen generiert.
 
 ---
 
-## ⚙️ AKKU
+## AKKU
 
 
-### 📦 Battery Meta
+### Battery Meta
 
 * **Brand:** Absima
 * **Series:** GreenHorn Line V2
 * **Part Number:** 4140014
-* **Type:** LiPo (Lithium-Polymer)
+* **Type:** LiPo (Lithium-Polymer).
 
-### 📦 Electrical Specifications
+### Electrical Specifications
 
 * **Voltage:** 11.1V (Nennspannung)
 * **Cells:** 3S
@@ -23,12 +23,12 @@
 * **Discharge Rate Continuous:** 50C
 * **Max Continuous Amp Draw:** 250A
 
-### 📦 Connectors
+### Connectors
 
 * **Main Power:** XT60 (Plug & Play mit Hobbywing QuicRun G2 ESC)
 * **Balancer:** XH (Standard-Balancer für das Ladegerät)
 
-### 📦 Physical Specifications
+### Physical Specifications
 
 * **Case Type:** Hardcase (HC) - Hartplastik Box
 * **Safety:** Zwingend erforderlich für Speedruns zum Schutz vor Kardanwelle/Crashes
@@ -40,7 +40,7 @@
   * **Width Mm:** 46
   * **Height Mm:** 35
 
-### 📦 Chassis Integration Notes
+### Chassis Integration Notes
 
 * **Issue:** Der Carten T410R ist ab Werk für 2S-Akkus (25mm Höhe) konzipiert. Dieser 3S-Akku ist 35mm hoch.
 * **Solution:** Die obere Carbon-Akkustrebe des Chassis muss 'höhergelegt' werden.
@@ -54,10 +54,10 @@
 
 ---
 
-## ⚙️ BODY
+## BODY
 
 
-### 📦 Aerodynamik Meta
+### Aerodynamik Meta
 
 * **Brand:** ZooRacing
 * **Modell:** Hellcat
@@ -75,19 +75,19 @@
   * **Referenz Link:** Suche bei RC-KleinKram oder Tonisport nach 'ZooRacing Hellcat 0.7mm'
   * **Geschaetzter Preis Eur:** 32.9
 
-### 📦 Aerodynamic Features
+### Aerodynamic Features
 
 * **Front:** Tief gezogene Nase und sanfter Haubenwinkel reduzieren den Staudruck und verhindern Lift.
 * **Roofline:** Flach abfallendes Dach leitet die Luft laminar und störungsfrei zum Heckflügel.
 * **Rear Wing:** Inkludierter High-Downforce Flügel sorgt für zwingend benötigte Heckstabilität bei High-Speed.
 
-### 📦 Preparation And Painting
+### Preparation And Painting
 
 * **Reinigung:** Die Innenseite der Karosserie vor dem Lackieren zwingend mit Spülmittel auswaschen, um Trennmittelreste aus der Produktion zu entfernen.
 * **Lack Typ:** Ausschließlich Polycarbonat-Spray (z.B. Tamiya PS-Farben) verwenden. Von innen in mehreren dünnen Schichten lackieren.
 * **Schutzfolie:** Die äußere Overspray-Schutzfolie erst nach dem kompletten Lackieren und Bohren der Löcher abziehen.
 
-### 📦 Mounting Instructions
+### Mounting Instructions
 
 * **Karosserieloecher:** Löcher nicht stechen, sondern mit einem speziellen Karosseriebohrer (Reamer) bohren, um Risse im Lexan zu vermeiden.
 * **Bumper Support:** Der Front-Schaumstoffbumper des Chassis muss den vorderen Karosserieüberhang mechanisch abstützen.
@@ -96,15 +96,15 @@
 
 ---
 
-## ⚙️ BRUSHLESS COMBO
+## BRUSHLESS COMBO
 
 
-### 📦 Combo Meta
+### Combo Meta
 
 * **Beschreibung:** Spezifikation des Brushless-Antriebsstrangs für 100 km/h an 3S.
 * **Architektur Status:** ADR-002: Hobbywing QuicRun WP10BL120 G2 Combo (3660SL 3700KV) akzeptiert
 
-### 📦 Elektronischer Fahrtenregler Esc
+### Elektronischer Fahrtenregler Esc
 
 * **Typ:** Brushless ESC (Sensorless)
 * **Ampere Dauerlast:** Min. 120A
@@ -123,7 +123,7 @@
   * **Referenz Link:** https://www.rcfox.de/HW38030211-HobbyWing-Quicrun-Brushless-Combo-WP10BL120G2-mit-3660SL-3700KV-G2
   * **Geschaetzter Preis Eur:** 89.0
 
-### 📦 Brushless Motor
+### Brushless Motor
 
 * **Baugroesse:** 3660 (36 mm Durchmesser, 60 mm Länge)
 * **Kv Wert:** 3700KV
@@ -136,7 +136,7 @@
 
   * **In Liste Aufnehmen:** False
 
-### 📦 Motor Ritzel
+### Motor Ritzel
 
 * **Typ:** Large Bore Pinion Gear
 * **Zahnflankenprofil Pitch:** 48dp
@@ -152,7 +152,7 @@
   * **Referenz Link:** https://www.ebay.com/itm/234242275376
   * **Geschaetzter Preis Eur:** 15.0
 
-### 📦 Kuehlung
+### Kuehlung
 
 * **Motor Kuehler:** Passiver Aluminium-Kühlkörper für 36mm Motoren
 * **Motor Luefter:** Optional: 30mm oder 40mm High-Speed Lüfter (Betrieb über freien Steckplatz am Empfänger)
@@ -164,16 +164,16 @@
 
 ---
 
-## ⚙️ CARTENT410R
+## CARTENT410R
 
 
-### 📦 Chassis Meta
+### Chassis Meta
 
 * **Brand:** Carten
 * **Model:** T410R Tourenwagen Bausatz
 * **Part Number:** NHA413
 
-### 📦 Carten T410R
+### Carten T410R
 
 
 #### 🔹 Allgemein
@@ -231,21 +231,21 @@
 
 ---
 
-## ⚙️ DIFFERENTIALE
+## DIFFERENTIALE
 
 
-### 📦 Differential Meta
+### Differential Meta
 
 * **Type:** Öldruck-Kegeldifferential (Metal Gear)
 * **Mechanical Load Capacity:** > 100 km/h (ca. 8.300 U/min Achsdrehzahl)
 
-### 📦 Material And Construction
+### Material And Construction
 
 * **Gears Ring And Bevel:** Sintermetall / Stahl
 * **Diff Outdrives Cup Joints:** Gehärteter Stahl
 * **Diff Case Cup:** Faserverstärkter Verbundkunststoff (Composite)
 
-### 📦 Mandatory Modifications
+### Mandatory Modifications
 
 
 #### 🔹 Perfect Shimming
@@ -269,10 +269,10 @@
 
 ---
 
-## ⚙️ FERNSTEUERUNG
+## FERNSTEUERUNG
 
 
-### 📦 Tx Meta Transmitter
+### Tx Meta Transmitter
 
 * **Brand:** Carson
 * **Model:** Reflex Wheel X1
@@ -288,14 +288,14 @@
   * **Referenz Link:** Suche bei Modellbau-Fachhändler (z.B. Tamico, Berlinski, Amazon)
   * **Geschaetzter Preis Eur:** 35.0
 
-### 📦 Tx Performance
+### Tx Performance
 
 * **Protocol:** FHSS (Frequency-Hopping Spread Spectrum)
 * **Range Ground:** ~150 Meter (Ausreichend für übersichtliche Speedruns)
 * **Response Time:** Standard 2.4Ghz Latenz
 * **Power Supply:** 4x AA Batterien
 
-### 📦 Rx Meta Receiver
+### Rx Meta Receiver
 
 * **Model:** Carson Micro-Empfänger (im Set enthalten)
 * **Channels:** 4 (Physische Steckplätze, 2 aktiv nutzbar)
@@ -305,7 +305,7 @@
   * Fail-Safe Funktion (Schutz bei Signalverlust)
 * **Input Voltage:** 4.8V - 6.0V (Achtung: BEC des ESC darf nicht auf 7.4V stehen!)
 
-### 📦 Calibration And Setup
+### Calibration And Setup
 
 * **Fail Safe Activation:** Das Fail-Safe muss zwingend programmiert werden! Auto aufbocken, Vollbremsung an der Funke halten und den Setup-Knopf am Empfänger drücken. Beim Ausschalten der Funke muss das Auto sofort bremsen.
 * **Steering Dual Rate:** Über den Dual Rate (D/R) Drehregler an der Fernsteuerung den maximalen Lenkausschlag zwingend auf ca. 30 % reduzieren. Bei 100 km/h führt ein voller Lenkausschlag zum sofortigen Überschlag.
@@ -315,16 +315,16 @@
 
 ---
 
-## ⚙️ GETRIEBE
+## GETRIEBE
 
 
-### 📦 Getriebe Meta
+### Getriebe Meta
 
 * **Brand:** Arrowmax
 * **Model:** Motorritzel 42Z (48dp / 3.17mm Welle) ODER Robinson Racing 5mm bore 48dp 43teeth falls 3660 motor mit 5mm Welle gefahren wird: https://www.ebay.com/itm/234242275376
 * **Part Number:** 42T-48P
 
-### 📦 Getriebe Setup
+### Getriebe Setup
 
 
 #### 🔹 Hauptzahnrad Spur
@@ -344,7 +344,7 @@
   * **Gesamt Ratio:** 4.23
   * **Zielgeschwindigkeit:** > 100 km/h
 
-### 📦 Einstellbereich Mit 72Z Hauptzahnrad
+### Einstellbereich Mit 72Z Hauptzahnrad
 
 * **Hinweis:** Laut Carten Handbuch (T410R mit Gear Diff 2.47) ohne Umbau des 72Z Hauptzahnrads fahrbar:
 
@@ -375,10 +375,10 @@
 
 ---
 
-## ⚙️ GPS
+## GPS
 
 
-### 📦 Telemetrie Meta
+### Telemetrie Meta
 
 * **Typ:** GNSS Performance Analyzer (GPS/GLONASS)
 * **Referenz Modell:** Ruddog GPS Performance Analyzer
@@ -395,12 +395,12 @@
   * **Referenz Link:** Suche bei Modellbau-Fachhändler (z.B. RC-KleinKram, Tamico, Monster Hopups)
   * **Geschaetzter Preis Eur:** 85.0
 
-### 📦 App Integration
+### App Integration
 
 * **Software:** RC Gears / Ruddog App (oder baugleiche SkyRC App)
 * **Funktionen:** Top-Speed Messung, 0-100 km/h Zeitmessung, Track-Logging
 
-### 📦 Mounting And Setup
+### Mounting And Setup
 
 * **Positionierung:** Zwingend an einer Stelle montieren, die freie Sicht zum Himmel hat. Karbonbauteile (wie das Upper-Deck des Carten) schirmen das Satellitensignal ab! Bester Montageort: Auf dem vorderen Schaumstoff-Rammschutz (Bumper).
 * **Fixierung:** Das Modul bei Speedruns zwingend mit Klettverschluss UND einem zusätzlichen Kabelbinder oder Tape sichern. Die G-Kräfte bei einem Crash sind enorm.
@@ -409,21 +409,21 @@
 
 ---
 
-## ⚙️ HAUPTZAHNRAD
+## HAUPTZAHNRAD
 
 
-### 📦 Spur Gear Meta
+### Spur Gear Meta
 
 * **Type:** CNC-gefrästes Hauptzahnrad (48 DP, 72T)
 * **Mechanical Load Capacity:** > 100 km/h (ausgelegt für 3S / 120A Brushless-Systeme)
 
-### 📦 Material And Construction
+### Material And Construction
 
 * **Gear Body:** POM (Polyoxymethylen / Delrin) - CNC gefräst
 * **Mounting Interface:** Standard 1:10 Tourenwagen 4-Loch-Aufnahme
 * **Mating Pinion:** Gehärteter Stahl (zwingend erforderlich)
 
-### 📦 Mandatory Modifications
+### Mandatory Modifications
 
 
 #### 🔹 Pinion Securing
@@ -444,14 +444,14 @@
 
 ---
 
-## ⚙️ KARDANWELLE UND JOINTS
+## KARDANWELLE UND JOINTS
 
 
-### 📦 Center Shaft Meta
+### Center Shaft Meta
 
 * **Component:** Zentrale Antriebswelle (Center Shaft)
 
-### 📦 Material And Suitability
+### Material And Suitability
 
 
 #### 🔹 Driveshaft
@@ -472,7 +472,7 @@
   * **Specification:** Welle rotiert mit ca. 26.000 U/min
   * **Suitability 100Kmh 3S:** Kritisch, aber für das Baukasten-Teil machbar, solange keine Unwucht vorliegt.
 
-### 📦 Mandatory Durability Measures
+### Mandatory Durability Measures
 
 
 #### 🔹 Centering Floating Problem
@@ -496,10 +496,10 @@
 
 ---
 
-## ⚙️ KUEHLUNG
+## KUEHLUNG
 
 
-### 📦 Cooling Motor
+### Cooling Motor
 
 * **Component:** Hobbywing QuicRun 3652SL (4000kV)
 
@@ -520,13 +520,13 @@
     * WTF (Wild Turbo Fan)
   * **Power Supply:** Anschluss an freien Empfänger-Kanal (z.B. CH3 oder CH4), Stromversorgung direkt über das BEC des Reglers (6.0V/7.4V)
 
-### 📦 Cooling Esc
+### Cooling Esc
 
 * **Component:** Hobbywing QuicRun WP 10BL120 G2
 * **Status:** Keine Modifikation notwendig
 * **Description:** Der Regler verfügt ab Werk über einen verschraubten Kühlkörper und einen aktiven Lüfter, der auf die 120A Dauerlast abgestimmt ist und für 3S-Speedruns ausreicht.
 
-### 📦 Cooling Best Practices
+### Cooling Best Practices
 
 
 #### 🔹 Thermal Paste
@@ -547,17 +547,17 @@
 
 ---
 
-## ⚙️ LADEGERAET
+## LADEGERAET
 
 
-### 📦 Charger Meta
+### Charger Meta
 
 * **Brand:** SkyRC
 * **Model:** S100neo
 * **Type:** Smart AC/DC Ladegerät
 * **Architecture Fit:** Perfekt. Hat XT60-Buchse direkt im Gehäuse verbaut. Kein Adapter-Chaos.
 
-### 📦 Power Specifications
+### Power Specifications
 
 * **Input Voltage Ac:** 100-240V (Integriertes Netzteil für normale Steckdose)
 * **Input Voltage Dc:** 6-30V
@@ -565,7 +565,7 @@
 * **Charge Power Max Dc:** 200W
 * **Discharge Power Max:** 5W (Hauptanschluss) / 20W (Balanceport)
 
-### 📦 Charging Capabilities
+### Charging Capabilities
 
 
 #### 🔹 Supported Chemistries
@@ -582,7 +582,7 @@
 * **Discharge Current Range:** 0.1A - 2.0A
 * **Balancer Current Max:** 1.0A
 
-### 📦 Physical Specifications
+### Physical Specifications
 
 * **Display:** Farb-LCD-Bildschirm
 
@@ -594,7 +594,7 @@
 * **Weight G:** 340
 * **Control Interface:** Einfache 3-Tasten-Steuerung
 
-### 📦 Lipo Safety And Workflow
+### Lipo Safety And Workflow
 
 * **Charging Rule:** Den 5000mAh Akku immer mit '1C' laden. Am Ladegerät den Ladestrom auf exakt 5.0A einstellen.
 * **Storage Rule:** Nach dem Fahren NIEMALS den Akku leer in die Ecke legen. Immer das 'Storage'-Programm am S100neo starten, um die Zellen auf 3.8V Einlagerungsspannung zu bringen.
@@ -603,10 +603,10 @@
 
 ---
 
-## ⚙️ LASERTACHOMETER
+## LASERTACHOMETER
 
 
-### 📦 Messwerkzeug Meta
+### Messwerkzeug Meta
 
 * **Typ:** Berührungsloses Laser-Drehzahlmessgerät
 * **Referenz Modell:** DT-2234C+ (oder baugleiche Klone wie Neoteck/Proster)
@@ -621,7 +621,7 @@
   * **Referenz Link:** Suche bei Amazon nach 'Laser Tachometer DT-2234C+'
   * **Geschaetzter Preis Eur:** 18.0
 
-### 📦 Test Protokoll
+### Test Protokoll
 
 * **Vorbereitung:** Reflektorstreifen (beiliegend) auf Reifenflanke oder Ritzel kleben.
 * **Durchfuehrung:** Fahrzeug sicher aufbocken. Funke einschalten, Vollgas geben und Laser auf den rotierenden Streifen richten.
@@ -630,10 +630,10 @@
 
 ---
 
-## ⚙️ PAINT
+## PAINT
 
 
-### 📦 Lackierung Meta
+### Lackierung Meta
 
 * **Brand:** Tamiya
 * **System:** 3-Schicht Metallic-Aufbau
@@ -655,13 +655,13 @@
     * **Referenz Link:** Suche nach Tamiya PS-5 bei RC-Shops
     * **Geschaetzter Preis Eur:** 8.5
 
-### 📦 Vorbereitung Prep
+### Vorbereitung Prep
 
 * **Schritt 1 Waschen:** Karosserie von INNEN gründlich mit lauwarmem Wasser und einfachem Spülmittel (ohne Pflegezusätze) auswaschen. Mit Küchenpapier trocknen. Das entfernt Produktionsfett und verhindert, dass die Farbe abperlt.
 * **Schritt 2 Abkleben:** Die beiliegenden Scheibenaufkleber von INNEN auf die Fenster kleben. Die Ränder der Aufkleber mit dem Fingernagel oder einem Zahnstocher fest anrubbeln, damit später keine Farbe darunterlaufen kann.
 * **Schritt 3 Anwaermen:** Alle drei Sprühdosen für 10 Minuten in eine Schüssel mit warmem (nicht kochendem!) Leitungswasser stellen. Der Druck steigt leicht, die Farbe zerstäubt viel feiner und bildet keine dicken Tropfen beim Sprühen.
 
-### 📦 Durchfuehrung 3 Schicht
+### Durchfuehrung 3 Schicht
 
 * **Regel Nummer 1:** LEXAN WIRD IMMER VON INNEN LACKIERT! Die äußere, matte Schutzfolie bleibt bis zum allerletzten Schritt auf der Karosserie!
 
@@ -680,7 +680,7 @@
   * **Durchgaenge:** 1 bis 2 dünne Schichten
   * **Technik:** Wenn das Silber trocken ist, sprühst du das Schwarz als letzte Schicht darüber. Das blockt jegliches Licht von unten, macht das Rot extrem satt und sorgt dafür, dass dein Auto von innen hochprofessionell schwarz und sauber aussieht.
 
-### 📦 Finish Und Montage
+### Finish Und Montage
 
 * **Schritt 1 Masken Entfernen:** Wenn das Schwarz handtrocken ist (nach ca. 1-2 Stunden), die Fenstermasken von innen vorsichtig abziehen.
 * **Schritt 2 Magic Moment:** Jetzt die äußere, matte Schutzfolie der Karosserie abziehen. Darunter kommt das spiegelglatte, perfekte Metallic-Rot zum Vorschein!
@@ -688,10 +688,10 @@
 
 ---
 
-## ⚙️ REIFEN
+## REIFEN
 
 
-### 📦 Reifen Meta
+### Reifen Meta
 
 * **Brand:** Sweep Racing
 * **Model:** HANKOOK Tread Belted (SR-SSF-36AWPG)
@@ -709,7 +709,7 @@
   * **Referenz Link:** Suche nach Sweep SR-SSF-36AWPG bei gängigen RC-Shops
   * **Geschaetzter Preis Eur:** 34.9
 
-### 📦 Setup Instructions
+### Setup Instructions
 
 * **Ballooning Schutz:** Dank der inneren Kevlar-/Nylon-Gewebeeinlage dehnt sich der Reifen bei ca. 8.800 U/min (Achsdrehzahl bei 100 km/h) nicht aus. Die Aerodynamik der ZooRacing Hellcat und die Bodenfreiheit bleiben dadurch konstant sicher.
 * **Radmuttern Sicherung:** Zwingend Stoppmuttern mit intaktem Nylonring (M4) verwenden und fest anziehen. Die brachiale Beschleunigung des 3660er Motors kann lockere Muttern sofort abdrehen.
@@ -719,10 +719,10 @@
 
 ---
 
-## ⚙️ SERVO
+## SERVO
 
 
-### 📦 Servo Meta
+### Servo Meta
 
 * **Brand:** JX
 * **Model:** PDI-4409MG
@@ -730,7 +730,7 @@
 * **Features:** Coreless Motor (schnelles Ansprechverhalten), exzellentes Preis-Leistungs-Verhältnis
 * **Price Class:** Budget (~15 - 22 EUR)
 
-### 📦 Mechanical Specifications
+### Mechanical Specifications
 
 * **Gears:** Metallgetriebe (Aluminium/Kupfer - überlebenswichtig bei 100 km/h)
 * **Case:** Kunststoff mit Aluminium-Mittelteil (als Kühlkörper für den Motor)
@@ -743,34 +743,34 @@
   * **Height:** 26.1
 * **Weight G:** 44.5
 
-### 📦 Performance Specifications
+### Performance Specifications
 
 * **Operating Voltage:** 4.8V - 6.0V
 * **Torque 6V:** 9.2 kg-cm
 * **Speed 6V:** 0.11 sec / 60°
 * **Return To Center Accuracy:** Gut (Völlig ausreichend für das angepeilte Speedrun-Projekt)
 
-### 📦 Mandatory Upgrades
+### Mandatory Upgrades
 
 * **Part:** Aluminium-Servohorn (Zwingend 25T Verzahnung für JX/Futaba kaufen!)
 * **Reason:** Das Baukasten-Plastikhorn verbiegt sich (Flex) bei 100 km/h unter dem extremen Winddruck auf die Vorderräder. Das Alu-Horn garantiert eine absolut steife, spielfreie Lenkverbindung.
 * **Installation:** Die Schraube, die das Horn auf dem Servo hält, zwingend mit Schraubensicherungslack (z. B. Loctite mittelfest) fixieren, damit sie sich durch Vibrationen nicht löst.
 
-### 📦 Transmitter Setup
+### Transmitter Setup
 
 * **Dual Rate:** Für den 100 km/h Run muss an der Fernsteuerung zwingend das 'Dual Rate' (D/R) oder der Lenkausschlag (EPA) auf ca. 30-40% reduziert werden. Minimale Lenkbewegungen reichen bei Top-Speed völlig aus. Voller Ausschlag führt zum sofortigen Überschlag.
 
 
 ---
 
-## ⚙️ WERKZEUG
+## WERKZEUG
 
 
-### 📦 Werkzeug Meta
+### Werkzeug Meta
 
 * **Beschreibung:** Benötigtes Werkzeug für den Zusammenbau des Carten T410R.
 
-### 📦 Werkzeug Liste
+### Werkzeug Liste
 
 
 #### 🔹 Inbus Schraubendreher
