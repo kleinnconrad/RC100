@@ -1,8 +1,8 @@
-# 🏛️ Architecture Decision Records (ADRs)
+# Architecture Decision Records (ADRs)
 
 Dieses Verzeichnis enthält alle grundlegenden architektur- und Hardwareentscheidungen für das RC100 Projekt. **Diese Datei wird automatisch generiert. Bitte nicht manuell bearbeiten.**
 
-## 📋 Übersicht
+## Übersicht
 
 | ID | Datum | Titel | Status | Entscheidung |
 | :--- | :--- | :--- | :--- | :--- |
@@ -19,7 +19,7 @@ Dieses Verzeichnis enthält alle grundlegenden architektur- und Hardwareentschei
 
 ---
 
-## 📖 Detail-Protokolle
+## Detail-Protokolle
 
 ### ADR-001: Auswahl der Chassis-Plattform und Make-or-Buy-Entscheidung (100 km/h Benchmark)
 **Status:** entschieden | **Datum:** 2026-03-06
