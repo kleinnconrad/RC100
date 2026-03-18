@@ -2,7 +2,7 @@
 
 Willkommen im RC100 Projekt-Repository. Dies ist ein privates Projekt mit dem Ziel, einen **RC Onroad Tourenwagen im Maßstab 1:10** zu entwerfen und zu bauen, der Geschwindigkeiten von **mindestens 100 km/h** erreicht. Das primäre technische Ziel ist es, die Leistung zu maximieren und den Bau gleichzeitig so **günstig** und **zuverlässig** wie möglich zu halten.
 
-## 📂 Repository-Struktur
+## Repository-Struktur
 
 Das Projekt ist in themenspezifische Unterordner gegliedert, um Spezifikationen, Daten und Designs übersichtlich zu strukturieren:
 
@@ -15,7 +15,7 @@ Das Projekt ist in themenspezifische Unterordner gegliedert, um Spezifikationen,
 
 ---
 
-## 🛠️ Arbeitsweise in diesem Repository
+## Arbeitsweise in diesem Repository
 
 Alle Mitwirkenden können Standard-Git-Praktiken (Branching, Committing, Pulling, Pushing) nutzen, um allgemeine Projektinformationen, CAD-Dateien oder Testdaten in die jeweiligen Unterordner hochzuladen. Für Spezifikationen und Architektur-Entscheidungen gelten die folgenden spezifischen Workflows.
 
@@ -41,7 +41,7 @@ Wann immer eine wichtige Designentscheidung getroffen wird (z. B. die Wahl eines
 
 ---
 
-## 🤖 Automatisierung & GitHub Actions
+## Automatisierung & GitHub Actions
 
 Dieses Repository nutzt GitHub Actions (im Ordner `.github/workflows/`), um automatisch Dokumentationen zu generieren und Konfigurationen zusammenzuführen. Du musst im Normalfall nichts tun, um diese auszulösen – sie starten automatisch, wenn entsprechende Dateien hochgeladen oder geändert werden.
 
@@ -68,7 +68,7 @@ Wenn du Änderungen an den Python-Skripten testest oder die Dokumentation neu ge
 3. Klicke auf den Button **Run workflow** auf der rechten Seite.
 4. Wähle den gewünschten Branch aus und klicke auf den grünen Button **Run workflow**.
 
-## 🧮 Speed & Getriebe Rechner (CLI-Tool)
+## Speed & Getriebe Rechner (CLI-Tool)
 
 Um bei 100 km/h nicht blindlings die Elektronik zu überlasten, enthält dieses Repository ein maßgeschneidertes Python-Skript zur Berechnung der optimalen Getriebeübersetzung für den **Carten T410R**. 
 
@@ -78,7 +78,7 @@ Der Rechner simuliert anhand des Reifendurchmessers und der gewünschten Zielges
 ```bash
 python scripts/calc/getriebe_calc.py
 ```
-## 🚀 Top-Speed & Limit Rechner (CLI-Tool)
+## Top-Speed & Limit Rechner (CLI-Tool)
 
 Dieser "Reverse-Calculator" ergänzt den Getriebe-Rechner, indem er die maximal mögliche Höchstgeschwindigkeit des Carten T410R auf Basis der physischen Hardware-Limits berechnet. Anstatt eine Wunschgeschwindigkeit vorzugeben, berechnet das Skript anhand deiner Motor- und Akku-Daten sowie deiner persönlichen Schmerzgrenze für die thermische Belastung (Radlast), was das Auto wirklich hergibt.
 
