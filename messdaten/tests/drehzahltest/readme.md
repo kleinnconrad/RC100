@@ -1,7 +1,7 @@
 # Testprotokoll - Leerlaufdrehzahl & Schadensbericht
 
 **Datum:** 17.03.2026
-**Status:** Erfolgreich abgeschlossen
+**Status:** Erfolgreich abgeschlossen (mit Schäden an Kardanwelle und Cup Joints)
 
 ## Versuchsaufbau & Methodik
 
