@@ -2,7 +2,7 @@
 
 **Stand:** 15.03.2026
 
-## 📦 Komponenten & Hardware
+## Komponenten & Hardware
 
 | Pos | Kategorie | Artikelbezeichnung | Artikel-Nr. | Händler | Menge | Preis |
 |:---:|:---|:---|:---|:---|:---:|---:|
@@ -26,7 +26,7 @@
 
 ---
 
-## 🚚 Kostenaufstellung & Logistik
+## Kostenaufstellung & Logistik
 
 | Beschreibung | Betrag |
 |:---|---:|
