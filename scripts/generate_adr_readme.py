@@ -30,10 +30,10 @@ def generate_adr_readme():
     adrs = sorted(adrs, key=lambda x: x.get('id', ''))
 
     md_lines = []
-    md_lines.append("# 🏛️ Architecture Decision Records (ADRs)\n")
+    md_lines.append("# Architecture Decision Records (ADRs)\n")
     md_lines.append("Dieses Verzeichnis enthält alle grundlegenden architektur- und Hardwareentscheidungen für das RC100 Projekt. **Diese Datei wird automatisch generiert. Bitte nicht manuell bearbeiten.**\n")
     
-    md_lines.append("## 📋 Übersicht\n")
+    md_lines.append("## Übersicht\n")
     md_lines.append("| ID | Datum | Titel | Status | Entscheidung |")
     md_lines.append("| :--- | :--- | :--- | :--- | :--- |")
     
@@ -53,7 +53,7 @@ def generate_adr_readme():
         
     md_lines.append("\n---\n")
     
-    md_lines.append("## 📖 Detail-Protokolle\n")
+    md_lines.append("## Detail-Protokolle\n")
     
     for adr in adrs:
         md_lines.append(f"### {adr.get('id', '')}: {adr.get('title', '')}")
