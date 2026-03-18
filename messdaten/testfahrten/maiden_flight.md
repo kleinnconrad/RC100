@@ -23,6 +23,9 @@
 * **Kalibrierungs-Defizite:** Die Abstimmung zwischen der Carson-Fernsteuerung und dem Fahrzeug war fehlerhaft. Die Lenkung war nicht sauber getrimmt, was zu einem unruhigen, instabilen Geradeauslauf führte.
 * **Gas-Annahme (Deadband/Cogging):** Die Nullpunkt-Position (Neutralstellung) des Gashebels wurde vom ESC nicht exakt erkannt. Dies führte dazu, dass das Fahrzeug beim Anfahren aus dem Stillstand teilweise Befehle komplett ignorierte oder stark verzögert reagierte. Eine saubere Endpunkt-Kalibrierung (Vollgas/Bremse/Neutral) ist zwingend erforderlich.
 
+## Punch zu hoch eingestellt für die lange Übersetzung 
+Der Motor konnte bei der Übersetzung von 43 zu 72 Zähnen und einem Punch von 5 nicht oder kaum andrehen. **Zwingend erforderlich ist es den Punch auf 1 einzustellen und das Fahrzeug etwas anzuschieben**. Bei der Testfahrt ist der ESC beim anfahren öfter in die Notabschaltung gegangen.
+
 ## Next Steps & Corrective Actions
 1. Beschaffung eines neuen 48DP Motorritzels aus gehärtetem Stahl (5mm Bohrung).
 2. Beschaffung eines Upgrade-Hauptzahnrads (z.B. Kimbrough 72T 48DP) kompatibel mit dem Carten T410R Mitnehmer.
