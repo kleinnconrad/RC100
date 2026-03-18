@@ -12,7 +12,7 @@
 * **Brand:** Absima
 * **Series:** GreenHorn Line V2
 * **Part Number:** 4140014
-* **Type:** LiPo (Lithium-Polymer).
+* **Type:** LiPo (Lithium-Polymer)
 
 ### Electrical Specifications
 
@@ -34,7 +34,7 @@
 * **Safety:** Zwingend erforderlich für Speedruns zum Schutz vor Kardanwelle/Crashes
 * **Weight G:** 370
 
-#### 🔹 Dimensions
+#### Dimensions
 
   * **Length Mm:** 138
   * **Width Mm:** 46
@@ -45,7 +45,7 @@
 * **Issue:** Der Carten T410R ist ab Werk für 2S-Akkus (25mm Höhe) konzipiert. Dieser 3S-Akku ist 35mm hoch.
 * **Solution:** Die obere Carbon-Akkustrebe des Chassis muss 'höhergelegt' werden.
 
-#### 🔹 Required Parts
+#### Required Parts
 
   * 2x Distanzhülsen/Spacers (Kunststoff oder Alu) mit ca. 10mm Höhe
   * 2x minimal längere M3-Schrauben (ca. M3x16 oder M3x18)
@@ -67,7 +67,7 @@
 * **Material:** Polycarbonat (Lexan)
 * **Materialstaerke Mm:** 0.7
 
-#### 🔹 Shopping Item
+#### Shopping Item
 
   * **In Liste Aufnehmen:** True
   * **Artikel Name:** ZooRacing Hellcat 190mm Tourenwagen Karosserie (0.7mm Regular)
@@ -115,7 +115,7 @@
 * **Referenz Modell:** Hobbywing QuicRun WP10BL120 G2
 * **Hinweis Packaging:** Aufgrund des längeren Motors muss der ESC im T410R Chassis möglichst weit nach hinten oder leicht versetzt montiert werden.
 
-#### 🔹 Shopping Item
+#### Shopping Item
 
   * **In Liste Aufnehmen:** True
   * **Artikel Name:** Hobbywing QuicRun Brushless Combo WP10BL120 G2 (inkl. 3660SL 3700KV Motor)
@@ -132,7 +132,7 @@
 * **Referenz Modell:** Hobbywing 3660SL G2 (3700KV)
 * **Thermische Toleranz:** Max. 25.0 % berechnete Radlast
 
-#### 🔹 Shopping Item
+#### Shopping Item
 
   * **In Liste Aufnehmen:** False
 
@@ -144,7 +144,7 @@
 * **Bohrung:** 5.0 mm (Zwingend für die Welle des Hobbywing 3660 Motors!)
 * **Material:** Gehärteter Stahl
 
-#### 🔹 Shopping Item
+#### Shopping Item
 
   * **In Liste Aufnehmen:** True
   * **Artikel Name:** Robinson Racing RRP-2043 (48dp, 43T, 5mm Bore)
@@ -157,7 +157,7 @@
 * **Motor Kuehler:** Passiver Aluminium-Kühlkörper für 36mm Motoren
 * **Motor Luefter:** Optional: 30mm oder 40mm High-Speed Lüfter (Betrieb über freien Steckplatz am Empfänger)
 
-#### 🔹 Shopping Item
+#### Shopping Item
 
   * **In Liste Aufnehmen:** False
 
@@ -176,18 +176,18 @@
 ### Carten T410R
 
 
-#### 🔹 Allgemein
+#### Allgemein
 
   * **Fahrzeugtyp:** 1:10 Elektro Tourenwagen (EP Touring Car)
   * **Lieferzustand:** Bausatz (Kit) - unmontiert
   * **Einsatzbereich:** On-Road / Asphalt / Teppich
 
-#### 🔹 Abmessungen
+#### Abmessungen
 
   * **Spurbreite Mm:** 190
   * **Radstand Mm:** 258
 
-#### 🔹 Chassis Und Aufbau
+#### Chassis Und Aufbau
 
   * **Bodenplatte:** 2,25 mm Eco-Carbon (kohlefaserverstärktes Verbundmaterial)
   * **Oberdeck:** 2,0 mm Eco-Carbon
@@ -197,7 +197,7 @@
   * **Akkuhalterung:** Vorbereitet für 2S Standard-LiPo (Stickpack) oder Shorty-LiPo
   * **Karosseriehalter:** Verstellbare Kunststoff-Pfosten
 
-#### 🔹 Antriebsstrang
+#### Antriebsstrang
 
   * **Antriebsart:** 4WD Allrad, zentraler Kardanantrieb (Wellenantrieb)
   * **Mittelantriebswelle:** Aluminium (rot eloxiert)
@@ -209,7 +209,7 @@
   * **Interne Untersetzung:** 1:2.47 bis 1:2.53
   * **Kugellager:** Komplett kugelgelagert (mit Gummidichtungen)
 
-#### 🔹 Fahrwerk Und Federung
+#### Fahrwerk Und Federung
 
   * **Stossdaempfer:** Aluminium Öldruckstoßdämpfer (mit Gewindefahrwerk)
   * **Querlenkerhalter:** Aluminium (Toe Blocks)
@@ -223,7 +223,7 @@
     * Bodenfreiheit (Ride Height)
     * Ackermann
 
-#### 🔹 Lenkung
+#### Lenkung
 
   * **Lenksystem:** Kugelgelagertes Dual-Bellcrank-System (Doppelarm)
   * **Lenkhebel C Hubs:** Composite-Kunststoff
@@ -248,17 +248,17 @@
 ### Mandatory Modifications
 
 
-#### 🔹 Perfect Shimming
+#### Perfect Shimming
 
   * **Issue:** Spielfreiheit
   * **Description:** Die inneren Metallzahnräder müssen beim Zusammenbau mit hauchdünnen Passscheiben (Shims) absolut spielfrei eingestellt werden. Nur so wird verhindert, dass die Zähne unter dem extremen Drehmoment des 3S-Motors überspringen oder abreißen.
 
-#### 🔹 Reinforced Sealing
+#### Reinforced Sealing
 
   * **Issue:** O-Ring Abdichtung
   * **Description:** Bei 8.300 U/min erzeugt das Öl im Inneren einen massiven Fliehkraftdruck nach außen. Die Gummi-O-Ringe müssen mit zähem Spezialfett (z. B. 'Green Slime') abgedichtet werden, damit das Differential nicht trockenläuft.
 
-#### 🔹 Oil Viscosity
+#### Oil Viscosity
 
   * **Issue:** Sperrwirkung & Geradeauslauf
   * **Description:** Das Baukasten-Öl ist zu weich und führt bei Speedruns zu unkontrollierbarem Ausbrechen, wenn ein Rad minimal Grip verliert. Es muss extrem zähes Silikonöl verwendet werden, um das Auto auf einen sturen Geradeauslauf zu zwingen.
@@ -280,7 +280,7 @@
 * **Channels:** 2
 * **Price Class:** Budget / MVP (~35 EUR)
 
-#### 🔹 Shopping Item
+#### Shopping Item
 
   * **In Liste Aufnehmen:** True
   * **Artikel Name:** Carson Reflex Wheel X1 2.4Ghz Fernsteuerungs-Set (inkl. Empfänger)
@@ -300,7 +300,7 @@
 * **Model:** Carson Micro-Empfänger (im Set enthalten)
 * **Channels:** 4 (Physische Steckplätze, 2 aktiv nutzbar)
 
-#### 🔹 Integrated Features
+#### Integrated Features
 
   * Fail-Safe Funktion (Schutz bei Signalverlust)
 * **Input Voltage:** 4.8V - 6.0V (Achtung: BEC des ESC darf nicht auf 7.4V stehen!)
@@ -327,18 +327,18 @@
 ### Getriebe Setup
 
 
-#### 🔹 Hauptzahnrad Spur
+#### Hauptzahnrad Spur
 
   * **Zähne:** 72
   * **Typ:** Baukasten Standard
   * **Modul:** 48dp
 
-#### 🔹 Motorritzel Pinion
+#### Motorritzel Pinion
 
   * **Zähne:** 42
   * **Material:** Hardcoated Alu oder Stahl
 
-#### 🔹 Berechnete Werte
+#### Berechnete Werte
 
   * **Interne Uebersetzung:** 2.47
   * **Gesamt Ratio:** 4.23
@@ -348,24 +348,24 @@
 
 * **Hinweis:** Laut Carten Handbuch (T410R mit Gear Diff 2.47) ohne Umbau des 72Z Hauptzahnrads fahrbar:
 
-#### 🔹 Max Beschleunigung
+#### Max Beschleunigung
 
   * **Ritzel:** 21
   * **Ratio:** 8.47
 
-#### 🔹 Mid Range
+#### Mid Range
 
   * **Ritzel:** 31
   * **Ratio:** 5.74
 
-#### 🔹 High Speed Bereich
+#### High Speed Bereich
 
   * **Ritzel 34:** 5.23
   * **Ritzel 35:** 5.08
   * **Ritzel 36:** 4.94
   * **Ritzel 37:** 4.81
 
-#### 🔹 Max Top Speed
+#### Max Top Speed
 
   * **Ritzel 41:** 4.34
   * **Ritzel 42:** 4.23
@@ -387,7 +387,7 @@
 * **Stromversorgung:** Integrierter LiPo-Akku (via USB ladbar)
 * **Gewicht:** ca. 38 Gramm
 
-#### 🔹 Shopping Item
+#### Shopping Item
 
   * **In Liste Aufnehmen:** True
   * **Artikel Name:** Ruddog GPS Performance Analyzer
@@ -426,17 +426,17 @@
 ### Mandatory Modifications
 
 
-#### 🔹 Pinion Securing
+#### Pinion Securing
 
   * **Issue:** Verrutschen des Motorritzels (Ursache für Getriebeschaden)
   * **Description:** Um ein erneutes Verrutschen und Zerstören des Hauptzahnrads durch asymmetrischen Eingriff zu verhindern, muss die Madenschraube des Hartstahl-Ritzels zwingend mit mittelfester Schraubensicherung (z. B. Loctite 243 / blau) auf der flachen Stelle der Motorwelle gesichert werden.
 
-#### 🔹 Gear Mesh Calibration
+#### Gear Mesh Calibration
 
   * **Issue:** Zahnflankenspiel bei > 11.000 U/min
   * **Description:** Das Spiel zwischen Stahlritzel und Delrin-Hauptzahnrad muss mit der bewährten Papiermethode exakt kalibriert werden. Ein zu enges Spiel führt zu extremer Reibungshitze und Leistungsverlust, ein zu weites Spiel zum sofortigen 'Strippen' der Delrin-Zähne durch das hohe Drehmoment.
 
-#### 🔹 Material Selection
+#### Material Selection
 
   * **Issue:** Vermeidung von Stahl-Hauptzahnrädern
   * **Description:** Bewusster Verzicht auf ein Hauptzahnrad aus Stahl. Dies hält die rotierende Masse gering (bessere Beschleunigung) und fungiert im Falle einer Blockade im Antriebsstrang als mechanische Sollbruchstelle (Fail-Safe), um die Motorwelle und den ESC vor Überlastung zu schützen.
@@ -454,19 +454,19 @@
 ### Material And Suitability
 
 
-#### 🔹 Driveshaft
+#### Driveshaft
 
   * **Component:** Kardanwelle (Welle)
   * **Material:** Aluminium (eloxiert), hohl oder massiv (je nach Batch)
   * **Suitability 100Kmh 3S:** JA. Aluminium ist hier besser als Stahl, da die geringere rotierende Masse bei ca. 26.000 U/min weniger Vibrationen erzeugt.
 
-#### 🔹 Joint Cups
+#### Joint Cups
 
   * **Component:** Verbindungsstücke (Diff-Inputs)
   * **Material:** Stahl (Gehärtet)
   * **Suitability 100Kmh 3S:** JA. Die Aufnahmen am Differentialeingang sind aus Stahl und halten dem Drehmoment des 3S-Antriebs stand.
 
-#### 🔹 Rpm Load
+#### Rpm Load
 
   * **Component:** Drehzahl-Belastung
   * **Specification:** Welle rotiert mit ca. 26.000 U/min
@@ -475,19 +475,19 @@
 ### Mandatory Durability Measures
 
 
-#### 🔹 Centering Floating Problem
+#### Centering Floating Problem
 
   * **Issue:** Zentrierung (Das 'Floating' Problem)
   * **Description:** Die Welle darf in den Bechern (Cups) nicht hin und her schlagen ('chatter').
   * **Action:** Zwingend kleine O-Ringe oder Schaumstoff-Plättchen (oft im Baukasten enthalten oder aus alten Dämpfer-Gummis geschnitten) in die Becher legen, bevor die Welle eingesetzt wird. Die Welle muss 'schwimmend', aber spielfrei zwischen den Diffs sitzen.
 
-#### 🔹 Joint Lubrication
+#### Joint Lubrication
 
   * **Issue:** Schmierung der Gelenke
   * **Description:** Die Enden der Kardanwelle (Dogbones), die in den Stahlbechern laufen, sind Metall auf Metall. Bei 3S-Power entsteht hier massiver Verschleiß ('Einschlagen').
   * **Action:** Diese Kontaktpunkte mit zähem Molybdän-Fett (schwarz) oder speziellem 'Joint Grease' schmieren, um die Reibung zu minimieren.
 
-#### 🔹 Runout Check
+#### Runout Check
 
   * **Issue:** Prüfung auf Rundlauf
   * **Description:** Roll die Welle vor dem Einbau über eine Glasplatte (oder einen Spiegel).
@@ -503,13 +503,13 @@
 
 * **Component:** Hobbywing QuicRun 3652SL (4000kV)
 
-#### 🔹 Heatsink
+#### Heatsink
 
   * **Size:** 36mm (Passend für 540er / 3650 / 3652 Baugröße)
   * **Material:** Aluminium
   * **Mounting:** Aufsteck-Kühlkörper (Clip-On)
 
-#### 🔹 Fan Active
+#### Fan Active
 
   * **Size:** 40x40mm High-Speed Lüfter
   * **Rpm:** 16.000 - 20.000 U/min
@@ -529,17 +529,17 @@
 ### Cooling Best Practices
 
 
-#### 🔹 Thermal Paste
+#### Thermal Paste
 
   * **Issue:** Wärmeübertragung
   * **Action:** Ein winziger Tropfen PC-Wärmeleitpaste zwischen Motorgehäuse und Alu-Kühlkörper verbessert die Hitzeübertragung massiv.
 
-#### 🔹 Cable Management
+#### Cable Management
 
   * **Issue:** Sog des High-Speed-Lüfters
   * **Action:** Alle Sensorkabel und Antennen zwingend mit Kabelbindern fixieren, damit sie nicht vom starken Luftzug in die Rotorblätter gesaugt werden.
 
-#### 🔹 Body Airflow
+#### Body Airflow
 
   * **Issue:** Hitzestau unter der Karosserie
   * **Action:** Für Speedruns zwingend Lüftungslöcher in die Frontscheibe oder die hinteren Seitenfenster schneiden, damit ein kühlender Durchzug (Airflow) entsteht.
@@ -568,7 +568,7 @@
 ### Charging Capabilities
 
 
-#### 🔹 Supported Chemistries
+#### Supported Chemistries
 
   * LiPo
   * LiIon
@@ -586,7 +586,7 @@
 
 * **Display:** Farb-LCD-Bildschirm
 
-#### 🔹 Dimensions Mm
+#### Dimensions Mm
 
   * **Length:** 105
   * **Width:** 105
@@ -613,7 +613,7 @@
 * **Messbereich:** 2.5 bis 99.999 RPM
 * **Messgenauigkeit:** +/- 0.05%
 
-#### 🔹 Shopping Item
+#### Shopping Item
 
   * **In Liste Aufnehmen:** True
   * **Artikel Name:** Digitaler Laser Tachometer (DT-2234C+)
@@ -640,7 +640,7 @@
 * **Typ:** Spezial-Polycarbonatspray (Lexan) - Ätzt sich in den Kunststoff ein
 * **Eigenschaften:** Hochflexibel, extrem widerstandsfähig gegen Abblättern bei Crashes.
 
-#### 🔹 Shopping Items
+#### Shopping Items
 
   * 🔸 **Item 1:**
     * **Artikel Name:** Tamiya PS-15 Metallic Rot (100ml)
@@ -665,17 +665,17 @@
 
 * **Regel Nummer 1:** LEXAN WIRD IMMER VON INNEN LACKIERT! Die äußere, matte Schutzfolie bleibt bis zum allerletzten Schritt auf der Karosserie!
 
-#### 🔹 Phase 1 Hauptfarbe Ps15
+#### Phase 1 Hauptfarbe Ps15
 
   * **Durchgaenge:** 3 bis 4 hauchdünne Schichten
   * **Technik:** Die ERSTE Schicht ist nur ein feiner Nebel (Klebeschicht). Sie MUSS fleckig und durchsichtig aussehen! Nicht versuchen, es sofort deckend zu machen. 10 Minuten warten. Dann die nächste dünne Schicht sprühen. Wiederholen, bis das Rot aufgebraucht ist.
 
-#### 🔹 Phase 2 Brillanz Ps12
+#### Phase 2 Brillanz Ps12
 
   * **Durchgaenge:** 2 dünne Schichten
   * **Technik:** Wenn das Rot komplett trocken ist (mindestens 30 Min warten), sprühst du das Silber in 2 Durchgängen (mit 10 Min Pause) direkt auf das Rot. Dies wirkt als Reflektor für die Metallic-Partikel und lässt das Rot extrem leuchten.
 
-#### 🔹 Phase 3 Versiegelung Ps5
+#### Phase 3 Versiegelung Ps5
 
   * **Durchgaenge:** 1 bis 2 dünne Schichten
   * **Technik:** Wenn das Silber trocken ist, sprühst du das Schwarz als letzte Schicht darüber. Das blockt jegliches Licht von unten, macht das Rot extrem satt und sorgt dafür, dass dein Auto von innen hochprofessionell schwarz und sauber aussieht.
@@ -701,7 +701,7 @@
 * **Radmitnehmer:** 12mm Sechskant (Hex) - Passend für Baukasten-Mitnehmer des Carten T410R
 * **Montage Status:** Pre-glued (Ab Werk industriell verklebt auf Speichenfelgen)
 
-#### 🔹 Shopping Item
+#### Shopping Item
 
   * **In Liste Aufnehmen:** True
   * **Artikel Name:** Sweep HANKOOK Belted Tires 36deg Pre-glued (SR-SSF-36AWPG)
@@ -736,7 +736,7 @@
 * **Case:** Kunststoff mit Aluminium-Mittelteil (als Kühlkörper für den Motor)
 * **Spline Teeth:** 25T (WICHTIG: Standard Futaba/Savöx/JX Zahnkranz)
 
-#### 🔹 Dimensions Mm
+#### Dimensions Mm
 
   * **Length:** 40.3
   * **Width:** 20.2
@@ -773,7 +773,7 @@
 ### Werkzeug Liste
 
 
-#### 🔹 Inbus Schraubendreher
+#### Inbus Schraubendreher
 
   * **Typ:** Innensechskant-Schraubendreher (Hex Wrenches)
   * **Groessen:** 1.5 mm, 2.0 mm, 2.5 mm
@@ -781,14 +781,14 @@
   * **Brand:** Neewer
   * **Model:** Titan RC Inbus Set (1.5/2.0/2.5/3.0)
 
-#### 🔹 Steckschluessel
+#### Steckschluessel
 
   * **Typ:** RC Radkreuz / Steckschlüssel (Box Wrench)
   * **Groessen:** 5.5 mm und 7.0 mm
   * **Hinweis:** Die 5.5 mm brauchst du permanent für alle M3-Muttern im Chassis. Die 7.0 mm sind für die Radmuttern. Die in der Carten-Anleitung erwähnten 10.0 mm werden bei diesem 1/10 Modell überhaupt nicht benötigt.
   * **Status:** Vorhanden (Kein Kauf nötig)
 
-#### 🔹 Klebstoffe Und Chemie
+#### Klebstoffe Und Chemie
 
   * **Schraubensicherung:**
     * **Typ:** Schraubensicherungslack (Screw Cement / Threadlocker)
@@ -796,7 +796,7 @@
     * **Brand:** Loctite
     * **Model:** 243 Mittelfest (Blau)
 
-#### 🔹 Klebebaender
+#### Klebebaender
 
   * **Panzertape:**
     * **Typ:** Glasfaserklebeband (Glass Tape)

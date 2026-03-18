@@ -93,7 +93,7 @@ Akku:
     brand: Absima
     series: GreenHorn Line V2
     part_number: '4140014'
-    type: LiPo (Lithium-Polymer).
+    type: LiPo (Lithium-Polymer)
   electrical_specifications:
     voltage: 11.1V (Nennspannung)
     cells: 3S
