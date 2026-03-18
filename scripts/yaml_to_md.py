@@ -15,7 +15,7 @@ def format_data(data, depth=1):
                     md += f"\n### {formatted_key}\n\n"
                     md += format_data(value, depth + 1)
                 elif depth == 2:
-                    md += f"\n#### 🔹 {formatted_key}\n\n"
+                    md += f"\n#### {formatted_key}\n\n"
                     md += format_data(value, depth + 1)
                 else:
                     md += f"{indent}* **{formatted_key}:**\n"
@@ -25,7 +25,7 @@ def format_data(data, depth=1):
                     md += f"\n### {formatted_key}\n\n"
                     md += format_data(value, depth + 1)
                 elif depth == 2:
-                    md += f"\n#### 🔹 {formatted_key}\n\n"
+                    md += f"\n#### {formatted_key}\n\n"
                     md += format_data(value, depth + 1)
                 else:
                     md += f"{indent}* **{formatted_key}:**\n"
