@@ -1,4 +1,4 @@
-# Testbericht - Telemetrie & Werkzeuge
+# Test Lasertachometer
 
 **Komponente:** Digitales Lasertachometer (Optische Drehzahlmessung)
 **Datum:** 16.03.2026
