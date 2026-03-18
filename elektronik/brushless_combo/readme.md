@@ -36,4 +36,3 @@
    * *Hinweis für die vorliegende Hochlast-Übersetzung (43/72):* Wert zwingend auf **1 (Soft)** setzen, um kritische Einschaltströme (Blockierströme) zu minimieren und eine Auslösung der Überstromschutzschaltung zu verhindern.
 4. Taste **OK** drücken, um den geänderten Wert in den nichtflüchtigen Speicher des Reglers zu schreiben. (Motor gibt i.d.R. ein akustisches Bestätigungssignal ab).
 5. Regler ausschalten und die physische Verbindung zur Programmierkarte trennen.
-6. 
