@@ -6,6 +6,8 @@ Willkommen im RC100 Projekt-Repository. Dies ist ein privates Projekt mit dem Zi
 
 ![Carten T410R CK](https://github.com/kleinnconrad/RC100/blob/main/elektronik/fotos/PXL_20260319_133949504.jpg)
 
+<img src="[https://beispielseite.de/bilder/hund.jpg](https://github.com/kleinnconrad/RC100/blob/main/elektronik/fotos/PXL_20260315_113015136.jpg)" alt="Carten T410R JK" width="50%">
+
 ## Repository-Struktur
 
 Das Projekt ist in themenspezifische Unterordner gegliedert, um Spezifikationen, Daten und Designs übersichtlich zu strukturieren:
