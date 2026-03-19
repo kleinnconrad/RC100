@@ -3,7 +3,7 @@
 **Datum:** 17.03.2026
 **Status:** Erfolgreich abgeschlossen (mit Schäden an Kardanwelle und Cup Joints)
 
-## Versuchsaufbau & Methodik
+## Versuchsaufbau
 
 * **Messmethode:** Optische Drehzahlerfassung (RPM) mittels Lasertachometer.
 * **Testumgebung:** Unloaded Test (Fahrzeug aufgebockt, Antriebsstrang läuft ohne Bodenkontakt/Lastwiderstand).
