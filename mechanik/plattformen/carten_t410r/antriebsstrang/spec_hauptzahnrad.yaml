@@ -13,7 +13,7 @@ material_and_construction:
   mating_pinion: "Gehärteter Stahl (zwingend erforderlich)"
 
 # ==========================================
-# ⚠️ ZWINGENDE ANPASSUNGEN FÜR DAS 100 KM/H-ZIEL
+# ZWINGENDE ANPASSUNGEN FÜR DAS 100 KM/H-ZIEL
 # ==========================================
 mandatory_modifications:
   pinion_securing:
