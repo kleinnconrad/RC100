@@ -55,4 +55,4 @@ Der sitz des Motors im Carten erfordert eine, zum Standard, inverse Polung damit
 | 9 | LiPo Cells* | **Auto** | 2S | 3S | 4S | 5S | 6S | | | |
 | 10 | BEC Voltage | **6.0V** | 7.4V | | | | | | | |
 
-
+![Programmierkarte ESC](https://github.com/kleinnconrad/RC100/blob/main/elektronik/fotos/PXL_20260319_093605867.jpg)
