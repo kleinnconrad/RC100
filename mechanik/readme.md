@@ -17,11 +17,9 @@
 
 * **Antriebsstrang:** Für die Lagerung der drehenden Massen wurden die beiliegenden Baukasten-Standardkugellager verwendet und im gesamten Antriebsstrang implementiert.
 
-## Visuelle Dokumentation
-
-![Mechanik Aufbau Detail 1](https://github.com/kleinnconrad/RC100/blob/main/mechanik/fotos/PXL_20260313_223025406.jpg?raw=true)
-![Mechanik Aufbau Detail 2](https://github.com/kleinnconrad/RC100/blob/main/mechanik/fotos/PXL_20260313_223029415.jpg?raw=true)
-![Mechanik Aufbau Detail 3](https://github.com/kleinnconrad/RC100/blob/main/mechanik/fotos/PXL_20260313_223034370.jpg?raw=true)
+<img src="https://github.com/kleinnconrad/RC100/blob/main/mechanik/fotos/PXL_20260313_223025406.jpg?raw=true" alt="Mechanik Aufbau Detail 1" width="50%">
+<img src="https://github.com/kleinnconrad/RC100/blob/main/mechanik/fotos/PXL_20260313_223029415.jpg?raw=true" alt="Mechanik Aufbau Detail 2" width="50%">
+<img src="https://github.com/kleinnconrad/RC100/blob/main/mechanik/fotos/PXL_20260313_223034370.jpg?raw=true" alt="Mechanik Aufbau Detail 3" width="50%">
 
 ## Tag 2 - Fahrwerksgeometrie, Lenkung & Elektronik-Prep
 **Datum:** 15.03.2026
@@ -42,10 +40,8 @@
 
 * **Energie-Management:** Der Absima 3S LiPo-Akku wurde zur Akkupflege und Sicherheit an das Ladegerät angeschlossen und auf Lagerspannung (Storage-Spannung, ca. 3.8V pro Zelle) gebracht, bis der Antriebsstrang final verkabelt und einsatzbereit ist.
 
-## Visuelle Dokumentation
-
-![Fahrwerksgeometrie & Lenkung Detail 1](https://github.com/kleinnconrad/RC100/blob/main/mechanik/fotos/PXL_20260314_163940602.jpg?raw=true)
-![Fahrwerksgeometrie & Lenkung Detail 2](https://github.com/kleinnconrad/RC100/blob/main/mechanik/fotos/PXL_20260314_163954210.jpg?raw=true)
-![Fahrwerksgeometrie & Lenkung Detail 3](https://github.com/kleinnconrad/RC100/blob/main/mechanik/fotos/PXL_20260314_164003786.jpg?raw=true)
-![Fahrwerksgeometrie & Lenkung Detail 4](https://github.com/kleinnconrad/RC100/blob/main/mechanik/fotos/PXL_20260314_164056785.jpg?raw=true)
-![Fahrwerksgeometrie & Lenkung Detail 5](https://github.com/kleinnconrad/RC100/blob/main/mechanik/fotos/PXL_20260314_170154252.jpg)
+<img src="https://github.com/kleinnconrad/RC100/blob/main/mechanik/fotos/PXL_20260314_163940602.jpg?raw=true" alt="Fahrwerksgeometrie & Lenkung Detail 1" width="50%">
+<img src="https://github.com/kleinnconrad/RC100/blob/main/mechanik/fotos/PXL_20260314_163954210.jpg?raw=true" alt="Fahrwerksgeometrie & Lenkung Detail 2" width="50%">
+<img src="https://github.com/kleinnconrad/RC100/blob/main/mechanik/fotos/PXL_20260314_164003786.jpg?raw=true" alt="Fahrwerksgeometrie & Lenkung Detail 3" width="50%">
+<img src="https://github.com/kleinnconrad/RC100/blob/main/mechanik/fotos/PXL_20260314_164056785.jpg?raw=true" alt="Fahrwerksgeometrie & Lenkung Detail 4" width="50%">
+<img src="https://github.com/kleinnconrad/RC100/blob/main/mechanik/fotos/PXL_20260314_170154252.jpg?raw=true" alt="Fahrwerksgeometrie & Lenkung Detail 5" width="50%">
