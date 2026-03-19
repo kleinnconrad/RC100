@@ -1,4 +1,4 @@
-# Build Log - Carten T410R Speedrun Projekt
+# Build Log
 
 ## Tag 1 - Mechanische Grundstruktur
 **Datum:** 14.03.2026
