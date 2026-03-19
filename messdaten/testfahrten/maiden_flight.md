@@ -6,10 +6,10 @@
 
 ## 📸 Visuelle Schadensdokumentation
 
-![Schadensbild Antriebsstrang 1](https://github.com/kleinnconrad/RC100/blob/main/messdaten/fotos/PXL_20260317_162312395.jpg?raw=true)
+<img src="https://github.com/kleinnconrad/RC100/blob/main/messdaten/fotos/PXL_20260317_162312395.jpg" alt="Schadensbild Antriebsstrang 1" width="30%">
 *Abbildung 1: Zustand des Antriebsstrangs nach dem Testabbruch.*
 
-![Schadensbild Antriebsstrang 2](https://github.com/kleinnconrad/RC100/blob/main/messdaten/fotos/PXL_20260317_162327676.MP.jpg?raw=true)
+<img src="https://github.com/kleinnconrad/RC100/blob/main/messdaten/fotos/PXL_20260317_162327676.MP.jpg" alt="Schadensbild Antriebsstrang 2" width="30%">
 *Abbildung 2: Detailaufnahme der Schäden an Hauptzahnrad und Ritzel.*
 
 ## Schadensbericht & Mechanische Analyse
