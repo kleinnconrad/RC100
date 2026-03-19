@@ -20,6 +20,9 @@
 ## Punch zu hoch eingestellt für die lange Übersetzung 
 Der Motor konnte bei der Übersetzung von 43 zu 72 Zähnen und einem Punch von 5 nicht oder kaum andrehen. **Zwingend erforderlich ist es den Punch auf 1 einzustellen und das Fahrzeug etwas anzuschieben**. Bei der Testfahrt ist der ESC beim anfahren öfter in die Notabschaltung gegangen.
 
+## Motor falsch gepolt
+Die gewählte Polung (technischer Vorwärtsgang) entsprach nicht dem physikalischen Vorwärtsgang. Unter der Vermutung die Drehrichtungen seien kommutativ, wurde bei der Testfahrt die Throttle Einstellung an der Fernsteuerung auf "REV" gesetzt. Dadurch wurde das Auto im technischen Rückwärtsgang nach vorne gefahren. Dies erklärt neben dem Punch und der langen Übersetzung das schwierige anfahren.
+
 ## Next Steps & Corrective Actions
 1. Beschaffung eines neuen 48DP Motorritzels aus gehärtetem Stahl (5mm Bohrung).
 2. Beschaffung eines Upgrade-Hauptzahnrads (z.B. Kimbrough 72T 48DP) kompatibel mit dem Carten T410R Mitnehmer.
@@ -27,3 +30,4 @@ Der Motor konnte bei der Übersetzung von 43 zu 72 Zähnen und einem Punch von 5
 4. Neukalibrierung des Hobbywing ESC an die Carson-Fernsteuerung (mechanische Endpunkte anlernen). 
 5. Punch unbedingt auf 1 setzen.
 6. Fahrzeug beim anfahren leicht anschieben, um Notabschaltungen des ESC zu verhindern.
+7. Motor umpolen.
