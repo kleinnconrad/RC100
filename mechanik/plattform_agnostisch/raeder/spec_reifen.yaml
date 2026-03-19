@@ -22,7 +22,7 @@ reifen_meta:
     geschaetzter_preis_eur: 34.90 # Üblicher Preis für einen Satz (4 Stück) oder 2 Paar
 
 # ==========================================
-# ⚠️ WICHTIGE BAU- & SETUP-HINWEISE
+# WICHTIGE BAU- & SETUP-HINWEISE
 # ==========================================
 setup_instructions:
   ballooning_schutz: "Dank der inneren Kevlar-/Nylon-Gewebeeinlage dehnt sich der Reifen bei ca. 8.800 U/min (Achsdrehzahl bei 100 km/h) nicht aus. Die Aerodynamik der ZooRacing Hellcat und die Bodenfreiheit bleiben dadurch konstant sicher."
