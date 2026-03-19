@@ -5,8 +5,8 @@ Willkommen im RC100 Projekt-Repository. Dies ist ein privates Projekt mit dem Zi
 ## Inhaltsverzeichnis
 * [Repository-Struktur](#repository-struktur)
 * [Arbeitsweise in diesem Repository](#arbeitsweise-in-diesem-repository)
-  * [Hinzufügen oder Ändern von Spezifikationen](#1-hinzufügen-oder-ändern-von-spezifikationen)
-  * [Dokumentation von Architektur-Entscheidungen (ADRs)](#2-dokumentation-von-architektur-entscheidungen-adrs)
+  * [Hinzufügen oder Ändern von Spezifikationen](#hinzufügen-oder-ändern-von-spezifikationen)
+  * [Dokumentation von Architektur-Entscheidungen (ADRs)](#dokumentation-von-architektur-entscheidungen-adrs)
 * [GitHub Actions](#github-actions)
   * [Workflows](#workflows)
   * [Workflows manuell auslösen](#workflows-manuell-auslösen)
