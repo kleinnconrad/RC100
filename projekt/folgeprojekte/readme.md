@@ -9,4 +9,4 @@
 * Ableitung datengetriebener Optimierungsansätze für maximale Akkueffizienz und absoluten Topspeed
 
 **Robotics & Assistenzsysteme**
-* Integration von Hard- und Software für autonomes oder assistiertes Fahren mit der Carten T410R Plattform
+* Integration von Hard- und Software für assistiertes Fahren mit der Carten T410R Plattform
