@@ -23,7 +23,7 @@ material_and_suitability:
     suitability_100kmh_3s: "Kritisch, aber für das Baukasten-Teil machbar, solange keine Unwucht vorliegt."
 
 # ==========================================
-# ⚠️ ZWINGENDE MASSNAHMEN FÜR DIE HALTBARKEIT
+# MASSNAHMEN FÜR DIE HALTBARKEIT
 # ==========================================
 mandatory_durability_measures:
   centering_floating_problem:
