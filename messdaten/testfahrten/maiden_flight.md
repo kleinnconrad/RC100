@@ -23,7 +23,7 @@ Der Motor konnte bei der Übersetzung von 43 zu 72 Zähnen und einem Punch von 5
 ## Motor falsch gepolt
 Die gewählte Polung (technischer Vorwärtsgang) entsprach nicht dem physikalischen Vorwärtsgang. Unter der Vermutung die Drehrichtungen seien kommutativ, wurde bei der Testfahrt die Throttle Einstellung an der Fernsteuerung auf "REV" gesetzt. Dadurch wurde das Auto im technischen Rückwärtsgang nach vorne gefahren. Dies erklärt neben dem Punch und der langen Übersetzung das schwierige anfahren.
 
-## Next Steps & Corrective Actions
+## Korrekturen
 1. Beschaffung eines neuen 48DP Motorritzels aus gehärtetem Stahl (5mm Bohrung).
 2. Beschaffung eines Upgrade-Hauptzahnrads (z.B. Kimbrough 72T 48DP) kompatibel mit dem Carten T410R Mitnehmer.
 3. Sichere Montage des neuen Ritzels mit mittelfester Schraubensicherung (Loctite).
