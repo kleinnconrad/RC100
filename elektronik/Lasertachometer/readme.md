@@ -21,6 +21,4 @@ v = (d * π * rpm * 60) / 1000²
 v = (64 * 3.14159 * 2340.2 * 60) / 1.000.000
 **v ≈ 28,23 km/h**
 
-## Visuelle Dokumentation
-
-![Lasertachometer Testaufbau](https://github.com/kleinnconrad/RC100/blob/main/elektronik/fotos/PXL_20260316_115617586.MP.jpg?raw=true)
+<img src="https://github.com/kleinnconrad/RC100/blob/main/elektronik/fotos/PXL_20260316_115617586.MP.jpg" alt="Lasertachometer Testaufbau" width="50%">
