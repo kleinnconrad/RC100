@@ -7,7 +7,7 @@
 ## Fortschritt & Technische Erkenntnisse
 
 * **Motor-Packaging (3660 vs. 3650):** Der Hobbywing 3660er Motor passt in das Chassis, bewegt sich jedoch an den Grenzen der physischen Toleranz. 
-  > **Architektonische Note:** Laut Hersteller ist das Chassis primär für kürzere 3650er Motoren ausgelegt. Ein 3650er würde sich minimal in den 5 cm langen Bodenausschnitt des Chassis versenken. Der 3660er sitzt stramm, kollidiert aber nicht mit kritischen Antriebskomponenten.
+  > **Architektonische Note:** Laut Hersteller ist das Chassis primär für kürzere 3650er Motoren ausgelegt. Ein 3650er würde sich minimal in den 5 cm langen Bodenausschnitt des Chassis versenken. Der 3660er sitzt im Rahmen akzeptabler Toleranz.
 
 * **Kalibrierung des Antriebsstrangs:** Das Zahnflankenspiel (Gear Mesh) zwischen dem Hartstahl-Ritzel und dem Hauptzahnrad wurde nach bewährter Best-Practice mit einem normalen Streifen Papier kalibriert. Dies stellt einen leichtgängigen Lauf sicher und verhindert bei hohen Drehzahlen sowohl übermäßige Reibungshitze als auch das "Strippen" der Zähne.
 
@@ -18,7 +18,7 @@
 
 * **ESC-Montage:** Der Fahrtenregler (ESC) wurde schwingungsgedämpft mittels doppelseitigem Klebeband sicher auf dem Chassis fixiert. 
 
-* **Telemetrie-Infrastruktur:** Der Ruddog GPS Analyzer findet seinen festen Platz auf der Karbon-Mittelstrebe (Upper Deck). Diese Position schützt das Modul mechanisch bei Überschlägen und gewährt gleichzeitig eine ungestörte Sichtachse zum Himmel für einen schnellen Satelliten-Fix.
+* **Telemetrie-Infrastruktur:** Der Ruddog GPS Analyzer wird mit Klettverschluss auf den Akku gesetzt.
 
 <img src="https://github.com/kleinnconrad/RC100/blob/main/elektronik/fotos/PXL_20260315_082845293.MP.jpg?raw=true" alt="Elektronik Detail 1" width="50%">
 <img src="https://github.com/kleinnconrad/RC100/blob/main/elektronik/fotos/PXL_20260315_082910089.jpg?raw=true" alt="Elektronik Detail 2" width="50%">
