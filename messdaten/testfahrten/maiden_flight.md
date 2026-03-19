@@ -3,15 +3,13 @@
 **Datum:** 17.03.2026  
 **Status:** ❌ Gescheitert (Testabbruch)
 
-## 📸 Visuelle Schadensdokumentation
+## Schadensbericht
 
 <img src="https://github.com/kleinnconrad/RC100/blob/main/messdaten/fotos/PXL_20260317_162312395.jpg" alt="Schadensbild Antriebsstrang 1" width="30%">
 *Abbildung 1: Zustand des Antriebsstrangs nach dem Testabbruch.*
 
 <img src="https://github.com/kleinnconrad/RC100/blob/main/messdaten/fotos/PXL_20260317_162327676.MP.jpg" alt="Schadensbild Antriebsstrang 2" width="30%">
 *Abbildung 2: Detailaufnahme der Schäden an Hauptzahnrad und Ritzel.*
-
-## Schadensbericht
 
 * **Kritischer Montagefehler (Antriebsstrang):** Die Madenschraube des Motorritzels war unzureichend fixiert (bzw. nicht korrekt auf der flachen Stelle der Motorwelle positioniert). Durch die hohen Fliehkräfte und Vibrationen ist das Hartstahl-Ritzel auf der Welle nach vorne gerutscht.
 * **Totalschaden Getriebe:** Das Verrutschen führte zu einem asymmetrischen Eingriff der Zahnräder. Das Hauptzahnrad (Spur Gear) aus Kunststoff wurde dadurch komplett abrasiert/zerstört. Gleichzeitig hat sich die Bohrung des Motorritzels durch die extreme Hebelwirkung und das Durchdrehen auf der Welle irreparabel verformt.
