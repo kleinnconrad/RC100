@@ -20,10 +20,21 @@
 
 * **Telemetrie-Infrastruktur:** Der Ruddog GPS Analyzer wird mit Klettverschluss auf den Akku gesetzt.
 
-<img src="https://github.com/kleinnconrad/RC100/blob/main/elektronik/fotos/PXL_20260315_082845293.MP.jpg?raw=true" alt="Elektronik Detail 1" width="50%">
-<img src="https://github.com/kleinnconrad/RC100/blob/main/elektronik/fotos/PXL_20260315_082910089.jpg?raw=true" alt="Elektronik Detail 2" width="50%">
-<img src="https://github.com/kleinnconrad/RC100/blob/main/elektronik/fotos/PXL_20260315_091731103.jpg?raw=true" alt="Elektronik Detail 3" width="50%">
-<img src="https://github.com/kleinnconrad/RC100/blob/main/elektronik/fotos/PXL_20260315_110323844.jpg?raw=true" alt="Elektronik Detail 4" width="50%">
-<img src="https://github.com/kleinnconrad/RC100/blob/main/elektronik/fotos/PXL_20260315_101819221.MP.jpg?raw=true" alt="Elektronik Detail 5" width="50%">
-<img src="https://github.com/kleinnconrad/RC100/blob/main/elektronik/fotos/PXL_20260315_113015136.jpg?raw=true" alt="Elektronik Detail 6" width="50%">
-<img src="https://github.com/kleinnconrad/RC100/blob/main/elektronik/fotos/PXL_20260315_115227327.jpg?raw=true" alt="Elektronik Detail 7" width="50%">
+<table>
+  <tr>
+    <td><img src="https://github.com/kleinnconrad/RC100/blob/main/elektronik/fotos/PXL_20260315_082845293.MP.jpg?raw=true" alt="Elektronik Detail 1" width="100%"></td>
+    <td><img src="https://github.com/kleinnconrad/RC100/blob/main/elektronik/fotos/PXL_20260315_082910089.jpg?raw=true" alt="Elektronik Detail 2" width="100%"></td>
+  </tr>
+  <tr>
+    <td><img src="https://github.com/kleinnconrad/RC100/blob/main/elektronik/fotos/PXL_20260315_091731103.jpg?raw=true" alt="Elektronik Detail 3" width="100%"></td>
+    <td><img src="https://github.com/kleinnconrad/RC100/blob/main/elektronik/fotos/PXL_20260315_110323844.jpg?raw=true" alt="Elektronik Detail 4" width="100%"></td>
+  </tr>
+  <tr>
+    <td><img src="https://github.com/kleinnconrad/RC100/blob/main/elektronik/fotos/PXL_20260315_101819221.MP.jpg?raw=true" alt="Elektronik Detail 5" width="100%"></td>
+    <td><img src="https://github.com/kleinnconrad/RC100/blob/main/elektronik/fotos/PXL_20260315_113015136.jpg?raw=true" alt="Elektronik Detail 6" width="100%"></td>
+  </tr>
+  <tr>
+    <td colspan="2"><img src="https://github.com/kleinnconrad/RC100/blob/main/elektronik/fotos/PXL_20260315_115227327.jpg?raw=true" alt="Elektronik Detail 7" width="100%"></td>
+  </tr>
+</table>
+
