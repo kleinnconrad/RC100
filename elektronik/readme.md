@@ -20,12 +20,10 @@
 
 * **Telemetrie-Infrastruktur:** Der Ruddog GPS Analyzer findet seinen festen Platz auf der Karbon-Mittelstrebe (Upper Deck). Diese Position schützt das Modul mechanisch bei Überschlägen und gewährt gleichzeitig eine ungestörte Sichtachse zum Himmel für einen schnellen Satelliten-Fix.
 
-## Visuelle Dokumentation
-
-![Elektronik Detail 1](https://github.com/kleinnconrad/RC100/blob/main/elektronik/fotos/PXL_20260315_082845293.MP.jpg?raw=true)
-![Elektronik Detail 2](https://github.com/kleinnconrad/RC100/blob/main/elektronik/fotos/PXL_20260315_082910089.jpg?raw=true)
-![Elektronik Detail 3](https://github.com/kleinnconrad/RC100/blob/main/elektronik/fotos/PXL_20260315_091731103.jpg?raw=true)
-![Elektronik Detail 4](https://github.com/kleinnconrad/RC100/blob/main/elektronik/fotos/PXL_20260315_110323844.jpg?raw=true)
-![Elektronik Detail 5](https://github.com/kleinnconrad/RC100/blob/main/elektronik/fotos/PXL_20260315_101819221.MP.jpg?raw=true)
-![Elektronik Detail 6](https://github.com/kleinnconrad/RC100/blob/main/elektronik/fotos/PXL_20260315_113015136.jpg?raw=true)
-![Elektronik Detail 7](https://github.com/kleinnconrad/RC100/blob/main/elektronik/fotos/PXL_20260315_115227327.jpg?raw=true)
+<img src="https://github.com/kleinnconrad/RC100/blob/main/elektronik/fotos/PXL_20260315_082845293.MP.jpg?raw=true" alt="Elektronik Detail 1" width="50%">
+<img src="https://github.com/kleinnconrad/RC100/blob/main/elektronik/fotos/PXL_20260315_082910089.jpg?raw=true" alt="Elektronik Detail 2" width="50%">
+<img src="https://github.com/kleinnconrad/RC100/blob/main/elektronik/fotos/PXL_20260315_091731103.jpg?raw=true" alt="Elektronik Detail 3" width="50%">
+<img src="https://github.com/kleinnconrad/RC100/blob/main/elektronik/fotos/PXL_20260315_110323844.jpg?raw=true" alt="Elektronik Detail 4" width="50%">
+<img src="https://github.com/kleinnconrad/RC100/blob/main/elektronik/fotos/PXL_20260315_101819221.MP.jpg?raw=true" alt="Elektronik Detail 5" width="50%">
+<img src="https://github.com/kleinnconrad/RC100/blob/main/elektronik/fotos/PXL_20260315_113015136.jpg?raw=true" alt="Elektronik Detail 6" width="50%">
+<img src="https://github.com/kleinnconrad/RC100/blob/main/elektronik/fotos/PXL_20260315_115227327.jpg?raw=true" alt="Elektronik Detail 7" width="50%">
