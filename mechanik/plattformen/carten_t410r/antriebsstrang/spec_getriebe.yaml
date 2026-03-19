@@ -31,6 +31,6 @@ einstellbereich_mit_72z_hauptzahnrad:
     ritzel_37: 4.81
   max_top_speed:
     ritzel_41: 4.34
-    ritzel_42: 4.23 # <- Unser aktuelles 100 km/h Setup!
+    ritzel_42: 4.23
     ritzel_43: 4.14
     ritzel_44: 4.04
