@@ -46,8 +46,16 @@
 
 * **Energie-Management:** Der Absima 3S LiPo-Akku wurde zur Akkupflege und Sicherheit an das Ladegerät angeschlossen und auf Lagerspannung (Storage-Spannung, ca. 3.8V pro Zelle) gebracht, bis der Antriebsstrang final verkabelt und einsatzbereit ist.
 
-<img src="https://github.com/kleinnconrad/RC100/blob/main/mechanik/fotos/PXL_20260314_163940602.jpg?raw=true" alt="Fahrwerksgeometrie & Lenkung Detail 1" width="50%">
-<img src="https://github.com/kleinnconrad/RC100/blob/main/mechanik/fotos/PXL_20260314_163954210.jpg?raw=true" alt="Fahrwerksgeometrie & Lenkung Detail 2" width="50%">
-<img src="https://github.com/kleinnconrad/RC100/blob/main/mechanik/fotos/PXL_20260314_164003786.jpg?raw=true" alt="Fahrwerksgeometrie & Lenkung Detail 3" width="50%">
-<img src="https://github.com/kleinnconrad/RC100/blob/main/mechanik/fotos/PXL_20260314_164056785.jpg?raw=true" alt="Fahrwerksgeometrie & Lenkung Detail 4" width="50%">
-<img src="https://github.com/kleinnconrad/RC100/blob/main/mechanik/fotos/PXL_20260314_170154252.jpg?raw=true" alt="Fahrwerksgeometrie & Lenkung Detail 5" width="50%">
+<table>
+  <tr>
+    <td><img src="https://github.com/kleinnconrad/RC100/blob/main/mechanik/fotos/PXL_20260314_163940602.jpg?raw=true" alt="Fahrwerksgeometrie & Lenkung Detail 1" width="100%"></td>
+    <td><img src="https://github.com/kleinnconrad/RC100/blob/main/mechanik/fotos/PXL_20260314_163954210.jpg?raw=true" alt="Fahrwerksgeometrie & Lenkung Detail 2" width="100%"></td>
+  </tr>
+  <tr>
+    <td><img src="https://github.com/kleinnconrad/RC100/blob/main/mechanik/fotos/PXL_20260314_164003786.jpg?raw=true" alt="Fahrwerksgeometrie & Lenkung Detail 3" width="100%"></td>
+    <td><img src="https://github.com/kleinnconrad/RC100/blob/main/mechanik/fotos/PXL_20260314_164056785.jpg?raw=true" alt="Fahrwerksgeometrie & Lenkung Detail 4" width="100%"></td>
+  </tr>
+  <tr>
+    <td colspan="2"><img src="https://github.com/kleinnconrad/RC100/blob/main/mechanik/fotos/PXL_20260314_170154252.jpg?raw=true" alt="Fahrwerksgeometrie & Lenkung Detail 5" width="100%"></td>
+  </tr>
+</table>
