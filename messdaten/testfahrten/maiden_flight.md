@@ -8,10 +8,10 @@
 * **Kritischer Montagefehler (Antriebsstrang):** Die Madenschraube des Motorritzels war unzureichend fixiert (bzw. nicht korrekt auf der flachen Stelle der Motorwelle positioniert). Durch die hohen Fliehkräfte und Vibrationen ist das Hartstahl-Ritzel auf der Welle nach vorne gerutscht.
 * **Totalschaden Getriebe:** Das Verrutschen führte zu einem asymmetrischen Eingriff der Zahnräder. Das Hauptzahnrad (Spur Gear) aus Kunststoff wurde dadurch komplett abrasiert/zerstört. Gleichzeitig hat sich die Bohrung des Motorritzels durch die extreme Hebelwirkung und das Durchdrehen auf der Welle irreparabel verformt.
 
-## Punch zu hoch eingestellt für die lange Übersetzung 
+* **Punch zu hoch eingestellt für die lange Übersetzung:**
 Der Motor konnte bei der Übersetzung von 43 zu 72 Zähnen und einem Punch von 5 nicht oder kaum andrehen. **Zwingend erforderlich ist es den Punch auf 1 einzustellen und das Fahrzeug etwas anzuschieben**. Bei der Testfahrt ist der ESC beim anfahren öfter in die Notabschaltung gegangen.
 
-## Motor falsch gepolt
+* **Motor falsch gepolt:**
 Die gewählte Polung (technischer Vorwärtsgang) entsprach nicht dem physikalischen Vorwärtsgang. Unter der Vermutung die Drehrichtungen seien kommutativ, wurde bei der Testfahrt die Throttle Einstellung an der Fernsteuerung auf "REV" gesetzt. Dadurch wurde das Auto im technischen Rückwärtsgang nach vorne gefahren. Dies erklärt neben dem Punch und der langen Übersetzung das schwierige anfahren.
 
 <img src="https://github.com/kleinnconrad/RC100/blob/main/messdaten/fotos/PXL_20260317_162312395.jpg" alt="Schadensbild Antriebsstrang 1" width="30%">
