@@ -44,15 +44,15 @@ Der sitz des Motors im Carten erfordert eine, zum Standard, inverse Polung damit
 
 | Item | Programmable Items | Option 1 | Option 2 | Option 3 | Option 4 | Option 5 | Option 6 | Option 7 | Option 8 | Option 9 |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| 1 | Running Mode | Forward with brake | **Forward / Reverse with Brake** | Forward with reverse | | | | | | |
-| 2 | Cutoff Voltage | Disabled | 2.6V/Cell | 2.8V/Cell | **3.0V/Cell** | 3.2V/Cell | 3.4V/Cell | | | |
-| 3 | Punch | **Level 1** | Level 2 | Level 3 | Level 4 | Level 5 | Level 6 | Level 7 | Level 8 | Level 9 |
-| 4 | Drag Brake Force | **0%** | 5% | 10% | 20% | 40% | 60% | 80% | 100% | |
-| 5 | Max. Brake Force* | **25%** | 50% | 75% | 100% | Disabled | | | | |
-| 6 | Max. Reverse Force | **25%** | 50% | 75% | 100% | | | | | |
-| 7 | Neutral Range | 6% | **9%** | 12% | | | | | | |
-| 8 | Timing | 0° | 3.75° | 7.5° | **11.25°** | 15° | 18.75° | 22.5° | 26.25° | |
-| 9 | LiPo Cells* | **Auto** | 2S | 3S | 4S | 5S | 6S | | | |
-| 10 | BEC Voltage | **6.0V** | 7.4V | | | | | | | |
+| 1 | Running Mode | Forward with brake | **(Forward / Reverse with Brake)** | Forward with reverse | | | | | | |
+| 2 | Cutoff Voltage | Disabled | 2.6V/Cell | 2.8V/Cell | **(3.0V/Cell)** | 3.2V/Cell | 3.4V/Cell | | | |
+| 3 | Punch | **(Level 1)** | Level 2 | Level 3 | Level 4 | Level 5 | Level 6 | Level 7 | Level 8 | Level 9 |
+| 4 | Drag Brake Force | **(0%)** | 5% | 10% | 20% | 40% | 60% | 80% | 100% | |
+| 5 | Max. Brake Force* | **(25%)** | 50% | 75% | 100% | Disabled | | | | |
+| 6 | Max. Reverse Force | **(25%)** | 50% | 75% | 100% | | | | | |
+| 7 | Neutral Range | 6% | **(9%)** | 12% | | | | | | |
+| 8 | Timing | 0° | 3.75° | 7.5° | **(11.25°)** | 15° | 18.75° | 22.5° | 26.25° | |
+| 9 | LiPo Cells* | **(Auto)** | 2S | 3S | 4S | 5S | 6S | | | |
+| 10 | BEC Voltage | **(6.0V)** | 7.4V | | | | | | | |
 
 ![Programmierkarte ESC](https://github.com/kleinnconrad/RC100/blob/main/elektronik/fotos/PXL_20260319_093605867.jpg)
