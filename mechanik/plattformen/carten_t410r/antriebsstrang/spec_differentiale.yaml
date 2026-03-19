@@ -13,7 +13,7 @@ material_and_construction:
   diff_case_cup: "Faserverstärkter Verbundkunststoff (Composite)"
 
 # ==========================================
-# ⚠️ ZWINGENDE ANPASSUNGEN FÜR DAS 100 KM/H-ZIEL
+# ANPASSUNGEN FÜR DAS 100 KM/H-ZIEL
 # ==========================================
 mandatory_modifications:
   perfect_shimming:
