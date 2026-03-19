@@ -7,8 +7,6 @@
   * **Prozess:** Es wurden 5 hauchdünne Schichten Rot (PS-15) aufgetragen, gefolgt von 2 mittleren Schichten Silber (PS-12) als Reflektor und abgeschlossen mit 2 dicken Schichten Schwarz (PS-5) als lichtdichter Hintergrund.
   * **Ergebnis & Learning:** Der grundlegende Bonbon-Effekt wurde erfolgreich erzielt, allerdings ist das Rot am Ende nicht satt und tief genug geworden (das Silber schlägt zu stark durch). Für zukünftige Lackierungen müssen mehr/dickere Schichten Rot aufgetragen und der Silber-Anteil leicht reduziert werden.
 
-## Visuelle Dokumentation (Karosserie)
-
 ![Karosserie Detail 1](https://github.com/kleinnconrad/RC100/blob/main/mechanik/plattform_agnostisch/karosserie/fotos/PXL_20260315_151551628.jpg?raw=true)
 ![Karosserie Detail 2](https://github.com/kleinnconrad/RC100/blob/main/mechanik/plattform_agnostisch/karosserie/fotos/PXL_20260315_151609048.jpg?raw=true)
 ![Karosserie Detail 3](https://github.com/kleinnconrad/RC100/blob/main/mechanik/plattform_agnostisch/karosserie/fotos/PXL_20260315_151648162.jpg?raw=true)
