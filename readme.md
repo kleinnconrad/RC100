@@ -43,11 +43,11 @@ Wann immer eine wichtige Designentscheidung getroffen wird (z. B. die Wahl eines
 
 ---
 
-## Automatisierung & GitHub Actions
+## GitHub Actions
 
 Dieses Repository nutzt GitHub Actions (im Ordner `.github/workflows/`), um automatisch Dokumentationen zu generieren und Konfigurationen zusammenzuführen. Du musst im Normalfall nichts tun, um diese auszulösen – sie starten automatisch, wenn entsprechende Dateien hochgeladen oder geändert werden.
 
-### Verfügbare Workflows
+### Workflows
 
 1. **Build Spec (`build_spec.yml`)**
     * **Auslöser:** Startet automatisch, wenn eine Datei mit dem Muster `spec_*.yaml` in einem Unterordner hinzugefügt oder geändert wird.
@@ -70,7 +70,7 @@ Wenn du Änderungen an den Python-Skripten testest oder die Dokumentation neu ge
 3. Klicke auf den Button **Run workflow** auf der rechten Seite.
 4. Wähle den gewünschten Branch aus und klicke auf den grünen Button **Run workflow**.
 
-## Speed & Getriebe Rechner (CLI-Tool)
+## Getriebe Rechner (CLI-Tool)
 
 Um bei 100 km/h nicht blindlings die Elektronik zu überlasten, enthält dieses Repository ein maßgeschneidertes Python-Skript zur Berechnung der optimalen Getriebeübersetzung für den **Carten T410R**. 
 
@@ -80,7 +80,7 @@ Der Rechner simuliert anhand des Reifendurchmessers und der gewünschten Zielges
 ```bash
 python scripts/calc/getriebe_calc.py
 ```
-## Top-Speed & Limit Rechner (CLI-Tool)
+## Limit Rechner (CLI-Tool)
 
 Dieser "Reverse-Calculator" ergänzt den Getriebe-Rechner, indem er die maximal mögliche Höchstgeschwindigkeit des Carten T410R auf Basis der physischen Hardware-Limits berechnet. Anstatt eine Wunschgeschwindigkeit vorzugeben, berechnet das Skript anhand deiner Motor- und Akku-Daten sowie deiner persönlichen Schmerzgrenze für die thermische Belastung (Radlast), was das Auto wirklich hergibt.
 
