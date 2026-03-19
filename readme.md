@@ -5,8 +5,8 @@ Willkommen im RC100 Projekt-Repository. Dies ist ein privates Projekt mit dem Zi
 ## Inhaltsverzeichnis
 * [Repository-Struktur](#repository-struktur)
 * [Arbeitsweise in diesem Repository](#arbeitsweise-in-diesem-repository)
-  * [1. Hinzufügen oder Ändern von Spezifikationen](#1-hinzufügen-oder-ändern-von-spezifikationen)
-  * [2. Dokumentation von Architektur-Entscheidungen (ADRs)](#2-dokumentation-von-architektur-entscheidungen-adrs)
+  * [Hinzufügen oder Ändern von Spezifikationen](#1-hinzufügen-oder-ändern-von-spezifikationen)
+  * [Dokumentation von Architektur-Entscheidungen (ADRs)](#2-dokumentation-von-architektur-entscheidungen-adrs)
 * [GitHub Actions](#github-actions)
   * [Workflows](#workflows)
   * [Workflows manuell auslösen](#workflows-manuell-auslösen)
@@ -37,7 +37,7 @@ Das Projekt ist in themenspezifische Unterordner gegliedert, um Spezifikationen,
 
 Alle Mitwirkenden können Standard-Git-Praktiken (Branching, Committing, Pulling, Pushing) nutzen, um allgemeine Projektinformationen, CAD-Dateien oder Testdaten in die jeweiligen Unterordner hochzuladen. Für Spezifikationen und Architektur-Entscheidungen gelten die folgenden spezifischen Workflows.
 
-### 1. Hinzufügen oder Ändern von Spezifikationen
+### Hinzufügen oder Ändern von Spezifikationen
 Systemspezifikationen werden thematisch verteilt in den entsprechenden Unterordnern verwaltet. 
 
 * **Format:** YAML
@@ -47,7 +47,7 @@ Systemspezifikationen werden thematisch verteilt in den entsprechenden Unterordn
 
 > **Tipp:** Wenn du mit der YAML-Syntax nicht vertraut bist, empfehlen wir dringend, ein LLM (Large Language Model wie Gemini oder ChatGPT) zu verwenden, um die YAML-Struktur für dich zu generieren. Beschreibe deine Spezifikation einfach als normalen Text und bitte das LLM, sie als saubere YAML-Datei zu formatieren.
 
-### 2. Dokumentation von Architektur-Entscheidungen (ADRs)
+### Dokumentation von Architektur-Entscheidungen (ADRs)
 Wann immer eine wichtige Designentscheidung getroffen wird (z. B. die Wahl eines bestimmten Motorprotokolls), sollte diese als ADR dokumentiert werden.
 
 * **Format:** YAML
