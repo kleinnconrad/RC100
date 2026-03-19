@@ -17,9 +17,15 @@
 
 * **Antriebsstrang:** Für die Lagerung der drehenden Massen wurden die beiliegenden Baukasten-Standardkugellager verwendet und im gesamten Antriebsstrang implementiert.
 
-<img src="https://github.com/kleinnconrad/RC100/blob/main/mechanik/fotos/PXL_20260313_223025406.jpg?raw=true" alt="Mechanik Aufbau Detail 1" width="50%">
-<img src="https://github.com/kleinnconrad/RC100/blob/main/mechanik/fotos/PXL_20260313_223029415.jpg?raw=true" alt="Mechanik Aufbau Detail 2" width="50%">
-<img src="https://github.com/kleinnconrad/RC100/blob/main/mechanik/fotos/PXL_20260313_223034370.jpg?raw=true" alt="Mechanik Aufbau Detail 3" width="50%">
+<table>
+  <tr>
+    <td><img src="https://github.com/kleinnconrad/RC100/blob/main/mechanik/fotos/PXL_20260313_223025406.jpg?raw=true" alt="Mechanik Aufbau Detail 1" width="100%"></td>
+    <td><img src="https://github.com/kleinnconrad/RC100/blob/main/mechanik/fotos/PXL_20260313_223029415.jpg?raw=true" alt="Mechanik Aufbau Detail 2" width="100%"></td>
+  </tr>
+  <tr>
+    <td colspan="2"><img src="https://github.com/kleinnconrad/RC100/blob/main/mechanik/fotos/PXL_20260313_223034370.jpg?raw=true" alt="Mechanik Aufbau Detail 3" width="100%"></td>
+  </tr>
+</table>
 
 ## Tag 2 - Fahrwerksgeometrie, Lenkung & Elektronik-Prep
 **Datum:** 15.03.2026
