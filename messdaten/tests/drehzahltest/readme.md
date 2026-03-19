@@ -21,10 +21,10 @@ v = (64 * 3.14159 * 11200 * 60) / 1.000.000
 
 Durch die extreme Drehzahl sind die O Ringe, welche die Arretierungsstifte in den Cup Joints der Kardanwellenaufnahme fixieren verrutscht und die Arretierungsstifte wurden herausgeschleudert.
 
-<img src="https://github.com/kleinnconrad/RC100/blob/main/messdaten/fotos/PXL_20260318_072802628.MP.jpg" alt="Verlust der Arretierungsstifte" width="30%">
+<img src="https://github.com/kleinnconrad/RC100/blob/main/messdaten/fotos/PXL_20260318_072802628.MP.jpg" alt="Verlust der Arretierungsstifte" width="50%">
 
 Zusätzlich hat sich bei > 25000 RPM an der Kardanwelle, diese soweit aufgepeitscht, dass sie den Servohalter touchiert hat. An beiden Komponenten sind passende Spuren zu sehen. Ein Rolltest mit der Kardanwelle legt nahe, dass sie noch gerade ist und der Kontakt daher nicht intensiv war.
 
-<img src="https://github.com/kleinnconrad/RC100/blob/main/messdaten/fotos/PXL_20260318_134312851.jpg" alt="Kratzer an der Kardanwelle" width="30%">
+<img src="https://github.com/kleinnconrad/RC100/blob/main/messdaten/fotos/PXL_20260318_134312851.jpg" alt="Kratzer an der Kardanwelle" width="50%">
 
-<img src="https://github.com/kleinnconrad/RC100/blob/main/messdaten/fotos/PXL_20260318_134339657.MP.jpg" alt="Kratzer Servohalter" width="30%">
+<img src="https://github.com/kleinnconrad/RC100/blob/main/messdaten/fotos/PXL_20260318_134339657.MP.jpg" alt="Kratzer Servohalter" width="50%">
