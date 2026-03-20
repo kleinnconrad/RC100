@@ -92,7 +92,7 @@ Um bei 100 km/h nicht blindlings die Elektronik zu überlasten, enthält dieses 
 
 Der Rechner simuliert anhand des Reifendurchmessers und der gewünschten Zielgeschwindigkeit die exakte mechanische Belastung (Radlast) für den Motor bei allen passenden Motorritzeln (21Z - 44Z am 72Z Hauptzahnrad). Er warnt vor Überlastung und teilt die möglichen Setups automatisch in Belastungs-Zonen (Grün, Gelb, Rot) für einen 4000kV / 3S Antrieb ein.
 
-**So startest du das Tool lokal:**
+**So startest du das Tool lokal oder GitHub Codespace:**
 ```bash
 python scripts/calc/getriebe_calc.py
 ```
@@ -100,7 +100,7 @@ python scripts/calc/getriebe_calc.py
 
 Dieser "Reverse-Calculator" ergänzt den Getriebe-Rechner, indem er die maximal mögliche Höchstgeschwindigkeit des Carten T410R auf Basis der physischen Hardware-Limits berechnet. Anstatt eine Wunschgeschwindigkeit vorzugeben, berechnet das Skript anhand deiner Motor- und Akku-Daten sowie deiner persönlichen Schmerzgrenze für die thermische Belastung (Radlast), was das Auto wirklich hergibt.
 
-**So startest du das Tool lokal:**
+**So startest du das Tool lokal oder GitHub Codespace:**
 ```bash
 python scripts/calc/max_speed.py
 ```
