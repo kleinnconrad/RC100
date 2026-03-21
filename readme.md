@@ -2,6 +2,8 @@
 
 Willkommen im RC100 Projekt-Repository. Dies ist ein privates Projekt mit dem Ziel, einen **RC Onroad Tourenwagen im Maßstab 1:10** zu entwerfen und zu bauen, der Geschwindigkeiten von **mindestens 100 km/h** erreicht. Das primäre technische Ziel ist es, die Leistung zu maximieren und den Bau gleichzeitig so **günstig** und **zuverlässig** wie möglich zu halten.
 
+Die Herausforderung liegt in dem kleinen Maßstab und dem geringen Reifendurchmesser von 64mm. Die Grenze von 100 km/h sind für >= 1:8 RC Autos deutlich leichter zu erreichen, durch deren höheres Gewicht und den deutlich größeren Reifendurchmesser haben sie die Physik auf ihrer Seite. Im Bereich 1:10 wirken jedoch extreme Drehzahlen und Kräfte auf vergleichsweise filigrane Teile. Durch das geringe Gewicht ist auch die Straßenlage eine Herausforderung.
+
 ## Inhaltsverzeichnis
 * [Repository-Struktur](#repository-struktur)
 * [Arbeitsweise in diesem Repository](#arbeitsweise-in-diesem-repository)
