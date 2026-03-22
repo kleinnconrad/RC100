@@ -10,3 +10,6 @@
 
 **Assistenzsysteme**
 * Integration von Hard- und Software für assistiertes Fahren mit der Carten T410R Plattform
+
+**Sensorik/Telemetrie**
+* Drehzahl- und Temperaturmessung 
