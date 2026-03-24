@@ -14,8 +14,8 @@
 - [x] Haben sich keine Teile gelockert?
 
 ### Tests
-- [x] 10 mal vorwärts anfahren mit moderatem Beschleunigen und Lenken (links und rechts)
-- [x] 5 mal rückwärts anfahren
+- [x] 10-mal vorwärts anfahren mit moderatem Beschleunigen und Lenken (links und rechts)
+- [x] 5-mal rückwärts anfahren
 
 ### Ergebnisse & Notizen
 - Beim Einlenken nach links kehrt die Lenkung nicht exakt in die Neutralposition zurück.
