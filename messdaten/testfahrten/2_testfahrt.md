@@ -12,6 +12,7 @@
 - [ ] Ist die Straßenlage in Ordnung?
 - [x] Keine neuen Fehler?
 - [x] Haben sich keine Teile gelockert?
+- [x] Lösen sich die Metallstifte zur Fixierung der Cup Joints für die Kardanwelle nicht? 
 
 ### Tests
 - [x] 10-mal vorwärts anfahren mit moderatem Beschleunigen und Lenken (links und rechts)
