@@ -3,7 +3,7 @@
 **Sensorik/Telemetrie** [![GitHub Repo](https://img.shields.io/badge/GitHub-Repository-blue?logo=github)](https://github.com/kleinnconrad/carten_telemetrie)
 * Mikrocontroller/Sensor Lösung zur Messung von ESC- und Motortemparatur und der Drehzahl an der Kardanwelle. 
 
-**IoT Cloud Data Platform**
+**IoT Cloud Data Platform** [![GitHub Repo](https://img.shields.io/badge/GitHub-Repository-blue?logo=github)](https://github.com/kleinnconrad/carten_telemetrie)
 * Aufbau einer Real-Time Streaming Pipeline (ESP32 via LTE) für GPS- und ESC-Telemetrie.
 * Implementierung einer Cloud-Infrastruktur zur skalierbaren Speicherung und Verarbeitung der Fahrzeugdaten.
 * Live-Dashboarding zur Echtzeit-Performance-Analyse während der Speedruns.
