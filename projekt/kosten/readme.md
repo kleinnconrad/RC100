@@ -30,6 +30,6 @@
 
 | Beschreibung | Betrag |
 |:---|---:|
-| **Reine Fahrzeugkosten (ohne Tools/Infra):** | **434,26 €** |
+| **Reine Fahrzeugkosten:** | **434,26 €** |
 | Kosten für Tools & Infrastruktur (Pos. 7, 9, 11-14, 16, 17): | 163,13 € |
 | **Gesamtkosten:** | **597,39 €** |
