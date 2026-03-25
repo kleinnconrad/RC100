@@ -1,8 +1,8 @@
 # Bill of Materials (BOM) - Carten T410R Speedrun Projekt
 
-**Stand:** 15.03.2026
+**Stand:** 25.03.2026
 
-## Komponenten & Hardware
+## Hardware
 
 | Pos | Kategorie | Artikelbezeichnung | Artikel-Nr. | Händler | Menge | Preis |
 |:---:|:---|:---|:---|:---|:---:|---:|
@@ -26,7 +26,7 @@
 
 ---
 
-## Kostenaufstellung & Logistik
+## Kostenaufstellung
 
 | Beschreibung | Betrag |
 |:---|---:|
