@@ -30,15 +30,6 @@
 
 | Beschreibung | Betrag |
 |:---|---:|
-| **Reine Fahrzeugkosten (ohne Tools & Versand):** | **434,26 €** |
+| **Reine Fahrzeugkosten (ohne Tools/Infra):** | **434,26 €** |
 | Kosten für Tools & Infrastruktur (Pos. 7, 9, 11-14, 16, 17): | 163,13 € |
-| **Zwischensumme Hardware:** | **597,39 €** |
-| Versandkosten RC-KleinKram (Chassis & Funke): | 0,00 € |
-| Versandkosten Monster Hopups: | 0,00 € |
-| Versandkosten Tamico Shop: | 4,99 € |
-| Versandkosten Amazon: | 3,99 € |
-| Versandkosten RC-KleinKram (Karosserie & Zubehör): | 6,49 € |
-| Versandkosten LMI-Racing: | 5,99 € |
-| Versandkosten Modellbau Metz: | 3,95 € |
-| Versandkosten RCFOX (GPS Modul): | 4,90 € |
-| **Gesamtkosten Projekt (Brutto):** | **627,70 €** |
+| **Gesamtkosten:** | **597,39 €** |
