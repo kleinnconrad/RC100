@@ -10,7 +10,7 @@
 Überprüfung und Evaluierung des Lenkverhaltens nach einer kürzlich durchgeführten Neuausrichtung des Servosavers.
 
 ## 2. Testverlauf & Ergebnis
-* **Status:** 🔴 Vorzeitig abgebrochen
+* **Status:** 🔴 Gescheitert
 * **Ergebnis:** Das primäre Testziel (Evaluierung des Servosavers) konnte aufgrund eines mechanischen Ausfalls nicht vollständig abgeschlossen werden. 
 
 ## 3. Fehlerbild / Aufgetretenes Problem
