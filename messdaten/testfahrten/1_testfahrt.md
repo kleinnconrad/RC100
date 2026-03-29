@@ -1,7 +1,8 @@
 # Testprotokoll: 1. Testfahrt
 
 **Datum:** 17.03.2026  
-**Status:** Gescheitert (Testabbruch)
+**Status:** Gescheitert (Testabbruch). 
+**Fokus:** Exploration
 
 ## Schadensbericht
 
