@@ -1,6 +1,8 @@
 # Testprotokoll: 2. Testfahrt
 
-**Ort:** Tiefgarage
+**Datum:** 24.03.2026  
+**Ort:** Tiefgarage  
+**Fokus:** Fehler der ersten Testfahrt 
 
 ### Erkenntnisziele
 - [x] Gasweg korrekt eingestellt?
