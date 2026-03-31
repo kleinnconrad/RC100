@@ -1,3 +1,5 @@
+<img src="https://github.com/kleinnconrad/RC100/blob/main/mechanik/plattform_agnostisch/karosserie/PXL_20260331_102912086.jpg" alt="Karosserie Detail 1" width="50%">
+
 * **Karosserie-Montage (Lehrgeld gezahlt):** Bei den Bohrungen für die Karosseriehalterung kam es zu Fehlbohrungen (Abweichungen), da die Positionen auf der gewölbten Hülle nur grob gepeilt und gemessen wurden.
   > **Learning für künftige Builds:** Manuelles Ausmessen ist bei Lexan zu fehleranfällig. Zukünftige Markierungen sollten mit einem Nivelliergerät (Kreuzlinienlaser) exakt vom Chassis auf die Karosserie projiziert werden, um millimetergenaue Bohrungen zu garantieren.
 
@@ -6,7 +8,3 @@
 * **Lackierung (Target: Mazda Soul Red Crystal):** Das Ziel war ein tiefer, mehrschichtiger Candy-Look ("Bonbon-Effekt"). 
   * **Prozess:** Es wurden 5 hauchdünne Schichten Rot (PS-15) aufgetragen, gefolgt von 2 mittleren Schichten Silber (PS-12) als Reflektor und abgeschlossen mit 2 dicken Schichten Schwarz (PS-5) als lichtdichter Hintergrund.
   * **Ergebnis & Learning:** Der grundlegende Bonbon-Effekt wurde erfolgreich erzielt, allerdings ist das Rot am Ende nicht satt und tief genug geworden (das Silber schlägt zu stark durch). Für zukünftige Lackierungen müssen mehr/dickere Schichten Rot aufgetragen und der Silber-Anteil leicht reduziert werden.
-
-<img src="https://github.com/kleinnconrad/RC100/blob/main/mechanik/plattform_agnostisch/karosserie/fotos/PXL_20260315_151551628.jpg?raw=true" alt="Karosserie Detail 1" width="50%">
-<img src="https://github.com/kleinnconrad/RC100/blob/main/mechanik/plattform_agnostisch/karosserie/fotos/PXL_20260315_151609048.jpg?raw=true" alt="Karosserie Detail 2" width="50%">
-<img src="https://github.com/kleinnconrad/RC100/blob/main/mechanik/plattform_agnostisch/karosserie/fotos/PXL_20260315_151648162.jpg?raw=true" alt="Karosserie Detail 3" width="50%">
