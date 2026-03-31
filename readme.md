@@ -106,3 +106,11 @@ Dieser "Reverse-Calculator" ergänzt den Getriebe-Rechner, indem er die maximal 
 ```bash
 python scripts/calc/max_speed.py
 ```
+## Lizenzierung
+
+Dieses Projekt verwendet einen hybriden Lizenzansatz:
+
+* **Software & Code:** Alle Python-Skripte und sonstiger Quellcode in diesem Repository sind unter der [MIT License](LICENSE) lizenziert.
+* **Hardware-Design & Dokumentation:** Alle Architecture Decision Records (ADRs), Build Logs, Spezifikationen, Texte und Bilder sind unter der [Creative Commons Attribution 4.0 International License (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/) lizenziert. 
+
+Das bedeutet zusammenfassend: Du darfst sowohl den Code als auch die Dokumentation für eigene (auch kommerzielle) Projekte nutzen, anpassen und weiterverbreiten, **solange du mich als Urheber nennst**.
