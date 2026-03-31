@@ -14,6 +14,7 @@ Die Herausforderung liegt in dem kleinen Maßstab und dem geringen Reifendurchme
   * [Workflows manuell auslösen](#workflows-manuell-auslösen)
 * [Getriebe Rechner (CLI-Tool)](#getriebe-rechner-cli-tool)
 * [Limit Rechner (CLI-Tool)](#limit-rechner-cli-tool)
+* [Lizenzierung](#lizenzierung)
   
 <table>
   <tr>
