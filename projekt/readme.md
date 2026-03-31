@@ -1,4 +1,4 @@
-<img src="https://github.com/kleinnconrad/RC100/blob/main/projekt/qr-code.png" alt="qr" width="50%">
+<img src="https://github.com/kleinnconrad/RC100/blob/main/projekt/qr-code.png" alt="qr" width="25%">
 
 <img src="https://github.com/kleinnconrad/RC100/blob/main/mechanik/plattform_agnostisch/karosserie/PXL_20260331_102912086.jpg" alt="Karosserie_build" width="50%">
 
