@@ -1,8 +1,6 @@
 name: Fetch Reddit Feedback (RC100)
 
 on:
-  schedule:
-    - cron: '0 8 * * *'
   workflow_dispatch:
 
 env:
