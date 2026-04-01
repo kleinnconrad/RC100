@@ -81,6 +81,8 @@ Dieses Repository nutzt GitHub Actions (im Ordner `.github/workflows/`), um auto
 4. **Build shopping list (`build_spec.yml`)**
     * **Auslöser:** Startet automatisch, wenn eine Datei mit dem Muster `spec_*.yaml` in einem Unterordner hinzugefügt oder geändert wird.
     * **Aktion:** Führt `generate_shopping_list.py` aus, um eine shopping list im Ordner `projekt/kosten`zu erstellen.
+  
+5. **Reddit Feedback (`reddit-sync.yml`)**
 
 ### Workflows manuell auslösen
 Wenn du Änderungen an den Python-Skripten testest oder die Dokumentation neu generieren möchtest, ohne eine Spec/ADR zu ändern, kannst du diese Aktionen manuell starten:
