@@ -23,6 +23,7 @@ Um das schwammige Fahrverhalten am Bug in den Griff zu bekommen und die nötige 
 * **Fahrwerksgeometrie:** Setup von Spur, Sturz und Nachlauf an der Vorderachse exakt vermessen und auf High-Speed-Stabilität einstellen.
 * **Federung & Dämpfung:** Federraten und Dämpferöl-Viskosität kontrollieren, um ein Aufschaukeln oder Einknicken der Front zu verhindern.
 * **Lenk-Komponenten:** Das Lenkservo, den Servosaver und das gesamte Lenkgestänge auf Spiel oder unzureichende Stellkraft prüfen.
+* **Gewichtsverteilung im Fahrzeug:** Es wird ein schwerer Motor (3660 statt 3650) und ein schwerer Akku (3S statt 2S) genutzt. Ggf könnte dies zu einer problematischen Schwerpunktverlagerung geführt haben.
 
 ---
 **Fazit für den nächsten Rollout:**
