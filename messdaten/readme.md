@@ -1,7 +1,10 @@
 # Metriken
 ## Gewicht
-** Fahrzeug mit Elektronik ohne Akku: 1254g.  
-** Akku: 391g.  
-** Karosserie: 75g.  
-** GPS: 37g.  
-** Gesamt: 1757g.  
+
+| Komponente | Gewicht |
+| :--- | :--- |
+| Fahrzeug mit Elektronik (ohne Akku) | 1254 g |
+| Akku | 391 g |
+| Karosserie | 75 g |
+| GPS | 37 g |
+| **Gesamt** | **1757 g** |
