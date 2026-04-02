@@ -17,3 +17,12 @@
 | Breite (ohne Karosserie) | 185 mm |
 | Höhe (bis oberster Punkt hintere Dämpferbrücke) | 75 mm |
 
+## Leistung
+| Spezifikation | Wert |
+| :--- | :--- |
+| Max. Achsdrehzahl | 11200 |
+| Max. Motordrehzahl | 46256 |
+| Max. Kardandrehzahl | 27625 |
+| Interne Übersetzung | 2,47 |
+| Gesamtübersetzung | 4,13 |
+| Akku | 3S (11,1V / 12,6V komplett vollgeladen) |
