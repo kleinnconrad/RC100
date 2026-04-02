@@ -8,3 +8,8 @@
 | Karosserie | 75 g |
 | GPS | 37 g |
 | **Gesamt** | **1757 g** |
+
+## Abmessungen 
+** Länge (ohne Karosserie): 362mm **
+** Breite (ohne Karosserie): 185mm **
+** Höhe (bis oberster Punkt hintere Dämpferbrücke): 75mm **
