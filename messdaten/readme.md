@@ -10,6 +10,10 @@
 | **Gesamt** | **1757 g** |
 
 ## Abmessungen 
-** Länge (ohne Karosserie): 362mm **
-** Breite (ohne Karosserie): 185mm **
-** Höhe (bis oberster Punkt hintere Dämpferbrücke): 75mm **
+
+| Dimension | Wert |
+| :--- | :--- |
+| Länge (ohne Karosserie) | 362 mm |
+| Breite (ohne Karosserie) | 185 mm |
+| Höhe (bis oberster Punkt hintere Dämpferbrücke) | 75 mm |
+
