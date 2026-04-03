@@ -1,7 +1,7 @@
 # Testprotokoll: 7. Testfahrt
 
 **Datum:** 03.04.2026  
-**Ort:** Parkplatz (45 m Länge)  
+**Ort:** Parkplatz (40 m Länge)  
 **Fokus:** Bugstabilität & Lenkpräzision  
 
 ---
