@@ -27,7 +27,8 @@ Das High-Speed-Setup an der Vorderachse hat sich bewährt und bleibt vorerst bes
 
 * **Reparatur Hinterachse:** Demontage, Schadensanalyse und Austausch der defekten Teile der hinteren rechten Radaufhängung.
 * **Streckenwahl:** Für den nächsten Test muss eine deutlich längere Strecke gefunden werden, um das Fahrzeug sicher ausfahren und abbremsen zu können.
+* **Weitere Hufeisenfeder auf das Servohorn:** Die dritte Hufeisenfeder wird noch auf das Servohorn gezogen, um den Servosaver möglichst hart einzustellen.
 
 ---
 **Fazit für den nächsten Rollout:**
-Das Setup-Problem an der Vorderachse gilt als gelöst. Das Fahrzeug bietet nun die notwendige mechanische Basis und Stabilität. Die angestrebten 100 km/h scheinen mit dieser Abstimmung absolut realistisch und greifbar. Bevor die Tests fortgesetzt werden können, hat die vollständige Reparatur der Hinterachse oberste Priorität.
+Das Setup-Problem an der Vorderachse gilt als gelöst. Das Fahrzeug bietet nun die notwendige mechanische Basis und Stabilität. Die angestrebten 100 km/h scheinen mit dieser Abstimmung möglich. Bevor die Tests fortgesetzt werden können, hat die vollständige Reparatur der Hinterachse oberste Priorität.
