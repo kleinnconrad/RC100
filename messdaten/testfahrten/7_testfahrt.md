@@ -2,7 +2,7 @@
 
 **Datum:** 03.04.2026  
 **Ort:** Parkplatz (40 m Länge)  
-**Fokus:** Bugstabilität & Lenkpräzision  
+**Fokus:** Bugstabilität  
 
 ---
 
