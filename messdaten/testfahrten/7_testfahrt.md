@@ -8,6 +8,8 @@
 
 ## 1. Ziel der Testfahrt
 Überprüfung der Fahrstabilität an der Vorderachse nach Implementierung zweier gezielter Modifikationen: Die Anbringung von 175g Zusatzgewicht am Frontbumper zur weiteren Schwerpunktverlagerung sowie die Installation einer zusätzlichen Hufeisenfeder am Servohorn für eine härtere Einstellung des Servosavers. 
+<img src="https://raw.githubusercontent.com/kleinnconrad/RC100/main/messdaten/fotos/PXL_20260403_104427252.jpg" width="50%" alt="Schadensbild 1">
+<img src="https://raw.githubusercontent.com/kleinnconrad/RC100/main/messdaten/fotos/PXL_20260403_104430293.jpg" width="50%" alt="Schadensbild 2">
 
 ## 2. Testverlauf & Ergebnis
 * **Status:** 🟢 Erfolgreich (mit unfallbedingtem Abbruch)
@@ -15,6 +17,7 @@
 
 ## 3. Fehlerbild / Aufgetretenes Problem
 Während der Testfahrt kam es leider zu einem Auffahrunfall. Dabei hat das Fahrzeug einen mechanischen Defekt erlitten: Die hintere rechte Radaufhängung wurde beschädigt, was zu einem sofortigen Abbruch der Testfahrt führte.
+<img src="https://raw.githubusercontent.com/kleinnconrad/RC100/main/messdaten/fotos/PXL_20260403_104437326.MP.jpg" width="50%" alt="Schadensbild 3">
 
 ## 4. Geplante Maßnahmen (To-Do für das nächste Setup)
 Das High-Speed-Setup an der Vorderachse hat sich bewährt und bleibt vorerst bestehen. Die nächsten Schritte fokussieren sich auf die Instandsetzung:
@@ -25,7 +28,3 @@ Das High-Speed-Setup an der Vorderachse hat sich bewährt und bleibt vorerst bes
 ---
 **Fazit für den nächsten Rollout:**
 Das Setup-Problem an der Vorderachse gilt als gelöst. Das Fahrzeug bietet nun die notwendige mechanische Basis und Stabilität. Die angestrebten 100 km/h scheinen mit dieser Abstimmung absolut realistisch und greifbar. Bevor die Tests fortgesetzt werden können, hat die vollständige Reparatur der Hinterachse oberste Priorität.
-
-<img src="https://raw.githubusercontent.com/kleinnconrad/RC100/main/messdaten/fotos/PXL_20260403_104427252.jpg" width="50%" alt="Schadensbild 1">
-<img src="https://raw.githubusercontent.com/kleinnconrad/RC100/main/messdaten/fotos/PXL_20260403_104430293.jpg" width="50%" alt="Schadensbild 2">
-<img src="https://raw.githubusercontent.com/kleinnconrad/RC100/main/messdaten/fotos/PXL_20260403_104437326.MP.jpg" width="50%" alt="Schadensbild 3">
