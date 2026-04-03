@@ -8,7 +8,9 @@
 
 ## 1. Ziel der Testfahrt
 Überprüfung der Fahrstabilität an der Vorderachse nach Implementierung zweier gezielter Modifikationen: Die Anbringung von 175g Zusatzgewicht am Frontbumper zur weiteren Schwerpunktverlagerung sowie die Installation einer zusätzlichen Hufeisenfeder am Servohorn für eine härtere Einstellung des Servosavers. 
+
 <img src="https://raw.githubusercontent.com/kleinnconrad/RC100/main/messdaten/fotos/PXL_20260403_104427252.jpg" width="50%" alt="Schadensbild 1">
+
 <img src="https://raw.githubusercontent.com/kleinnconrad/RC100/main/messdaten/fotos/PXL_20260403_104430293.jpg" width="50%" alt="Schadensbild 2">
 
 ## 2. Testverlauf & Ergebnis
@@ -17,6 +19,7 @@
 
 ## 3. Fehlerbild / Aufgetretenes Problem
 Während der Testfahrt kam es leider zu einem Auffahrunfall. Dabei hat das Fahrzeug einen mechanischen Defekt erlitten: Die hintere rechte Radaufhängung wurde beschädigt, was zu einem sofortigen Abbruch der Testfahrt führte.
+
 <img src="https://raw.githubusercontent.com/kleinnconrad/RC100/main/messdaten/fotos/PXL_20260403_104437326.MP.jpg" width="50%" alt="Schadensbild 3">
 
 ## 4. Geplante Maßnahmen (To-Do für das nächste Setup)
