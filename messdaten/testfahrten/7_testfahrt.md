@@ -15,7 +15,7 @@
 
 ## 2. Testverlauf & Ergebnis
 * **Status:** 🟢 Erfolgreich (mit unfallbedingtem Abbruch)
-* **Ergebnis:** Die Maßnahmen waren ein Erfolg. Das Fahrzeug lag stabil und die Lenkung war durch den härteren Servosaver deutlich präziser. **Auf der relativ kurzen Teststrecke von nur 45 Metern konnten mühelos und kontrolliert 55 km/h erreicht werden.** 
+* **Ergebnis:** Die Maßnahmen waren ein Erfolg. Das Fahrzeug lag stabil und die Lenkung war durch den härteren Servosaver deutlich präziser. **Auf der relativ kurzen Teststrecke von nur knapp 40 Metern konnten mühelos und kontrolliert 55 km/h erreicht werden.** 
 
 ## 3. Fehlerbild / Aufgetretenes Problem
 Während der Testfahrt kam es leider zu einem Auffahrunfall. Dabei hat das Fahrzeug einen mechanischen Defekt erlitten: Die hintere rechte Radaufhängung wurde beschädigt, was zu einem sofortigen Abbruch der Testfahrt führte.
