@@ -1,7 +1,7 @@
 # Reddit Feedback: RC100 Project
 
 **Original Post:** [Link zum Thread](https://www.reddit.com/r/rccars/comments/1s8nl1m/)
-**Letzter Sync:** 01.04.2026 17:45:04
+**Letzter Sync:** 06.04.2026 05:20:26
 
 ---
 
@@ -100,6 +100,21 @@
 
 **u/Basic-You7791** [schrieb](https://www.reddit.com/r/rccars/comments/1s8nl1m/build_first_rc_project_engineering_a_budget/odjqlsu/):
 > It's 4.13
+
+---
+
+**u/stroml0** [schrieb](https://www.reddit.com/r/rccars/comments/1s8nl1m/build_first_rc_project_engineering_a_budget/oei6n9t/):
+> Very cool project. Fyi if you look up Steve eng on yt, he built a carton with his son to do over 100kph if you want a comparison.
+>  
+> My learning from my HNR project on motors is you really want to avoid high kv if you want to keep temps low.
+>  
+> The torque difference between 3660 and 3674 is huge and allows a big pinion and much less thermal stress and much less voltage sag.
+>  
+> I halved my kv (almost) doing that and doubled my pinion size (almost) and got lower temp and less voltage sag as a result.
+>  
+> Get ready for the adrenaline when you attempt a pass!
+>  
+> Fyi on my HNR I achieved a 97% theoretical to actual speed conversion ratio as I started building up speed 👍
 
 ---
 
