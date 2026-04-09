@@ -3,11 +3,11 @@
 
 | Komponente | Gewicht |
 | :--- | :--- |
-| Fahrzeug mit Elektronik (ohne Akku) | 1254 g |
+| Fahrzeug mit Elektronik (ohne Akku) | 1.254 g |
 | Akku | 391 g |
 | Karosserie | 75 g |
 | GPS | 37 g |
-| **Gesamt** | **1757 g** |
+| **Gesamt** | **1.757 g** |
 
 ## Abmessungen 
 
@@ -20,9 +20,9 @@
 ## Leistung
 | Spezifikation | Wert |
 | :--- | :--- |
-| Max. Achsdrehzahl | 11200 |
-| Max. Motordrehzahl | 46256 |
-| Max. Kardandrehzahl | 27625 |
+| Max. Achsdrehzahl | 11.200 |
+| Max. Motordrehzahl | 46.256 |
+| Max. Kardandrehzahl | 27.625 |
 | Interne Übersetzung | 2,47 |
 | Gesamtübersetzung | 4,13 |
 | Akku | 3S (11,1V / 12,6V komplett vollgeladen) |
