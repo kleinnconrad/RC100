@@ -20,9 +20,9 @@
 ## Leistung
 | Spezifikation | Wert |
 | :--- | :--- |
-| Max. Achsdrehzahl | 11.200 |
-| Max. Motordrehzahl | 46.256 |
-| Max. Kardandrehzahl | 27.625 |
+| Max. Achsdrehzahl | 11.200 rpm |
+| Max. Motordrehzahl | 46.256 rpm |
+| Max. Kardandrehzahl | 27.625 rpm |
 | Interne Übersetzung | 2,47 |
 | Gesamtübersetzung | 4,13 |
 | Akku | 3S (11,1V / 12,6V komplett vollgeladen) |
