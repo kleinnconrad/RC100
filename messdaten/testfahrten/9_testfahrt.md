@@ -20,3 +20,7 @@ Steigerung der Geschwindigkeit und Überprüfung des Fahrverhaltens bei hohem Te
 ## 4. Geplante Maßnahmen (To-Do für das nächste Setup)
 * **Streckenwahl:** Für den nächsten High-Speed-Versuch zwingend eine deutlich größere, saubere Asphaltfläche ohne Hindernisse suchen, um das volle Potenzial sicher auszufahren.
 * **Setup-Optimierung:** Weitere Maßnahmen zur Stabilisierung des Bugs prüfen, um das schwammige Verhalten zu eliminieren (ggf. Umsetzung von Plan B aus dem 8. Test, z.B. Spool an der Vorderachse), bevor Geschwindigkeiten in Richtung 100 km/h anvisiert werden.
+
+## 5. Auffälligkeiten nach der Fahrt
+* **Sturzwinkel vorne links:** Nach der Fahrt wurden die Reifen abmontiert. Dabei viel auf, dass der Sturzwinkel vorne links zu steil war. Der Sturzwinkel wurde weniger steil eingestellt und an vorne rechts angeglichen
+* **Querlenkerwinkel vorne links:** Ebenfalls wurde festgestellt, dass der Querlenkerwinkel vorne links zu flach eingestellt war. Dieser wurde steiler eingestellt und an vorne rechts angegelichen
