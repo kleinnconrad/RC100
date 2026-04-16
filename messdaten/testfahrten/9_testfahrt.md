@@ -22,5 +22,6 @@ Steigerung der Geschwindigkeit und Überprüfung des Fahrverhaltens bei hohem Te
 * **Setup-Optimierung:** Weitere Maßnahmen zur Stabilisierung des Bugs prüfen, um das schwammige Verhalten zu eliminieren (ggf. Umsetzung von Plan B aus dem 8. Test, z.B. Spool an der Vorderachse), bevor Geschwindigkeiten in Richtung 100 km/h anvisiert werden.
 
 ## 5. Auffälligkeiten nach der Fahrt
-* **Sturzwinkel vorne links:** Nach der Fahrt wurden die Reifen abmontiert. Dabei viel auf, dass der Sturzwinkel vorne links zu steil war. Der Sturzwinkel wurde weniger steil eingestellt und an vorne rechts angeglichen
-* **Querlenkerwinkel vorne links:** Ebenfalls wurde festgestellt, dass der Querlenkerwinkel vorne links zu flach eingestellt war. Dieser wurde steiler eingestellt und an vorne rechts angegelichen
+* **Sturzwinkel vorne links:** Nach der Fahrt wurden die Reifen abmontiert. Dabei viel auf, dass der Sturzwinkel vorne links zu steil war. Der Sturzwinkel wurde weniger steil eingestellt und an vorne rechts angeglichen.
+* **Querlenkerwinkel vorne links:** Ebenfalls wurde festgestellt, dass der Querlenkerwinkel vorne links zu flach eingestellt war. Dieser wurde steiler eingestellt und an vorne rechts angegelichen.
+* **Vorspurwinkel vorne.** Wurde auf ca. 1,5° auf beiden seiten eingestellt.
