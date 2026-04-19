@@ -20,7 +20,7 @@ Nach Abschluss der Fahrten wurde das Chassis einer detaillierten Sicht- und Mech
 
 2. **Vorderes Differentialgehäuse (Kugellager):**
    Ein Kugellager am vorderen Differentialgehäuse wurde durch die auftretenden Kräfte zur Hälfte aus seinem Sitz gedrückt.
-   * *Einschätzung:* Zum aktuellen Zeitpunkt technisch unkritisch, da das System nicht blockierte und keine Folgeschäden an den Zahnrädern entstanden sind.
+   * *Einschätzung:* Zum aktuellen Zeitpunkt technisch unkritisch, da das System nicht blockierte und keine Folgeschäden an den Zahnrädern entstanden sind. **Es wird vermutet, dass sich der Cup joint in der Längsachse ca 2 mm in Richtung Kardanwelle verschoben hat.** Vermutete Ursache ist der Bruch des Arretierungsstifts infolge der Fixierung mit Sekundenkleber. Die auftretenden Vibrationen an dieser Stelle erfordern eine flexiblere Befestigung des Arretierungsstifts
    * *Empfohlene Maßnahme:* Lager wieder bündig einpressen. Falls sich das Gehäuse unter Last zu stark verwindet, sollte geprüft werden, ob das Lager mit minimalem Einsatz von Fügekleber fixiert oder das Gehäuse gegen eine versteifte Variante getauscht werden kann.
 
 ## Fazit
