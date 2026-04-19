@@ -2,7 +2,7 @@
 
 **Datum:** 19. April 2026
 **Ort:** Bauhaus Parkplatz, Esslingen
-**Verfügbare Streckenlänge:** ca. 150 Meter
+**Verfügbare Streckenlänge:** ca. 130 Meter
 
 ## Zusammenfassung der Testläufe
 Die Speedrun-Session umfasste insgesamt 7 aufeinanderfolgende Versuche auf der oben genannten Teststrecke. Ziel war die Auslotung der maximalen Höchstgeschwindigkeit unter den gegebenen Platzverhältnissen (170 Meter für Beschleunigung und Bremsweg).
