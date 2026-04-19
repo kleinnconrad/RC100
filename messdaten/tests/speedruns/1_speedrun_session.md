@@ -5,7 +5,7 @@
 **Verfügbare Streckenlänge:** ca. 130 Meter
 
 ## Zusammenfassung der Testläufe
-Die Speedrun-Session umfasste insgesamt 7 aufeinanderfolgende Versuche auf der oben genannten Teststrecke. Ziel war die Auslotung der maximalen Höchstgeschwindigkeit unter den gegebenen Platzverhältnissen (170 Meter für Beschleunigung und Bremsweg).
+Die Speedrun-Session umfasste insgesamt 7 aufeinanderfolgende Versuche auf der oben genannten Teststrecke. Ziel war die Auslotung der Höchstgeschwindigkeit unter den gegebenen Platzverhältnissen (130 Meter für Beschleunigung und Bremsweg).
 
 * **Anzahl der Versuche:** 7
 * **Gemessene Höchstgeschwindigkeit:** **103 km/h** (erreicht im 7. und letzten Versuch)
