@@ -1,6 +1,6 @@
 # 1. Speedrun Testbericht
 
-**Datum:** 19. April 2026
+**Datum:** 19. April 2026. 
 **Ort:** Bauhaus Parkplatz
 **Verfügbare Streckenlänge:** ca. 130 Meter
 
