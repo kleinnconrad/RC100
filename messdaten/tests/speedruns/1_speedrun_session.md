@@ -21,6 +21,7 @@ Nach Abschluss der Fahrten wurde das Chassis einer detaillierten Sicht- und Mech
 2. **Vorderes Differentialgehäuse (Kugellager):**
    Ein Kugellager am vorderen Differentialgehäuse wurde durch die auftretenden Kräfte zur Hälfte aus seinem Sitz gedrückt.
    * *Einschätzung:* Zum aktuellen Zeitpunkt technisch unkritisch, da das System nicht blockierte und keine Folgeschäden an den Zahnrädern entstanden sind. **Es wird vermutet, dass sich der Cup joint in der Längsachse ca 2 mm in Richtung Kardanwelle verschoben hat.** Vermutete Ursache ist der Bruch des Arretierungsstifts infolge der Fixierung mit Sekundenkleber. Die auftretenden Vibrationen an dieser Stelle erfordern eine flexiblere Befestigung des Arretierungsstifts
+   * **Final Diagnose am 20.04.2026:** Das Kegelzahnrad der vorderen Kardanwellenaufnahme wird tatsächlich einige Millimeter formschlüssig auf die Welle aufgeschoben. Die Verschraubung hat sich etwas gelöst und das Kegelzahnrad ist um ca. 2 mm gewandert. Das Kegelzahnrad wurde nun demontiert. Anschließend wurde das Kegelzahnrad vollständig auf die Welle geschoben und fest verschraubt. Zur Sicherung der Schraubverbindung wurde Sekundenkleber genutzt.
    
 ## Fazit
 Mit einer gemessenen Spitzengeschwindigkeit von 103 km/h war die Testreihe ein voller Erfolg. Das Chassis hat den extremen Belastungen weitestgehend standgehalten. Die festgestellten Mängel sind typische Begleiterscheinungen im Hochgeschwindigkeitsbereich (Rotationskräfte und Vibrationen) und lassen sich durch gezielte, kleine Optimierungen am Antriebsstrang beheben.
