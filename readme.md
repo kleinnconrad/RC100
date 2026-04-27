@@ -29,7 +29,7 @@ Das Projekt ist in themenspezifische Unterordner gegliedert, um Spezifikationen,
 
 * **/architektur** - Für Architectural Decision Records (ADRs) und grundlegende Systemdesigns.
 * **/elektronik** - Für elektronische Komponenten und zugehörige Spezifikationen.
-* **/mechanik** - Für mechanische Teile,  Chassis-Design und physische Spezifikationen.
+* **/mechanik** - Für mechanische Teile,  Chassis-Design, CAD Modelle und physische Spezifikationen.
 * **/messdaten** - Für Testergebnisse und Leistungsmessdaten.
 * **/projekt** - Für allgemeines Projektmanagement, Planung und Übersichten.
 * **/scripts** - Für Automatisierungen und Berechnungen.
