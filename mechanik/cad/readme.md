@@ -1,4 +1,4 @@
-# 3D-Druckteile & Zubehör für Carten T410R
+# 3D-Druckteile
 
 Dieser Ordner enthält eine Sammlung von nützlichen 3D-Druckteilen (STL-Dateien) für das RC-Auto **Carten T410R** sowie einen praktischen Wartungsständer.
 
