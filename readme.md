@@ -65,7 +65,7 @@ Die Pflege der als YAML-Dateien formatierten Spezifikationen und Architekturents
 ## Weiterführendes Projekt: Telemetriesystem
 An dieses Vorhaben knüpft ein eigenständiges Projekt an, welches sich mit der Entwicklung eines Telemetriedatensystems auf Basis eines ESP32-Mikrocontrollers befasst. Ziel ist die sensorische Erfassung und Übertragung fahrdynamischer Parameter des RC-Fahrzeugs.
 
-[![Carten Telemetrie](https://github-readme-stats.vercel.app/api/pin/?username=kleinnconrad&repo=carten_telemetrie&theme=default)](https://github.com/kleinnconrad/carten_telemetrie)
+[![GitHub Repo](https://img.shields.io/badge/GitHub-Repository-blue?logo=github)](https://github.com/kleinnconrad/carten_telemetrie)
 
 ## Lizenzierung
 * Der Quellcode der Berechnungsmodelle unterliegt der MIT-Lizenz. 
