@@ -1,61 +1,60 @@
-# ==========================================
-# Architectural Decision Record (ADR-002)
-# ==========================================
-# Thema: Auswahl der Brushless-Motor-Combo
-
-adr_brushless_combo_selection:
-  id: "ADR-002"
-  title: "Auswahl der Brushless-Motor-Combo für 100 km/h Speedruns"
-  status: "entschieden"
-  date: "2026-03-06"
-  
-  context: |
-    Um einen 1/10 Tourenwagen (Carten T410R) auf 100 km/h zu beschleunigen, muss das Getriebe extrem 
-    'lang' übersetzt werden (hohe Radlast > 22 %). Ein klassischer 3650er-Motor (50 mm Länge) operiert 
-    hierbei an seiner thermischen Belastungsgrenze. Es wird zwingend ein Antriebsstrang benötigt, 
-    der bei 3S-Spannung (11.1V) genügend mechanisches Drehmoment (Motorbaugröße 3660) liefert und 
-    dessen Fahrtenregler (ESC) die hohen Blockierströme beim Beschleunigen sicher verarbeiten 
-    kann (min. 120A).
-
+adr:
+  id: ADR-002
+  title: Auswahl der Brushless-Motor-Combo für 100 km/h Speedruns
+  status: entschieden
+  date: '2026-03-06'
+  context: "Um einen 1/10 Tourenwagen (Carten T410R) auf 100 km/h zu beschleunigen,\
+    \ muss das Getriebe extrem \n'lang' übersetzt werden (hohe Radlast > 22 %). Ein\
+    \ klassischer 3650er-Motor (50 mm Länge) operiert \nhierbei an seiner thermischen\
+    \ Belastungsgrenze. Es wird zwingend ein Antriebsstrang benötigt, \nder bei 3S-Spannung\
+    \ (11.1V) genügend mechanisches Drehmoment (Motorbaugröße 3660) liefert und \n\
+    dessen Fahrtenregler (ESC) die hohen Blockierströme beim Beschleunigen sicher\
+    \ verarbeiten \nkann (min. 120A).\n"
   considered_alternatives:
-    - option_id: 1
-      name: "Standard 1/10 Setup (z.B. Hobbywing 10BL120 + 3650SL 4000KV)"
-      type: "Klassisches Tourenwagen-Setup"
-      evaluation: "Der 3650er Motor passt physisch perfekt ins Chassis. Allerdings fehlt der kurze Rotor das nötige Drehmoment für große Ritzel (43Z/44Z). Bei 100 km/h droht eine massive Überhitzung (Hitzetod)."
-      
-    - option_id: 2
-      name: "Hybrid-Budget-Setup (Hobbywing 120A ESC + DollaTek 3660 3300KV)"
-      type: "Kostenoptimierter Ansatz"
-      evaluation: "Sehr günstiger Motor gepaart mit sicherem Regler. Das Setup ist leistungsfähig, aber der No-Name-Motor hat eine geringere Effizienz, einen höheren Innenwiderstand und eine potenziell unsauberere Sensorless-Ansteuerung (Cogging beim Anfahren)."
-      
-    - option_id: 3
-      name: "Premium Sensored Setup (Hobbywing EzRun MAX10 G2 + 3665SD Motor)"
-      type: "High-End / Sensored"
-      evaluation: "Bietet durch das Sensorkabel extrem feinfühliges Anfahren und integrierte Telemetrie. Ist jedoch für einen reinen Geradeaus-Speedrun mit über 150 € massiv überdimensioniert."
-
-    - option_id: 4
-      name: "Hobbywing QuicRun WP10BL120 G2 Combo (mit 3660SL 3700KV)"
-      type: "Integrierter Mid-Range Sweet Spot"
-      evaluation: "Neueste Generation der zuverlässigen QuicRun-Serie. Bietet einen wasserdichten 120A ESC und den großen 3660er Motor aus einer Hand. Hervorragendes Preis-Leistungs-Verhältnis (~80-90 €) bei exzellenter Effizienz."
-
-  decision: "Hobbywing QuicRun WP10BL120 G2 Combo (3660SL 3700KV)"
-  
+  - option_id: 1
+    name: Standard 1/10 Setup (z.B. Hobbywing 10BL120 + 3650SL 4000KV)
+    type: Klassisches Tourenwagen-Setup
+    evaluation: Der 3650er Motor passt physisch perfekt ins Chassis. Allerdings fehlt
+      der kurze Rotor das nötige Drehmoment für große Ritzel (43Z/44Z). Bei 100 km/h
+      droht eine massive Überhitzung (Hitzetod).
+  - option_id: 2
+    name: Hybrid-Budget-Setup (Hobbywing 120A ESC + DollaTek 3660 3300KV)
+    type: Kostenoptimierter Ansatz
+    evaluation: Sehr günstiger Motor gepaart mit sicherem Regler. Das Setup ist leistungsfähig,
+      aber der No-Name-Motor hat eine geringere Effizienz, einen höheren Innenwiderstand
+      und eine potenziell unsauberere Sensorless-Ansteuerung (Cogging beim Anfahren).
+  - option_id: 3
+    name: Premium Sensored Setup (Hobbywing EzRun MAX10 G2 + 3665SD Motor)
+    type: High-End / Sensored
+    evaluation: Bietet durch das Sensorkabel extrem feinfühliges Anfahren und integrierte
+      Telemetrie. Ist jedoch für einen reinen Geradeaus-Speedrun mit über 150 € massiv
+      überdimensioniert.
+  - option_id: 4
+    name: Hobbywing QuicRun WP10BL120 G2 Combo (mit 3660SL 3700KV)
+    type: Integrierter Mid-Range Sweet Spot
+    evaluation: Neueste Generation der zuverlässigen QuicRun-Serie. Bietet einen wasserdichten
+      120A ESC und den großen 3660er Motor aus einer Hand. Hervorragendes Preis-Leistungs-Verhältnis
+      (~80-90 €) bei exzellenter Effizienz.
+  decision: Hobbywing QuicRun WP10BL120 G2 Combo (3660SL 3700KV)
   combo_meta_hardware:
-    brand: "Hobbywing"
-    esc_model: "QuicRun WP10BL120 G2 (120A)"
-    motor_model: "QuicRun 3660SL G2 (3700KV)"
-    type: "Sensorless Brushless System (Wasserdicht IP67)"
-
-  rationale: |
-    Die Entscheidung fällt auf die Hobbywing QuicRun G2 Combo. Sie eliminiert das Ausfallrisiko von 
-    No-Name-Motoren und bietet eine perfekt aufeinander abgestimmte Architektur (Firmware von ESC 
-    und Motor-Timing sind optimal verzahnt). Der 3660er Motor liefert mit seinen 3700KV an 3S 
-    (ca. 41.000 U/min) die perfekte Drehzahl und hat durch den längeren Rotor genug Drehmoment, 
-    um die errechnete Radlast von ca. 24 % souverän zu stemmen. Dies ist die sicherste und 
-    effizienteste Lösung im Budget unter 100 €.
-    
+    brand: Hobbywing
+    esc_model: QuicRun WP10BL120 G2 (120A)
+    motor_model: QuicRun 3660SL G2 (3700KV)
+    type: Sensorless Brushless System (Wasserdicht IP67)
+  rationale: "Die Entscheidung fällt auf die Hobbywing QuicRun G2 Combo. Sie eliminiert\
+    \ das Ausfallrisiko von \nNo-Name-Motoren und bietet eine perfekt aufeinander\
+    \ abgestimmte Architektur (Firmware von ESC \nund Motor-Timing sind optimal verzahnt).\
+    \ Der 3660er Motor liefert mit seinen 3700KV an 3S \n(ca. 41.000 U/min) die perfekte\
+    \ Drehzahl und hat durch den längeren Rotor genug Drehmoment, \num die errechnete\
+    \ Radlast von ca. 24 % souverän zu stemmen. Dies ist die sicherste und \neffizienteste\
+    \ Lösung im Budget unter 100 €.\n"
   consequences:
-    - "Packaging (Bauraum): Der 3660er Motor ist 10 mm länger als das Standardmaß. Der ESC und der Empfänger müssen im T410R-Chassis entsprechend weiter hinten platziert werden."
-    - "Ritzel-Bohrung (WICHTIG): Hobbywing liefert den 3660SL G2 in der Regel mit einer 5.0 mm Welle aus (Spezifikationen beim Händler vor der Ritzelbestellung final verifizieren). Ein 48dp-Ritzel mit 5 mm Bohrung (z.B. Robinson Racing) ist zwingend erforderlich."
-    - "Stromversorgung: Die Systemspannung ist hart auf 3S LiPo limitiert. Ein 4S-Betrieb würde die maximal zulässige Rotordrehzahl des Motors überschreiten."
-    
+  - 'Packaging (Bauraum): Der 3660er Motor ist 10 mm länger als das Standardmaß. Der
+    ESC und der Empfänger müssen im T410R-Chassis entsprechend weiter hinten platziert
+    werden.'
+  - 'Ritzel-Bohrung (WICHTIG): Hobbywing liefert den 3660SL G2 in der Regel mit einer
+    5.0 mm Welle aus (Spezifikationen beim Händler vor der Ritzelbestellung final
+    verifizieren). Ein 48dp-Ritzel mit 5 mm Bohrung (z.B. Robinson Racing) ist zwingend
+    erforderlich.'
+  - 'Stromversorgung: Die Systemspannung ist hart auf 3S LiPo limitiert. Ein 4S-Betrieb
+    würde die maximal zulässige Rotordrehzahl des Motors überschreiten.'

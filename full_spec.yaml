@@ -1,118 +1,29 @@
-Brushless Combo:
-  combo_meta:
-    beschreibung: Spezifikation des Brushless-Antriebsstrangs für 100 km/h an 3S.
-    architektur_status: 'ADR-002: Hobbywing QuicRun WP10BL120 G2 Combo (3660SL 3700KV)
-      akzeptiert'
-  elektronischer_fahrtenregler_esc:
-    typ: Brushless ESC (Sensorless)
-    ampere_dauerlast: Min. 120A
-    lipo_support: 2S - 3S (optional bis 4S)
-    bec_spannung: '6.0V oder 7.4V (einstellbar für Servo - ACHTUNG: Auf 6.0V für Carson
-      Empfänger belassen!)'
-    steckersystem_akku: XT60 (Ab Werk bei der G2 Combo verlötet)
-    steckersystem_motor: 4.0mm Goldkontakt
-    referenz_modell: Hobbywing QuicRun WP10BL120 G2
-    hinweis_packaging: Aufgrund des längeren Motors muss der ESC im T410R Chassis
-      möglichst weit nach hinten oder leicht versetzt montiert werden.
-    shopping_item:
-      in_liste_aufnehmen: true
-      artikel_name: Hobbywing QuicRun Brushless Combo WP10BL120 G2 (inkl. 3660SL 3700KV
-        Motor)
-      kategorie: Antrieb & Elektronik
-      referenz_link: https://www.rcfox.de/HW38030211-HobbyWing-Quicrun-Brushless-Combo-WP10BL120G2-mit-3660SL-3700KV-G2
-      geschaetzter_preis_eur: 89.0
-  brushless_motor:
-    baugroesse: 3660 (36 mm Durchmesser, 60 mm Länge)
-    kv_wert: 3700KV
-    wellendurchmesser: 5.0 mm (Erfordert zwingend 48dp Ritzel mit 5mm Bohrung!)
-    pol_anzahl: 4-Pol (für hohes Drehmoment)
-    referenz_modell: Hobbywing 3660SL G2 (3700KV)
-    thermische_toleranz: Max. 25.0 % berechnete Radlast
-    shopping_item:
-      in_liste_aufnehmen: false
-  motor_ritzel:
-    typ: Large Bore Pinion Gear
-    zahnflankenprofil_pitch: 48dp
-    zaehnezahl: 43Z
-    bohrung: 5.0 mm (Zwingend für die Welle des Hobbywing 3660 Motors!)
-    material: Gehärteter Stahl
-    shopping_item:
-      in_liste_aufnehmen: true
-      artikel_name: Robinson Racing RRP-2043 (48dp, 43T, 5mm Bore)
-      kategorie: Antrieb & Mechanik
-      referenz_link: https://www.ebay.com/itm/234242275376
-      geschaetzter_preis_eur: 15.0
-  kuehlung:
-    motor_kuehler: Passiver Aluminium-Kühlkörper für 36mm Motoren
-    motor_luefter: 'Optional: 30mm oder 40mm High-Speed Lüfter (Betrieb über freien
-      Steckplatz am Empfänger)'
-    shopping_item:
-      in_liste_aufnehmen: false
-Ladegeraet:
-  charger_meta:
-    brand: SkyRC
-    model: S100neo
-    type: Smart AC/DC Ladegerät
-    architecture_fit: Perfekt. Hat XT60-Buchse direkt im Gehäuse verbaut. Kein Adapter-Chaos.
-  power_specifications:
-    input_voltage_ac: 100-240V (Integriertes Netzteil für normale Steckdose)
-    input_voltage_dc: 6-30V
-    charge_power_max_ac: 100W
-    charge_power_max_dc: 200W
-    discharge_power_max: 5W (Hauptanschluss) / 20W (Balanceport)
-  charging_capabilities:
-    supported_chemistries:
-    - LiPo
-    - LiIon
-    - LiFe
-    - LiHV
-    - NiMH
-    - NiCd
-    - Pb
-    supported_cells_lipo: 1S bis 6S
-    charge_current_range: 0.1A - 12.0A
-    discharge_current_range: 0.1A - 2.0A
-    balancer_current_max: 1.0A
-  physical_specifications:
-    display: Farb-LCD-Bildschirm
-    dimensions_mm:
-      length: 105
-      width: 105
-      height: 62
-    weight_g: 340
-    control_interface: Einfache 3-Tasten-Steuerung
-  lipo_safety_and_workflow:
-    charging_rule: Den 5000mAh Akku immer mit '1C' laden. Am Ladegerät den Ladestrom
-      auf exakt 5.0A einstellen.
-    storage_rule: Nach dem Fahren NIEMALS den Akku leer in die Ecke legen. Immer das
-      'Storage'-Programm am S100neo starten, um die Zellen auf 3.8V Einlagerungsspannung
-      zu bringen.
-    fire_safety: Akkus immer in einem feuerfesten LiPo-Safe-Bag laden und aufbewahren.
 Akku:
-  battery_meta:
+  meta:
     brand: Absima
     series: GreenHorn Line V2
     part_number: '4140014'
     type: LiPo (Lithium-Polymer)
-  electrical_specifications:
-    voltage: 11.1V (Nennspannung)
-    cells: 3S
-    capacity: 5000 mAh
-    energy: 55.5 Wh
-    discharge_rate_continuous: 50C
-    max_continuous_amp_draw: 250A
-  connectors:
-    main_power: XT60 (Plug & Play mit Hobbywing QuicRun G2 ESC)
-    balancer: XH (Standard-Balancer für das Ladegerät)
-  physical_specifications:
-    case_type: Hardcase (HC) - Hartplastik Box
-    safety: Zwingend erforderlich für Speedruns zum Schutz vor Kardanwelle/Crashes
-    weight_g: 370
-    dimensions:
-      length_mm: 138
-      width_mm: 46
-      height_mm: 35
-  chassis_integration_notes:
+  properties:
+    electrical_specifications:
+      voltage: 11.1V (Nennspannung)
+      cells: 3S
+      capacity: 5000 mAh
+      energy: 55.5 Wh
+      discharge_rate_continuous: 50C
+      max_continuous_amp_draw: 250A
+    connectors:
+      main_power: XT60 (Plug & Play mit Hobbywing QuicRun G2 ESC)
+      balancer: XH (Standard-Balancer für das Ladegerät)
+    physical_specifications:
+      case_type: Hardcase (HC) - Hartplastik Box
+      safety: Zwingend erforderlich für Speedruns zum Schutz vor Kardanwelle/Crashes
+      weight_g: 370
+      dimensions:
+        length_mm: 138
+        width_mm: 46
+        height_mm: 35
+  integration_notes:
     issue: Der Carten T410R ist ab Werk für 2S-Akkus (25mm Höhe) konzipiert. Dieser
       3S-Akku ist 35mm hoch.
     solution: Die obere Carbon-Akkustrebe des Chassis muss 'höhergelegt' werden.
@@ -121,32 +32,104 @@ Akku:
     - 2x minimal längere M3-Schrauben (ca. M3x16 oder M3x18)
     execution: Spacers auf die originalen Alu-Pfosten legen, Carbon-Strebe darauf
       verschrauben. Kein Dremeln oder Fräsen am Chassis notwendig.
-Lasertachometer:
-  messwerkzeug_meta:
-    typ: Berührungsloses Laser-Drehzahlmessgerät
-    referenz_modell: DT-2234C+ (oder baugleiche Klone wie Neoteck/Proster)
-    messbereich: 2.5 bis 99.999 RPM
-    messgenauigkeit: +/- 0.05%
-    shopping_item:
-      in_liste_aufnehmen: true
-      artikel_name: Digitaler Laser Tachometer (DT-2234C+)
-      kategorie: Werkstatt & Tools
-      referenz_link: Suche bei Amazon nach 'Laser Tachometer DT-2234C+'
-      geschaetzter_preis_eur: 18.0
-  test_protokoll:
-    vorbereitung: Reflektorstreifen (beiliegend) auf Reifenflanke oder Ritzel kleben.
-    durchfuehrung: Fahrzeug sicher aufbocken. Funke einschalten, Vollgas geben und
-      Laser auf den rotierenden Streifen richten.
-    sicherheitswarnung: 'WICHTIG: Bei 100 km/h Radumdrehungsgeschwindigkeit blähen
-      sich Gummireifen extrem auf (Ballooning). Schutzbrille tragen und nicht direkt
-      in der Fliehkraft-Linie der Räder stehen, falls sich die Verklebung des Reifens
-      löst!'
+Ladegeraet:
+  meta:
+    brand: SkyRC
+    model: S100neo
+    type: Smart AC/DC Ladegerät
+    architecture_fit: Perfekt. Hat XT60-Buchse direkt im Gehäuse verbaut. Kein Adapter-Chaos.
+  properties:
+    power_specifications:
+      input_voltage_ac: 100-240V (Integriertes Netzteil für normale Steckdose)
+      input_voltage_dc: 6-30V
+      charge_power_max_ac: 100W
+      charge_power_max_dc: 200W
+      discharge_power_max: 5W (Hauptanschluss) / 20W (Balanceport)
+    charging_capabilities:
+      supported_chemistries:
+      - LiPo
+      - LiIon
+      - LiFe
+      - LiHV
+      - NiMH
+      - NiCd
+      - Pb
+      supported_cells_lipo: 1S bis 6S
+      charge_current_range: 0.1A - 12.0A
+      discharge_current_range: 0.1A - 2.0A
+      balancer_current_max: 1.0A
+    physical_specifications:
+      display: Farb-LCD-Bildschirm
+      dimensions_mm:
+        length: 105
+        width: 105
+        height: 62
+      weight_g: 340
+      control_interface: Einfache 3-Tasten-Steuerung
+    lipo_safety_and_workflow:
+      charging_rule: Den 5000mAh Akku immer mit '1C' laden. Am Ladegerät den Ladestrom
+        auf exakt 5.0A einstellen.
+      storage_rule: Nach dem Fahren NIEMALS den Akku leer in die Ecke legen. Immer
+        das 'Storage'-Programm am S100neo starten, um die Zellen auf 3.8V Einlagerungsspannung
+        zu bringen.
+      fire_safety: Akkus immer in einem feuerfesten LiPo-Safe-Bag laden und aufbewahren.
+Brushless Combo:
+  meta:
+    beschreibung: Spezifikation des Brushless-Antriebsstrangs für 100 km/h an 3S.
+    architektur_status: 'ADR-002: Hobbywing QuicRun WP10BL120 G2 Combo (3660SL 3700KV)
+      akzeptiert'
+  properties:
+    elektronischer_fahrtenregler_esc:
+      typ: Brushless ESC (Sensorless)
+      ampere_dauerlast: Min. 120A
+      lipo_support: 2S - 3S (optional bis 4S)
+      bec_spannung: '6.0V oder 7.4V (einstellbar für Servo - ACHTUNG: Auf 6.0V für
+        Carson Empfänger belassen!)'
+      steckersystem_akku: XT60 (Ab Werk bei der G2 Combo verlötet)
+      steckersystem_motor: 4.0mm Goldkontakt
+      referenz_modell: Hobbywing QuicRun WP10BL120 G2
+      hinweis_packaging: Aufgrund des längeren Motors muss der ESC im T410R Chassis
+        möglichst weit nach hinten oder leicht versetzt montiert werden.
+      shopping_item:
+        in_liste_aufnehmen: true
+        artikel_name: Hobbywing QuicRun Brushless Combo WP10BL120 G2 (inkl. 3660SL
+          3700KV Motor)
+        kategorie: Antrieb & Elektronik
+        referenz_link: https://www.rcfox.de/HW38030211-HobbyWing-Quicrun-Brushless-Combo-WP10BL120G2-mit-3660SL-3700KV-G2
+        geschaetzter_preis_eur: 89.0
+    brushless_motor:
+      baugroesse: 3660 (36 mm Durchmesser, 60 mm Länge)
+      kv_wert: 3700KV
+      wellendurchmesser: 5.0 mm (Erfordert zwingend 48dp Ritzel mit 5mm Bohrung!)
+      pol_anzahl: 4-Pol (für hohes Drehmoment)
+      referenz_modell: Hobbywing 3660SL G2 (3700KV)
+      thermische_toleranz: Max. 25.0 % berechnete Radlast
+      shopping_item:
+        in_liste_aufnehmen: false
+    motor_ritzel:
+      typ: Large Bore Pinion Gear
+      zahnflankenprofil_pitch: 48dp
+      zaehnezahl: 43Z
+      bohrung: 5.0 mm (Zwingend für die Welle des Hobbywing 3660 Motors!)
+      material: Gehärteter Stahl
+      shopping_item:
+        in_liste_aufnehmen: true
+        artikel_name: Robinson Racing RRP-2043 (48dp, 43T, 5mm Bore)
+        kategorie: Antrieb & Mechanik
+        referenz_link: https://www.ebay.com/itm/234242275376
+        geschaetzter_preis_eur: 15.0
+    kuehlung:
+      motor_kuehler: Passiver Aluminium-Kühlkörper für 36mm Motoren
+      motor_luefter: 'Optional: 30mm oder 40mm High-Speed Lüfter (Betrieb über freien
+        Steckplatz am Empfänger)'
+      shopping_item:
+        in_liste_aufnehmen: false
 Fernsteuerung:
-  tx_meta_transmitter:
+  meta:
     brand: Carson
-    model: Reflex Wheel X1
+    model: Carson Micro-Empfänger (im Set enthalten)
     type: 2.4 GHz Pistolengriff-Sender (Surface)
-    channels: 2
+    channels: 4 (Physische Steckplätze, 2 aktiv nutzbar)
     price_class: Budget / MVP (~35 EUR)
     shopping_item:
       in_liste_aufnehmen: true
@@ -154,102 +137,30 @@ Fernsteuerung:
       kategorie: Steuerung & Elektronik
       referenz_link: Suche bei Modellbau-Fachhändler (z.B. Tamico, Berlinski, Amazon)
       geschaetzter_preis_eur: 35.0
-  tx_performance:
-    protocol: FHSS (Frequency-Hopping Spread Spectrum)
-    range_ground: ~150 Meter (Ausreichend für übersichtliche Speedruns)
-    response_time: Standard 2.4Ghz Latenz
-    power_supply: 4x AA Batterien
-  rx_meta_receiver:
-    model: Carson Micro-Empfänger (im Set enthalten)
-    channels: 4 (Physische Steckplätze, 2 aktiv nutzbar)
     integrated_features:
     - Fail-Safe Funktion (Schutz bei Signalverlust)
     input_voltage: '4.8V - 6.0V (Achtung: BEC des ESC darf nicht auf 7.4V stehen!)'
-  calibration_and_setup:
-    fail_safe_activation: Das Fail-Safe muss zwingend programmiert werden! Auto aufbocken,
-      Vollbremsung an der Funke halten und den Setup-Knopf am Empfänger drücken. Beim
-      Ausschalten der Funke muss das Auto sofort bremsen.
-    steering_dual_rate: Über den Dual Rate (D/R) Drehregler an der Fernsteuerung den
-      maximalen Lenkausschlag zwingend auf ca. 30 % reduzieren. Bei 100 km/h führt
-      ein voller Lenkausschlag zum sofortigen Überschlag.
-    throttle_trim: Die Trimmung für das Gas (TH Trim) muss zwingend exakt auf dem
-      Nullpunkt (Mitte) stehen, bevor der Hobbywing-Regler zum ersten Mal kalibriert
-      wird.
-    bec_voltage_warning: Der Hobbywing 120A Regler hat ein einstellbares BEC (Stromversorgung
-      für Empfänger/Servo). Dieses muss zwingend auf 6.0V eingestellt bleiben, da
-      der Carson Empfänger bei 7.4V durchbrennen kann.
-Kuehlung:
-  cooling_motor:
-    component: Hobbywing QuicRun 3652SL (4000kV)
-    heatsink:
-      size: 36mm (Passend für 540er / 3650 / 3652 Baugröße)
-      material: Aluminium
-      mounting: Aufsteck-Kühlkörper (Clip-On)
-    fan_active:
-      size: 40x40mm High-Speed Lüfter
-      rpm: 16.000 - 20.000 U/min
-      frame_material: Aluminium (für bessere Wärmeableitung)
-      suggested_brands:
-      - Surpass Hobby (Rocket Serie)
-      - Yeah Racing (Tornado)
-      - WTF (Wild Turbo Fan)
-      power_supply: Anschluss an freien Empfänger-Kanal (z.B. CH3 oder CH4), Stromversorgung
-        direkt über das BEC des Reglers (6.0V/7.4V)
-  cooling_esc:
-    component: Hobbywing QuicRun WP 10BL120 G2
-    status: Keine Modifikation notwendig
-    description: Der Regler verfügt ab Werk über einen verschraubten Kühlkörper und
-      einen aktiven Lüfter, der auf die 120A Dauerlast abgestimmt ist und für 3S-Speedruns
-      ausreicht.
-  cooling_best_practices:
-    thermal_paste:
-      issue: Wärmeübertragung
-      action: Ein winziger Tropfen PC-Wärmeleitpaste zwischen Motorgehäuse und Alu-Kühlkörper
-        verbessert die Hitzeübertragung massiv.
-    cable_management:
-      issue: Sog des High-Speed-Lüfters
-      action: Alle Sensorkabel und Antennen zwingend mit Kabelbindern fixieren, damit
-        sie nicht vom starken Luftzug in die Rotorblätter gesaugt werden.
-    body_airflow:
-      issue: Hitzestau unter der Karosserie
-      action: Für Speedruns zwingend Lüftungslöcher in die Frontscheibe oder die hinteren
-        Seitenfenster schneiden, damit ein kühlender Durchzug (Airflow) entsteht.
-Servo:
-  servo_meta:
-    brand: JX
-    model: PDI-4409MG
-    type: Digitales Low-Profile Servo
-    features: Coreless Motor (schnelles Ansprechverhalten), exzellentes Preis-Leistungs-Verhältnis
-    price_class: Budget (~15 - 22 EUR)
-  mechanical_specifications:
-    gears: Metallgetriebe (Aluminium/Kupfer - überlebenswichtig bei 100 km/h)
-    case: Kunststoff mit Aluminium-Mittelteil (als Kühlkörper für den Motor)
-    spline_teeth: '25T (WICHTIG: Standard Futaba/Savöx/JX Zahnkranz)'
-    dimensions_mm:
-      length: 40.3
-      width: 20.2
-      height: 26.1
-    weight_g: 44.5
-  performance_specifications:
-    operating_voltage: 4.8V - 6.0V
-    torque_6v: 9.2 kg-cm
-    speed_6v: 0.11 sec / 60°
-    return_to_center_accuracy: Gut (Völlig ausreichend für das angepeilte Speedrun-Projekt)
-  mandatory_upgrades:
-    part: Aluminium-Servohorn (Zwingend 25T Verzahnung für JX/Futaba kaufen!)
-    reason: Das Baukasten-Plastikhorn verbiegt sich (Flex) bei 100 km/h unter dem
-      extremen Winddruck auf die Vorderräder. Das Alu-Horn garantiert eine absolut
-      steife, spielfreie Lenkverbindung.
-    installation: Die Schraube, die das Horn auf dem Servo hält, zwingend mit Schraubensicherungslack
-      (z. B. Loctite mittelfest) fixieren, damit sie sich durch Vibrationen nicht
-      löst.
-  transmitter_setup:
-    dual_rate: Für den 100 km/h Run muss an der Fernsteuerung zwingend das 'Dual Rate'
-      (D/R) oder der Lenkausschlag (EPA) auf ca. 30-40% reduziert werden. Minimale
-      Lenkbewegungen reichen bei Top-Speed völlig aus. Voller Ausschlag führt zum
-      sofortigen Überschlag.
+  properties:
+    tx_performance:
+      protocol: FHSS (Frequency-Hopping Spread Spectrum)
+      range_ground: ~150 Meter (Ausreichend für übersichtliche Speedruns)
+      response_time: Standard 2.4Ghz Latenz
+      power_supply: 4x AA Batterien
+    calibration_and_setup:
+      fail_safe_activation: Das Fail-Safe muss zwingend programmiert werden! Auto
+        aufbocken, Vollbremsung an der Funke halten und den Setup-Knopf am Empfänger
+        drücken. Beim Ausschalten der Funke muss das Auto sofort bremsen.
+      steering_dual_rate: Über den Dual Rate (D/R) Drehregler an der Fernsteuerung
+        den maximalen Lenkausschlag zwingend auf ca. 30 % reduzieren. Bei 100 km/h
+        führt ein voller Lenkausschlag zum sofortigen Überschlag.
+      throttle_trim: Die Trimmung für das Gas (TH Trim) muss zwingend exakt auf dem
+        Nullpunkt (Mitte) stehen, bevor der Hobbywing-Regler zum ersten Mal kalibriert
+        wird.
+      bec_voltage_warning: Der Hobbywing 120A Regler hat ein einstellbares BEC (Stromversorgung
+        für Empfänger/Servo). Dieses muss zwingend auf 6.0V eingestellt bleiben, da
+        der Carson Empfänger bei 7.4V durchbrennen kann.
 Gps:
-  telemetrie_meta:
+  meta:
     typ: GNSS Performance Analyzer (GPS/GLONASS)
     referenz_modell: Ruddog GPS Performance Analyzer
     messfrequenz: 10 Hz (10 Updates pro Sekunde - kritisch für RC Speedruns!)
@@ -263,235 +174,375 @@ Gps:
       referenz_link: Suche bei Modellbau-Fachhändler (z.B. RC-KleinKram, Tamico, Monster
         Hopups)
       geschaetzter_preis_eur: 85.0
-  app_integration:
-    software: RC Gears / Ruddog App (oder baugleiche SkyRC App)
-    funktionen: Top-Speed Messung, 0-100 km/h Zeitmessung, Track-Logging
-  mounting_and_setup:
-    positionierung: 'Zwingend an einer Stelle montieren, die freie Sicht zum Himmel
-      hat. Karbonbauteile (wie das Upper-Deck des Carten) schirmen das Satellitensignal
-      ab! Bester Montageort: Auf dem vorderen Schaumstoff-Rammschutz (Bumper).'
-    fixierung: Das Modul bei Speedruns zwingend mit Klettverschluss UND einem zusätzlichen
-      Kabelbinder oder Tape sichern. Die G-Kräfte bei einem Crash sind enorm.
-    bedienung: Das Modul blinkt während der Satellitensuche. Erst losfahren, wenn
-      das GPS-Signal (meist durch durchgehendes Leuchten) als 'Locked' bestätigt ist,
-      sonst fehlen die ersten Meter in der Messung.
+  properties:
+    app_integration:
+      software: RC Gears / Ruddog App (oder baugleiche SkyRC App)
+      funktionen: Top-Speed Messung, 0-100 km/h Zeitmessung, Track-Logging
+    mounting_and_setup:
+      positionierung: 'Zwingend an einer Stelle montieren, die freie Sicht zum Himmel
+        hat. Karbonbauteile (wie das Upper-Deck des Carten) schirmen das Satellitensignal
+        ab! Bester Montageort: Auf dem vorderen Schaumstoff-Rammschutz (Bumper).'
+      fixierung: Das Modul bei Speedruns zwingend mit Klettverschluss UND einem zusätzlichen
+        Kabelbinder oder Tape sichern. Die G-Kräfte bei einem Crash sind enorm.
+      bedienung: Das Modul blinkt während der Satellitensuche. Erst losfahren, wenn
+        das GPS-Signal (meist durch durchgehendes Leuchten) als 'Locked' bestätigt
+        ist, sonst fehlen die ersten Meter in der Messung.
+Kuehlung:
+  properties:
+    cooling_motor:
+      component: Hobbywing QuicRun 3652SL (4000kV)
+      heatsink:
+        size: 36mm (Passend für 540er / 3650 / 3652 Baugröße)
+        material: Aluminium
+        mounting: Aufsteck-Kühlkörper (Clip-On)
+      fan_active:
+        size: 40x40mm High-Speed Lüfter
+        rpm: 16.000 - 20.000 U/min
+        frame_material: Aluminium (für bessere Wärmeableitung)
+        suggested_brands:
+        - Surpass Hobby (Rocket Serie)
+        - Yeah Racing (Tornado)
+        - WTF (Wild Turbo Fan)
+        power_supply: Anschluss an freien Empfänger-Kanal (z.B. CH3 oder CH4), Stromversorgung
+          direkt über das BEC des Reglers (6.0V/7.4V)
+    cooling_esc:
+      component: Hobbywing QuicRun WP 10BL120 G2
+      status: Keine Modifikation notwendig
+      description: Der Regler verfügt ab Werk über einen verschraubten Kühlkörper
+        und einen aktiven Lüfter, der auf die 120A Dauerlast abgestimmt ist und für
+        3S-Speedruns ausreicht.
+    cooling_best_practices:
+      thermal_paste:
+        issue: Wärmeübertragung
+        action: Ein winziger Tropfen PC-Wärmeleitpaste zwischen Motorgehäuse und Alu-Kühlkörper
+          verbessert die Hitzeübertragung massiv.
+      cable_management:
+        issue: Sog des High-Speed-Lüfters
+        action: Alle Sensorkabel und Antennen zwingend mit Kabelbindern fixieren,
+          damit sie nicht vom starken Luftzug in die Rotorblätter gesaugt werden.
+      body_airflow:
+        issue: Hitzestau unter der Karosserie
+        action: Für Speedruns zwingend Lüftungslöcher in die Frontscheibe oder die
+          hinteren Seitenfenster schneiden, damit ein kühlender Durchzug (Airflow)
+          entsteht.
+Lasertachometer:
+  meta:
+    typ: Berührungsloses Laser-Drehzahlmessgerät
+    referenz_modell: DT-2234C+ (oder baugleiche Klone wie Neoteck/Proster)
+    messbereich: 2.5 bis 99.999 RPM
+    messgenauigkeit: +/- 0.05%
+    shopping_item:
+      in_liste_aufnehmen: true
+      artikel_name: Digitaler Laser Tachometer (DT-2234C+)
+      kategorie: Werkstatt & Tools
+      referenz_link: Suche bei Amazon nach 'Laser Tachometer DT-2234C+'
+      geschaetzter_preis_eur: 18.0
+  properties:
+    test_protokoll:
+      vorbereitung: Reflektorstreifen (beiliegend) auf Reifenflanke oder Ritzel kleben.
+      durchfuehrung: Fahrzeug sicher aufbocken. Funke einschalten, Vollgas geben und
+        Laser auf den rotierenden Streifen richten.
+      sicherheitswarnung: 'WICHTIG: Bei 100 km/h Radumdrehungsgeschwindigkeit blähen
+        sich Gummireifen extrem auf (Ballooning). Schutzbrille tragen und nicht direkt
+        in der Fliehkraft-Linie der Räder stehen, falls sich die Verklebung des Reifens
+        löst!'
+Servo:
+  meta:
+    brand: JX
+    model: PDI-4409MG
+    type: Digitales Low-Profile Servo
+    features: Coreless Motor (schnelles Ansprechverhalten), exzellentes Preis-Leistungs-Verhältnis
+    price_class: Budget (~15 - 22 EUR)
+  properties:
+    mechanical_specifications:
+      gears: Metallgetriebe (Aluminium/Kupfer - überlebenswichtig bei 100 km/h)
+      case: Kunststoff mit Aluminium-Mittelteil (als Kühlkörper für den Motor)
+      spline_teeth: '25T (WICHTIG: Standard Futaba/Savöx/JX Zahnkranz)'
+      dimensions_mm:
+        length: 40.3
+        width: 20.2
+        height: 26.1
+      weight_g: 44.5
+    performance_specifications:
+      operating_voltage: 4.8V - 6.0V
+      torque_6v: 9.2 kg-cm
+      speed_6v: 0.11 sec / 60°
+      return_to_center_accuracy: Gut (Völlig ausreichend für das angepeilte Speedrun-Projekt)
+    mandatory_upgrades:
+      part: Aluminium-Servohorn (Zwingend 25T Verzahnung für JX/Futaba kaufen!)
+      reason: Das Baukasten-Plastikhorn verbiegt sich (Flex) bei 100 km/h unter dem
+        extremen Winddruck auf die Vorderräder. Das Alu-Horn garantiert eine absolut
+        steife, spielfreie Lenkverbindung.
+      installation: Die Schraube, die das Horn auf dem Servo hält, zwingend mit Schraubensicherungslack
+        (z. B. Loctite mittelfest) fixieren, damit sie sich durch Vibrationen nicht
+        löst.
+    transmitter_setup:
+      dual_rate: Für den 100 km/h Run muss an der Fernsteuerung zwingend das 'Dual
+        Rate' (D/R) oder der Lenkausschlag (EPA) auf ca. 30-40% reduziert werden.
+        Minimale Lenkbewegungen reichen bei Top-Speed völlig aus. Voller Ausschlag
+        führt zum sofortigen Überschlag.
 Cartent410R:
-  chassis_meta:
+  meta:
     brand: Carten
     model: T410R Tourenwagen Bausatz
     part_number: NHA413
-  carten_t410r:
-    allgemein:
-      fahrzeugtyp: 1:10 Elektro Tourenwagen (EP Touring Car)
-      lieferzustand: Bausatz (Kit) - unmontiert
-      einsatzbereich: On-Road / Asphalt / Teppich
-    abmessungen:
-      spurbreite_mm: 190
-      radstand_mm: 258
-    chassis_und_aufbau:
-      bodenplatte: 2,25 mm Eco-Carbon (kohlefaserverstärktes Verbundmaterial)
-      oberdeck: 2,0 mm Eco-Carbon
-      daempferbruecken: 3,0 mm Eco-Carbon (vorne & hinten, diverse Montagepunkte)
-      motorhalterung: CNC-gefrästes Aluminium
-      servohalterung: Floating Servo Mount (Aluminium)
-      akkuhalterung: Vorbereitet für 2S Standard-LiPo (Stickpack) oder Shorty-LiPo
-      karosseriehalter: Verstellbare Kunststoff-Pfosten
-    antriebsstrang:
-      antriebsart: 4WD Allrad, zentraler Kardanantrieb (Wellenantrieb)
-      mittelantriebswelle: Aluminium (rot eloxiert)
-      differentiale: Gekapselte Kegeldifferentiale (vorne & hinten)
-      differential_zahnraeder: Metallzahnräder
-      antriebswellen: Stahl CVD (Constant Velocity Drives) an Vorder- und Hinterachse
-      hauptzahnradhalterung: Aluminium
-      radmitnehmer: 12 mm Sechskant, Aluminium
-      interne_untersetzung: 1:2.47 bis 1:2.53
-      kugellager: Komplett kugelgelagert (mit Gummidichtungen)
-    fahrwerk_und_federung:
-      stossdaempfer: Aluminium Öldruckstoßdämpfer (mit Gewindefahrwerk)
-      querlenkerhalter: Aluminium (Toe Blocks)
-      stabilisatoren: Vorne und hinten enthalten
-      geometrie_einstellung: Stufenlos einstellbar über R/L Gewindestangen (Turnbuckles)
-      einstellbare_parameter:
-      - Sturz
-      - Spur
-      - Nachlauf (Caster)
-      - Ausfederweg (Droop)
-      - Bodenfreiheit (Ride Height)
-      - Ackermann
-    lenkung:
-      lenksystem: Kugelgelagertes Dual-Bellcrank-System (Doppelarm)
-      lenkhebel_c_hubs: Composite-Kunststoff
+  properties:
+    carten_t410r:
+      allgemein:
+        fahrzeugtyp: 1:10 Elektro Tourenwagen (EP Touring Car)
+        lieferzustand: Bausatz (Kit) - unmontiert
+        einsatzbereich: On-Road / Asphalt / Teppich
+      abmessungen:
+        spurbreite_mm: 190
+        radstand_mm: 258
+      chassis_und_aufbau:
+        bodenplatte: 2,25 mm Eco-Carbon (kohlefaserverstärktes Verbundmaterial)
+        oberdeck: 2,0 mm Eco-Carbon
+        daempferbruecken: 3,0 mm Eco-Carbon (vorne & hinten, diverse Montagepunkte)
+        motorhalterung: CNC-gefrästes Aluminium
+        servohalterung: Floating Servo Mount (Aluminium)
+        akkuhalterung: Vorbereitet für 2S Standard-LiPo (Stickpack) oder Shorty-LiPo
+        karosseriehalter: Verstellbare Kunststoff-Pfosten
+      antriebsstrang:
+        antriebsart: 4WD Allrad, zentraler Kardanantrieb (Wellenantrieb)
+        mittelantriebswelle: Aluminium (rot eloxiert)
+        differentiale: Gekapselte Kegeldifferentiale (vorne & hinten)
+        differential_zahnraeder: Metallzahnräder
+        antriebswellen: Stahl CVD (Constant Velocity Drives) an Vorder- und Hinterachse
+        hauptzahnradhalterung: Aluminium
+        radmitnehmer: 12 mm Sechskant, Aluminium
+        interne_untersetzung: 1:2.47 bis 1:2.53
+        kugellager: Komplett kugelgelagert (mit Gummidichtungen)
+      fahrwerk_und_federung:
+        stossdaempfer: Aluminium Öldruckstoßdämpfer (mit Gewindefahrwerk)
+        querlenkerhalter: Aluminium (Toe Blocks)
+        stabilisatoren: Vorne und hinten enthalten
+        geometrie_einstellung: Stufenlos einstellbar über R/L Gewindestangen (Turnbuckles)
+        einstellbare_parameter:
+        - Sturz
+        - Spur
+        - Nachlauf (Caster)
+        - Ausfederweg (Droop)
+        - Bodenfreiheit (Ride Height)
+        - Ackermann
+      lenkung:
+        lenksystem: Kugelgelagertes Dual-Bellcrank-System (Doppelarm)
+        lenkhebel_c_hubs: Composite-Kunststoff
 Werkzeug:
-  werkzeug_meta:
+  meta:
     beschreibung: Benötigtes Werkzeug für den Zusammenbau des Carten T410R.
-  werkzeug_liste:
-    inbus_schraubendreher:
-      typ: Innensechskant-Schraubendreher (Hex Wrenches)
-      groessen: 1.5 mm, 2.0 mm, 2.5 mm
-      hinweis: Pflichtkauf! Carten nutzt im gesamten Auto metrische M3-Maschinenschrauben
-        (keine selbstschneidenden Schrauben). Ein hochwertiger Inbus ist hier extrem
-        wichtig, um die Schraubenköpfe und das harte Plastikgewinde beim Eindrehen
-        nicht zu beschädigen.
-      brand: Neewer
-      model: Titan RC Inbus Set (1.5/2.0/2.5/3.0)
-    steckschluessel:
-      typ: RC Radkreuz / Steckschlüssel (Box Wrench)
-      groessen: 5.5 mm und 7.0 mm
-      hinweis: Die 5.5 mm brauchst du permanent für alle M3-Muttern im Chassis. Die
-        7.0 mm sind für die Radmuttern. Die in der Carten-Anleitung erwähnten 10.0
-        mm werden bei diesem 1/10 Modell überhaupt nicht benötigt.
-      status: Vorhanden (Kein Kauf nötig)
-    klebstoffe_und_chemie:
-      schraubensicherung:
-        typ: Schraubensicherungslack (Screw Cement / Threadlocker)
-        hinweis: Extrem wichtig! Kommt an alle Schrauben, die in Metall gedreht werden
-          (z. B. Motorritzel). In der Carten-Anleitung oft fälschlicherweise als 'GLUE'
-          beschriftet. Niemals für Plastik verwenden!
-        brand: Loctite
-        model: 243 Mittelfest (Blau)
-    klebebaender:
-      panzertape:
-        typ: Glasfaserklebeband (Glass Tape)
-        hinweis: Pflicht für den T410R! Das Auto besitzt keine klassischen Plastik-Akkuhalterungen.
-          Das Klebeband wird laut Anleitung durch die Schlitze im Carbon-Chassis gezogen,
-          um den LiPo-Akku festzuschnallen.
-        brand: Arrowmax
-        model: Fibre Tape / Battery Tape
-Hauptzahnrad:
-  spur_gear_meta:
-    type: CNC-gefrästes Hauptzahnrad (48 DP, 72T)
-    mechanical_load_capacity: '> 100 km/h (ausgelegt für 3S / 120A Brushless-Systeme)'
-  material_and_construction:
-    gear_body: POM (Polyoxymethylen / Delrin) - CNC gefräst
-    mounting_interface: Standard 1:10 Tourenwagen 4-Loch-Aufnahme
-    mating_pinion: Gehärteter Stahl (zwingend erforderlich)
-  mandatory_modifications:
-    pinion_securing:
-      issue: Verrutschen des Motorritzels (Ursache für Getriebeschaden)
-      description: Um ein erneutes Verrutschen und Zerstören des Hauptzahnrads durch
-        asymmetrischen Eingriff zu verhindern, muss die Madenschraube des Hartstahl-Ritzels
-        zwingend mit mittelfester Schraubensicherung (z. B. Loctite 243 / blau) auf
-        der flachen Stelle der Motorwelle gesichert werden.
-    gear_mesh_calibration:
-      issue: Zahnflankenspiel bei > 11.000 U/min
-      description: Das Spiel zwischen Stahlritzel und Delrin-Hauptzahnrad muss mit
-        der bewährten Papiermethode exakt kalibriert werden. Ein zu enges Spiel führt
-        zu extremer Reibungshitze und Leistungsverlust, ein zu weites Spiel zum sofortigen
-        'Strippen' der Delrin-Zähne durch das hohe Drehmoment.
-    material_selection:
-      issue: Vermeidung von Stahl-Hauptzahnrädern
-      description: Bewusster Verzicht auf ein Hauptzahnrad aus Stahl. Dies hält die
-        rotierende Masse gering (bessere Beschleunigung) und fungiert im Falle einer
-        Blockade im Antriebsstrang als mechanische Sollbruchstelle (Fail-Safe), um
-        die Motorwelle und den ESC vor Überlastung zu schützen.
+  properties:
+    werkzeug_liste:
+      inbus_schraubendreher:
+        typ: Innensechskant-Schraubendreher (Hex Wrenches)
+        groessen: 1.5 mm, 2.0 mm, 2.5 mm
+        hinweis: Pflichtkauf! Carten nutzt im gesamten Auto metrische M3-Maschinenschrauben
+          (keine selbstschneidenden Schrauben). Ein hochwertiger Inbus ist hier extrem
+          wichtig, um die Schraubenköpfe und das harte Plastikgewinde beim Eindrehen
+          nicht zu beschädigen.
+        brand: Neewer
+        model: Titan RC Inbus Set (1.5/2.0/2.5/3.0)
+      steckschluessel:
+        typ: RC Radkreuz / Steckschlüssel (Box Wrench)
+        groessen: 5.5 mm und 7.0 mm
+        hinweis: Die 5.5 mm brauchst du permanent für alle M3-Muttern im Chassis.
+          Die 7.0 mm sind für die Radmuttern. Die in der Carten-Anleitung erwähnten
+          10.0 mm werden bei diesem 1/10 Modell überhaupt nicht benötigt.
+        status: Vorhanden (Kein Kauf nötig)
+      klebstoffe_und_chemie:
+        schraubensicherung:
+          typ: Schraubensicherungslack (Screw Cement / Threadlocker)
+          hinweis: Extrem wichtig! Kommt an alle Schrauben, die in Metall gedreht
+            werden (z. B. Motorritzel). In der Carten-Anleitung oft fälschlicherweise
+            als 'GLUE' beschriftet. Niemals für Plastik verwenden!
+          brand: Loctite
+          model: 243 Mittelfest (Blau)
+      klebebaender:
+        panzertape:
+          typ: Glasfaserklebeband (Glass Tape)
+          hinweis: Pflicht für den T410R! Das Auto besitzt keine klassischen Plastik-Akkuhalterungen.
+            Das Klebeband wird laut Anleitung durch die Schlitze im Carbon-Chassis
+            gezogen, um den LiPo-Akku festzuschnallen.
+          brand: Arrowmax
+          model: Fibre Tape / Battery Tape
+Differentiale:
+  meta:
+    type: Öldruck-Kegeldifferential (Metal Gear)
+    mechanical_load_capacity: '> 100 km/h (ca. 8.300 U/min Achsdrehzahl)'
+  properties:
+    material_and_construction:
+      gears_ring_and_bevel: Sintermetall / Stahl
+      diff_outdrives_cup_joints: Gehärteter Stahl
+      diff_case_cup: Faserverstärkter Verbundkunststoff (Composite)
+    mandatory_modifications:
+      perfect_shimming:
+        issue: Spielfreiheit
+        description: Die inneren Metallzahnräder müssen beim Zusammenbau mit hauchdünnen
+          Passscheiben (Shims) absolut spielfrei eingestellt werden. Nur so wird verhindert,
+          dass die Zähne unter dem extremen Drehmoment des 3S-Motors überspringen
+          oder abreißen.
+      reinforced_sealing:
+        issue: O-Ring Abdichtung
+        description: Bei 8.300 U/min erzeugt das Öl im Inneren einen massiven Fliehkraftdruck
+          nach außen. Die Gummi-O-Ringe müssen mit zähem Spezialfett (z. B. 'Green
+          Slime') abgedichtet werden, damit das Differential nicht trockenläuft.
+      oil_viscosity:
+        issue: Sperrwirkung & Geradeauslauf
+        description: Das Baukasten-Öl ist zu weich und führt bei Speedruns zu unkontrollierbarem
+          Ausbrechen, wenn ein Rad minimal Grip verliert. Es muss extrem zähes Silikonöl
+          verwendet werden, um das Auto auf einen sturen Geradeauslauf zu zwingen.
+        setup_recommendation:
+          front_axle: ca. 100.000 cSt (oder ein komplett starrer Spool/Starrachse)
+          rear_axle: ca. 10.000 cSt
 Getriebe:
-  getriebe_meta:
+  meta:
     brand: Arrowmax
     model: 'Motorritzel 42Z (48dp / 3.17mm Welle) ODER Robinson Racing 5mm bore 48dp
       43teeth falls 3660 motor mit 5mm Welle gefahren wird: https://www.ebay.com/itm/234242275376'
     part_number: 42T-48P
-  getriebe_setup:
-    hauptzahnrad_spur:
-      zähne: 72
-      typ: Baukasten Standard
-      modul: 48dp
-    motorritzel_pinion:
-      zähne: 42
-      material: Hardcoated Alu oder Stahl
-    berechnete_werte:
-      interne_uebersetzung: 2.47
-      gesamt_ratio: 4.23
-      zielgeschwindigkeit: '> 100 km/h'
-  einstellbereich_mit_72z_hauptzahnrad:
-    hinweis: 'Laut Carten Handbuch (T410R mit Gear Diff 2.47) ohne Umbau des 72Z Hauptzahnrads
-      fahrbar:'
-    max_beschleunigung:
-      ritzel: 21
-      ratio: 8.47
-    mid_range:
-      ritzel: 31
-      ratio: 5.74
-    high_speed_bereich:
-      ritzel_34: 5.23
-      ritzel_35: 5.08
-      ritzel_36: 4.94
-      ritzel_37: 4.81
-    max_top_speed:
-      ritzel_41: 4.34
-      ritzel_42: 4.23
-      ritzel_43: 4.14
-      ritzel_44: 4.04
-Differentiale:
-  differential_meta:
-    type: Öldruck-Kegeldifferential (Metal Gear)
-    mechanical_load_capacity: '> 100 km/h (ca. 8.300 U/min Achsdrehzahl)'
-  material_and_construction:
-    gears_ring_and_bevel: Sintermetall / Stahl
-    diff_outdrives_cup_joints: Gehärteter Stahl
-    diff_case_cup: Faserverstärkter Verbundkunststoff (Composite)
-  mandatory_modifications:
-    perfect_shimming:
-      issue: Spielfreiheit
-      description: Die inneren Metallzahnräder müssen beim Zusammenbau mit hauchdünnen
-        Passscheiben (Shims) absolut spielfrei eingestellt werden. Nur so wird verhindert,
-        dass die Zähne unter dem extremen Drehmoment des 3S-Motors überspringen oder
-        abreißen.
-    reinforced_sealing:
-      issue: O-Ring Abdichtung
-      description: Bei 8.300 U/min erzeugt das Öl im Inneren einen massiven Fliehkraftdruck
-        nach außen. Die Gummi-O-Ringe müssen mit zähem Spezialfett (z. B. 'Green Slime')
-        abgedichtet werden, damit das Differential nicht trockenläuft.
-    oil_viscosity:
-      issue: Sperrwirkung & Geradeauslauf
-      description: Das Baukasten-Öl ist zu weich und führt bei Speedruns zu unkontrollierbarem
-        Ausbrechen, wenn ein Rad minimal Grip verliert. Es muss extrem zähes Silikonöl
-        verwendet werden, um das Auto auf einen sturen Geradeauslauf zu zwingen.
-      setup_recommendation:
-        front_axle: ca. 100.000 cSt (oder ein komplett starrer Spool/Starrachse)
-        rear_axle: ca. 10.000 cSt
+  properties:
+    getriebe_setup:
+      hauptzahnrad_spur:
+        zähne: 72
+        typ: Baukasten Standard
+        modul: 48dp
+      motorritzel_pinion:
+        zähne: 42
+        material: Hardcoated Alu oder Stahl
+      berechnete_werte:
+        interne_uebersetzung: 2.47
+        gesamt_ratio: 4.23
+        zielgeschwindigkeit: '> 100 km/h'
+    einstellbereich_mit_72z_hauptzahnrad:
+      hinweis: 'Laut Carten Handbuch (T410R mit Gear Diff 2.47) ohne Umbau des 72Z
+        Hauptzahnrads fahrbar:'
+      max_beschleunigung:
+        ritzel: 21
+        ratio: 8.47
+      mid_range:
+        ritzel: 31
+        ratio: 5.74
+      high_speed_bereich:
+        ritzel_34: 5.23
+        ritzel_35: 5.08
+        ritzel_36: 4.94
+        ritzel_37: 4.81
+      max_top_speed:
+        ritzel_41: 4.34
+        ritzel_42: 4.23
+        ritzel_43: 4.14
+        ritzel_44: 4.04
+Hauptzahnrad:
+  meta:
+    type: CNC-gefrästes Hauptzahnrad (48 DP, 72T)
+    mechanical_load_capacity: '> 100 km/h (ausgelegt für 3S / 120A Brushless-Systeme)'
+  properties:
+    material_and_construction:
+      gear_body: POM (Polyoxymethylen / Delrin) - CNC gefräst
+      mounting_interface: Standard 1:10 Tourenwagen 4-Loch-Aufnahme
+      mating_pinion: Gehärteter Stahl (zwingend erforderlich)
+    mandatory_modifications:
+      pinion_securing:
+        issue: Verrutschen des Motorritzels (Ursache für Getriebeschaden)
+        description: Um ein erneutes Verrutschen und Zerstören des Hauptzahnrads durch
+          asymmetrischen Eingriff zu verhindern, muss die Madenschraube des Hartstahl-Ritzels
+          zwingend mit mittelfester Schraubensicherung (z. B. Loctite 243 / blau)
+          auf der flachen Stelle der Motorwelle gesichert werden.
+      gear_mesh_calibration:
+        issue: Zahnflankenspiel bei > 11.000 U/min
+        description: Das Spiel zwischen Stahlritzel und Delrin-Hauptzahnrad muss mit
+          der bewährten Papiermethode exakt kalibriert werden. Ein zu enges Spiel
+          führt zu extremer Reibungshitze und Leistungsverlust, ein zu weites Spiel
+          zum sofortigen 'Strippen' der Delrin-Zähne durch das hohe Drehmoment.
+      material_selection:
+        issue: Vermeidung von Stahl-Hauptzahnrädern
+        description: Bewusster Verzicht auf ein Hauptzahnrad aus Stahl. Dies hält
+          die rotierende Masse gering (bessere Beschleunigung) und fungiert im Falle
+          einer Blockade im Antriebsstrang als mechanische Sollbruchstelle (Fail-Safe),
+          um die Motorwelle und den ESC vor Überlastung zu schützen.
 Kardanwelle Und Joints:
-  center_shaft_meta:
+  meta:
     component: Zentrale Antriebswelle (Center Shaft)
-  material_and_suitability:
-    driveshaft:
-      component: Kardanwelle (Welle)
-      material: Aluminium (eloxiert), hohl oder massiv (je nach Batch)
-      suitability_100kmh_3s: JA. Aluminium ist hier besser als Stahl, da die geringere
-        rotierende Masse bei ca. 26.000 U/min weniger Vibrationen erzeugt.
-    joint_cups:
-      component: Verbindungsstücke (Diff-Inputs)
-      material: Stahl (Gehärtet)
-      suitability_100kmh_3s: JA. Die Aufnahmen am Differentialeingang sind aus Stahl
-        und halten dem Drehmoment des 3S-Antriebs stand.
-    rpm_load:
-      component: Drehzahl-Belastung
-      specification: Welle rotiert mit ca. 26.000 U/min
-      suitability_100kmh_3s: Kritisch, aber für das Baukasten-Teil machbar, solange
-        keine Unwucht vorliegt.
-  mandatory_durability_measures:
-    centering_floating_problem:
-      issue: Zentrierung (Das 'Floating' Problem)
-      description: Die Welle darf in den Bechern (Cups) nicht hin und her schlagen
-        ('chatter').
-      action: Zwingend kleine O-Ringe oder Schaumstoff-Plättchen (oft im Baukasten
-        enthalten oder aus alten Dämpfer-Gummis geschnitten) in die Becher legen,
-        bevor die Welle eingesetzt wird. Die Welle muss 'schwimmend', aber spielfrei
-        zwischen den Diffs sitzen.
-    joint_lubrication:
-      issue: Schmierung der Gelenke
-      description: Die Enden der Kardanwelle (Dogbones), die in den Stahlbechern laufen,
-        sind Metall auf Metall. Bei 3S-Power entsteht hier massiver Verschleiß ('Einschlagen').
-      action: Diese Kontaktpunkte mit zähem Molybdän-Fett (schwarz) oder speziellem
-        'Joint Grease' schmieren, um die Reibung zu minimieren.
-    runout_check:
-      issue: Prüfung auf Rundlauf
-      description: Roll die Welle vor dem Einbau über eine Glasplatte (oder einen
-        Spiegel).
-      action: Wenn sie auch nur minimal 'eiert' (verbogen ist), wird sie bei 26.000
-        U/min das ganze Chassis in zerstörerische Vibrationen versetzen. In diesem
-        Fall muss sie sofort ersetzt werden.
+  properties:
+    material_and_suitability:
+      driveshaft:
+        component: Kardanwelle (Welle)
+        material: Aluminium (eloxiert), hohl oder massiv (je nach Batch)
+        suitability_100kmh_3s: JA. Aluminium ist hier besser als Stahl, da die geringere
+          rotierende Masse bei ca. 26.000 U/min weniger Vibrationen erzeugt.
+      joint_cups:
+        component: Verbindungsstücke (Diff-Inputs)
+        material: Stahl (Gehärtet)
+        suitability_100kmh_3s: JA. Die Aufnahmen am Differentialeingang sind aus Stahl
+          und halten dem Drehmoment des 3S-Antriebs stand.
+      rpm_load:
+        component: Drehzahl-Belastung
+        specification: Welle rotiert mit ca. 26.000 U/min
+        suitability_100kmh_3s: Kritisch, aber für das Baukasten-Teil machbar, solange
+          keine Unwucht vorliegt.
+    mandatory_durability_measures:
+      centering_floating_problem:
+        issue: Zentrierung (Das 'Floating' Problem)
+        description: Die Welle darf in den Bechern (Cups) nicht hin und her schlagen
+          ('chatter').
+        action: Zwingend kleine O-Ringe oder Schaumstoff-Plättchen (oft im Baukasten
+          enthalten oder aus alten Dämpfer-Gummis geschnitten) in die Becher legen,
+          bevor die Welle eingesetzt wird. Die Welle muss 'schwimmend', aber spielfrei
+          zwischen den Diffs sitzen.
+      joint_lubrication:
+        issue: Schmierung der Gelenke
+        description: Die Enden der Kardanwelle (Dogbones), die in den Stahlbechern
+          laufen, sind Metall auf Metall. Bei 3S-Power entsteht hier massiver Verschleiß
+          ('Einschlagen').
+        action: Diese Kontaktpunkte mit zähem Molybdän-Fett (schwarz) oder speziellem
+          'Joint Grease' schmieren, um die Reibung zu minimieren.
+      runout_check:
+        issue: Prüfung auf Rundlauf
+        description: Roll die Welle vor dem Einbau über eine Glasplatte (oder einen
+          Spiegel).
+        action: Wenn sie auch nur minimal 'eiert' (verbogen ist), wird sie bei 26.000
+          U/min das ganze Chassis in zerstörerische Vibrationen versetzen. In diesem
+          Fall muss sie sofort ersetzt werden.
+Body:
+  meta:
+    brand: ZooRacing
+    modell: Hellcat
+    fahrzeugklasse: 1:10 On-Road Tourenwagen
+    breite_mm: 190
+    radstand_mm: 257
+    material: Polycarbonat (Lexan)
+    materialstaerke_mm: 0.7
+    shopping_item:
+      in_liste_aufnehmen: true
+      artikel_name: ZooRacing Hellcat 190mm Tourenwagen Karosserie (0.7mm Regular)
+      kategorie: Karosserie & Aerodynamik
+      referenz_link: Suche bei RC-KleinKram oder Tonisport nach 'ZooRacing Hellcat
+        0.7mm'
+      geschaetzter_preis_eur: 32.9
+  properties:
+    aerodynamic_features:
+      front: Tief gezogene Nase und sanfter Haubenwinkel reduzieren den Staudruck
+        und verhindern Lift.
+      roofline: Flach abfallendes Dach leitet die Luft laminar und störungsfrei zum
+        Heckflügel.
+      rear_wing: Inkludierter High-Downforce Flügel sorgt für zwingend benötigte Heckstabilität
+        bei High-Speed.
+    preparation_and_painting:
+      reinigung: Die Innenseite der Karosserie vor dem Lackieren zwingend mit Spülmittel
+        auswaschen, um Trennmittelreste aus der Produktion zu entfernen.
+      lack_typ: Ausschließlich Polycarbonat-Spray (z.B. Tamiya PS-Farben) verwenden.
+        Von innen in mehreren dünnen Schichten lackieren.
+      schutzfolie: Die äußere Overspray-Schutzfolie erst nach dem kompletten Lackieren
+        und Bohren der Löcher abziehen.
+    mounting_instructions:
+      karosserieloecher: Löcher nicht stechen, sondern mit einem speziellen Karosseriebohrer
+        (Reamer) bohren, um Risse im Lexan zu vermeiden.
+      bumper_support: Der Front-Schaumstoffbumper des Chassis muss den vorderen Karosserieüberhang
+        mechanisch abstützen.
+      radkaesten: Radkästen mit einer gebogenen Lexanschere ausschneiden und Kanten
+        mit feinem Schleifpapier glätten, um Einreißen bei Vibrationen zu verhindern.
 Paint:
-  lackierung_meta:
+  meta:
     brand: Tamiya
     system: 3-Schicht Metallic-Aufbau
     typ: Spezial-Polycarbonatspray (Lexan) - Ätzt sich in den Kunststoff ein
@@ -506,43 +557,44 @@ Paint:
     - artikel_name: Tamiya PS-5 Schwarz (100ml)
       referenz_link: Suche nach Tamiya PS-5 bei RC-Shops
       geschaetzter_preis_eur: 8.5
-  vorbereitung_prep:
-    schritt_1_waschen: Karosserie von INNEN gründlich mit lauwarmem Wasser und einfachem
-      Spülmittel (ohne Pflegezusätze) auswaschen. Mit Küchenpapier trocknen. Das entfernt
-      Produktionsfett und verhindert, dass die Farbe abperlt.
-    schritt_2_abkleben: Die beiliegenden Scheibenaufkleber von INNEN auf die Fenster
-      kleben. Die Ränder der Aufkleber mit dem Fingernagel oder einem Zahnstocher
-      fest anrubbeln, damit später keine Farbe darunterlaufen kann.
-    schritt_3_anwaermen: Alle drei Sprühdosen für 10 Minuten in eine Schüssel mit
-      warmem (nicht kochendem!) Leitungswasser stellen. Der Druck steigt leicht, die
-      Farbe zerstäubt viel feiner und bildet keine dicken Tropfen beim Sprühen.
-  durchfuehrung_3_schicht:
-    regel_nummer_1: LEXAN WIRD IMMER VON INNEN LACKIERT! Die äußere, matte Schutzfolie
-      bleibt bis zum allerletzten Schritt auf der Karosserie!
-    phase_1_hauptfarbe_ps15:
-      durchgaenge: 3 bis 4 hauchdünne Schichten
-      technik: Die ERSTE Schicht ist nur ein feiner Nebel (Klebeschicht). Sie MUSS
-        fleckig und durchsichtig aussehen! Nicht versuchen, es sofort deckend zu machen.
-        10 Minuten warten. Dann die nächste dünne Schicht sprühen. Wiederholen, bis
-        das Rot aufgebraucht ist.
-    phase_2_brillanz_ps12:
-      durchgaenge: 2 dünne Schichten
-      technik: Wenn das Rot komplett trocken ist (mindestens 30 Min warten), sprühst
-        du das Silber in 2 Durchgängen (mit 10 Min Pause) direkt auf das Rot. Dies
-        wirkt als Reflektor für die Metallic-Partikel und lässt das Rot extrem leuchten.
-    phase_3_versiegelung_ps5:
-      durchgaenge: 1 bis 2 dünne Schichten
-      technik: Wenn das Silber trocken ist, sprühst du das Schwarz als letzte Schicht
-        darüber. Das blockt jegliches Licht von unten, macht das Rot extrem satt und
-        sorgt dafür, dass dein Auto von innen hochprofessionell schwarz und sauber
-        aussieht.
-  finish_und_montage:
-    schritt_1_masken_entfernen: Wenn das Schwarz handtrocken ist (nach ca. 1-2 Stunden),
-      die Fenstermasken von innen vorsichtig abziehen.
-    schritt_2_magic_moment: Jetzt die äußere, matte Schutzfolie der Karosserie abziehen.
-      Darunter kommt das spiegelglatte, perfekte Metallic-Rot zum Vorschein!
+  properties:
+    vorbereitung_prep:
+      schritt_1_waschen: Karosserie von INNEN gründlich mit lauwarmem Wasser und einfachem
+        Spülmittel (ohne Pflegezusätze) auswaschen. Mit Küchenpapier trocknen. Das
+        entfernt Produktionsfett und verhindert, dass die Farbe abperlt.
+      schritt_2_abkleben: Die beiliegenden Scheibenaufkleber von INNEN auf die Fenster
+        kleben. Die Ränder der Aufkleber mit dem Fingernagel oder einem Zahnstocher
+        fest anrubbeln, damit später keine Farbe darunterlaufen kann.
+      schritt_3_anwaermen: Alle drei Sprühdosen für 10 Minuten in eine Schüssel mit
+        warmem (nicht kochendem!) Leitungswasser stellen. Der Druck steigt leicht,
+        die Farbe zerstäubt viel feiner und bildet keine dicken Tropfen beim Sprühen.
+    durchfuehrung_3_schicht:
+      regel_nummer_1: LEXAN WIRD IMMER VON INNEN LACKIERT! Die äußere, matte Schutzfolie
+        bleibt bis zum allerletzten Schritt auf der Karosserie!
+      phase_1_hauptfarbe_ps15:
+        durchgaenge: 3 bis 4 hauchdünne Schichten
+        technik: Die ERSTE Schicht ist nur ein feiner Nebel (Klebeschicht). Sie MUSS
+          fleckig und durchsichtig aussehen! Nicht versuchen, es sofort deckend zu
+          machen. 10 Minuten warten. Dann die nächste dünne Schicht sprühen. Wiederholen,
+          bis das Rot aufgebraucht ist.
+      phase_2_brillanz_ps12:
+        durchgaenge: 2 dünne Schichten
+        technik: Wenn das Rot komplett trocken ist (mindestens 30 Min warten), sprühst
+          du das Silber in 2 Durchgängen (mit 10 Min Pause) direkt auf das Rot. Dies
+          wirkt als Reflektor für die Metallic-Partikel und lässt das Rot extrem leuchten.
+      phase_3_versiegelung_ps5:
+        durchgaenge: 1 bis 2 dünne Schichten
+        technik: Wenn das Silber trocken ist, sprühst du das Schwarz als letzte Schicht
+          darüber. Das blockt jegliches Licht von unten, macht das Rot extrem satt
+          und sorgt dafür, dass dein Auto von innen hochprofessionell schwarz und
+          sauber aussieht.
+    finish_und_montage:
+      schritt_1_masken_entfernen: Wenn das Schwarz handtrocken ist (nach ca. 1-2 Stunden),
+        die Fenstermasken von innen vorsichtig abziehen.
+      schritt_2_magic_moment: Jetzt die äußere, matte Schutzfolie der Karosserie abziehen.
+        Darunter kommt das spiegelglatte, perfekte Metallic-Rot zum Vorschein!
 Reifen:
-  reifen_meta:
+  meta:
     brand: Sweep Racing
     model: HANKOOK Tread Belted (SR-SSF-36AWPG)
     typ: Gewebeverstärkter Gummi-Hohlkammerreifen (Belted)
@@ -558,54 +610,18 @@ Reifen:
       kategorie: Räder & Reifen
       referenz_link: Suche nach Sweep SR-SSF-36AWPG bei gängigen RC-Shops
       geschaetzter_preis_eur: 34.9
-  setup_instructions:
-    ballooning_schutz: Dank der inneren Kevlar-/Nylon-Gewebeeinlage dehnt sich der
-      Reifen bei ca. 8.800 U/min (Achsdrehzahl bei 100 km/h) nicht aus. Die Aerodynamik
-      der ZooRacing Hellcat und die Bodenfreiheit bleiben dadurch konstant sicher.
-    radmuttern_sicherung: Zwingend Stoppmuttern mit intaktem Nylonring (M4) verwenden
-      und fest anziehen. Die brachiale Beschleunigung des 3660er Motors kann lockere
-      Muttern sofort abdrehen.
-    auswuchten: Trotz industrieller Fertigung können Reifen leichte Unwuchten haben.
-      Bei starken Vibrationen am aufgebockten Chassis die Räder auswuchten (z.B. mit
-      Knetblei in der Felge), um die Radlager des Carten T410R bei 100 km/h nicht
-      zu zerstören.
-    einfahren_scrubbing: Die glatte Produktionsschicht auf dem Gummi muss erst abgefahren
-      werden. Die ersten Testläufe zum Kalibrieren des ESCs nutzen, um den Grip für
-      den finalen Topspeed-Run aufzubauen.
-Body:
-  aerodynamik_meta:
-    brand: ZooRacing
-    modell: Hellcat
-    fahrzeugklasse: 1:10 On-Road Tourenwagen
-    breite_mm: 190
-    radstand_mm: 257
-    material: Polycarbonat (Lexan)
-    materialstaerke_mm: 0.7
-    shopping_item:
-      in_liste_aufnehmen: true
-      artikel_name: ZooRacing Hellcat 190mm Tourenwagen Karosserie (0.7mm Regular)
-      kategorie: Karosserie & Aerodynamik
-      referenz_link: Suche bei RC-KleinKram oder Tonisport nach 'ZooRacing Hellcat
-        0.7mm'
-      geschaetzter_preis_eur: 32.9
-  aerodynamic_features:
-    front: Tief gezogene Nase und sanfter Haubenwinkel reduzieren den Staudruck und
-      verhindern Lift.
-    roofline: Flach abfallendes Dach leitet die Luft laminar und störungsfrei zum
-      Heckflügel.
-    rear_wing: Inkludierter High-Downforce Flügel sorgt für zwingend benötigte Heckstabilität
-      bei High-Speed.
-  preparation_and_painting:
-    reinigung: Die Innenseite der Karosserie vor dem Lackieren zwingend mit Spülmittel
-      auswaschen, um Trennmittelreste aus der Produktion zu entfernen.
-    lack_typ: Ausschließlich Polycarbonat-Spray (z.B. Tamiya PS-Farben) verwenden.
-      Von innen in mehreren dünnen Schichten lackieren.
-    schutzfolie: Die äußere Overspray-Schutzfolie erst nach dem kompletten Lackieren
-      und Bohren der Löcher abziehen.
-  mounting_instructions:
-    karosserieloecher: Löcher nicht stechen, sondern mit einem speziellen Karosseriebohrer
-      (Reamer) bohren, um Risse im Lexan zu vermeiden.
-    bumper_support: Der Front-Schaumstoffbumper des Chassis muss den vorderen Karosserieüberhang
-      mechanisch abstützen.
-    radkaesten: Radkästen mit einer gebogenen Lexanschere ausschneiden und Kanten
-      mit feinem Schleifpapier glätten, um Einreißen bei Vibrationen zu verhindern.
+  properties:
+    setup_instructions:
+      ballooning_schutz: Dank der inneren Kevlar-/Nylon-Gewebeeinlage dehnt sich der
+        Reifen bei ca. 8.800 U/min (Achsdrehzahl bei 100 km/h) nicht aus. Die Aerodynamik
+        der ZooRacing Hellcat und die Bodenfreiheit bleiben dadurch konstant sicher.
+      radmuttern_sicherung: Zwingend Stoppmuttern mit intaktem Nylonring (M4) verwenden
+        und fest anziehen. Die brachiale Beschleunigung des 3660er Motors kann lockere
+        Muttern sofort abdrehen.
+      auswuchten: Trotz industrieller Fertigung können Reifen leichte Unwuchten haben.
+        Bei starken Vibrationen am aufgebockten Chassis die Räder auswuchten (z.B.
+        mit Knetblei in der Felge), um die Radlager des Carten T410R bei 100 km/h
+        nicht zu zerstören.
+      einfahren_scrubbing: Die glatte Produktionsschicht auf dem Gummi muss erst abgefahren
+        werden. Die ersten Testläufe zum Kalibrieren des ESCs nutzen, um den Grip
+        für den finalen Topspeed-Run aufzubauen.

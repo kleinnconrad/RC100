@@ -1,32 +1,32 @@
-# ==========================================
-# Spezifikation: Räder & Reifen (Tires/Wheels)
-# ==========================================
-# Hersteller: Sweep Racing
-# Modell: HANKOOK Tread Belted Pro-compound 36deg (SR-SSF-36AWPG)
-# Ziel-Einsatz: Maximale Stabilität und Grip bei 100 km/h auf Asphalt ohne Ballooning
-
-reifen_meta:
-  brand: "Sweep Racing"
-  model: "HANKOOK Tread Belted (SR-SSF-36AWPG)"
-  typ: "Gewebeverstärkter Gummi-Hohlkammerreifen (Belted)"
-  profil: "Lizenziertes Hankook Profil (für Parkplatz-Asphalt optimiert)"
-  shore_haerte: "36° (Medium/Hard - idealer Kompromiss aus Grip und Haltbarkeit bei extremer Reibung)"
-  radmitnehmer: "12mm Sechskant (Hex) - Passend für Baukasten-Mitnehmer des Carten T410R"
-  montage_status: "Pre-glued (Ab Werk industriell verklebt auf Speichenfelgen)"
-  
-  shopping_item:
-    in_liste_aufnehmen: true
-    artikel_name: "Sweep HANKOOK Belted Tires 36deg Pre-glued (SR-SSF-36AWPG)"
-    kategorie: "Räder & Reifen"
-    referenz_link: "Suche nach Sweep SR-SSF-36AWPG bei gängigen RC-Shops"
-    geschaetzter_preis_eur: 34.90 # Üblicher Preis für einen Satz (4 Stück) oder 2 Paar
-
-# ==========================================
-# WICHTIGE BAU- & SETUP-HINWEISE
-# ==========================================
-setup_instructions:
-  ballooning_schutz: "Dank der inneren Kevlar-/Nylon-Gewebeeinlage dehnt sich der Reifen bei ca. 8.800 U/min (Achsdrehzahl bei 100 km/h) nicht aus. Die Aerodynamik der ZooRacing Hellcat und die Bodenfreiheit bleiben dadurch konstant sicher."
-  radmuttern_sicherung: "Zwingend Stoppmuttern mit intaktem Nylonring (M4) verwenden und fest anziehen. Die brachiale Beschleunigung des 3660er Motors kann lockere Muttern sofort abdrehen."
-  auswuchten: "Trotz industrieller Fertigung können Reifen leichte Unwuchten haben. Bei starken Vibrationen am aufgebockten Chassis die Räder auswuchten (z.B. mit Knetblei in der Felge), um die Radlager des Carten T410R bei 100 km/h nicht zu zerstören."
-  einfahren_scrubbing: "Die glatte Produktionsschicht auf dem Gummi muss erst abgefahren werden. Die ersten Testläufe zum Kalibrieren des ESCs nutzen, um den Grip für den finalen Topspeed-Run aufzubauen."
-  
+spec:
+  meta:
+    brand: Sweep Racing
+    model: HANKOOK Tread Belted (SR-SSF-36AWPG)
+    typ: Gewebeverstärkter Gummi-Hohlkammerreifen (Belted)
+    profil: Lizenziertes Hankook Profil (für Parkplatz-Asphalt optimiert)
+    shore_haerte: 36° (Medium/Hard - idealer Kompromiss aus Grip und Haltbarkeit bei
+      extremer Reibung)
+    radmitnehmer: 12mm Sechskant (Hex) - Passend für Baukasten-Mitnehmer des Carten
+      T410R
+    montage_status: Pre-glued (Ab Werk industriell verklebt auf Speichenfelgen)
+    shopping_item:
+      in_liste_aufnehmen: true
+      artikel_name: Sweep HANKOOK Belted Tires 36deg Pre-glued (SR-SSF-36AWPG)
+      kategorie: Räder & Reifen
+      referenz_link: Suche nach Sweep SR-SSF-36AWPG bei gängigen RC-Shops
+      geschaetzter_preis_eur: 34.9
+  properties:
+    setup_instructions:
+      ballooning_schutz: Dank der inneren Kevlar-/Nylon-Gewebeeinlage dehnt sich der
+        Reifen bei ca. 8.800 U/min (Achsdrehzahl bei 100 km/h) nicht aus. Die Aerodynamik
+        der ZooRacing Hellcat und die Bodenfreiheit bleiben dadurch konstant sicher.
+      radmuttern_sicherung: Zwingend Stoppmuttern mit intaktem Nylonring (M4) verwenden
+        und fest anziehen. Die brachiale Beschleunigung des 3660er Motors kann lockere
+        Muttern sofort abdrehen.
+      auswuchten: Trotz industrieller Fertigung können Reifen leichte Unwuchten haben.
+        Bei starken Vibrationen am aufgebockten Chassis die Räder auswuchten (z.B.
+        mit Knetblei in der Felge), um die Radlager des Carten T410R bei 100 km/h
+        nicht zu zerstören.
+      einfahren_scrubbing: Die glatte Produktionsschicht auf dem Gummi muss erst abgefahren
+        werden. Die ersten Testläufe zum Kalibrieren des ESCs nutzen, um den Grip
+        für den finalen Topspeed-Run aufzubauen.

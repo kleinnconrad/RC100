@@ -21,8 +21,11 @@ def generate_adr_readme():
             try:
                 data = yaml.safe_load(f)
                 if data:
-                    root_key = list(data.keys())[0]
-                    adr_content = data[root_key]
+                    if 'adr' in data:
+                        adr_content = data['adr']
+                    else:
+                        root_key = list(data.keys())[0]
+                        adr_content = data[root_key]
                     adrs.append(adr_content)
             except Exception as e:
                 print(f"Fehler beim Lesen von {file}: {e}")

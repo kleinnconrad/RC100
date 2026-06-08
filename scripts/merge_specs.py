@@ -19,7 +19,11 @@ def merge_specs():
                     # Macht aus 'ordner/spec_brushless_combo.yaml' -> 'Brushless Combo'
                     clean_name = os.path.basename(file).replace('spec_', '').replace('.yaml', '').replace('_', ' ').title()
                     
-                    merged_data[clean_name] = data
+                    if 'spec' in data:
+                        merged_data[clean_name] = data['spec']
+                    else:
+                        merged_data[clean_name] = data
+                        
                     print(f"✅ {file} erfolgreich zu '{clean_name}' hinzugefügt.")
             except Exception as e:
                 print(f"❌ Fehler beim Lesen von {file}: {e}")

@@ -26,9 +26,7 @@ jobs:
       - name: Run Merge Script
         run: python scripts/merge_specs.py
 
-      # Schritt 2: Markdown-Doku generieren (DAS HAT GEFEHLT!)
-      - name: Run Markdown Generator
-        run: python scripts/yaml_to_md.py
+
 
       # Schritt 3: Einkaufsliste generieren
       - name: Run Shopping List Generator

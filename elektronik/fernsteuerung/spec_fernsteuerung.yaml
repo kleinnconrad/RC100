@@ -1,41 +1,35 @@
-# ==========================================
-# Spezifikation: Fernsteuerung & Empfänger (TX/RX)
-# ==========================================
-# Hersteller: Carson
-# Modell: Reflex Wheel X1
-# Ziel-Einsatz: MVP-Ansatz für solide, störungsfreie Kontrolle bei 100 km/h
-
-tx_meta_transmitter:
-  brand: "Carson"
-  model: "Reflex Wheel X1"
-  type: "2.4 GHz Pistolengriff-Sender (Surface)"
-  channels: 2
-  price_class: "Budget / MVP (~35 EUR)"
-  shopping_item:
-    in_liste_aufnehmen: true
-    artikel_name: "Carson Reflex Wheel X1 2.4Ghz Fernsteuerungs-Set (inkl. Empfänger)"
-    kategorie: "Steuerung & Elektronik"
-    referenz_link: "Suche bei Modellbau-Fachhändler (z.B. Tamico, Berlinski, Amazon)"
-    geschaetzter_preis_eur: 35.00
-
-tx_performance:
-  protocol: "FHSS (Frequency-Hopping Spread Spectrum)"
-  range_ground: "~150 Meter (Ausreichend für übersichtliche Speedruns)"
-  response_time: "Standard 2.4Ghz Latenz"
-  power_supply: "4x AA Batterien"
-
-rx_meta_receiver:
-  model: "Carson Micro-Empfänger (im Set enthalten)"
-  channels: 4 (Physische Steckplätze, 2 aktiv nutzbar)
-  integrated_features:
-    - "Fail-Safe Funktion (Schutz bei Signalverlust)"
-  input_voltage: "4.8V - 6.0V (Achtung: BEC des ESC darf nicht auf 7.4V stehen!)"
-
-# ==========================================
-# ⚠️ WICHTIGE SETUP-HINWEISE FÜR DEN CARTEN T410R
-# ==========================================
-calibration_and_setup:
-  fail_safe_activation: "Das Fail-Safe muss zwingend programmiert werden! Auto aufbocken, Vollbremsung an der Funke halten und den Setup-Knopf am Empfänger drücken. Beim Ausschalten der Funke muss das Auto sofort bremsen."
-  steering_dual_rate: "Über den Dual Rate (D/R) Drehregler an der Fernsteuerung den maximalen Lenkausschlag zwingend auf ca. 30 % reduzieren. Bei 100 km/h führt ein voller Lenkausschlag zum sofortigen Überschlag."
-  throttle_trim: "Die Trimmung für das Gas (TH Trim) muss zwingend exakt auf dem Nullpunkt (Mitte) stehen, bevor der Hobbywing-Regler zum ersten Mal kalibriert wird."
-  bec_voltage_warning: "Der Hobbywing 120A Regler hat ein einstellbares BEC (Stromversorgung für Empfänger/Servo). Dieses muss zwingend auf 6.0V eingestellt bleiben, da der Carson Empfänger bei 7.4V durchbrennen kann."
+spec:
+  meta:
+    brand: Carson
+    model: Carson Micro-Empfänger (im Set enthalten)
+    type: 2.4 GHz Pistolengriff-Sender (Surface)
+    channels: 4 (Physische Steckplätze, 2 aktiv nutzbar)
+    price_class: Budget / MVP (~35 EUR)
+    shopping_item:
+      in_liste_aufnehmen: true
+      artikel_name: Carson Reflex Wheel X1 2.4Ghz Fernsteuerungs-Set (inkl. Empfänger)
+      kategorie: Steuerung & Elektronik
+      referenz_link: Suche bei Modellbau-Fachhändler (z.B. Tamico, Berlinski, Amazon)
+      geschaetzter_preis_eur: 35.0
+    integrated_features:
+    - Fail-Safe Funktion (Schutz bei Signalverlust)
+    input_voltage: '4.8V - 6.0V (Achtung: BEC des ESC darf nicht auf 7.4V stehen!)'
+  properties:
+    tx_performance:
+      protocol: FHSS (Frequency-Hopping Spread Spectrum)
+      range_ground: ~150 Meter (Ausreichend für übersichtliche Speedruns)
+      response_time: Standard 2.4Ghz Latenz
+      power_supply: 4x AA Batterien
+    calibration_and_setup:
+      fail_safe_activation: Das Fail-Safe muss zwingend programmiert werden! Auto
+        aufbocken, Vollbremsung an der Funke halten und den Setup-Knopf am Empfänger
+        drücken. Beim Ausschalten der Funke muss das Auto sofort bremsen.
+      steering_dual_rate: Über den Dual Rate (D/R) Drehregler an der Fernsteuerung
+        den maximalen Lenkausschlag zwingend auf ca. 30 % reduzieren. Bei 100 km/h
+        führt ein voller Lenkausschlag zum sofortigen Überschlag.
+      throttle_trim: Die Trimmung für das Gas (TH Trim) muss zwingend exakt auf dem
+        Nullpunkt (Mitte) stehen, bevor der Hobbywing-Regler zum ersten Mal kalibriert
+        wird.
+      bec_voltage_warning: Der Hobbywing 120A Regler hat ein einstellbares BEC (Stromversorgung
+        für Empfänger/Servo). Dieses muss zwingend auf 6.0V eingestellt bleiben, da
+        der Carson Empfänger bei 7.4V durchbrennen kann.

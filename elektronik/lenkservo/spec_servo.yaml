@@ -1,40 +1,35 @@
-# ==========================================
-# Spezifikation: Lenkservo (Steering)
-# ==========================================
-# Hersteller: JX Servo
-# Modell: PDI-4409MG
-# Ziel-Einsatz: Zuverlässiger Geradeauslauf für 100 km/h (Carten T410R) im MVP-Setup
-
-servo_meta:
-  brand: "JX"
-  model: "PDI-4409MG"
-  type: "Digitales Low-Profile Servo"
-  features: "Coreless Motor (schnelles Ansprechverhalten), exzellentes Preis-Leistungs-Verhältnis"
-  price_class: "Budget (~15 - 22 EUR)"
-
-mechanical_specifications:
-  gears: "Metallgetriebe (Aluminium/Kupfer - überlebenswichtig bei 100 km/h)"
-  case: "Kunststoff mit Aluminium-Mittelteil (als Kühlkörper für den Motor)"
-  spline_teeth: "25T (WICHTIG: Standard Futaba/Savöx/JX Zahnkranz)"
-  dimensions_mm:
-    length: 40.3
-    width: 20.2
-    height: 26.1  # Low-Profile! Schafft den dringend benötigten Platz für den Hobbywing Regler und senkt den Schwerpunkt.
-  weight_g: 44.5
-
-performance_specifications:
-  operating_voltage: "4.8V - 6.0V"
-  torque_6v: "9.2 kg-cm" # Mehr als genug Stellkraft, um die Vorderräder gegen den Winddruck in der Spur zu halten.
-  speed_6v: "0.11 sec / 60°"
-  return_to_center_accuracy: "Gut (Völlig ausreichend für das angepeilte Speedrun-Projekt)"
-
-# ==========================================
-# ⚠️ WICHTIGE BAU- & SETUP-HINWEISE
-# ==========================================
-mandatory_upgrades:
-  part: "Aluminium-Servohorn (Zwingend 25T Verzahnung für JX/Futaba kaufen!)"
-  reason: "Das Baukasten-Plastikhorn verbiegt sich (Flex) bei 100 km/h unter dem extremen Winddruck auf die Vorderräder. Das Alu-Horn garantiert eine absolut steife, spielfreie Lenkverbindung."
-  installation: "Die Schraube, die das Horn auf dem Servo hält, zwingend mit Schraubensicherungslack (z. B. Loctite mittelfest) fixieren, damit sie sich durch Vibrationen nicht löst."
-
-transmitter_setup:
-  dual_rate: "Für den 100 km/h Run muss an der Fernsteuerung zwingend das 'Dual Rate' (D/R) oder der Lenkausschlag (EPA) auf ca. 30-40% reduziert werden. Minimale Lenkbewegungen reichen bei Top-Speed völlig aus. Voller Ausschlag führt zum sofortigen Überschlag."
+spec:
+  meta:
+    brand: JX
+    model: PDI-4409MG
+    type: Digitales Low-Profile Servo
+    features: Coreless Motor (schnelles Ansprechverhalten), exzellentes Preis-Leistungs-Verhältnis
+    price_class: Budget (~15 - 22 EUR)
+  properties:
+    mechanical_specifications:
+      gears: Metallgetriebe (Aluminium/Kupfer - überlebenswichtig bei 100 km/h)
+      case: Kunststoff mit Aluminium-Mittelteil (als Kühlkörper für den Motor)
+      spline_teeth: '25T (WICHTIG: Standard Futaba/Savöx/JX Zahnkranz)'
+      dimensions_mm:
+        length: 40.3
+        width: 20.2
+        height: 26.1
+      weight_g: 44.5
+    performance_specifications:
+      operating_voltage: 4.8V - 6.0V
+      torque_6v: 9.2 kg-cm
+      speed_6v: 0.11 sec / 60°
+      return_to_center_accuracy: Gut (Völlig ausreichend für das angepeilte Speedrun-Projekt)
+    mandatory_upgrades:
+      part: Aluminium-Servohorn (Zwingend 25T Verzahnung für JX/Futaba kaufen!)
+      reason: Das Baukasten-Plastikhorn verbiegt sich (Flex) bei 100 km/h unter dem
+        extremen Winddruck auf die Vorderräder. Das Alu-Horn garantiert eine absolut
+        steife, spielfreie Lenkverbindung.
+      installation: Die Schraube, die das Horn auf dem Servo hält, zwingend mit Schraubensicherungslack
+        (z. B. Loctite mittelfest) fixieren, damit sie sich durch Vibrationen nicht
+        löst.
+    transmitter_setup:
+      dual_rate: Für den 100 km/h Run muss an der Fernsteuerung zwingend das 'Dual
+        Rate' (D/R) oder der Lenkausschlag (EPA) auf ca. 30-40% reduziert werden.
+        Minimale Lenkbewegungen reichen bei Top-Speed völlig aus. Voller Ausschlag
+        führt zum sofortigen Überschlag.

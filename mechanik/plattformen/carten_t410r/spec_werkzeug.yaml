@@ -1,30 +1,37 @@
-werkzeug_meta:
-  beschreibung: "Benötigtes Werkzeug für den Zusammenbau des Carten T410R."
-
-werkzeug_liste:
-  inbus_schraubendreher:
-    typ: "Innensechskant-Schraubendreher (Hex Wrenches)"
-    groessen: "1.5 mm, 2.0 mm, 2.5 mm"
-    hinweis: "Pflichtkauf! Carten nutzt im gesamten Auto metrische M3-Maschinenschrauben (keine selbstschneidenden Schrauben). Ein hochwertiger Inbus ist hier extrem wichtig, um die Schraubenköpfe und das harte Plastikgewinde beim Eindrehen nicht zu beschädigen."
-    brand: "Neewer" 
-    model: "Titan RC Inbus Set (1.5/2.0/2.5/3.0)"
-
-  steckschluessel:
-    typ: "RC Radkreuz / Steckschlüssel (Box Wrench)"
-    groessen: "5.5 mm und 7.0 mm"
-    hinweis: "Die 5.5 mm brauchst du permanent für alle M3-Muttern im Chassis. Die 7.0 mm sind für die Radmuttern. Die in der Carten-Anleitung erwähnten 10.0 mm werden bei diesem 1/10 Modell überhaupt nicht benötigt."
-    status: "Vorhanden (Kein Kauf nötig)"
-
-  klebstoffe_und_chemie:
-    schraubensicherung:
-      typ: "Schraubensicherungslack (Screw Cement / Threadlocker)"
-      hinweis: "Extrem wichtig! Kommt an alle Schrauben, die in Metall gedreht werden (z. B. Motorritzel). In der Carten-Anleitung oft fälschlicherweise als 'GLUE' beschriftet. Niemals für Plastik verwenden!"
-      brand: "Loctite"
-      model: "243 Mittelfest (Blau)"
-
-  klebebaender:
-    panzertape:
-      typ: "Glasfaserklebeband (Glass Tape)"
-      hinweis: "Pflicht für den T410R! Das Auto besitzt keine klassischen Plastik-Akkuhalterungen. Das Klebeband wird laut Anleitung durch die Schlitze im Carbon-Chassis gezogen, um den LiPo-Akku festzuschnallen."
-      brand: "Arrowmax"
-      model: "Fibre Tape / Battery Tape"
+spec:
+  meta:
+    beschreibung: Benötigtes Werkzeug für den Zusammenbau des Carten T410R.
+  properties:
+    werkzeug_liste:
+      inbus_schraubendreher:
+        typ: Innensechskant-Schraubendreher (Hex Wrenches)
+        groessen: 1.5 mm, 2.0 mm, 2.5 mm
+        hinweis: Pflichtkauf! Carten nutzt im gesamten Auto metrische M3-Maschinenschrauben
+          (keine selbstschneidenden Schrauben). Ein hochwertiger Inbus ist hier extrem
+          wichtig, um die Schraubenköpfe und das harte Plastikgewinde beim Eindrehen
+          nicht zu beschädigen.
+        brand: Neewer
+        model: Titan RC Inbus Set (1.5/2.0/2.5/3.0)
+      steckschluessel:
+        typ: RC Radkreuz / Steckschlüssel (Box Wrench)
+        groessen: 5.5 mm und 7.0 mm
+        hinweis: Die 5.5 mm brauchst du permanent für alle M3-Muttern im Chassis.
+          Die 7.0 mm sind für die Radmuttern. Die in der Carten-Anleitung erwähnten
+          10.0 mm werden bei diesem 1/10 Modell überhaupt nicht benötigt.
+        status: Vorhanden (Kein Kauf nötig)
+      klebstoffe_und_chemie:
+        schraubensicherung:
+          typ: Schraubensicherungslack (Screw Cement / Threadlocker)
+          hinweis: Extrem wichtig! Kommt an alle Schrauben, die in Metall gedreht
+            werden (z. B. Motorritzel). In der Carten-Anleitung oft fälschlicherweise
+            als 'GLUE' beschriftet. Niemals für Plastik verwenden!
+          brand: Loctite
+          model: 243 Mittelfest (Blau)
+      klebebaender:
+        panzertape:
+          typ: Glasfaserklebeband (Glass Tape)
+          hinweis: Pflicht für den T410R! Das Auto besitzt keine klassischen Plastik-Akkuhalterungen.
+            Das Klebeband wird laut Anleitung durch die Schlitze im Carbon-Chassis
+            gezogen, um den LiPo-Akku festzuschnallen.
+          brand: Arrowmax
+          model: Fibre Tape / Battery Tape
