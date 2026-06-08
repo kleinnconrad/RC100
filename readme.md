@@ -16,6 +16,7 @@ Die technische Herausforderung resultiert primär aus dem gewählten Maßstab un
 * [Hardwarearchitektur und Mechanik](#hardwarearchitektur-und-mechanik)
 * [Berechnungsmodelle zur Antriebsauslegung](#berechnungsmodelle-zur-antriebsauslegung)
 * [Repository-Verwaltung und Automatisierung](#repository-verwaltung-und-automatisierung)
+* [Weiterführendes Projekt: Telemetriesystem](#weiterführendes-projekt-telemetriesystem)
 * [Lizenzierung](#lizenzierung)
 
 ## Repository-Struktur
@@ -60,6 +61,11 @@ Die Pflege der als YAML-Dateien formatierten Spezifikationen und Architekturents
 * **Aggregation der Spezifikationen**: Individuelle Hardwarespezifikationen werden zu einer zentralen Spezifikationsdatei im Hauptverzeichnis zusammengeführt.
 * **Kostenübersicht**: Stück- und Einkaufslisten werden automatisch aus den Spezifikationen abgeleitet und aktualisiert.
 * **Entscheidungsprotokoll**: Architekturentscheidungen werden automatisch in ein chronologisches Protokoll kompiliert.
+
+## Weiterführendes Projekt: Telemetriesystem
+An dieses Vorhaben knüpft ein eigenständiges Projekt an, welches sich mit der Entwicklung eines Telemetriedatensystems auf Basis eines ESP32-Mikrocontrollers befasst. Ziel ist die sensorische Erfassung und Übertragung fahrdynamischer Parameter des RC-Fahrzeugs.
+
+[![Carten Telemetrie](https://github-readme-stats.vercel.app/api/pin/?username=kleinnconrad&repo=carten_telemetrie&theme=default)](https://github.com/kleinnconrad/carten_telemetrie)
 
 ## Lizenzierung
 * Der Quellcode der Berechnungsmodelle unterliegt der MIT-Lizenz. 
