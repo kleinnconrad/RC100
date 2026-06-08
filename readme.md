@@ -28,7 +28,27 @@ Das Projekt ist in themenspezifische Verzeichnisse gegliedert:
 * **`/scripts`**: Automatisierungsskripte und Berechnungsmodelle zur Systemauslegung.
 
 ## Hardwarearchitektur und Mechanik
-Das Projekt unterteilt sich in die oben genannten Schwerpunkte. Die Dokumentation der Architekturentscheidungen (ADRs) sowie die Spezifikationen aller mechanischen und elektronischen Komponenten werden konsequent als strukturierte YAML-Dateien (`.yml` oder `.yaml`) gepflegt.
+Das Projekt unterteilt sich in die oben genannten Schwerpunkte. Die Dokumentation der Architekturentscheidungen (ADRs) sowie die Spezifikationen aller mechanischen und elektronischen Komponenten werden konsequent als strukturierte YAML-Dateien (`.yml` oder `.yaml`) gepflegt. Die formale hierarchische Struktur dieser Dateien ist wie folgt standardisiert:
+
+```mermaid
+classDiagram
+    class adr {
+        +id: String
+        +title: String
+        +status: String
+        +date: Date
+        +context: Text
+        +considered_alternatives: List
+        +decision: String
+        +rationale: Text
+    }
+    
+    class spec {
+        +meta: Object
+        +properties: Object
+        +integration_notes: Object
+    }
+```
 
 ## Berechnungsmodelle zur Antriebsauslegung
 Zur Vermeidung thermischer oder mechanischer Überlastungen der Elektronikkomponenten kommen eigens entwickelte Berechnungsmodelle zum Einsatz:
