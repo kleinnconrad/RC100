@@ -1,21 +1,9 @@
-# RC100: >= 100 km/h 1:10 RC-Auto-Projekt
+# RC100: 1:10 RC-Fahrzeug für Geschwindigkeiten über 100 km/h
 
-Willkommen im RC100 Projekt-Repository. Dies ist ein privates Projekt mit dem Ziel, einen **RC Onroad Tourenwagen im Maßstab 1:10** zu entwerfen und zu bauen, der Geschwindigkeiten von **mindestens 100 km/h** erreicht. Das primäre technische Ziel ist es, die Leistung zu maximieren und den Bau gleichzeitig so **günstig** und **zuverlässig** wie möglich zu halten.
+Dieses Projekt umfasst die Entwicklung und den Aufbau eines Onroad-Tourenwagens im Maßstab 1:10 mit dem Konstruktionsziel einer Endgeschwindigkeit von über 100 km/h. Der Fokus liegt auf der Maximierung der Antriebsleistung bei gleichzeitiger Gewährleistung der mechanischen Zuverlässigkeit und Kosteneffizienz.
 
-Die Herausforderung liegt in dem kleinen Maßstab und dem geringen Reifendurchmesser von 64mm. Die Grenze von 100 km/h sind für >= 1:8 RC Autos deutlich leichter zu erreichen. Durch deren höheres Gewicht und den deutlich größeren Reifendurchmesser haben sie die Physik auf ihrer Seite. Im Bereich 1:10 wirken jedoch extreme Drehzahlen und Kräfte auf vergleichsweise filigrane Teile. Durch das geringe Gewicht ist auch die Straßenlage eine Herausforderung.
+Die technische Herausforderung resultiert primär aus dem gewählten Maßstab und dem limitierten Reifendurchmesser von 64 Millimetern. Während Fahrzeuge ab dem Maßstab 1:8 durch höhere Masseträgheit und größere Abrollumfänge physikalische Vorteile aufweisen, erfordert der Maßstab 1:10 signifikant höhere Rotordrehzahlen. Dies führt zu hohen mechanischen Belastungen im Antriebsstrang. Das geringe Fahrzeuggewicht erfordert zudem präzise aerodynamische und fahrwerksseitige Abstimmungen zur Sicherstellung der Fahrstabilität bei hohen Geschwindigkeiten.
 
-## Inhaltsverzeichnis
-* [Repository-Struktur](#repository-struktur)
-* [Arbeitsweise in diesem Repository](#arbeitsweise-in-diesem-repository)
-  * [Hinzufügen oder Ändern von Spezifikationen](#hinzufügen-oder-ändern-von-spezifikationen)
-  * [Dokumentation von Architektur-Entscheidungen (ADRs)](#dokumentation-von-architektur-entscheidungen-adrs)
-* [GitHub Actions](#github-actions)
-  * [Workflows](#workflows)
-  * [Workflows manuell auslösen](#workflows-manuell-auslösen)
-* [Getriebe Rechner (CLI-Tool)](#getriebe-rechner-cli-tool)
-* [Limit Rechner (CLI-Tool)](#limit-rechner-cli-tool)
-* [Lizenzierung](#lizenzierung)
-  
 <table>
   <tr>
     <td><img src="https://github.com/kleinnconrad/RC100/blob/main/elektronik/fotos/PXL_20260315_113015136.jpg?raw=true" alt="Carten T410R JK" width="100%"></td>
@@ -23,97 +11,36 @@ Die Herausforderung liegt in dem kleinen Maßstab und dem geringen Reifendurchme
   </tr>
 </table>
 
+## Inhaltsverzeichnis
+* [Repository-Struktur](#repository-struktur)
+* [Hardwarearchitektur und Mechanik](#hardwarearchitektur-und-mechanik)
+* [Berechnungsmodelle zur Antriebsauslegung](#berechnungsmodelle-zur-antriebsauslegung)
+* [Repository-Verwaltung und Automatisierung](#repository-verwaltung-und-automatisierung)
+* [Lizenzierung](#lizenzierung)
+
 ## Repository-Struktur
+Das Projekt ist in themenspezifische Verzeichnisse gegliedert:
+* **`/architektur`**: Dokumentation grundlegender Systemdesigns und Architekturentscheidungen.
+* **`/elektronik`**: Auswahl und Spezifikation elektronischer Komponenten wie Motoren, Fahrtenregler und Akkumulatoren.
+* **`/mechanik`**: Chassis-Design, Konstruktionsdaten sowie die Spezifikation physischer Bauteile.
+* **`/messdaten`**: Erfassung und Auswertung von Testergebnissen und Leistungsmessdaten.
+* **`/projekt`**: Allgemeines Projektmanagement und Übersichten zur Kostenkontrolle.
+* **`/scripts`**: Automatisierungsskripte und Berechnungsmodelle zur Systemauslegung.
 
-Das Projekt ist in themenspezifische Unterordner gegliedert, um Spezifikationen, Daten und Designs übersichtlich zu strukturieren:
+## Hardwarearchitektur und Mechanik
+Das Projekt unterteilt sich in die oben genannten Schwerpunkte. Die Dokumentation der Architekturentscheidungen (ADRs) sowie die Spezifikationen aller mechanischen und elektronischen Komponenten werden konsequent als strukturierte YAML-Dateien (`.yml` oder `.yaml`) gepflegt.
 
-* **/architektur** - Für Architectural Decision Records (ADRs) und grundlegende Systemdesigns.
-* **/elektronik** - Für elektronische Komponenten und zugehörige Spezifikationen.
-* **/mechanik** - Für mechanische Teile,  Chassis-Design, CAD Modelle und physische Spezifikationen.
-* **/messdaten** - Für Testergebnisse und Leistungsmessdaten.
-* **/projekt** - Für allgemeines Projektmanagement, Planung und Übersichten.
-* **/scripts** - Für Automatisierungen und Berechnungen.
+## Berechnungsmodelle zur Antriebsauslegung
+Zur Vermeidung thermischer oder mechanischer Überlastungen der Elektronikkomponenten kommen eigens entwickelte Berechnungsmodelle zum Einsatz:
+* **Getriebe-Rechner (`scripts/calc/getriebe_calc.py`)**: Simuliert auf Basis des Reifendurchmessers und der Zielgeschwindigkeit die mechanische Radlast für den Motor in Abhängigkeit der verfügbaren Motorritzel. Die Setups werden in Belastungszonen für das definierte Antriebssystem kategorisiert.
+* **Limit-Rechner (`scripts/calc/max_speed.py`)**: Kalkuliert die erreichbare Endgeschwindigkeit unter Einbezug der spezifischen Motordaten, der Akkuspannung und definierter thermischer Toleranzgrenzen anhand der physischen Hardware-Spezifikationen.
 
----
+## Repository-Verwaltung und Automatisierung
+Die Pflege der als YAML-Dateien formatierten Spezifikationen und Architekturentscheidungen löst automatisierte Prozesse aus:
+* **Aggregation der Spezifikationen**: Individuelle Hardwarespezifikationen werden zu einer zentralen Spezifikationsdatei im Hauptverzeichnis zusammengeführt.
+* **Kostenübersicht**: Stück- und Einkaufslisten werden automatisch aus den Spezifikationen abgeleitet und aktualisiert.
+* **Entscheidungsprotokoll**: Architekturentscheidungen werden automatisch in ein chronologisches Protokoll kompiliert.
 
-## Arbeitsweise in diesem Repository
-
-Alle Mitwirkenden können Standard-Git-Praktiken (Branching, Committing, Pulling, Pushing) nutzen, um allgemeine Projektinformationen, CAD-Dateien oder Testdaten in die jeweiligen Unterordner hochzuladen. Für Spezifikationen und Architektur-Entscheidungen gelten die folgenden spezifischen Workflows.
-
-### Hinzufügen oder Ändern von Spezifikationen
-Systemspezifikationen werden thematisch verteilt in den entsprechenden Unterordnern verwaltet. 
-
-* **Format:** YAML
-* **Namenskonvention:** `spec_<beschreibender_name>.yaml` (z. B. `spec_motor.yaml`)
-* **Speicherort:** Platziere die Datei in dem Unterordner, der thematisch am besten passt (z. B. `/elektronik`).
-* **Workflow:** Datei einfach committen und pushen. Unsere automatisierte Pipeline fasst alle individuellen Spezifikationen in einer zentralen `full_spec.yaml` und einer formatierten `full_spec.md` im Hauptverzeichnis zusammen.
-
-> **Tipp:** Wenn du mit der YAML-Syntax nicht vertraut bist, empfehlen wir dringend, ein LLM (Large Language Model wie Gemini oder ChatGPT) zu verwenden, um die YAML-Struktur für dich zu generieren. Beschreibe deine Spezifikation einfach als normalen Text und bitte das LLM, sie als saubere YAML-Datei zu formatieren.
-
-### Dokumentation von Architektur-Entscheidungen (ADRs)
-Wann immer eine wichtige Designentscheidung getroffen wird (z. B. die Wahl eines bestimmten Motorprotokolls), sollte diese als ADR dokumentiert werden.
-
-* **Format:** YAML
-* **Namenskonvention:** `adr_<beschreibender_name>.yaml` (z. B. `adr_batteriechemie.yaml`)
-* **Speicherort:** Muss im Ordner `/architektur` abgelegt werden.
-* **Workflow:** Datei committen und pushen. Eine automatisierte Pipeline kompiliert alle ADRs sofort in eine gut lesbare `README.md` im Ordner `/architektur`.
-
-> **Tipp:** Genau wie bei den Spezifikationen gilt: Wenn du nicht weißt, wie man ein ADR in YAML strukturiert, nutze ein LLM, um deine Entscheidungsnotizen in eine korrekt formatierte YAML-Datei zu übersetzen.
-
----
-
-## GitHub Actions
-
-Dieses Repository nutzt GitHub Actions (im Ordner `.github/workflows/`), um automatisch Dokumentationen zu generieren und Konfigurationen zusammenzuführen. Du musst im Normalfall nichts tun, um diese auszulösen – sie starten automatisch, wenn entsprechende Dateien hochgeladen oder geändert werden.
-
-### Workflows
-
-1. **Build Spec (`build_spec.yml`)**
-    * **Auslöser:** Startet automatisch, wenn eine Datei mit dem Muster `spec_*.yaml` in einem Unterordner hinzugefügt oder geändert wird.
-    * **Aktion:** Führt `merge_specs.py` aus, um alle einzelnen Spezifikationsdateien zu einer einzigen, zentralen `full_spec.yaml` im Hauptverzeichnis zusammenzuführen.
-2. **Build Full Spec MD (`build_full_spec_md.yml`)**
-    * **Auslöser:** Startet *automatisch als abhängige Aktion* direkt nach dem erfolgreichen Abschluss von `build_spec.yml`.
-    * **Aktion:** Führt `yaml_to_md.py` aus, um die rohe `full_spec.yaml` in eine ansprechende, gut lesbare `full_spec.md` im Hauptverzeichnis umzuwandeln.
-3. **Build ADR Readme (`build_adr_readme.yml`)**
-    * **Auslöser:** Startet automatisch, wenn eine Datei mit dem Muster `adr_*.yaml` im Ordner `/architektur` hinzugefügt oder geändert wird.
-    * **Aktion:** Führt `generate_adr_readme.py` aus, um alle ADRs in einer zentralen `architektur/README.md` zusammenzustellen, die eine chronologische Übersicht der Projektentscheidungen bietet.
-
-4. **Build shopping list (`build_spec.yml`)**
-    * **Auslöser:** Startet automatisch, wenn eine Datei mit dem Muster `spec_*.yaml` in einem Unterordner hinzugefügt oder geändert wird.
-    * **Aktion:** Führt `generate_shopping_list.py` aus, um eine shopping list im Ordner `projekt/kosten`zu erstellen.
-  
-5. **Reddit Feedback (`reddit-sync.yml`)**
-
-### Workflows manuell auslösen
-Wenn du Änderungen an den Python-Skripten testest oder die Dokumentation neu generieren möchtest, ohne eine Spec/ADR zu ändern, kannst du diese Aktionen manuell starten:
-1. Navigiere zum Tab **Actions** oben im GitHub-Repository.
-2. Klicke in der linken Seitenleiste auf den Workflow, den du ausführen möchtest (z. B. `build_spec`).
-3. Klicke auf den Button **Run workflow** auf der rechten Seite.
-4. Wähle den gewünschten Branch aus und klicke auf den grünen Button **Run workflow**.
-
-## Getriebe Rechner (CLI-Tool)
-
-Um bei 100 km/h nicht blindlings die Elektronik zu überlasten, enthält dieses Repository ein maßgeschneidertes Python-Skript zur Berechnung der optimalen Getriebeübersetzung für den **Carten T410R**. 
-
-Der Rechner simuliert anhand des Reifendurchmessers und der gewünschten Zielgeschwindigkeit die exakte mechanische Belastung (Radlast) für den Motor bei allen passenden Motorritzeln (21Z - 44Z am 72Z Hauptzahnrad). Er warnt vor Überlastung und teilt die möglichen Setups automatisch in Belastungs-Zonen (Grün, Gelb, Rot) für einen gegebenen 3S brushless Antrieb ein.
-
-**So startest du das Tool (Lokal oder GitHub Codespace):**
-```bash
-python scripts/calc/getriebe_calc.py
-```
-## Limit Rechner (CLI-Tool)
-
-Dieser "Reverse-Calculator" ergänzt den Getriebe-Rechner, indem er die maximal mögliche Höchstgeschwindigkeit des Carten T410R auf Basis der physischen Hardware-Limits berechnet. Anstatt eine Wunschgeschwindigkeit vorzugeben, berechnet das Skript anhand deiner Motor- und Akku-Daten sowie deiner persönlichen Schmerzgrenze für die thermische Belastung (Radlast), was das Auto wirklich hergibt.
-
-**So startest du das Tool (Lokal oder GitHub Codespace):**
-```bash
-python scripts/calc/max_speed.py
-```
 ## Lizenzierung
-
-Dieses Projekt verwendet einen hybriden Lizenzansatz:
-
-* **Software & Code:** Alle Python-Skripte und sonstiger Quellcode in diesem Repository sind unter der [MIT License](LICENSE) lizenziert.
-* **Hardware-Design & Dokumentation:** Alle Architecture Decision Records (ADRs), Build Logs, Spezifikationen, Texte und Bilder sind unter der [Creative Commons Attribution 4.0 International License (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/) lizenziert. 
-
-Das bedeutet zusammenfassend: Du darfst sowohl den Code als auch die Dokumentation für eigene (auch kommerzielle) Projekte nutzen, anpassen und weiterverbreiten, **solange du mich als Urheber nennst**.
+* Der Quellcode der Berechnungsmodelle unterliegt der MIT-Lizenz. 
+* Das Hardware-Design, die Dokumentationen, Spezifikationen und Testergebnisse sind unter der Creative Commons Attribution 4.0 International Lizenz freigegeben. Eigene Anpassungen und kommerzielle Nutzungen sind unter Nennung der Urheberschaft zulässig.
