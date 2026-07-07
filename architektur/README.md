@@ -1,61 +1,5 @@
 # Architecture Decision Records (ADRs)
 
-
-## Inhaltsverzeichnis
-* [Übersicht](#ubersicht)
-* [Detail-Protokolle](#detail-protokolle)
-  * [ADR-001: Auswahl der Chassis-Plattform und Make-or-Buy-Entscheidung (100 km/h Benchmark)](#adr-001-auswahl-der-chassis-plattform-und-make-or-buy-entscheidung-100-kmh-benchmark)
-    * [Kontext](#kontext)
-    * [Entscheidung](#entscheidung)
-    * [Begründung (Rationale)](#begrundung-rationale)
-    * [Konsequenzen](#konsequenzen)
-  * [ADR-002: Auswahl der Brushless-Motor-Combo für 100 km/h Speedruns](#adr-002-auswahl-der-brushless-motor-combo-fur-100-kmh-speedruns)
-    * [Kontext](#kontext)
-    * [Entscheidung](#entscheidung)
-    * [Begründung (Rationale)](#begrundung-rationale)
-    * [Konsequenzen](#konsequenzen)
-  * [ADR-003: Auswahl des LiPo-Akkus für 100 km/h Ziel.](#adr-003-auswahl-des-lipo-akkus-fur-100-kmh-ziel)
-    * [Kontext](#kontext)
-    * [Entscheidung](#entscheidung)
-    * [Begründung (Rationale)](#begrundung-rationale)
-    * [Konsequenzen](#konsequenzen)
-  * [ADR-004: Auswahl des Ladegeräts für 3S LiPo-Akkus](#adr-004-auswahl-des-ladegerats-fur-3s-lipo-akkus)
-    * [Kontext](#kontext)
-    * [Entscheidung](#entscheidung)
-    * [Begründung (Rationale)](#begrundung-rationale)
-    * [Konsequenzen](#konsequenzen)
-  * [ADR-005: Auswahl der Fernsteuerungsanlage für 100 km/h Speedruns](#adr-005-auswahl-der-fernsteuerungsanlage-fur-100-kmh-speedruns)
-    * [Kontext](#kontext)
-    * [Entscheidung](#entscheidung)
-    * [Begründung (Rationale)](#begrundung-rationale)
-    * [Konsequenzen](#konsequenzen)
-  * [ADR-006: Auswahl des Lenkservos für präzise High-Speed-Kontrolle](#adr-006-auswahl-des-lenkservos-fur-prazise-high-speed-kontrolle)
-    * [Kontext](#kontext)
-    * [Entscheidung](#entscheidung)
-    * [Begründung (Rationale)](#begrundung-rationale)
-    * [Konsequenzen](#konsequenzen)
-  * [ADR-007: Auswahl der aktiven und passiven Motorkühlung für 3S-Speedruns](#adr-007-auswahl-der-aktiven-und-passiven-motorkuhlung-fur-3s-speedruns)
-    * [Kontext](#kontext)
-    * [Entscheidung](#entscheidung)
-    * [Begründung (Rationale)](#begrundung-rationale)
-    * [Konsequenzen](#konsequenzen)
-  * [ADR-008: Auswahl der Bereifung (Belted Gummireifen für Asphalt) für 100 km/h Speedruns](#adr-008-auswahl-der-bereifung-belted-gummireifen-fur-asphalt-fur-100-kmh-speedruns)
-    * [Kontext](#kontext)
-    * [Entscheidung](#entscheidung)
-    * [Begründung (Rationale)](#begrundung-rationale)
-    * [Konsequenzen](#konsequenzen)
-  * [ADR-009: Auswahl der aerodynamischen Karosserie für 100 km/h Speedruns](#adr-009-auswahl-der-aerodynamischen-karosserie-fur-100-kmh-speedruns)
-    * [Kontext](#kontext)
-    * [Entscheidung](#entscheidung)
-    * [Begründung (Rationale)](#begrundung-rationale)
-    * [Konsequenzen](#konsequenzen)
-  * [ADR-010: Auswahl des GPS-Messsystems zur Validierung der 100 km/h Marke](#adr-010-auswahl-des-gps-messsystems-zur-validierung-der-100-kmh-marke)
-    * [Kontext](#kontext)
-    * [Entscheidung](#entscheidung)
-    * [Begründung (Rationale)](#begrundung-rationale)
-    * [Konsequenzen](#konsequenzen)
-
-
 Dieses Verzeichnis enthält alle grundlegenden architektur- und Hardwareentscheidungen für das RC100 Projekt. **Diese Datei wird automatisch generiert. Bitte nicht manuell bearbeiten.**
 
 ## Übersicht
@@ -82,7 +26,7 @@ Dieses Verzeichnis enthält alle grundlegenden architektur- und Hardwareentschei
 
 #### Kontext
 Für das 100 km/h-Speedrun-Projekt wird eine mechanisch stabile Basis benötigt. Die Plattform muss 
-hohen Belastungen (ca. 44.000 U/min am Motor, massive Fliehkräfte an den Achsen) standhalten. 
+extremen Belastungen (ca. 44.000 U/min am Motor, massive Fliehkräfte an den Achsen) standhalten. 
 Die grundlegende Architektur-Frage (Make or Buy) vergleicht den Aufbau eines eigenen Budget-Kits ("Make") 
 mit dem Kauf eines teuren, vormontierten High-End-Wettbewerbschassis ("Buy"). 
 Ein kritisches Risiko für den 3S-Einsatz stellen Differentialzahnräder aus Kunststoff/Composite dar, 
