@@ -3,7 +3,7 @@ spec:
     brand: Tamiya
     system: 3-Schicht Metallic-Aufbau
     typ: Spezial-Polycarbonatspray (Lexan) - Ätzt sich in den Kunststoff ein
-    eigenschaften: Hochflexibel, extrem widerstandsfähig gegen Abblättern bei Crashes.
+    eigenschaften: Hochflexibel, stark widerstandsfähig gegen Abblättern bei Crashes.
     shopping_items:
     - artikel_name: Tamiya PS-15 Metallic Rot (100ml)
       referenz_link: Suche nach Tamiya PS-15 bei RC-Shops
@@ -38,11 +38,11 @@ spec:
         durchgaenge: 2 dünne Schichten
         technik: Wenn das Rot komplett trocken ist (mindestens 30 Min warten), sprühst
           du das Silber in 2 Durchgängen (mit 10 Min Pause) direkt auf das Rot. Dies
-          wirkt als Reflektor für die Metallic-Partikel und lässt das Rot extrem leuchten.
+          wirkt als Reflektor für die Metallic-Partikel und lässt das Rot stark leuchten.
       phase_3_versiegelung_ps5:
         durchgaenge: 1 bis 2 dünne Schichten
         technik: Wenn das Silber trocken ist, sprühst du das Schwarz als letzte Schicht
-          darüber. Das blockt jegliches Licht von unten, macht das Rot extrem satt
+          darüber. Das blockt jegliches Licht von unten, macht das Rot stark satt
           und sorgt dafür, dass dein Auto von innen hochprofessionell schwarz und
           sauber aussieht.
     finish_und_montage:

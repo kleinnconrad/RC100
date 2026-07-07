@@ -8,7 +8,7 @@
 **u/Basic-You7791** [schrieb](https://www.reddit.com/r/rccars/comments/1s8nl1m/build_first_rc_project_engineering_a_budget/):
 > Hey 
 > r/rccars
-> ! 👋 We’re complete newbies to the hobby, but we jumped right in with a small family project. The Goal: Build a budget-friendly 1:10 RC car (Carten T410R chassis as it turned out after researching) that can repeatedly hit 100 km/h (62 mph) without breaking. Instead of just throwing the first suggested components at it, we tried to take a "well-engineered" approach to "playfully" introduce our kids to structured problem-solving. We used specs, thermal/gear calculations, Architecture Decision Records (ADRs), BOM etc. for the build. On top of that, we’re trying to turn the car into a smart IoT device that live-streams its own telemetry data during speed runs! We documented everything on GitHub. Quick apology: The repos are in German! And we are unfortunately not done yet. We did a lot of beginners mistakes that still needs to be fixed.
+> !  We’re complete newbies to the hobby, but we jumped right in with a small family project. The Goal: Build a budget-friendly 1:10 RC car (Carten T410R chassis as it turned out after researching) that can repeatedly hit 100 km/h (62 mph) without breaking. Instead of just throwing the first suggested components at it, we tried to take a "well-engineered" approach to "playfully" introduce our kids to structured problem-solving. We used specs, thermal/gear calculations, Architecture Decision Records (ADRs), BOM etc. for the build. On top of that, we’re trying to turn the car into a smart IoT device that live-streams its own telemetry data during speed runs! We documented everything on GitHub. Quick apology: The repos are in German! And we are unfortunately not done yet. We did a lot of beginners mistakes that still needs to be fixed.
 >  
 > Main Build (Specs, ADRs, Calculators): 
 > https://github.com/kleinnconrad/RC100
@@ -41,7 +41,7 @@
 ---
 
 **u/Basic-You7791** [schrieb](https://www.reddit.com/r/rccars/comments/1s8nl1m/build_first_rc_project_engineering_a_budget/odiapbm/):
-> Thanks for the hints! We'll look into that. The kid's are 6 and 4. We involve them on appropriate level so they can follow and contribute. Esp. we discuss with the kids that parts have required properties (specs) and that there are mostly several options to choose from (ADR's). We show the parts to them (from the vendor sites), explain what they do and how they are different from each other and discuss and decide together what would be best. Also the kids can help with the building. Ofc the 4 year old is still limited but he can already often get the point. The reflection of the elaborations on GitHub is something we will hand to them later. Till then they know that everything we discuss, decide and do will be "put to the Internet". What they like best is doing testing with the car ofc😄.
+> Thanks for the hints! We'll look into that. The kid's are 6 and 4. We involve them on appropriate level so they can follow and contribute. Esp. we discuss with the kids that parts have required properties (specs) and that there are mostly several options to choose from (ADR's). We show the parts to them (from the vendor sites), explain what they do and how they are different from each other and discuss and decide together what would be best. Also the kids can help with the building. Ofc the 4 year old is still limited but he can already often get the point. The reflection of the elaborations on GitHub is something we will hand to them later. Till then they know that everything we discuss, decide and do will be "put to the Internet". What they like best is doing testing with the car ofc.
 
 ---
 
@@ -114,7 +114,7 @@
 >  
 > Get ready for the adrenaline when you attempt a pass!
 >  
-> Fyi on my HNR I achieved a 97% theoretical to actual speed conversion ratio as I started building up speed 👍
+> Fyi on my HNR I achieved a 97% theoretical to actual speed conversion ratio as I started building up speed 
 
 ---
 

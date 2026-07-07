@@ -1,5 +1,11 @@
 # Build Log
 
+
+## Inhaltsverzeichnis
+* [Tag 3 - Elektronik-Integration & Antriebsstrang](#tag-3---elektronik-integration--antriebsstrang)
+* [Fortschritt](#fortschritt)
+
+
 ## Tag 3 - Elektronik-Integration & Antriebsstrang
 **Datum:** 15.03.2026
 **Status:** Erledigt
@@ -9,12 +15,12 @@
 * **Motor-Packaging (3660 vs. 3650):** Der Hobbywing 3660er Motor passt in das Chassis, bewegt sich jedoch an den Grenzen der physischen Toleranz. 
   > Laut Hersteller ist das Chassis primär für kürzere 3650er Motoren ausgelegt. Ein 3650er würde sich minimal in den 5 cm langen Bodenausschnitt des Chassis versenken. Der 3660er sitzt im Rahmen akzeptabler Toleranz.
 
-* **Kalibrierung des Antriebsstrangs:** Das Zahnflankenspiel (Gear Mesh) zwischen dem Hartstahl-Ritzel und dem Hauptzahnrad wurde nach bewährter Best-Practice mit einem normalen Streifen Papier kalibriert. Dies stellt einen leichtgängigen Lauf sicher und verhindert bei hohen Drehzahlen sowohl übermäßige Reibungshitze als auch das "Strippen" der Zähne.
+* **Kalibrierung des Antriebsstrangs:** Das Zahnflankenspiel (Gear Mesh) zwischen dem Hartstahl-Ritzel und dem Hauptzahnrad wurde mit einem Streifen Papier kalibriert. Dies stellt einen leichtgängigen Lauf sicher und verhindert bei hohen Drehzahlen übermäßige Reibungshitze sowie das Überspringen der Zähne.
 
-* **Energie-Packaging (LiPo):** Entgegen der Spezifikationen in der Carten-Bauanleitung lässt sich der 3 cm hohe Absima 3S-LiPo physisch einwandfrei im Batteriefach verbauen. Das ist ein kritischer Gewinn für die Energiebereitstellung des 120A Setups.
+* **Energie-Packaging (LiPo):** Entgegen der Spezifikationen in der Carten-Bauanleitung lässt sich der 3 cm hohe Absima 3S-LiPo im Batteriefach verbauen. Dies stellt die Energiebereitstellung des 120A Setups sicher.
 
 * **Thermisches Management (Custom Lüfter-Mod):** Der zuvor beschaffte Kühlkörper (für glatte 36er Motoren) erwies sich als inkompatibel mit dem geriffelten Gehäuse des Quicrun G2 Motors. Eine Montage hätte aufgrund der minimalen Kontaktfläche ohnehin zu keiner Kühlleistung geführt. 
-  > Der Lüfter wurde vom fehlerhaften Aluminium-Träger demontiert und direkt auf dem Motor fixiert. Der Airflow wird nun direkt in die werkseitigen Kühlrippen des Motorgehäuses geleitet.
+  > Der Lüfter wurde vom Aluminium-Träger demontiert und direkt auf dem Motor fixiert. Der Airflow wird nun direkt in die werkseitigen Kühlrippen des Motorgehäuses geleitet.
 
 * **ESC-Montage:** Der Fahrtenregler (ESC) wurde schwingungsgedämpft mittels doppelseitigem Klebeband sicher auf dem Chassis fixiert. 
 

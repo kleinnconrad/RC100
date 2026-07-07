@@ -12,7 +12,7 @@
 * **Datum:** 03.04.2026
 * **Ort:** Parkplatz (40 m Länge)
 * **Fokus:** Bugstabilität
-* **Status:** Erfolgreich (mit unfallbedingtem Abbruch)
+* **Status:** (mit unfallbedingtem Abbruch)
 
 ## Ziel der Testfahrt
 Überprüfung der Fahrstabilität an der Vorderachse nach Implementierung zweier gezielter Modifikationen: Die Anbringung von 175g Zusatzgewicht am Frontbumper zur weiteren Schwerpunktverlagerung sowie die Installation einer zusätzlichen Hufeisenfeder am Servohorn für eine härtere Einstellung des Servosavers. 

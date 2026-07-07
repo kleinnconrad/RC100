@@ -21,8 +21,8 @@ adr:
   - option_id: 2
     name: High-End Wettbewerbs-Sender (z.B. Sanwa MT-44 / Futaba 4PM)
     type: Premium / Ultra-Low Latency
-    evaluation: Bietet extrem geringe Latenzzeiten und detaillierte Setup-Möglichkeiten
-      auf einem Display. Perfekt für verwinkelte Rennstrecken, aber für das reine
+    evaluation: Bietet stark geringe Latenzzeiten und detaillierte Setup-Möglichkeiten
+      auf einem Display. optimal für verwinkelte Rennstrecken, aber für das reine
       Geradeausfahren (Speedrun) völlig überdimensioniert. Preislich oft weit über
       250 €.
   - option_id: 3
@@ -37,7 +37,7 @@ adr:
     type: Solider MVP-Ansatz (2-Kanal 2.4 GHz)
     evaluation: Sehr zuverlässiges und bewährtes Einsteigersystem. Bietet zwar keinen
       Gyro und etwas weniger Maximalreichweite als die DumboRC, punktet aber durch
-      absolute Einfachheit, ein extrem robustes Fail-Safe und zwingend notwendige
+      absolute Einfachheit, ein stark robustes Fail-Safe und zwingend notwendige
       Einstellmöglichkeiten (Dual Rate) für erste 100 km/h-Tests.
   decision: Carson Reflex Wheel X1
   tx_meta_transmitter:
@@ -48,8 +48,8 @@ adr:
     \ Carson Reflex Wheel X1. \nObwohl die DumboRC auf dem Papier mehr Reichweite\
     \ und einen Gyro bietet, reicht die Carson \nfür die ersten validen 100 km/h-Runs\
     \ auf übersichtlichen Parkplätzen oder Strecken vollkommen aus. \nSie ist ein\
-    \ bewährter Industrie-Standard im Einstiegssegment, bietet eine extrem zuverlässige\
-    \ \nFail-Safe-Funktion und die überlebenswichtige Steering Dual-Rate Einstellung.\
+    \ bewährter Industrie-Standard im Einstiegssegment, bietet eine stark zuverlässige\
+    \ \nFail-Safe-Funktion und die wichtigeSteering Dual-Rate Einstellung.\
     \ Dieser \npragmatische Ansatz spart Komplexität beim Setup (kein Gyro-Wobble-Risiko)\
     \ und liefert \ngenau die Baseline an Funktionalität, die aktuell benötigt wird.\n"
   consequences:

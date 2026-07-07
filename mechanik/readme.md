@@ -1,5 +1,13 @@
 # Build Log
 
+
+## Inhaltsverzeichnis
+* [Tag 1 - Mechanische Grundstruktur](#tag-1---mechanische-grundstruktur)
+* [Fortschritt](#fortschritt)
+* [Tag 2 - Fahrwerksgeometrie, Lenkung & Elektronik-Prep](#tag-2---fahrwerksgeometrie-lenkung--elektronik-prep)
+* [Fortschritt](#fortschritt)
+
+
 ## Tag 1 - Mechanische Grundstruktur
 **Datum:** 14.03.2026
 **Status:** Erledigt
@@ -7,7 +15,7 @@
 ## Fortschritt
 
 * **Differential-Setup:** Die Differentiale wurden gemäß der Baukastenanleitung vorerst komplett leer gelassen (ungesperrt). 
-  > **Note für spätere Iterationen:** Bei den ersten Testläufen muss das Ausbrechverhalten überwacht werden. Für strikte 100 km/h Geradeausläufe könnte es später notwendig sein, zumindest das vordere Differential mit extrem zähem Silikonöl (z.B. 100.000 cSt bis 1.000.000 cSt) teilweise zu sperren, um ein "Ausbluten" der Leistung an ein einzelnes Rad zu verhindern.
+  > **Note für spätere Iterationen:** Bei den ersten Testläufen muss das Ausbrechverhalten überwacht werden. Für strikte 100 km/h Geradeausläufe könnte es später notwendig sein, zumindest das vordere Differential mit stark zähem Silikonöl (z.B. 100.000 cSt bis 1.000.000 cSt) teilweise zu sperren, um ein "Ausbluten" der Leistung an ein einzelnes Rad zu verhindern.
 
 * **Fahrwerk & Dämpfer-Kalibrierung:** Die Öldruckstoßdämpfer wurden ganz bewusst weich abgestimmt (so weich wie der Carten Bausatz es zugelassen hat). Ziel dieses Setups ist es, sicherzustellen, dass das Fahrzeug bei kleinen Unebenheiten auf unpräpariertem Parkplatz-Asphalt den Bodenkontakt hält und nicht zu springen beginnt (Gefahr von Aerodynamik-Abriss).
   Beim Befüllen wurde strikte Qualitätskontrolle angewandt: Es wurde darauf geachtet, jegliche Luftblasen aus dem Öl zu ziehen, um ein "Emulgieren" und damit ein unvorhersehbares Dämpfungsverhalten zu vermeiden.
@@ -34,14 +42,14 @@
 ## Fortschritt
 
 * **Radstand & Fahrwerksgeometrie:** An der Hinterradaufhängung wurden 3mm Spacer in Richtung Vorderrad verbaut. Dies kalibriert den Radstand exakt auf die vom Hersteller vorgesehenen 258 mm. 
-  > Ein Verbauen der Spacer in Richtung Heck würde den Radstand auf 255 mm verkürzen. Durch diese Anpassbarkeit lässt sich das Chassis bei Bedarf perfekt in den Radkästen der Karosserie zentrieren.
+  > Ein Verbauen der Spacer in Richtung Heck würde den Radstand auf 255 mm verkürzen. Durch diese Anpassbarkeit lässt sich das Chassis bei Bedarf optimal in den Radkästen der Karosserie zentrieren.
 
 * **Montage der Stabilisatoren (Interimslösung):** Die im Baukasten mitgelieferten Madenschrauben (kopflose Schrauben) für die Stabilisatoren erwiesen sich als zu klein/kurz. 
   > Interimsweise wurde auf reguläre M3x6 Schrauben ausgewichen. Dies ist mechanisch absolut unbedenklich und erfüllt den Zweck, entspricht jedoch nicht der finalen ästhetischen Zielsetzung.
 
 * **Lenk-Infrastruktur:** Das Amewi-Lenkservo wurde vor dem Einbau elektronisch in die absolute Neutralstellung ("genullt") gebracht. Anschließend wurde das Servo final im Chassis verbaut.
 
-* **Kunststoff-Toleranzen (Kugelgelenke):** Die Kugelgelenkaufnahmen (Kugelpfannen) weisen extrem enge Toleranzen auf und sind von Werk aus sehr klein dimensioniert. 
+* **Kunststoff-Toleranzen (Kugelgelenke):** Die Kugelgelenkaufnahmen (Kugelpfannen) weisen stark enge Toleranzen auf und sind von Werk aus sehr klein dimensioniert. 
   > Um die Kugelköpfe einzupassen, ohne das Material durch Kaltverformung zu überlasten oder Risse im Kunststoff zu riskieren, wurden die Aufnahmen vor der Montage mit heißem Wasser erwärmt. 
 
 * **Energie-Management:** Der Absima 3S LiPo-Akku wurde zur Akkupflege und Sicherheit an das Ladegerät angeschlossen und auf Lagerspannung (Storage-Spannung, ca. 3.8V pro Zelle) gebracht, bis der Antriebsstrang final verkabelt und einsatzbereit ist.

@@ -7,7 +7,7 @@ spec:
         typ: Innensechskant-Schraubendreher (Hex Wrenches)
         groessen: 1.5 mm, 2.0 mm, 2.5 mm
         hinweis: Pflichtkauf! Carten nutzt im gesamten Auto metrische M3-Maschinenschrauben
-          (keine selbstschneidenden Schrauben). Ein hochwertiger Inbus ist hier extrem
+          (keine selbstschneidenden Schrauben). Ein hochwertiger Inbus ist hier stark
           wichtig, um die Schraubenköpfe und das harte Plastikgewinde beim Eindrehen
           nicht zu beschädigen.
         brand: Neewer
@@ -22,7 +22,7 @@ spec:
       klebstoffe_und_chemie:
         schraubensicherung:
           typ: Schraubensicherungslack (Screw Cement / Threadlocker)
-          hinweis: Extrem wichtig! Kommt an alle Schrauben, die in Metall gedreht
+          hinweis: stark wichtig! Kommt an alle Schrauben, die in Metall gedreht
             werden (z. B. Motorritzel). In der Carten-Anleitung oft fälschlicherweise
             als 'GLUE' beschriftet. Niemals für Plastik verwenden!
           brand: Loctite

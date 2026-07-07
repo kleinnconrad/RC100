@@ -1,5 +1,61 @@
 # Architecture Decision Records (ADRs)
 
+
+## Inhaltsverzeichnis
+* [Übersicht](#ubersicht)
+* [Detail-Protokolle](#detail-protokolle)
+  * [ADR-001: Auswahl der Chassis-Plattform und Make-or-Buy-Entscheidung (100 km/h Benchmark)](#adr-001-auswahl-der-chassis-plattform-und-make-or-buy-entscheidung-100-kmh-benchmark)
+    * [Kontext](#kontext)
+    * [Entscheidung](#entscheidung)
+    * [Begründung (Rationale)](#begrundung-rationale)
+    * [Konsequenzen](#konsequenzen)
+  * [ADR-002: Auswahl der Brushless-Motor-Combo für 100 km/h Speedruns](#adr-002-auswahl-der-brushless-motor-combo-fur-100-kmh-speedruns)
+    * [Kontext](#kontext)
+    * [Entscheidung](#entscheidung)
+    * [Begründung (Rationale)](#begrundung-rationale)
+    * [Konsequenzen](#konsequenzen)
+  * [ADR-003: Auswahl des LiPo-Akkus für 100 km/h Ziel.](#adr-003-auswahl-des-lipo-akkus-fur-100-kmh-ziel)
+    * [Kontext](#kontext)
+    * [Entscheidung](#entscheidung)
+    * [Begründung (Rationale)](#begrundung-rationale)
+    * [Konsequenzen](#konsequenzen)
+  * [ADR-004: Auswahl des Ladegeräts für 3S LiPo-Akkus](#adr-004-auswahl-des-ladegerats-fur-3s-lipo-akkus)
+    * [Kontext](#kontext)
+    * [Entscheidung](#entscheidung)
+    * [Begründung (Rationale)](#begrundung-rationale)
+    * [Konsequenzen](#konsequenzen)
+  * [ADR-005: Auswahl der Fernsteuerungsanlage für 100 km/h Speedruns](#adr-005-auswahl-der-fernsteuerungsanlage-fur-100-kmh-speedruns)
+    * [Kontext](#kontext)
+    * [Entscheidung](#entscheidung)
+    * [Begründung (Rationale)](#begrundung-rationale)
+    * [Konsequenzen](#konsequenzen)
+  * [ADR-006: Auswahl des Lenkservos für präzise High-Speed-Kontrolle](#adr-006-auswahl-des-lenkservos-fur-prazise-high-speed-kontrolle)
+    * [Kontext](#kontext)
+    * [Entscheidung](#entscheidung)
+    * [Begründung (Rationale)](#begrundung-rationale)
+    * [Konsequenzen](#konsequenzen)
+  * [ADR-007: Auswahl der aktiven und passiven Motorkühlung für 3S-Speedruns](#adr-007-auswahl-der-aktiven-und-passiven-motorkuhlung-fur-3s-speedruns)
+    * [Kontext](#kontext)
+    * [Entscheidung](#entscheidung)
+    * [Begründung (Rationale)](#begrundung-rationale)
+    * [Konsequenzen](#konsequenzen)
+  * [ADR-008: Auswahl der Bereifung (Belted Gummireifen für Asphalt) für 100 km/h Speedruns](#adr-008-auswahl-der-bereifung-belted-gummireifen-fur-asphalt-fur-100-kmh-speedruns)
+    * [Kontext](#kontext)
+    * [Entscheidung](#entscheidung)
+    * [Begründung (Rationale)](#begrundung-rationale)
+    * [Konsequenzen](#konsequenzen)
+  * [ADR-009: Auswahl der aerodynamischen Karosserie für 100 km/h Speedruns](#adr-009-auswahl-der-aerodynamischen-karosserie-fur-100-kmh-speedruns)
+    * [Kontext](#kontext)
+    * [Entscheidung](#entscheidung)
+    * [Begründung (Rationale)](#begrundung-rationale)
+    * [Konsequenzen](#konsequenzen)
+  * [ADR-010: Auswahl des GPS-Messsystems zur Validierung der 100 km/h Marke](#adr-010-auswahl-des-gps-messsystems-zur-validierung-der-100-kmh-marke)
+    * [Kontext](#kontext)
+    * [Entscheidung](#entscheidung)
+    * [Begründung (Rationale)](#begrundung-rationale)
+    * [Konsequenzen](#konsequenzen)
+
+
 Dieses Verzeichnis enthält alle grundlegenden architektur- und Hardwareentscheidungen für das RC100 Projekt. **Diese Datei wird automatisch generiert. Bitte nicht manuell bearbeiten.**
 
 ## Übersicht
@@ -26,7 +82,7 @@ Dieses Verzeichnis enthält alle grundlegenden architektur- und Hardwareentschei
 
 #### Kontext
 Für das 100 km/h-Speedrun-Projekt wird eine mechanisch stabile Basis benötigt. Die Plattform muss 
-extremen Belastungen (ca. 44.000 U/min am Motor, massive Fliehkräfte an den Achsen) standhalten. 
+hohen Belastungen (ca. 44.000 U/min am Motor, massive Fliehkräfte an den Achsen) standhalten. 
 Die grundlegende Architektur-Frage (Make or Buy) vergleicht den Aufbau eines eigenen Budget-Kits ("Make") 
 mit dem Kauf eines teuren, vormontierten High-End-Wettbewerbschassis ("Buy"). 
 Ein kritisches Risiko für den 3S-Einsatz stellen Differentialzahnräder aus Kunststoff/Composite dar, 
@@ -57,7 +113,7 @@ Der massive Preisvorteil gegenüber dem Xray X4 '24 rechtfertigt den erhöhten m
 **Status:** entschieden | **Datum:** 2026-03-06
 
 #### Kontext
-Um einen 1/10 Tourenwagen (Carten T410R) auf 100 km/h zu beschleunigen, muss das Getriebe extrem 
+Um einen 1/10 Tourenwagen (Carten T410R) auf 100 km/h zu beschleunigen, muss das Getriebe stark 
 'lang' übersetzt werden (hohe Radlast > 22 %). Ein klassischer 3650er-Motor (50 mm Länge) operiert 
 hierbei an seiner thermischen Belastungsgrenze. Es wird zwingend ein Antriebsstrang benötigt, 
 der bei 3S-Spannung (11.1V) genügend mechanisches Drehmoment (Motorbaugröße 3660) liefert und 
@@ -70,7 +126,7 @@ kann (min. 120A).
 
 #### Begründung (Rationale)
 Die Entscheidung fällt auf die Hobbywing QuicRun G2 Combo. Sie eliminiert das Ausfallrisiko von 
-No-Name-Motoren und bietet eine perfekt aufeinander abgestimmte Architektur (Firmware von ESC 
+No-Name-Motoren und bietet eine optimal aufeinander abgestimmte Architektur (Firmware von ESC 
 und Motor-Timing sind optimal verzahnt). Der 3660er Motor liefert mit seinen 3700KV an 3S 
 (ca. 41.000 U/min) die perfekte Drehzahl und hat durch den längeren Rotor genug Drehmoment, 
 um die errechnete Radlast von ca. 24 % souverän zu stemmen. Dies ist die sicherste und 
@@ -89,7 +145,7 @@ effizienteste Lösung im Budget unter 100 €.
 **Status:** entschieden | **Datum:** 2026-03-06
 
 #### Kontext
-Um das RC100 Projekt auf über 100 km/h zu beschleunigen, muss die Energiequelle perfekt 
+Um das RC100 Projekt auf über 100 km/h zu beschleunigen, muss die Energiequelle optimal 
 auf den 4000kV Motor und den 120A ESC (Hobbywing QuicRun) abgestimmt sein. 
 Ein 2S LiPo (7.4V) würde nur ca. 29.600 U/min liefern, was für 100 km/h bei normaler 
 Übersetzung nicht ausreicht. Daher ist ein 3S LiPo (11.1V) zwingend erforderlich, um 
@@ -104,7 +160,7 @@ eventuellen Crash bei hoher Geschwindigkeit physisch geschützt sein.
 #### Begründung (Rationale)
 Die Entscheidung fällt auf den Absima GreenHorn V2 3S LiPo. Mit 50C Entladerate bietet er 
 genügend Puffer für die massiven Stromspitzen beim Beschleunigen der 64Z/38Z Übersetzung. 
-Das Hardcase ist ein absolutes Sicherheits-Muss für Speedruns, da ein Einschlag bei 100 km/h 
+Das Hardcase ist ein Sicherheitsanforderung für Speedruns, da ein Einschlag bei 100 km/h 
 einen Softcase-LiPo sofort zerstören und entzünden würde. Der vorkonfektionierte XT60-Stecker 
 garantiert einen geringen Übergangswiderstand für die hohen Ströme.
 
@@ -134,10 +190,10 @@ hohen Ströme sicher über einen XT60-Stecker übertragen können.
 
 #### Begründung (Rationale)
 Die Entscheidung fällt auf das SkyRC S100neo. Es deckt den "Sweet Spot" zwischen Sicherheit, 
-Leistung und Budget perfekt ab. Die 100 Watt interne Leistung (AC) sind mehr als ausreichend, 
+Leistung und Budget optimal ab. Die 100 Watt interne Leistung (AC) sind mehr als ausreichend, 
 um den 3S 5000mAh LiPo in etwa einer Stunde schonend vollzuladen. Besonders vorteilhaft ist 
 der fest in der Frontblende integrierte XT60-Anschluss, der gefährliche und fehleranfällige 
-Adapterkabel überflüssig macht. Dies passt perfekt zur Architektur-Entscheidung des Absima-Akkus.
+Adapterkabel überflüssig macht. Dies passt optimal zur Architektur-Entscheidung des Absima-Akkus.
 
 
 #### Konsequenzen
@@ -167,8 +223,8 @@ robusten, ausfallsicheren MVP-Ansatz (Minimum Viable Product), der die Komplexit
 Die Entscheidung fällt im Sinne eines sauberen MVP-Ansatzes auf die Carson Reflex Wheel X1. 
 Obwohl die DumboRC auf dem Papier mehr Reichweite und einen Gyro bietet, reicht die Carson 
 für die ersten validen 100 km/h-Runs auf übersichtlichen Parkplätzen oder Strecken vollkommen aus. 
-Sie ist ein bewährter Industrie-Standard im Einstiegssegment, bietet eine extrem zuverlässige 
-Fail-Safe-Funktion und die überlebenswichtige Steering Dual-Rate Einstellung. Dieser 
+Sie ist ein bewährter Industrie-Standard im Einstiegssegment, bietet eine stark zuverlässige 
+Fail-Safe-Funktion und die wichtigeSteering Dual-Rate Einstellung. Dieser 
 pragmatische Ansatz spart Komplexität beim Setup (kein Gyro-Wobble-Risiko) und liefert 
 genau die Baseline an Funktionalität, die aktuell benötigt wird.
 
@@ -191,7 +247,7 @@ auf die Vorderräder des Carten T410R. Ein minimales Zittern, Spiel oder eine zu
 Reaktionszeit des Lenkservos können sofort zum Kontrollverlust und Totalausfall führen. 
 Zudem ist der Platz in einem 1:10 Tourenwagen-Chassis begrenzt. Da unsere MVP-Fernsteuerung 
 (Carson Reflex Wheel X1) über keinen elektronischen Gyro verfügt, muss das Servo den 
-Geradeauslauf mechanisch extrem präzise und kraftvoll halten. Gefordert ist ein Servo 
+Geradeauslauf mechanisch stark präzise und kraftvoll halten. Gefordert ist ein Servo 
 mit Metallgetriebe (Robustheit), hoher Stellgeschwindigkeit (~0.11s) und ausreichender 
 Stellkraft (ca. 9 kg).
 
@@ -221,11 +277,11 @@ Trade-off für reine Geradeaus-Speedruns.
 
 #### Kontext
 Das anvisierte Ziel von 100 km/h erfordert den Einsatz eines 4000kV Motors an einem 
-3S LiPo (11.1V), was zu extremen Drehzahlen von ca. 44.400 U/min und einer enormen 
+3S LiPo (11.1V), was zu hohen Drehzahlen von ca. 44.400 U/min und einer enormen 
 länger übersetzten Last (64Z/38Z) führt. Unter diesen Bedingungen entsteht im Motor 
-binnen Sekunden massiv nutzlose Abwärme. Ohne angemessene Kühlung droht die 
+binnen Sekunden massiv Abwärme. Ohne angemessene Kühlung droht die 
 Entmagnetisierung des Rotors (Hitzetod) oder das Schmelzen der Isolierung. 
-Daher ist ein kompromissloses thermisches Management-System zwingend erforderlich.
+Daher ist ein striktesthermisches Management-System zwingend erforderlich.
 
 
 #### Entscheidung
@@ -233,7 +289,7 @@ Daher ist ein kompromissloses thermisches Management-System zwingend erforderlic
 
 #### Begründung (Rationale)
 Die Entscheidung fällt auf ein duales Kühlsystem (aktiv und passiv). Der 36mm 
-Alu-Aufsteckkühlkörper passt perfekt auf den Hobbywing 3652SL Motor. Der 40mm 
+Alu-Aufsteckkühlkörper passt optimal auf den Hobbywing 3652SL Motor. Der 40mm 
 High-Speed-Lüfter mit Aluminiumrahmen bietet durch Drehzahlen von bis zu 20.000 U/min 
 den nötigen Orkan, um die Hitze wegzublasen. Ein Aluminiumrahmen beim Lüfter 
 verhindert zudem, dass sich dieser bei Stauhitze verformt, und dient als zusätzlicher 
@@ -242,7 +298,7 @@ Mini-Kühlkörper.
 
 #### Konsequenzen
 - Stromversorgung: Der Lüfter muss in einen freien Steckplatz des DumboRC-Empfängers (z.B. CH3 oder CH4) gesteckt werden, um Strom vom Regler-BEC zu beziehen.
-- Kabelmanagement: Durch den extremen Sog des High-Speed-Lüfters müssen alle Kabel (insbesondere Antenne und Servokabel) zwingend mit Kabelbindern gesichert werden, damit sie nicht in die Rotorblätter geraten.
+- Kabelmanagement: Durch den hohen Sog des High-Speed-Lüfters müssen alle Kabel (insbesondere Antenne und Servokabel) zwingend mit Kabelbindern gesichert werden, damit sie nicht in die Rotorblätter geraten.
 - Wärmeleitpaste: Es wird dringend empfohlen, zwischen Motor und Alu-Kühlkörper einen Tropfen PC-Wärmeleitpaste aufzutragen, um den thermischen Übergangswiderstand zu minimieren.
 
 
@@ -252,12 +308,12 @@ Mini-Kühlkörper.
 **Status:** Entschieden | **Datum:** 2026-02-25
 
 #### Kontext
-Bei einer Zielgeschwindigkeit von 100 km/h und den damit verbundenen extremen Drehzahlen 
+Bei einer Zielgeschwindigkeit von 100 km/h und den damit verbundenen hohen Drehzahlen 
 der Räder dehnen sich Standard-Gummireifen durch die Fliehkraft massiv in der Mitte aus 
 (der sogenannte "Pizza-Cutter-Effekt" oder "Ballooning"). Das führt zu einem sofortigen 
 Kontrollverlust und oft zum Platzen des Reifens. Gefordert sind fertig verklebte Reifen 
 auf Felgen mit einem 12mm-Sechskant-Mitnehmer (passend für das Carten T410R Chassis), 
-die ihre Form unter extremen Fliehkräften zu 100 % beibehalten und deren Gummimischung 
+die ihre Form unter hohen Fliehkräften zu 100 % beibehalten und deren Gummimischung 
 der hohen Reibungshitze auf rauem Asphalt standhält.
 Zusätzlich muss die reale Streckenbeschaffenheit (nicht staubfreier Normal-Asphalt vs. 
 sauber präparierte Rennstrecke) bei der Wahl des Reifenprofils (Slick vs. Rillen) 
@@ -271,10 +327,10 @@ beachtet werden.
 Die Entscheidung fällt auf die fertig verklebten Sweep HANKOOK Tread Belted Reifen mit 
 der härteren 36-Shore Asphalt-Mischung. Obwohl ein profilloser Voll-Slick physikalisch 
 die absolute Höchstleistung und maximale Laufruhe bei 100 km/h bietet, ist er im realen 
-Einsatz auf nicht perfekt gekehrten Parkplätzen zu empfindlich gegen feinen Staub (Verlust 
+Einsatz auf nicht optimal gekehrten Parkplätzen zu empfindlich gegen feinen Staub (Verlust 
 der Traktion). Das Hankook-Profil kann leichten Schmutz abtransportieren und bietet 
 auf Normal-Asphalt das sicherere und gutmütigere Fahrverhalten. Gleichzeitig garantiert 
-das essenzielle Kevlar-Gewebe (Belt) absolute Sicherheit gegen das lebensgefährliche Ausdehnen.
+das essenzielle Kevlar-Gewebe (Belt) absolute Sicherheit gegen das kritischeAusdehnen.
 
 
 #### Konsequenzen
@@ -303,7 +359,7 @@ Dünnes Lexan (< 0.5 mm) verformt sich bei 100 km/h massiv.
 #### Begründung (Rationale)
 Die Entscheidung fällt auf die ZooRacing Hellcat in der 0.7mm Standard-Stärke. Sie stellt den 
 optimalen Kompromiss aus minimalem Luftwiderstand (für das Erreichen der 100 km/h) und sicherem 
-Anpressdruck (Verhinderung von Blow-overs) dar. Im Gegensatz zu extrem flachen LMP-Karosserien 
+Anpressdruck (Verhinderung von Blow-overs) dar. Im Gegensatz zu stark flachen LMP-Karosserien 
 passt sie problemlos über die Stoßdämpferbrücken des Carten T410R. Die Materialstärke von 0.7mm 
 garantiert, dass die Karosserie dem massiven Staudruck bei Top-Speed standhält und nicht zu 
 vibrieren oder auf die Reifen zu schleifen beginnt.
@@ -311,7 +367,7 @@ vibrieren oder auf die Reifen zu schleifen beginnt.
 
 #### Konsequenzen
 - Lackierung: Die Karosserie wird unlackiert geliefert. Es muss zwingend spezielle Lexan-Farbe (Polycarbonat-Farbe, z.B. Tamiya PS-Serie) verwendet werden, da normale Farbe abblättern würde.
-- Montage: Der mitgelieferte Heckflügel muss extrem steif verschraubt werden. Die Karosserielöcher müssen passgenau mit einer Lexanschere und einem Karosseriebohrer bearbeitet werden.
+- Montage: Der mitgelieferte Heckflügel muss stark steif verschraubt werden. Die Karosserielöcher müssen passgenau mit einer Lexanschere und einem Karosseriebohrer bearbeitet werden.
 - Chassis-Vorbereitung: Der Schaumstoff-Bumper an der Front des Carten T410R muss exakt bündig mit der Innenseite der Frontschürze abschließen, um ein Eindrücken bei High-Speed zu verhindern.
 
 
@@ -324,7 +380,7 @@ vibrieren oder auf die Reifen zu schleifen beginnt.
 Die berechneten mathematischen Modelle (Achsdrehzahl, Rollwiderstand, Spannungseinbruch) 
 müssen in der Realität ('Integration Test' auf der Straße) durch harte Telemetriedaten 
 validiert werden. Da das Fahrzeug den Topspeed von 100 km/h oft nur für ein Zeitfenster 
-von 2 bis 3 Sekunden hält, ist eine extrem hohe Abtastrate (Update-Frequenz) des 
+von 2 bis 3 Sekunden hält, ist eine stark hohe Abtastrate (Update-Frequenz) des 
 Messgeräts zwingend erforderlich. Gleichzeitig darf das Modul das Fahrzeuggewicht (CG) 
 und die Aerodynamik nicht negativ beeinflussen.
 
@@ -342,7 +398,7 @@ erspart ein schweres, ablesbares Display direkt auf dem Fahrzeug.
 
 #### Konsequenzen
 - Signal-Constraint: Das GPS-Signal geht problemlos durch Lexan-Karosserien, wird aber von Karbonfasern massiv geblockt. Das Modul darf im Carten T410R nicht direkt *unter* dem Karbon-Oberdeck montiert werden. Die optimale Position ist auf dem Schaumstoff-Bumper vorne.
-- Befestigung: Das Gerät muss extrem sicher (z.B. mit starkem Klettband oder 3M Dual Lock) fixiert werden, damit es bei einem Überschlag bei 100 km/h nicht als Projektil wegfliegt.
+- Befestigung: Das Gerät muss stark sicher (z.B. mit starkem Klettband oder 3M Dual Lock) fixiert werden, damit es bei einem Überschlag bei 100 km/h nicht als Projektil wegfliegt.
 
 
 ---

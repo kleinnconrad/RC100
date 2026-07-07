@@ -1,4 +1,11 @@
 # Metriken
+
+
+## Inhaltsverzeichnis
+* [Gewicht](#gewicht)
+* [Abmessungen ](#abmessungen-)
+* [Leistung](#leistung)
+
 ## Gewicht
 
 | Komponente | Gewicht |

@@ -41,7 +41,7 @@ Paint:
     brand: Tamiya
     system: 3-Schicht Metallic-Aufbau
     typ: Spezial-Polycarbonatspray (Lexan) - Ätzt sich in den Kunststoff ein
-    eigenschaften: Hochflexibel, extrem widerstandsfähig gegen Abblättern bei Crashes.
+    eigenschaften: Hochflexibel, stark widerstandsfähig gegen Abblättern bei Crashes.
     shopping_items:
     - artikel_name: Tamiya PS-15 Metallic Rot (100ml)
       referenz_link: Suche nach Tamiya PS-15 bei RC-Shops
@@ -76,11 +76,11 @@ Paint:
         durchgaenge: 2 dünne Schichten
         technik: Wenn das Rot komplett trocken ist (mindestens 30 Min warten), sprühst
           du das Silber in 2 Durchgängen (mit 10 Min Pause) direkt auf das Rot. Dies
-          wirkt als Reflektor für die Metallic-Partikel und lässt das Rot extrem leuchten.
+          wirkt als Reflektor für die Metallic-Partikel und lässt das Rot stark leuchten.
       phase_3_versiegelung_ps5:
         durchgaenge: 1 bis 2 dünne Schichten
         technik: Wenn das Silber trocken ist, sprühst du das Schwarz als letzte Schicht
-          darüber. Das blockt jegliches Licht von unten, macht das Rot extrem satt
+          darüber. Das blockt jegliches Licht von unten, macht das Rot stark satt
           und sorgt dafür, dass dein Auto von innen hochprofessionell schwarz und
           sauber aussieht.
     finish_und_montage:
@@ -129,7 +129,7 @@ Werkzeug:
         typ: Innensechskant-Schraubendreher (Hex Wrenches)
         groessen: 1.5 mm, 2.0 mm, 2.5 mm
         hinweis: Pflichtkauf! Carten nutzt im gesamten Auto metrische M3-Maschinenschrauben
-          (keine selbstschneidenden Schrauben). Ein hochwertiger Inbus ist hier extrem
+          (keine selbstschneidenden Schrauben). Ein hochwertiger Inbus ist hier stark
           wichtig, um die Schraubenköpfe und das harte Plastikgewinde beim Eindrehen
           nicht zu beschädigen.
         brand: Neewer
@@ -144,7 +144,7 @@ Werkzeug:
       klebstoffe_und_chemie:
         schraubensicherung:
           typ: Schraubensicherungslack (Screw Cement / Threadlocker)
-          hinweis: Extrem wichtig! Kommt an alle Schrauben, die in Metall gedreht
+          hinweis: stark wichtig! Kommt an alle Schrauben, die in Metall gedreht
             werden (z. B. Motorritzel). In der Carten-Anleitung oft fälschlicherweise
             als 'GLUE' beschriftet. Niemals für Plastik verwenden!
           brand: Loctite
@@ -261,7 +261,7 @@ Differentiale:
         issue: Spielfreiheit
         description: Die inneren Metallzahnräder müssen beim Zusammenbau mit hauchdünnen
           Passscheiben (Shims) absolut spielfrei eingestellt werden. Nur so wird verhindert,
-          dass die Zähne unter dem extremen Drehmoment des 3S-Motors überspringen
+          dass die Zähne unter dem hohen Drehmoment des 3S-Motors überspringen
           oder abreißen.
       reinforced_sealing:
         issue: O-Ring Abdichtung
@@ -271,7 +271,7 @@ Differentiale:
       oil_viscosity:
         issue: Sperrwirkung & Geradeauslauf
         description: Das Baukasten-Öl ist zu weich und führt bei Speedruns zu unkontrollierbarem
-          Ausbrechen, wenn ein Rad minimal Grip verliert. Es muss extrem zähes Silikonöl
+          Ausbrechen, wenn ein Rad minimal Grip verliert. Es muss stark zähes Silikonöl
           verwendet werden, um das Auto auf einen sturen Geradeauslauf zu zwingen.
         setup_recommendation:
           front_axle: ca. 100.000 cSt (oder ein komplett starrer Spool/Starrachse)
@@ -381,7 +381,7 @@ Ladegeraet:
     brand: SkyRC
     model: S100neo
     type: Smart AC/DC Ladegerät
-    architecture_fit: Perfekt. Hat XT60-Buchse direkt im Gehäuse verbaut. Kein Adapter-Chaos.
+    architecture_fit: optimal. Hat XT60-Buchse direkt im Gehäuse verbaut. Kein Adapter-Chaos.
   properties:
     power_specifications:
       input_voltage_ac: 100-240V (Integriertes Netzteil für normale Steckdose)
@@ -435,7 +435,7 @@ Lasertachometer:
       durchfuehrung: Fahrzeug sicher aufbocken. Funke einschalten, Vollgas geben und
         Laser auf den rotierenden Streifen richten.
       sicherheitswarnung: 'WICHTIG: Bei 100 km/h Radumdrehungsgeschwindigkeit blähen
-        sich Gummireifen extrem auf (Ballooning). Schutzbrille tragen und nicht direkt
+        sich Gummireifen stark auf (Ballooning). Schutzbrille tragen und nicht direkt
         in der Fliehkraft-Linie der Räder stehen, falls sich die Verklebung des Reifens
         löst!'
 Gps:
@@ -491,7 +491,7 @@ Servo:
     mandatory_upgrades:
       part: Aluminium-Servohorn (Zwingend 25T Verzahnung für JX/Futaba kaufen!)
       reason: Das Baukasten-Plastikhorn verbiegt sich (Flex) bei 100 km/h unter dem
-        extremen Winddruck auf die Vorderräder. Das Alu-Horn garantiert eine absolut
+        hohen Winddruck auf die Vorderräder. Das Alu-Horn garantiert eine absolut
         steife, spielfreie Lenkverbindung.
       installation: Die Schraube, die das Horn auf dem Servo hält, zwingend mit Schraubensicherungslack
         (z. B. Loctite mittelfest) fixieren, damit sie sich durch Vibrationen nicht

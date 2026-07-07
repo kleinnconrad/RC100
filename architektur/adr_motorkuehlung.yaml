@@ -4,11 +4,11 @@ adr:
   status: entschieden
   date: '2026-03-06'
   context: "Das anvisierte Ziel von 100 km/h erfordert den Einsatz eines 4000kV Motors\
-    \ an einem \n3S LiPo (11.1V), was zu extremen Drehzahlen von ca. 44.400 U/min\
+    \ an einem \n3S LiPo (11.1V), was zu hohen Drehzahlen von ca. 44.400 U/min\
     \ und einer enormen \nlänger übersetzten Last (64Z/38Z) führt. Unter diesen Bedingungen\
-    \ entsteht im Motor \nbinnen Sekunden massiv nutzlose Abwärme. Ohne angemessene\
+    \ entsteht im Motor \nbinnen Sekunden massiv Abwärme. Ohne angemessene\
     \ Kühlung droht die \nEntmagnetisierung des Rotors (Hitzetod) oder das Schmelzen\
-    \ der Isolierung. \nDaher ist ein kompromissloses thermisches Management-System\
+    \ der Isolierung. \nDaher ist ein striktesthermisches Management-System\
     \ zwingend erforderlich.\n"
   considered_alternatives:
   - option_id: 1
@@ -25,7 +25,7 @@ adr:
   - option_id: 3
     name: Passiver Alu-Kühlkörper + Aktiver 40mm High-Speed Lüfter
     type: Safe / High-Performance
-    evaluation: Die Kombination aus wärmeableitendem Aluminium und einem extrem schnell
+    evaluation: Die Kombination aus wärmeableitendem Aluminium und einem stark schnell
       drehenden Lüfter (16.000+ U/min) erzwingt einen starken Airflow direkt am Motorgehäuse
       und hält die Temperaturen im sicheren Bereich.
   decision: Passiver 36mm Alu-Kühlkörper kombiniert mit aktivem 40x40mm High-Speed
@@ -45,7 +45,7 @@ adr:
       - Yeah Racing (Tornado)
       - WTF (Wild Turbo Fan)
   rationale: "Die Entscheidung fällt auf ein duales Kühlsystem (aktiv und passiv).\
-    \ Der 36mm \nAlu-Aufsteckkühlkörper passt perfekt auf den Hobbywing 3652SL Motor.\
+    \ Der 36mm \nAlu-Aufsteckkühlkörper passt optimal auf den Hobbywing 3652SL Motor.\
     \ Der 40mm \nHigh-Speed-Lüfter mit Aluminiumrahmen bietet durch Drehzahlen von\
     \ bis zu 20.000 U/min \nden nötigen Orkan, um die Hitze wegzublasen. Ein Aluminiumrahmen\
     \ beim Lüfter \nverhindert zudem, dass sich dieser bei Stauhitze verformt, und\
@@ -53,7 +53,7 @@ adr:
   consequences:
   - 'Stromversorgung: Der Lüfter muss in einen freien Steckplatz des DumboRC-Empfängers
     (z.B. CH3 oder CH4) gesteckt werden, um Strom vom Regler-BEC zu beziehen.'
-  - 'Kabelmanagement: Durch den extremen Sog des High-Speed-Lüfters müssen alle Kabel
+  - 'Kabelmanagement: Durch den hohen Sog des High-Speed-Lüfters müssen alle Kabel
     (insbesondere Antenne und Servokabel) zwingend mit Kabelbindern gesichert werden,
     damit sie nicht in die Rotorblätter geraten.'
   - 'Wärmeleitpaste: Es wird dringend empfohlen, zwischen Motor und Alu-Kühlkörper

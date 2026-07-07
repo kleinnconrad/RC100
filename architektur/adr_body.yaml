@@ -19,7 +19,7 @@ adr:
   - option_id: 2
     name: ZooRacing Wolverine (190 mm)
     type: CFD-optimierte Wettbewerbs-Karosserie
-    evaluation: Bietet extrem effiziente Strömungsführung und viel Anpressdruck auf
+    evaluation: Bietet stark effiziente Strömungsführung und viel Anpressdruck auf
       der Vorderachse. Eher auf enge Kurven (Steering) ausgelegt.
   - option_id: 3
     name: Le Mans Prototype / Gruppe C (z.B. Mon-Tech M-10)
@@ -31,7 +31,7 @@ adr:
     name: ZooRacing Hellcat (190 mm, 0.7mm Regular)
     type: CFD-optimierte High-Speed Tourenwagen-Karosserie
     evaluation: Bietet eine noch flachere Dachlinie und Frontscheibe als die Wolverine.
-      Exzellenter Luftstrom zum Heckflügel, extrem geringer Luftwiderstand für hohen
+      Exzellenter Luftstrom zum Heckflügel, stark geringer Luftwiderstand für hohen
       Top-Speed bei gleichzeitig überragender Geradeauslauf-Stabilität.
   decision: ZooRacing Hellcat (190 mm, 0.7mm Stärke)
   body_meta:
@@ -42,7 +42,7 @@ adr:
   rationale: "Die Entscheidung fällt auf die ZooRacing Hellcat in der 0.7mm Standard-Stärke.\
     \ Sie stellt den \noptimalen Kompromiss aus minimalem Luftwiderstand (für das\
     \ Erreichen der 100 km/h) und sicherem \nAnpressdruck (Verhinderung von Blow-overs)\
-    \ dar. Im Gegensatz zu extrem flachen LMP-Karosserien \npasst sie problemlos über\
+    \ dar. Im Gegensatz zu stark flachen LMP-Karosserien \npasst sie problemlos über\
     \ die Stoßdämpferbrücken des Carten T410R. Die Materialstärke von 0.7mm \ngarantiert,\
     \ dass die Karosserie dem massiven Staudruck bei Top-Speed standhält und nicht\
     \ zu \nvibrieren oder auf die Reifen zu schleifen beginnt.\n"
@@ -50,7 +50,7 @@ adr:
   - 'Lackierung: Die Karosserie wird unlackiert geliefert. Es muss zwingend spezielle
     Lexan-Farbe (Polycarbonat-Farbe, z.B. Tamiya PS-Serie) verwendet werden, da normale
     Farbe abblättern würde.'
-  - 'Montage: Der mitgelieferte Heckflügel muss extrem steif verschraubt werden. Die
+  - 'Montage: Der mitgelieferte Heckflügel muss stark steif verschraubt werden. Die
     Karosserielöcher müssen passgenau mit einer Lexanschere und einem Karosseriebohrer
     bearbeitet werden.'
   - 'Chassis-Vorbereitung: Der Schaumstoff-Bumper an der Front des Carten T410R muss

@@ -1,5 +1,12 @@
 # 1. Speedrun Testbericht
 
+
+## Inhaltsverzeichnis
+* [Zusammenfassung der Testläufe](#zusammenfassung-der-testlaufe)
+* [Post-Run Inspektion und Schadensbericht](#post-run-inspektion-und-schadensbericht)
+* [Fazit](#fazit)
+
+
 **Datum:** 19. April 2026  
 **Ort:** Bauhaus Parkplatz  
 **Verfügbare Streckenlänge:** ca. 130 Meter
@@ -16,7 +23,7 @@ Die Speedrun-Session umfasste insgesamt 7 aufeinanderfolgende Versuche auf der o
 Nach Abschluss der Fahrten wurde das Chassis einer detaillierten Sicht- und Mechanikprüfung unterzogen. Schwere strukturelle Ausfälle blieben aus, was für die Grundstabilität des Modells spricht. Es wurden jedoch zwei belastungsspezifische Auffälligkeiten dokumentiert:
 
 1. **Kardanwelle (Peitschen / Resonanz):**
-   Durch die extrem hohen Drehzahlen ist die zentrale Kardanwelle in Schwingung geraten (Peitschen). Infolgedessen kam es zu einem leichten mechanischen Kontakt mit dem Servohalter.
+   Durch die stark hohen Drehzahlen ist die zentrale Kardanwelle in Schwingung geraten (Peitschen). Infolgedessen kam es zu einem leichten mechanischen Kontakt mit dem Servohalter.
 
 2. **Vorderes Differentialgehäuse (Kugellager):**
    Ein Kugellager am vorderen Differentialgehäuse wurde durch die auftretenden Kräfte zur Hälfte aus seinem Sitz gedrückt.
@@ -24,7 +31,7 @@ Nach Abschluss der Fahrten wurde das Chassis einer detaillierten Sicht- und Mech
    * **Final Diagnose am 20.04.2026:** Das Kegelzahnrad der vorderen Kardanwellenaufnahme wird tatsächlich einige Millimeter formschlüssig auf die Welle aufgeschoben. Die Verschraubung hat sich etwas gelöst und das Kegelzahnrad ist um ca. 2 mm gewandert. Das Kegelzahnrad wurde nun demontiert. Anschließend wurde das Kegelzahnrad vollständig auf die Welle geschoben und fest verschraubt. Zur Sicherung der Schraubverbindung wurde Sekundenkleber genutzt.
    
 ## Fazit
-Mit einer gemessenen Spitzengeschwindigkeit von 103 km/h war die Testreihe ein voller Erfolg. Das Chassis hat den extremen Belastungen weitestgehend standgehalten. Die festgestellten Mängel sind typische Begleiterscheinungen im Hochgeschwindigkeitsbereich (Rotationskräfte und Vibrationen) und lassen sich durch gezielte, kleine Optimierungen am Antriebsstrang beheben.
+Mit einer gemessenen Spitzengeschwindigkeit von 103 km/h war die Testreihe ein voller Erfolg. Das Chassis hat den hohen Belastungen weitestgehend standgehalten. Die festgestellten Mängel sind typische Begleiterscheinungen im Hochgeschwindigkeitsbereich (Rotationskräfte und Vibrationen) und lassen sich durch gezielte, kleine Optimierungen am Antriebsstrang beheben.
 
 <br>
 <img src="https://github.com/kleinnconrad/RC100/blob/main/messdaten/fotos/20260419_121510.jpg?raw=true" width="50%">

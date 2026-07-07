@@ -12,9 +12,7 @@
 * **Datum:** 01.04.2026
 * **Ort:** Straße
 * **Fokus:** Strukturintegrität, Getriebe & Geschwindigkeitssteigerung
-* **Status:** Teilweise erfolgreich
-
-## Ziel der Testfahrt
+* **Status:** Teilweise ## Ziel der Testfahrt
 Überprüfung der allgemeinen Haltbarkeit des Fahrzeugs unter Belastung. Speziell sollte getestet werden, ob alle Verbindungen fest bleiben und das Getriebe den Kräften standhält. Zudem war das Ziel, die Höchstgeschwindigkeit schrittweise zu steigern und sich der 100 km/h-Marke zu nähern.
 
 ## Testverlauf und Ergebnis

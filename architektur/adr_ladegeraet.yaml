@@ -22,7 +22,7 @@ adr:
     name: High-End Dual-Ladegerät (z.B. Hota D6 Pro / SkyRC D200neo)
     type: Premium / 200W+ / Dual Channel
     evaluation: Bietet zwei unabhängige Ladeausgänge und enorme Leistung (oft 200W
-      AC). Perfekt für den Betrieb auf Rennstrecken mit mehreren Akkus. Für dieses
+      AC). optimal für den Betrieb auf Rennstrecken mit mehreren Akkus. Für dieses
       Single-Car-Projekt jedoch stark überdimensioniert (Over-Engineering) und oft
       zu teuer (> 120 €).
   - option_id: 3
@@ -37,11 +37,11 @@ adr:
     model: S100neo
     type: Smart AC/DC Ladegerät
   rationale: "Die Entscheidung fällt auf das SkyRC S100neo. Es deckt den \"Sweet Spot\"\
-    \ zwischen Sicherheit, \nLeistung und Budget perfekt ab. Die 100 Watt interne\
+    \ zwischen Sicherheit, \nLeistung und Budget optimal ab. Die 100 Watt interne\
     \ Leistung (AC) sind mehr als ausreichend, \num den 3S 5000mAh LiPo in etwa einer\
     \ Stunde schonend vollzuladen. Besonders vorteilhaft ist \nder fest in der Frontblende\
     \ integrierte XT60-Anschluss, der gefährliche und fehleranfällige \nAdapterkabel\
-    \ überflüssig macht. Dies passt perfekt zur Architektur-Entscheidung des Absima-Akkus.\n"
+    \ überflüssig macht. Dies passt optimal zur Architektur-Entscheidung des Absima-Akkus.\n"
   consequences:
   - 'Sicherheit beim Laden: Neben dem XT60-Hauptstecker muss zwingend das weiße JST-XH
     Balancer-Kabel des Akkus in den Port des Ladegeräts gesteckt werden, da sonst

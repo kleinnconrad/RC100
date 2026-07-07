@@ -12,7 +12,7 @@
 * **Datum:** 09.04.2026
 * **Ort:** Tiefgarage
 * **Fokus:** Bugstabilität
-* **Status:** Teilweise erfolgreich / Ausbaufähig
+* **Status:** Teilweise / Ausbaufähig
 
 ## Ziel der Testfahrt
 Überprüfung des Fahrverhaltens am Bug des Carten T410R unter zwei spezifischen Setup-Varianten: 

@@ -15,10 +15,10 @@ adr:
       description: 'Kauf eines High-End Wettbewerbs-Chassis (Benchmark: Xray X4 ''24).'
       pros:
       - Perfekte Mechanik und Torsionssteifigkeit (Premium Carbon).
-      - Pivot-Ball / Active-Toe Aufhängung für extrem präzises Setup.
+      - Pivot-Ball / Active-Toe Aufhängung für stark präzises Setup.
       - Risiko bei 3S / 100 km/h ist sehr gering.
       cons:
-      - Extrem hohes Budget erforderlich (~ 750 € nur für den Bausatz).
+      - stark hohes Budget erforderlich (~ 750 € nur für den Bausatz).
       - Differentiale sind trotz Wettbewerbs-Güte aus Kunststoff.
     make_option:
       description: Eigenaufbau basierend auf einem Budget-Kit (~ 140 - 180 €) und
@@ -34,7 +34,7 @@ adr:
     name: Xray X4 '24 (Benchmark / Buy-Option)
     type: 2-Riemen (Belt)
     price_class: ~ 750 €
-    evaluation: Referenzklasse. Perfekt berechneter Flex und Ultra-Low Mid-Motor.
+    evaluation: Referenzklasse. optimal berechneter Flex und Ultra-Low Mid-Motor.
       Wird jedoch aus Budgetgründen und der 'Buy'-Klassifizierung abgelehnt.
   - option_id: 2
     name: Xpress Arrow AT1S

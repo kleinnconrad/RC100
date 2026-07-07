@@ -4,7 +4,7 @@ adr:
   status: entschieden
   date: '2026-03-06'
   context: "Um das RC100 Projekt auf über 100 km/h zu beschleunigen, muss die Energiequelle\
-    \ perfekt \nauf den 4000kV Motor und den 120A ESC (Hobbywing QuicRun) abgestimmt\
+    \ optimal \nauf den 4000kV Motor und den 120A ESC (Hobbywing QuicRun) abgestimmt\
     \ sein. \nEin 2S LiPo (7.4V) würde nur ca. 29.600 U/min liefern, was für 100 km/h\
     \ bei normaler \nÜbersetzung nicht ausreicht. Daher ist ein 3S LiPo (11.1V) zwingend\
     \ erforderlich, um \ndie rechnerischen ~44.400 U/min zu erreichen. Zudem muss\
@@ -22,7 +22,7 @@ adr:
   - option_id: 2
     name: High-End Graphene 3S LiPo (z.B. Gens Ace Redline 130C)
     type: Premium / Hardcase
-    evaluation: Bietet extrem stabile Spannungslagen (kaum Voltage Sag) und gigantische
+    evaluation: Bietet stark stabile Spannungslagen (kaum Voltage Sag) und gigantische
       Stromreserven. Ist jedoch sehr teuer (> 90 €) und oft so massiv gebaut, dass
       er ohne starke Modifikationen am Chassis-Layout nicht in einen 1:10 Tourenwagen
       passt.
@@ -30,12 +30,12 @@ adr:
     name: Absima GreenHorn Line V2 3S (Art. 4140014)
     type: Mid-Range / Hardcase
     evaluation: Bietet 11.1V, 5000mAh und eine konstante Entladerate von 50C (theoretisch
-      250A Dauerlast), was den 120A Regler perfekt abdeckt. Das Hardcase schützt die
+      250A Dauerlast), was den 120A Regler optimal abdeckt. Das Hardcase schützt die
       Zellen. Bietet das beste Preis-Leistungs-Verhältnis (~ 45 €) für das Projektbudget.
   decision: Absima GreenHorn Line V2 (3S / 5000mAh / 50C / Hardcase)
   rationale: "Die Entscheidung fällt auf den Absima GreenHorn V2 3S LiPo. Mit 50C\
     \ Entladerate bietet er \ngenügend Puffer für die massiven Stromspitzen beim Beschleunigen\
-    \ der 64Z/38Z Übersetzung. \nDas Hardcase ist ein absolutes Sicherheits-Muss für\
+    \ der 64Z/38Z Übersetzung. \nDas Hardcase ist ein Sicherheitsanforderung für\
     \ Speedruns, da ein Einschlag bei 100 km/h \neinen Softcase-LiPo sofort zerstören\
     \ und entzünden würde. Der vorkonfektionierte XT60-Stecker \ngarantiert einen\
     \ geringen Übergangswiderstand für die hohen Ströme.\n"

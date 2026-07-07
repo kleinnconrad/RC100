@@ -8,7 +8,7 @@ adr:
     \ oder eine zu langsame \nReaktionszeit des Lenkservos können sofort zum Kontrollverlust\
     \ und Totalausfall führen. \nZudem ist der Platz in einem 1:10 Tourenwagen-Chassis\
     \ begrenzt. Da unsere MVP-Fernsteuerung \n(Carson Reflex Wheel X1) über keinen\
-    \ elektronischen Gyro verfügt, muss das Servo den \nGeradeauslauf mechanisch extrem\
+    \ elektronischen Gyro verfügt, muss das Servo den \nGeradeauslauf mechanisch stark\
     \ präzise und kraftvoll halten. Gefordert ist ein Servo \nmit Metallgetriebe (Robustheit),\
     \ hoher Stellgeschwindigkeit (~0.11s) und ausreichender \nStellkraft (ca. 9 kg).\n"
   considered_alternatives:
@@ -21,8 +21,8 @@ adr:
   - option_id: 2
     name: High-End Brushless Full-Size Servo (z.B. Savöx SB-2290SG)
     type: Premium / Standardgröße / 50+ kg
-    evaluation: 'Monströse Stellkraft und extrem schnell. Aber: Völlig überdimensioniert
-      (Over-Engineering), extrem teuer (> 130 €) und vor allem als Full-Size-Servo
+    evaluation: 'Monströse Stellkraft und stark schnell. Aber: Völlig überdimensioniert
+      (Over-Engineering), stark teuer (> 130 €) und vor allem als Full-Size-Servo
       zu groß für das kompakte Chassis.'
   - option_id: 3
     name: Savöx SC-1251MG+

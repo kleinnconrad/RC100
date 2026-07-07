@@ -12,9 +12,7 @@
 * **Datum:** 29.03.2026
 * **Ort:** Tiefgarage
 * **Fokus:** Überprüfung Schraubverbindungen und sonstige Fehler
-* **Status:** Erfolgreich
-
-## Ziel der Testfahrt
+* **Status:** ## Ziel der Testfahrt
 Halten die Schraubverbindungen? Treten neue Fehler auf?
 
 ## Testverlauf und Ergebnis

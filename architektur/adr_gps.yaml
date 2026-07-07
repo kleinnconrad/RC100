@@ -7,7 +7,7 @@ adr:
     \ Spannungseinbruch) \nmüssen in der Realität ('Integration Test' auf der Straße)\
     \ durch harte Telemetriedaten \nvalidiert werden. Da das Fahrzeug den Topspeed\
     \ von 100 km/h oft nur für ein Zeitfenster \nvon 2 bis 3 Sekunden hält, ist eine\
-    \ extrem hohe Abtastrate (Update-Frequenz) des \nMessgeräts zwingend erforderlich.\
+    \ stark hohe Abtastrate (Update-Frequenz) des \nMessgeräts zwingend erforderlich.\
     \ Gleichzeitig darf das Modul das Fahrzeuggewicht (CG) \nund die Aerodynamik nicht\
     \ negativ beeinflussen.\n"
   considered_alternatives:
@@ -26,7 +26,7 @@ adr:
   - option_id: 3
     name: Ruddog GPS Performance Analyzer
     type: RC-spezifischer 10Hz GNSS-Logger
-    evaluation: Kompakt, mit ca. 38g extrem leicht und bietet eine Abtastrate von
+    evaluation: Kompakt, mit ca. 38g stark leicht und bietet eine Abtastrate von
       10 Messungen pro Sekunde (10Hz). Erfasst neben dem Topspeed auch G-Kräfte, Beschleunigungszeiten
       und durchschnittliche Geschwindigkeiten. Bequemes Auslesen per Bluetooth und
       Smartphone-App.
@@ -46,6 +46,6 @@ adr:
     aber von Karbonfasern massiv geblockt. Das Modul darf im Carten T410R nicht direkt
     *unter* dem Karbon-Oberdeck montiert werden. Die optimale Position ist auf dem
     Schaumstoff-Bumper vorne.'
-  - 'Befestigung: Das Gerät muss extrem sicher (z.B. mit starkem Klettband oder 3M
+  - 'Befestigung: Das Gerät muss stark sicher (z.B. mit starkem Klettband oder 3M
     Dual Lock) fixiert werden, damit es bei einem Überschlag bei 100 km/h nicht als
     Projektil wegfliegt.'

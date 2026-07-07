@@ -1,5 +1,17 @@
 # Hobbywing QuicRun 120A ESC
 
+
+## Inhaltsverzeichnis
+* [1. Kalibrierung des Gaswegs (Throttle Range Calibration)](#1-kalibrierung-des-gaswegs-throttle-range-calibration)
+  * [1.1 Vorbereitung der Fernsteueranlage (Transmitter)](#11-vorbereitung-der-fernsteueranlage-transmitter)
+  * [1.2 Durchführung der Kalibrierung](#12-durchfuhrung-der-kalibrierung)
+* [2. Parametrierung des "Punch" (Start Mode) via LED-Programmierkarte](#2-parametrierung-des-punch-start-mode-via-led-programmierkarte)
+  * [2.1 Anschluss der Programmierkarte](#21-anschluss-der-programmierkarte)
+  * [2.2 Einstellung des Parameters](#22-einstellung-des-parameters)
+* [3. Auf korrekte Polung des Motors achten](#3-auf-korrekte-polung-des-motors-achten)
+* [4. Programmierung des ESC](#4-programmierung-des-esc)
+
+
 ## 1. Kalibrierung des Gaswegs (Throttle Range Calibration)
 
 ### 1.1 Vorbereitung der Fernsteueranlage (Transmitter)
@@ -13,7 +25,7 @@
 1. Fahrakku an den ausgeschalteten Regler (ESC) anschließen.
 2. Die SET-Taste am Regler drücken und gedrückt halten.
 3. Den Regler über den Hauptschalter einschalten.
-4. Sobald die rote Status-LED zu blinken beginnt, die SET-Taste unverzüglich loslassen.
+4. Sobald die rote Status-LED zu blinken beginnt, die SET-Taste sofortloslassen.
 5. **Neutralpunkt:** Gashebel in Neutralstellung belassen. SET-Taste einmal drücken. Die grüne LED blinkt einmal zur Bestätigung.
 6. **Vollgas-Endpunkt:** Gashebel auf maximale Vorwärts-Position (Vollgas) ziehen und am mechanischen Anschlag halten. SET-Taste einmal drücken. Die grüne LED blinkt zweimal.
 7. **Vollbrems-Endpunkt:** Gashebel auf maximale Rückwärts-Position (Vollbremse) drücken und am mechanischen Anschlag halten. SET-Taste einmal drücken. Die grüne LED blinkt dreimal.

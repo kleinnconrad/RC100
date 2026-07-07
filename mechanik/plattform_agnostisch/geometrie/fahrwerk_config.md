@@ -1,6 +1,15 @@
 ## Fahrwerksgeometrie: Spur & Sturz (Das 100 km/h Setup)
 
-Die Fahrwerksgeometrie entscheidet bei extremen Geschwindigkeiten darüber, ob das Auto stabil geradeaus fährt oder unkontrollierbar ausbricht. Hier sind die wichtigsten physikalischen Parameter und unser spezifisches Speedrun-Setup.
+
+## Inhaltsverzeichnis
+* [Fahrwerksgeometrie: Spur & Sturz (Das 100 km/h Setup)](#fahrwerksgeometrie-spur--sturz-das-100-kmh-setup)
+  * [1. Spur (Toe)](#1-spur-toe)
+  * [2. Sturz (Camber)](#2-sturz-camber)
+  * [Setup-Plan (Carten T410R)](#setup-plan-carten-t410r)
+  * [Einstellung am Chassis](#einstellung-am-chassis)
+
+
+Die Fahrwerksgeometrie entscheidet bei hohen Geschwindigkeiten darüber, ob das Auto stabil geradeaus fährt oder unkontrollierbar ausbricht. Hier sind die wichtigsten physikalischen Parameter und unser spezifisches Speedrun-Setup.
 
 ### 1. Spur (Toe)
 Die Spur beschreibt den Winkel der Räder im Verhältnis zur Längsachse des Autos, **wenn man von oben herabschaut**.
@@ -10,7 +19,7 @@ Die Spur beschreibt den Winkel der Räder im Verhältnis zur Längsachse des Aut
 * **Vorspur (Toe-in):** Die Räder zeigen an der Front leicht nach **innen** (`/ \`).
   * *Effekt:* Das Auto will stur geradeaus fahren und stabilisiert sich selbst. Es lenkt in Kurven träger ein.
 * **Nachspur (Toe-out):** Die Räder zeigen an der Front leicht nach **außen** (`\ /`).
-  * *Effekt:* Das Auto lenkt extrem aggressiv in Kurven ein, wird aber auf der Geraden extrem nervös und beginnt zu "schwimmen".
+  * *Effekt:* Das Auto lenkt stark aggressiv in Kurven ein, wird aber auf der Geraden stark nervös und beginnt zu "schwimmen".
 
 ### 2. Sturz (Camber)
 Der Sturz beschreibt den Winkel der Räder, **wenn man von vorne oder hinten auf das Auto schaut**.
@@ -33,7 +42,7 @@ Für einen kompromisslosen Speedrun (exakt geradeaus, maximale Stabilität) gilt
 | Achse / Parameter | Einstellung | Physikalischer Grund für 100 km/h |
 | :--- | :--- | :--- |
 | **Vorderachse: Spur** | **0° (Neutral)** | Kein Bremswiderstand durch "schräg" stehende Räder. Das Lenkservo hält das Auto auf Kurs. |
-| **Hinterachse: Spur** | **2.5° bis 3° Vorspur** | **Extrem wichtig!** Der aerodynamische "Anker". Zwingt das Heck, immer hinter der Front zu bleiben. Ohne Vorspur dreht sich das Auto bei 80 km/h sofort um die eigene Achse. *(Beim Carten T410R oft durch die hinteren Querlenkerhalter / Toe-Blocks vorgegeben).* |
+| **Hinterachse: Spur** | **2.5° bis 3° Vorspur** | **stark wichtig!** Der aerodynamische "Anker". Zwingt das Heck, immer hinter der Front zu bleiben. Ohne Vorspur dreht sich das Auto bei 80 km/h sofort um die eigene Achse. *(Beim Carten T410R oft durch die hinteren Querlenkerhalter / Toe-Blocks vorgegeben).* |
 | **Sturz (Vorne & Hinten)**| **-0.5° bis -1.0° (Leicht Negativ)**| Nicht komplett 0°, da sich der Gummi-Reifen bei 10.000 U/min durch die Fliehkraft in der Mitte minimal aufbläht (Ballooning). Der winzige negative Sturz kompensiert das, sodass die Lauffläche bei Top-Speed plan auf dem Asphalt bleibt. |
 
 ### Einstellung am Chassis

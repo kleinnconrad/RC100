@@ -7,8 +7,8 @@
 | **Differential-Zahnräder** | **Metall** (Sintermetall) | Kunststoff / Composite | Kunststoff / Composite | Kunststoff / Composite | Kunststoff (Wettbewerbs-Güte) |
 | **Aufhängungssystem** | C-Hubs | C-Hubs | C-Hubs | C-Hubs | Pivot-Ball / Active-Toe |
 | **Motorposition** | Hinten rechts | Hinten rechts | Mitte / Mid-Motor | Mitte / Mid-Motor | Mitte (Ultra-Low) |
-| **Torsionssteifigkeit (Flex)**| Sehr steif | Mittel (FRP flext mehr) | Mittel (FRP flext mehr) | Sehr steif | Perfekt berechnet |
-| **Risiko bei 3S / 100 km/h**| Gering (Welle extrem robust) | Mittel (FRP flattern möglich) | Hoch (Riemen-Überspringen) | Mittel (Riemen-Risiko) | Sehr gering (Perfekte Mechanik) |
+| **Torsionssteifigkeit (Flex)**| Sehr steif | Mittel (FRP flext mehr) | Mittel (FRP flext mehr) | Sehr steif | optimal berechnet |
+| **Risiko bei 3S / 100 km/h**| Gering (Welle stark robust) | Mittel (FRP flattern möglich) | Hoch (Riemen-Überspringen) | Mittel (Riemen-Risiko) | Sehr gering (Perfekte Mechanik) |
 | **Ca. Preis (Nur Bausatz)** | **~ 180 €** | **~ 150 €** | **~ 150 €** | **~ 140 €** | **~ 750 €** |
 
 Anmerkung: Differential Zahnräder aus Kunstoff / Composite stellen ein Risiko dar. Zumindest fraglich

@@ -3,12 +3,12 @@ adr:
   title: Auswahl der Bereifung (Belted Gummireifen für Asphalt) für 100 km/h Speedruns
   status: Entschieden
   date: '2026-02-25'
-  context: "Bei einer Zielgeschwindigkeit von 100 km/h und den damit verbundenen extremen\
+  context: "Bei einer Zielgeschwindigkeit von 100 km/h und den damit verbundenen hohen\
     \ Drehzahlen \nder Räder dehnen sich Standard-Gummireifen durch die Fliehkraft\
     \ massiv in der Mitte aus \n(der sogenannte \"Pizza-Cutter-Effekt\" oder \"Ballooning\"\
     ). Das führt zu einem sofortigen \nKontrollverlust und oft zum Platzen des Reifens.\
     \ Gefordert sind fertig verklebte Reifen \nauf Felgen mit einem 12mm-Sechskant-Mitnehmer\
-    \ (passend für das Carten T410R Chassis), \ndie ihre Form unter extremen Fliehkräften\
+    \ (passend für das Carten T410R Chassis), \ndie ihre Form unter hohen Fliehkräften\
     \ zu 100 % beibehalten und deren Gummimischung \nder hohen Reibungshitze auf rauem\
     \ Asphalt standhält.\nZusätzlich muss die reale Streckenbeschaffenheit (nicht\
     \ staubfreier Normal-Asphalt vs. \nsauber präparierte Rennstrecke) bei der Wahl\
@@ -24,20 +24,20 @@ adr:
     name: Contact RC 1/10 Moosgummi-Reifen (Foams)
     type: High-Grip / Lightweight
     evaluation: Der klassische Speedrun-Reifen. Dehnt sich physikalisch bedingt überhaupt
-      nicht aus und bietet gigantischen Grip. Ist jedoch extrem anfällig für Straßenschmutz
+      nicht aus und bietet gigantischen Grip. Ist jedoch stark anfällig für Straßenschmutz
       (kleine Steinchen reißen sofort Stücke aus dem Schaumstoff).
   - option_id: 3
     name: Sweep HANKOOK Tread Belted 32deg (for Carpet)
     type: Indoor / Teppich
     evaluation: Besitzen zwar das rettende Belted-Gewebe, jedoch ist die 32-Shore
       Gummimischung viel zu weich für Asphalt. Bei 100 km/h auf der Straße würden
-      diese Reifen extrem überhitzen und extrem schnell verschleißen oder sich auflösen.
+      diese Reifen stark überhitzen und stark schnell verschleißen oder sich auflösen.
   - option_id: 4
     name: Voll-Slicks Belted (z.B. Sweep EXP Belted Slicks / Matrix Slicks)
     type: Premium / Profillos
     evaluation: Bieten physikalisch den maximalen Kontakt zur Straße (100 % Gummiauflage)
       und extreme Laufruhe, da keine Profilblöcke walken können. Sind bei 100 km/h
-      die absolut schnellsten Reifen, ABER erfordern zwingend eine perfekt gekehrte,
+      die absolut schnellsten Reifen, ABER erfordern zwingend eine optimal gekehrte,
       saubere Piste. Auf staubigen Straßen rutschen sie massiv.
   - option_id: 5
     name: Sweep HANKOOK Tread Belted tires Pre-glued set Pro-compound 36deg (for Asphalt)
@@ -58,11 +58,11 @@ adr:
   rationale: "Die Entscheidung fällt auf die fertig verklebten Sweep HANKOOK Tread\
     \ Belted Reifen mit \nder härteren 36-Shore Asphalt-Mischung. Obwohl ein profilloser\
     \ Voll-Slick physikalisch \ndie absolute Höchstleistung und maximale Laufruhe\
-    \ bei 100 km/h bietet, ist er im realen \nEinsatz auf nicht perfekt gekehrten\
+    \ bei 100 km/h bietet, ist er im realen \nEinsatz auf nicht optimal gekehrten\
     \ Parkplätzen zu empfindlich gegen feinen Staub (Verlust \nder Traktion). Das\
     \ Hankook-Profil kann leichten Schmutz abtransportieren und bietet \nauf Normal-Asphalt\
     \ das sicherere und gutmütigere Fahrverhalten. Gleichzeitig garantiert \ndas essenzielle\
-    \ Kevlar-Gewebe (Belt) absolute Sicherheit gegen das lebensgefährliche Ausdehnen.\n"
+    \ Kevlar-Gewebe (Belt) absolute Sicherheit gegen das kritischeAusdehnen.\n"
   consequences:
   - 'Vorab-Check: Auch ab Werk fertig verklebte Reifen müssen vor dem ersten Run zwingend
     auf Verarbeitungsfehler an der Klebenaht geprüft werden (kurz an der Reifenflanke

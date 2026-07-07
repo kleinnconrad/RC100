@@ -12,7 +12,7 @@
 * **Datum:** 16.04.2026
 * **Ort:** Draußen auf der Straße
 * **Fokus:** Maximale Geschwindigkeitssteigerung (Speedrun)
-* **Status:** Teilweise erfolgreich / Unfallbedingt abgebrochen
+* **Status:** Teilweise / Unfallbedingt abgebrochen
 
 ## Ziel der Testfahrt
 Steigerung der Geschwindigkeit und Überprüfung des Fahrverhaltens bei hohem Tempo. Das Hauptziel war es, die Geschwindigkeit des Fahrzeugs so weit wie möglich zu pushen.

@@ -1,5 +1,12 @@
 # Smoke Test
 
+
+## Inhaltsverzeichnis
+* [Aktuelles Setup](#aktuelles-setup)
+* [Testbericht & Problemstellung](#testbericht--problemstellung)
+* [Lösung & Next Steps](#losung--next-steps)
+
+
 ## Aktuelles Setup
 * **Motor:** 3660 Brushless
 * **Spezifikation:** 3700 KV

@@ -7,4 +7,4 @@
 
 * **Lackierung (Target: Mazda Soul Red Crystal):** Das Ziel war ein tiefer, mehrschichtiger Candy-Look ("Bonbon-Effekt"). 
   * **Prozess:** Es wurden 5 hauchdünne Schichten Rot (PS-15) aufgetragen, gefolgt von 2 mittleren Schichten Silber (PS-12) als Reflektor und abgeschlossen mit 2 dicken Schichten Schwarz (PS-5) als lichtdichter Hintergrund.
-  * **Ergebnis & Learning:** Der grundlegende Bonbon-Effekt wurde erfolgreich erzielt, allerdings ist das Rot am Ende nicht satt und tief genug geworden (das Silber schlägt zu stark durch). Für zukünftige Lackierungen müssen mehr/dickere Schichten Rot aufgetragen und der Silber-Anteil leicht reduziert werden.
+  * **Ergebnis & Learning:** Der grundlegende Bonbon-Effekt wurde erzielt, allerdings ist das Rot am Ende nicht satt und tief genug geworden (das Silber schlägt zu stark durch). Für zukünftige Lackierungen müssen mehr/dickere Schichten Rot aufgetragen und der Silber-Anteil leicht reduziert werden.

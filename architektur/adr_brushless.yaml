@@ -4,7 +4,7 @@ adr:
   status: entschieden
   date: '2026-03-06'
   context: "Um einen 1/10 Tourenwagen (Carten T410R) auf 100 km/h zu beschleunigen,\
-    \ muss das Getriebe extrem \n'lang' übersetzt werden (hohe Radlast > 22 %). Ein\
+    \ muss das Getriebe stark \n'lang' übersetzt werden (hohe Radlast > 22 %). Ein\
     \ klassischer 3650er-Motor (50 mm Länge) operiert \nhierbei an seiner thermischen\
     \ Belastungsgrenze. Es wird zwingend ein Antriebsstrang benötigt, \nder bei 3S-Spannung\
     \ (11.1V) genügend mechanisches Drehmoment (Motorbaugröße 3660) liefert und \n\
@@ -14,7 +14,7 @@ adr:
   - option_id: 1
     name: Standard 1/10 Setup (z.B. Hobbywing 10BL120 + 3650SL 4000KV)
     type: Klassisches Tourenwagen-Setup
-    evaluation: Der 3650er Motor passt physisch perfekt ins Chassis. Allerdings fehlt
+    evaluation: Der 3650er Motor passt physisch optimal ins Chassis. Allerdings fehlt
       der kurze Rotor das nötige Drehmoment für große Ritzel (43Z/44Z). Bei 100 km/h
       droht eine massive Überhitzung (Hitzetod).
   - option_id: 2
@@ -26,7 +26,7 @@ adr:
   - option_id: 3
     name: Premium Sensored Setup (Hobbywing EzRun MAX10 G2 + 3665SD Motor)
     type: High-End / Sensored
-    evaluation: Bietet durch das Sensorkabel extrem feinfühliges Anfahren und integrierte
+    evaluation: Bietet durch das Sensorkabel stark feinfühliges Anfahren und integrierte
       Telemetrie. Ist jedoch für einen reinen Geradeaus-Speedrun mit über 150 € massiv
       überdimensioniert.
   - option_id: 4
@@ -42,7 +42,7 @@ adr:
     motor_model: QuicRun 3660SL G2 (3700KV)
     type: Sensorless Brushless System (Wasserdicht IP67)
   rationale: "Die Entscheidung fällt auf die Hobbywing QuicRun G2 Combo. Sie eliminiert\
-    \ das Ausfallrisiko von \nNo-Name-Motoren und bietet eine perfekt aufeinander\
+    \ das Ausfallrisiko von \nNo-Name-Motoren und bietet eine optimal aufeinander\
     \ abgestimmte Architektur (Firmware von ESC \nund Motor-Timing sind optimal verzahnt).\
     \ Der 3660er Motor liefert mit seinen 3700KV an 3S \n(ca. 41.000 U/min) die perfekte\
     \ Drehzahl und hat durch den längeren Rotor genug Drehmoment, \num die errechnete\

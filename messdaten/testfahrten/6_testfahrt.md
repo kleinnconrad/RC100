@@ -12,9 +12,7 @@
 * **Datum:** 02.04.2026
 * **Ort:** Tiefgarage
 * **Fokus:** Schwerpunktverlagerung & Stabilisierung des Bugs
-* **Status:** Teilweise erfolgreich
-
-## Ziel der Testfahrt
+* **Status:** Teilweise ## Ziel der Testfahrt
 Behebung des schwammigen Fahrverhaltens am Bug (Vorderachse) durch eine gezielte Veränderung des Schwerpunktes nach vorne. Zu diesem Zweck wurden 150 Gramm Zusatzgewicht direkt auf den Front Bumper geklebt, um mehr Druck auf die Vorderräder zu erzeugen und die Lenkpräzision zu verbessern.
 
 ## Testverlauf und Ergebnis

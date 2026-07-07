@@ -3,7 +3,7 @@ spec:
     brand: SkyRC
     model: S100neo
     type: Smart AC/DC Ladegerät
-    architecture_fit: Perfekt. Hat XT60-Buchse direkt im Gehäuse verbaut. Kein Adapter-Chaos.
+    architecture_fit: optimal. Hat XT60-Buchse direkt im Gehäuse verbaut. Kein Adapter-Chaos.
   properties:
     power_specifications:
       input_voltage_ac: 100-240V (Integriertes Netzteil für normale Steckdose)

@@ -12,7 +12,7 @@ spec:
         issue: Spielfreiheit
         description: Die inneren Metallzahnräder müssen beim Zusammenbau mit hauchdünnen
           Passscheiben (Shims) absolut spielfrei eingestellt werden. Nur so wird verhindert,
-          dass die Zähne unter dem extremen Drehmoment des 3S-Motors überspringen
+          dass die Zähne unter dem hohen Drehmoment des 3S-Motors überspringen
           oder abreißen.
       reinforced_sealing:
         issue: O-Ring Abdichtung
@@ -22,7 +22,7 @@ spec:
       oil_viscosity:
         issue: Sperrwirkung & Geradeauslauf
         description: Das Baukasten-Öl ist zu weich und führt bei Speedruns zu unkontrollierbarem
-          Ausbrechen, wenn ein Rad minimal Grip verliert. Es muss extrem zähes Silikonöl
+          Ausbrechen, wenn ein Rad minimal Grip verliert. Es muss stark zähes Silikonöl
           verwendet werden, um das Auto auf einen sturen Geradeauslauf zu zwingen.
         setup_recommendation:
           front_axle: ca. 100.000 cSt (oder ein komplett starrer Spool/Starrachse)
