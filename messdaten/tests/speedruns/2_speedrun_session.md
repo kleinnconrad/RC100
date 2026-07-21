@@ -6,11 +6,10 @@
 * [Fazit](#fazit)
 
 **Datum:** 19. Juli 2026  
-**Ort:** Bauhaus Parkplatz  
+**Ort:** Bauhaus Parkplatz
+**Ergebnis:** nicht erfolgreich
 
 ## Zusammenfassung der Testläufe
-Ziel der Session war die Untersuchung des Fahrverhaltens bei zunehmender Geschwindigkeit.
-
 * **Gemessene Höchstgeschwindigkeit:** **72 km/h**
 
 Das Fahrzeug zeigte bei höheren Geschwindigkeiten sowie bei starker Beschleunigung ein instabiles Fahrverhalten. Dies limitierte die maximal erreichbare Geschwindigkeit.
