@@ -12,7 +12,7 @@
 ## Zusammenfassung der Testläufe
 * **Gemessene Höchstgeschwindigkeit:** **72 km/h**
 
-Das Fahrzeug zeigte bei höheren Geschwindigkeiten sowie bei starker Beschleunigung ein instabiles Fahrverhalten. Dies limitierte die maximal erreichbare Geschwindigkeit.
+Das Fahrzeug zeigte bei höheren Geschwindigkeiten sowie bei starker Beschleunigung ein instabiles Fahrverhalten. Dies limitierte die maximal erreichbare Geschwindigkeit erheblich.
 
 ## Post-Run Inspektion und Fehleranalyse
 Eine anschließende Überprüfung des Fahrzeugs ergab drei wesentliche Konfigurationsfehler am Fahrwerk, die für die Instabilität verantwortlich waren:
