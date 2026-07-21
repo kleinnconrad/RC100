@@ -6,7 +6,7 @@
 * [Fazit](#fazit)
 
 **Datum:** 19. Juli 2026  
-**Ort:** Bauhaus Parkplatz
+**Ort:** Bauhaus Parkplatz  
 **Ergebnis:** nicht erfolgreich
 
 ## Zusammenfassung der Testläufe
