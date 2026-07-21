@@ -30,4 +30,4 @@ Eine anschließende Überprüfung des Fahrzeugs ergab drei wesentliche Konfigura
 Alle drei festgestellten Konfigurationsfehler wurden behoben. Die Stabilisatoren sind komplett abmontiert, da sie für Speedruns überflüssig sind und die Fahrwerksgeometrie an Vorder- sowie Hinterachse wurde symmetrisch eingestellt.
 
 ## Fazit
-Die Instabilität des Fahrzeugs bei starker Beschleunigung und Geschwindigkeiten bis 72 km/h war vermutlich auf eine fehlerhafte Fahrwerksabstimmung zurückzuführen. Durch die Korrektur der Stabilisatormontage, des Radsturzes und der Vorspur wurden die mechanischen Voraussetzungen für ein stabileres Fahrverhalten bei zukünftigen Tests geschaffen.
+Die Instabilität des Fahrzeugs bei starker Beschleunigung und Geschwindigkeiten bis 72 km/h war vermutlich auf eine fehlerhafte Fahrwerksabstimmung zurückzuführen. Durch die Demontage der Stabilisatoren, der Korrektur des Radsturzes und der Korrektur der Vorspur wurden die mechanischen Voraussetzungen für ein stabileres Fahrverhalten bei zukünftigen Tests geschaffen.
