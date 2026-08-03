@@ -23,3 +23,4 @@
 ## Maßnahmen
 * Ein zweiter Carten Bausatz wurde als Ersatzteillager bestellt. Das Fahrzeug wird neu aufgebaut und konfiguriert.
 * Definitiver Einbau eines Spools.
+* Prüfung der Gewichtsverteilung (vorallem links/rechts)
