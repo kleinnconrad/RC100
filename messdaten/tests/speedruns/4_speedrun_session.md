@@ -17,7 +17,7 @@
 
 ## Vorfall und Schadensanalyse
 * **Vorfall:** Bei ca. 80 - 90 km/h crash in eine Europalette
-* **Schaden:** Hintere Differentialbox, alle Querlenkerhalter, Akkuhalter, Motorhalter, Hauptzahnrad, Bodenplatte stark angegriffen.
+* **Schaden:** Hintere Differentialbox, drei Querlenkerhalter, Akkuhalter, Motorhalter, Hauptzahnrad, Bodenplatte stark angegriffen.
 * **Konsequenz:** Der Test wurde abgebrochen.
 
 ## Maßnahmen
