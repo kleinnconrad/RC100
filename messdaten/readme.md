@@ -16,6 +16,16 @@
 | GPS | 37 g |
 | **Gesamt** | **1.757 g** |
 
+## Gewichtsverteilung (ohne gps und karosserie und mit spool vorne statt differential)
+
+**Im Ursprungszustand ist das Fahrzeug zu hecklastig. Optimalerweise sollte das Fahrzeug mit 55% - 60% frontlastig sein. Es sollten 150g von hinten nach vorne umverteilt werden**
+
+| | gramm | ratio | | gramm | ratio |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| **links** | 790 | 49% | **vorne** | 727 | 45% |
+| **rechts** | 834 | 51% | **hinten** | 893 | 55% |
+| **summe** | 1624 | 100% | **summe** | 1620 | 100% |
+
 ## Abmessungen 
 
 | Dimension | Wert |
