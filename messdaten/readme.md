@@ -3,6 +3,7 @@
 
 ## Inhaltsverzeichnis
 * [Gewicht](#gewicht)
+* [Gewichtsverteilung](#gewichtsverteilung)
 * [Abmessungen ](#abmessungen-)
 * [Leistung](#leistung)
 
@@ -16,8 +17,8 @@
 | GPS | 37 g |
 | **Gesamt** | **1.757 g** |
 
-## Gewichtsverteilung (ohne gps und karosserie und mit spool vorne statt differential)
-
+## Gewichtsverteilung
+*ohne gps und karosserie und mit spool vorne statt differential
 **Optimale Gewichtsverteilung muss getestet werden**
 
 | | gramm | ratio | | gramm | ratio |
