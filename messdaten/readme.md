@@ -18,7 +18,7 @@
 
 ## Gewichtsverteilung (ohne gps und karosserie und mit spool vorne statt differential)
 
-**Im Ursprungszustand ist das Fahrzeug zu hecklastig. Optimalerweise sollte das Fahrzeug mit 55% - 60% frontlastig sein. Es sollten 150g von hinten nach vorne umverteilt werden**
+**Optimale Gewichtsverteilung muss getestet werden**
 
 | | gramm | ratio | | gramm | ratio |
 | :--- | :--- | :--- | :--- | :--- | :--- |
