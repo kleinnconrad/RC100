@@ -21,7 +21,7 @@
 - Das Fahrzeug bricht bei starker Beschleunigung nach links aus. Die Ursache ist sehr wahrscheinlich Torque Twist durch die drehmomentstarke Motorisierung.
 
 ## Maßnahmen
-- Austausch des Motors von einer drehmomentstarken zu einer drehzahlstarken Auslegung (Priorität 1).
+- Austausch des Motors von einer drehmomentstarken zu einer drehzahlstarken Auslegung (Priorität 1). QuicRun 3652SL G2 Sensorless Motor 5400kV 3.175mm Welle
 - Einbau von "perfect pass" https://github.com/ambrmart/arduino-rc-launch-control
 - Erhöhung der Federhärte.
 - Überprüfung der Bereifung.
