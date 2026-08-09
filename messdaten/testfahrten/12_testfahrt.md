@@ -22,6 +22,7 @@
 
 ## Maßnahmen
 - Austausch des Motors von einer drehmomentstarken zu einer drehzahlstarken Auslegung (Priorität 1).
+- Einbau von "perfect pass" https://github.com/ambrmart/arduino-rc-launch-control
 - Erhöhung der Federhärte.
 - Überprüfung der Bereifung.
 - Überprüfung von Servo und Servosaver.
