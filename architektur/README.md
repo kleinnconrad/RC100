@@ -10,8 +10,8 @@ Dieses Verzeichnis enthält alle grundlegenden architektur- und Hardwareentschei
 | **ADR-002** | 2026-03-06 | Auswahl der Brushless-Motor-Combo für 100 km/h Speedruns | 🟢 entschieden | Hobbywing QuicRun WP10BL120 G2 Combo (3660SL 3700KV) |
 | **ADR-003** | 2026-03-06 | Auswahl des LiPo-Akkus für 100 km/h Ziel. | 🟢 entschieden | Absima GreenHorn Line V2 (3S / 5000mAh / 50C / Hardcase) |
 | **ADR-004** | 2026-03-06 | Auswahl des Ladegeräts für 3S LiPo-Akkus | 🟢 entschieden | SkyRC S100neo |
-| **ADR-005** | 2026-03-06 | Auswahl der Fernsteuerungsanlage für 100 km/h Speedruns | 🟢 entschieden | Carson Reflex Wheel X1 |
-| **ADR-006** | 2026-03-06 | Auswahl des Lenkservos für präzise High-Speed-Kontrolle | 🟢 entschieden | JX PDI-4409MG |
+| **ADR-005** | 2026-03-06 | Auswahl der Fernsteuerungsanlage für 100 km/h Speedruns | 🟢 entschieden | X9S Radio + Mini Waterproof 4-Channel Receiver RG4CHWP |
+| **ADR-006** | 2026-03-06 | Auswahl des Lenkservos für präzise High-Speed-Kontrolle | 🟢 entschieden | Savöx SC-1252MG+ |
 | **ADR-007** | 2026-03-06 | Auswahl der aktiven und passiven Motorkühlung für 3S-Speedruns | 🟢 entschieden | Passiver 36mm Alu-Kühlkörper kombiniert mit aktivem 40x40mm High-Speed Alu-Lüfter |
 | **ADR-008** | 2026-02-25 | Auswahl der Bereifung (Belted Gummireifen für Asphalt) für 100 km/h Speedruns | 🟢 Entschieden | Sweep HANKOOK Tread Belted tires Pre-glued set Pro-compound 36deg for Asphalt (SR-SSF-36AWPG) |
 | **ADR-009** | 2026-03-12 | Auswahl der aerodynamischen Karosserie für 100 km/h Speedruns | 🟢 entschieden | ZooRacing Hellcat (190 mm, 0.7mm Stärke) |
@@ -161,23 +161,16 @@ robusten, ausfallsicheren MVP-Ansatz (Minimum Viable Product), der die Komplexit
 
 
 #### Entscheidung
-> **Carson Reflex Wheel X1**
+> **X9S Radio + Mini Waterproof 4-Channel Receiver RG4CHWP**
 
 #### Begründung (Rationale)
-Die Entscheidung fällt im Sinne eines sauberen MVP-Ansatzes auf die Carson Reflex Wheel X1. 
-Obwohl die DumboRC auf dem Papier mehr Reichweite und einen Gyro bietet, reicht die Carson 
-für die ersten validen 100 km/h-Runs auf übersichtlichen Parkplätzen oder Strecken vollkommen aus. 
-Sie ist ein bewährter Industrie-Standard im Einstiegssegment, bietet eine stark zuverlässige 
-Fail-Safe-Funktion und die wichtigeSteering Dual-Rate Einstellung. Dieser 
-pragmatische Ansatz spart Komplexität beim Setup (kein Gyro-Wobble-Risiko) und liefert 
-genau die Baseline an Funktionalität, die aktuell benötigt wird.
+Die Tests mit der Carson Reflex Wheel X1 zeigten eine unzureichende Lenkgenauigkeit, da das Servo in Abhängigkeit vom Lenkausschlag nicht reproduzierbar in die Neutralposition zurückkehrte. Zur Erhöhung der Steuerpräzision wurde die Fernsteuerung X9S Radio in Kombination mit dem Empfänger RG4CHWP für 152 € beschafft.
 
 
 #### Konsequenzen
-- Sicherheitsarchitektur (Fail-Safe): Das Fail-Safe des beiliegenden Carson Micro-Empfängers muss vor der ersten Fahrt zwingend auf 'Bremse/Neutral' programmiert werden. Bei Signalverlust darf der 3660er Motor kein Gas mehr annehmen.
-- Spannungs-Constraint (BEC): Der Hobbywing 120A Regler darf maximal 6.0V an den Empfänger liefern. Die 7.4V Option des ESC darf nicht aktiviert werden, da der Carson Empfänger sonst durchbrennen könnte.
-- Fahrverhalten (Dual Rate): Da kein Gyro vorhanden ist, der das Auto automatisch stabilisiert, muss der maximale Lenkausschlag über das Dual-Rate-Rad am Sender für Speedruns zwingend auf ca. 30 % reduziert werden, um ein Aufschaukeln der Lenkung zu verhindern.
-- Batterien: Der Sender benötigt 4x AA Batterien. Für eine absolut konstante Sendeleistung ohne Einbrüche sollten hochwertige Akkus (z.B. Eneloop) verwendet werden.
+- Empfängerinstallation: Der RG4CHWP Empfänger wird verbaut und das Fail-Safe zwingend auf Bremse/Neutral programmiert.
+- Schnittstellenkompatibilität: Die Betriebsspannung des Empfängers ist mit der BEC-Ausgangsspannung des Motorreglers abzugleichen.
+- Lenkwinkelbegrenzung: Die Steuerausschläge (Dual Rate) werden auf die Erfordernisse von Hochgeschwindigkeitsfahrten angepasst.
 
 
 ---
@@ -197,21 +190,16 @@ Stellkraft (ca. 9 kg).
 
 
 #### Entscheidung
-> **JX PDI-4409MG**
+> **Savöx SC-1252MG+**
 
 #### Begründung (Rationale)
-Die Entscheidung fällt im Sinne der Budget-Optimierung auf das JX PDI-4409MG. Es erfüllt 
-alle harten Architektur-Constraints: Ein Metallgetriebe verhindert Zahnausfall bei 100 km/h, 
-die 9.2 kg Stellkraft halten die Vorderräder stabil gegen den Winddruck, und die Low-Profile-
-Bauform schafft zwingend benötigten Platz für den Hobbywing 120A ESC auf dem engen Chassis. 
-Der Verzicht auf das Premium-Zentrierverhalten eines Savöx-Servos ist ein akzeptabler 
-Trade-off für reine Geradeaus-Speedruns.
+Testfahrten zeigten, dass das bisherige Setup die erforderliche Lenkgenauigkeit nicht lieferte. Das Servo kehrte nicht reproduzierbar in die Neutralposition zurück. Daher wurde auf das Savöx SC-1252MG+ (52,72 €) gewechselt. Es bietet eine Stellgeschwindigkeit von 0,07s und eine Stellkraft von 7 kg. Dies gewährleistet eine präzise Rückstellung auf die Neutralposition.
 
 
 #### Konsequenzen
-- Servohorn-Upgrade: Das Plastik-Servohorn des Carten-Bausatzes muss zwingend gegen ein steifes Aluminium-Servohorn mit 25 Zähnen (25T - Standard für JX/Futaba/Savöx) getauscht werden.
-- BEC-Spannung: Das BEC des Hobbywing-Reglers wird auf 6.0V belassen. Dies liefert die volle Leistung für das Servo (9.2kg / 0.11s) und schützt gleichzeitig den Carson-Empfänger vor Überspannung.
-- Dual-Rate Setup: Da das Servo sehr schnell reagiert, muss der maximale Lenkausschlag an der Carson-Funke für den High-Speed-Run stark limitiert werden (ca. 30%), um ein Verreißen der Lenkung bei 100 km/h zu verhindern.
+- Servohorn: Um das Spiel im Lenksystem zu minimieren, wird ein starrer Aluminium-Hebel (ALU CLAMP SERVO HORN - FUTABA, SAVÖX - 3-HOLE - 25T, Artikel HUD293409) ohne Servosaver montiert.
+- BEC-Spannung: Die BEC-Ausgangsspannung des Reglers wird auf 6.0V konfiguriert.
+- Dual-Rate: Der maximale Lenkausschlag wird an der Fernsteuerung begrenzt, um die Stabilität bei 100 km/h sicherzustellen.
 
 
 ---
