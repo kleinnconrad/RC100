@@ -42,4 +42,5 @@ jobs:
           git add -A
           
           git commit -m "chore(docs): auto-update specs, docs and shopping list [skip ci]" || echo "Keine Änderungen zu committen."
+          git pull --rebase
           git push

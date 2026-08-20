@@ -37,6 +37,7 @@ jobs:
             echo "Keine neuen Kommentare. Nichts zu committen."
           else
             git commit -m "docs: Update Reddit feedback in /reddit folder"
+            git pull --rebase
             git push
           fi
           
