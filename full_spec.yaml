@@ -1,41 +1,225 @@
-Body:
+Cartent410R:
   meta:
-    brand: ZooRacing
-    modell: Hellcat
-    fahrzeugklasse: 1:10 On-Road Tourenwagen
-    breite_mm: 190
-    radstand_mm: 257
-    material: Polycarbonat (Lexan)
-    materialstaerke_mm: 0.7
-    shopping_item:
-      in_liste_aufnehmen: true
-      artikel_name: ZooRacing Hellcat 190mm Tourenwagen Karosserie (0.7mm Regular)
-      kategorie: Karosserie & Aerodynamik
-      referenz_link: Suche bei RC-KleinKram oder Tonisport nach 'ZooRacing Hellcat
-        0.7mm'
-      geschaetzter_preis_eur: 32.9
+    brand: Carten
+    model: T410R Tourenwagen Bausatz
+    part_number: NHA413
   properties:
-    aerodynamic_features:
-      front: Tief gezogene Nase und sanfter Haubenwinkel reduzieren den Staudruck
-        und verhindern Lift.
-      roofline: Flach abfallendes Dach leitet die Luft laminar und störungsfrei zum
-        Heckflügel.
-      rear_wing: Inkludierter High-Downforce Flügel sorgt für zwingend benötigte Heckstabilität
-        bei High-Speed.
-    preparation_and_painting:
-      reinigung: Die Innenseite der Karosserie vor dem Lackieren zwingend mit Spülmittel
-        auswaschen, um Trennmittelreste aus der Produktion zu entfernen.
-      lack_typ: Ausschließlich Polycarbonat-Spray (z.B. Tamiya PS-Farben) verwenden.
-        Von innen in mehreren dünnen Schichten lackieren.
-      schutzfolie: Die äußere Overspray-Schutzfolie erst nach dem kompletten Lackieren
-        und Bohren der Löcher abziehen.
-    mounting_instructions:
-      karosserieloecher: Löcher nicht stechen, sondern mit einem speziellen Karosseriebohrer
-        (Reamer) bohren, um Risse im Lexan zu vermeiden.
-      bumper_support: Der Front-Schaumstoffbumper des Chassis muss den vorderen Karosserieüberhang
-        mechanisch abstützen.
-      radkaesten: Radkästen mit einer gebogenen Lexanschere ausschneiden und Kanten
-        mit feinem Schleifpapier glätten, um Einreißen bei Vibrationen zu verhindern.
+    carten_t410r:
+      allgemein:
+        fahrzeugtyp: 1:10 Elektro Tourenwagen (EP Touring Car)
+        lieferzustand: Bausatz (Kit) - unmontiert
+        einsatzbereich: On-Road / Asphalt / Teppich
+      abmessungen:
+        spurbreite_mm: 190
+        radstand_mm: 258
+      chassis_und_aufbau:
+        bodenplatte: 2,25 mm Eco-Carbon (kohlefaserverstärktes Verbundmaterial)
+        oberdeck: 2,0 mm Eco-Carbon
+        daempferbruecken: 3,0 mm Eco-Carbon (vorne & hinten, diverse Montagepunkte)
+        motorhalterung: CNC-gefrästes Aluminium
+        servohalterung: Floating Servo Mount (Aluminium)
+        akkuhalterung: Vorbereitet für 2S Standard-LiPo (Stickpack) oder Shorty-LiPo
+        karosseriehalter: Verstellbare Kunststoff-Pfosten
+      antriebsstrang:
+        antriebsart: 4WD Allrad, zentraler Kardanantrieb (Wellenantrieb)
+        mittelantriebswelle: Aluminium (rot eloxiert)
+        differentiale: Gekapselte Kegeldifferentiale (vorne & hinten)
+        differential_zahnraeder: Metallzahnräder
+        antriebswellen: Stahl CVD (Constant Velocity Drives) an Vorder- und Hinterachse
+        hauptzahnradhalterung: Aluminium
+        radmitnehmer: 12 mm Sechskant, Aluminium
+        interne_untersetzung: 1:2.47 bis 1:2.53
+        kugellager: Komplett kugelgelagert (mit Gummidichtungen)
+      fahrwerk_und_federung:
+        stossdaempfer: Aluminium Öldruckstoßdämpfer (mit Gewindefahrwerk)
+        querlenkerhalter: Aluminium (Toe Blocks)
+        stabilisatoren: Vorne und hinten enthalten
+        geometrie_einstellung: Stufenlos einstellbar über R/L Gewindestangen (Turnbuckles)
+        einstellbare_parameter:
+        - Sturz
+        - Spur
+        - Nachlauf (Caster)
+        - Ausfederweg (Droop)
+        - Bodenfreiheit (Ride Height)
+        - Ackermann
+      lenkung:
+        lenksystem: Kugelgelagertes Dual-Bellcrank-System (Doppelarm)
+        lenkhebel_c_hubs: Composite-Kunststoff
+Werkzeug:
+  meta:
+    beschreibung: Benötigtes Werkzeug für den Zusammenbau des Carten T410R.
+  properties:
+    werkzeug_liste:
+      inbus_schraubendreher:
+        typ: Innensechskant-Schraubendreher (Hex Wrenches)
+        groessen: 1.5 mm, 2.0 mm, 2.5 mm
+        hinweis: Pflichtkauf! Carten nutzt im gesamten Auto metrische M3-Maschinenschrauben
+          (keine selbstschneidenden Schrauben). Ein hochwertiger Inbus ist hier stark
+          wichtig, um die Schraubenköpfe und das harte Plastikgewinde beim Eindrehen
+          nicht zu beschädigen.
+        brand: Neewer
+        model: Titan RC Inbus Set (1.5/2.0/2.5/3.0)
+      steckschluessel:
+        typ: RC Radkreuz / Steckschlüssel (Box Wrench)
+        groessen: 5.5 mm und 7.0 mm
+        hinweis: Die 5.5 mm brauchst du permanent für alle M3-Muttern im Chassis.
+          Die 7.0 mm sind für die Radmuttern. Die in der Carten-Anleitung erwähnten
+          10.0 mm werden bei diesem 1/10 Modell überhaupt nicht benötigt.
+        status: Vorhanden (Kein Kauf nötig)
+      klebstoffe_und_chemie:
+        schraubensicherung:
+          typ: Schraubensicherungslack (Screw Cement / Threadlocker)
+          hinweis: stark wichtig! Kommt an alle Schrauben, die in Metall gedreht werden
+            (z. B. Motorritzel). In der Carten-Anleitung oft fälschlicherweise als
+            'GLUE' beschriftet. Niemals für Plastik verwenden!
+          brand: Loctite
+          model: 243 Mittelfest (Blau)
+      klebebaender:
+        panzertape:
+          typ: Glasfaserklebeband (Glass Tape)
+          hinweis: Pflicht für den T410R! Das Auto besitzt keine klassischen Plastik-Akkuhalterungen.
+            Das Klebeband wird laut Anleitung durch die Schlitze im Carbon-Chassis
+            gezogen, um den LiPo-Akku festzuschnallen.
+          brand: Arrowmax
+          model: Fibre Tape / Battery Tape
+Hauptzahnrad:
+  meta:
+    type: CNC-gefrästes Hauptzahnrad (48 DP, 72T)
+    mechanical_load_capacity: '> 100 km/h (ausgelegt für 3S / 120A Brushless-Systeme)'
+  properties:
+    material_and_construction:
+      gear_body: POM (Polyoxymethylen / Delrin) - CNC gefräst
+      mounting_interface: Standard 1:10 Tourenwagen 4-Loch-Aufnahme
+      mating_pinion: Gehärteter Stahl (zwingend erforderlich)
+    mandatory_modifications:
+      pinion_securing:
+        issue: Verrutschen des Motorritzels (Ursache für Getriebeschaden)
+        description: Um ein erneutes Verrutschen und Zerstören des Hauptzahnrads durch
+          asymmetrischen Eingriff zu verhindern, muss die Madenschraube des Hartstahl-Ritzels
+          zwingend mit mittelfester Schraubensicherung (z. B. Loctite 243 / blau)
+          auf der flachen Stelle der Motorwelle gesichert werden.
+      gear_mesh_calibration:
+        issue: Zahnflankenspiel bei > 11.000 U/min
+        description: Das Spiel zwischen Stahlritzel und Delrin-Hauptzahnrad muss mit
+          der bewährten Papiermethode exakt kalibriert werden. Ein zu enges Spiel
+          führt zu extremer Reibungshitze und Leistungsverlust, ein zu weites Spiel
+          zum sofortigen 'Strippen' der Delrin-Zähne durch das hohe Drehmoment.
+      material_selection:
+        issue: Vermeidung von Stahl-Hauptzahnrädern
+        description: Bewusster Verzicht auf ein Hauptzahnrad aus Stahl. Dies hält
+          die rotierende Masse gering (bessere Beschleunigung) und fungiert im Falle
+          einer Blockade im Antriebsstrang als mechanische Sollbruchstelle (Fail-Safe),
+          um die Motorwelle und den ESC vor Überlastung zu schützen.
+Kardanwelle Und Joints:
+  meta:
+    component: Zentrale Antriebswelle (Center Shaft)
+  properties:
+    material_and_suitability:
+      driveshaft:
+        component: Kardanwelle (Welle)
+        material: Aluminium (eloxiert), hohl oder massiv (je nach Batch)
+        suitability_100kmh_3s: JA. Aluminium ist hier besser als Stahl, da die geringere
+          rotierende Masse bei ca. 26.000 U/min weniger Vibrationen erzeugt.
+      joint_cups:
+        component: Verbindungsstücke (Diff-Inputs)
+        material: Stahl (Gehärtet)
+        suitability_100kmh_3s: JA. Die Aufnahmen am Differentialeingang sind aus Stahl
+          und halten dem Drehmoment des 3S-Antriebs stand.
+      rpm_load:
+        component: Drehzahl-Belastung
+        specification: Welle rotiert mit ca. 26.000 U/min
+        suitability_100kmh_3s: Kritisch, aber für das Baukasten-Teil machbar, solange
+          keine Unwucht vorliegt.
+    mandatory_durability_measures:
+      centering_floating_problem:
+        issue: Zentrierung (Das 'Floating' Problem)
+        description: Die Welle darf in den Bechern (Cups) nicht hin und her schlagen
+          ('chatter').
+        action: Zwingend kleine O-Ringe oder Schaumstoff-Plättchen (oft im Baukasten
+          enthalten oder aus alten Dämpfer-Gummis geschnitten) in die Becher legen,
+          bevor die Welle eingesetzt wird. Die Welle muss 'schwimmend', aber spielfrei
+          zwischen den Diffs sitzen.
+      joint_lubrication:
+        issue: Schmierung der Gelenke
+        description: Die Enden der Kardanwelle (Dogbones), die in den Stahlbechern
+          laufen, sind Metall auf Metall. Bei 3S-Power entsteht hier massiver Verschleiß
+          ('Einschlagen').
+        action: Diese Kontaktpunkte mit zähem Molybdän-Fett (schwarz) oder speziellem
+          'Joint Grease' schmieren, um die Reibung zu minimieren.
+      runout_check:
+        issue: Prüfung auf Rundlauf
+        description: Roll die Welle vor dem Einbau über eine Glasplatte (oder einen
+          Spiegel).
+        action: Wenn sie auch nur minimal 'eiert' (verbogen ist), wird sie bei 26.000
+          U/min das ganze Chassis in zerstörerische Vibrationen versetzen. In diesem
+          Fall muss sie sofort ersetzt werden.
+Getriebe:
+  meta:
+    brand: Arrowmax
+    model: 'Motorritzel 42Z (48dp / 3.17mm Welle) ODER Robinson Racing 5mm bore 48dp
+      43teeth falls 3660 motor mit 5mm Welle gefahren wird: https://www.ebay.com/itm/234242275376'
+    part_number: 42T-48P
+  properties:
+    getriebe_setup:
+      hauptzahnrad_spur:
+        zähne: 72
+        typ: Baukasten Standard
+        modul: 48dp
+      motorritzel_pinion:
+        zähne: 42
+        material: Hardcoated Alu oder Stahl
+      berechnete_werte:
+        interne_uebersetzung: 2.47
+        gesamt_ratio: 4.23
+        zielgeschwindigkeit: '> 100 km/h'
+    einstellbereich_mit_72z_hauptzahnrad:
+      hinweis: 'Laut Carten Handbuch (T410R mit Gear Diff 2.47) ohne Umbau des 72Z
+        Hauptzahnrads fahrbar:'
+      max_beschleunigung:
+        ritzel: 21
+        ratio: 8.47
+      mid_range:
+        ritzel: 31
+        ratio: 5.74
+      high_speed_bereich:
+        ritzel_34: 5.23
+        ritzel_35: 5.08
+        ritzel_36: 4.94
+        ritzel_37: 4.81
+      max_top_speed:
+        ritzel_41: 4.34
+        ritzel_42: 4.23
+        ritzel_43: 4.14
+        ritzel_44: 4.04
+Differentiale:
+  meta:
+    type: Öldruck-Kegeldifferential (Metal Gear)
+    mechanical_load_capacity: '> 100 km/h (ca. 8.300 U/min Achsdrehzahl)'
+  properties:
+    material_and_construction:
+      gears_ring_and_bevel: Sintermetall / Stahl
+      diff_outdrives_cup_joints: Gehärteter Stahl
+      diff_case_cup: Faserverstärkter Verbundkunststoff (Composite)
+    mandatory_modifications:
+      perfect_shimming:
+        issue: Spielfreiheit
+        description: Die inneren Metallzahnräder müssen beim Zusammenbau mit hauchdünnen
+          Passscheiben (Shims) absolut spielfrei eingestellt werden. Nur so wird verhindert,
+          dass die Zähne unter dem hohen Drehmoment des 3S-Motors überspringen oder
+          abreißen.
+      reinforced_sealing:
+        issue: O-Ring Abdichtung
+        description: Bei 8.300 U/min erzeugt das Öl im Inneren einen massiven Fliehkraftdruck
+          nach außen. Die Gummi-O-Ringe müssen mit zähem Spezialfett (z. B. 'Green
+          Slime') abgedichtet werden, damit das Differential nicht trockenläuft.
+      oil_viscosity:
+        issue: Sperrwirkung & Geradeauslauf
+        description: Das Baukasten-Öl ist zu weich und führt bei Speedruns zu unkontrollierbarem
+          Ausbrechen, wenn ein Rad minimal Grip verliert. Es muss stark zähes Silikonöl
+          verwendet werden, um das Auto auf einen sturen Geradeauslauf zu zwingen.
+        setup_recommendation:
+          front_axle: ca. 100.000 cSt (oder ein komplett starrer Spool/Starrachse)
+          rear_axle: ca. 10.000 cSt
 Paint:
   meta:
     brand: Tamiya
@@ -120,262 +304,76 @@ Reifen:
       einfahren_scrubbing: Die glatte Produktionsschicht auf dem Gummi muss erst abgefahren
         werden. Die ersten Testläufe zum Kalibrieren des ESCs nutzen, um den Grip
         für den finalen Topspeed-Run aufzubauen.
-Werkzeug:
+Body:
   meta:
-    beschreibung: Benötigtes Werkzeug für den Zusammenbau des Carten T410R.
+    brand: ZooRacing
+    modell: Hellcat
+    fahrzeugklasse: 1:10 On-Road Tourenwagen
+    breite_mm: 190
+    radstand_mm: 257
+    material: Polycarbonat (Lexan)
+    materialstaerke_mm: 0.7
+    shopping_item:
+      in_liste_aufnehmen: true
+      artikel_name: ZooRacing Hellcat 190mm Tourenwagen Karosserie (0.7mm Regular)
+      kategorie: Karosserie & Aerodynamik
+      referenz_link: Suche bei RC-KleinKram oder Tonisport nach 'ZooRacing Hellcat
+        0.7mm'
+      geschaetzter_preis_eur: 32.9
   properties:
-    werkzeug_liste:
-      inbus_schraubendreher:
-        typ: Innensechskant-Schraubendreher (Hex Wrenches)
-        groessen: 1.5 mm, 2.0 mm, 2.5 mm
-        hinweis: Pflichtkauf! Carten nutzt im gesamten Auto metrische M3-Maschinenschrauben
-          (keine selbstschneidenden Schrauben). Ein hochwertiger Inbus ist hier stark
-          wichtig, um die Schraubenköpfe und das harte Plastikgewinde beim Eindrehen
-          nicht zu beschädigen.
-        brand: Neewer
-        model: Titan RC Inbus Set (1.5/2.0/2.5/3.0)
-      steckschluessel:
-        typ: RC Radkreuz / Steckschlüssel (Box Wrench)
-        groessen: 5.5 mm und 7.0 mm
-        hinweis: Die 5.5 mm brauchst du permanent für alle M3-Muttern im Chassis.
-          Die 7.0 mm sind für die Radmuttern. Die in der Carten-Anleitung erwähnten
-          10.0 mm werden bei diesem 1/10 Modell überhaupt nicht benötigt.
-        status: Vorhanden (Kein Kauf nötig)
-      klebstoffe_und_chemie:
-        schraubensicherung:
-          typ: Schraubensicherungslack (Screw Cement / Threadlocker)
-          hinweis: stark wichtig! Kommt an alle Schrauben, die in Metall gedreht
-            werden (z. B. Motorritzel). In der Carten-Anleitung oft fälschlicherweise
-            als 'GLUE' beschriftet. Niemals für Plastik verwenden!
-          brand: Loctite
-          model: 243 Mittelfest (Blau)
-      klebebaender:
-        panzertape:
-          typ: Glasfaserklebeband (Glass Tape)
-          hinweis: Pflicht für den T410R! Das Auto besitzt keine klassischen Plastik-Akkuhalterungen.
-            Das Klebeband wird laut Anleitung durch die Schlitze im Carbon-Chassis
-            gezogen, um den LiPo-Akku festzuschnallen.
-          brand: Arrowmax
-          model: Fibre Tape / Battery Tape
-Cartent410R:
+    aerodynamic_features:
+      front: Tief gezogene Nase und sanfter Haubenwinkel reduzieren den Staudruck
+        und verhindern Lift.
+      roofline: Flach abfallendes Dach leitet die Luft laminar und störungsfrei zum
+        Heckflügel.
+      rear_wing: Inkludierter High-Downforce Flügel sorgt für zwingend benötigte Heckstabilität
+        bei High-Speed.
+    preparation_and_painting:
+      reinigung: Die Innenseite der Karosserie vor dem Lackieren zwingend mit Spülmittel
+        auswaschen, um Trennmittelreste aus der Produktion zu entfernen.
+      lack_typ: Ausschließlich Polycarbonat-Spray (z.B. Tamiya PS-Farben) verwenden.
+        Von innen in mehreren dünnen Schichten lackieren.
+      schutzfolie: Die äußere Overspray-Schutzfolie erst nach dem kompletten Lackieren
+        und Bohren der Löcher abziehen.
+    mounting_instructions:
+      karosserieloecher: Löcher nicht stechen, sondern mit einem speziellen Karosseriebohrer
+        (Reamer) bohren, um Risse im Lexan zu vermeiden.
+      bumper_support: Der Front-Schaumstoffbumper des Chassis muss den vorderen Karosserieüberhang
+        mechanisch abstützen.
+      radkaesten: Radkästen mit einer gebogenen Lexanschere ausschneiden und Kanten
+        mit feinem Schleifpapier glätten, um Einreißen bei Vibrationen zu verhindern.
+Servo:
   meta:
-    brand: Carten
-    model: T410R Tourenwagen Bausatz
-    part_number: NHA413
+    brand: Savöx
+    model: SC-1252MG+
+    type: Digitales Low-Profile Servo
+    features: Coreless Motor, hohe Stellgeschwindigkeit und Präzision
+    price_class: Mid-Range (~52,72 EUR)
   properties:
-    carten_t410r:
-      allgemein:
-        fahrzeugtyp: 1:10 Elektro Tourenwagen (EP Touring Car)
-        lieferzustand: Bausatz (Kit) - unmontiert
-        einsatzbereich: On-Road / Asphalt / Teppich
-      abmessungen:
-        spurbreite_mm: 190
-        radstand_mm: 258
-      chassis_und_aufbau:
-        bodenplatte: 2,25 mm Eco-Carbon (kohlefaserverstärktes Verbundmaterial)
-        oberdeck: 2,0 mm Eco-Carbon
-        daempferbruecken: 3,0 mm Eco-Carbon (vorne & hinten, diverse Montagepunkte)
-        motorhalterung: CNC-gefrästes Aluminium
-        servohalterung: Floating Servo Mount (Aluminium)
-        akkuhalterung: Vorbereitet für 2S Standard-LiPo (Stickpack) oder Shorty-LiPo
-        karosseriehalter: Verstellbare Kunststoff-Pfosten
-      antriebsstrang:
-        antriebsart: 4WD Allrad, zentraler Kardanantrieb (Wellenantrieb)
-        mittelantriebswelle: Aluminium (rot eloxiert)
-        differentiale: Gekapselte Kegeldifferentiale (vorne & hinten)
-        differential_zahnraeder: Metallzahnräder
-        antriebswellen: Stahl CVD (Constant Velocity Drives) an Vorder- und Hinterachse
-        hauptzahnradhalterung: Aluminium
-        radmitnehmer: 12 mm Sechskant, Aluminium
-        interne_untersetzung: 1:2.47 bis 1:2.53
-        kugellager: Komplett kugelgelagert (mit Gummidichtungen)
-      fahrwerk_und_federung:
-        stossdaempfer: Aluminium Öldruckstoßdämpfer (mit Gewindefahrwerk)
-        querlenkerhalter: Aluminium (Toe Blocks)
-        stabilisatoren: Vorne und hinten enthalten
-        geometrie_einstellung: Stufenlos einstellbar über R/L Gewindestangen (Turnbuckles)
-        einstellbare_parameter:
-        - Sturz
-        - Spur
-        - Nachlauf (Caster)
-        - Ausfederweg (Droop)
-        - Bodenfreiheit (Ride Height)
-        - Ackermann
-      lenkung:
-        lenksystem: Kugelgelagertes Dual-Bellcrank-System (Doppelarm)
-        lenkhebel_c_hubs: Composite-Kunststoff
-Kardanwelle Und Joints:
-  meta:
-    component: Zentrale Antriebswelle (Center Shaft)
-  properties:
-    material_and_suitability:
-      driveshaft:
-        component: Kardanwelle (Welle)
-        material: Aluminium (eloxiert), hohl oder massiv (je nach Batch)
-        suitability_100kmh_3s: JA. Aluminium ist hier besser als Stahl, da die geringere
-          rotierende Masse bei ca. 26.000 U/min weniger Vibrationen erzeugt.
-      joint_cups:
-        component: Verbindungsstücke (Diff-Inputs)
-        material: Stahl (Gehärtet)
-        suitability_100kmh_3s: JA. Die Aufnahmen am Differentialeingang sind aus Stahl
-          und halten dem Drehmoment des 3S-Antriebs stand.
-      rpm_load:
-        component: Drehzahl-Belastung
-        specification: Welle rotiert mit ca. 26.000 U/min
-        suitability_100kmh_3s: Kritisch, aber für das Baukasten-Teil machbar, solange
-          keine Unwucht vorliegt.
-    mandatory_durability_measures:
-      centering_floating_problem:
-        issue: Zentrierung (Das 'Floating' Problem)
-        description: Die Welle darf in den Bechern (Cups) nicht hin und her schlagen
-          ('chatter').
-        action: Zwingend kleine O-Ringe oder Schaumstoff-Plättchen (oft im Baukasten
-          enthalten oder aus alten Dämpfer-Gummis geschnitten) in die Becher legen,
-          bevor die Welle eingesetzt wird. Die Welle muss 'schwimmend', aber spielfrei
-          zwischen den Diffs sitzen.
-      joint_lubrication:
-        issue: Schmierung der Gelenke
-        description: Die Enden der Kardanwelle (Dogbones), die in den Stahlbechern
-          laufen, sind Metall auf Metall. Bei 3S-Power entsteht hier massiver Verschleiß
-          ('Einschlagen').
-        action: Diese Kontaktpunkte mit zähem Molybdän-Fett (schwarz) oder speziellem
-          'Joint Grease' schmieren, um die Reibung zu minimieren.
-      runout_check:
-        issue: Prüfung auf Rundlauf
-        description: Roll die Welle vor dem Einbau über eine Glasplatte (oder einen
-          Spiegel).
-        action: Wenn sie auch nur minimal 'eiert' (verbogen ist), wird sie bei 26.000
-          U/min das ganze Chassis in zerstörerische Vibrationen versetzen. In diesem
-          Fall muss sie sofort ersetzt werden.
-Differentiale:
-  meta:
-    type: Öldruck-Kegeldifferential (Metal Gear)
-    mechanical_load_capacity: '> 100 km/h (ca. 8.300 U/min Achsdrehzahl)'
-  properties:
-    material_and_construction:
-      gears_ring_and_bevel: Sintermetall / Stahl
-      diff_outdrives_cup_joints: Gehärteter Stahl
-      diff_case_cup: Faserverstärkter Verbundkunststoff (Composite)
-    mandatory_modifications:
-      perfect_shimming:
-        issue: Spielfreiheit
-        description: Die inneren Metallzahnräder müssen beim Zusammenbau mit hauchdünnen
-          Passscheiben (Shims) absolut spielfrei eingestellt werden. Nur so wird verhindert,
-          dass die Zähne unter dem hohen Drehmoment des 3S-Motors überspringen
-          oder abreißen.
-      reinforced_sealing:
-        issue: O-Ring Abdichtung
-        description: Bei 8.300 U/min erzeugt das Öl im Inneren einen massiven Fliehkraftdruck
-          nach außen. Die Gummi-O-Ringe müssen mit zähem Spezialfett (z. B. 'Green
-          Slime') abgedichtet werden, damit das Differential nicht trockenläuft.
-      oil_viscosity:
-        issue: Sperrwirkung & Geradeauslauf
-        description: Das Baukasten-Öl ist zu weich und führt bei Speedruns zu unkontrollierbarem
-          Ausbrechen, wenn ein Rad minimal Grip verliert. Es muss stark zähes Silikonöl
-          verwendet werden, um das Auto auf einen sturen Geradeauslauf zu zwingen.
-        setup_recommendation:
-          front_axle: ca. 100.000 cSt (oder ein komplett starrer Spool/Starrachse)
-          rear_axle: ca. 10.000 cSt
-Hauptzahnrad:
-  meta:
-    type: CNC-gefrästes Hauptzahnrad (48 DP, 72T)
-    mechanical_load_capacity: '> 100 km/h (ausgelegt für 3S / 120A Brushless-Systeme)'
-  properties:
-    material_and_construction:
-      gear_body: POM (Polyoxymethylen / Delrin) - CNC gefräst
-      mounting_interface: Standard 1:10 Tourenwagen 4-Loch-Aufnahme
-      mating_pinion: Gehärteter Stahl (zwingend erforderlich)
-    mandatory_modifications:
-      pinion_securing:
-        issue: Verrutschen des Motorritzels (Ursache für Getriebeschaden)
-        description: Um ein erneutes Verrutschen und Zerstören des Hauptzahnrads durch
-          asymmetrischen Eingriff zu verhindern, muss die Madenschraube des Hartstahl-Ritzels
-          zwingend mit mittelfester Schraubensicherung (z. B. Loctite 243 / blau)
-          auf der flachen Stelle der Motorwelle gesichert werden.
-      gear_mesh_calibration:
-        issue: Zahnflankenspiel bei > 11.000 U/min
-        description: Das Spiel zwischen Stahlritzel und Delrin-Hauptzahnrad muss mit
-          der bewährten Papiermethode exakt kalibriert werden. Ein zu enges Spiel
-          führt zu extremer Reibungshitze und Leistungsverlust, ein zu weites Spiel
-          zum sofortigen 'Strippen' der Delrin-Zähne durch das hohe Drehmoment.
-      material_selection:
-        issue: Vermeidung von Stahl-Hauptzahnrädern
-        description: Bewusster Verzicht auf ein Hauptzahnrad aus Stahl. Dies hält
-          die rotierende Masse gering (bessere Beschleunigung) und fungiert im Falle
-          einer Blockade im Antriebsstrang als mechanische Sollbruchstelle (Fail-Safe),
-          um die Motorwelle und den ESC vor Überlastung zu schützen.
-Getriebe:
-  meta:
-    brand: Arrowmax
-    model: 'Motorritzel 42Z (48dp / 3.17mm Welle) ODER Robinson Racing 5mm bore 48dp
-      43teeth falls 3660 motor mit 5mm Welle gefahren wird: https://www.ebay.com/itm/234242275376'
-    part_number: 42T-48P
-  properties:
-    getriebe_setup:
-      hauptzahnrad_spur:
-        zähne: 72
-        typ: Baukasten Standard
-        modul: 48dp
-      motorritzel_pinion:
-        zähne: 42
-        material: Hardcoated Alu oder Stahl
-      berechnete_werte:
-        interne_uebersetzung: 2.47
-        gesamt_ratio: 4.23
-        zielgeschwindigkeit: '> 100 km/h'
-    einstellbereich_mit_72z_hauptzahnrad:
-      hinweis: 'Laut Carten Handbuch (T410R mit Gear Diff 2.47) ohne Umbau des 72Z
-        Hauptzahnrads fahrbar:'
-      max_beschleunigung:
-        ritzel: 21
-        ratio: 8.47
-      mid_range:
-        ritzel: 31
-        ratio: 5.74
-      high_speed_bereich:
-        ritzel_34: 5.23
-        ritzel_35: 5.08
-        ritzel_36: 4.94
-        ritzel_37: 4.81
-      max_top_speed:
-        ritzel_41: 4.34
-        ritzel_42: 4.23
-        ritzel_43: 4.14
-        ritzel_44: 4.04
-Akku:
-  meta:
-    brand: Absima
-    series: GreenHorn Line V2
-    part_number: '4140014'
-    type: LiPo (Lithium-Polymer)
-  properties:
-    electrical_specifications:
-      voltage: 11.1V (Nennspannung)
-      cells: 3S
-      capacity: 5000 mAh
-      energy: 55.5 Wh
-      discharge_rate_continuous: 50C
-      max_continuous_amp_draw: 250A
-    connectors:
-      main_power: XT60 (Plug & Play mit Hobbywing QuicRun G2 ESC)
-      balancer: XH (Standard-Balancer für das Ladegerät)
-    physical_specifications:
-      case_type: Hardcase (HC) - Hartplastik Box
-      safety: Zwingend erforderlich für Speedruns zum Schutz vor Kardanwelle/Crashes
-      weight_g: 370
-      dimensions:
-        length_mm: 138
-        width_mm: 46
-        height_mm: 35
-  integration_notes:
-    issue: Der Carten T410R ist ab Werk für 2S-Akkus (25mm Höhe) konzipiert. Dieser
-      3S-Akku ist 35mm hoch.
-    solution: Die obere Carbon-Akkustrebe des Chassis muss 'höhergelegt' werden.
-    required_parts:
-    - 2x Distanzhülsen/Spacers (Kunststoff oder Alu) mit ca. 10mm Höhe
-    - 2x minimal längere M3-Schrauben (ca. M3x16 oder M3x18)
-    execution: Spacers auf die originalen Alu-Pfosten legen, Carbon-Strebe darauf
-      verschrauben. Kein Dremeln oder Fräsen am Chassis notwendig.
+    mechanical_specifications:
+      gears: Metallgetriebe
+      case: Kunststoff mit Aluminium-Mittelteil
+      spline_teeth: 25T (Standard Futaba/Savöx)
+      dimensions_mm:
+        length: 40.8
+        width: 20.2
+        height: 25.4
+      weight_g: 44.0
+    performance_specifications:
+      operating_voltage: 4.8V - 6.0V
+      torque_6v: 7.0 kg-cm
+      speed_6v: 0.07 sec / 60°
+      return_to_center_accuracy: Sehr gut (Hohe Präzision für reproduzierbaren Geradeauslauf)
+    mandatory_upgrades:
+      part: ALU CLAMP SERVO HORN - FUTABA, SAVÖX - 3-HOLE - 25T (HUD293409)
+      reason: Garantiert eine absolut steife, spielfreie Lenkverbindung. Auf einen
+        Servosaver wird komplett verzichtet, um maximale Genauigkeit zu erreichen.
+      installation: Die Klemmschraube festziehen und die Hauptschraube zwingend mit
+        Schraubensicherungslack (z. B. Loctite mittelfest) fixieren.
+    transmitter_setup:
+      dual_rate: Für den 100 km/h Run muss an der Fernsteuerung zwingend das 'Dual
+        Rate' (D/R) oder der Lenkausschlag (EPA) reduziert werden. Minimale Lenkbewegungen
+        reichen bei Top-Speed aus.
 Ladegeraet:
   meta:
     brand: SkyRC
@@ -417,90 +415,40 @@ Ladegeraet:
         das 'Storage'-Programm am S100neo starten, um die Zellen auf 3.8V Einlagerungsspannung
         zu bringen.
       fire_safety: Akkus immer in einem feuerfesten LiPo-Safe-Bag laden und aufbewahren.
-Lasertachometer:
+Akku:
   meta:
-    typ: Berührungsloses Laser-Drehzahlmessgerät
-    referenz_modell: DT-2234C+ (oder baugleiche Klone wie Neoteck/Proster)
-    messbereich: 2.5 bis 99.999 RPM
-    messgenauigkeit: +/- 0.05%
-    shopping_item:
-      in_liste_aufnehmen: true
-      artikel_name: Digitaler Laser Tachometer (DT-2234C+)
-      kategorie: Werkstatt & Tools
-      referenz_link: Suche bei Amazon nach 'Laser Tachometer DT-2234C+'
-      geschaetzter_preis_eur: 18.0
+    brand: Absima
+    series: GreenHorn Line V2
+    part_number: '4140014'
+    type: LiPo (Lithium-Polymer)
   properties:
-    test_protokoll:
-      vorbereitung: Reflektorstreifen (beiliegend) auf Reifenflanke oder Ritzel kleben.
-      durchfuehrung: Fahrzeug sicher aufbocken. Funke einschalten, Vollgas geben und
-        Laser auf den rotierenden Streifen richten.
-      sicherheitswarnung: 'WICHTIG: Bei 100 km/h Radumdrehungsgeschwindigkeit blähen
-        sich Gummireifen stark auf (Ballooning). Schutzbrille tragen und nicht direkt
-        in der Fliehkraft-Linie der Räder stehen, falls sich die Verklebung des Reifens
-        löst!'
-Gps:
-  meta:
-    typ: GNSS Performance Analyzer (GPS/GLONASS)
-    referenz_modell: Ruddog GPS Performance Analyzer
-    messfrequenz: 10 Hz (10 Updates pro Sekunde - kritisch für RC Speedruns!)
-    schnittstelle: Bluetooth 4.0 (Auslesen per iOS/Android App)
-    stromversorgung: Integrierter LiPo-Akku (via USB ladbar)
-    gewicht: ca. 38 Gramm
-    shopping_item:
-      in_liste_aufnehmen: true
-      artikel_name: Ruddog GPS Performance Analyzer
-      kategorie: Testing & Validierung
-      referenz_link: Suche bei Modellbau-Fachhändler (z.B. RC-KleinKram, Tamico, Monster
-        Hopups)
-      geschaetzter_preis_eur: 85.0
-  properties:
-    app_integration:
-      software: RC Gears / Ruddog App (oder baugleiche SkyRC App)
-      funktionen: Top-Speed Messung, 0-100 km/h Zeitmessung, Track-Logging
-    mounting_and_setup:
-      positionierung: 'Zwingend an einer Stelle montieren, die freie Sicht zum Himmel
-        hat. Karbonbauteile (wie das Upper-Deck des Carten) schirmen das Satellitensignal
-        ab! Bester Montageort: Auf dem vorderen Schaumstoff-Rammschutz (Bumper).'
-      fixierung: Das Modul bei Speedruns zwingend mit Klettverschluss UND einem zusätzlichen
-        Kabelbinder oder Tape sichern. Die G-Kräfte bei einem Crash sind enorm.
-      bedienung: Das Modul blinkt während der Satellitensuche. Erst losfahren, wenn
-        das GPS-Signal (meist durch durchgehendes Leuchten) als 'Locked' bestätigt
-        ist, sonst fehlen die ersten Meter in der Messung.
-Servo:
-  meta:
-    brand: JX
-    model: PDI-4409MG
-    type: Digitales Low-Profile Servo
-    features: Coreless Motor (schnelles Ansprechverhalten), exzellentes Preis-Leistungs-Verhältnis
-    price_class: Budget (~15 - 22 EUR)
-  properties:
-    mechanical_specifications:
-      gears: Metallgetriebe (Aluminium/Kupfer - überlebenswichtig bei 100 km/h)
-      case: Kunststoff mit Aluminium-Mittelteil (als Kühlkörper für den Motor)
-      spline_teeth: '25T (WICHTIG: Standard Futaba/Savöx/JX Zahnkranz)'
-      dimensions_mm:
-        length: 40.3
-        width: 20.2
-        height: 26.1
-      weight_g: 44.5
-    performance_specifications:
-      operating_voltage: 4.8V - 6.0V
-      torque_6v: 9.2 kg-cm
-      speed_6v: 0.11 sec / 60°
-      return_to_center_accuracy: Gut (Völlig ausreichend für das angepeilte Speedrun-Projekt)
-    mandatory_upgrades:
-      part: Aluminium-Servohorn (Zwingend 25T Verzahnung für JX/Futaba kaufen!)
-      reason: Das Baukasten-Plastikhorn verbiegt sich (Flex) bei 100 km/h unter dem
-        hohen Winddruck auf die Vorderräder. Das Alu-Horn garantiert eine absolut
-        steife, spielfreie Lenkverbindung.
-      installation: Die Schraube, die das Horn auf dem Servo hält, zwingend mit Schraubensicherungslack
-        (z. B. Loctite mittelfest) fixieren, damit sie sich durch Vibrationen nicht
-        löst.
-    transmitter_setup:
-      dual_rate: Für den 100 km/h Run muss an der Fernsteuerung zwingend das 'Dual
-        Rate' (D/R) oder der Lenkausschlag (EPA) auf ca. 30-40% reduziert werden.
-        Minimale Lenkbewegungen reichen bei Top-Speed völlig aus. Voller Ausschlag
-        führt zum sofortigen Überschlag.
+    electrical_specifications:
+      voltage: 11.1V (Nennspannung)
+      cells: 3S
+      capacity: 5000 mAh
+      energy: 55.5 Wh
+      discharge_rate_continuous: 50C
+      max_continuous_amp_draw: 250A
+    connectors:
+      main_power: XT60 (Plug & Play mit Hobbywing QuicRun G2 ESC)
+      balancer: XH (Standard-Balancer für das Ladegerät)
+    physical_specifications:
+      case_type: Hardcase (HC) - Hartplastik Box
+      safety: Zwingend erforderlich für Speedruns zum Schutz vor Kardanwelle/Crashes
+      weight_g: 370
+      dimensions:
+        length_mm: 138
+        width_mm: 46
+        height_mm: 35
+  integration_notes:
+    issue: Der Carten T410R ist ab Werk für 2S-Akkus (25mm Höhe) konzipiert. Dieser
+      3S-Akku ist 35mm hoch.
+    solution: Die obere Carbon-Akkustrebe des Chassis muss 'höhergelegt' werden.
+    required_parts:
+    - 2x Distanzhülsen/Spacers (Kunststoff oder Alu) mit ca. 10mm Höhe
+    - 2x minimal längere M3-Schrauben (ca. M3x16 oder M3x18)
+    execution: Spacers auf die originalen Alu-Pfosten legen, Carbon-Strebe darauf
+      verschrauben. Kein Dremeln oder Fräsen am Chassis notwendig.
 Brushless Combo:
   meta:
     beschreibung: Spezifikation des Brushless-Antriebsstrangs für 100 km/h an 3S.
@@ -552,41 +500,6 @@ Brushless Combo:
         Steckplatz am Empfänger)'
       shopping_item:
         in_liste_aufnehmen: false
-Fernsteuerung:
-  meta:
-    brand: Carson
-    model: Carson Micro-Empfänger (im Set enthalten)
-    type: 2.4 GHz Pistolengriff-Sender (Surface)
-    channels: 4 (Physische Steckplätze, 2 aktiv nutzbar)
-    price_class: Budget / MVP (~35 EUR)
-    shopping_item:
-      in_liste_aufnehmen: true
-      artikel_name: Carson Reflex Wheel X1 2.4Ghz Fernsteuerungs-Set (inkl. Empfänger)
-      kategorie: Steuerung & Elektronik
-      referenz_link: Suche bei Modellbau-Fachhändler (z.B. Tamico, Berlinski, Amazon)
-      geschaetzter_preis_eur: 35.0
-    integrated_features:
-    - Fail-Safe Funktion (Schutz bei Signalverlust)
-    input_voltage: '4.8V - 6.0V (Achtung: BEC des ESC darf nicht auf 7.4V stehen!)'
-  properties:
-    tx_performance:
-      protocol: FHSS (Frequency-Hopping Spread Spectrum)
-      range_ground: ~150 Meter (Ausreichend für übersichtliche Speedruns)
-      response_time: Standard 2.4Ghz Latenz
-      power_supply: 4x AA Batterien
-    calibration_and_setup:
-      fail_safe_activation: Das Fail-Safe muss zwingend programmiert werden! Auto
-        aufbocken, Vollbremsung an der Funke halten und den Setup-Knopf am Empfänger
-        drücken. Beim Ausschalten der Funke muss das Auto sofort bremsen.
-      steering_dual_rate: Über den Dual Rate (D/R) Drehregler an der Fernsteuerung
-        den maximalen Lenkausschlag zwingend auf ca. 30 % reduzieren. Bei 100 km/h
-        führt ein voller Lenkausschlag zum sofortigen Überschlag.
-      throttle_trim: Die Trimmung für das Gas (TH Trim) muss zwingend exakt auf dem
-        Nullpunkt (Mitte) stehen, bevor der Hobbywing-Regler zum ersten Mal kalibriert
-        wird.
-      bec_voltage_warning: Der Hobbywing 120A Regler hat ein einstellbares BEC (Stromversorgung
-        für Empfänger/Servo). Dieses muss zwingend auf 6.0V eingestellt bleiben, da
-        der Carson Empfänger bei 7.4V durchbrennen kann.
 Kuehlung:
   properties:
     cooling_motor:
@@ -625,3 +538,85 @@ Kuehlung:
         action: Für Speedruns zwingend Lüftungslöcher in die Frontscheibe oder die
           hinteren Seitenfenster schneiden, damit ein kühlender Durchzug (Airflow)
           entsteht.
+Lasertachometer:
+  meta:
+    typ: Berührungsloses Laser-Drehzahlmessgerät
+    referenz_modell: DT-2234C+ (oder baugleiche Klone wie Neoteck/Proster)
+    messbereich: 2.5 bis 99.999 RPM
+    messgenauigkeit: +/- 0.05%
+    shopping_item:
+      in_liste_aufnehmen: true
+      artikel_name: Digitaler Laser Tachometer (DT-2234C+)
+      kategorie: Werkstatt & Tools
+      referenz_link: Suche bei Amazon nach 'Laser Tachometer DT-2234C+'
+      geschaetzter_preis_eur: 18.0
+  properties:
+    test_protokoll:
+      vorbereitung: Reflektorstreifen (beiliegend) auf Reifenflanke oder Ritzel kleben.
+      durchfuehrung: Fahrzeug sicher aufbocken. Funke einschalten, Vollgas geben und
+        Laser auf den rotierenden Streifen richten.
+      sicherheitswarnung: 'WICHTIG: Bei 100 km/h Radumdrehungsgeschwindigkeit blähen
+        sich Gummireifen stark auf (Ballooning). Schutzbrille tragen und nicht direkt
+        in der Fliehkraft-Linie der Räder stehen, falls sich die Verklebung des Reifens
+        löst!'
+Fernsteuerung:
+  meta:
+    brand: Unbekannt
+    model: X9S Radio + RG4CHWP Empfänger
+    type: 4-Kanal 2.4 GHz Pistolengriff-Sender
+    channels: 4
+    price_class: Mid-Range (~152 EUR)
+    shopping_item:
+      in_liste_aufnehmen: true
+      artikel_name: X9S Radio + Mini Waterproof 4-Channel Receiver RG4CHWP
+      kategorie: Steuerung & Elektronik
+      referenz_link: Suche bei Modellbau-Fachhändler (z.B. Tamico, Berlinski, Amazon)
+      geschaetzter_preis_eur: 152.0
+    integrated_features:
+    - Fail-Safe Funktion (Schutz bei Signalverlust)
+    input_voltage: Abstimmung mit BEC des ESC erforderlich
+  properties:
+    tx_performance:
+      protocol: 2.4Ghz
+      range_ground: Ausreichend für Speedruns
+      response_time: Geringe Latenz für hohe Präzision
+      power_supply: Senderbatterien gemäß Herstellervorgabe
+    calibration_and_setup:
+      fail_safe_activation: Das Fail-Safe muss zwingend auf Bremse programmiert werden!
+        Auto aufbocken, Vollbremsung an der Funke halten und den Setup-Knopf am Empfänger
+        drücken. Beim Ausschalten der Funke muss das Auto sofort bremsen.
+      steering_dual_rate: Über den Dual Rate (D/R) Drehregler an der Fernsteuerung
+        den maximalen Lenkausschlag zwingend reduzieren. Bei 100 km/h führt ein voller
+        Lenkausschlag zum Überschlag.
+      throttle_trim: Die Trimmung für das Gas (TH Trim) muss exakt auf dem Nullpunkt
+        (Mitte) stehen, bevor der Regler kalibriert wird.
+      bec_voltage_warning: Das BEC des Reglers muss mit der Eingangsspannung des Empfängers
+        abgeglichen werden.
+Gps:
+  meta:
+    typ: GNSS Performance Analyzer (GPS/GLONASS)
+    referenz_modell: Ruddog GPS Performance Analyzer
+    messfrequenz: 10 Hz (10 Updates pro Sekunde - kritisch für RC Speedruns!)
+    schnittstelle: Bluetooth 4.0 (Auslesen per iOS/Android App)
+    stromversorgung: Integrierter LiPo-Akku (via USB ladbar)
+    gewicht: ca. 38 Gramm
+    shopping_item:
+      in_liste_aufnehmen: true
+      artikel_name: Ruddog GPS Performance Analyzer
+      kategorie: Testing & Validierung
+      referenz_link: Suche bei Modellbau-Fachhändler (z.B. RC-KleinKram, Tamico, Monster
+        Hopups)
+      geschaetzter_preis_eur: 85.0
+  properties:
+    app_integration:
+      software: RC Gears / Ruddog App (oder baugleiche SkyRC App)
+      funktionen: Top-Speed Messung, 0-100 km/h Zeitmessung, Track-Logging
+    mounting_and_setup:
+      positionierung: 'Zwingend an einer Stelle montieren, die freie Sicht zum Himmel
+        hat. Karbonbauteile (wie das Upper-Deck des Carten) schirmen das Satellitensignal
+        ab! Bester Montageort: Auf dem vorderen Schaumstoff-Rammschutz (Bumper).'
+      fixierung: Das Modul bei Speedruns zwingend mit Klettverschluss UND einem zusätzlichen
+        Kabelbinder oder Tape sichern. Die G-Kräfte bei einem Crash sind enorm.
+      bedienung: Das Modul blinkt während der Satellitensuche. Erst losfahren, wenn
+        das GPS-Signal (meist durch durchgehendes Leuchten) als 'Locked' bestätigt
+        ist, sonst fehlen die ersten Meter in der Messung.
