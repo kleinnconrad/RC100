@@ -62,25 +62,25 @@ Dieser Abschnitt dokumentiert die Erkenntnisse aus den bisherigen Geschwindigkei
 
 | Nr. | Typ | Bereich | Thema | Beschreibung |
 |---|---|---|---|---|
-| 1 | Learning | Fahrbetrieb & Umgebung | Streckenwahl | Die Fahrstrecke erfordert sauberen Asphalt ohne seitliche Begrenzungen durch Wände oder Bordsteine. Die Mindestbreite der Strecke beträgt 8 Meter. |
-| 2 | Learning | Fahrbetrieb & Umgebung | Witterung | Fahrten sind ausschließlich bei Trockenheit und Windstille durchzuführen. |
-| 3 | Learning | Fahrbetrieb & Umgebung | Sicherheit | Bei ungeeigneten Umgebungsbedingungen ist auf Geschwindigkeitsfahrten zu verzichten. |
-| 4 | Learning | Fahrbetrieb & Umgebung | Fahrpraxis | Der Bediener hat sich mit der Beschleunigungscharakteristik des Fahrzeugs vertraut zu machen. Eine präzise Steuerung, insbesondere bei großer Distanz zum Bediener, ist erforderlich. |
-| 5 | Modifikation | Fahrwerk & Geometrie | Dämpfung & Federung | Zur Vermeidung von Kontrollverlusten durch fahrzeugseitiges Eintauchen ist eine harte Fahrwerksabstimmung zwingend erforderlich. Es kommt hochviskoses Dämpferöl in Kombination mit maximaler Vorspannung harter Federn zum Einsatz. |
-| 6 | Modifikation | Fahrwerk & Geometrie | Fahrwerksgeometrie | Die Fahrwerksgeometrie ist auf Basiswerte eingestellt: Hinterachse 2,5 Grad Vorspur und 0 Grad Sturz; Vorderachse 0 Grad Vorspur und 0 Grad Sturz. Von abweichenden Parametrisierungen ist abzusehen. |
-| 7 | Modifikation | Fahrwerk & Geometrie | Querstabilisatoren | Die Querstabilisatoren wurden demontiert. Diese Komponenten sind für Geschwindigkeitsfahrten im Geradeauslauf technisch nicht erforderlich und stellen eine redundante Fehlerquelle dar. |
-| 8 | Modifikation | Fahrwerk & Geometrie | Ausfederweg | Die Schrauben zur Begrenzung des Ausfederwegs (Droop-Screws) wurden demontiert. Eine weitere Tieferlegung des Fahrzeugs ist aufgrund von potenziellen Verschmutzungen auf der Fahrstrecke nicht praktikabel. |
-| 9 | Learning | Fahrwerk & Geometrie | Gewichtsverteilung | Eine ausbalancierte Gewichtsverteilung auf der Querachse ist zwingend erforderlich. Einer zu geringen Achslast an der Vorderachse ist konstruktiv entgegenzuwirken, um die Fahrstabilität zu gewährleisten. |
-| 10 | Learning | Antriebsstrang | Motorisierung | Die Motorleistung ist ein sekundärer Faktor für die Zielerreichung. Ein übermäßiger Ressourceneinsatz in diesem Bereich ist nicht zielführend. |
-| 11 | Modifikation | Antriebsstrang | Motor & Getriebe | Es wird ein Motor der Baugröße 3660 (anstelle von 3650) in Verbindung mit einer langen Getriebeübersetzung verwendet. Die Antriebskonfiguration ist auf die Dimensionen der verfügbaren Fahrstrecke abzustimmen. |
-| 12 | Modifikation | Antriebsstrang | Differential (Vorderachse) | Die Vorderachse ist mit einem Frontspool (Starrachse) ausgestattet. Dies verhindert unerwünschten Drehzahlausgleich und stabilisiert den Geradeauslauf bei Höchstgeschwindigkeit. |
-| 13 | Learning | Antriebsstrang | Differential (Hinterachse) | Eine Erhöhung des Sperrgrades am hinteren Differential ist nicht erforderlich. Die Modifikation der Vorderachse (Frontspool) ist zur Fahrstabilisierung ausreichend. |
-| 14 | Learning | Antriebsstrang | Thermisches Management | Kritische Temperaturentwicklungen am Fahrtenregler (ESC) oder Motor wurden im Testbetrieb bisher nicht verzeichnet. Die thermische Belastung ist für das gewählte Setup unkritisch. |
-| 15 | Learning | Elektronik & Steuerung | Steuerungskomponenten | Präzise Steuerungskomponenten sind zwingend erforderlich. Der Einsatz einer Fernsteuerung mit Hall-Sensoren in Kombination mit einem hochwertigen Digitalservo (z. B. Savöx) ist obligatorisch. Einfache Potentiometer-Systeme bieten nicht die geforderte Präzision für Lenkkorrekturen bei Maximalgeschwindigkeit. |
-| 16 | Learning | Elektronik & Steuerung | Hilfssysteme | Der Einsatz elektronischer Hilfsmittel zur Fahrstabilisierung (Gyroskop-Systeme, Gaskurvensteuerung) ist bei der Systemkonzeption zu evaluieren. |
-| 17 | Learning | Chassis & Montage | Materialauswahl | Ein vollumfänglicher Austausch von Kunststoffkomponenten durch Aluminiumteile ist abzulehnen. Die Materialauswahl hat unter Berücksichtigung definierter Sollbruchstellen zu erfolgen, um die Ableitung von Aufprallenergie bei Unfällen kontrolliert zu steuern. |
-| 18 | Learning | Chassis & Montage | Schraubensicherung | Die Applikation von flüssiger Schraubensicherung bei sämtlichen Metall-auf-Metall-Verbindungen ist obligatorisch. |
-| 19 | Learning | Chassis & Montage | Karosserie | Auf eine Lackierung der Karosserie ist zu verzichten. Die transparente Ausführung ermöglicht die permanente Sichtprüfung der internen Technik. |
+| 1 | Learning | Fahrbetrieb & Umgebung | Streckenwahl | Eine geeignete Strecke ist maßgeblich für den Erfolg. Es wird unbedingt sauberer Asphalt benötigt. Die Strecke sollte nach Möglichkeit nicht von Wänden oder Bordsteinen begrenzt sein. Eine Mindestbreite von 8 Metern ist nötig. |
+| 2 | Learning | Fahrbetrieb & Umgebung | Witterung | Wichtig ist ebenfalls das Wetter. Es sollte auf Windstille und Trockenheit geachtet werden. |
+| 3 | Learning | Fahrbetrieb & Umgebung | Sicherheit | Wenn die Bedingungen nicht passen und man kein gutes Gefühl hat, sollte kein Speedrun unternommen werden. |
+| 4 | Learning | Fahrbetrieb & Umgebung | Fahrpraxis | Man muss lernen zu fahren. Es ist nötig, sich mit dem Fahrzeug und der Beschleunigungskurve vertraut zu machen. Wichtig ist es, das Fahrzeug ruhig zu steuern, wenn es weit entfernt ist. |
+| 5 | Modifikation | Fahrwerk & Geometrie | Dämpfung & Federung | Es wurde ein sehr zähflüssiges Dämpferöl verwendet und die Federvorspannung maximiert. Harte Federungen sind absolut nötig, um Kontrollverlust durch Eintauchen zu verhindern. |
+| 6 | Modifikation | Fahrwerk & Geometrie | Fahrwerksgeometrie | Hinten Vorspur von 2,5 Grad und 0 Grad Sturz. Vorne 0 Grad Vorspur und 0 Grad Sturz. Hier sollten keine Experimente unternommen werden. |
+| 7 | Modifikation | Fahrwerk & Geometrie | Querstabilisatoren | Die Stabilisatoren wurden ausgebaut. Sie sind für Speedruns unnötig und stellen eine potenzielle Fehlerquelle dar. |
+| 8 | Modifikation | Fahrwerk & Geometrie | Ausfederweg | Die Droopscrews wurden entfernt. Da die Strecke nicht manuell gereinigt wird, ist eine weitere Tieferlegung nicht zielführend. Die Schrauben sind für den regulären 1:10 Speedrun unnötig. |
+| 9 | Learning | Fahrwerk & Geometrie | Gewichtsverteilung | Es muss auf eine ausgeglichene Links/Rechts-Gewichtsverteilung geachtet werden. Zudem darf die Front nicht zu leicht sein. |
+| 10 | Learning | Antriebsstrang | Motorisierung | Eine ausreichende Motorisierung ist ein kleineres Problem als oft angenommen. Hier sollte man nicht zu viel investieren. |
+| 11 | Modifikation | Antriebsstrang | Motor & Getriebe | Einsatz eines 3660 Motors mit langer Übersetzung anstelle des üblichen 3650 Motors. Die Motorisierung muss der zur Verfügung stehenden Strecke angepasst werden. |
+| 12 | Modifikation | Antriebsstrang | Differential (Vorderachse) | Es wurde ein Frontspool eingebaut. Bei Geradeauslauf mit Höchstgeschwindigkeit muss Diff-Out unbedingt vermieden werden; Drehzahlausgleiche sind nicht erwünscht. |
+| 13 | Learning | Antriebsstrang | Differential (Hinterachse) | Das hintere Differential schwergängiger zu machen, ist nicht nötig. Der Frontspool reicht aus. |
+| 14 | Learning | Antriebsstrang | Thermisches Management | Probleme mit ESC- und Motortemperatur traten noch nicht auf. Das Problem ist offenbar überbewertet. |
+| 15 | Learning | Elektronik & Steuerung | Steuerungskomponenten | An der Fernbedienung und dem Servo darf nicht gespart werden. Fehlende Präzision (z. B. durch Schleifkontaktpotentiometer) macht Lenkkorrekturen zur Glückssache. Es muss in eine Fernsteuerung mit Hall-Sensoren und ein vernünftiges Digital-Servo investiert werden. |
+| 16 | Learning | Elektronik & Steuerung | Hilfssysteme | Technische Hilfsmittel wie Gaskurvensteuerung und/oder Gyro sollten in Betracht gezogen werden. |
+| 17 | Learning | Chassis & Montage | Materialauswahl | Es sollten nicht alle Kunststoffteile durch Aluminium ersetzt werden. Es muss überlegt werden, welche Teile bei einem Crash zerstört werden dürfen. Werden leicht zu ersetzende Kunststoffteile durch Aluminium ersetzt, sucht sich die Aufprallenergie ungünstigere Wege. |
+| 18 | Learning | Chassis & Montage | Schraubensicherung | Loctite bei Metallverbindungen ist absolute Pflicht. |
+| 19 | Learning | Chassis & Montage | Karosserie | Die Karosserie sollte nicht lackiert werden. Eine klare Karosserie erlaubt jederzeit den notwendigen Blick auf die Technik. |
 
 ## Repository-Verwaltung und Automatisierung
 Die Pflege der als YAML-Dateien formatierten Spezifikationen und Architekturentscheidungen löst automatisierte Prozesse aus:
