@@ -2,7 +2,7 @@ adr:
   id: ADR-005
   title: Auswahl der Fernsteuerungsanlage für 100 km/h Speedruns
   status: entschieden
-  date: '2026-03-06'
+  date: '2026-08-20'
   context: "Ein RC-Car, das mit 100 km/h (ca. 27,7 Meter pro Sekunde) fährt, legt\
     \ in wenigen Sekunden \nenorme Distanzen zurück. Die Fernsteuerung (Transmitter)\
     \ und der Empfänger (Receiver) \nmüssen daher zwingend eine stabile Funkverbindung\
@@ -41,7 +41,7 @@ adr:
       Einstellmöglichkeiten (Dual Rate) für erste 100 km/h-Tests.
   decision: X9S Radio + Mini Waterproof 4-Channel Receiver RG4CHWP
   tx_meta_transmitter:
-    brand: Unbekannt
+    brand: Konect
     model: X9S Radio
     type: 4-Kanal 2.4 GHz Pistolengriff-Sender
   rationale: "Die Tests mit der Carson Reflex Wheel X1 zeigten eine unzureichende Lenkgenauigkeit, da das Servo in Abhängigkeit vom Lenkausschlag nicht reproduzierbar in die Neutralposition zurückkehrte. Zur Erhöhung der Steuerpräzision wurde die Fernsteuerung X9S Radio in Kombination mit dem Empfänger RG4CHWP für 152 € beschafft.\n"

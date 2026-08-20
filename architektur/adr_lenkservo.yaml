@@ -2,7 +2,7 @@ adr:
   id: ADR-006
   title: Auswahl des Lenkservos für präzise High-Speed-Kontrolle
   status: entschieden
-  date: '2026-03-06'
+  date: '2026-08-21'
   context: "Bei Geschwindigkeiten von 100 km/h wirken enorme aerodynamische und mechanische\
     \ Kräfte \nauf die Vorderräder des Carten T410R. Ein minimales Zittern, Spiel\
     \ oder eine zu langsame \nReaktionszeit des Lenkservos können sofort zum Kontrollverlust\

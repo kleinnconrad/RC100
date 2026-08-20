@@ -6,20 +6,20 @@
 * [Kostenaufstellung](#kostenaufstellung)
 
 
-**Stand:** 25.03.2026
+**Stand:** 20.08.2026
 
 ## Hardware
 
 | Pos | Kategorie | Artikelbezeichnung | Artikel-Nr. | Händler | Menge | Preis |
 |:---:|:---|:---|:---|:---|:---:|---:|
 | 1 | **Chassis** | CARTEN T410R - 1:10 4WD Tourenwagen Baukasten | 75-NHA102 | RC-KleinKram | 1 | 179,99 € |
-| 2 | **Steuerung** | Carson REFLEX Wheel X1 - 2.4GHz inkl. 4-Kanal Empfänger | 17-500148 | RC-KleinKram | 1 | 34,99 € |
+| 2 | **Steuerung** | Carson REFLEX Wheel X1 - 2.4GHz inkl. 4-Kanal Empfänger (alt) | 17-500148 | RC-KleinKram | 1 | 34,99 € |
 | 3 | **Antrieb** | Hobbywing Combo WP10BL120G2 mit 3660SL-3700KV-G2 | HW38030211 | Monster Hopups | 1 | 82,78 € |
 | 4 | **Energie** | Absima Greenhorn Vol.2 LiPo 3S 11.1V-50C 5000 HC (XT60) | AB-4140014 | Monster Hopups | 1 | 32,36 € |
 | 5 | **Mechanik** | Robinson-Racing Motorritzel Hartstahl 5mm 48DP 43 Zähne | RR-2043 | Monster Hopups | 1 | 9,18 € |
 | 6 | **Kühlung** | Hobbywing Lüfter mit Kühlrippen für 36mm Motor (60mm) | HW86080120 | Monster Hopups | 1 | 9,99 € |
 | 7 | **Ladetechnik** | SkyRC S100 Neo LiPo 1-6s 10A 100W AC | SK100202-01 | Monster Hopups | 1 | 44,95 € |
-| 8 | **Lenkung** | Amewi 4409MG AMX Digital-Servo Low-Profile | AW-28995 | Tamico Shop | 1 | 23,99 € |
+| 8 | **Lenkung** | Amewi 4409MG AMX Digital-Servo Low-Profile (alt) | AW-28995 | Tamico Shop | 1 | 23,99 € |
 | 9 | **Testing** | QWORK Digital Tachometer | - | Amazon | 1 | 13,88 € |
 | 10 | **Karosserie** | ZooRacing ZR-0006-07 - HellCat - 1:10 Tourenwagen | 10-ZR-0006-07 | RC-KleinKram | 1 | 30,99 € |
 | 11 | **Werkzeug** | Tamiya 86015 - PS-15 Metallic Rot (100ml) | 17-86015 | RC-KleinKram | 1 | 8,99 € |
@@ -29,6 +29,10 @@
 | 15 | **Räder & Reifen** | Sweep HANKOOK Tread Belted tires Pre-glued 36deg | SR-SSF-36AWPG | LMI-Racing | 1 | 29,99 € |
 | 16 | **Telemetrie** | Ruddog GPS/GNSS Speed & Performance Analyzer | RP-0525 | RCFOX | 1 | 54,85 € |
 | 17 | **ESC Programmierung** | 	Hobbywing Programmierbox LED Universal | HW30501003 | Modellbau Metz | 1 | 11,49 € |
+| 18 | **Steuerung** | X9S Radio + RG4CHWP Empfänger | - | - | 1 | 152,00 € |
+| 19 | **Lenkung** | Savöx SC-1252MG+ Low-Profile Servo | SA_SC-1252MG+ | - | 1 | 52,72 € |
+| 20 | **Lenkung** | ALU CLAMP SERVO HORN 25T (HUD293409) | HUD293409 | - | 1 | 21,50 € |
+| 21 | **Ersatzteile** | CARTEN T410R - 1:10 4WD Tourenwagen Baukasten | 75-NHA102 | RC-KleinKram | 1 | 179,99 € |
 
 ---
 
@@ -36,6 +40,6 @@
 
 | Beschreibung | Betrag |
 |:---|---:|
-| **Reine Fahrzeugkosten:** | **434,26 €** |
+| **Reine Fahrzeugkosten:** | **840,47 €** |
 | Kosten für Tools & Infrastruktur (Pos. 7, 9, 11-14, 16, 17): | 163,13 € |
-| **Gesamtkosten:** | **597,39 €** |
+| **Gesamtkosten:** | **1003,60 €** |
