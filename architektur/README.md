@@ -10,8 +10,8 @@ Dieses Verzeichnis enthält alle grundlegenden architektur- und Hardwareentschei
 | **ADR-002** | 2026-03-06 | Auswahl der Brushless-Motor-Combo für 100 km/h Speedruns | 🟢 entschieden | Hobbywing QuicRun WP10BL120 G2 Combo (3660SL 3700KV) |
 | **ADR-003** | 2026-03-06 | Auswahl des LiPo-Akkus für 100 km/h Ziel. | 🟢 entschieden | Absima GreenHorn Line V2 (3S / 5000mAh / 50C / Hardcase) |
 | **ADR-004** | 2026-03-06 | Auswahl des Ladegeräts für 3S LiPo-Akkus | 🟢 entschieden | SkyRC S100neo |
-| **ADR-005** | 2026-03-06 | Auswahl der Fernsteuerungsanlage für 100 km/h Speedruns | 🟢 entschieden | X9S Radio + Mini Waterproof 4-Channel Receiver RG4CHWP |
-| **ADR-006** | 2026-03-06 | Auswahl des Lenkservos für präzise High-Speed-Kontrolle | 🟢 entschieden | Savöx SC-1252MG+ |
+| **ADR-005** | 2026-08-20 | Auswahl der Fernsteuerungsanlage für 100 km/h Speedruns | 🟢 entschieden | X9S Radio + Mini Waterproof 4-Channel Receiver RG4CHWP |
+| **ADR-006** | 2026-08-21 | Auswahl des Lenkservos für präzise High-Speed-Kontrolle | 🟢 entschieden | Savöx SC-1252MG+ |
 | **ADR-007** | 2026-03-06 | Auswahl der aktiven und passiven Motorkühlung für 3S-Speedruns | 🟢 entschieden | Passiver 36mm Alu-Kühlkörper kombiniert mit aktivem 40x40mm High-Speed Alu-Lüfter |
 | **ADR-008** | 2026-02-25 | Auswahl der Bereifung (Belted Gummireifen für Asphalt) für 100 km/h Speedruns | 🟢 Entschieden | Sweep HANKOOK Tread Belted tires Pre-glued set Pro-compound 36deg for Asphalt (SR-SSF-36AWPG) |
 | **ADR-009** | 2026-03-12 | Auswahl der aerodynamischen Karosserie für 100 km/h Speedruns | 🟢 entschieden | ZooRacing Hellcat (190 mm, 0.7mm Stärke) |
@@ -149,7 +149,7 @@ Adapterkabel überflüssig macht. Dies passt optimal zur Architektur-Entscheidun
 ---
 
 ### ADR-005: Auswahl der Fernsteuerungsanlage für 100 km/h Speedruns
-**Status:** entschieden | **Datum:** 2026-03-06
+**Status:** entschieden | **Datum:** 2026-08-20
 
 #### Kontext
 Ein RC-Car, das mit 100 km/h (ca. 27,7 Meter pro Sekunde) fährt, legt in wenigen Sekunden 
@@ -176,7 +176,7 @@ Die Tests mit der Carson Reflex Wheel X1 zeigten eine unzureichende Lenkgenauigk
 ---
 
 ### ADR-006: Auswahl des Lenkservos für präzise High-Speed-Kontrolle
-**Status:** entschieden | **Datum:** 2026-03-06
+**Status:** entschieden | **Datum:** 2026-08-21
 
 #### Kontext
 Bei Geschwindigkeiten von 100 km/h wirken enorme aerodynamische und mechanische Kräfte 
