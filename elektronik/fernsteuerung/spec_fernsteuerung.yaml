@@ -1,6 +1,6 @@
 spec:
   meta:
-    brand: Unbekannt
+    brand: Konect
     model: X9S Radio + RG4CHWP Empfänger
     type: 4-Kanal 2.4 GHz Pistolengriff-Sender
     channels: 4
@@ -17,9 +17,10 @@ spec:
   properties:
     tx_performance:
       protocol: 2.4Ghz
-      range_ground: Ausreichend für Speedruns
+      range_ground: >200m
       response_time: Geringe Latenz für hohe Präzision
       power_supply: Senderbatterien gemäß Herstellervorgabe
+      potentiometer: Hall Sensor für möglichst hohe Präzision
     calibration_and_setup:
       fail_safe_activation: Das Fail-Safe muss zwingend auf Bremse programmiert werden! Auto aufbocken, Vollbremsung an der Funke halten und den Setup-Knopf am Empfänger drücken. Beim Ausschalten der Funke muss das Auto sofort bremsen.
       steering_dual_rate: Über den Dual Rate (D/R) Drehregler an der Fernsteuerung den maximalen Lenkausschlag zwingend reduzieren. Bei 100 km/h führt ein voller Lenkausschlag zum Überschlag.
