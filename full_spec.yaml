@@ -606,7 +606,7 @@ Gps:
       kategorie: Testing & Validierung
       referenz_link: Suche bei Modellbau-Fachhändler (z.B. RC-KleinKram, Tamico, Monster
         Hopups)
-      geschaetzter_preis_eur: 85.0
+      geschaetzter_preis_eur: 50
   properties:
     app_integration:
       software: RC Gears / Ruddog App (oder baugleiche SkyRC App)
