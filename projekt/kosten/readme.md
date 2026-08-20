@@ -29,9 +29,9 @@
 | 15 | **Räder & Reifen** | Sweep HANKOOK Tread Belted tires Pre-glued 36deg | SR-SSF-36AWPG | LMI-Racing | 1 | 29,99 € |
 | 16 | **Telemetrie** | Ruddog GPS/GNSS Speed & Performance Analyzer | RP-0525 | RCFOX | 1 | 54,85 € |
 | 17 | **ESC Programmierung** | 	Hobbywing Programmierbox LED Universal | HW30501003 | Modellbau Metz | 1 | 11,49 € |
-| 18 | **Steuerung** | X9S Radio + RG4CHWP Empfänger | - | - | 1 | 152,00 € |
-| 19 | **Lenkung** | Savöx SC-1252MG+ Low-Profile Servo | SA_SC-1252MG+ | - | 1 | 52,72 € |
-| 20 | **Lenkung** | ALU CLAMP SERVO HORN 25T (HUD293409) | HUD293409 | - | 1 | 21,50 € |
+| 18 | **Steuerung** | X9S Radio + RG4CHWP Empfänger | KN-X9S-4CH | RCFOX | 1 | 152,00 € |
+| 19 | **Lenkung** | Savöx SC-1252MG+ Low-Profile Servo | SA_SC-1252MG+ | RCFOX | 1 | 52,72 € |
+| 20 | **Lenkung** | ALU CLAMP SERVO HORN 25T (HUD293409) | HUD293409 | RCFOX | 1 | 21,50 € |
 | 21 | **Ersatzteile** | CARTEN T410R - 1:10 4WD Tourenwagen Baukasten | 75-NHA102 | RC-KleinKram | 1 | 179,99 € |
 
 ---
