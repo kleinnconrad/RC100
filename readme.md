@@ -15,6 +15,7 @@ Die technische Herausforderung resultiert primär aus dem gewählten Maßstab un
 * [Repository-Struktur](#repository-struktur)
 * [Hardwarearchitektur und Mechanik](#hardwarearchitektur-und-mechanik)
 * [Berechnungsmodelle zur Antriebsauslegung](#berechnungsmodelle-zur-antriebsauslegung)
+* [Learnings & Modifikationen](#learnings--modifikationen)
 * [Repository-Verwaltung und Automatisierung](#repository-verwaltung-und-automatisierung)
 * [Weiterführendes Projekt: Telemetriesystem](#weiterführendes-projekt-telemetriesystem)
 * [Lizenzierung](#lizenzierung)
@@ -55,6 +56,30 @@ classDiagram
 Zur Vermeidung thermischer oder mechanischer Überlastungen der Elektronikkomponenten kommen eigens entwickelte Berechnungsmodelle zum Einsatz:
 * **Getriebe-Rechner (`scripts/calc/getriebe_calc.py`)**: Simuliert auf Basis des Reifendurchmessers und der Zielgeschwindigkeit die mechanische Radlast für den Motor in Abhängigkeit der verfügbaren Motorritzel. Die Setups werden in Belastungszonen für das definierte Antriebssystem kategorisiert.
 * **Limit-Rechner (`scripts/calc/max_speed.py`)**: Kalkuliert die erreichbare Endgeschwindigkeit unter Einbezug der spezifischen Motordaten, der Akkuspannung und definierter thermischer Toleranzgrenzen anhand der physischen Hardware-Spezifikationen.
+
+## Learnings & Modifikationen
+Dieser Abschnitt dokumentiert die Erkenntnisse aus den bisherigen Geschwindigkeitsfahrten im Maßstab 1:10 sowie die daraus resultierenden Modifikationen am Fahrzeug.
+
+| Nr. | Kategorie | Beschreibung |
+|---|---|---|
+| 1 | Streckenwahl | Die Fahrstrecke erfordert sauberen Asphalt ohne seitliche Begrenzungen durch Wände oder Bordsteine. Die Mindestbreite der Strecke beträgt 8 Meter. |
+| 2 | Witterung | Fahrten sind ausschließlich bei Trockenheit und Windstille durchzuführen. |
+| 3 | Sicherheit | Bei ungeeigneten Umgebungsbedingungen ist auf Geschwindigkeitsfahrten zu verzichten. |
+| 4 | Fahrpraxis | Der Bediener hat sich mit der Beschleunigungscharakteristik des Fahrzeugs vertraut zu machen. Eine präzise Steuerung, insbesondere bei großer Distanz zum Bediener, ist erforderlich. |
+| 5 | Motorisierung | Die Motorleistung ist ein sekundärer Faktor für die Zielerreichung. Ein übermäßiger Ressourceneinsatz in diesem Bereich ist nicht zielführend. |
+| 6 | Dämpfung & Federung | Zur Vermeidung von Kontrollverlusten durch fahrzeugseitiges Eintauchen ist eine harte Fahrwerksabstimmung zwingend erforderlich. Es kommt hochviskoses Dämpferöl in Kombination mit maximaler Vorspannung harter Federn zum Einsatz. |
+| 7 | Differential (Vorderachse) | Die Vorderachse ist mit einem Frontspool (Starrachse) ausgestattet. Dies verhindert unerwünschten Drehzahlausgleich und stabilisiert den Geradeauslauf bei Höchstgeschwindigkeit. |
+| 8 | Motor & Getriebe | Es wird ein Motor der Baugröße 3660 (anstelle von 3650) in Verbindung mit einer langen Getriebeübersetzung verwendet. Die Antriebskonfiguration ist auf die Dimensionen der verfügbaren Fahrstrecke abzustimmen. |
+| 9 | Querstabilisatoren | Die Querstabilisatoren wurden demontiert. Diese Komponenten sind für Geschwindigkeitsfahrten im Geradeauslauf technisch nicht erforderlich und stellen eine redundante Fehlerquelle dar. |
+| 10 | Fahrwerk (Ausfederweg) | Die Schrauben zur Begrenzung des Ausfederwegs (Droop-Screws) wurden demontiert. Eine weitere Tieferlegung des Fahrzeugs ist aufgrund von potenziellen Verschmutzungen auf der Fahrstrecke nicht praktikabel. |
+| 11 | Steuerungselektronik | Präzise Steuerungskomponenten sind zwingend erforderlich. Der Einsatz einer Fernsteuerung mit Hall-Sensoren in Kombination mit einem hochwertigen Digitalservo (z. B. Savöx) ist obligatorisch. Einfache Potentiometer-Systeme bieten nicht die geforderte Präzision für Lenkkorrekturen bei Maximalgeschwindigkeit. |
+| 12 | Montage | Die Applikation von flüssiger Schraubensicherung bei sämtlichen Metall-auf-Metall-Verbindungen ist obligatorisch. |
+| 13 | Karosserie | Auf eine Lackierung der Karosserie ist zu verzichten. Die transparente Ausführung ermöglicht die permanente Sichtprüfung der internen Technik. |
+| 14 | Elektronische Hilfssysteme | Der Einsatz elektronischer Hilfsmittel zur Fahrstabilisierung (Gyroskop-Systeme, Gaskurvensteuerung) ist bei der Systemkonzeption zu evaluieren. |
+| 15 | Materialauswahl | Ein vollumfänglicher Austausch von Kunststoffkomponenten durch Aluminiumteile ist abzulehnen. Die Materialauswahl hat unter Berücksichtigung definierter Sollbruchstellen zu erfolgen, um die Ableitung von Aufprallenergie bei Unfällen kontrolliert zu steuern. |
+| 16 | Fahrwerksgeometrie | Die Fahrwerksgeometrie ist auf Basiswerte eingestellt: Hinterachse 2,5 Grad Vorspur und 0 Grad Sturz; Vorderachse 0 Grad Vorspur und 0 Grad Sturz. Von abweichenden Parametrisierungen ist abzusehen. |
+| 17 | Differential (Hinterachse) | Eine Erhöhung des Sperrgrades am hinteren Differential ist nicht erforderlich. Die Modifikation der Vorderachse (Frontspool) ist zur Fahrstabilisierung ausreichend. |
+| 18 | Thermisches Management | Kritische Temperaturentwicklungen am Fahrtenregler (ESC) oder Motor wurden im Testbetrieb bisher nicht verzeichnet. Die thermische Belastung ist für das gewählte Setup unkritisch. |
 
 ## Repository-Verwaltung und Automatisierung
 Die Pflege der als YAML-Dateien formatierten Spezifikationen und Architekturentscheidungen löst automatisierte Prozesse aus:
