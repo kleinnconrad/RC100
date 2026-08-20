@@ -39,29 +39,13 @@ adr:
       Gyro und etwas weniger Maximalreichweite als die DumboRC, punktet aber durch
       absolute Einfachheit, ein stark robustes Fail-Safe und zwingend notwendige
       Einstellmöglichkeiten (Dual Rate) für erste 100 km/h-Tests.
-  decision: Carson Reflex Wheel X1
+  decision: X9S Radio + Mini Waterproof 4-Channel Receiver RG4CHWP
   tx_meta_transmitter:
-    brand: Carson
-    model: Reflex Wheel X1
-    type: 2.4 GHz Pistolengriff-Sender (Surface)
-  rationale: "Die Entscheidung fällt im Sinne eines sauberen MVP-Ansatzes auf die\
-    \ Carson Reflex Wheel X1. \nObwohl die DumboRC auf dem Papier mehr Reichweite\
-    \ und einen Gyro bietet, reicht die Carson \nfür die ersten validen 100 km/h-Runs\
-    \ auf übersichtlichen Parkplätzen oder Strecken vollkommen aus. \nSie ist ein\
-    \ bewährter Industrie-Standard im Einstiegssegment, bietet eine stark zuverlässige\
-    \ \nFail-Safe-Funktion und die wichtigeSteering Dual-Rate Einstellung.\
-    \ Dieser \npragmatische Ansatz spart Komplexität beim Setup (kein Gyro-Wobble-Risiko)\
-    \ und liefert \ngenau die Baseline an Funktionalität, die aktuell benötigt wird.\n"
+    brand: Unbekannt
+    model: X9S Radio
+    type: 4-Kanal 2.4 GHz Pistolengriff-Sender
+  rationale: "Die Tests mit der Carson Reflex Wheel X1 zeigten eine unzureichende Lenkgenauigkeit, da das Servo in Abhängigkeit vom Lenkausschlag nicht reproduzierbar in die Neutralposition zurückkehrte. Zur Erhöhung der Steuerpräzision wurde die Fernsteuerung X9S Radio in Kombination mit dem Empfänger RG4CHWP für 152 € beschafft.\n"
   consequences:
-  - 'Sicherheitsarchitektur (Fail-Safe): Das Fail-Safe des beiliegenden Carson Micro-Empfängers
-    muss vor der ersten Fahrt zwingend auf ''Bremse/Neutral'' programmiert werden.
-    Bei Signalverlust darf der 3660er Motor kein Gas mehr annehmen.'
-  - 'Spannungs-Constraint (BEC): Der Hobbywing 120A Regler darf maximal 6.0V an den
-    Empfänger liefern. Die 7.4V Option des ESC darf nicht aktiviert werden, da der
-    Carson Empfänger sonst durchbrennen könnte.'
-  - 'Fahrverhalten (Dual Rate): Da kein Gyro vorhanden ist, der das Auto automatisch
-    stabilisiert, muss der maximale Lenkausschlag über das Dual-Rate-Rad am Sender
-    für Speedruns zwingend auf ca. 30 % reduziert werden, um ein Aufschaukeln der
-    Lenkung zu verhindern.'
-  - 'Batterien: Der Sender benötigt 4x AA Batterien. Für eine absolut konstante Sendeleistung
-    ohne Einbrüche sollten hochwertige Akkus (z.B. Eneloop) verwendet werden.'
+  - 'Empfängerinstallation: Der RG4CHWP Empfänger wird verbaut und das Fail-Safe zwingend auf Bremse/Neutral programmiert.'
+  - 'Schnittstellenkompatibilität: Die Betriebsspannung des Empfängers ist mit der BEC-Ausgangsspannung des Motorreglers abzugleichen.'
+  - 'Lenkwinkelbegrenzung: Die Steuerausschläge (Dual Rate) werden auf die Erfordernisse von Hochgeschwindigkeitsfahrten angepasst.'

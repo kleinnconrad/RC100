@@ -24,5 +24,6 @@
 - Austausch des Motors von einer drehmomentstarken zu einer drehzahlstarken Auslegung (Priorität 1). QuicRun 3652SL G2 Sensorless Motor 5400kV 3.175mm Welle
 - Erhöhung der Federhärte.
 - Überprüfung der Bereifung.
-- Überprüfung von Servo und Servosaver.
+- Überprüfung von Servo und Servosaver bzw. der Lenkgenauigkeit
 - Einbau von "perfect pass" https://github.com/ambrmart/arduino-rc-launch-control
+- Einbau eines Gyro
