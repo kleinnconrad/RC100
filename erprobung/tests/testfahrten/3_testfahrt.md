@@ -28,7 +28,7 @@ Um das Problem dauerhaft zu beheben und präventiv an den anderen Radaufhängung
 
 * **Sicherung der Kugelgelenke:** Die Verschraubungen aller vier Kugelgelenke der Radaufhängungen wurden demontiert, kontrolliert und anschließend mit flüssiger Schraubensicherung (Loctite) gegen erneutes Losvibrieren gesichert. *(Hinweis: Der Kontakt von Loctite mit den Kunststoff-Kugelpfannen wurde dabei überwacht/bereinigt).*
 * **Sicherheits-Check der Schraubverbindungen:** Alle restlichen Schrauben des Fahrzeugs, die in Metallgewinde greifen (nicht in Kunststoffbauteile gedreht sind), wurden auf korrekten und festen Sitz geprüft und, wo nötig, nachgezogen.
-<img src="https://github.com/kleinnconrad/RC100/blob/main/messdaten/fotos/PXL_20260326_100028837.jpg" alt="schaden_3_test" width="50%">
+<img src="https://github.com/kleinnconrad/RC100/blob/main/erprobung/fotos/PXL_20260326_100028837.jpg" alt="schaden_3_test" width="50%">
 **Fazit für den nächsten Rollout:**
 Die mechanische Integrität der Radaufhängung sollte nun wiederhergestellt sein. Der ursprüngliche Test des Servosavers muss bei der nächsten Ausfahrt wiederholt werden.
 
