@@ -25,8 +25,15 @@ Das Projekt ist in themenspezifische Verzeichnisse gegliedert:
 * **`/architektur`**: Dokumentation grundlegender Systemdesigns und Architekturentscheidungen.
 * **`/elektronik`**: Auswahl und Spezifikation elektronischer Komponenten wie Motoren, Fahrtenregler und Akkumulatoren.
 * **`/mechanik`**: Chassis-Design, Konstruktionsdaten sowie die Spezifikation physischer Bauteile.
+  * **`/carten_t410r`**: Fahrzeugspezifische Daten und Anleitungen.
+  * **`/geometrie`**: Fahrwerkseinstellungen.
+  * **`/karosserie`**: Spezifikationen zur Karosserie.
+  * **`/lackierung`**: Farb- und Lackierdaten.
+  * **`/raeder`**: Reifenspezifikationen.
 * **`/messdaten`**: Erfassung und Auswertung von Testergebnissen und Leistungsmessdaten.
+  * **`/tests`**: Protokolle und Daten der Testfahrten.
 * **`/projekt`**: Allgemeines Projektmanagement und Übersichten zur Kostenkontrolle.
+* **`/reddit`**: Feedback und Diskussionen aus der Community.
 * **`/scripts`**: Automatisierungsskripte und Berechnungsmodelle zur Systemauslegung.
 
 ## Hardwarearchitektur und Mechanik
