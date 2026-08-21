@@ -1,4 +1,4 @@
-# RC100: 1:10 RC Car for Speeds over 100 km/h
+# 1:10 RC Car for Speeds over 100 km/h
 
 This project covers the system architecture and construction of a 1:10 scale on-road touring car with the design goal of a consistently repeatable top speed of over 100 km/h. The focus is on maximizing drive power while ensuring reliability and cost efficiency.
 
