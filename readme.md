@@ -68,27 +68,34 @@ Zur Vermeidung thermischer oder mechanischer Überlastungen der Elektronikkompon
 ## Learnings & Modifikationen (so far...)
 Dieser Abschnitt dokumentiert die Erkenntnisse aus den bisherigen Tests & Speedruns im Maßstab 1:10 sowie die daraus resultierenden Modifikationen am Fahrzeug.
 
-| Nr. | Typ | Bereich | Thema | Beschreibung |
-|---|---|---|---|---|
-| 1 | Learning | Fahrbetrieb & Umgebung | Streckenwahl | Eine geeignete Strecke ist maßgeblich für den Erfolg. Es wird unbedingt sauberer Asphalt benötigt. Die Strecke sollte nach Möglichkeit nicht von Wänden oder Bordsteinen begrenzt sein. Eine Mindestbreite von 8 Metern ist nötig. |
-| 2 | Learning | Fahrbetrieb & Umgebung | Witterung | Wichtig ist ebenfalls das Wetter. Es sollte auf Windstille und Trockenheit geachtet werden. |
-| 3 | Learning | Fahrbetrieb & Umgebung | Sicherheit | Wenn die Bedingungen nicht passen und man kein gutes Gefühl hat, sollte kein Speedrun unternommen werden. |
-| 4 | Learning | Fahrbetrieb & Umgebung | Fahrpraxis | Man muss lernen zu fahren. Es ist nötig, sich mit dem Fahrzeug und der Beschleunigungskurve vertraut zu machen. Wichtig ist es, das Fahrzeug ruhig zu steuern, wenn es weit entfernt ist. |
-| 5 | Modifikation | Fahrwerk & Geometrie | Dämpfung & Federung | Es wurde ein sehr zähflüssiges Dämpferöl verwendet und die Federvorspannung maximiert. Harte Federungen sind absolut nötig, um Kontrollverlust durch Eintauchen zu verhindern. |
-| 6 | Modifikation | Fahrwerk & Geometrie | Fahrwerksgeometrie | Hinten Vorspur von 2,5 Grad und 0 Grad Sturz. Vorne 0 Grad Vorspur und 0 Grad Sturz. Hier sollten keine Experimente unternommen werden. |
-| 7 | Modifikation | Fahrwerk & Geometrie | Querstabilisatoren | Die Stabilisatoren wurden ausgebaut. Sie sind für Speedruns unnötig und stellen eine potenzielle Fehlerquelle dar. |
-| 8 | Modifikation | Fahrwerk & Geometrie | Ausfederweg | Die Droopscrews wurden entfernt. Da die Strecke nicht manuell gereinigt wird, ist eine weitere Tieferlegung nicht zielführend. Die Schrauben sind für den regulären 1:10 Speedrun unnötig. |
-| 9 | Learning | Fahrwerk & Geometrie | Gewichtsverteilung | Es muss auf eine ausgeglichene Links/Rechts-Gewichtsverteilung geachtet werden. Zudem darf die Front nicht zu leicht sein. |
-| 10 | Learning | Antriebsstrang | Motorisierung | Eine ausreichende Motorisierung ist ein kleineres Problem als oft angenommen. Hier sollte man nicht zu viel investieren. |
-| 11 | Modifikation | Antriebsstrang | Motor & Getriebe | Einsatz eines 3660 Motors mit langer Übersetzung anstelle des üblichen 3650 Motors. Die Motorisierung muss der zur Verfügung stehenden Strecke angepasst werden. |
-| 12 | Modifikation | Antriebsstrang | Differential (Vorderachse) | Es wurde ein Frontspool eingebaut. Bei Geradeauslauf mit Höchstgeschwindigkeit muss Diff-Out unbedingt vermieden werden; Drehzahlausgleiche sind nicht erwünscht. |
-| 13 | Learning | Antriebsstrang | Differential (Hinterachse) | Das hintere Differential schwergängiger zu machen, ist nicht nötig. Der Frontspool reicht aus. |
-| 14 | Learning | Antriebsstrang | Thermisches Management | Probleme mit ESC- und Motortemperatur traten noch nicht auf. Das Problem ist offenbar überbewertet. |
-| 15 | Learning | Elektronik & Steuerung | Steuerungskomponenten | An der Fernbedienung und dem Servo darf nicht gespart werden. Fehlende Präzision (z. B. durch Schleifkontaktpotentiometer) macht Lenkkorrekturen zur Glückssache. Es muss in eine Fernsteuerung mit Hall-Sensoren und ein vernünftiges Digital-Servo investiert werden. |
-| 16 | Learning | Elektronik & Steuerung | Hilfssysteme | Technische Hilfsmittel wie Gaskurvensteuerung und/oder Gyro sollten in Betracht gezogen werden. [![GitHub Repo](https://img.shields.io/badge/GitHub-Launch_Control-blue?logo=github)](https://github.com/ambrmart/arduino-rc-launch-control) |
-| 17 | Learning | Chassis & Montage | Materialauswahl | Es sollten nicht alle Kunststoffteile durch Aluminium ersetzt werden. Es muss überlegt werden, welche Teile bei einem Crash zerstört werden dürfen. Werden leicht zu ersetzende Kunststoffteile durch Aluminium ersetzt, sucht sich die Aufprallenergie ungünstigere Wege. |
-| 18 | Learning | Chassis & Montage | Schraubensicherung | Loctite bei Metallverbindungen ist absolute Pflicht. |
-| 19 | Learning | Chassis & Montage | Karosserie | Die Karosserie sollte nicht lackiert werden. Eine klare Karosserie erlaubt jederzeit den notwendigen Blick auf die Technik. |
+```mermaid
+mindmap
+  root((RC100 Erkenntnisse))
+    Fahrbetrieb("Fahrbetrieb & Umgebung")
+      Streckenwahl["Learning: Streckenwahl\nSauberer Asphalt, keine Wände, min. 8m breit"]
+      Witterung["Learning: Witterung\nWindstille und Trockenheit"]
+      Sicherheit["Learning: Sicherheit\nKein Speedrun bei ungutem Gefühl"]
+      Fahrpraxis["Learning: Fahrpraxis\nFahrzeug & Beschleunigung kennenlernen"]
+    Fahrwerk("Fahrwerk & Geometrie")
+      Daempfung["Modifikation: Dämpfung & Federung\nZähflüssiges Öl, harte Federn"]
+      Geometrie["Modifikation: Fahrwerksgeometrie\nHinten 2,5° Vorspur, Vorne 0°"]
+      Stabis["Modifikation: Querstabilisatoren\nAusgebaut, unnötig für Speedruns"]
+      Ausfederweg["Modifikation: Ausfederweg\nDroopscrews entfernt"]
+      Gewichtsverteilung["Learning: Gewichtsverteilung\nAusgeglichen L/R, Front nicht zu leicht"]
+    Antrieb("Antriebsstrang")
+      Motorisierung["Learning: Motorisierung\nUnproblematischer als angenommen"]
+      Motor_Getriebe["Modifikation: Motor & Getriebe\n3660 Motor, lange Übersetzung"]
+      Diff_Vorne["Modifikation: Differential (Vorne)\nFrontspool, kein Drehzahlausgleich"]
+      Diff_Hinten["Learning: Differential (Hinten)\nStandard reicht, Frontspool genügt"]
+      Thermik["Learning: Thermisches Management\nESC-/Motortemperatur bislang unproblematisch"]
+    Elektronik("Elektronik & Steuerung")
+      Steuerung["Learning: Steuerungskomponenten\nHall-Sensoren und Digital-Servo Pflicht"]
+      Hilfssysteme["Learning: Hilfssysteme\nGyro & Gaskurvensteuerung evaluieren"]
+    Chassis("Chassis & Montage")
+      Material["Learning: Materialauswahl\nKunststoff als Sollbruchstelle belassen"]
+      Schrauben["Learning: Schraubensicherung\nLoctite bei Metallverbindungen Pflicht"]
+      Karosserie["Learning: Karosserie\nUnlackiert für freie Sicht auf Technik"]
+```
 
 ## Repository-Verwaltung und Automatisierung
 Die Pflege der als YAML-Dateien formatierten Spezifikationen und Architekturentscheidungen löst automatisierte Prozesse aus:
