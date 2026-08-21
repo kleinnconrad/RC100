@@ -1,33 +1,33 @@
-# 2. Speedrun Testbericht
+# 2. Speedrun Test Report
 
-## Inhaltsverzeichnis
-* [Zusammenfassung der Testläufe](#zusammenfassung-der-testlaufe)
-* [Post-Run Inspektion und Fehleranalyse](#post-run-inspektion-und-fehleranalyse)
-* [Fazit](#fazit)
+## Table of Contents
+* [Summary of Test Runs](#summary-of-test-runs)
+* [Post-Run Inspection and Error Analysis](#post-run-inspection-and-error-analysis)
+* [Conclusion](#conclusion)
 
-**Datum:** 19. Juli 2026  
-**Ort:** Bauhaus Parkplatz  
-**Ergebnis:** nicht erfolgreich
+**Date:** July 19, 2026  
+**Location:** Bauhaus Parking Lot  
+**Result:** unsuccessful
 
-## Zusammenfassung der Testläufe
-* **Gemessene Höchstgeschwindigkeit:** **72 km/h**
+## Summary of Test Runs
+* **Measured top speed:** **72 km/h**
 
-Das Fahrzeug zeigte bei höheren Geschwindigkeiten sowie bei starker Beschleunigung ein instabiles Fahrverhalten. Dies limitierte die maximal erreichbare Geschwindigkeit erheblich.
+The vehicle showed unstable driving behavior at higher speeds and during strong acceleration. This significantly limited the maximum achievable speed.
 
-## Post-Run Inspektion und Fehleranalyse
-Eine anschließende Überprüfung des Fahrzeugs ergab drei wesentliche Konfigurationsfehler am Fahrwerk, die für die Instabilität verantwortlich waren:
+## Post-Run Inspection and Error Analysis
+A subsequent inspection of the vehicle revealed three major configuration errors on the chassis that were responsible for the instability:
 
-1. **Falsche Montage der Stabilisatoren:**
-   Die Befestigungsschrauben der Stabilisatoren waren vollständig festgezogen. Dies führte zu einer starren Fixierung am Chassis und blockierte die Funktion der Stabilisatoren.
+1. **Incorrect installation of the anti-roll bars:**
+   The mounting screws of the anti-roll bars were fully tightened. This led to a rigid fixation on the chassis and blocked the function of the anti-roll bars.
 
-2. **Sturz-Asymmetrie (Vorderachse):**
-   An der Vorderachse wurde eine asymmetrische Einstellung des Radsturzes festgestellt.
+2. **Camber asymmetry (Front axle):**
+   An asymmetrical setting of the wheel camber was found on the front axle.
 
-3. **Spur-Asymmetrie (Hinterachse):**
-   An der Hinterachse wurde eine asymmetrische Einstellung der Vorspur identifiziert.
+3. **Toe asymmetry (Rear axle):**
+   An asymmetrical setting of the toe-in was identified on the rear axle.
 
-**Korrekturmaßnahmen:**
-Alle drei festgestellten Konfigurationsfehler wurden behoben. Die Stabilisatoren sind komplett abmontiert, da sie für Speedruns überflüssig sind und die Fahrwerksgeometrie an Vorder- sowie Hinterachse wurde symmetrisch eingestellt.
+**Corrective measures:**
+All three identified configuration errors were corrected. The anti-roll bars are completely removed, as they are superfluous for speedruns, and the chassis geometry on the front and rear axles was set symmetrically.
 
-## Fazit
-Die Instabilität des Fahrzeugs bei starker Beschleunigung und Geschwindigkeiten bis 72 km/h war vermutlich auf eine fehlerhafte Fahrwerksabstimmung zurückzuführen. Durch die Demontage der Stabilisatoren, der Korrektur des Radsturzes und der Korrektur der Vorspur wurden die mechanischen Voraussetzungen für ein stabileres Fahrverhalten bei zukünftigen Tests geschaffen.
+## Conclusion
+The instability of the vehicle during strong acceleration and speeds up to 72 km/h was presumably due to an incorrect chassis setup. By removing the anti-roll bars, correcting the wheel camber, and correcting the toe-in, the mechanical prerequisites for more stable driving behavior in future tests were created.

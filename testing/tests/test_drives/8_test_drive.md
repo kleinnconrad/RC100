@@ -1,39 +1,38 @@
-# Testprotokoll: 8. Testfahrt
+# Test Log: 8. Test Drive
 
-## Inhaltsverzeichnis
-* [Metadaten](#metadaten)
-* [Ziel der Testfahrt](#ziel-der-testfahrt)
-* [Testverlauf und Ergebnis](#testverlauf-und-ergebnis)
-* [Fehlerbild und aufgetretene Probleme](#fehlerbild-und-aufgetretene-probleme)
-* [Geplante Maßnahmen](#geplante-massnahmen)
-* [Durchgeführte Anpassungen](#durchgefuehrte-anpassungen)
+## Table of Contents
+* [Metadata](#metadata)
+* [Goal of the test drive](#goal-of-the-test-drive)
+* [Test course and result](#test-course-and-result)
+* [Error pattern and problems encountered](#error-pattern-and-problems-encountered)
+* [Planned measures](#planned-measures)
+* [Implemented adjustments](#implemented-adjustments)
 
-## Metadaten
-* **Datum:** 09.04.2026
-* **Ort:** Tiefgarage
-* **Fokus:** Bugstabilität
-* **Status:** Teilweise / Ausbaufähig
+## Metadata
+* **Date:** 2026-04-09
+* **Location:** Underground garage
+* **Focus:** Front end stability
+* **Status:** Partial / Expandable
 
-## Ziel der Testfahrt
-Überprüfung des Fahrverhaltens am Bug des Carten T410R unter zwei spezifischen Setup-Varianten: 
-a) Servosaver maximal hart gefedert.
-b) Servosaver maximal hart gefedert in Kombination mit 141g zusätzlichem Gewicht am Frontbumper.
+## Goal of the test drive
+Checking the driving behavior at the front end of the Carten T410R under two specific setup variants: 
+a) Servo saver sprung as hard as possible.
+b) Servo saver sprung as hard as possible in combination with 141g additional weight on the front bumper.
 
-## Testverlauf und Ergebnis
-Das ruhigste Fahrverhalten am Bug konnte mit Variante b (harter Servosaver + 141g Zusatzgewicht) erzielt werden. Es wurde ein spürbarer Unterschied und eine Verbesserung zur Variante a festgestellt. Allerdings liegt das Fahrzeug im Frontbereich noch immer nicht zu 100 % ruhig.
+## Test course and result
+The calmest driving behavior at the front end could be achieved with variant b (hard servo saver + 141g additional weight). A noticeable difference and an improvement compared to variant a was observed. However, the vehicle is still not 100% calm in the front area.
 
-## Fehlerbild und aufgetretene Probleme
-Während der Testfahrt traten keine Unfälle oder mechanischen Defekte auf. Das verbleibende Problem beschränkt sich auf die noch nicht vollständig eliminierte Restunruhe am Bug.
+## Error pattern and problems encountered
+During the test drive, no accidents or mechanical defects occurred. The remaining problem is limited to the residual restlessness at the front end, which has not yet been completely eliminated.
 
-## Geplante Maßnahmen
-Die Erkenntnisse aus Variante b bilden die Basis für die nächsten Schritte:
+## Planned measures
+The findings from variant b form the basis for the next steps:
 
-* **Hochgeschwindigkeitsversuch:** Ein High-Speed-Testlauf kann unternommen werden, vorausgesetzt, die Gaskurve wird sehr vorsichtig und sensibel dosiert.
-* **Vorbereitung Spool (Plan B):** Sollte der geplante Hochgeschwindigkeitsversuch an der noch nicht komplett behobenen Unruhe am Bug scheitern, muss als nächste Maßnahme ein Spool an der Vorderachse verbaut werden.
+* **High-speed attempt:** A high-speed test run can be undertaken, provided the throttle curve is dosed very carefully and sensitively.
+* **Preparation spool (Plan B):** If the planned high-speed attempt fails due to the front end restlessness, which has not yet been completely eliminated, the next measure must be to install a spool on the front axle.
 
-**Fazit für den nächsten Rollout:**
-Die Kombination aus hartem Servosaver und Zusatzgewicht zeigt die richtige Wirkung, bringt aber noch nicht die perfekte Laufruhe. Ein vorsichtiger High-Speed-Test ist mit dem aktuellen Setup vertretbar. Die Option auf den Einbau eines Spools an der Vorderachse bleibt als technisches Backup für das nächste Setup bestehen, falls die Stabilität bei steigender Geschwindigkeit abermals nicht ausreicht.
+**Conclusion for the next rollout:**
+The combination of a hard servo saver and additional weight shows the right effect, but does not yet bring perfect smoothness. A cautious high-speed test is justifiable with the current setup. The option of installing a spool on the front axle remains as a technical backup for the next setup, in case the stability is again insufficient with increasing speed.
 
-## Durchgeführte Anpassungen
-Keine besonderen Feststellungen.
-
+## Implemented adjustments
+No special findings.

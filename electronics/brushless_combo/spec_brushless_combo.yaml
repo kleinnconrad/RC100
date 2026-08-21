@@ -1,51 +1,51 @@
 spec:
   meta:
-    beschreibung: Spezifikation des Brushless-Antriebsstrangs für 100 km/h an 3S.
-    architektur_status: 'ADR-002: Hobbywing QuicRun WP10BL120 G2 Combo (3660SL 3700KV)
-      akzeptiert'
+    description: Specification of the brushless powertrain for 100 km/h on 3S.
+    architecture_status: 'ADR-002: Hobbywing QuicRun WP10BL120 G2 Combo (3660SL 3700KV)
+      accepted'
   properties:
-    elektronischer_fahrtenregler_esc:
-      typ: Brushless ESC (Sensorless)
-      ampere_dauerlast: Min. 120A
-      lipo_support: 2S - 3S (optional bis 4S)
-      bec_spannung: '6.0V oder 7.4V (einstellbar für Servo - ACHTUNG: Auf 6.0V für
-        Carson Empfänger belassen!)'
-      steckersystem_akku: XT60 (Ab Werk bei der G2 Combo verlötet)
-      steckersystem_motor: 4.0mm Goldkontakt
-      referenz_modell: Hobbywing QuicRun WP10BL120 G2
-      hinweis_packaging: Aufgrund des längeren Motors muss der ESC im T410R Chassis
-        möglichst weit nach hinten oder leicht versetzt montiert werden.
+    electronic_speed_controller_esc:
+      type: Brushless ESC (Sensorless)
+      ampere_continuous: Min. 120A
+      lipo_support: 2S - 3S (optional up to 4S)
+      bec_voltage: '6.0V or 7.4V (adjustable for servo - CAUTION: Leave at 6.0V for
+        Carson receiver!)'
+      connector_system_battery: XT60 (Soldered from the factory for the G2 Combo)
+      connector_system_motor: 4.0mm gold contact
+      reference_model: Hobbywing QuicRun WP10BL120 G2
+      packaging_note: Due to the longer motor, the ESC in the T410R chassis must
+        be mounted as far back as possible or slightly offset.
       shopping_item:
-        in_liste_aufnehmen: true
-        artikel_name: Hobbywing QuicRun Brushless Combo WP10BL120 G2 (inkl. 3660SL
+        add_to_list: true
+        item_name: Hobbywing QuicRun Brushless Combo WP10BL120 G2 (incl. 3660SL
           3700KV Motor)
-        kategorie: Antrieb & Elektronik
-        referenz_link: https://www.rcfox.de/HW38030211-HobbyWing-Quicrun-Brushless-Combo-WP10BL120G2-mit-3660SL-3700KV-G2
-        geschaetzter_preis_eur: 89.0
+        category: Drivetrain & Electronics
+        reference_link: https://www.rcfox.de/HW38030211-HobbyWing-Quicrun-Brushless-Combo-WP10BL120G2-mit-3660SL-3700KV-G2
+        estimated_price_eur: 89.0
     brushless_motor:
-      baugroesse: 3660 (36 mm Durchmesser, 60 mm Länge)
-      kv_wert: 3700KV
-      wellendurchmesser: 5.0 mm (Erfordert zwingend 48dp Ritzel mit 5mm Bohrung!)
-      pol_anzahl: 4-Pol (für hohes Drehmoment)
-      referenz_modell: Hobbywing 3660SL G2 (3700KV)
-      thermische_toleranz: Max. 25.0 % berechnete Radlast
+      size: 3660 (36 mm diameter, 60 mm length)
+      kv_rating: 3700KV
+      shaft_diameter: 5.0 mm (Absolutely requires 48dp pinion with 5mm bore!)
+      pole_count: 4-Pole (for high torque)
+      reference_model: Hobbywing 3660SL G2 (3700KV)
+      thermal_tolerance: Max. 25.0 % calculated wheel load
       shopping_item:
-        in_liste_aufnehmen: false
-    motor_ritzel:
-      typ: Large Bore Pinion Gear
-      zahnflankenprofil_pitch: 48dp
-      zaehnezahl: 43Z
-      bohrung: 5.0 mm (Zwingend für die Welle des Hobbywing 3660 Motors!)
-      material: Gehärteter Stahl
+        add_to_list: false
+    motor_pinion:
+      type: Large Bore Pinion Gear
+      pitch_profile: 48dp
+      tooth_count: 43T
+      bore: 5.0 mm (Mandatory for the shaft of the Hobbywing 3660 motor!)
+      material: Hardened Steel
       shopping_item:
-        in_liste_aufnehmen: true
-        artikel_name: Robinson Racing RRP-2043 (48dp, 43T, 5mm Bore)
-        kategorie: Antrieb & Mechanik
-        referenz_link: https://www.ebay.com/itm/234242275376
-        geschaetzter_preis_eur: 15.0
-    kuehlung:
-      motor_kuehler: Passiver Aluminium-Kühlkörper für 36mm Motoren
-      motor_luefter: 'Optional: 30mm oder 40mm High-Speed Lüfter (Betrieb über freien
-        Steckplatz am Empfänger)'
+        add_to_list: true
+        item_name: Robinson Racing RRP-2043 (48dp, 43T, 5mm Bore)
+        category: Drivetrain & Mechanics
+        reference_link: https://www.ebay.com/itm/234242275376
+        estimated_price_eur: 15.0
+    cooling:
+      motor_heatsink: Passive aluminum heat sink for 36mm motors
+      motor_fan: 'Optional: 30mm or 40mm High-Speed Fan (Operation via free
+        slot on the receiver)'
       shopping_item:
-        in_liste_aufnehmen: false
+        add_to_list: false

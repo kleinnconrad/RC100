@@ -1,58 +1,45 @@
 adr:
   id: ADR-009
-  title: Auswahl der aerodynamischen Karosserie für 100 km/h Speedruns
-  status: entschieden
+  title: Selection of the aerodynamic body for 100 km/h speedruns
+  status: decided
   date: '2026-03-12'
-  context: "Bei einer Zielgeschwindigkeit von 100 km/h (ca. 27,7 m/s) ist die Karosserie\
-    \ kein rein optisches \nBauteil mehr, sondern die primäre aerodynamische Schutzschicht.\
-    \ Eine klassische, eckige Karosserie \nfängt Luft unter der Frontschürze ein,\
-    \ was unweigerlich zu einem 'Blow-over' (Abheben durch \nStaudruck) führt. Gleichzeitig\
-    \ darf der Luftwiderstand (cW-Wert) den Motor nicht unnötig einbremsen. \nDas\
-    \ Carten T410R Chassis erfordert eine Breite von 190 mm. Die Materialstärke ist\
-    \ kritisch: \nDünnes Lexan (< 0.5 mm) verformt sich bei 100 km/h massiv.\n"
+  context: "At a target speed of 100 km/h (approx. 27.7 m/s), the body is \nno longer a purely visual component, but the primary aerodynamic protective layer. \nA classic, boxy body \ntraps air under the front apron, \nwhich inevitably leads to a 'blow-over' (lifting off due to \ndynamic pressure). At the same time, \nthe air resistance (drag coefficient) must not unnecessarily slow down the motor. \nThe Carten T410R chassis requires a width of 190 mm. The material thickness is \ncritical: \nThin lexan (< 0.5 mm) deforms massively at 100 km/h.\n"
   considered_alternatives:
   - option_id: 1
-    name: Standard Tourenwagen / Bash-Karosserie (z.B. Nissan Skyline, BMW M3)
-    type: Scale-Optik / High Drag
-    evaluation: Optisch ansprechend, aber aerodynamisch ein Fallschirm. Hohes Risiko
-      für Blow-overs. Für 100 km/h architektonisch ungeeignet.
+    name: Standard Touring Car / Bash Body (e.g. Nissan Skyline, BMW M3)
+    type: Scale Looks / High Drag
+    evaluation: Visually appealing, but aerodynamically a parachute. High risk
+      for blow-overs. Architecturally unsuitable for 100 km/h.
   - option_id: 2
     name: ZooRacing Wolverine (190 mm)
-    type: CFD-optimierte Wettbewerbs-Karosserie
-    evaluation: Bietet stark effiziente Strömungsführung und viel Anpressdruck auf
-      der Vorderachse. Eher auf enge Kurven (Steering) ausgelegt.
+    type: CFD-optimized Competition Body
+    evaluation: Offers highly efficient airflow management and a lot of downforce on
+      the front axle. Designed more for tight corners (steering).
   - option_id: 3
-    name: Le Mans Prototype / Gruppe C (z.B. Mon-Tech M-10)
-    type: Keilform / Low Drag
-    evaluation: 'Die absolute Geheimwaffe für reine Speedruns. Bietet die geringstmögliche
-      Stirnfläche. Nachteil: Sehr flache Bauform vorne verursacht oft Konflikte mit
-      den vorderen Stoßdämpferbrücken des Carten T410R.'
+    name: Le Mans Prototype / Group C (e.g. Mon-Tech M-10)
+    type: Wedge Shape / Low Drag
+    evaluation: 'The absolute secret weapon for pure speedruns. Offers the lowest possible
+      frontal area. Disadvantage: Very flat front design often causes conflicts with
+      the front shock towers of the Carten T410R.'
   - option_id: 4
     name: ZooRacing Hellcat (190 mm, 0.7mm Regular)
-    type: CFD-optimierte High-Speed Tourenwagen-Karosserie
-    evaluation: Bietet eine noch flachere Dachlinie und Frontscheibe als die Wolverine.
-      Exzellenter Luftstrom zum Heckflügel, stark geringer Luftwiderstand für hohen
-      Top-Speed bei gleichzeitig überragender Geradeauslauf-Stabilität.
-  decision: ZooRacing Hellcat (190 mm, 0.7mm Stärke)
+    type: CFD-optimized High-Speed Touring Car Body
+    evaluation: Offers an even flatter roofline and windshield than the Wolverine.
+      Excellent airflow to the rear wing, very low air resistance for high
+      top speed combined with outstanding straight-line stability.
+  decision: ZooRacing Hellcat (190 mm, 0.7mm thickness)
   body_meta:
     brand: ZooRacing
     model: Hellcat
     required_width: 190 mm
     required_thickness: 0.7 mm (Regular Weight)
-  rationale: "Die Entscheidung fällt auf die ZooRacing Hellcat in der 0.7mm Standard-Stärke.\
-    \ Sie stellt den \noptimalen Kompromiss aus minimalem Luftwiderstand (für das\
-    \ Erreichen der 100 km/h) und sicherem \nAnpressdruck (Verhinderung von Blow-overs)\
-    \ dar. Im Gegensatz zu stark flachen LMP-Karosserien \npasst sie problemlos über\
-    \ die Stoßdämpferbrücken des Carten T410R. Die Materialstärke von 0.7mm \ngarantiert,\
-    \ dass die Karosserie dem massiven Staudruck bei Top-Speed standhält und nicht\
-    \ zu \nvibrieren oder auf die Reifen zu schleifen beginnt.\n"
+  rationale: "The decision is made in favor of the ZooRacing Hellcat in the 0.7mm standard thickness. \nIt represents the \noptimal compromise between minimum air resistance (for \nreaching 100 km/h) and safe \ndownforce (prevention of blow-overs). Unlike very flat LMP bodies, \nit fits easily over \nthe shock towers of the Carten T410R. The material thickness of 0.7mm \nguarantees \nthat the body withstands the massive dynamic pressure at top speed and does not \nstart to vibrate or rub against the tires.\n"
   consequences:
-  - 'Lackierung: Die Karosserie wird unlackiert geliefert. Es muss zwingend spezielle
-    Lexan-Farbe (Polycarbonat-Farbe, z.B. Tamiya PS-Serie) verwendet werden, da normale
-    Farbe abblättern würde.'
-  - 'Montage: Der mitgelieferte Heckflügel muss stark steif verschraubt werden. Die
-    Karosserielöcher müssen passgenau mit einer Lexanschere und einem Karosseriebohrer
-    bearbeitet werden.'
-  - 'Chassis-Vorbereitung: Der Schaumstoff-Bumper an der Front des Carten T410R muss
-    exakt bündig mit der Innenseite der Frontschürze abschließen, um ein Eindrücken
-    bei High-Speed zu verhindern.'
+  - 'Painting: The body is supplied unpainted. Special
+    lexan paint (polycarbonate paint, e.g. Tamiya PS series) must be used, as normal
+    paint would flake off.'
+  - 'Assembly: The included rear wing must be screwed on very rigidly. The
+    body holes must be precisely machined with lexan scissors and a body reamer.'
+  - 'Chassis preparation: The foam bumper on the front of the Carten T410R must
+    sit exactly flush with the inside of the front apron to prevent it from being pushed in
+    at high speed.'

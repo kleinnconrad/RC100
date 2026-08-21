@@ -1,37 +1,36 @@
-# Testprotokoll: 10. Testfahrt
+# Test Log: 10. Test Drive
 
-## Inhaltsverzeichnis
-* [Metadaten](#metadaten)
-* [Ziel der Testfahrt](#ziel-der-testfahrt)
-* [Testverlauf und Ergebnis](#testverlauf-und-ergebnis)
-* [Fehlerbild und aufgetretene Probleme](#fehlerbild-und-aufgetretene-probleme)
-* [Geplante Maßnahmen](#geplante-massnahmen)
-* [Durchgeführte Anpassungen](#durchgefuehrte-anpassungen)
+## Table of Contents
+* [Metadata](#metadata)
+* [Goal of the test drive](#goal-of-the-test-drive)
+* [Test course and result](#test-course-and-result)
+* [Error pattern and problems encountered](#error-pattern-and-problems-encountered)
+* [Planned measures](#planned-measures)
+* [Implemented adjustments](#implemented-adjustments)
 
-## Metadaten
-* **Datum:** 16.04.2026
-* **Ort:** Tiefgarage
-* **Fokus:** Bugstabilität und Symmetrie-Check (Nachjustierung Fahrwerk)
-* **Status:** Erfolgreiche Optimierung /  Restunruhe vorhanden
+## Metadata
+* **Date:** 2026-04-16
+* **Location:** Underground garage
+* **Focus:** Front end stability and symmetry check (readjustment of chassis)
+* **Status:** Successful optimization / Residual restlessness present
 
-## Ziel der Testfahrt
-Überprüfung der vorgenommenen Fahrwerksoptimierungen an der Vorderachse. Im Fokus stand die Frage, ob die Angleichung des Sturzwinkels und der Querlenkerwinkel sowie die Einstellung einer Vorspur (Toe-in) von ca. 1,5° das schwammige Bugverhalten eliminieren. Der Test wurde bewusst ohne das Zusatzgewicht am Frontbumper durchgeführt, um die rein mechanische Stabilität des Fahrwerks zu isolieren.
+## Goal of the test drive
+Checking the chassis optimizations made on the front axle. The focus was on the question of whether the adjustment of the camber angle and the wishbone angles as well as the setting of a toe-in of approx. 1.5° eliminate the spongy front end behavior. The test was deliberately carried out without the additional weight on the front bumper in order to isolate the purely mechanical stability of the chassis.
 
-## Testverlauf und Ergebnis
-Das Bugverhalten hat sich durch die Symmetrie-Maßnahmen spürbar verbessert. Das Fahrzeug reagiert präziser und die aggressive Nervosität der vorherigen Fahrten ist reduziert. Dennoch zeigt der Bug bei Lastwechseln und steigender Geschwindigkeit weiterhin eine leichte Unruhe.
+## Test course and result
+The front end behavior has noticeably improved as a result of the symmetry measures. The vehicle reacts more precisely and the aggressive nervousness of previous drives is reduced. Nevertheless, the front end still shows a slight restlessness during load changes and increasing speed.
 
-## Fehlerbild und aufgetretene Probleme
-* **Restunruhe Bug:** Trotz optimierter Geometrie liegt die Vorderachse noch nicht absolut satt. Als Ursache wird die Gewichtsverteilung identifiziert; der schwere Akku und Motor verschieben den Schwerpunkt (COG) so stark, dass die Vorderachse ohne Zusatzgewicht zu wenig Anpressdruck generiert.
-* **Tänzelndes Heck:** Bei dieser Testfahrt wurde ein leichtes Tänzeln der Hinterachse beobachtet. 
-* **Antriebsstrang:** Das ungesperrte Differential wirkt sich sowohl vorne als auch hinten negativ auf die Spurtreue unter Last aus, da die Kraftverteilung zwischen den Rädern bei minimalen Grip-Unterschieden schwankt.
+## Error pattern and problems encountered
+* **Residual restlessness front end:** Despite optimized geometry, the front axle is not yet absolutely planted. The weight distribution is identified as the cause; the heavy battery and motor shift the center of gravity (COG) so much that the front axle generates too little downforce without additional weight.
+* **Dancing rear:** During this test drive, a slight dancing of the rear axle was observed. 
+* **Drivetrain:** The unlocked differential has a negative effect on directional stability under load both at the front and at the rear, since the power distribution between the wheels fluctuates with minimal grip differences.
 
-## Geplante Maßnahmen
-* **Gewichtsmanagement:** Wiederanbringung des Zusatzgewichts am Frontbumper, um den Schwerpunkt auszugleichen und die Vorderachse zu beruhigen.
-* **Antriebsoptimierung:** Prüfung des Einbaus eines Spools (Starrachse) an der Vorderachse oder einer stärkeren Sperrung der Differentiale, um das Tänzeln des Hecks und die Unruhe im Bug zu minimieren.
-* **Feinjustierung:** Überprüfung der Symmetrie unter Lastbedingungen mit montiertem Zusatzgewicht.
+## Planned measures
+* **Weight management:** Reattachment of the additional weight to the front bumper to balance the center of gravity and calm the front axle.
+* **Drivetrain optimization:** Examination of the installation of a spool (solid axle) on the front axle or a stronger locking of the differentials to minimize the dancing of the rear and the restlessness in the front end.
+* **Fine tuning:** Checking the symmetry under load conditions with mounted additional weight.
 
-## Durchgeführte Anpassungen
-* **Vorspur (Toe-in):** Vorne beidseitig auf ca. 1,5° eingestellt, um den Geradeauslauf zu stabilisieren.
-* **Sturzwinkel:** Vorne links und rechts auf ca. 1,5° (negativ) angeglichen.
-* **Querlenkerwinkel:** Die Winkel der vorderen Querlenker wurden symmetrisch steiler eingestellt, um ein gleichmäßigeres Einfederverhalten zu gewährleisten.
-
+## Implemented adjustments
+* **Toe-in:** Set to approx. 1.5° on both sides at the front to stabilize straight-line stability.
+* **Camber angle:** Adjusted front left and right to approx. 1.5° (negative).
+* **Wishbone angle:** The angles of the front wishbones were set symmetrically steeper to ensure a more even compression behavior.

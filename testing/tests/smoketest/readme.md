@@ -1,22 +1,22 @@
 # Smoke Test
 
 
-## Inhaltsverzeichnis
-* [Aktuelles Setup](#aktuelles-setup)
-* [Testbericht & Problemstellung](#testbericht--problemstellung)
-* [Lösung & Next Steps](#losung--next-steps)
+## Table of Contents
+* [Current Setup](#current-setup)
+* [Test Report & Problem Description](#test-report--problem-description)
+* [Solution & Next Steps](#solution--next-steps)
 
 
-## Aktuelles Setup
+## Current Setup
 * **Motor:** 3660 Brushless
-* **Spezifikation:** 3700 KV
-* **Ritzel:** 43 Zähne (43Z)
+* **Specification:** 3700 KV
+* **Pinion:** 43 Teeth (43T)
 * **ESC Punch Level:** 5 (Default)
 
-## Testbericht & Problemstellung
-Beim initialen Smoke Test hat sich gezeigt, dass der **Punch (Startverhalten/Beschleunigungsaggressivität) zu hart** eingestellt ist. 
-Durch die Kombination aus der 3660er / 3700 KV Motorisierung und der 43Z Übersetzung ist das Fahrzeug mit dem Standard-Punch-Level von 5 schwer anzufahren.
+## Test Report & Problem Description
+During the initial smoke test, it became apparent that the **punch (start behavior/acceleration aggressiveness) was set too hard**. 
+Due to the combination of the 3660 / 3700 KV motorization and the 43T gear ratio, the vehicle is difficult to start with the standard punch level of 5.
 
-## Lösung & Next Steps
-* **Maßnahme:** Bestellung einer Hobbywing Programmierkarte.
-* **Ziel:** Den Punch-Wert über den Regler (ESC) signifikant reduzieren, um ein sanfteres Anfahrverhalten und bessere Kontrolle zu gewährleisten.
+## Solution & Next Steps
+* **Measure:** Order a Hobbywing programming card.
+* **Goal:** Significantly reduce the punch value via the ESC to ensure a smoother starting behavior and better control.

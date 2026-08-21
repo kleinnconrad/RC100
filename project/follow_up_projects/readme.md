@@ -1,28 +1,28 @@
-# Ideen für Folgeprojekte
+# Ideas for Follow-up Projects
 
-**Sensorik/Telemetrie** [![GitHub Repo](https://img.shields.io/badge/GitHub-Repository-blue?logo=github)](https://github.com/kleinnconrad/carten_telemetrie)
-* Mikrocontroller/Sensor Lösung zur Messung von ESC- und Motortemparatur und der Drehzahl an der Kardanwelle. 
+**Sensors/Telemetry** [![GitHub Repo](https://img.shields.io/badge/GitHub-Repository-blue?logo=github)](https://github.com/kleinnconrad/carten_telemetrie)
+* Microcontroller/sensor solution for measuring ESC and motor temperature and the speed at the driveshaft. 
 
 **IoT Cloud Data Platform** [![GitHub Repo](https://img.shields.io/badge/GitHub-Repository-blue?logo=github)](https://github.com/kleinnconrad/carten_telemetrie)
-* Aufbau einer Real-Time Streaming Pipeline (ESP32 via LTE) für GPS- und ESC-Telemetrie.
-* Implementierung einer Cloud-Infrastruktur zur skalierbaren Speicherung und Verarbeitung der Fahrzeugdaten.
-* Live-Dashboarding zur Echtzeit-Performance-Analyse während der Speedruns.
+* Setup of a real-time streaming pipeline (ESP32 via LTE) for GPS and ESC telemetry.
+* Implementation of a cloud infrastructure for scalable storage and processing of vehicle data.
+* Live dashboarding for real-time performance analysis during speedruns.
 
-**Hardware-Skalierung**
-* Dual Motor Konfiguration für das Carten T410R Chassis (CAD Projekt).
+**Hardware Scaling**
+* Dual motor configuration for the Carten T410R chassis (CAD project).
 
-**Data Analytics (GPS und ESC Telemetrie)**
-* Entwicklung eines Regressionsmodells zur Schätzung der realen Geschwindigkeit aus ESC-Telemetriedaten.
-* Strukturierte Auswertung relevanter Experimente und Speedrun-Testläufe.
-* Ableitung datengetriebener Optimierungsansätze für maximale Akkueffizienz und absoluten Topspeed.
+**Data Analytics (GPS and ESC Telemetry)**
+* Development of a regression model to estimate the real speed from ESC telemetry data.
+* Structured evaluation of relevant experiments and speedrun test runs.
+* Derivation of data-driven optimization approaches for maximum battery efficiency and absolute top speed.
 
-**Assistenzsysteme**
-* Integration von Hard- und Software für assistiertes Fahren mit dem Carten T410R.
+**Assistance Systems**
+* Integration of hardware and software for assisted driving with the Carten T410R.
 
 **Predictive Maintenance**
-* Entwicklung eines Modells zur Vorhersage thermischer Limits (Motor/ESC) basierend auf Lastprofilen, Drehzahl und Umgebungstemperatur.
-* Langzeitanalyse des Voltage Sags unter Volllast zur datengetriebenen Bewertung der Akkudegradation (State of Health).
+* Development of a model for predicting thermal limits (motor/ESC) based on load profiles, RPM and ambient temperature.
+* Long-term analysis of voltage sag under full load for data-driven evaluation of battery degradation (state of health).
 
-**Computer Vision & FPV-Systeme**
-* Integration eines FPV-Kamerasystems mit On-Screen-Display (OSD) zur Einblendung relevanter Live-Telemetrie (Geschwindigkeit, Temperaturen, Akkustand).
-* Implementierung kamerabasierter Umgebungserfassung (z.B. via Raspberry Pi) zur Erweiterung der Assistenzsysteme um Spurerkennung und Hindernisvermeidung.
+**Computer Vision & FPV Systems**
+* Integration of an FPV camera system with On-Screen-Display (OSD) for overlaying relevant live telemetry (speed, temperatures, battery level).
+* Implementation of camera-based environment detection (e.g. via Raspberry Pi) to expand the assistance systems with lane detection and obstacle avoidance.

@@ -2,37 +2,36 @@ spec:
   meta:
     brand: ZooRacing
     modell: Hellcat
-    fahrzeugklasse: 1:10 On-Road Tourenwagen
+    fahrzeugklasse: 1:10 On-Road Touring Car
     breite_mm: 190
     radstand_mm: 257
-    material: Polycarbonat (Lexan)
+    material: Polycarbonate (Lexan)
     materialstaerke_mm: 0.7
     shopping_item:
       in_liste_aufnehmen: true
-      artikel_name: ZooRacing Hellcat 190mm Tourenwagen Karosserie (0.7mm Regular)
-      kategorie: Karosserie & Aerodynamik
-      referenz_link: Suche bei RC-KleinKram oder Tonisport nach 'ZooRacing Hellcat
+      artikel_name: ZooRacing Hellcat 190mm Touring Car Body (0.7mm Regular)
+      kategorie: Body & Aerodynamics
+      referenz_link: Search at RC-KleinKram or Tonisport for 'ZooRacing Hellcat
         0.7mm'
       geschaetzter_preis_eur: 32.9
   properties:
     aerodynamic_features:
-      front: Tief gezogene Nase und sanfter Haubenwinkel reduzieren den Staudruck
-        und verhindern Lift.
-      roofline: Flach abfallendes Dach leitet die Luft laminar und störungsfrei zum
-        Heckflügel.
-      rear_wing: Inkludierter High-Downforce Flügel sorgt für zwingend benötigte Heckstabilität
-        bei High-Speed.
+      front: Low-drawn nose and gentle hood angle reduce dynamic pressure
+        and prevent lift.
+      roofline: Flat sloping roof guides the air laminar and undisturbed to the
+        rear wing.
+      rear_wing: Included high-downforce wing provides absolutely necessary rear stability
+        at high speed.
     preparation_and_painting:
-      reinigung: Die Innenseite der Karosserie vor dem Lackieren zwingend mit Spülmittel
-        auswaschen, um Trennmittelreste aus der Produktion zu entfernen.
-      lack_typ: Ausschließlich Polycarbonat-Spray (z.B. Tamiya PS-Farben) verwenden.
-        Von innen in mehreren dünnen Schichten lackieren.
-      schutzfolie: Die äußere Overspray-Schutzfolie erst nach dem kompletten Lackieren
-        und Bohren der Löcher abziehen.
+      reinigung: The inside of the body must be washed out with dish soap before painting
+        to remove mold release agent residues from production.
+      lack_typ: Use exclusively polycarbonate spray (e.g. Tamiya PS colors).
+        Paint from the inside in several thin layers.
+      schutzfolie: Only remove the outer overspray protective film after completely painting
+        and drilling the holes.
     mounting_instructions:
-      karosserieloecher: Löcher nicht stechen, sondern mit einem speziellen Karosseriebohrer
-        (Reamer) bohren, um Risse im Lexan zu vermeiden.
-      bumper_support: Der Front-Schaumstoffbumper des Chassis muss den vorderen Karosserieüberhang
-        mechanisch abstützen.
-      radkaesten: Radkästen mit einer gebogenen Lexanschere ausschneiden und Kanten
-        mit feinem Schleifpapier glätten, um Einreißen bei Vibrationen zu verhindern.
+      karosserieloecher: Do not pierce holes, but drill with a special body reamer
+        to avoid cracks in the Lexan.
+      bumper_support: The front foam bumper of the chassis must mechanically support the front body overhang.
+      radkaesten: Cut out wheel arches with curved Lexan scissors and smooth edges
+        with fine sandpaper to prevent tearing under vibrations.

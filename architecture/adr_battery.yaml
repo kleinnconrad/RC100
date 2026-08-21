@@ -1,49 +1,34 @@
 adr:
   id: ADR-003
-  title: Auswahl des LiPo-Akkus für 100 km/h Ziel.
-  status: entschieden
+  title: Selection of the LiPo Battery for the 100 km/h Goal.
+  status: decided
   date: '2026-03-06'
-  context: "Um das RC100 Projekt auf über 100 km/h zu beschleunigen, muss die Energiequelle\
-    \ optimal \nauf den 4000kV Motor und den 120A ESC (Hobbywing QuicRun) abgestimmt\
-    \ sein. \nEin 2S LiPo (7.4V) würde nur ca. 29.600 U/min liefern, was für 100 km/h\
-    \ bei normaler \nÜbersetzung nicht ausreicht. Daher ist ein 3S LiPo (11.1V) zwingend\
-    \ erforderlich, um \ndie rechnerischen ~44.400 U/min zu erreichen. Zudem muss\
-    \ der Akku kurzzeitig extreme \nStröme liefern können, ohne in der Spannung einzubrechen\
-    \ (Voltage Sag), und bei einem \neventuellen Crash bei hoher Geschwindigkeit physisch\
-    \ geschützt sein.\n"
+  context: "In order to accelerate the RC100 project to over 100 km/h, the power source must be optimally \nmatched to the 4000kV motor and the 120A ESC (Hobbywing QuicRun). \nA 2S LiPo (7.4V) would only deliver approx. 29,600 rpm, which is not sufficient for 100 km/h \nwith a normal gear ratio. Therefore, a 3S LiPo (11.1V) is absolutely necessary to \nreach the calculated ~44,400 rpm. In addition, the battery must be able to briefly \ndeliver extreme currents without dropping in voltage (voltage sag), and must be physically \nprotected in the event of a crash at high speed.\n"
   considered_alternatives:
   - option_id: 1
     name: Standard 2S LiPo (7.4V) / Low-C 3S LiPo (30C)
     type: Budget / Softcase
-    evaluation: 2S liefert zu wenig Spannung für das Speed-Ziel. Ein 3S Akku mit nur
-      30C Entladerate bricht bei den 120A+ Peak-Strömen der langen Übersetzung ein,
-      wird heiß und bläht sich auf (Brandgefahr). Softcases bieten bei 100 km/h keinen
-      Crash-Schutz.
+    evaluation: 2S delivers too little voltage for the speed goal. A 3S battery with only
+      a 30C discharge rate will collapse under the 120A+ peak currents of the tall gearing,
+      will get hot and swell up (fire hazard). Softcases offer no crash protection at 100 km/h.
   - option_id: 2
-    name: High-End Graphene 3S LiPo (z.B. Gens Ace Redline 130C)
+    name: High-End Graphene 3S LiPo (e.g. Gens Ace Redline 130C)
     type: Premium / Hardcase
-    evaluation: Bietet stark stabile Spannungslagen (kaum Voltage Sag) und gigantische
-      Stromreserven. Ist jedoch sehr teuer (> 90 €) und oft so massiv gebaut, dass
-      er ohne starke Modifikationen am Chassis-Layout nicht in einen 1:10 Tourenwagen
-      passt.
+    evaluation: Offers very stable voltage levels (hardly any voltage sag) and huge
+      current reserves. However, it is very expensive (> 90 €) and often built so massively that
+      it will not fit into a 1:10 touring car without heavy modifications to the chassis layout.
   - option_id: 3
-    name: Absima GreenHorn Line V2 3S (Art. 4140014)
+    name: Absima GreenHorn Line V2 3S (Item 4140014)
     type: Mid-Range / Hardcase
-    evaluation: Bietet 11.1V, 5000mAh und eine konstante Entladerate von 50C (theoretisch
-      250A Dauerlast), was den 120A Regler optimal abdeckt. Das Hardcase schützt die
-      Zellen. Bietet das beste Preis-Leistungs-Verhältnis (~ 45 €) für das Projektbudget.
+    evaluation: Offers 11.1V, 5000mAh and a constant discharge rate of 50C (theoretically
+      250A continuous load), which optimally covers the 120A controller. The hardcase protects the
+      cells. Offers the best price-performance ratio (~ 45 €) for the project budget.
   decision: Absima GreenHorn Line V2 (3S / 5000mAh / 50C / Hardcase)
-  rationale: "Die Entscheidung fällt auf den Absima GreenHorn V2 3S LiPo. Mit 50C\
-    \ Entladerate bietet er \ngenügend Puffer für die massiven Stromspitzen beim Beschleunigen\
-    \ der 64Z/38Z Übersetzung. \nDas Hardcase ist ein Sicherheitsanforderung für\
-    \ Speedruns, da ein Einschlag bei 100 km/h \neinen Softcase-LiPo sofort zerstören\
-    \ und entzünden würde. Der vorkonfektionierte XT60-Stecker \ngarantiert einen\
-    \ geringen Übergangswiderstand für die hohen Ströme.\n"
+  rationale: "The decision is made in favor of the Absima GreenHorn V2 3S LiPo. With a 50C \ndischarge rate, it offers \nenough buffer for the massive current peaks when accelerating \nthe 64T/38T gearing. \nThe hardcase is a safety requirement for speedruns, as an impact at 100 km/h \nwould immediately destroy and ignite a softcase LiPo. The pre-assembled XT60 connector \nguarantees a \nlow contact resistance for the high currents.\n"
   consequences:
-  - 'Chassis-Modifikation: Da 3S Hardcase-Akkus ca. 35mm hoch sind, muss die obere
-    Carbon-Akkustrebe im Carten T410R mit 10mm Spacern und längeren M3-Schrauben erhöht
-    werden.'
-  - 'Stecker-Kompatibilität: Der Hobbywing-Regler muss zwingend mit einem passenden
-    XT60-Stecker verlötet werden (keine Tamiya-Stecker bei diesen Strömen!).'
-  - 'Sicherheit: Laden und Lagern des Akkus (55.5 Wh) darf nur unter Aufsicht in einem
-    Bat-Safe oder einer feuerfesten LiPo-Tasche erfolgen.'
+  - 'Chassis modification: Since 3S hardcase batteries are approx. 35mm high, the upper
+    carbon battery brace in the Carten T410R must be raised with 10mm spacers and longer M3 screws.'
+  - 'Connector compatibility: The Hobbywing controller must absolutely be soldered with a matching
+    XT60 connector (no Tamiya connectors at these currents!).'
+  - 'Safety: Charging and storing the battery (55.5 Wh) may only be done under supervision in a
+    Bat-Safe or a fireproof LiPo bag.'

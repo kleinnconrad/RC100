@@ -1,46 +1,46 @@
-# Metriken
+# Metrics
 
 
-## Inhaltsverzeichnis
-* [Gewicht](#gewicht)
-* [Gewichtsverteilung](#gewichtsverteilung)
-* [Abmessungen ](#abmessungen-)
-* [Leistung](#leistung)
+## Table of Contents
+* [Weight](#weight)
+* [Weight Distribution](#weight-distribution)
+* [Dimensions](#dimensions)
+* [Performance](#performance)
 
-## Gewicht
+## Weight
 
-| Komponente | Gewicht |
+| Component | Weight |
 | :--- | :--- |
-| Fahrzeug mit Elektronik (ohne Akku) | 1.254 g |
-| Akku | 391 g |
-| Karosserie | 75 g |
+| Vehicle with electronics (without battery) | 1.254 g |
+| Battery | 391 g |
+| Body | 75 g |
 | GPS | 37 g |
-| **Gesamt** | **1.757 g** |
+| **Total** | **1.757 g** |
 
-## Gewichtsverteilung
-*ohne gps und karosserie und mit spool vorne statt differential
-**Optimale Gewichtsverteilung muss getestet werden**
+## Weight Distribution
+*without gps and body and with spool in front instead of differential
+**Optimal weight distribution must be tested**
 
-| | gramm | ratio | | gramm | ratio |
+| | grams | ratio | | grams | ratio |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **links** | 790 | 49% | **vorne** | 727 | 45% |
-| **rechts** | 834 | 51% | **hinten** | 893 | 55% |
-| **summe** | 1624 | 100% | **summe** | 1620 | 100% |
+| **left** | 790 | 49% | **front** | 727 | 45% |
+| **right** | 834 | 51% | **rear** | 893 | 55% |
+| **total** | 1624 | 100% | **total** | 1620 | 100% |
 
-## Abmessungen 
+## Dimensions 
 
-| Dimension | Wert |
+| Dimension | Value |
 | :--- | :--- |
-| Länge (ohne Karosserie) | 362 mm |
-| Breite (ohne Karosserie) | 185 mm |
-| Höhe (bis oberster Punkt hintere Dämpferbrücke) | 75 mm |
+| Length (without body) | 362 mm |
+| Width (without body) | 185 mm |
+| Height (to highest point rear shock tower) | 75 mm |
 
-## Leistung
-| Spezifikation | Wert |
+## Performance
+| Specification | Value |
 | :--- | :--- |
-| Max. Achsdrehzahl | 11.200 rpm |
-| Max. Motordrehzahl | 46.256 rpm |
-| Max. Kardandrehzahl | 27.625 rpm |
-| Interne Übersetzung | 2,47 |
-| Gesamtübersetzung | 4,13 |
-| Akku | 3S (11,1V / 12,6V komplett vollgeladen) |
+| Max. axle speed | 11,200 rpm |
+| Max. motor speed | 46,256 rpm |
+| Max. driveshaft speed | 27,625 rpm |
+| Internal gear ratio | 2.47 |
+| Total gear ratio | 4.13 |
+| Battery | 3S (11.1V / 12.6V fully charged) |

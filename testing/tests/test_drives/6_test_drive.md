@@ -1,37 +1,38 @@
-# Testprotokoll: 6. Testfahrt
+# Test Log: 6. Test Drive
 
-## Inhaltsverzeichnis
-* [Metadaten](#metadaten)
-* [Ziel der Testfahrt](#ziel-der-testfahrt)
-* [Testverlauf und Ergebnis](#testverlauf-und-ergebnis)
-* [Fehlerbild und aufgetretene Probleme](#fehlerbild-und-aufgetretene-probleme)
-* [Geplante Maßnahmen](#geplante-massnahmen)
-* [Durchgeführte Anpassungen](#durchgefuehrte-anpassungen)
+## Table of Contents
+* [Metadata](#metadata)
+* [Goal of the test drive](#goal-of-the-test-drive)
+* [Test course and result](#test-course-and-result)
+* [Error pattern and problems encountered](#error-pattern-and-problems-encountered)
+* [Planned measures](#planned-measures)
+* [Implemented adjustments](#implemented-adjustments)
 
-## Metadaten
-* **Datum:** 02.04.2026
-* **Ort:** Tiefgarage
-* **Fokus:** Schwerpunktverlagerung & Stabilisierung des Bugs
-* **Status:** Teilweise ## Ziel der Testfahrt
-Behebung des schwammigen Fahrverhaltens am Bug (Vorderachse) durch eine gezielte Veränderung des Schwerpunktes nach vorne. Zu diesem Zweck wurden 150 Gramm Zusatzgewicht direkt auf den Front Bumper geklebt, um mehr Druck auf die Vorderräder zu erzeugen und die Lenkpräzision zu verbessern.
+## Metadata
+* **Date:** 2026-04-02
+* **Location:** Underground garage
+* **Focus:** Shift of center of gravity & stabilization of the front end
+* **Status:** Partial 
 
-## Testverlauf und Ergebnis
-Die Modifikation zeigte die erhoffte Grundwirkung. Das Fahrverhalten des Autos ist durch das Zusatzgewicht spürbar stabiler geworden. Die Gewichtsverlagerung nach vorne ist der richtige Ansatz, das Handling ist jedoch insgesamt noch nicht zufriedenstellend.
+## Goal of the test drive
+Elimination of the spongy driving behavior at the front end (front axle) by a targeted change of the center of gravity to the front. For this purpose, 150 grams of additional weight were glued directly onto the front bumper to generate more pressure on the front wheels and improve steering precision.
 
-## Fehlerbild und aufgetretene Probleme
-Obwohl eine Besserung eingetreten ist, fehlt dem Vorderwagen weiterhin die nötige Präzision und Führung. Die Schwammigkeit ist reduziert, aber nicht vollständig behoben. Das aktuelle Setup reicht noch nicht aus, um das Fahrzeug präzise und ruhig auf Kurs zu halten.
+## Test course and result
+The modification showed the hoped-for basic effect. The driving behavior of the car has become noticeably more stable due to the additional weight. The weight shift to the front is the right approach, but the overall handling is still not satisfactory.
 
-## Geplante Maßnahmen
-Um das Fahrverhalten am Bug final in den Griff zu bekommen und das Auto exakt steuerbar zu machen, werden folgende Schritte im nächsten Setup verfolgt:
+## Error pattern and problems encountered
+Although an improvement has occurred, the front end still lacks the necessary precision and guidance. The sponginess is reduced, but not completely eliminated. The current setup is not yet sufficient to keep the vehicle precisely and calmly on course.
 
-* **Erhöhung des Frontgewichts:** Es wird ein noch höheres Gewicht am Front Bumper appliziert und getestet, um den Schwerpunkt weiter nach vorne zu zwingen und den Anpressdruck zu maximieren.
-* **Evaluation eines Spools (Starrachse):** Die Verbauung eines Spools (komplett gesperrtes Differential) an der Vorderachse wird geprüft. Dies soll verhindern, dass die Vorderräder unterschiedlich stark ziehen, und so den Geradeauslauf und die Stabilität unter Last drastisch verbessern.
+## Planned measures
+In order to finally get the driving behavior at the front end under control and make the car exactly controllable, the following steps will be followed in the next setup:
 
-**Fazit für den nächsten Rollout:**
-Die Verlagerung des Schwerpunktes nach vorne war ein Teilerfolg und hat dem schwammigen Bug entgegengewirkt. Für die nächsten Tests muss nun iterativ geprüft werden, ob eine weitere Erhöhung des Gewichts ausreicht oder ob ein mechanischer Eingriff in Form eines Spools die finale Lösung für ein direktes und kontrollierbares Handling bringt.
+* **Increase front weight:** An even higher weight will be applied to the front bumper and tested to force the center of gravity further forward and maximize downforce.
+* **Evaluation of a spool (solid axle):** The installation of a spool (completely locked differential) on the front axle will be checked. This should prevent the front wheels from pulling unevenly, thus drastically improving straight-line stability and stability under load.
+
+**Conclusion for the next rollout:**
+The shift of the center of gravity to the front was a partial success and counteracted the spongy front end. For the next tests, it must now be iteratively checked whether a further increase in weight is sufficient or whether a mechanical intervention in the form of a spool brings the final solution for direct and controllable handling.
 
 <img src="https://raw.githubusercontent.com/kleinnconrad/RC100/main/fotos/PXL_20260402_104401694.jpg" width="50%" alt="Setup Foto">
 
-## Durchgeführte Anpassungen
-Keine besonderen Feststellungen.
-
+## Implemented adjustments
+No special findings.

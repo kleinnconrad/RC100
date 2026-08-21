@@ -1,27 +1,27 @@
-# 3. Speedrun Testbericht
+# 3. Speedrun Test Report
 
-## Inhaltsverzeichnis
-* [Rahmendaten](#rahmendaten)
-* [Testergebnisse](#testergebnisse)
-* [Vorfall und Schadensanalyse](#vorfall-und-schadensanalyse)
-* [Maßnahmen](#massnahmen)
+## Table of Contents
+* [Basic Data](#basic-data)
+* [Test Results](#test-results)
+* [Incident and Damage Analysis](#incident-and-damage-analysis)
+* [Measures](#measures)
 
-## Rahmendaten
-* **Datum:** 26. Juli 2026
-* **Ort:** Bauhaus Parkplatz
-* **Ergebnis:** nicht erfolgreich
+## Basic Data
+* **Date:** July 26, 2026
+* **Location:** Bauhaus Parking Lot
+* **Result:** unsuccessful
 
-## Testergebnisse
-* **Gemessene Geschwindigkeit:** 75 km/h
-* **Fahrverhalten bei Windstille:** Die Laufruhe hat sich im Vergleich zu den vorherigen Tests verbessert. Dies bestätigt die Wirksamkeit der Modifikationen.
-* **Fahrstabilität:** Eine Restunruhe ist weiterhin vorhanden. Die Ausschöpfung der maximalen Fahrzeugleistung ist dadurch ausgeschlossen.
+## Test Results
+* **Measured speed:** 75 km/h
+* **Driving behavior in calm conditions:** Smoothness has improved compared to previous tests. This confirms the effectiveness of the modifications.
+* **Driving stability:** A residual restlessness is still present. The full utilization of the maximum vehicle performance is therefore excluded.
 
-## Vorfall und Schadensanalyse
-* **Windeinfluss:** Einsetzen von Wind führte zur Destabilisierung des Fahrzeugs.
-* **Vorfall:** Die Instabilität führte zu einem Crash.
-* **Schaden:** Das Akkufach wurde beschädigt.
-* **Konsequenz:** Der Test wurde abgebrochen.
+## Incident and Damage Analysis
+* **Wind influence:** The onset of wind led to the destabilization of the vehicle.
+* **Incident:** The instability led to a crash.
+* **Damage:** The battery compartment was damaged.
+* **Consequence:** The test was aborted.
 
-## Maßnahmen
-* Durchführung von Testläufen ausschließlich bei Windstille.
-* Einbau eines Spools.
+## Measures
+* Execution of test runs exclusively in calm conditions.
+* Installation of a spool.

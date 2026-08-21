@@ -6,29 +6,29 @@ spec:
     type: LiPo (Lithium-Polymer)
   properties:
     electrical_specifications:
-      voltage: 11.1V (Nennspannung)
+      voltage: 11.1V (Nominal voltage)
       cells: 3S
       capacity: 5000 mAh
       energy: 55.5 Wh
       discharge_rate_continuous: 50C
       max_continuous_amp_draw: 250A
     connectors:
-      main_power: XT60 (Plug & Play mit Hobbywing QuicRun G2 ESC)
-      balancer: XH (Standard-Balancer für das Ladegerät)
+      main_power: XT60 (Plug & Play with Hobbywing QuicRun G2 ESC)
+      balancer: XH (Standard balancer for the charger)
     physical_specifications:
-      case_type: Hardcase (HC) - Hartplastik Box
-      safety: Zwingend erforderlich für Speedruns zum Schutz vor Kardanwelle/Crashes
+      case_type: Hardcase (HC) - Hard plastic box
+      safety: Absolutely necessary for speedruns to protect against driveshaft/crashes
       weight_g: 370
       dimensions:
         length_mm: 138
         width_mm: 46
         height_mm: 35
   integration_notes:
-    issue: Der Carten T410R ist ab Werk für 2S-Akkus (25mm Höhe) konzipiert. Dieser
-      3S-Akku ist 35mm hoch.
-    solution: Die obere Carbon-Akkustrebe des Chassis muss 'höhergelegt' werden.
+    issue: The Carten T410R is designed for 2S batteries (25mm height) from the factory. This
+      3S battery is 35mm high.
+    solution: The upper carbon battery brace of the chassis must be 'raised'.
     required_parts:
-    - 2x Distanzhülsen/Spacers (Kunststoff oder Alu) mit ca. 10mm Höhe
-    - 2x minimal längere M3-Schrauben (ca. M3x16 oder M3x18)
-    execution: Spacers auf die originalen Alu-Pfosten legen, Carbon-Strebe darauf
-      verschrauben. Kein Dremeln oder Fräsen am Chassis notwendig.
+    - 2x Spacers (Plastic or Alu) with approx. 10mm height
+    - 2x slightly longer M3 screws (approx. M3x16 or M3x18)
+    execution: Place spacers on the original aluminum posts, screw carbon brace on top.
+      No dremeling or milling on the chassis necessary.

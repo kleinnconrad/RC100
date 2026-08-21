@@ -1,38 +1,39 @@
-# Testprotokoll: 5. Testfahrt
+# Test Log: 5. Test Drive
 
-## Inhaltsverzeichnis
-* [Metadaten](#metadaten)
-* [Ziel der Testfahrt](#ziel-der-testfahrt)
-* [Testverlauf und Ergebnis](#testverlauf-und-ergebnis)
-* [Fehlerbild und aufgetretene Probleme](#fehlerbild-und-aufgetretene-probleme)
-* [Geplante Maßnahmen](#geplante-massnahmen)
-* [Durchgeführte Anpassungen](#durchgefuehrte-anpassungen)
+## Table of Contents
+* [Metadata](#metadata)
+* [Goal of the test drive](#goal-of-the-test-drive)
+* [Test course and result](#test-course-and-result)
+* [Error pattern and problems encountered](#error-pattern-and-problems-encountered)
+* [Planned measures](#planned-measures)
+* [Implemented adjustments](#implemented-adjustments)
 
-## Metadaten
-* **Datum:** 01.04.2026
-* **Ort:** Straße
-* **Fokus:** Strukturintegrität, Getriebe & Geschwindigkeitssteigerung
-* **Status:** Teilweise ## Ziel der Testfahrt
-Überprüfung der allgemeinen Haltbarkeit des Fahrzeugs unter Belastung. Speziell sollte getestet werden, ob alle Verbindungen fest bleiben und das Getriebe den Kräften standhält. Zudem war das Ziel, die Höchstgeschwindigkeit schrittweise zu steigern und sich der 100 km/h-Marke zu nähern.
+## Metadata
+* **Date:** 2026-04-01
+* **Location:** Street
+* **Focus:** Structural integrity, gearbox & speed increase
+* **Status:** Partial 
 
-## Testverlauf und Ergebnis
-Das Auto hat eine hohe Robustheit bewiesen. Sämtliche Verbindungen und das Getriebe haben problemlos gehalten und das Fahrzeug hat auch kleinere Crashs ohne strukturelle Schäden überstanden. Die angepeilte Geschwindigkeitssteigerung auf 100 km/h konnte jedoch nicht realisiert werden.
+## Goal of the test drive
+Checking the general durability of the vehicle under load. Specifically, it should be tested whether all connections remain tight and the gearbox withstands the forces. In addition, the goal was to gradually increase the top speed and approach the 100 km/h mark.
 
-## Fehlerbild und aufgetretene Probleme
-Das Fahrverhalten am Bug (Vorderachse/Vorderwagen) erwies sich als unglaublich schwammig und instabil. Diese fehlende Präzision und Stabilität in der Lenkung macht das Fahrzeug bei steigendem Tempo unkontrollierbar, sodass ein sicheres Erreichen der 100 km/h derzeit unmöglich ist.
+## Test course and result
+The car has proven to be highly robust. All connections and the gearbox held up without any problems and the vehicle also survived minor crashes without structural damage. However, the targeted speed increase to 100 km/h could not be realized.
 
-## Geplante Maßnahmen
-Um das schwammige Fahrverhalten am Bug in den Griff zu bekommen und die nötige Stabilität für hohe Geschwindigkeiten herzustellen, müssen folgende Parameter analysiert und angepasst werden:
+## Error pattern and problems encountered
+The driving behavior at the front end (front axle/front end) turned out to be incredibly spongy and unstable. This lack of precision and stability in the steering makes the vehicle uncontrollable as the speed increases, so that safely reaching 100 km/h is currently impossible.
 
-* **Differential-Öl:** Viskosität im vorderen Diff prüfen und ggf. anpassen (sperren/entsperren), um den Geradeauslauf zu stabilisieren.
-* **Fahrwerksgeometrie:** Setup von Spur, Sturz und Nachlauf an der Vorderachse exakt vermessen und auf High-Speed-Stabilität einstellen.
-* **Federung & Dämpfung:** Federraten und Dämpferöl-Viskosität kontrollieren, um ein Aufschaukeln oder Einknicken der Front zu verhindern.
-* **Lenk-Komponenten:** Das Lenkservo, den Servosaver und das gesamte Lenkgestänge auf Spiel oder unzureichende Stellkraft prüfen.
-* **Gewichtsverteilung im Fahrzeug:** Es wird ein schwererer Motor (3660 statt 3650) und ein schwererer Akku (3S statt 2S) genutzt. Ggf könnte dies zu einer problematischen Schwerpunktverlagerung geführt haben.
+## Planned measures
+In order to get the spongy driving behavior at the front end under control and establish the necessary stability for high speeds, the following parameters must be analyzed and adjusted:
 
-**Fazit für den nächsten Rollout:**
-Die mechanische Basis und der Antriebsstrang sind nun erfreulich robust und "Crash-resistent". Bevor weitere High-Speed-Tests durchgeführt werden können, liegt der absolute Fokus auf der Fahrwerksabstimmung und Lenkpräzision der Vorderachse.
+* **Differential oil:** Check viscosity in the front diff and adjust if necessary (lock/unlock) to stabilize straight-line stability.
+* **Chassis geometry:** Exactly measure the setup of toe, camber and caster on the front axle and adjust for high-speed stability.
+* **Suspension & damping:** Check spring rates and damper oil viscosity to prevent the front from rocking or buckling.
+* **Steering components:** Check the steering servo, the servo saver and the entire steering linkage for play or insufficient actuating force.
+* **Weight distribution in the vehicle:** A heavier motor (3660 instead of 3650) and a heavier battery (3S instead of 2S) are used. This could possibly have led to a problematic shift in the center of gravity.
 
-## Durchgeführte Anpassungen
-Keine besonderen Feststellungen.
+**Conclusion for the next rollout:**
+The mechanical base and the drivetrain are now pleasantly robust and "crash-resistant". Before further high-speed tests can be carried out, the absolute focus is on the chassis setup and steering precision of the front axle.
 
+## Implemented adjustments
+No special findings.

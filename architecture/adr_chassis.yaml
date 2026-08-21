@@ -1,78 +1,65 @@
 adr:
   id: ADR-001
-  title: Auswahl der Chassis-Plattform und Make-or-Buy-Entscheidung (100 km/h Benchmark)
-  status: entschieden
+  title: Selection of the chassis platform and make-or-buy decision (100 km/h Benchmark)
+  status: decided
   date: '2026-03-06'
-  context: "Für das 100 km/h-Speedrun-Projekt wird eine mechanisch stabile Basis benötigt.\
-    \ Die Plattform muss \nextremen Belastungen (ca. 44.000 U/min am Motor, massive\
-    \ Fliehkräfte an den Achsen) standhalten. \nDie grundlegende Architektur-Frage\
-    \ (Make or Buy) vergleicht den Aufbau eines eigenen Budget-Kits (\"Make\") \n\
-    mit dem Kauf eines teuren, vormontierten High-End-Wettbewerbschassis (\"Buy\"\
-    ). \nEin kritisches Risiko für den 3S-Einsatz stellen Differentialzahnräder aus\
-    \ Kunststoff/Composite dar, \ndie dem Drehmoment oft nicht standhalten.\n"
+  context: "For the 100 km/h speedrun project, a mechanically stable basis is required. \nThe platform must withstand \nextreme loads (approx. 44,000 rpm at the motor, massive \ncentrifugal forces on the axles). \nThe fundamental architecture question (Make or Buy) compares the construction of an own budget kit (\"Make\") \n\nwith the purchase of an expensive, pre-assembled high-end competition chassis (\"Buy\"\n). \nA critical risk for 3S use are differential gears made of plastic/composite, \nwhich often cannot withstand the torque.\n"
   make_or_buy_evaluation:
     buy_option:
-      description: 'Kauf eines High-End Wettbewerbs-Chassis (Benchmark: Xray X4 ''24).'
+      description: 'Purchase of a high-end competition chassis (Benchmark: Xray X4 ''24).'
       pros:
-      - Perfekte Mechanik und Torsionssteifigkeit (Premium Carbon).
-      - Pivot-Ball / Active-Toe Aufhängung für stark präzises Setup.
-      - Risiko bei 3S / 100 km/h ist sehr gering.
+      - Perfect mechanics and torsional stiffness (Premium Carbon).
+      - Pivot-ball / active-toe suspension for highly precise setup.
+      - Risk at 3S / 100 km/h is very low.
       cons:
-      - stark hohes Budget erforderlich (~ 750 € nur für den Bausatz).
-      - Differentiale sind trotz Wettbewerbs-Güte aus Kunststoff.
+      - Very high budget required (~ 750 € just for the kit).
+      - Differentials are made of plastic despite competition quality.
     make_option:
-      description: Eigenaufbau basierend auf einem Budget-Kit (~ 140 - 180 €) und
-        Modifikation für High-Speed.
+      description: Custom build based on a budget kit (~ 140 - 180 €) and
+        modification for high-speed.
       pros:
-      - Volle Architekturkontrolle und tiefes Systemverständnis.
-      - Signifikant budgetfreundlicher, lässt Spielraum für Best-of-Breed Elektronik.
+      - Full architectural control and deep system understanding.
+      - Significantly more budget-friendly, leaves room for best-of-breed electronics.
       cons:
-      - Hoher initialer Tuning-Aufwand (Shimming, Öl-Viskositäten, Vermeidung von
-        Chassis-Flex).
+      - High initial tuning effort (shimming, oil viscosities, avoidance of
+        chassis flex).
   considered_alternatives:
   - option_id: 1
-    name: Xray X4 '24 (Benchmark / Buy-Option)
-    type: 2-Riemen (Belt)
+    name: Xray X4 '24 (Benchmark / Buy Option)
+    type: 2-Belt
     price_class: ~ 750 €
-    evaluation: Referenzklasse. optimal berechneter Flex und Ultra-Low Mid-Motor.
-      Wird jedoch aus Budgetgründen und der 'Buy'-Klassifizierung abgelehnt.
+    evaluation: Reference class. Optimally calculated flex and ultra-low mid-motor.
+      However, it is rejected for budget reasons and the 'Buy' classification.
   - option_id: 2
     name: Xpress Arrow AT1S
-    type: Kardanwelle (Shaft)
+    type: Driveshaft (Shaft)
     price_class: ~ 150 €
-    evaluation: 'Kardanantrieb ist gut, aber die FRP-Bodenplatte (Glasfaser) flext
-      zu stark (Flattern bei 100 km/h möglich). Kritisch: Kunststoff-Differentiale.'
+    evaluation: 'Shaft drive is good, but the FRP bottom plate (fiberglass) flexes
+      too much (fluttering at 100 km/h possible). Critical: plastic differentials.'
   - option_id: 3
     name: Xpress Execute XQ2S
-    type: 2-Riemen (Belt)
+    type: 2-Belt
     price_class: ~ 150 €
-    evaluation: Riemenantrieb birgt bei 3S hohes Risiko des Überspringens. FRP-Chassis
-      und Kunststoff-Diffs sind für das Drehmoment ungeeignet.
+    evaluation: Belt drive carries a high risk of skipping on 3S. FRP chassis
+      and plastic diffs are unsuitable for the torque.
   - option_id: 4
     name: SNRC R23 / R3G
-    type: 2-Riemen (Belt)
+    type: 2-Belt
     price_class: ~ 140 €
-    evaluation: Bietet zwar eine steife Carbon-Platte, scheitert aber am Riemenantrieb-Risiko
-      und den fraglichen Kunststoff-Differentialen.
+    evaluation: Offers a stiff carbon plate, but fails due to the belt drive risk
+      and questionable plastic differentials.
   - option_id: 5
     name: Schumacher Vibe TC
-    type: 2-Riemen (Belt) / S2 Composite
+    type: 2-Belt / S2 Composite
     price_class: ~ 140 €
-    evaluation: Exzellentes Club-Racing Chassis, aber für 100 km/h an 3S ungeeignet.
-      Der Riemenantrieb birgt das Risiko des Überspringens bei extremem Drehmoment.
-      Das weiche S2 Composite (Glasfaser) Chassis flext zu stark (Gefahr des Abhebens
-      bei High-Speed). Radmitnehmer aus Kunststoff halten der 3S-Leistung nicht stand.
+    evaluation: Excellent club racing chassis, but unsuitable for 100 km/h on 3S.
+      The belt drive carries the risk of skipping under extreme torque.
+      The soft S2 composite (fiberglass) chassis flexes too much (risk of lifting off
+      at high speed). Plastic wheel hexes cannot withstand the 3S power.
   decision: MAKE - Carten T410R
-  rationale: "Die Entscheidung fällt auf die \"Make\"-Option mit dem Carten T410R\
-    \ (~ 180 €). \nEs ist das einzige Kit im Benchmark-Feld dieser Preisklasse, das\
-    \ die essenziellen Anforderungen \nfür einen 3S/100 km/h-Run ab Werk vereint:\
-    \ \n1. Eine steife 3mm Carbon-Bodenplatte (verhindert gefährliches Flattern).\
-    \ \n2. Einen robusten Kardanantrieb (eliminiert das Risiko überspringender Riemen).\
-    \ \n3. Differential-Zahnräder aus Sintermetall (löst das KO-Kriterium der abscherenden\
-    \ Kunststoff-Diffs). \nDer massive Preisvorteil gegenüber dem Xray X4 '24 rechtfertigt\
-    \ den erhöhten manuellen Setup-Aufwand vollkommen.\n"
+  rationale: "The decision is made in favor of the \"Make\" option with the Carten T410R \n(~ 180 €). \nIt is the only kit in the benchmark field of this price class that \ncombines the essential requirements \nfor a 3S/100 km/h run out of the box: \n1. A stiff 3mm carbon bottom plate (prevents dangerous fluttering). \n2. A robust shaft drive (eliminates the risk of skipping belts). \n3. Differential gears made of sintered metal (solves the knockout criterion of shearing \nplastic diffs). \nThe massive price advantage over the Xray X4 '24 fully justifies \nthe increased manual setup effort.\n"
   consequences:
-  - Die Metall-Differentiale des T410R müssen zwingend präzise geshimmt werden, um
-    Spielfreiheit zu garantieren.
-  - Die zentrale Aluminium-Kardanwelle muss vor dem Einbau auf Rundlauf geprüft werden,
-    da bei Kardan-Setups starke Vibrationen entstehen können.
+  - The metal differentials of the T410R must be shimmed precisely to
+    guarantee zero play.
+  - The central aluminum driveshaft must be checked for concentricity before installation,
+    as strong vibrations can occur with shaft setups.

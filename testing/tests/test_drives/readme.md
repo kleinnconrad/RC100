@@ -1,39 +1,39 @@
-# Inhaltsverzeichnis
-* [Zusammenfassung Testfahrten](#zusammenfassung-testfahrten)
-* [Teststrecken Erkundung: 100 km/h RC Speedrun](#teststrecken-erkundung-100-kmh-rc-speedrun)
+# Table of Contents
+* [Summary of Test Drives](#summary-of-test-drives)
+* [Test Track Exploration: 100 km/h RC Speedrun](#test-track-exploration-100-kmh-rc-speedrun)
   * [Bauhaus](#bauhaus)
   * [Metro](#metro)
   * [Hornbach](#hornbach)
 
 
-# Zusammenfassung Testfahrten
+# Summary of Test Drives
 
-| Test | Datum | Ort | Fokus | Ergebnis / Speed | Status | Geplante Maßnahmen / To-Dos |
+| Test | Date | Location | Focus | Result / Speed | Status | Planned Measures / To-Dos |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| **1** | 17.03.2026 | - | Exploration | Totalschaden Getriebe durch verrutschtes Motorritzel. Punch zu hoch, Motor falsch gepolt. |  Gescheitert | Ritzel/Hauptzahnrad neu beschaffen & montieren, ESC kalibrieren, Punch auf 1, Motor umpolen. |
-| **2** | 24.03.2026 | Tiefgarage | Fehler der ersten Testfahrt | Fehler abgestellt, Anfahren problemlos. Bug wirkt unruhig/zu leicht, Lenkung zentriert nicht exakt. | 🟢 | Erster Speedrun auf breiter Fahrbahn möglich. |
-| **3** | 26.03.2026 | Tiefgarage | Lenkung & Fahrwerksmechanik | Verschraubung des Kugelgelenks hinten links gelöst, sofortiger Abbruch. |  Gescheitert | Alle Kugelgelenke mit Loctite sichern, Test des Servosavers wiederholen. |
-| **4** | 29.03.2026 | Tiefgarage | Überprüfung Schraubverbindungen und sonstige Fehler | Keine Feststellungen. | 🟢 | Keine. |
-| **5** | 01.04.2026 | Straße | Strukturintegrität, Getriebe & Geschwindigkeitssteigerung | Auto robust, aber Bug stark schwammig und instabil. 100 km/h derzeit unmöglich. | 🟡 Teilweise | Fahrwerksabstimmung (Diff-Öl, Spur/Sturz, Federung, Lenkung, Gewichtsverteilung prüfen). |
-| **6** | 02.04.2026 | Tiefgarage | Schwerpunktverlagerung & Stabilisierung des Bugs | 150g Zusatzgewicht vorne brachten Besserung, Handling aber noch nicht präzise genug. | 🟡 Teilweise | Frontgewicht weiter erhöhen, Evaluation eines Spools (Starrachse) vorne. |
-| **7** | 03.04.2026 | Parkplatz | Bugstabilität | 175g Zusatzgewicht + härterer Servosaver stabilisierten den Bug. 55 km/h erreicht, Abbruch wegen Auffahrunfall. | 🟢 (mit Abbruch) | Reparatur Hinterachse, längere Strecke suchen, Servosaver maximal hart einstellen (dritte Feder). |
-| **8** | 09.04.2026 | Tiefgarage | Bugstabilität | Fahrverhalten durch harten Servosaver und 141g Zusatzgewicht am Bumper verbessert, jedoch verbleibt eine leichte Restunruhe. | 🟡 Teilweise | Vorsichtiger High-Speed-Testlauf; Vorbereitung eines Spools (Plan B) an der Vorderachse. |
-| **9** | 16.04.2026 | Straße | Maximale Geschwindigkeit | 71 km/h erreicht (Abbruch nach Kollision). Potenzial für 100 km/h realistisch, aber Bug fühlte sich bei hohem Tempo noch schwammig an. | 🟡 Teilweise erfolgr. / Abbruch | Größere, freie Strecke suchen; weitere Setup-Optimierungen zur Stabilisierung des Bugs umsetzen. |
-| **10**| 16.04.2026 | Tiefgarage | Bugstabilität & Symmetrie | Bug ruhiger durch Symmetrie-Angleichung und 1,5° Vorspur. Restunruhe durch fehlendes Frontgewicht und ungesperrte Diffs. Heck tänzelt leicht. | 🟢 / 🟡 Restunruhe | Zusatzgewicht wieder am Frontbumper montieren; Spool/Diffsperre zur Antriebsoptimierung prüfen. |
+| **1** | 2026-03-17 | - | Exploration | Total loss of gearbox due to slipped motor pinion. Punch too high, motor polarity reversed. | Failed | Procure & mount new pinion/main gear, calibrate ESC, punch to 1, reverse motor polarity. |
+| **2** | 2026-03-24 | Underground garage | Errors of the first test drive | Errors eliminated, starting without problems. Front end seems restless/too light, steering does not center exactly. | 🟢 | First speedrun on wide road possible. |
+| **3** | 2026-03-26 | Underground garage | Steering & chassis mechanics | Screw connection of the ball joint rear left loosened, immediate abort. | Failed | Secure all ball joints with Loctite, repeat test of the servo saver. |
+| **4** | 2026-03-29 | Underground garage | Check screw connections and other errors | No findings. | 🟢 | None. |
+| **5** | 2026-04-01 | Street | Structural integrity, gearbox & speed increase | Car robust, but front end very spongy and unstable. 100 km/h currently impossible. | 🟡 Partial | Chassis setup (check diff oil, toe/camber, suspension, steering, weight distribution). |
+| **6** | 2026-04-02 | Underground garage | Shift of center of gravity & stabilization of the front end | 150g additional weight in front brought improvement, but handling still not precise enough. | 🟡 Partial | Further increase front weight, evaluation of a spool (solid axle) in front. |
+| **7** | 2026-04-03 | Parking lot | Front end stability | 175g additional weight + harder servo saver stabilized the front end. 55 km/h reached, abort due to rear-end collision. | 🟢 (with abort) | Repair rear axle, look for longer track, set servo saver to maximum hard (third spring). |
+| **8** | 2026-04-09 | Underground garage | Front end stability | Driving behavior improved by hard servo saver and 141g additional weight on the bumper, but a slight residual restlessness remains. | 🟡 Partial | Cautious high-speed test run; preparation of a spool (Plan B) on the front axle. |
+| **9** | 2026-04-16 | Street | Maximum speed | 71 km/h reached (abort after collision). Potential for 100 km/h realistic, but front end still felt spongy at high speed. | 🟡 Partially successful / Abort | Look for larger, free track; implement further setup optimizations to stabilize the front end. |
+| **10**| 2026-04-16 | Underground garage | Front end stability & symmetry | Front end calmer due to symmetry adjustment and 1.5° toe-in. Residual restlessness due to missing front weight and unlocked diffs. Rear dances slightly. | 🟢 / 🟡 Residual restlessness | Mount additional weight on front bumper again; check spool/diff lock for drivetrain optimization. |
 
 
-# Teststrecken Erkundung: 100 km/h RC Speedrun
+# Test Track Exploration: 100 km/h RC Speedrun
 
-Übersicht der potenziellen Asphaltflächen für die Speedruns.
+Overview of potential asphalt areas for the speedruns.
 
 ## Bauhaus
 
-<img src="https://github.com/kleinnconrad/RC100/blob/main/fotos/PXL_20260403_131559867.jpg?raw=true" width="50%" alt="Teststrecke Bauhaus">
+<img src="https://github.com/kleinnconrad/RC100/blob/main/fotos/PXL_20260403_131559867.jpg?raw=true" width="50%" alt="Test track Bauhaus">
 
 ## Metro
 
-<img src="https://github.com/kleinnconrad/RC100/blob/main/fotos/PXL_20260403_135110477.jpg?raw=true" width="50%" alt="Teststrecke Metro">
+<img src="https://github.com/kleinnconrad/RC100/blob/main/fotos/PXL_20260403_135110477.jpg?raw=true" width="50%" alt="Test track Metro">
 
 ## Hornbach
 
-<img src="https://github.com/kleinnconrad/RC100/blob/main/fotos/PXL_20260403_134353574.jpg?raw=true" width="50%" alt="Teststrecke Hornbach">
+<img src="https://github.com/kleinnconrad/RC100/blob/main/fotos/PXL_20260403_134353574.jpg?raw=true" width="50%" alt="Test track Hornbach">

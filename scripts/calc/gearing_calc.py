@@ -2,25 +2,25 @@ import math
 
 def calculate_rc_requirements():
     print("="*75)
-    print(" 🏎️  Carten T410R Speed & Getriebe Rechner v3.0  🏎️")
+    print(" Carten T410R Speed & Gearing Calculator v3.0 ")
     print("="*75)
     
     try:
-        motor_size = input("Motor Baugröße (3650 oder 3660): ").strip()
+        motor_size = input("Motor Size (3650 or 3660): ").strip()
         
-        # Dynamische Zonen-Limits basierend auf Motorgröße
+        # Dynamic zone limits based on motor size
         if motor_size == "3660":
             limit_green, limit_yellow, limit_red = 22.0, 25.0, 28.0
         else:
             limit_green, limit_yellow, limit_red = 19.0, 22.0, 25.0
             motor_size = "3650 (Standard)"
 
-        diameter_input = input("Bitte Reifen-Durchmesser in mm eingeben (z.B. 65): ")
+        diameter_input = input("Please enter tire diameter in mm (e.g. 65): ")
         diameter_mm = float(eval(diameter_input))
         
-        target_speed_kmh = float(input("Bitte gewünschte Zielgeschwindigkeit in km/h eingeben (z.B. 100): "))
+        target_speed_kmh = float(input("Please enter desired target speed in km/h (e.g. 100): "))
     except Exception as e:
-        print(f"Ungültige Eingabe oder Formel-Fehler: {e}")
+        print(f"Invalid input or formula error: {e}")
         return
 
     spur_gear = 72
@@ -32,16 +32,16 @@ def calculate_rc_requirements():
     axle_rpm = speed_m_per_min / circumference_m
 
     print("\n" + "="*75)
-    print(" 📊 ERGEBNISSE DER ACHSE")
+    print(" RESULTS AXLE ")
     print("="*75)
-    print(f"Zielgeschwindigkeit:    {target_speed_kmh} km/h")
-    print(f"Motor-Profil:           {motor_size}")
-    print(f"Benötigte Achsdrehzahl: {axle_rpm:,.0f} U/min".replace(',', '.'))
+    print(f"Target Speed:          {target_speed_kmh} km/h")
+    print(f"Motor Profile:         {motor_size}")
+    print(f"Required Axle RPM:     {axle_rpm:,.0f} RPM".replace(',', '.'))
     
     print("\n" + "="*75)
-    print(" ⚙️ MOTOR ANFORDERUNGEN PRO RITZEL (Spur: 72Z)")
+    print(" MOTOR REQUIREMENTS PER PINION (Spur: 72T) ")
     print("="*75)
-    print(f"{'Ritzel':<8} | {'Ratio':<6} | {'Motor U/min':<14} | {'Radlast':<8} | {'Belastungs-Zone'}")
+    print(f"{'Pinion':<8} | {'Ratio':<6} | {'Motor RPM':<14} | {'Wheel Load':<10} | {'Load Zone'}")
     print("-" * 75)
 
     for pinion in pinions:
@@ -49,21 +49,21 @@ def calculate_rc_requirements():
         motor_rpm = axle_rpm * gear_ratio
         load_pct = (1 / gear_ratio) * 100
 
-        # Dynamische Zonen-Zuweisung
+        # Dynamic zone assignment
         if load_pct < limit_green:
-            zone = "🟢 Safe (Strecke & Bashing)"
+            zone = "Safe (Track & Bashing)"
         elif load_pct < limit_yellow:
-            zone = "🟡 Sweet Spot (Top-Speed)"
+            zone = "Sweet Spot (Top-Speed)"
         elif load_pct <= limit_red:
-            zone = "🔴 Gefahrenzone (Extrem!)"
+            zone = "Danger Zone (Extreme!)"
         else:
-            zone = "💀 Hitzetod (Überlastung!)"
+            zone = "Heat Death (Overload!)"
 
         rpm_str = f"{motor_rpm:,.0f}".replace(',', '.')
         if motor_rpm > 50000:
-            rpm_str += " ⚠️"
+            rpm_str += " (WARNING)"
 
-        print(f"{pinion:<2} Zähne | {gear_ratio:<6.2f} | {rpm_str:<14} | {load_pct:>5.1f} %  | {zone}")
+        print(f"{pinion:<2} Teeth  | {gear_ratio:<6.2f} | {rpm_str:<14} | {load_pct:>5.1f} %     | {zone}")
 
 if __name__ == '__main__':
     calculate_rc_requirements()

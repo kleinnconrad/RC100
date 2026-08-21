@@ -1,37 +1,37 @@
-# 1. Speedrun Testbericht
+# 1. Speedrun Test Report
 
 
-## Inhaltsverzeichnis
-* [Zusammenfassung der Testläufe](#zusammenfassung-der-testlaufe)
-* [Post-Run Inspektion und Schadensbericht](#post-run-inspektion-und-schadensbericht)
-* [Fazit](#fazit)
+## Table of Contents
+* [Summary of Test Runs](#summary-of-test-runs)
+* [Post-Run Inspection and Damage Report](#post-run-inspection-and-damage-report)
+* [Conclusion](#conclusion)
 
 
-**Datum:** 19. April 2026  
-**Ort:** Bauhaus Parkplatz  
-**Verfügbare Streckenlänge:** ca. 130 Meter
+**Date:** April 19, 2026  
+**Location:** Bauhaus Parking Lot  
+**Available track length:** approx. 130 meters
 
-## Zusammenfassung der Testläufe
-Die Speedrun-Session umfasste insgesamt 7 aufeinanderfolgende Versuche auf der oben genannten Teststrecke. Ziel war die Auslotung der Höchstgeschwindigkeit unter den gegebenen Platzverhältnissen (130 Meter für Beschleunigung und Bremsweg).
+## Summary of Test Runs
+The speedrun session comprised a total of 7 consecutive attempts on the test track mentioned above. The goal was to explore the top speed under the given space conditions (130 meters for acceleration and braking distance).
 
-* **Anzahl der Versuche:** 7
-* **Gemessene Höchstgeschwindigkeit:** **103 km/h** (erreicht im 7. und letzten Versuch)
+* **Number of attempts:** 7
+* **Measured top speed:** **103 km/h** (reached in the 7th and final attempt)
 
-*Anmerkung: Das Durchbrechen der 100-km/h-Marke auf einer so stark begrenzten Distanz belegt eine exzellente und sehr aggressive Leistungsentfaltung des Antriebs.*
+*Note: Breaking the 100 km/h mark over such a strictly limited distance proves an excellent and very aggressive power delivery of the drive.*
 
-## Post-Run Inspektion und Schadensbericht
-Nach Abschluss der Fahrten wurde das Chassis einer detaillierten Sicht- und Mechanikprüfung unterzogen. Schwere strukturelle Ausfälle blieben aus, was für die Grundstabilität des Modells spricht. Es wurden jedoch zwei belastungsspezifische Auffälligkeiten dokumentiert:
+## Post-Run Inspection and Damage Report
+After the runs were completed, the chassis was subjected to a detailed visual and mechanical inspection. Severe structural failures did not occur, which speaks for the basic stability of the model. However, two load-specific abnormalities were documented:
 
-1. **Kardanwelle (Peitschen / Resonanz):**
-   Durch die stark hohen Drehzahlen ist die zentrale Kardanwelle in Schwingung geraten (Peitschen). Infolgedessen kam es zu einem leichten mechanischen Kontakt mit dem Servohalter.
+1. **Driveshaft (Whipping / Resonance):**
+   Due to the very high speeds, the central driveshaft started to vibrate (whip). As a result, there was slight mechanical contact with the servo mount.
 
-2. **Vorderes Differentialgehäuse (Kugellager):**
-   Ein Kugellager am vorderen Differentialgehäuse wurde durch die auftretenden Kräfte zur Hälfte aus seinem Sitz gedrückt.
-   * *Einschätzung:* Zum aktuellen Zeitpunkt technisch unkritisch, da das System nicht blockierte und keine Folgeschäden an den Zahnrädern entstanden sind. **Es wird vermutet, dass sich der Cup joint in der Längsachse ca 2 mm in Richtung Kardanwelle verschoben hat.** Vermutete Ursache ist der Bruch des Arretierungsstifts infolge der Fixierung mit Sekundenkleber. Die auftretenden Vibrationen an dieser Stelle erfordern eine flexiblere Befestigung des Arretierungsstifts
-   * **Final Diagnose am 20.04.2026:** Das Kegelzahnrad der vorderen Kardanwellenaufnahme wird tatsächlich einige Millimeter formschlüssig auf die Welle aufgeschoben. Die Verschraubung hat sich etwas gelöst und das Kegelzahnrad ist um ca. 2 mm gewandert. Das Kegelzahnrad wurde nun demontiert. Anschließend wurde das Kegelzahnrad vollständig auf die Welle geschoben und fest verschraubt. Zur Sicherung der Schraubverbindung wurde Sekundenkleber genutzt.
+2. **Front differential housing (Ball bearing):**
+   A ball bearing on the front differential housing was pushed half out of its seat by the occurring forces.
+   * *Assessment:* Technically uncritical at the moment, since the system did not block and there was no consequential damage to the gears. **It is suspected that the cup joint shifted approx. 2 mm along the longitudinal axis towards the driveshaft.** Suspected cause is the breakage of the locking pin as a result of fixation with superglue. The occurring vibrations at this point require a more flexible attachment of the locking pin.
+   * **Final diagnosis on 2026-04-20:** The bevel gear of the front driveshaft mount is actually pushed a few millimeters positively onto the shaft. The screw connection loosened slightly and the bevel gear migrated by approx. 2 mm. The bevel gear was now dismantled. Then the bevel gear was completely pushed onto the shaft and tightly screwed. Superglue was used to secure the screw connection.
    
-## Fazit
-Mit einer gemessenen Spitzengeschwindigkeit von 103 km/h war die Testreihe ein voller Erfolg. Das Chassis hat den hohen Belastungen weitestgehend standgehalten. Die festgestellten Mängel sind typische Begleiterscheinungen im Hochgeschwindigkeitsbereich (Rotationskräfte und Vibrationen) und lassen sich durch gezielte, kleine Optimierungen am Antriebsstrang beheben.
+## Conclusion
+With a measured top speed of 103 km/h, the test series was a complete success. The chassis has largely withstood the high loads. The defects found are typical side effects in the high-speed range (rotational forces and vibrations) and can be eliminated through targeted, small optimizations to the drivetrain.
 
 <br>
 <img src="https://github.com/kleinnconrad/RC100/blob/main/fotos/20260419_121510.jpg?raw=true" width="50%">

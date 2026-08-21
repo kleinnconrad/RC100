@@ -1,27 +1,27 @@
-# Testprotokoll: 11. Testfahrt
+# Test Log: 11. Test Drive
 
-## Inhaltsverzeichnis
-* [Metadaten](#metadaten)
-* [Ziel der Testfahrt](#ziel-der-testfahrt)
-* [Testverlauf und Ergebnis](#testverlauf-und-ergebnis)
-* [Geplante Maßnahmen](#geplante-massnahmen)
-* [Durchgeführte Anpassungen](#durchgefuehrte-anpassungen)
+## Table of Contents
+* [Metadata](#metadata)
+* [Goal of the test drive](#goal-of-the-test-drive)
+* [Test course and result](#test-course-and-result)
+* [Planned measures](#planned-measures)
+* [Implemented adjustments](#implemented-adjustments)
 
-## Metadaten
-* **Datum:** 22.07.2026
-* **Ort:** Tiefgarage
-* **Fokus:** Stabilität des Geradeauslaufs
-* **Status:** Restunruhe vorhanden
+## Metadata
+* **Date:** 2026-07-22
+* **Location:** Underground garage
+* **Focus:** Stability of straight-line driving
+* **Status:** Residual restlessness present
 
-## Ziel der Testfahrt
-Überprüfung der Fahrstabilität und des Geradeauslaufs nach Modifikation des Fahrwerks. Spezifisch wurde untersucht, ob die Korrektur der Sturzeinstellung und die Demontage der Stabilisatoren zu einem stabileren Geradeauslauf führen.
+## Goal of the test drive
+Checking driving stability and straight-line driving after modification of the chassis. Specifically, it was investigated whether the correction of the camber setting and the removal of the anti-roll bars lead to a more stable straight-line drive.
 
-## Testverlauf und Ergebnis
-Trotz der Fahrwerksanpassungen wurde während der Fahrt weiterhin eine Unruhe im Geradeauslauf festgestellt. Die vorgenommenen Modifikationen führten nicht zu der anvisierten Spurtreue.
+## Test course and result
+Despite the chassis adjustments, restlessness in straight-line driving was still observed during the drive. The modifications made did not lead to the targeted directional stability.
 
-## Geplante Maßnahmen
-* **Spureinstellung:** Die Spur an der Vorderachse wird im nächsten Schritt auf 0 Grad eingestellt.
+## Planned measures
+* **Toe setting:** The toe on the front axle will be set to 0 degrees in the next step.
 
-## Durchgeführte Anpassungen
-* **Sturzeinstellung:** Korrektur des Sturzwinkels.
-* **Stabilisatoren:** Demontage der Stabilisatoren an der Achse.
+## Implemented adjustments
+* **Camber setting:** Correction of the camber angle.
+* **Anti-roll bars:** Removal of the anti-roll bars on the axle.

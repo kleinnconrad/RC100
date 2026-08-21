@@ -1,48 +1,41 @@
 adr:
   id: ADR-006
-  title: Auswahl des Lenkservos für präzise High-Speed-Kontrolle
-  status: entschieden
+  title: Selection of the steering servo for precise high-speed control
+  status: decided
   date: '2026-08-21'
-  context: "Bei Geschwindigkeiten von 100 km/h wirken enorme aerodynamische und mechanische\
-    \ Kräfte \nauf die Vorderräder des Carten T410R. Ein minimales Zittern, Spiel\
-    \ oder eine zu langsame \nReaktionszeit des Lenkservos können sofort zum Kontrollverlust\
-    \ und Totalausfall führen. \nZudem ist der Platz in einem 1:10 Tourenwagen-Chassis\
-    \ begrenzt. Da unsere MVP-Fernsteuerung \n(Carson Reflex Wheel X1) über keinen\
-    \ elektronischen Gyro verfügt, muss das Servo den \nGeradeauslauf mechanisch stark\
-    \ präzise und kraftvoll halten. Gefordert ist ein Servo \nmit Metallgetriebe (Robustheit),\
-    \ hoher Stellgeschwindigkeit (~0.11s) und ausreichender \nStellkraft (ca. 9 kg).\n"
+  context: "At speeds of 100 km/h, enormous aerodynamic and mechanical \nforces act \non the front wheels of the Carten T410R. A minimal jitter, play \nor a too slow \nreaction time of the steering servo can immediately lead to loss of control \nand total failure. \nIn addition, space in a 1:10 touring car chassis \nis limited. Since our MVP remote control \n(Carson Reflex Wheel X1) does not have an electronic gyro, the servo must \nhold the \nstraight line mechanically very precisely and powerfully. A servo \nwith metal gears (robustness), \nhigh speed (~0.11s) and sufficient \ntorque (approx. 9 kg) is required.\n"
   considered_alternatives:
   - option_id: 1
-    name: Standard RTR / Plastikgetriebe-Servo (3-6 kg)
-    type: Low-End / Standardgröße
-    evaluation: Sehr günstig (oft < 15 €), aber lebensgefährlich für das Projekt.
-      Plastikzahnräder scheren bei den Rückstellkräften bei 100 km/h sofort ab. Mit
-      oft > 0.15s Stellzeit viel zu langsam.
+    name: Standard RTR / Plastic Gear Servo (3-6 kg)
+    type: Low-End / Standard Size
+    evaluation: Very cheap (often < 15 €), but life-threatening for the project.
+      Plastic gears shear off immediately under the restoring forces at 100 km/h. With
+      often > 0.15s positioning time much too slow.
   - option_id: 2
-    name: High-End Brushless Full-Size Servo (z.B. Savöx SB-2290SG)
-    type: Premium / Standardgröße / 50+ kg
-    evaluation: 'Monströse Stellkraft und stark schnell. Aber: Völlig überdimensioniert
-      (Over-Engineering), stark teuer (> 130 €) und vor allem als Full-Size-Servo
-      zu groß für das kompakte Chassis.'
+    name: High-End Brushless Full-Size Servo (e.g. Savöx SB-2290SG)
+    type: Premium / Standard Size / 50+ kg
+    evaluation: 'Monstrous torque and very fast. But: Completely oversized
+      (Over-Engineering), very expensive (> 130 €) and above all too large as a full-size servo
+      for the compact chassis.'
   - option_id: 3
     name: Savöx SC-1251MG+
-    type: Mid-Range / Low-Profile / Metallgetriebe
-    evaluation: Der absolute Goldstandard im 1:10 Tourenwagen-Bereich. Mit ca. 55-65
-      € jedoch für unseren aktuellen Budget-MVP-Ansatz relativ teuer, auch wenn Qualität
-      und Stellzeit (0.09s) überragend sind.
+    type: Mid-Range / Low-Profile / Metal Gear
+    evaluation: The absolute gold standard in the 1:10 touring car sector. However, at approx. 55-65
+      € relatively expensive for our current budget MVP approach, even if the quality
+      and speed (0.09s) are outstanding.
   - option_id: 4
     name: JX PDI-4409MG
-    type: Budget / Low-Profile / Metallgetriebe
-    evaluation: Ein hervorragendes Preis-Leistungs-Verhältnis (~15-22 €). Bietet ein
-      robustes Metallgetriebe, ausreichend Stellkraft (9.2 kg) und eine sehr gute
-      Reaktionszeit (0.11s) in platzsparender Low-Profile-Bauweise.
+    type: Budget / Low-Profile / Metal Gear
+    evaluation: An excellent price-performance ratio (~15-22 €). Offers a
+      robust metal gear, sufficient torque (9.2 kg) and a very good
+      reaction time (0.11s) in a space-saving low-profile design.
   decision: Savöx SC-1252MG+
   servo_meta:
     brand: Savöx
     model: SC-1252MG+
-    type: Digitales Low-Profile Servo
-  rationale: "Testfahrten zeigten, dass das bisherige Setup die erforderliche Lenkgenauigkeit nicht lieferte. Das Servo kehrte nicht reproduzierbar in die Neutralposition zurück. Daher wurde auf das Savöx SC-1252MG+ (52,72 €) gewechselt. Es bietet eine Stellgeschwindigkeit von 0,07s und eine Stellkraft von 7 kg. Dies gewährleistet eine präzise Rückstellung auf die Neutralposition.\n"
+    type: Digital Low-Profile Servo
+  rationale: "Test drives showed that the previous setup did not provide the required steering precision. The servo did not reproducibly return to the neutral position. Therefore, a change was made to the Savöx SC-1252MG+ (52.72 €). It offers a speed of 0.07s and a torque of 7 kg. This ensures a precise return to the neutral position.\n"
   consequences:
-  - 'Servohorn: Um das Spiel im Lenksystem zu minimieren, wird ein starrer Aluminium-Hebel (ALU CLAMP SERVO HORN - FUTABA, SAVÖX - 3-HOLE - 25T, Artikel HUD293409) ohne Servosaver montiert.'
-  - 'BEC-Spannung: Die BEC-Ausgangsspannung des Reglers wird auf 6.0V konfiguriert.'
-  - 'Dual-Rate: Der maximale Lenkausschlag wird an der Fernsteuerung begrenzt, um die Stabilität bei 100 km/h sicherzustellen.'
+  - 'Servo horn: To minimize play in the steering system, a rigid aluminum lever (ALU CLAMP SERVO HORN - FUTABA, SAVÖX - 3-HOLE - 25T, item HUD293409) is mounted without a servo saver.'
+  - 'BEC voltage: The BEC output voltage of the controller is configured to 6.0V.'
+  - 'Dual-Rate: The maximum steering angle is limited on the remote control to ensure stability at 100 km/h.'

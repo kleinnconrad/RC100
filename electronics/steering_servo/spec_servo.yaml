@@ -2,13 +2,13 @@ spec:
   meta:
     brand: Savöx
     model: SC-1252MG+
-    type: Digitales Low-Profile Servo
-    features: Coreless Motor, hohe Stellgeschwindigkeit und Präzision
-    price_class: Mid-Range (~52,72 EUR)
+    type: Digital Low-Profile Servo
+    features: Coreless Motor, high speed and precision
+    price_class: Mid-Range (~52.72 EUR)
   properties:
     mechanical_specifications:
-      gears: Metallgetriebe
-      case: Kunststoff mit Aluminium-Mittelteil
+      gears: Metal gears
+      case: Plastic with aluminum middle section
       spline_teeth: '25T (Standard Futaba/Savöx)'
       dimensions_mm:
         length: 40.8
@@ -19,10 +19,10 @@ spec:
       operating_voltage: 4.8V - 6.0V
       torque_6v: 7.0 kg-cm
       speed_6v: 0.07 sec / 60°
-      return_to_center_accuracy: Sehr gut (Hohe Präzision für reproduzierbaren Geradeauslauf)
+      return_to_center_accuracy: Very good (High precision for reproducible straight-line stability)
     mandatory_upgrades:
       part: ALU CLAMP SERVO HORN - FUTABA, SAVÖX - 3-HOLE - 25T (HUD293409)
-      reason: Garantiert eine absolut steife, spielfreie Lenkverbindung. Auf einen Servosaver wird komplett verzichtet, um maximale Genauigkeit zu erreichen.
-      installation: Die Klemmschraube festziehen und die Hauptschraube zwingend mit Schraubensicherungslack (z. B. Loctite mittelfest) fixieren.
+      reason: Guarantees an absolutely rigid, play-free steering connection. A servo saver is completely omitted to achieve maximum accuracy.
+      installation: Tighten the clamp screw and definitely fix the main screw with threadlocker (e.g. Loctite medium strength).
     transmitter_setup:
-      dual_rate: Für den 100 km/h Run muss an der Fernsteuerung zwingend das 'Dual Rate' (D/R) oder der Lenkausschlag (EPA) reduziert werden. Minimale Lenkbewegungen reichen bei Top-Speed aus.
+      dual_rate: For the 100 km/h run, the 'Dual Rate' (D/R) or the steering throw (EPA) must absolutely be reduced on the remote control. Minimal steering movements are sufficient at top speed.

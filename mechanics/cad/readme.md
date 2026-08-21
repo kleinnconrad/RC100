@@ -1,35 +1,35 @@
-# 3D-Druckteile
+# 3D Printed Parts
 
 
-## Inhaltsverzeichnis
-* [Enthaltene Dateien](#enthaltene-dateien)
-  * [1. Motorlüfter-Halterung (`fan_mount.stl`)](#1-motorlufter-halterung-fanmountstl)
-  * [2. LiPo-Akku Dummy (`lipo_mock.stl`)](#2-lipo-akku-dummy-lipomockstl)
-  * [3. RC-Car Wartungsständer (`stojan_3dprint_25.stl`)](#3-rc-car-wartungsstander-stojan3dprint25stl)
-* [Quellen](#quellen)
+## Table of Contents
+* [Included Files](#included-files)
+  * [1. Motor Fan Mount (`fan_mount.stl`)](#1-motor-fan-mount-fan_mountstl)
+  * [2. LiPo Battery Dummy (`lipo_mock.stl`)](#2-lipo-battery-dummy-lipo_mockstl)
+  * [3. RC Car Maintenance Stand (`stojan_3dprint_25.stl`)](#3-rc-car-maintenance-stand-stojan_3dprint_25stl)
+* [Sources](#sources)
 
 
-Dieser Ordner enthält 3D-Druckteile (STL-Dateien) für das RC-Auto **Carten T410R** sowie einen Wartungsständer.
+This folder contains 3D printed parts (STL files) for the RC car **Carten T410R** as well as a maintenance stand.
 
-## Enthaltene Dateien
+## Included Files
 
-### 1. Motorlüfter-Halterung (`fan_mount.stl`)
-* **Autor:** [@kleinnconrad](https://github.com/kleinnconrad) (Eigene Konstruktion)
-* **Beschreibung:** Eine Lüfterhalterung für einen **50x50 mm Motorlüfter von Hobbywing**. Entwickelt für die Montage im Carten T410R zur Installation und Kühlung des Motors.
+### 1. Motor Fan Mount (`fan_mount.stl`)
+* **Author:** [@kleinnconrad](https://github.com/kleinnconrad) (Own design)
+* **Description:** A fan mount for a **50x50 mm motor fan from Hobbywing**. Designed for mounting in the Carten T410R for installation and cooling of the motor.
 
-### 2. LiPo-Akku Dummy (`lipo_mock.stl`)
-* **Autor:** [@kleinnconrad](https://github.com/kleinnconrad) (Eigene Konstruktion)
-* **Beschreibung:** Ein Platzhalter-Objekt in der Größe eines **3S Hardcase LiPo-Akkus**. Dieses Modell dient der Planung von Einbauten, Elektronik und Kabelmanagement im Carten T410R. Es ersetzt den physischen Akku während der Konstruktionsphase.
+### 2. LiPo Battery Dummy (`lipo_mock.stl`)
+* **Author:** [@kleinnconrad](https://github.com/kleinnconrad) (Own design)
+* **Description:** A placeholder object in the size of a **3S hardcase LiPo battery**. This model is used for planning installations, electronics and cable management in the Carten T410R. It replaces the physical battery during the design phase.
 
-### 3. RC-Car Wartungsständer (`stojan_3dprint_25.stl`)
-* **Autor:** [@Upgrade25](https://www.printables.com/@Upgrade25)
-* **Beschreibung:** Ein Wartungsständer für RC-Cars (Maßstab 1:10). Vorgesehen für Reparaturen, Setup-Arbeiten oder als Ablage.
+### 3. RC Car Maintenance Stand (`stojan_3dprint_25.stl`)
+* **Author:** [@Upgrade25](https://www.printables.com/@Upgrade25)
+* **Description:** A maintenance stand for RC cars (scale 1:10). Intended for repairs, setup work or as a rest.
 
 ---
 
-##  Quellen
+## Sources
 
-Der RC-Wartungsständer (`stojan_3dprint_25.stl`) stammt nicht von mir. Die Originaldateien und alle Credits gehen an den ursprünglichen Designer auf Printables:
+The RC maintenance stand (`stojan_3dprint_25.stl`) is not mine. The original files and all credits go to the original designer on Printables:
 
-* **Original-Modell:** [RC Car Maintenance Stand 1:10 auf Printables](https://www.printables.com/model/1200600-rc-car-maintenance-stand-110/files)
-* **Designer-Profil:** [Upgrade25](https://www.printables.com/@Upgrade25)
+* **Original Model:** [RC Car Maintenance Stand 1:10 on Printables](https://www.printables.com/model/1200600-rc-car-maintenance-stand-110/files)
+* **Designer Profile:** [Upgrade25](https://www.printables.com/@Upgrade25)

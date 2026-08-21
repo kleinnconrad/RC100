@@ -1,336 +1,416 @@
 # Architecture Decision Records (ADRs)
 
-Dieses Verzeichnis enthält alle grundlegenden architektur- und Hardwareentscheidungen für das RC100 Projekt. **Diese Datei wird automatisch generiert. Bitte nicht manuell bearbeiten.**
+This directory contains all fundamental architecture and hardware decisions for the RC100 project. **This file is generated automatically. Please do not edit manually.**
 
-## Übersicht
+## Overview
 
-| ID | Datum | Titel | Status | Entscheidung |
+| ID | Date | Title | Status | Decision |
 | :--- | :--- | :--- | :--- | :--- |
-| **ADR-001** | 2026-03-06 | Auswahl der Chassis-Plattform und Make-or-Buy-Entscheidung (100 km/h Benchmark) | 🟢 entschieden | MAKE - Carten T410R |
-| **ADR-002** | 2026-03-06 | Auswahl der Brushless-Motor-Combo für 100 km/h Speedruns | 🟢 entschieden | Hobbywing QuicRun WP10BL120 G2 Combo (3660SL 3700KV) |
-| **ADR-003** | 2026-03-06 | Auswahl des LiPo-Akkus für 100 km/h Ziel. | 🟢 entschieden | Absima GreenHorn Line V2 (3S / 5000mAh / 50C / Hardcase) |
-| **ADR-004** | 2026-03-06 | Auswahl des Ladegeräts für 3S LiPo-Akkus | 🟢 entschieden | SkyRC S100neo |
-| **ADR-005** | 2026-08-20 | Auswahl der Fernsteuerungsanlage für 100 km/h Speedruns | 🟢 entschieden | X9S Radio + Mini Waterproof 4-Channel Receiver RG4CHWP |
-| **ADR-006** | 2026-08-21 | Auswahl des Lenkservos für präzise High-Speed-Kontrolle | 🟢 entschieden | Savöx SC-1252MG+ |
-| **ADR-007** | 2026-03-06 | Auswahl der aktiven und passiven Motorkühlung für 3S-Speedruns | 🟢 entschieden | Passiver 36mm Alu-Kühlkörper kombiniert mit aktivem 40x40mm High-Speed Alu-Lüfter |
-| **ADR-008** | 2026-02-25 | Auswahl der Bereifung (Belted Gummireifen für Asphalt) für 100 km/h Speedruns | 🟢 Entschieden | Sweep HANKOOK Tread Belted tires Pre-glued set Pro-compound 36deg for Asphalt (SR-SSF-36AWPG) |
-| **ADR-009** | 2026-03-12 | Auswahl der aerodynamischen Karosserie für 100 km/h Speedruns | 🟢 entschieden | ZooRacing Hellcat (190 mm, 0.7mm Stärke) |
-| **ADR-010** | 2026-03-10 | Auswahl des GPS-Messsystems zur Validierung der 100 km/h Marke | 🟢 entschieden | Ruddog GPS Performance Analyzer |
+| **ADR-001** | 2026-03-06 | Selection of the chassis platform and make-or-buy decision (100 km/h Benchmark) | 🟢 decided | MAKE - Carten T410R |
+| **ADR-002** | 2026-03-06 | Selection of the brushless motor combo for 100 km/h speedruns | 🟢 decided | Hobbywing QuicRun WP10BL120 G2 Combo (3660SL 3700KV) |
+| **ADR-003** | 2026-03-06 | Selection of the LiPo Battery for the 100 km/h Goal. | 🟢 decided | Absima GreenHorn Line V2 (3S / 5000mAh / 50C / Hardcase) |
+| **ADR-004** | 2026-03-06 | Selection of the charger for 3S LiPo batteries | 🟢 decided | SkyRC S100neo |
+| **ADR-005** | 2026-08-20 | Selection of the remote control system for 100 km/h speedruns | 🟢 decided | X9S Radio + Mini Waterproof 4-Channel Receiver RG4CHWP |
+| **ADR-006** | 2026-08-21 | Selection of the steering servo for precise high-speed control | 🟢 decided | Savöx SC-1252MG+ |
+| **ADR-007** | 2026-03-06 | Selection of active and passive motor cooling for 3S speedruns | 🟢 decided | Passive 36mm Alu Heat Sink combined with active 40x40mm High-Speed Alu Fan |
+| **ADR-008** | 2026-02-25 | Selection of tires (belted rubber tires for asphalt) for 100 km/h speedruns | 🟢 Decided | Sweep HANKOOK Tread Belted tires Pre-glued set Pro-compound 36deg for Asphalt (SR-SSF-36AWPG) |
+| **ADR-009** | 2026-03-12 | Selection of the aerodynamic body for 100 km/h speedruns | 🟢 decided | ZooRacing Hellcat (190 mm, 0.7mm thickness) |
+| **ADR-010** | 2026-03-10 | Selection of the GPS measuring system to validate the 100 km/h mark | 🟢 decided | Ruddog GPS Performance Analyzer |
 
 ---
 
-## Detail-Protokolle
+## Detailed Logs
 
-### ADR-001: Auswahl der Chassis-Plattform und Make-or-Buy-Entscheidung (100 km/h Benchmark)
-**Status:** entschieden | **Datum:** 2026-03-06
+### ADR-001: Selection of the chassis platform and make-or-buy decision (100 km/h Benchmark)
+**Status:** decided | **Date:** 2026-03-06
 
-#### Kontext
-Für das 100 km/h-Speedrun-Projekt wird eine mechanisch stabile Basis benötigt. Die Plattform muss 
-extremen Belastungen (ca. 44.000 U/min am Motor, massive Fliehkräfte an den Achsen) standhalten. 
-Die grundlegende Architektur-Frage (Make or Buy) vergleicht den Aufbau eines eigenen Budget-Kits ("Make") 
-mit dem Kauf eines teuren, vormontierten High-End-Wettbewerbschassis ("Buy"). 
-Ein kritisches Risiko für den 3S-Einsatz stellen Differentialzahnräder aus Kunststoff/Composite dar, 
-die dem Drehmoment oft nicht standhalten.
+#### Context
+For the 100 km/h speedrun project, a mechanically stable basis is required. 
+The platform must withstand 
+extreme loads (approx. 44,000 rpm at the motor, massive 
+centrifugal forces on the axles). 
+The fundamental architecture question (Make or Buy) compares the construction of an own budget kit ("Make") 
+
+with the purchase of an expensive, pre-assembled high-end competition chassis ("Buy"
+). 
+A critical risk for 3S use are differential gears made of plastic/composite, 
+which often cannot withstand the torque.
 
 
-#### Entscheidung
+#### Decision
 > **MAKE - Carten T410R**
 
-#### Begründung (Rationale)
-Die Entscheidung fällt auf die "Make"-Option mit dem Carten T410R (~ 180 €). 
-Es ist das einzige Kit im Benchmark-Feld dieser Preisklasse, das die essenziellen Anforderungen 
-für einen 3S/100 km/h-Run ab Werk vereint: 
-1. Eine steife 3mm Carbon-Bodenplatte (verhindert gefährliches Flattern). 
-2. Einen robusten Kardanantrieb (eliminiert das Risiko überspringender Riemen). 
-3. Differential-Zahnräder aus Sintermetall (löst das KO-Kriterium der abscherenden Kunststoff-Diffs). 
-Der massive Preisvorteil gegenüber dem Xray X4 '24 rechtfertigt den erhöhten manuellen Setup-Aufwand vollkommen.
+#### Rationale
+The decision is made in favor of the "Make" option with the Carten T410R 
+(~ 180 €). 
+It is the only kit in the benchmark field of this price class that 
+combines the essential requirements 
+for a 3S/100 km/h run out of the box: 
+1. A stiff 3mm carbon bottom plate (prevents dangerous fluttering). 
+2. A robust shaft drive (eliminates the risk of skipping belts). 
+3. Differential gears made of sintered metal (solves the knockout criterion of shearing 
+plastic diffs). 
+The massive price advantage over the Xray X4 '24 fully justifies 
+the increased manual setup effort.
 
 
-#### Konsequenzen
-- Die Metall-Differentiale des T410R müssen zwingend präzise geshimmt werden, um Spielfreiheit zu garantieren.
-- Die zentrale Aluminium-Kardanwelle muss vor dem Einbau auf Rundlauf geprüft werden, da bei Kardan-Setups starke Vibrationen entstehen können.
+#### Consequences
+- The metal differentials of the T410R must be shimmed precisely to guarantee zero play.
+- The central aluminum driveshaft must be checked for concentricity before installation, as strong vibrations can occur with shaft setups.
 
 
 ---
 
-### ADR-002: Auswahl der Brushless-Motor-Combo für 100 km/h Speedruns
-**Status:** entschieden | **Datum:** 2026-03-06
+### ADR-002: Selection of the brushless motor combo for 100 km/h speedruns
+**Status:** decided | **Date:** 2026-03-06
 
-#### Kontext
-Um einen 1/10 Tourenwagen (Carten T410R) auf 100 km/h zu beschleunigen, muss das Getriebe stark 
-'lang' übersetzt werden (hohe Radlast > 22 %). Ein klassischer 3650er-Motor (50 mm Länge) operiert 
-hierbei an seiner thermischen Belastungsgrenze. Es wird zwingend ein Antriebsstrang benötigt, 
-der bei 3S-Spannung (11.1V) genügend mechanisches Drehmoment (Motorbaugröße 3660) liefert und 
-dessen Fahrtenregler (ESC) die hohen Blockierströme beim Beschleunigen sicher verarbeiten 
-kann (min. 120A).
+#### Context
+In order to accelerate a 1/10 touring car (Carten T410R) to 100 km/h, 
+the gearing must be very 'tall' (high wheel load > 22 %). A 
+classic 3650 motor (50 mm length) operates 
+here at its thermal 
+load limit. A drivetrain is absolutely required 
+that delivers enough mechanical torque (motor size 3660) at 3S voltage 
+(11.1V) and 
+whose electronic speed controller (ESC) can safely handle the high stall currents during acceleration 
+(min. 120A).
 
 
-#### Entscheidung
+#### Decision
 > **Hobbywing QuicRun WP10BL120 G2 Combo (3660SL 3700KV)**
 
-#### Begründung (Rationale)
-Die Entscheidung fällt auf die Hobbywing QuicRun G2 Combo. Sie eliminiert das Ausfallrisiko von 
-No-Name-Motoren und bietet eine optimal aufeinander abgestimmte Architektur (Firmware von ESC 
-und Motor-Timing sind optimal verzahnt). Der 3660er Motor liefert mit seinen 3700KV an 3S 
-(ca. 41.000 U/min) die perfekte Drehzahl und hat durch den längeren Rotor genug Drehmoment, 
-um die errechnete Radlast von ca. 24 % souverän zu stemmen. Dies ist die sicherste und 
-effizienteste Lösung im Budget unter 100 €.
+#### Rationale
+The decision is made in favor of the Hobbywing QuicRun G2 Combo. It eliminates 
+the risk of failure of 
+no-name motors and offers an optimally coordinated architecture (firmware of ESC 
+and motor timing are optimally interlocked). 
+The 3660 motor delivers the perfect 
+rpm with its 3700KV on 3S 
+(approx. 41,000 rpm) and has enough torque due to the longer rotor 
+to confidently handle 
+the calculated wheel load of approx. 24 %. This is the safest and 
+most efficient solution on a budget under 100 €.
 
 
-#### Konsequenzen
-- Packaging (Bauraum): Der 3660er Motor ist 10 mm länger als das Standardmaß. Der ESC und der Empfänger müssen im T410R-Chassis entsprechend weiter hinten platziert werden.
-- Ritzel-Bohrung (WICHTIG): Hobbywing liefert den 3660SL G2 in der Regel mit einer 5.0 mm Welle aus (Spezifikationen beim Händler vor der Ritzelbestellung final verifizieren). Ein 48dp-Ritzel mit 5 mm Bohrung (z.B. Robinson Racing) ist zwingend erforderlich.
-- Stromversorgung: Die Systemspannung ist hart auf 3S LiPo limitiert. Ein 4S-Betrieb würde die maximal zulässige Rotordrehzahl des Motors überschreiten.
+#### Consequences
+- Packaging (Installation space): The 3660 motor is 10 mm longer than the standard size. The ESC and the receiver must be placed correspondingly further back in the T410R chassis.
+- Pinion bore (IMPORTANT): Hobbywing usually delivers the 3660SL G2 with a 5.0 mm shaft (verify specifications with the dealer finally before ordering the pinion). A 48dp pinion with a 5 mm bore (e.g. Robinson Racing) is absolutely required.
+- Power supply: The system voltage is strictly limited to 3S LiPo. A 4S operation would exceed the maximum permissible rotor speed of the motor.
 
 
 ---
 
-### ADR-003: Auswahl des LiPo-Akkus für 100 km/h Ziel.
-**Status:** entschieden | **Datum:** 2026-03-06
+### ADR-003: Selection of the LiPo Battery for the 100 km/h Goal.
+**Status:** decided | **Date:** 2026-03-06
 
-#### Kontext
-Um das RC100 Projekt auf über 100 km/h zu beschleunigen, muss die Energiequelle optimal 
-auf den 4000kV Motor und den 120A ESC (Hobbywing QuicRun) abgestimmt sein. 
-Ein 2S LiPo (7.4V) würde nur ca. 29.600 U/min liefern, was für 100 km/h bei normaler 
-Übersetzung nicht ausreicht. Daher ist ein 3S LiPo (11.1V) zwingend erforderlich, um 
-die rechnerischen ~44.400 U/min zu erreichen. Zudem muss der Akku kurzzeitig extreme 
-Ströme liefern können, ohne in der Spannung einzubrechen (Voltage Sag), und bei einem 
-eventuellen Crash bei hoher Geschwindigkeit physisch geschützt sein.
+#### Context
+In order to accelerate the RC100 project to over 100 km/h, the power source must be optimally 
+matched to the 4000kV motor and the 120A ESC (Hobbywing QuicRun). 
+A 2S LiPo (7.4V) would only deliver approx. 29,600 rpm, which is not sufficient for 100 km/h 
+with a normal gear ratio. Therefore, a 3S LiPo (11.1V) is absolutely necessary to 
+reach the calculated ~44,400 rpm. In addition, the battery must be able to briefly 
+deliver extreme currents without dropping in voltage (voltage sag), and must be physically 
+protected in the event of a crash at high speed.
 
 
-#### Entscheidung
+#### Decision
 > **Absima GreenHorn Line V2 (3S / 5000mAh / 50C / Hardcase)**
 
-#### Begründung (Rationale)
-Die Entscheidung fällt auf den Absima GreenHorn V2 3S LiPo. Mit 50C Entladerate bietet er 
-genügend Puffer für die massiven Stromspitzen beim Beschleunigen der 64Z/38Z Übersetzung. 
-Das Hardcase ist ein Sicherheitsanforderung für Speedruns, da ein Einschlag bei 100 km/h 
-einen Softcase-LiPo sofort zerstören und entzünden würde. Der vorkonfektionierte XT60-Stecker 
-garantiert einen geringen Übergangswiderstand für die hohen Ströme.
+#### Rationale
+The decision is made in favor of the Absima GreenHorn V2 3S LiPo. With a 50C 
+discharge rate, it offers 
+enough buffer for the massive current peaks when accelerating 
+the 64T/38T gearing. 
+The hardcase is a safety requirement for speedruns, as an impact at 100 km/h 
+would immediately destroy and ignite a softcase LiPo. The pre-assembled XT60 connector 
+guarantees a 
+low contact resistance for the high currents.
 
 
-#### Konsequenzen
-- Chassis-Modifikation: Da 3S Hardcase-Akkus ca. 35mm hoch sind, muss die obere Carbon-Akkustrebe im Carten T410R mit 10mm Spacern und längeren M3-Schrauben erhöht werden.
-- Stecker-Kompatibilität: Der Hobbywing-Regler muss zwingend mit einem passenden XT60-Stecker verlötet werden (keine Tamiya-Stecker bei diesen Strömen!).
-- Sicherheit: Laden und Lagern des Akkus (55.5 Wh) darf nur unter Aufsicht in einem Bat-Safe oder einer feuerfesten LiPo-Tasche erfolgen.
+#### Consequences
+- Chassis modification: Since 3S hardcase batteries are approx. 35mm high, the upper carbon battery brace in the Carten T410R must be raised with 10mm spacers and longer M3 screws.
+- Connector compatibility: The Hobbywing controller must absolutely be soldered with a matching XT60 connector (no Tamiya connectors at these currents!).
+- Safety: Charging and storing the battery (55.5 Wh) may only be done under supervision in a Bat-Safe or a fireproof LiPo bag.
 
 
 ---
 
-### ADR-004: Auswahl des Ladegeräts für 3S LiPo-Akkus
-**Status:** entschieden | **Datum:** 2026-03-06
+### ADR-004: Selection of the charger for 3S LiPo batteries
+**Status:** decided | **Date:** 2026-03-06
 
-#### Kontext
-Das Laden des im ADR-003 definierten 3S LiPo-Akkus (11.1V, 5000mAh, 55.5 Wh) erfordert ein 
-sicheres und leistungsfähiges Ladegerät. Um den Akku schonend mit 1C (5 Ampere) zu laden, 
-wird eine Ladeleistung von mindestens 63 Watt (5 Ampere * 12.6V Ladeschlussspannung) benötigt. 
-Zudem muss das Ladegerät die Zellenspannungen (Balancing) exakt überwachen und den internen 
-Widerstand der Zellen messen können, um Brandgefahr vorzubeugen. Der Anschluss muss die 
-hohen Ströme sicher über einen XT60-Stecker übertragen können.
+#### Context
+Charging the 3S LiPo battery defined in ADR-003 (11.1V, 5000mAh, 55.5 
+Wh) requires a 
+safe and powerful charger. To gently charge the battery 
+with 1C (5 Amps), 
+a charging power of at least 63 Watts 
+(5 Amps * 12.6V end-of-charge voltage) is required. 
+In addition, the charger must 
+exactly monitor the cell voltages (balancing) and be able to measure the internal 
+resistance of the cells to prevent fire hazards. The connector must 
+be able to safely transmit the 
+high currents via an XT60 plug.
 
 
-#### Entscheidung
+#### Decision
 > **SkyRC S100neo**
 
-#### Begründung (Rationale)
-Die Entscheidung fällt auf das SkyRC S100neo. Es deckt den "Sweet Spot" zwischen Sicherheit, 
-Leistung und Budget optimal ab. Die 100 Watt interne Leistung (AC) sind mehr als ausreichend, 
-um den 3S 5000mAh LiPo in etwa einer Stunde schonend vollzuladen. Besonders vorteilhaft ist 
-der fest in der Frontblende integrierte XT60-Anschluss, der gefährliche und fehleranfällige 
-Adapterkabel überflüssig macht. Dies passt optimal zur Architektur-Entscheidung des Absima-Akkus.
+#### Rationale
+The decision is made in favor of the SkyRC S100neo. It optimally covers the "sweet spot" 
+between safety, 
+performance and budget. The 100 Watts of internal power (AC) are more than sufficient 
+to gently fully charge the 3S 5000mAh LiPo in about an 
+hour. Particularly advantageous is 
+the XT60 connector firmly integrated into the front panel, which makes dangerous and error-prone 
+adapter cables 
+superfluous. This fits perfectly with the architecture decision of the Absima battery.
 
 
-#### Konsequenzen
-- Sicherheit beim Laden: Neben dem XT60-Hauptstecker muss zwingend das weiße JST-XH Balancer-Kabel des Akkus in den Port des Ladegeräts gesteckt werden, da sonst die Einzelzellen nicht überwacht werden.
-- Kabel-Minimalismus: Es werden keine zusätzlichen Ladekabel benötigt (Akku wird direkt an das Gerät gesteckt).
-- Kühlung: Das Ladegerät verfügt über einen aktiven Lüfter. Beim Laden muss auf einen sicheren Stand und freie Luftzufuhr geachtet werden.
+#### Consequences
+- Safety during charging: In addition to the XT60 main connector, the white JST-XH balancer cable of the battery must strictly be plugged into the port of the charger, otherwise the individual cells will not be monitored.
+- Cable minimalism: No additional charging cables are required (battery is plugged directly into the device).
+- Cooling: The charger has an active fan. During charging, ensure a safe stand and free air supply.
 
 
 ---
 
-### ADR-005: Auswahl der Fernsteuerungsanlage für 100 km/h Speedruns
-**Status:** entschieden | **Datum:** 2026-08-20
+### ADR-005: Selection of the remote control system for 100 km/h speedruns
+**Status:** decided | **Date:** 2026-08-20
 
-#### Kontext
-Ein RC-Car, das mit 100 km/h (ca. 27,7 Meter pro Sekunde) fährt, legt in wenigen Sekunden 
-enorme Distanzen zurück. Die Fernsteuerung (Transmitter) und der Empfänger (Receiver) 
-müssen daher zwingend eine stabile Funkverbindung und ein absolut verlässliches Fail-Safe 
-aufweisen, damit das Fahrzeug am Ende der Beschleunigungsstrecke nicht außer Kontrolle gerät. 
-Es muss abgewogen werden zwischen maximaler Reichweite inkl. Gyro-Unterstützung und einem 
-robusten, ausfallsicheren MVP-Ansatz (Minimum Viable Product), der die Komplexität im Setup reduziert.
+#### Context
+An RC car traveling at 100 km/h (approx. 27.7 meters per second) covers 
+enormous distances in a few seconds. 
+The remote control (transmitter) 
+and the receiver 
+must therefore absolutely have a stable radio connection 
+and an absolutely reliable fail-safe 
+so that the vehicle does not get out of control at the end 
+of the acceleration stretch. 
+A balance must be struck 
+between maximum range incl. gyro support and a 
+robust, 
+failsafe MVP approach (Minimum Viable Product) that reduces the complexity in 
+the setup.
 
 
-#### Entscheidung
+#### Decision
 > **X9S Radio + Mini Waterproof 4-Channel Receiver RG4CHWP**
 
-#### Begründung (Rationale)
-Die Tests mit der Carson Reflex Wheel X1 zeigten eine unzureichende Lenkgenauigkeit, da das Servo in Abhängigkeit vom Lenkausschlag nicht reproduzierbar in die Neutralposition zurückkehrte. Zur Erhöhung der Steuerpräzision wurde die Fernsteuerung X9S Radio in Kombination mit dem Empfänger RG4CHWP für 152 € beschafft.
+#### Rationale
+The tests with the Carson Reflex Wheel X1 showed insufficient steering precision, as the servo did not reproducibly return to the neutral position depending on the steering angle. To increase steering precision, the X9S Radio remote control was purchased in combination with the RG4CHWP receiver for 152 €.
 
 
-#### Konsequenzen
-- Empfängerinstallation: Der RG4CHWP Empfänger wird verbaut und das Fail-Safe zwingend auf Bremse/Neutral programmiert.
-- Schnittstellenkompatibilität: Die Betriebsspannung des Empfängers ist mit der BEC-Ausgangsspannung des Motorreglers abzugleichen.
-- Lenkwinkelbegrenzung: Die Steuerausschläge (Dual Rate) werden auf die Erfordernisse von Hochgeschwindigkeitsfahrten angepasst.
+#### Consequences
+- Receiver installation: The RG4CHWP receiver is installed and the fail-safe must absolutely be programmed to brake/neutral.
+- Interface compatibility: The operating voltage of the receiver must be matched with the BEC output voltage of the motor controller.
+- Steering angle limitation: The steering deflections (Dual Rate) are adapted to the requirements of high-speed driving.
 
 
 ---
 
-### ADR-006: Auswahl des Lenkservos für präzise High-Speed-Kontrolle
-**Status:** entschieden | **Datum:** 2026-08-21
+### ADR-006: Selection of the steering servo for precise high-speed control
+**Status:** decided | **Date:** 2026-08-21
 
-#### Kontext
-Bei Geschwindigkeiten von 100 km/h wirken enorme aerodynamische und mechanische Kräfte 
-auf die Vorderräder des Carten T410R. Ein minimales Zittern, Spiel oder eine zu langsame 
-Reaktionszeit des Lenkservos können sofort zum Kontrollverlust und Totalausfall führen. 
-Zudem ist der Platz in einem 1:10 Tourenwagen-Chassis begrenzt. Da unsere MVP-Fernsteuerung 
-(Carson Reflex Wheel X1) über keinen elektronischen Gyro verfügt, muss das Servo den 
-Geradeauslauf mechanisch stark präzise und kraftvoll halten. Gefordert ist ein Servo 
-mit Metallgetriebe (Robustheit), hoher Stellgeschwindigkeit (~0.11s) und ausreichender 
-Stellkraft (ca. 9 kg).
+#### Context
+At speeds of 100 km/h, enormous aerodynamic and mechanical 
+forces act 
+on the front wheels of the Carten T410R. A minimal jitter, play 
+or a too slow 
+reaction time of the steering servo can immediately lead to loss of control 
+and total failure. 
+In addition, space in a 1:10 touring car chassis 
+is limited. Since our MVP remote control 
+(Carson Reflex Wheel X1) does not have an electronic gyro, the servo must 
+hold the 
+straight line mechanically very precisely and powerfully. A servo 
+with metal gears (robustness), 
+high speed (~0.11s) and sufficient 
+torque (approx. 9 kg) is required.
 
 
-#### Entscheidung
+#### Decision
 > **Savöx SC-1252MG+**
 
-#### Begründung (Rationale)
-Testfahrten zeigten, dass das bisherige Setup die erforderliche Lenkgenauigkeit nicht lieferte. Das Servo kehrte nicht reproduzierbar in die Neutralposition zurück. Daher wurde auf das Savöx SC-1252MG+ (52,72 €) gewechselt. Es bietet eine Stellgeschwindigkeit von 0,07s und eine Stellkraft von 7 kg. Dies gewährleistet eine präzise Rückstellung auf die Neutralposition.
+#### Rationale
+Test drives showed that the previous setup did not provide the required steering precision. The servo did not reproducibly return to the neutral position. Therefore, a change was made to the Savöx SC-1252MG+ (52.72 €). It offers a speed of 0.07s and a torque of 7 kg. This ensures a precise return to the neutral position.
 
 
-#### Konsequenzen
-- Servohorn: Um das Spiel im Lenksystem zu minimieren, wird ein starrer Aluminium-Hebel (ALU CLAMP SERVO HORN - FUTABA, SAVÖX - 3-HOLE - 25T, Artikel HUD293409) ohne Servosaver montiert.
-- BEC-Spannung: Die BEC-Ausgangsspannung des Reglers wird auf 6.0V konfiguriert.
-- Dual-Rate: Der maximale Lenkausschlag wird an der Fernsteuerung begrenzt, um die Stabilität bei 100 km/h sicherzustellen.
-
-
----
-
-### ADR-007: Auswahl der aktiven und passiven Motorkühlung für 3S-Speedruns
-**Status:** entschieden | **Datum:** 2026-03-06
-
-#### Kontext
-Das anvisierte Ziel von 100 km/h erfordert den Einsatz eines 4000kV Motors an einem 
-3S LiPo (11.1V), was zu hohen Drehzahlen von ca. 44.400 U/min und einer enormen 
-länger übersetzten Last (64Z/38Z) führt. Unter diesen Bedingungen entsteht im Motor 
-binnen Sekunden massiv Abwärme. Ohne angemessene Kühlung droht die 
-Entmagnetisierung des Rotors (Hitzetod) oder das Schmelzen der Isolierung. 
-Daher ist ein striktesthermisches Management-System zwingend erforderlich.
-
-
-#### Entscheidung
-> **Passiver 36mm Alu-Kühlkörper kombiniert mit aktivem 40x40mm High-Speed Alu-Lüfter**
-
-#### Begründung (Rationale)
-Die Entscheidung fällt auf ein duales Kühlsystem (aktiv und passiv). Der 36mm 
-Alu-Aufsteckkühlkörper passt optimal auf den Hobbywing 3652SL Motor. Der 40mm 
-High-Speed-Lüfter mit Aluminiumrahmen bietet durch Drehzahlen von bis zu 20.000 U/min 
-den nötigen Orkan, um die Hitze wegzublasen. Ein Aluminiumrahmen beim Lüfter 
-verhindert zudem, dass sich dieser bei Stauhitze verformt, und dient als zusätzlicher 
-Mini-Kühlkörper.
-
-
-#### Konsequenzen
-- Stromversorgung: Der Lüfter muss in einen freien Steckplatz des DumboRC-Empfängers (z.B. CH3 oder CH4) gesteckt werden, um Strom vom Regler-BEC zu beziehen.
-- Kabelmanagement: Durch den hohen Sog des High-Speed-Lüfters müssen alle Kabel (insbesondere Antenne und Servokabel) zwingend mit Kabelbindern gesichert werden, damit sie nicht in die Rotorblätter geraten.
-- Wärmeleitpaste: Es wird dringend empfohlen, zwischen Motor und Alu-Kühlkörper einen Tropfen PC-Wärmeleitpaste aufzutragen, um den thermischen Übergangswiderstand zu minimieren.
+#### Consequences
+- Servo horn: To minimize play in the steering system, a rigid aluminum lever (ALU CLAMP SERVO HORN - FUTABA, SAVÖX - 3-HOLE - 25T, item HUD293409) is mounted without a servo saver.
+- BEC voltage: The BEC output voltage of the controller is configured to 6.0V.
+- Dual-Rate: The maximum steering angle is limited on the remote control to ensure stability at 100 km/h.
 
 
 ---
 
-### ADR-008: Auswahl der Bereifung (Belted Gummireifen für Asphalt) für 100 km/h Speedruns
-**Status:** Entschieden | **Datum:** 2026-02-25
+### ADR-007: Selection of active and passive motor cooling for 3S speedruns
+**Status:** decided | **Date:** 2026-03-06
 
-#### Kontext
-Bei einer Zielgeschwindigkeit von 100 km/h und den damit verbundenen hohen Drehzahlen 
-der Räder dehnen sich Standard-Gummireifen durch die Fliehkraft massiv in der Mitte aus 
-(der sogenannte "Pizza-Cutter-Effekt" oder "Ballooning"). Das führt zu einem sofortigen 
-Kontrollverlust und oft zum Platzen des Reifens. Gefordert sind fertig verklebte Reifen 
-auf Felgen mit einem 12mm-Sechskant-Mitnehmer (passend für das Carten T410R Chassis), 
-die ihre Form unter hohen Fliehkräften zu 100 % beibehalten und deren Gummimischung 
-der hohen Reibungshitze auf rauem Asphalt standhält.
-Zusätzlich muss die reale Streckenbeschaffenheit (nicht staubfreier Normal-Asphalt vs. 
-sauber präparierte Rennstrecke) bei der Wahl des Reifenprofils (Slick vs. Rillen) 
-beachtet werden.
+#### Context
+The targeted goal of 100 km/h requires the use of a 4000kV motor 
+on a 
+3S LiPo (11.1V), which leads to high speeds of approx. 44,400 rpm 
+and an enormous 
+tall gear load (64T/38T). Under these conditions, 
+massive waste heat is generated in the motor 
+within seconds. Without adequate 
+cooling, there is a risk of 
+demagnetization of the rotor (heat death) or melting 
+of the insulation. 
+Therefore, a strict thermal management system 
+is absolutely necessary.
 
 
-#### Entscheidung
+#### Decision
+> **Passive 36mm Alu Heat Sink combined with active 40x40mm High-Speed Alu Fan**
+
+#### Rationale
+The decision is made in favor of a dual cooling system (active and passive). 
+The 36mm 
+aluminum clip-on heat sink fits perfectly on the Hobbywing 3652SL motor. 
+The 40mm 
+high-speed fan with aluminum frame offers the necessary hurricane 
+due to speeds of up to 20,000 rpm 
+to blow the heat away. An aluminum frame 
+on the fan 
+also prevents it from deforming under heat buildup, and 
+serves as an additional 
+mini heat sink.
+
+
+#### Consequences
+- Power supply: The fan must be plugged into a free slot on the DumboRC receiver (e.g. CH3 or CH4) to draw power from the ESC BEC.
+- Cable management: Due to the high suction of the high-speed fan, all cables (especially antenna and servo cables) must absolutely be secured with cable ties so that they do not get caught in the rotor blades.
+- Thermal paste: It is strongly recommended to apply a drop of PC thermal paste between the motor and the aluminum heat sink in order to minimize the thermal contact resistance.
+
+
+---
+
+### ADR-008: Selection of tires (belted rubber tires for asphalt) for 100 km/h speedruns
+**Status:** Decided | **Date:** 2026-02-25
+
+#### Context
+At a target speed of 100 km/h and the associated high 
+speeds 
+of the wheels, standard rubber tires expand massively in the middle due to centrifugal force 
+(the so-called "pizza cutter effect" or "ballooning"
+). This leads to an immediate 
+loss of control and often to the tire bursting. 
+Pre-glued tires 
+on rims with a 12mm hex hub 
+(suitable for the Carten T410R chassis) are required, 
+which retain their shape 100% under high centrifugal forces 
+and whose rubber compound 
+withstands the high friction heat on rough 
+asphalt. 
+In addition, the real track conditions (not 
+dust-free normal asphalt vs. 
+cleanly prepared race track) must be considered when choosing 
+the tire tread (slick vs. grooved). 
+
+
+
+#### Decision
 > **Sweep HANKOOK Tread Belted tires Pre-glued set Pro-compound 36deg for Asphalt (SR-SSF-36AWPG)**
 
-#### Begründung (Rationale)
-Die Entscheidung fällt auf die fertig verklebten Sweep HANKOOK Tread Belted Reifen mit 
-der härteren 36-Shore Asphalt-Mischung. Obwohl ein profilloser Voll-Slick physikalisch 
-die absolute Höchstleistung und maximale Laufruhe bei 100 km/h bietet, ist er im realen 
-Einsatz auf nicht optimal gekehrten Parkplätzen zu empfindlich gegen feinen Staub (Verlust 
-der Traktion). Das Hankook-Profil kann leichten Schmutz abtransportieren und bietet 
-auf Normal-Asphalt das sicherere und gutmütigere Fahrverhalten. Gleichzeitig garantiert 
-das essenzielle Kevlar-Gewebe (Belt) absolute Sicherheit gegen das kritischeAusdehnen.
+#### Rationale
+The decision is made in favor of the pre-glued Sweep HANKOOK Tread 
+Belted tires with 
+the harder 36-shore asphalt compound. Although a treadless 
+full slick physically 
+offers the absolute top performance and maximum smoothness 
+at 100 km/h, in real 
+use on not optimally swept 
+parking lots, it is too sensitive to fine dust (loss 
+of traction). The 
+Hankook tread can transport away light dirt and offers 
+the safer and more good-natured driving behavior on normal asphalt. 
+At the same time, 
+the essential 
+Kevlar fabric (belt) guarantees absolute safety against critical expansion.
 
 
-#### Konsequenzen
-- Vorab-Check: Auch ab Werk fertig verklebte Reifen müssen vor dem ersten Run zwingend auf Verarbeitungsfehler an der Klebenaht geprüft werden (kurz an der Reifenflanke ziehen).
-- Auswuchten: Da bei 100 km/h kleinste Unwuchten das Fahrwerk destabilisieren, sollten die Räder idealerweise mit einer RC-Reifenwaage und Knetblei ausgewuchtet werden.
-- Temperaturfenster: Die 36-Shore Mischung ist relativ hart. Um maximalen mechanischen Grip aufzubauen, müssen die Reifen vor dem eigentlichen Speedrun durch 1-2 langsame Runden warmgefahren werden.
-
-
----
-
-### ADR-009: Auswahl der aerodynamischen Karosserie für 100 km/h Speedruns
-**Status:** entschieden | **Datum:** 2026-03-12
-
-#### Kontext
-Bei einer Zielgeschwindigkeit von 100 km/h (ca. 27,7 m/s) ist die Karosserie kein rein optisches 
-Bauteil mehr, sondern die primäre aerodynamische Schutzschicht. Eine klassische, eckige Karosserie 
-fängt Luft unter der Frontschürze ein, was unweigerlich zu einem 'Blow-over' (Abheben durch 
-Staudruck) führt. Gleichzeitig darf der Luftwiderstand (cW-Wert) den Motor nicht unnötig einbremsen. 
-Das Carten T410R Chassis erfordert eine Breite von 190 mm. Die Materialstärke ist kritisch: 
-Dünnes Lexan (< 0.5 mm) verformt sich bei 100 km/h massiv.
-
-
-#### Entscheidung
-> **ZooRacing Hellcat (190 mm, 0.7mm Stärke)**
-
-#### Begründung (Rationale)
-Die Entscheidung fällt auf die ZooRacing Hellcat in der 0.7mm Standard-Stärke. Sie stellt den 
-optimalen Kompromiss aus minimalem Luftwiderstand (für das Erreichen der 100 km/h) und sicherem 
-Anpressdruck (Verhinderung von Blow-overs) dar. Im Gegensatz zu stark flachen LMP-Karosserien 
-passt sie problemlos über die Stoßdämpferbrücken des Carten T410R. Die Materialstärke von 0.7mm 
-garantiert, dass die Karosserie dem massiven Staudruck bei Top-Speed standhält und nicht zu 
-vibrieren oder auf die Reifen zu schleifen beginnt.
-
-
-#### Konsequenzen
-- Lackierung: Die Karosserie wird unlackiert geliefert. Es muss zwingend spezielle Lexan-Farbe (Polycarbonat-Farbe, z.B. Tamiya PS-Serie) verwendet werden, da normale Farbe abblättern würde.
-- Montage: Der mitgelieferte Heckflügel muss stark steif verschraubt werden. Die Karosserielöcher müssen passgenau mit einer Lexanschere und einem Karosseriebohrer bearbeitet werden.
-- Chassis-Vorbereitung: Der Schaumstoff-Bumper an der Front des Carten T410R muss exakt bündig mit der Innenseite der Frontschürze abschließen, um ein Eindrücken bei High-Speed zu verhindern.
+#### Consequences
+- Pre-check: Even factory pre-glued tires must absolutely be checked for manufacturing defects on the glue seam before the first run (pull briefly on the tire sidewall).
+- Balancing: Since the smallest imbalances destabilize the chassis at 100 km/h, the wheels should ideally be balanced with an RC tire balancer and putty lead.
+- Temperature window: The 36-shore compound is relatively hard. In order to build up maximum mechanical grip, the tires must be warmed up by 1-2 slow laps before the actual speedrun.
 
 
 ---
 
-### ADR-010: Auswahl des GPS-Messsystems zur Validierung der 100 km/h Marke
-**Status:** entschieden | **Datum:** 2026-03-10
+### ADR-009: Selection of the aerodynamic body for 100 km/h speedruns
+**Status:** decided | **Date:** 2026-03-12
 
-#### Kontext
-Die berechneten mathematischen Modelle (Achsdrehzahl, Rollwiderstand, Spannungseinbruch) 
-müssen in der Realität ('Integration Test' auf der Straße) durch harte Telemetriedaten 
-validiert werden. Da das Fahrzeug den Topspeed von 100 km/h oft nur für ein Zeitfenster 
-von 2 bis 3 Sekunden hält, ist eine stark hohe Abtastrate (Update-Frequenz) des 
-Messgeräts zwingend erforderlich. Gleichzeitig darf das Modul das Fahrzeuggewicht (CG) 
-und die Aerodynamik nicht negativ beeinflussen.
+#### Context
+At a target speed of 100 km/h (approx. 27.7 m/s), the body is 
+no longer a purely visual component, but the primary aerodynamic protective layer. 
+A classic, boxy body 
+traps air under the front apron, 
+which inevitably leads to a 'blow-over' (lifting off due to 
+dynamic pressure). At the same time, 
+the air resistance (drag coefficient) must not unnecessarily slow down the motor. 
+The Carten T410R chassis requires a width of 190 mm. The material thickness is 
+critical: 
+Thin lexan (< 0.5 mm) deforms massively at 100 km/h.
 
 
-#### Entscheidung
+#### Decision
+> **ZooRacing Hellcat (190 mm, 0.7mm thickness)**
+
+#### Rationale
+The decision is made in favor of the ZooRacing Hellcat in the 0.7mm standard thickness. 
+It represents the 
+optimal compromise between minimum air resistance (for 
+reaching 100 km/h) and safe 
+downforce (prevention of blow-overs). Unlike very flat LMP bodies, 
+it fits easily over 
+the shock towers of the Carten T410R. The material thickness of 0.7mm 
+guarantees 
+that the body withstands the massive dynamic pressure at top speed and does not 
+start to vibrate or rub against the tires.
+
+
+#### Consequences
+- Painting: The body is supplied unpainted. Special lexan paint (polycarbonate paint, e.g. Tamiya PS series) must be used, as normal paint would flake off.
+- Assembly: The included rear wing must be screwed on very rigidly. The body holes must be precisely machined with lexan scissors and a body reamer.
+- Chassis preparation: The foam bumper on the front of the Carten T410R must sit exactly flush with the inside of the front apron to prevent it from being pushed in at high speed.
+
+
+---
+
+### ADR-010: Selection of the GPS measuring system to validate the 100 km/h mark
+**Status:** decided | **Date:** 2026-03-10
+
+#### Context
+The calculated mathematical models (axle speed, rolling resistance, 
+voltage drop) 
+must be validated in reality ('integration test' on the street) 
+by hard telemetry data. 
+Since the vehicle often only holds the top speed of 100 km/h for a time window 
+of 2 to 3 seconds, a very high sampling rate (update frequency) of the 
+measuring device is absolutely required. 
+At the same time, the module must not 
+negatively affect the vehicle weight (CG) 
+and the aerodynamics.
+
+
+#### Decision
 > **Ruddog GPS Performance Analyzer**
 
-#### Begründung (Rationale)
-Die Entscheidung fällt auf den Ruddog GPS Performance Analyzer. Er ist das perfekte 'Fit-for-Purpose'-
-Tool für dieses Projekt. Die 10Hz Abtastrate garantiert, dass die exakte Höchstgeschwindigkeit 
-erfasst wird, selbst wenn diese nur für den Bruchteil einer Sekunde anliegt. Das geringe Gewicht 
-von 38g verändert das Fahrverhalten des Carten T410R nicht, und die Bluetooth-App-Schnittstelle 
-erspart ein schweres, ablesbares Display direkt auf dem Fahrzeug.
+#### Rationale
+The decision is made in favor of the Ruddog GPS Performance Analyzer. It is 
+the perfect 'fit-for-purpose' 
+tool for this project. The 10Hz sampling rate 
+guarantees that the exact top speed 
+is recorded, even if 
+it is only applied for a fraction of a second. The low weight 
+of 38g does not change the driving behavior of the Carten T410R, and the Bluetooth app interface 
+saves a heavy, readable display directly on the vehicle.
 
 
-#### Konsequenzen
-- Signal-Constraint: Das GPS-Signal geht problemlos durch Lexan-Karosserien, wird aber von Karbonfasern massiv geblockt. Das Modul darf im Carten T410R nicht direkt *unter* dem Karbon-Oberdeck montiert werden. Die optimale Position ist auf dem Schaumstoff-Bumper vorne.
-- Befestigung: Das Gerät muss stark sicher (z.B. mit starkem Klettband oder 3M Dual Lock) fixiert werden, damit es bei einem Überschlag bei 100 km/h nicht als Projektil wegfliegt.
+#### Consequences
+- Signal constraint: The GPS signal easily passes through lexan bodies, but is massively blocked by carbon fibers. The module must not be mounted directly *under* the carbon upper deck in the Carten T410R. The optimal position is on the foam bumper in the front.
+- Mounting: The device must be fixed very securely (e.g. with strong velcro or 3M Dual Lock) so that it does not fly away as a projectile in the event of a rollover at 100 km/h.
 
 
 ---

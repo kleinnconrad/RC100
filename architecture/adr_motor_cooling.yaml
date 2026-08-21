@@ -1,61 +1,49 @@
 adr:
   id: ADR-007
-  title: Auswahl der aktiven und passiven Motorkühlung für 3S-Speedruns
-  status: entschieden
+  title: Selection of active and passive motor cooling for 3S speedruns
+  status: decided
   date: '2026-03-06'
-  context: "Das anvisierte Ziel von 100 km/h erfordert den Einsatz eines 4000kV Motors\
-    \ an einem \n3S LiPo (11.1V), was zu hohen Drehzahlen von ca. 44.400 U/min\
-    \ und einer enormen \nlänger übersetzten Last (64Z/38Z) führt. Unter diesen Bedingungen\
-    \ entsteht im Motor \nbinnen Sekunden massiv Abwärme. Ohne angemessene\
-    \ Kühlung droht die \nEntmagnetisierung des Rotors (Hitzetod) oder das Schmelzen\
-    \ der Isolierung. \nDaher ist ein striktesthermisches Management-System\
-    \ zwingend erforderlich.\n"
+  context: "The targeted goal of 100 km/h requires the use of a 4000kV motor \non a \n3S LiPo (11.1V), which leads to high speeds of approx. 44,400 rpm \nand an enormous \ntall gear load (64T/38T). Under these conditions, \nmassive waste heat is generated in the motor \nwithin seconds. Without adequate \ncooling, there is a risk of \ndemagnetization of the rotor (heat death) or melting \nof the insulation. \nTherefore, a strict thermal management system \nis absolutely necessary.\n"
   considered_alternatives:
   - option_id: 1
-    name: Keine Kühlung (Stock Setup)
+    name: No cooling (Stock Setup)
     type: High-Risk
-    evaluation: Führt bei 3S und der anvisierten Übersetzung unweigerlich zur sofortigen
-      thermischen Zerstörung des Motors.
+    evaluation: Leads inevitably to the immediate
+      thermal destruction of the motor at 3S and the targeted gear ratio.
   - option_id: 2
-    name: Nur passiver Kühlkörper (Heatsink ohne Lüfter)
+    name: Passive heat sink only (Heatsink without fan)
     type: Mid-Risk
-    evaluation: Ein einfacher Aluminium-Kühlkörper vergrößert zwar die Oberfläche,
-      reicht aber ohne aktiven Luftstrom unter der geschlossenen Karosserie bei Speedruns
-      nicht aus, um die massive Stauhitze abzutransportieren.
+    evaluation: A simple aluminum heat sink increases the surface area,
+      but is not sufficient without an active airflow under the closed body during speedruns
+      to remove the massive heat buildup.
   - option_id: 3
-    name: Passiver Alu-Kühlkörper + Aktiver 40mm High-Speed Lüfter
+    name: Passive Alu Heat Sink + Active 40mm High-Speed Fan
     type: Safe / High-Performance
-    evaluation: Die Kombination aus wärmeableitendem Aluminium und einem stark schnell
-      drehenden Lüfter (16.000+ U/min) erzwingt einen starken Airflow direkt am Motorgehäuse
-      und hält die Temperaturen im sicheren Bereich.
-  decision: Passiver 36mm Alu-Kühlkörper kombiniert mit aktivem 40x40mm High-Speed
-    Alu-Lüfter
+    evaluation: The combination of heat-dissipating aluminum and a very fast
+      spinning fan (16,000+ rpm) forces a strong airflow directly at the motor housing
+      and keeps the temperatures in the safe range.
+  decision: Passive 36mm Alu Heat Sink combined with active 40x40mm High-Speed
+    Alu Fan
   cooling_motor:
     component: Hobbywing QuicRun 3652SL (4000kV)
     heatsink:
-      size: 36mm (Passend für 540er / 3650 / 3652 Baugröße)
-      material: Aluminium
-      mounting: Aufsteck-Kühlkörper (Clip-On)
+      size: 36mm (Suitable for 540 / 3650 / 3652 sizes)
+      material: Aluminum
+      mounting: Clip-on heat sink
     fan_active:
-      size: 40x40mm High-Speed Lüfter
-      rpm: 16.000 - 20.000 U/min
-      frame_material: Aluminium (für bessere Wärmeableitung)
+      size: 40x40mm High-Speed Fan
+      rpm: 16,000 - 20,000 rpm
+      frame_material: Aluminum (for better heat dissipation)
       suggested_brands:
-      - Surpass Hobby (Rocket Serie)
+      - Surpass Hobby (Rocket Series)
       - Yeah Racing (Tornado)
       - WTF (Wild Turbo Fan)
-  rationale: "Die Entscheidung fällt auf ein duales Kühlsystem (aktiv und passiv).\
-    \ Der 36mm \nAlu-Aufsteckkühlkörper passt optimal auf den Hobbywing 3652SL Motor.\
-    \ Der 40mm \nHigh-Speed-Lüfter mit Aluminiumrahmen bietet durch Drehzahlen von\
-    \ bis zu 20.000 U/min \nden nötigen Orkan, um die Hitze wegzublasen. Ein Aluminiumrahmen\
-    \ beim Lüfter \nverhindert zudem, dass sich dieser bei Stauhitze verformt, und\
-    \ dient als zusätzlicher \nMini-Kühlkörper.\n"
+  rationale: "The decision is made in favor of a dual cooling system (active and passive). \nThe 36mm \naluminum clip-on heat sink fits perfectly on the Hobbywing 3652SL motor. \nThe 40mm \nhigh-speed fan with aluminum frame offers the necessary hurricane \ndue to speeds of up to 20,000 rpm \nto blow the heat away. An aluminum frame \non the fan \nalso prevents it from deforming under heat buildup, and \nserves as an additional \nmini heat sink.\n"
   consequences:
-  - 'Stromversorgung: Der Lüfter muss in einen freien Steckplatz des DumboRC-Empfängers
-    (z.B. CH3 oder CH4) gesteckt werden, um Strom vom Regler-BEC zu beziehen.'
-  - 'Kabelmanagement: Durch den hohen Sog des High-Speed-Lüfters müssen alle Kabel
-    (insbesondere Antenne und Servokabel) zwingend mit Kabelbindern gesichert werden,
-    damit sie nicht in die Rotorblätter geraten.'
-  - 'Wärmeleitpaste: Es wird dringend empfohlen, zwischen Motor und Alu-Kühlkörper
-    einen Tropfen PC-Wärmeleitpaste aufzutragen, um den thermischen Übergangswiderstand
-    zu minimieren.'
+  - 'Power supply: The fan must be plugged into a free slot on the DumboRC receiver
+    (e.g. CH3 or CH4) to draw power from the ESC BEC.'
+  - 'Cable management: Due to the high suction of the high-speed fan, all cables
+    (especially antenna and servo cables) must absolutely be secured with cable ties
+    so that they do not get caught in the rotor blades.'
+  - 'Thermal paste: It is strongly recommended to apply a drop of PC thermal paste
+    between the motor and the aluminum heat sink in order to minimize the thermal contact resistance.'

@@ -1,29 +1,28 @@
 spec:
   meta:
-    type: Öldruck-Kegeldifferential (Metal Gear)
-    mechanical_load_capacity: '> 100 km/h (ca. 8.300 U/min Achsdrehzahl)'
+    type: Oil-filled bevel differential (Metal Gear)
+    mechanical_load_capacity: '> 100 km/h (approx. 8,300 RPM axle speed)'
   properties:
     material_and_construction:
-      gears_ring_and_bevel: Sintermetall / Stahl
-      diff_outdrives_cup_joints: Gehärteter Stahl
-      diff_case_cup: Faserverstärkter Verbundkunststoff (Composite)
+      gears_ring_and_bevel: Sintered metal / Steel
+      diff_outdrives_cup_joints: Hardened steel
+      diff_case_cup: Fiber-reinforced composite plastic
     mandatory_modifications:
       perfect_shimming:
-        issue: Spielfreiheit
-        description: Die inneren Metallzahnräder müssen beim Zusammenbau mit hauchdünnen
-          Passscheiben (Shims) absolut spielfrei eingestellt werden. Nur so wird verhindert,
-          dass die Zähne unter dem hohen Drehmoment des 3S-Motors überspringen
-          oder abreißen.
+        issue: Freedom from play
+        description: The inner metal gears must be adjusted absolutely free of play during assembly
+          with ultra-thin shims. Only this way is it prevented
+          that the teeth skip or tear off under the high torque of the 3S motor.
       reinforced_sealing:
-        issue: O-Ring Abdichtung
-        description: Bei 8.300 U/min erzeugt das Öl im Inneren einen massiven Fliehkraftdruck
-          nach außen. Die Gummi-O-Ringe müssen mit zähem Spezialfett (z. B. 'Green
-          Slime') abgedichtet werden, damit das Differential nicht trockenläuft.
+        issue: O-ring sealing
+        description: At 8,300 RPM, the oil inside generates a massive centrifugal pressure
+          outwards. The rubber O-rings must be sealed with viscous special grease (e.g. 'Green
+          Slime') so that the differential does not run dry.
       oil_viscosity:
-        issue: Sperrwirkung & Geradeauslauf
-        description: Das Baukasten-Öl ist zu weich und führt bei Speedruns zu unkontrollierbarem
-          Ausbrechen, wenn ein Rad minimal Grip verliert. Es muss stark zähes Silikonöl
-          verwendet werden, um das Auto auf einen sturen Geradeauslauf zu zwingen.
+        issue: Locking effect & straight-line stability
+        description: The kit oil is too soft and leads to uncontrollable
+          breakouts during speedruns if one wheel loses minimal grip. Highly viscous silicone oil
+          must be used to force the car into a stubborn straight-line drive.
         setup_recommendation:
-          front_axle: ca. 100.000 cSt (oder ein komplett starrer Spool/Starrachse)
-          rear_axle: ca. 10.000 cSt
+          front_axle: approx. 100,000 cSt (or a completely rigid spool/solid axle)
+          rear_axle: approx. 10,000 cSt

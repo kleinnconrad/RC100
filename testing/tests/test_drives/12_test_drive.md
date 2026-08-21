@@ -1,29 +1,29 @@
-# Bericht 12. Testfahrt
+# Report 12. Test Drive
 
-## Inhaltsverzeichnis
-- [Rahmendaten und Setup](#rahmendaten-und-setup)
-- [Ergebnisse](#ergebnisse)
-- [Maßnahmen](#maßnahmen)
+## Table of Contents
+- [Basic Data and Setup](#basic-data-and-setup)
+- [Results](#results)
+- [Measures](#measures)
 
-## Rahmendaten und Setup
-- **Datum:** 09.08.2026
-- **Ort:** Bauhaus
-- **Ziel:** Überprüfung des Geradeauslaufverhaltens bei starker Beschleunigung.
-- **Hintergrund:** Neuaufbau des Fahrzeugs nach Totalschaden bei der 4. Speedrun-Session.
-- **Setup-Änderungen gegenüber Vorversion:**
-  - Einbau eines Front Spools.
-  - Montage von 150 g Zusatzgewicht am Frontbumper (im Testverlauf hinzugefügt).
+## Basic Data and Setup
+- **Date:** 2026-08-09
+- **Location:** Bauhaus
+- **Goal:** Checking the straight-line driving behavior during strong acceleration.
+- **Background:** Rebuilding the vehicle after a total loss in the 4th speedrun session.
+- **Setup changes compared to previous version:**
+  - Installation of a front spool.
+  - Mounting of 150 g additional weight on the front bumper (added during the test).
 
-## Ergebnisse
-- Die optimierte Fahrwerksgeometrie führte zu keiner Verbesserung des Fahrverhaltens bei hohen Geschwindigkeiten.
-- Der Einbau des Front Spools bewirkte keine Verbesserung des Fahrverhaltens.
-- Die Montage des Zusatzgewichts am Frontbumper bewirkt keine Verbesserung des Fahrverhaltens.
-- Das Fahrzeug bricht bei starker Beschleunigung nach links aus. Die Ursache ist sehr wahrscheinlich Torque Twist durch die drehmomentstarke Motorisierung.
+## Results
+- The optimized chassis geometry did not lead to an improvement in driving behavior at high speeds.
+- The installation of the front spool did not improve driving behavior.
+- The mounting of the additional weight on the front bumper does not improve driving behavior.
+- The vehicle breaks out to the left during strong acceleration. The cause is very likely torque twist due to the high-torque motorization.
 
-## Maßnahmen
-- Austausch des Motors von einer drehmomentstarken zu einer drehzahlstarken Auslegung (Priorität 1). QuicRun 3652SL G2 Sensorless Motor 5400kV 3.175mm Welle
-- Erhöhung der Federhärte.
-- Überprüfung der Bereifung.
-- Überprüfung von Servo und Servosaver bzw. der Lenkgenauigkeit
-- Einbau von "perfect pass" https://github.com/ambrmart/arduino-rc-launch-control
-- Einbau eines Gyro
+## Measures
+- Replacement of the motor from a high-torque to a high-speed design (Priority 1). QuicRun 3652SL G2 Sensorless Motor 5400kV 3.175mm Shaft
+- Increase in spring stiffness.
+- Checking the tires.
+- Checking servo and servo saver or steering precision
+- Installation of "perfect pass" https://github.com/ambrmart/arduino-rc-launch-control
+- Installation of a gyro

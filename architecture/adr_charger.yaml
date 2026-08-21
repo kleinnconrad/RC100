@@ -1,52 +1,41 @@
 adr:
   id: ADR-004
-  title: Auswahl des Ladegeräts für 3S LiPo-Akkus
-  status: entschieden
+  title: Selection of the charger for 3S LiPo batteries
+  status: decided
   date: '2026-03-06'
-  context: "Das Laden des im ADR-003 definierten 3S LiPo-Akkus (11.1V, 5000mAh, 55.5\
-    \ Wh) erfordert ein \nsicheres und leistungsfähiges Ladegerät. Um den Akku schonend\
-    \ mit 1C (5 Ampere) zu laden, \nwird eine Ladeleistung von mindestens 63 Watt\
-    \ (5 Ampere * 12.6V Ladeschlussspannung) benötigt. \nZudem muss das Ladegerät\
-    \ die Zellenspannungen (Balancing) exakt überwachen und den internen \nWiderstand\
-    \ der Zellen messen können, um Brandgefahr vorzubeugen. Der Anschluss muss die\
-    \ \nhohen Ströme sicher über einen XT60-Stecker übertragen können.\n"
+  context: "Charging the 3S LiPo battery defined in ADR-003 (11.1V, 5000mAh, 55.5 \nWh) requires a \nsafe and powerful charger. To gently charge the battery \nwith 1C (5 Amps), \na charging power of at least 63 Watts \n(5 Amps * 12.6V end-of-charge voltage) is required. \nIn addition, the charger must \nexactly monitor the cell voltages (balancing) and be able to measure the internal \nresistance of the cells to prevent fire hazards. The connector must \nbe able to safely transmit the \nhigh currents via an XT60 plug.\n"
   considered_alternatives:
   - option_id: 1
-    name: Budget / Steckerladegerät (z.B. 20W Basic Lader)
-    type: Low-End / Ohne Display
-    evaluation: Sehr günstig, aber mit ca. 20W massiv unterdimensioniert. Das Laden
-      des 5000mAh Akkus würde über 3 Stunden dauern. Es fehlt ein Display zur Überwachung
-      der Ladeschlussspannung und des Zellendrifts. Ein hohes Sicherheitsrisiko bei
+    name: Budget / Plug Charger (e.g. 20W Basic Charger)
+    type: Low-End / No Display
+    evaluation: Very cheap, but massively undersized at approx. 20W. Charging
+      the 5000mAh battery would take over 3 hours. It lacks a display to monitor
+      the end-of-charge voltage and cell drift. A high safety risk at
       3S.
   - option_id: 2
-    name: High-End Dual-Ladegerät (z.B. Hota D6 Pro / SkyRC D200neo)
+    name: High-End Dual Charger (e.g. Hota D6 Pro / SkyRC D200neo)
     type: Premium / 200W+ / Dual Channel
-    evaluation: Bietet zwei unabhängige Ladeausgänge und enorme Leistung (oft 200W
-      AC). optimal für den Betrieb auf Rennstrecken mit mehreren Akkus. Für dieses
-      Single-Car-Projekt jedoch stark überdimensioniert (Over-Engineering) und oft
-      zu teuer (> 120 €).
+    evaluation: Offers two independent charging outputs and enormous power (often 200W
+      AC). Optimal for operation on racetracks with multiple batteries. However, for this
+      single-car project, it is highly oversized (over-engineering) and often
+      too expensive (> 120 €).
   - option_id: 3
     name: SkyRC S100neo
-    type: Smart AC/DC Ladegerät (Mid-Range)
-    evaluation: Bietet 100 Watt AC-Ladeleistung an der normalen Steckdose (reicht
-      locker für die benötigten 63 Watt bei 1C). Besitzt ein Farbdisplay für detaillierte
-      Telemetrie (Zellenspannung) und hat einen nativen XT60-Anschluss im Gehäuse.
+    type: Smart AC/DC Charger (Mid-Range)
+    evaluation: Offers 100 Watts of AC charging power from a normal socket (easily
+      enough for the required 63 Watts at 1C). Has a color display for detailed
+      telemetry (cell voltage) and has a native XT60 connection in the housing.
   decision: SkyRC S100neo
   charger_meta:
     brand: SkyRC
     model: S100neo
-    type: Smart AC/DC Ladegerät
-  rationale: "Die Entscheidung fällt auf das SkyRC S100neo. Es deckt den \"Sweet Spot\"\
-    \ zwischen Sicherheit, \nLeistung und Budget optimal ab. Die 100 Watt interne\
-    \ Leistung (AC) sind mehr als ausreichend, \num den 3S 5000mAh LiPo in etwa einer\
-    \ Stunde schonend vollzuladen. Besonders vorteilhaft ist \nder fest in der Frontblende\
-    \ integrierte XT60-Anschluss, der gefährliche und fehleranfällige \nAdapterkabel\
-    \ überflüssig macht. Dies passt optimal zur Architektur-Entscheidung des Absima-Akkus.\n"
+    type: Smart AC/DC Charger
+  rationale: "The decision is made in favor of the SkyRC S100neo. It optimally covers the \"sweet spot\" \nbetween safety, \nperformance and budget. The 100 Watts of internal power (AC) are more than sufficient \nto gently fully charge the 3S 5000mAh LiPo in about an \nhour. Particularly advantageous is \nthe XT60 connector firmly integrated into the front panel, which makes dangerous and error-prone \nadapter cables \nsuperfluous. This fits perfectly with the architecture decision of the Absima battery.\n"
   consequences:
-  - 'Sicherheit beim Laden: Neben dem XT60-Hauptstecker muss zwingend das weiße JST-XH
-    Balancer-Kabel des Akkus in den Port des Ladegeräts gesteckt werden, da sonst
-    die Einzelzellen nicht überwacht werden.'
-  - 'Kabel-Minimalismus: Es werden keine zusätzlichen Ladekabel benötigt (Akku wird
-    direkt an das Gerät gesteckt).'
-  - 'Kühlung: Das Ladegerät verfügt über einen aktiven Lüfter. Beim Laden muss auf
-    einen sicheren Stand und freie Luftzufuhr geachtet werden.'
+  - 'Safety during charging: In addition to the XT60 main connector, the white JST-XH
+    balancer cable of the battery must strictly be plugged into the port of the charger, otherwise
+    the individual cells will not be monitored.'
+  - 'Cable minimalism: No additional charging cables are required (battery is
+    plugged directly into the device).'
+  - 'Cooling: The charger has an active fan. During charging,
+    ensure a safe stand and free air supply.'

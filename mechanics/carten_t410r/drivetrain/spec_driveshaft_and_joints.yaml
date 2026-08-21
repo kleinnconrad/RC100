@@ -1,43 +1,43 @@
 spec:
   meta:
-    component: Zentrale Antriebswelle (Center Shaft)
+    component: Central Drive Shaft (Center Shaft)
   properties:
     material_and_suitability:
       driveshaft:
-        component: Kardanwelle (Welle)
-        material: Aluminium (eloxiert), hohl oder massiv (je nach Batch)
-        suitability_100kmh_3s: JA. Aluminium ist hier besser als Stahl, da die geringere
-          rotierende Masse bei ca. 26.000 U/min weniger Vibrationen erzeugt.
+        component: Driveshaft (Shaft)
+        material: Aluminum (anodized), hollow or solid (depending on batch)
+        suitability_100kmh_3s: YES. Aluminum is better here than steel, since the lower
+          rotating mass generates fewer vibrations at approx. 26,000 RPM.
       joint_cups:
-        component: Verbindungsstücke (Diff-Inputs)
-        material: Stahl (Gehärtet)
-        suitability_100kmh_3s: JA. Die Aufnahmen am Differentialeingang sind aus Stahl
-          und halten dem Drehmoment des 3S-Antriebs stand.
+        component: Connectors (Diff-Inputs)
+        material: Steel (Hardened)
+        suitability_100kmh_3s: YES. The mounts at the differential input are made of steel
+          and withstand the torque of the 3S drive.
       rpm_load:
-        component: Drehzahl-Belastung
-        specification: Welle rotiert mit ca. 26.000 U/min
-        suitability_100kmh_3s: Kritisch, aber für das Baukasten-Teil machbar, solange
-          keine Unwucht vorliegt.
+        component: Speed load
+        specification: Shaft rotates at approx. 26,000 RPM
+        suitability_100kmh_3s: Critical, but doable for the kit part, as long as
+          there is no imbalance.
     mandatory_durability_measures:
       centering_floating_problem:
-        issue: Zentrierung (Das 'Floating' Problem)
-        description: Die Welle darf in den Bechern (Cups) nicht hin und her schlagen
+        issue: Centering (The 'Floating' problem)
+        description: The shaft must not hit back and forth in the cups
           ('chatter').
-        action: Zwingend kleine O-Ringe oder Schaumstoff-Plättchen (oft im Baukasten
-          enthalten oder aus alten Dämpfer-Gummis geschnitten) in die Becher legen,
-          bevor die Welle eingesetzt wird. Die Welle muss 'schwimmend', aber spielfrei
-          zwischen den Diffs sitzen.
+        action: Mandatory to place small O-rings or foam pads (often included in the kit
+          or cut from old shock rubbers) into the cups
+          before the shaft is inserted. The shaft must sit 'floating', but without play
+          between the diffs.
       joint_lubrication:
-        issue: Schmierung der Gelenke
-        description: Die Enden der Kardanwelle (Dogbones), die in den Stahlbechern
-          laufen, sind Metall auf Metall. Bei 3S-Power entsteht hier massiver Verschleiß
-          ('Einschlagen').
-        action: Diese Kontaktpunkte mit zähem Molybdän-Fett (schwarz) oder speziellem
-          'Joint Grease' schmieren, um die Reibung zu minimieren.
+        issue: Lubrication of the joints
+        description: The ends of the driveshaft (dogbones) that run in the steel cups
+          are metal on metal. With 3S power, massive wear occurs here
+          ('hammering in').
+        action: Lubricate these contact points with viscous molybdenum grease (black) or special
+          'Joint Grease' to minimize friction.
       runout_check:
-        issue: Prüfung auf Rundlauf
-        description: Roll die Welle vor dem Einbau über eine Glasplatte (oder einen
-          Spiegel).
-        action: Wenn sie auch nur minimal 'eiert' (verbogen ist), wird sie bei 26.000
-          U/min das ganze Chassis in zerstörerische Vibrationen versetzen. In diesem
-          Fall muss sie sofort ersetzt werden.
+        issue: Check for concentricity
+        description: Roll the shaft over a glass plate (or a
+          mirror) before installation.
+        action: If it 'wobbles' even minimally (is bent), it will set the entire chassis into destructive vibrations at 26,000
+          RPM. In this
+          case, it must be replaced immediately.

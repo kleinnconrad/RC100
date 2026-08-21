@@ -1,37 +1,36 @@
 spec:
   meta:
-    beschreibung: Benötigtes Werkzeug für den Zusammenbau des Carten T410R.
+    beschreibung: Required tools for assembling the Carten T410R.
   properties:
     werkzeug_liste:
       inbus_schraubendreher:
-        typ: Innensechskant-Schraubendreher (Hex Wrenches)
+        typ: Hex Wrenches
         groessen: 1.5 mm, 2.0 mm, 2.5 mm
-        hinweis: Pflichtkauf! Carten nutzt im gesamten Auto metrische M3-Maschinenschrauben
-          (keine selbstschneidenden Schrauben). Ein hochwertiger Inbus ist hier stark
-          wichtig, um die Schraubenköpfe und das harte Plastikgewinde beim Eindrehen
-          nicht zu beschädigen.
+        hinweis: Mandatory purchase! Carten uses metric M3 machine screws throughout the car
+          (no self-tapping screws). A high-quality hex wrench is highly
+          important here, so as not to damage the screw heads and the hard plastic thread when screwing in.
         brand: Neewer
-        model: Titan RC Inbus Set (1.5/2.0/2.5/3.0)
+        model: Titanium RC Hex Wrench Set (1.5/2.0/2.5/3.0)
       steckschluessel:
-        typ: RC Radkreuz / Steckschlüssel (Box Wrench)
-        groessen: 5.5 mm und 7.0 mm
-        hinweis: Die 5.5 mm brauchst du permanent für alle M3-Muttern im Chassis.
-          Die 7.0 mm sind für die Radmuttern. Die in der Carten-Anleitung erwähnten
-          10.0 mm werden bei diesem 1/10 Modell überhaupt nicht benötigt.
-        status: Vorhanden (Kein Kauf nötig)
+        typ: RC Cross Wrench / Box Wrench
+        groessen: 5.5 mm and 7.0 mm
+        hinweis: The 5.5 mm is needed permanently for all M3 nuts in the chassis.
+          The 7.0 mm is for the wheel nuts. The 10.0 mm mentioned in the Carten manual
+          is not needed at all for this 1/10 model.
+        status: Available (No purchase necessary)
       klebstoffe_und_chemie:
         schraubensicherung:
-          typ: Schraubensicherungslack (Screw Cement / Threadlocker)
-          hinweis: stark wichtig! Kommt an alle Schrauben, die in Metall gedreht
-            werden (z. B. Motorritzel). In der Carten-Anleitung oft fälschlicherweise
-            als 'GLUE' beschriftet. Niemals für Plastik verwenden!
+          typ: Screw Cement / Threadlocker
+          hinweis: highly important! Goes on all screws that are screwed into metal
+            (e.g. motor pinion). Often incorrectly labeled as 'GLUE' in the Carten manual.
+            Never use for plastic!
           brand: Loctite
-          model: 243 Mittelfest (Blau)
+          model: 243 Medium Strength (Blue)
       klebebaender:
         panzertape:
-          typ: Glasfaserklebeband (Glass Tape)
-          hinweis: Pflicht für den T410R! Das Auto besitzt keine klassischen Plastik-Akkuhalterungen.
-            Das Klebeband wird laut Anleitung durch die Schlitze im Carbon-Chassis
-            gezogen, um den LiPo-Akku festzuschnallen.
+          typ: Glass Tape
+          hinweis: Mandatory for the T410R! The car has no classic plastic battery holders.
+            According to the manual, the tape is pulled through the slots in the carbon chassis
+            to strap the LiPo battery down tightly.
           brand: Arrowmax
           model: Fibre Tape / Battery Tape

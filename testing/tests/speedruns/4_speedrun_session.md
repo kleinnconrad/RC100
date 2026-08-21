@@ -1,26 +1,26 @@
-# 4. Speedrun Testbericht
+# 4. Speedrun Test Report
 
-## Inhaltsverzeichnis
-* [Rahmendaten](#rahmendaten)
-* [Testergebnisse](#testergebnisse)
-* [Vorfall und Schadensanalyse](#vorfall-und-schadensanalyse)
-* [Maßnahmen](#massnahmen)
+## Table of Contents
+* [Basic Data](#basic-data)
+* [Test Results](#test-results)
+* [Incident and Damage Analysis](#incident-and-damage-analysis)
+* [Measures](#measures)
 
-## Rahmendaten
-* **Datum:** 2. August 2026
-* **Ort:** Bauhaus Parkplatz
-* **Ergebnis:** nicht erfolgreich
+## Basic Data
+* **Date:** August 2, 2026
+* **Location:** Bauhaus Parking Lot
+* **Result:** unsuccessful
 
-## Testergebnisse
-* **Gemessene Geschwindigkeit:** 77 km/h
-* **Fahrstabilität:** Ein letzter Versuch mit Frontdifferential. Die Fahrstabilität geht verloren sobald Lenkkorrekturen vorgenommen werden während des Laufs.
+## Test Results
+* **Measured speed:** 77 km/h
+* **Driving stability:** A final attempt with a front differential. Driving stability is lost as soon as steering corrections are made during the run.
 
-## Vorfall und Schadensanalyse
-* **Vorfall:** Bei ca. 80 - 90 km/h crash in eine Europalette
-* **Schaden:** Hintere Differentialbox, drei Querlenkerhalter, Akkuhalter, Motorhalter, Hauptzahnrad, Bodenplatte stark angegriffen.
-* **Konsequenz:** Der Test wurde abgebrochen.
+## Incident and Damage Analysis
+* **Incident:** At approx. 80 - 90 km/h crash into a euro pallet
+* **Damage:** Rear differential box, three wishbone mounts, battery mount, motor mount, main gear, bottom plate strongly affected.
+* **Consequence:** The test was aborted.
 
-## Maßnahmen
-* Ein zweiter Carten Bausatz wurde als Ersatzteillager bestellt. Das Fahrzeug wird neu aufgebaut und konfiguriert.
-* Definitiver Einbau eines Spools.
-* Prüfung der Gewichtsverteilung (vorallem links/rechts)
+## Measures
+* A second Carten kit was ordered as a spare parts depot. The vehicle will be rebuilt and configured.
+* Definitive installation of a spool.
+* Check weight distribution (especially left/right)

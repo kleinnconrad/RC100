@@ -1,28 +1,27 @@
 spec:
   meta:
-    typ: GNSS Performance Analyzer (GPS/GLONASS)
-    referenz_modell: Ruddog GPS Performance Analyzer
-    messfrequenz: 10 Hz (10 Updates pro Sekunde - kritisch für RC Speedruns!)
-    schnittstelle: Bluetooth 4.0 (Auslesen per iOS/Android App)
-    stromversorgung: Integrierter LiPo-Akku (via USB ladbar)
-    gewicht: ca. 38 Gramm
+    type: GNSS Performance Analyzer (GPS/GLONASS)
+    reference_model: Ruddog GPS Performance Analyzer
+    measuring_frequency: 10 Hz (10 Updates per second - critical for RC speedruns!)
+    interface: Bluetooth 4.0 (Readout via iOS/Android App)
+    power_supply: Integrated LiPo battery (chargeable via USB)
+    weight: approx. 38 Grams
     shopping_item:
-      in_liste_aufnehmen: true
-      artikel_name: Ruddog GPS Performance Analyzer
-      kategorie: Testing & Validierung
-      referenz_link: Suche bei Modellbau-Fachhändler (z.B. RC-KleinKram, Tamico, Monster
-        Hopups)
-      geschaetzter_preis_eur: 50
+      add_to_list: true
+      item_name: Ruddog GPS Performance Analyzer
+      category: Testing & Validation
+      reference_link: Search at RC model specialist dealer (e.g. RC-KleinKram, Tamico, Monster Hopups)
+      estimated_price_eur: 50
   properties:
     app_integration:
-      software: RC Gears / Ruddog App (oder baugleiche SkyRC App)
-      funktionen: Top-Speed Messung, 0-100 km/h Zeitmessung, Track-Logging
+      software: RC Gears / Ruddog App (or identical SkyRC App)
+      functions: Top-Speed measurement, 0-100 km/h time measurement, Track-Logging
     mounting_and_setup:
-      positionierung: 'Zwingend an einer Stelle montieren, die freie Sicht zum Himmel
-        hat. Karbonbauteile (wie das Upper-Deck des Carten) schirmen das Satellitensignal
-        ab! Bester Montageort: Auf dem vorderen Schaumstoff-Rammschutz (Bumper).'
-      fixierung: Das Modul bei Speedruns zwingend mit Klettverschluss UND einem zusätzlichen
-        Kabelbinder oder Tape sichern. Die G-Kräfte bei einem Crash sind enorm.
-      bedienung: Das Modul blinkt während der Satellitensuche. Erst losfahren, wenn
-        das GPS-Signal (meist durch durchgehendes Leuchten) als 'Locked' bestätigt
-        ist, sonst fehlen die ersten Meter in der Messung.
+      positioning: 'Must be mounted in a location that has a clear view of the sky. 
+        Carbon components (like the upper deck of the Carten) shield the satellite signal! 
+        Best mounting location: On the front foam bumper.'
+      fixation: The module must absolutely be secured with velcro AND an additional
+        cable tie or tape during speedruns. The G-forces during a crash are enormous.
+      operation: The module flashes during the satellite search. Only start driving when
+        the GPS signal is confirmed as 'Locked' (usually by a solid light), 
+        otherwise the first meters are missing from the measurement.

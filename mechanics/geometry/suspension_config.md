@@ -1,51 +1,51 @@
-## Fahrwerksgeometrie: Spur & Sturz (Das 100 km/h Setup)
+## Chassis Geometry: Toe & Camber (The 100 km/h Setup)
 
 
-## Inhaltsverzeichnis
-* [Fahrwerksgeometrie: Spur & Sturz (Das 100 km/h Setup)](#fahrwerksgeometrie-spur--sturz-das-100-kmh-setup)
-  * [1. Spur (Toe)](#1-spur-toe)
-  * [2. Sturz (Camber)](#2-sturz-camber)
-  * [Setup-Plan (Carten T410R)](#setup-plan-carten-t410r)
-  * [Einstellung am Chassis](#einstellung-am-chassis)
+## Table of Contents
+* [Chassis Geometry: Toe & Camber (The 100 km/h Setup)](#chassis-geometry-toe--camber-the-100-kmh-setup)
+  * [1. Toe](#1-toe)
+  * [2. Camber](#2-camber)
+  * [Setup Plan (Carten T410R)](#setup-plan-carten-t410r)
+  * [Adjustment on the Chassis](#adjustment-on-the-chassis)
 
 
-Die Fahrwerksgeometrie entscheidet bei hohen Geschwindigkeiten darüber, ob das Auto stabil geradeaus fährt oder unkontrollierbar ausbricht. Hier sind die wichtigsten physikalischen Parameter und unser spezifisches Speedrun-Setup.
+The chassis geometry decides at high speeds whether the car drives stable straight ahead or breaks out uncontrollably. Here are the most important physical parameters and our specific speedrun setup.
 
-### 1. Spur (Toe)
-Die Spur beschreibt den Winkel der Räder im Verhältnis zur Längsachse des Autos, **wenn man von oben herabschaut**.
-
-
-
-* **Vorspur (Toe-in):** Die Räder zeigen an der Front leicht nach **innen** (`/ \`).
-  * *Effekt:* Das Auto will stur geradeaus fahren und stabilisiert sich selbst. Es lenkt in Kurven träger ein.
-* **Nachspur (Toe-out):** Die Räder zeigen an der Front leicht nach **außen** (`\ /`).
-  * *Effekt:* Das Auto lenkt stark aggressiv in Kurven ein, wird aber auf der Geraden stark nervös und beginnt zu "schwimmen".
-
-### 2. Sturz (Camber)
-Der Sturz beschreibt den Winkel der Räder, **wenn man von vorne oder hinten auf das Auto schaut**.
+### 1. Toe
+The toe describes the angle of the wheels in relation to the longitudinal axis of the car, **when looking down from above**.
 
 
 
-* **Negativer Sturz:** Die Räder kippen an der Oberseite in Richtung Chassis-Mitte (`/ \`).
-  * *Effekt:* Beim Wanken in der Kurve drückt sich das äußere Rad flach auf den Asphalt und generiert maximalen Grip.
-* **Positiver Sturz:** Die Räder kippen oben nach außen (`\ /`).
-  * *Effekt:* Fährt sich instabil und hat im Onroad-RC-Bereich keinen Nutzen.
-* **Neutraler Sturz (0°):** Das Rad steht exakt senkrecht (`| |`).
-  * *Effekt:* Maximale Auflagefläche auf der Geraden (solange sich der Reifen nicht durch Fliehkraft verformt).
+* **Toe-in:** The wheels point slightly **inwards** at the front (`/ \`).
+  * *Effect:* The car stubbornly wants to drive straight ahead and stabilizes itself. It turns into corners more sluggishly.
+* **Toe-out:** The wheels point slightly **outwards** at the front (`\ /`).
+  * *Effect:* The car turns very aggressively into corners, but becomes highly nervous on the straight and begins to "wander".
+
+### 2. Camber
+The camber describes the angle of the wheels, **when looking at the car from the front or rear**.
+
+
+
+* **Negative Camber:** The wheels tilt inwards towards the chassis center at the top (`/ \`).
+  * *Effect:* When rolling in a corner, the outer wheel presses flat onto the asphalt and generates maximum grip.
+* **Positive Camber:** The wheels tilt outwards at the top (`\ /`).
+  * *Effect:* Drives unstable and has no use in on-road RC applications.
+* **Neutral Camber (0°):** The wheel is exactly vertical (`| |`).
+  * *Effect:* Maximum contact patch on the straight (as long as the tire does not deform due to centrifugal force).
 
 ---
 
-### Setup-Plan (Carten T410R)
+### Setup Plan (Carten T410R)
 
-Für einen kompromisslosen Speedrun (exakt geradeaus, maximale Stabilität) gilt folgendes Basis-Setup:
+For an uncompromising speedrun (exactly straight ahead, maximum stability), the following basic setup applies:
 
-| Achse / Parameter | Einstellung | Physikalischer Grund für 100 km/h |
+| Axle / Parameter | Setting | Physical Reason for 100 km/h |
 | :--- | :--- | :--- |
-| **Vorderachse: Spur** | **0° (Neutral)** | Minimierung des Rollwiderstands bei Geradeausfahrt. |
-| **Hinterachse: Spur** | **2,5° Vorspur** | Erhöhung der Fahrstabilität. Verhindert das Ausbrechen der Hinterachse bei hohen Geschwindigkeiten. (Beim Carten T410R durch die hinteren Querlenkerhalter vorgegeben). |
-| **Sturz (Vorne & Hinten)**| **0° (Neutral)** | Maximale Auflagefläche des Reifens bei Geradeausfahrt für optimale Traktion. |
+| **Front Axle: Toe** | **0° (Neutral)** | Minimization of rolling resistance when driving straight ahead. |
+| **Rear Axle: Toe** | **2.5° Toe-in** | Increase in driving stability. Prevents the rear axle from breaking out at high speeds. (Predefined on the Carten T410R by the rear toe blocks). |
+| **Camber (Front & Rear)**| **0° (Neutral)** | Maximum contact patch of the tire when driving straight ahead for optimal traction. |
 
-### Einstellung am Chassis
-Beim Carten T410R wird die Geometrie über die **Spurstangen** (Turnbuckles – Metallstäbe mit Rechts-/Linksgewinde) eingestellt:
-* **Spur (Vorne):** Änderung der Länge an den Stangen des *Lenkgestänges*.
-* **Sturz:** Änderung der Länge an den *oberen Querlenkern*.
+### Adjustment on the Chassis
+On the Carten T410R, the geometry is adjusted via the **turnbuckles** (metal rods with right/left-hand threads):
+* **Toe (Front):** Changing the length of the rods of the *steering linkage*.
+* **Camber:** Changing the length of the *upper wishbones*.

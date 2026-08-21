@@ -1,51 +1,39 @@
 adr:
   id: ADR-010
-  title: Auswahl des GPS-Messsystems zur Validierung der 100 km/h Marke
-  status: entschieden
+  title: Selection of the GPS measuring system to validate the 100 km/h mark
+  status: decided
   date: '2026-03-10'
-  context: "Die berechneten mathematischen Modelle (Achsdrehzahl, Rollwiderstand,\
-    \ Spannungseinbruch) \nmüssen in der Realität ('Integration Test' auf der Straße)\
-    \ durch harte Telemetriedaten \nvalidiert werden. Da das Fahrzeug den Topspeed\
-    \ von 100 km/h oft nur für ein Zeitfenster \nvon 2 bis 3 Sekunden hält, ist eine\
-    \ stark hohe Abtastrate (Update-Frequenz) des \nMessgeräts zwingend erforderlich.\
-    \ Gleichzeitig darf das Modul das Fahrzeuggewicht (CG) \nund die Aerodynamik nicht\
-    \ negativ beeinflussen.\n"
+  context: "The calculated mathematical models (axle speed, rolling resistance, \nvoltage drop) \nmust be validated in reality ('integration test' on the street) \nby hard telemetry data. \nSince the vehicle often only holds the top speed of 100 km/h for a time window \nof 2 to 3 seconds, a very high sampling rate (update frequency) of the \nmeasuring device is absolutely required. \nAt the same time, the module must not \nnegatively affect the vehicle weight (CG) \nand the aerodynamics.\n"
   considered_alternatives:
   - option_id: 1
-    name: Smartphone mit GPS-App
-    type: Free / 1Hz Standard-GPS
-    evaluation: Kostenlos, aber architektonisch unbrauchbar. Ein Smartphone wiegt
-      zu viel (>150g), stört die Fahrzeugbalance massiv und die Standard-Abtastrate
-      von 1Hz ist zu langsam, um den echten Peak-Speed zu erfassen. Zudem besteht
-      ein extremes Risiko, ein teures Gerät bei einem Crash zu zerstören.
+    name: Smartphone with GPS App
+    type: Free / 1Hz Standard GPS
+    evaluation: Free, but architecturally useless. A smartphone weighs
+      too much (>150g), massively disturbs the vehicle balance and the standard sampling rate
+      of 1Hz is too slow to capture the real peak speed. In addition, there is
+      an extreme risk of destroying an expensive device in a crash.
   - option_id: 2
-    name: Günstiger Fahrrad-Tacho / Mini-GPS-Tracker
-    type: Budget / 1Hz bis 2Hz
-    evaluation: Sehr günstig (~20 €), aber oft zu ungenau bei rasanter Beschleunigung.
-      Keine passenden Apps zur Auswertung von Beschleunigungskurven.
+    name: Cheap Bicycle Speedometer / Mini GPS Tracker
+    type: Budget / 1Hz to 2Hz
+    evaluation: Very cheap (~20 €), but often too inaccurate during rapid acceleration.
+      No suitable apps for evaluating acceleration curves.
   - option_id: 3
     name: Ruddog GPS Performance Analyzer
-    type: RC-spezifischer 10Hz GNSS-Logger
-    evaluation: Kompakt, mit ca. 38g stark leicht und bietet eine Abtastrate von
-      10 Messungen pro Sekunde (10Hz). Erfasst neben dem Topspeed auch G-Kräfte, Beschleunigungszeiten
-      und durchschnittliche Geschwindigkeiten. Bequemes Auslesen per Bluetooth und
-      Smartphone-App.
+    type: RC-specific 10Hz GNSS Logger
+    evaluation: Compact, very light at approx. 38g and offers a sampling rate of
+      10 measurements per second (10Hz). Records G-forces, acceleration times
+      and average speeds in addition to top speed. Convenient reading via Bluetooth and
+      smartphone app.
   decision: Ruddog GPS Performance Analyzer
   gps_meta_hardware:
     brand: Ruddog
     model: GPS Performance Analyzer
-    type: 10Hz GNSS Telemetrie-Modul mit Bluetooth
-  rationale: "Die Entscheidung fällt auf den Ruddog GPS Performance Analyzer. Er ist\
-    \ das perfekte 'Fit-for-Purpose'-\nTool für dieses Projekt. Die 10Hz Abtastrate\
-    \ garantiert, dass die exakte Höchstgeschwindigkeit \nerfasst wird, selbst wenn\
-    \ diese nur für den Bruchteil einer Sekunde anliegt. Das geringe Gewicht \nvon\
-    \ 38g verändert das Fahrverhalten des Carten T410R nicht, und die Bluetooth-App-Schnittstelle\
-    \ \nerspart ein schweres, ablesbares Display direkt auf dem Fahrzeug.\n"
+    type: 10Hz GNSS Telemetry Module with Bluetooth
+  rationale: "The decision is made in favor of the Ruddog GPS Performance Analyzer. It is \nthe perfect 'fit-for-purpose' \ntool for this project. The 10Hz sampling rate \nguarantees that the exact top speed \nis recorded, even if \nit is only applied for a fraction of a second. The low weight \nof 38g does not change the driving behavior of the Carten T410R, and the Bluetooth app interface \nsaves a heavy, readable display directly on the vehicle.\n"
   consequences:
-  - 'Signal-Constraint: Das GPS-Signal geht problemlos durch Lexan-Karosserien, wird
-    aber von Karbonfasern massiv geblockt. Das Modul darf im Carten T410R nicht direkt
-    *unter* dem Karbon-Oberdeck montiert werden. Die optimale Position ist auf dem
-    Schaumstoff-Bumper vorne.'
-  - 'Befestigung: Das Gerät muss stark sicher (z.B. mit starkem Klettband oder 3M
-    Dual Lock) fixiert werden, damit es bei einem Überschlag bei 100 km/h nicht als
-    Projektil wegfliegt.'
+  - 'Signal constraint: The GPS signal easily passes through lexan bodies, but is
+    massively blocked by carbon fibers. The module must not be mounted directly
+    *under* the carbon upper deck in the Carten T410R. The optimal position is on the
+    foam bumper in the front.'
+  - 'Mounting: The device must be fixed very securely (e.g. with strong velcro or 3M
+    Dual Lock) so that it does not fly away as a projectile in the event of a rollover at 100 km/h.'

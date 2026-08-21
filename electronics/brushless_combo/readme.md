@@ -1,58 +1,58 @@
 # Hobbywing QuicRun 120A ESC
 
 
-## Inhaltsverzeichnis
-* [1. Kalibrierung des Gaswegs (Throttle Range Calibration)](#1-kalibrierung-des-gaswegs-throttle-range-calibration)
-  * [1.1 Vorbereitung der Fernsteueranlage (Transmitter)](#11-vorbereitung-der-fernsteueranlage-transmitter)
-  * [1.2 Durchführung der Kalibrierung](#12-durchfuhrung-der-kalibrierung)
-* [2. Parametrierung des "Punch" (Start Mode) via LED-Programmierkarte](#2-parametrierung-des-punch-start-mode-via-led-programmierkarte)
-  * [2.1 Anschluss der Programmierkarte](#21-anschluss-der-programmierkarte)
-  * [2.2 Einstellung des Parameters](#22-einstellung-des-parameters)
-* [3. Auf korrekte Polung des Motors achten](#3-auf-korrekte-polung-des-motors-achten)
-* [4. Programmierung des ESC](#4-programmierung-des-esc)
+## Table of Contents
+* [1. Throttle Range Calibration](#1-throttle-range-calibration)
+  * [1.1 Preparation of the Transmitter](#11-preparation-of-the-transmitter)
+  * [1.2 Performing the Calibration](#12-performing-the-calibration)
+* [2. Parameterization of the "Punch" (Start Mode) via LED Program Card](#2-parameterization-of-the-punch-start-mode-via-led-program-card)
+  * [2.1 Connecting the Program Card](#21-connecting-the-program-card)
+  * [2.2 Setting the Parameter](#22-setting-the-parameter)
+* [3. Ensure Correct Polarity of the Motor](#3-ensure-correct-polarity-of-the-motor)
+* [4. ESC Programming](#4-esc-programming)
 
 
-## 1. Kalibrierung des Gaswegs (Throttle Range Calibration)
+## 1. Throttle Range Calibration
 
-### 1.1 Vorbereitung der Fernsteueranlage (Transmitter)
-* Gastrimmung (Throttle Trim) auf den Wert 0 (Neutral) setzen.
-* Endpunkte (EPA - End Point Adjustment) für Gas und Bremse auf 100% einstellen.
-* ABS-Bremsfunktionen zwingend deaktivieren.
-* Gaskanal-Invertierung prüfen (bei Futaba-Systemen i.d.R. "REV", bei anderen Herstellern "NOR").
-* Fernsteuerung einschalten.
+### 1.1 Preparation of the Transmitter
+* Set the Throttle Trim to the value 0 (Neutral).
+* Set End Point Adjustment (EPA) for throttle and brake to 100%.
+* ABS braking functions must be disabled.
+* Check throttle channel inversion (usually "REV" for Futaba systems, "NOR" for other manufacturers).
+* Turn on the transmitter.
 
-### 1.2 Durchführung der Kalibrierung
-1. Fahrakku an den ausgeschalteten Regler (ESC) anschließen.
-2. Die SET-Taste am Regler drücken und gedrückt halten.
-3. Den Regler über den Hauptschalter einschalten.
-4. Sobald die rote Status-LED zu blinken beginnt, die SET-Taste sofortloslassen.
-5. **Neutralpunkt:** Gashebel in Neutralstellung belassen. SET-Taste einmal drücken. Die grüne LED blinkt einmal zur Bestätigung.
-6. **Vollgas-Endpunkt:** Gashebel auf maximale Vorwärts-Position (Vollgas) ziehen und am mechanischen Anschlag halten. SET-Taste einmal drücken. Die grüne LED blinkt zweimal.
-7. **Vollbrems-Endpunkt:** Gashebel auf maximale Rückwärts-Position (Vollbremse) drücken und am mechanischen Anschlag halten. SET-Taste einmal drücken. Die grüne LED blinkt dreimal.
-8. Gashebel in Neutralstellung zurückführen. Der Regler schließt den Initialisierungsprozess nach ca. drei Sekunden ab und ist betriebsbereit.
+### 1.2 Performing the Calibration
+1. Connect the drive battery to the switched-off ESC.
+2. Press and hold the SET button on the ESC.
+3. Turn on the ESC using the main switch.
+4. As soon as the red status LED starts flashing, release the SET button immediately.
+5. **Neutral point:** Leave the throttle trigger in the neutral position. Press the SET button once. The green LED flashes once for confirmation.
+6. **Full throttle endpoint:** Pull the throttle trigger to the maximum forward position (full throttle) and hold it at the mechanical stop. Press the SET button once. The green LED flashes twice.
+7. **Full brake endpoint:** Push the throttle trigger to the maximum reverse position (full brake) and hold it at the mechanical stop. Press the SET button once. The green LED flashes three times.
+8. Return the throttle trigger to the neutral position. The ESC completes the initialization process after approx. three seconds and is ready for operation.
 
 ---
 
-## 2. Parametrierung des "Punch" (Start Mode) via LED-Programmierkarte
+## 2. Parameterization of the "Punch" (Start Mode) via LED Program Card
 
-### 2.1 Anschluss der Programmierkarte
-1. Sicherstellen, dass der Regler ausgeschaltet ist.
-2. Das Verbindungskabel der Programmierkarte in den dedizierten PRG-Anschluss (3-polig) des Reglers einstecken.
-3. Polarität zwingend beachten: Das Massekabel (schwarz/braun) muss an den Minuspol (-), das Signalkabel (weiß/orange) an den Signalpol (S/P).
-4. Das gegenüberliegende Ende des Kabels mit der Programmierkarte verbinden.
+### 2.1 Connecting the Program Card
+1. Make sure the ESC is turned off.
+2. Plug the connection cable of the program card into the dedicated PRG port (3-pin) of the ESC.
+3. Strictly observe polarity: The ground cable (black/brown) must be connected to the negative pole (-), the signal cable (white/orange) to the signal pole (S/P).
+4. Connect the opposite end of the cable to the program card.
 
-### 2.2 Einstellung des Parameters
-1. Fahrakku anschließen und den Regler einschalten. Die numerische Segmentanzeige der Programmierkarte wird aktiviert.
-2. Taste **ITEM** iterativ betätigen, bis der Parameter für "Start Mode / Punch" (i.d.R. Menüpunkt 4) auf dem linken Displayfeld angezeigt wird.
-3. Taste **VALUE** betätigen, um den numerischen Wert zu spezifizieren.
-   * *Hinweis für die vorliegende Hochlast-Übersetzung (43/72):* Wert zwingend auf **1 (Soft)** setzen, um kritische Einschaltströme (Blockierströme) zu minimieren und eine Auslösung der Überstromschutzschaltung zu verhindern.
-4. Taste **OK** drücken, um den geänderten Wert in den nichtflüchtigen Speicher des Reglers zu schreiben. (Motor gibt i.d.R. ein akustisches Bestätigungssignal ab).
-5. Regler ausschalten und die physische Verbindung zur Programmierkarte trennen.
+### 2.2 Setting the Parameter
+1. Connect the drive battery and turn on the ESC. The numeric segment display of the program card is activated.
+2. Iteratively press the **ITEM** button until the parameter for "Start Mode / Punch" (usually menu item 4) is displayed on the left display field.
+3. Press the **VALUE** button to specify the numeric value.
+   * *Note for the present high-load gear ratio (43/72):* Value must absolutely be set to **1 (Soft)** to minimize critical inrush currents (stall currents) and prevent triggering of the overcurrent protection circuit.
+4. Press the **OK** button to write the changed value into the non-volatile memory of the ESC. (Motor usually gives an acoustic confirmation signal).
+5. Turn off the ESC and disconnect the physical connection to the program card.
 
-## 3. Auf korrekte Polung des Motors achten
-Der sitz des Motors im Carten erfordert eine, zum Standard, inverse Polung damit technische und physikalische Bewegungsrichtung deckungsgleich sind. Die technischen Drehrichtungen werden unterschiedlich gesteuert, sodass ein reines invertieren an der Fernsteuerung nicht ausreichend ist.
+## 3. Ensure Correct Polarity of the Motor
+The fit of the motor in the Carten requires an inverse polarity compared to the standard so that technical and physical direction of movement are congruent. The technical directions of rotation are controlled differently, so that purely inverting on the remote control is not sufficient.
 
-## 4. Programmierung des ESC
+## 4. ESC Programming
 
 | Item | Programmable Items | Option 1 | Option 2 | Option 3 | Option 4 | Option 5 | Option 6 | Option 7 | Option 8 | Option 9 |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
@@ -67,4 +67,4 @@ Der sitz des Motors im Carten erfordert eine, zum Standard, inverse Polung damit
 | 9 | LiPo Cells* | **(Auto)** | 2S | 3S | 4S | 5S | 6S | | | |
 | 10 | BEC Voltage | **(6.0V)** | 7.4V | | | | | | | |
 
-![Programmierkarte ESC](https://github.com/kleinnconrad/RC100/blob/main/fotos/PXL_20260319_093605867.jpg)
+![Program Card ESC](https://github.com/kleinnconrad/RC100/blob/main/photos/PXL_20260319_093605867.jpg)

@@ -1,30 +1,30 @@
-### Maßstab 1:10 Bausatz-Benchmark (100 km/h Fokus)
+### Scale 1:10 Kit Benchmark (100 km/h Focus)
 
-| Eigenschaft / Spezifikation | Carten T410R (Basis) | Tamiya TT-02 SRX | Xpress Arrow AT1S | Xpress Execute XQ2S | SNRC R23 / R3G | Rlaarlo AK917 | Xray X4 '24 (Benchmark) |
+| Property / Specification | Carten T410R (Base) | Tamiya TT-02 SRX | Xpress Arrow AT1S | Xpress Execute XQ2S | SNRC R23 / R3G | Rlaarlo AK917 | Xray X4 '24 (Benchmark) |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Antriebskonzept** | Kardanwelle (Shaft) | Kardanwelle (Shaft) | Kardanwelle (Shaft) | 2-Riemen (Belt) | 2-Riemen (Belt) | Kardanwelle (Shaft) | 2-Riemen (Belt) |
-| **Chassis-Bodenplatte** | 3mm **Carbon** | Kunststoffwanne | FRP (Glasfaser) | FRP (Glasfaser) | **Carbon** | **Carbon** oder Aluminium | Premium **Carbon** |
-| **Differential-Zahnräder** | **Metall** (Sintermetall) | Spool vorne / Kegeldiff hinten | Kunststoff / Composite | Kunststoff / Composite | Kunststoff / Composite | **Metall** (1:8 Komponenten) | Kunststoff (Wettbewerbs-Güte) |
-| **Aufhängungssystem** | C-Hubs | C-Hubs (TRF) | C-Hubs | C-Hubs | C-Hubs | C-Hubs | Pivot-Ball / Active-Toe |
-| **Motorposition** | Hinten rechts | Hinten rechts | Hinten rechts | Mitte / Mid-Motor | Mitte / Mid-Motor | Mitte | Mitte (Ultra-Low) |
-| **Torsionssteifigkeit (Flex)**| Sehr steif | Weich (Wannen-Flex) | Mittel (FRP flext mehr) | Mittel (FRP flext mehr) | Sehr steif | Sehr steif | optimal berechnet |
-| **Risiko bei 3S / 100 km/h**| Gering (Welle stark robust) | Hoch (Instabilität durch Flex) | Mittel (FRP flattern möglich) | Hoch (Riemen-Überspringen) | Mittel (Riemen-Risiko) | Sehr gering (1:8 Antriebsstrang) | Sehr gering (Perfekte Mechanik) |
-| **Ca. Preis (Nur Bausatz/Roller)** | **~ 180 €** | **~ 250 €** | **~ 150 €** | **~ 150 €** | **~ 140 €** | **~ 170 €** | **~ 750 €** |
+| **Drive Concept** | Shaft | Shaft | Shaft | 2-Belt | 2-Belt | Shaft | 2-Belt |
+| **Chassis Bottom Plate** | 3mm **Carbon** | Plastic tub | FRP (Fiberglass) | FRP (Fiberglass) | **Carbon** | **Carbon** or Aluminum | Premium **Carbon** |
+| **Differential Gears** | **Metal** (Sintered metal) | Front spool / Rear bevel diff | Plastic / Composite | Plastic / Composite | Plastic / Composite | **Metal** (1:8 Components) | Plastic (Competition grade) |
+| **Suspension System** | C-Hubs | C-Hubs (TRF) | C-Hubs | C-Hubs | C-Hubs | C-Hubs | Pivot-Ball / Active-Toe |
+| **Motor Position** | Rear right | Rear right | Rear right | Mid-Motor | Mid-Motor | Mid | Mid (Ultra-Low) |
+| **Torsional Stiffness (Flex)**| Very stiff | Soft (Tub flex) | Medium (FRP flexes more) | Medium (FRP flexes more) | Very stiff | Very stiff | Optimally calculated |
+| **Risk at 3S / 100 km/h**| Low (Shaft highly robust) | High (Instability due to flex) | Medium (FRP flutter possible) | High (Belt skipping) | Medium (Belt risk) | Very low (1:8 drivetrain) | Very low (Perfect mechanics) |
+| **Approx. Price (Kit/Roller only)** | **~ 180 €** | **~ 250 €** | **~ 150 €** | **~ 150 €** | **~ 140 €** | **~ 170 €** | **~ 750 €** |
 
-Anmerkung: Differential-Zahnräder aus Kunststoff / Composite stellen im Hochgeschwindigkeitsbereich ein mechanisches Risiko dar.
+Note: Differential gears made of plastic / composite represent a mechanical risk in the high-speed range.
 
-### Maßstab 1:8 / 1:7 Speedrun-Benchmark
+### Scale 1:8 / 1:7 Speedrun Benchmark
 
-Anmerkung: Das Projekt fokussiert sich auf den Maßstab 1:10. Die Auflistung der Maßstäbe 1:8 und 1:7 dient ausschließlich der Vollständigkeit.
+Note: The project focuses on the 1:10 scale. The listing of the 1:8 and 1:7 scales serves solely for completeness.
 
 
-| Eigenschaft / Spezifikation | Arrma Limitless V2 (1:7) | Hobao Hyper VTE2 (1:7) |
+| Property / Specification | Arrma Limitless V2 (1:7) | Hobao Hyper VTE2 (1:7) |
 | :--- | :--- | :--- |
-| **Antriebskonzept** | Kardanwelle (Shaft) mit Spool | Kardanwelle (Shaft) |
-| **Chassis-Bodenplatte** | 3mm **Aluminium** | 3mm **Aluminium** |
-| **Differential-Zahnräder** | **Metall** (Mod 1.0) | **Metall** (Mod 1.0) |
-| **Aufhängungssystem** | Pivot-Ball | Pivot-Ball |
-| **Motorposition** | Mitte | Mitte |
-| **Torsionssteifigkeit (Flex)**| Sehr steif | Sehr steif |
-| **Risiko bei > 150 km/h** | Sehr gering (Konzipiert für Speedruns) | Sehr gering (Konzipiert für Speedruns) |
-| **Ca. Preis (Nur Bausatz/Roller)** | **~ 350 €** | **~ 400 €** |
+| **Drive Concept** | Shaft with Spool | Shaft |
+| **Chassis Bottom Plate** | 3mm **Aluminum** | 3mm **Aluminum** |
+| **Differential Gears** | **Metal** (Mod 1.0) | **Metal** (Mod 1.0) |
+| **Suspension System** | Pivot-Ball | Pivot-Ball |
+| **Motor Position** | Mid | Mid |
+| **Torsional Stiffness (Flex)**| Very stiff | Very stiff |
+| **Risk at > 150 km/h** | Very low (Designed for speedruns) | Very low (Designed for speedruns) |
+| **Approx. Price (Kit/Roller only)** | **~ 350 €** | **~ 400 €** |

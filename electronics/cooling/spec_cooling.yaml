@@ -3,36 +3,36 @@ spec:
     cooling_motor:
       component: Hobbywing QuicRun 3652SL (4000kV)
       heatsink:
-        size: 36mm (Passend für 540er / 3650 / 3652 Baugröße)
-        material: Aluminium
-        mounting: Aufsteck-Kühlkörper (Clip-On)
+        size: 36mm (Suitable for 540 / 3650 / 3652 sizes)
+        material: Aluminum
+        mounting: Clip-on heat sink
       fan_active:
-        size: 40x40mm High-Speed Lüfter
-        rpm: 16.000 - 20.000 U/min
-        frame_material: Aluminium (für bessere Wärmeableitung)
+        size: 40x40mm High-Speed Fan
+        rpm: 16,000 - 20,000 rpm
+        frame_material: Aluminum (for better heat dissipation)
         suggested_brands:
-        - Surpass Hobby (Rocket Serie)
+        - Surpass Hobby (Rocket Series)
         - Yeah Racing (Tornado)
         - WTF (Wild Turbo Fan)
-        power_supply: Anschluss an freien Empfänger-Kanal (z.B. CH3 oder CH4), Stromversorgung
-          direkt über das BEC des Reglers (6.0V/7.4V)
+        power_supply: Connection to free receiver channel (e.g. CH3 or CH4), power supply
+          directly via the BEC of the ESC (6.0V/7.4V)
     cooling_esc:
       component: Hobbywing QuicRun WP 10BL120 G2
-      status: Keine Modifikation notwendig
-      description: Der Regler verfügt ab Werk über einen verschraubten Kühlkörper
-        und einen aktiven Lüfter, der auf die 120A Dauerlast abgestimmt ist und für
-        3S-Speedruns ausreicht.
+      status: No modification necessary
+      description: The ESC has a screwed-on heat sink from the factory
+        and an active fan that is tuned to the 120A continuous load and is sufficient for
+        3S speedruns.
     cooling_best_practices:
       thermal_paste:
-        issue: Wärmeübertragung
-        action: Ein winziger Tropfen PC-Wärmeleitpaste zwischen Motorgehäuse und Alu-Kühlkörper
-          verbessert die Hitzeübertragung massiv.
+        issue: Heat transfer
+        action: A tiny drop of PC thermal paste between the motor housing and the aluminum heat sink
+          massively improves heat transfer.
       cable_management:
-        issue: Sog des High-Speed-Lüfters
-        action: Alle Sensorkabel und Antennen zwingend mit Kabelbindern fixieren,
-          damit sie nicht vom starken Luftzug in die Rotorblätter gesaugt werden.
+        issue: Suction of the high-speed fan
+        action: All sensor cables and antennas must absolutely be fixed with cable ties,
+          so that they are not sucked into the rotor blades by the strong draft.
       body_airflow:
-        issue: Hitzestau unter der Karosserie
-        action: Für Speedruns zwingend Lüftungslöcher in die Frontscheibe oder die
-          hinteren Seitenfenster schneiden, damit ein kühlender Durchzug (Airflow)
-          entsteht.
+        issue: Heat buildup under the body
+        action: For speedruns, it is absolutely necessary to cut ventilation holes in the windshield or the
+          rear side windows, so that a cooling draft (airflow)
+          is created.

@@ -1,29 +1,30 @@
-# Testprotokoll: 4. Testfahrt
+# Test Log: 4. Test Drive
 
-## Inhaltsverzeichnis
-* [Metadaten](#metadaten)
-* [Ziel der Testfahrt](#ziel-der-testfahrt)
-* [Testverlauf und Ergebnis](#testverlauf-und-ergebnis)
-* [Fehlerbild und aufgetretene Probleme](#fehlerbild-und-aufgetretene-probleme)
-* [Geplante Maßnahmen](#geplante-massnahmen)
-* [Durchgeführte Anpassungen](#durchgefuehrte-anpassungen)
+## Table of Contents
+* [Metadata](#metadata)
+* [Goal of the test drive](#goal-of-the-test-drive)
+* [Test course and result](#test-course-and-result)
+* [Error pattern and problems encountered](#error-pattern-and-problems-encountered)
+* [Planned measures](#planned-measures)
+* [Implemented adjustments](#implemented-adjustments)
 
-## Metadaten
-* **Datum:** 29.03.2026
-* **Ort:** Tiefgarage
-* **Fokus:** Überprüfung Schraubverbindungen und sonstige Fehler
-* **Status:** ## Ziel der Testfahrt
-Halten die Schraubverbindungen? Treten neue Fehler auf?
+## Metadata
+* **Date:** 2026-03-29
+* **Location:** Underground garage
+* **Focus:** Check screw connections and other errors
+* **Status:** 
 
-## Testverlauf und Ergebnis
-Keine Feststellungen
+## Goal of the test drive
+Do the screw connections hold? Are there new errors?
 
-## Fehlerbild und aufgetretene Probleme
-Keine besonderen Feststellungen.
+## Test course and result
+No findings
 
-## Geplante Maßnahmen
-Keine besonderen Feststellungen.
+## Error pattern and problems encountered
+No special findings.
 
-## Durchgeführte Anpassungen
-Keine besonderen Feststellungen.
+## Planned measures
+No special findings.
 
+## Implemented adjustments
+No special findings.

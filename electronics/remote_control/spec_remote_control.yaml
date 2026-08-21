@@ -1,28 +1,28 @@
 spec:
   meta:
     brand: Konect
-    model: X9S Radio + RG4CHWP Empfänger
-    type: 4-Kanal 2.4 GHz Pistolengriff-Sender
+    model: X9S Radio + RG4CHWP Receiver
+    type: 4-Channel 2.4 GHz Pistol Grip Transmitter
     channels: 4
     price_class: Mid-Range (~152 EUR)
     shopping_item:
-      in_liste_aufnehmen: true
-      artikel_name: X9S Radio + Mini Waterproof 4-Channel Receiver RG4CHWP
-      kategorie: Steuerung & Elektronik
-      referenz_link: Suche bei Modellbau-Fachhändler (z.B. Tamico, Berlinski, Amazon)
-      geschaetzter_preis_eur: 152.0
+      add_to_list: true
+      item_name: X9S Radio + Mini Waterproof 4-Channel Receiver RG4CHWP
+      category: Control & Electronics
+      reference_link: Search at RC model specialist dealer (e.g. Tamico, Berlinski, Amazon)
+      estimated_price_eur: 152.0
     integrated_features:
-    - Fail-Safe Funktion (Schutz bei Signalverlust)
-    input_voltage: 'Abstimmung mit BEC des ESC erforderlich'
+    - Fail-Safe Function (Protection in case of signal loss)
+    input_voltage: 'Coordination with BEC of the ESC required'
   properties:
     tx_performance:
       protocol: 2.4Ghz
-      range_ground: >200m
-      response_time: Geringe Latenz für hohe Präzision
-      power_supply: Senderbatterien gemäß Herstellervorgabe
-      potentiometer: Hall Sensor für möglichst hohe Präzision
+      range_ground: '>200m'
+      response_time: Low latency for high precision
+      power_supply: Transmitter batteries according to manufacturer specifications
+      potentiometer: Hall Sensor for highest possible precision
     calibration_and_setup:
-      fail_safe_activation: Das Fail-Safe muss zwingend auf Bremse programmiert werden! Auto aufbocken, Vollbremsung an der Funke halten und den Setup-Knopf am Empfänger drücken. Beim Ausschalten der Funke muss das Auto sofort bremsen.
-      steering_dual_rate: Über den Dual Rate (D/R) Drehregler an der Fernsteuerung den maximalen Lenkausschlag zwingend reduzieren. Bei 100 km/h führt ein voller Lenkausschlag zum Überschlag.
-      throttle_trim: Die Trimmung für das Gas (TH Trim) muss exakt auf dem Nullpunkt (Mitte) stehen, bevor der Regler kalibriert wird.
-      bec_voltage_warning: Das BEC des Reglers muss mit der Eingangsspannung des Empfängers abgeglichen werden.
+      fail_safe_activation: The fail-safe must absolutely be programmed to brake! Jack up the car, hold full brake on the remote and press the setup button on the receiver. When turning off the remote, the car must brake immediately.
+      steering_dual_rate: Reduce the maximum steering angle via the Dual Rate (D/R) dial on the remote control. At 100 km/h, full steering angle leads to a rollover.
+      throttle_trim: The throttle trim (TH Trim) must be exactly at the zero point (center) before the ESC is calibrated.
+      bec_voltage_warning: The BEC of the ESC must be matched with the input voltage of the receiver.

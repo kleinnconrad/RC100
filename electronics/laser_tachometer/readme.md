@@ -1,30 +1,30 @@
-# Test Lasertachometer
+# Laser Tachometer Test
 
 
-## Inhaltsverzeichnis
-* [Validierung & Erkenntnisse](#validierung--erkenntnisse)
-* [Theoretische Geschwindigkeit](#theoretische-geschwindigkeit)
+## Table of Contents
+* [Validation & Findings](#validation--findings)
+* [Theoretical Speed](#theoretical-speed)
 
 
-**Komponente:** Digitales Lasertachometer (Optische Drehzahlmessung)
-**Datum:** 16.03.2026
-**Status:** Verifiziert / Einsatzbereit
+**Component:** Digital Laser Tachometer (Optical Speed Measurement)
+**Date:** 2026-03-16
+**Status:** Verified / Ready for use
 
-## Validierung & Erkenntnisse
+## Validation & Findings
 
-* **Messmethode:** Das Lasertachometer wurde zur Validierung im RPM-Modus (Umdrehungen pro Minute) getestet.
-* **Referenz-Testlauf:** Um die Genauigkeit der Messung zu verifizieren, wurde der Test an einem bekannten, bereits vorhandenen RC-Auto durchgeführt. Zur Erfassung des optischen Lasersignals wurde ein Reflexionsstreifen an der Außenflanke des Rades appliziert.
-* **Plausibilitätsprüfung:** Der erfasste RPM-Wert und die daraus abgeleitete Geschwindigkeit sind plausibel. Das Messgerät liefert Daten und ist somit für die Datenerfassung am Carten T410R Speedrun-Projekt freigegeben.
+* **Measurement method:** The laser tachometer was tested in RPM mode (revolutions per minute) for validation.
+* **Reference test run:** To verify the accuracy of the measurement, the test was performed on a known, already existing RC car. To capture the optical laser signal, a reflection strip was applied to the outer flank of the wheel.
+* **Plausibility check:** The recorded RPM value and the resulting speed are plausible. The measuring device provides data and is thus approved for data acquisition on the Carten T410R speedrun project.
 
-## Theoretische Geschwindigkeit
+## Theoretical Speed
 
 v = (d * π * rpm * 60) / 1000²
 
-**Testrechnung mit den erfassten Werten:**
-* Raddurchmesser (d): 64 mm
-* Gemessene Drehzahl (rpm): 2340.2
+**Test calculation with the recorded values:**
+* Wheel diameter (d): 64 mm
+* Measured RPM (rpm): 2340.2
 
-v = (64 * 3.14159 * 2340.2 * 60) / 1.000.000
-**v ≈ 28,23 km/h**
+v = (64 * 3.14159 * 2340.2 * 60) / 1,000,000
+**v ≈ 28.23 km/h**
 
-<img src="https://github.com/kleinnconrad/RC100/blob/main/fotos/PXL_20260316_115617586.MP.jpg" alt="Lasertachometer Testaufbau" width="50%">
+<img src="https://github.com/kleinnconrad/RC100/blob/main/photos/PXL_20260316_115617586.MP.jpg" alt="Laser Tachometer Test Setup" width="50%">

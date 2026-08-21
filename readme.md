@@ -1,44 +1,44 @@
-# RC100: 1:10 RC-Fahrzeug für Geschwindigkeiten über 100 km/h
+# RC100: 1:10 RC Car for Speeds over 100 km/h
 
-Dieses Projekt umfasst die Systemarchitektur und den Aufbau eines Onroad-Tourenwagens im Maßstab 1:10 mit dem Konstruktionsziel einer jederzeit wiederholbaren Endgeschwindigkeit von über 100 km/h. Der Fokus liegt auf der Maximierung der Antriebsleistung bei gleichzeitiger Gewährleistung der Zuverlässigkeit und Kosteneffizienz.
+This project covers the system architecture and construction of a 1:10 scale on-road touring car with the design goal of a consistently repeatable top speed of over 100 km/h. The focus is on maximizing drive power while ensuring reliability and cost efficiency.
 
-Die technische Herausforderung resultiert primär aus dem gewählten Maßstab und dem limitierten Reifendurchmesser von 64 Millimetern. Während Fahrzeuge ab dem Maßstab 1:8 durch höhere Masseträgheit, größere Abrollumfänge und einen längeren Radstand physikalische Vorteile aufweisen, erfordert der Maßstab 1:10 signifikant höhere Rotordrehzahlen. Dies führt zu hohen mechanischen Belastungen im Antriebsstrang. Das geringe Fahrzeuggewicht erfordert zudem präzise aerodynamische und fahrwerksseitige Abstimmungen zur Sicherstellung der Fahrstabilität bei hohen Geschwindigkeiten.
+The technical challenge primarily results from the chosen scale and the limited tire diameter of 64 millimeters. While vehicles from 1:8 scale have physical advantages due to higher mass inertia, larger rolling circumferences, and a longer wheelbase, the 1:10 scale requires significantly higher rotor speeds. This leads to high mechanical stresses in the drivetrain. The low vehicle weight also requires precise aerodynamic and suspension tuning to ensure driving stability at high speeds.
 
 <table>
   <tr>
-    <td><img src="https://github.com/kleinnconrad/RC100/blob/main/fotos/PXL_20260315_113015136.jpg?raw=true" alt="Carten T410R JK" width="100%"></td>
-    <td><img src="https://github.com/kleinnconrad/RC100/blob/main/fotos/PXL_20260319_133949504.jpg?raw=true" alt="Carten T410R CK" width="100%"></td>
+    <td><img src="https://github.com/kleinnconrad/RC100/blob/main/photos/PXL_20260315_113015136.jpg?raw=true" alt="Carten T410R JK" width="100%"></td>
+    <td><img src="https://github.com/kleinnconrad/RC100/blob/main/photos/PXL_20260319_133949504.jpg?raw=true" alt="Carten T410R CK" width="100%"></td>
   </tr>
 </table>
 
-## Inhaltsverzeichnis
-* [Repository-Struktur](#repository-struktur)
-* [Hardwarearchitektur und Mechanik](#hardwarearchitektur-und-mechanik)
-* [Berechnungsmodelle zur Antriebsauslegung](#berechnungsmodelle-zur-antriebsauslegung)
-* [Learnings & Modifikationen](#learnings--modifikationen)
-* [Repository-Verwaltung und Automatisierung](#repository-verwaltung-und-automatisierung)
-* [Weiterführendes Projekt: Telemetriesystem](#weiterführendes-projekt-telemetriesystem)
-* [Lizenzierung](#lizenzierung)
+## Table of Contents
+* [Repository Structure](#repository-structure)
+* [Hardware Architecture and Mechanics](#hardware-architecture-and-mechanics)
+* [Calculation Models for Drivetrain Design](#calculation-models-for-drivetrain-design)
+* [Learnings & Modifications](#learnings--modifications)
+* [Repository Management and Automation](#repository-management-and-automation)
+* [Follow-Up Project: Telemetry System](#follow-up-project-telemetry-system)
+* [Licensing](#licensing)
 
-## Repository-Struktur
-Das Projekt ist in themenspezifische Verzeichnisse gegliedert:
-* **`/architektur`**: Dokumentation grundlegender Systemdesigns und Architekturentscheidungen.
-* **`/elektronik`**: Auswahl und Spezifikation elektronischer Komponenten wie Motoren, Fahrtenregler und Akkumulatoren.
-* **`/fotos`**: Zentrales Verzeichnis für sämtliche Bilddateien und visuelle Dokumentationen des Projekts.
-* **`/mechanik`**: Chassis-Design, Konstruktionsdaten sowie die Spezifikation physischer Bauteile.
-  * **`/carten_t410r`**: Fahrzeugspezifische Daten und Anleitungen.
-  * **`/geometrie`**: Fahrwerkseinstellungen.
-  * **`/karosserie`**: Spezifikationen zur Karosserie.
-  * **`/lackierung`**: Farb- und Lackierdaten.
-  * **`/raeder`**: Reifenspezifikationen.
-* **`/erprobung`**: Erfassung und Auswertung von Testergebnissen und Leistungsmessdaten.
-  * **`/tests`**: Protokolle und Daten der Testfahrten.
-* **`/projekt`**: Allgemeines Projektmanagement und Übersichten zur Kostenkontrolle.
-* **`/reddit`**: Feedback und Diskussionen aus der Community.
-* **`/scripts`**: Automatisierungsskripte und Berechnungsmodelle zur Systemauslegung.
+## Repository Structure
+The project is structured into topic-specific directories:
+* **`/architecture`**: Documentation of basic system designs and architecture decisions.
+* **`/electronics`**: Selection and specification of electronic components such as motors, electronic speed controllers, and batteries.
+* **`/photos`**: Central directory for all image files and visual documentation of the project.
+* **`/mechanics`**: Chassis design, construction data, and specification of physical components.
+  * **`/carten_t410r`**: Vehicle-specific data and instructions.
+  * **`/geometry`**: Suspension settings.
+  * **`/body`**: Body specifications.
+  * **`/paint`**: Color and painting data.
+  * **`/wheels`**: Tire specifications.
+* **`/testing`**: Collection and evaluation of test results and performance measurement data.
+  * **`/tests`**: Logs and data of test drives.
+* **`/project`**: General project management and overviews for cost control.
+* **`/reddit`**: Feedback and discussions from the community.
+* **`/scripts`**: Automation scripts and calculation models for system design.
 
-## Hardwarearchitektur und Mechanik
-Das Projekt unterteilt sich in die oben genannten Schwerpunkte. Die Dokumentation der Architekturentscheidungen (ADRs) sowie die Spezifikationen aller mechanischen und elektronischen Komponenten werden konsequent als strukturierte YAML-Dateien (`.yml` oder `.yaml`) gepflegt. Die formale hierarchische Struktur dieser Dateien ist wie folgt standardisiert:
+## Hardware Architecture and Mechanics
+The project is divided into the focus areas mentioned above. The documentation of architecture decisions (ADRs) and the specifications of all mechanical and electronic components are consistently maintained as structured YAML files (`.yml` or `.yaml`). The formal hierarchical structure of these files is standardized as follows:
 
 ```mermaid
 classDiagram
@@ -60,35 +60,35 @@ classDiagram
     }
 ```
 
-## Berechnungsmodelle zur Antriebsauslegung
-Zur Vermeidung thermischer oder mechanischer Überlastungen der Elektronikkomponenten kommen eigens entwickelte Berechnungsmodelle zum Einsatz:
-* **Getriebe-Rechner (`scripts/calc/getriebe_calc.py`)**: Simuliert auf Basis des Reifendurchmessers und der Zielgeschwindigkeit die mechanische Radlast für den Motor in Abhängigkeit der verfügbaren Motorritzel. Die Setups werden in Belastungszonen für das definierte Antriebssystem kategorisiert.
-* **Limit-Rechner (`scripts/calc/max_speed.py`)**: Kalkuliert die erreichbare Endgeschwindigkeit unter Einbezug der spezifischen Motordaten, der Akkuspannung und definierter thermischer Toleranzgrenzen anhand der physischen Hardware-Spezifikationen.
+## Calculation Models for Drivetrain Design
+To avoid thermal or mechanical overload of the electronic components, custom-developed calculation models are used:
+* **Gearing Calculator (`scripts/calc/getriebe_calc.py`)**: Simulates the mechanical wheel load for the motor based on tire diameter and target speed, depending on available motor pinions. Setups are categorized into load zones for the defined drive system.
+* **Limit Calculator (`scripts/calc/max_speed.py`)**: Calculates the achievable top speed considering specific motor data, battery voltage, and defined thermal tolerance limits based on physical hardware specifications.
 
-## Learnings & Modifikationen (so far...)
-Dieser Abschnitt dokumentiert die Erkenntnisse aus den bisherigen Tests & Speedruns im Maßstab 1:10 sowie die daraus resultierenden Modifikationen am Fahrzeug.
+## Learnings & Modifications (so far...)
+This section documents the findings from previous tests & speedruns in 1:10 scale as well as the resulting modifications to the vehicle.
 
-| Fahrbetrieb & Umgebung | Fahrwerk & Geometrie |
+| Driving Operation & Environment | Suspension & Geometry |
 |:---|:---|
-| **[L] Streckenwahl**<br>Eine geeignete Strecke ist maßgeblich für den Erfolg. Es wird unbedingt sauberer Asphalt benötigt. Die Strecke sollte nach Möglichkeit nicht von Wänden oder Bordsteinen begrenzt sein. Eine Mindestbreite von 8 Metern ist nötig.<br><br>**[L] Witterung**<br>Wichtig ist ebenfalls das Wetter. Es sollte auf Windstille und Trockenheit geachtet werden.<br><br>**[L] Sicherheit**<br>Wenn die Bedingungen nicht passen und man kein gutes Gefühl hat, sollte kein Speedrun unternommen werden.<br><br>**[L] Fahrpraxis**<br>Man muss lernen zu fahren. Es ist nötig, sich mit dem Fahrzeug und der Beschleunigungskurve vertraut zu machen. Wichtig ist es, das Fahrzeug ruhig zu steuern, wenn es weit entfernt ist. | **[M] Dämpfung & Federung**<br>Es wurde ein sehr zähflüssiges Dämpferöl verwendet und die Federvorspannung maximiert. Harte Federungen sind absolut nötig, um Kontrollverlust durch Eintauchen zu verhindern.<br><br>**[M] Fahrwerksgeometrie**<br>Hinten Vorspur von 2,5 Grad und 0 Grad Sturz. Vorne 0 Grad Vorspur und 0 Grad Sturz. Hier sollten keine Experimente unternommen werden.<br><br>**[M] Querstabilisatoren**<br>Die Stabilisatoren wurden ausgebaut. Sie sind für Speedruns unnötig und stellen eine potenzielle Fehlerquelle dar.<br><br>**[M] Ausfederweg**<br>Die Droopscrews wurden entfernt. Da die Strecke nicht manuell gereinigt wird, ist eine weitere Tieferlegung nicht zielführend. Die Schrauben sind für den regulären 1:10 Speedrun unnötig.<br><br>**[L] Gewichtsverteilung**<br>Es muss auf eine ausgeglichene Links/Rechts-Gewichtsverteilung geachtet werden. Zudem darf die Front nicht zu leicht sein. |
+| **[L] Track Selection**<br>A suitable track is crucial for success. Clean asphalt is absolutely necessary. The track should preferably not be bordered by walls or curbs. A minimum width of 8 meters is required.<br><br>**[L] Weather**<br>The weather is also important. Ensure there is no wind and conditions are dry.<br><br>**[L] Safety**<br>If the conditions are not right and you don't have a good feeling, no speedrun should be undertaken.<br><br>**[L] Driving Practice**<br>You must learn to drive. It is necessary to familiarize yourself with the vehicle and the acceleration curve. It is important to steer the vehicle smoothly when it is far away. | **[M] Damping & Springing**<br>Very viscous shock oil was used and spring preload maximized. Stiff suspension is absolutely necessary to prevent loss of control due to diving.<br><br>**[M] Suspension Geometry**<br>Rear toe-in of 2.5 degrees and 0 degrees camber. Front 0 degrees toe-in and 0 degrees camber. No experiments should be made here.<br><br>**[M] Sway Bars**<br>The sway bars were removed. They are unnecessary for speedruns and pose a potential source of error.<br><br>**[M] Droop**<br>The droop screws were removed. Since the track is not manually cleaned, further lowering is not constructive. The screws are unnecessary for the regular 1:10 speedrun.<br><br>**[L] Weight Distribution**<br>Care must be taken to ensure an even left/right weight distribution. Furthermore, the front must not be too light. |
 
-| Antriebsstrang | Elektronik & Steuerung | Chassis & Montage |
+| Drivetrain | Electronics & Control | Chassis & Assembly |
 |:---|:---|:---|
-| **[L] Motorisierung**<br>Eine ausreichende Motorisierung ist ein kleineres Problem als oft angenommen. Hier sollte man nicht zu viel investieren.<br><br>**[M] Motor & Getriebe**<br>Einsatz eines 3660 Motors mit langer Übersetzung anstelle des üblichen 3650 Motors. Die Motorisierung muss der zur Verfügung stehenden Strecke angepasst werden.<br><br>**[M] Differential (Vorne)**<br>Es wurde ein Frontspool eingebaut. Bei Geradeauslauf mit Höchstgeschwindigkeit muss Diff-Out unbedingt vermieden werden; Drehzahlausgleiche sind nicht erwünscht.<br><br>**[L] Differential (Hinten)**<br>Das hintere Differential schwergängiger zu machen, ist nicht nötig. Der Frontspool reicht aus.<br><br>**[L] Thermisches Management**<br>Probleme mit ESC- und Motortemperatur traten noch nicht auf. Das Problem ist offenbar überbewertet. | **[L] Steuerungskomponenten**<br>An der Fernbedienung und dem Servo darf nicht gespart werden. Fehlende Präzision macht Lenkkorrekturen zur Glückssache. Es muss in eine Fernsteuerung mit Hall-Sensoren und ein vernünftiges Digital-Servo investiert werden.<br><br>**[L] Hilfssysteme**<br>Technische Hilfsmittel wie Gaskurvensteuerung und/oder Gyro sollten in Betracht gezogen werden. | **[L] Materialauswahl**<br>Es sollten nicht alle Kunststoffteile durch Aluminium ersetzt werden. Es muss überlegt werden, welche Teile bei einem Crash zerstört werden dürfen. Werden leicht zu ersetzende Kunststoffteile durch Aluminium ersetzt, sucht sich die Aufprallenergie ungünstigere Wege.<br><br>**[L] Schraubensicherung**<br>Loctite bei Metallverbindungen ist absolute Pflicht.<br><br>**[L] Karosserie**<br>Die Karosserie sollte nicht lackiert werden. Eine klare Karosserie erlaubt jederzeit den notwendigen Blick auf die Technik. |
+| **[L] Motorization**<br>Sufficient motorization is less of a problem than often assumed. You shouldn't invest too much here.<br><br>**[M] Motor & Gearing**<br>Use of a 3660 motor with a tall gear ratio instead of the usual 3650 motor. The motorization must be adapted to the available track.<br><br>**[M] Differential (Front)**<br>A front spool was installed. During straight-line running at maximum speed, diff-out must be absolutely avoided; speed compensation is not desired.<br><br>**[L] Differential (Rear)**<br>Making the rear differential stiffer is not necessary. The front spool is sufficient.<br><br>**[L] Thermal Management**<br>Problems with ESC and motor temperature have not occurred yet. The problem is apparently overrated. | **[L] Control Components**<br>Do not skimp on the remote control and servo. Lack of precision makes steering corrections a game of chance. You must invest in a remote control with Hall sensors and a decent digital servo.<br><br>**[L] Assistance Systems**<br>Technical aids like throttle curve control and/or a gyro should be considered. | **[L] Material Selection**<br>Not all plastic parts should be replaced with aluminum. You must consider which parts are allowed to be destroyed in a crash. If easily replaceable plastic parts are replaced with aluminum, the impact energy finds more unfavorable paths.<br><br>**[L] Threadlocker**<br>Loctite on metal connections is absolutely mandatory.<br><br>**[L] Body**<br>The body should not be painted. A clear body allows a necessary view of the technology at all times. |
 
-*(Legende: **[L]** = Learning, **[M]** = Modifikation)*
+*(Legend: **[L]** = Learning, **[M]** = Modification)*
 
-## Repository-Verwaltung und Automatisierung
-Die Pflege der als YAML-Dateien formatierten Spezifikationen und Architekturentscheidungen löst automatisierte Prozesse aus:
-* **Aggregation der Spezifikationen**: Individuelle Hardwarespezifikationen werden zu einer zentralen Spezifikationsdatei im Hauptverzeichnis zusammengeführt.
-* **Kostenübersicht**: Stück- und Einkaufslisten werden automatisch aus den Spezifikationen abgeleitet und aktualisiert.
-* **Entscheidungsprotokoll**: Architekturentscheidungen werden automatisch in ein chronologisches Protokoll kompiliert.
+## Repository Management and Automation
+Maintaining the specifications and architecture decisions formatted as YAML files triggers automated processes:
+* **Aggregation of Specifications**: Individual hardware specifications are merged into a central specification file in the root directory.
+* **Cost Overview**: Bill of materials and shopping lists are automatically derived from the specifications and updated.
+* **Decision Log**: Architecture decisions are automatically compiled into a chronological log.
 
-## Weiterführendes Projekt: Telemetriesystem
-An dieses Vorhaben knüpft ein eigenständiges Projekt an, welches sich mit der Entwicklung eines Telemetriedatensystems auf Basis eines ESP32-Mikrocontrollers befasst. Ziel ist die sensorische Erfassung und Übertragung fahrdynamischer Parameter des RC-Fahrzeugs.
+## Follow-Up Project: Telemetry System
+This project is followed by an independent project concerned with the development of a telemetry data system based on an ESP32 microcontroller. The goal is the sensory recording and transmission of driving dynamics parameters of the RC vehicle.
 
 [![GitHub Repo](https://img.shields.io/badge/GitHub-Repository-blue?logo=github)](https://github.com/kleinnconrad/carten_telemetrie)
 
-## Lizenzierung
-* Der Quellcode der Berechnungsmodelle unterliegt der MIT-Lizenz. 
-* Das Hardware-Design, die Dokumentationen, Spezifikationen und Testergebnisse sind unter der Creative Commons Attribution 4.0 International Lizenz freigegeben. Eigene Anpassungen und kommerzielle Nutzungen sind unter Nennung der Urheberschaft zulässig.
+## Licensing
+* The source code of the calculation models is subject to the MIT License.
+* The hardware design, documentation, specifications, and test results are released under the Creative Commons Attribution 4.0 International License. Own adaptations and commercial use are permitted, provided authorship is acknowledged.

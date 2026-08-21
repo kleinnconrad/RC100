@@ -1,37 +1,36 @@
-# Testprotokoll: 3. Testfahrt
+# Test Log: 3. Test Drive
 
-## Inhaltsverzeichnis
-* [Metadaten](#metadaten)
-* [Ziel der Testfahrt](#ziel-der-testfahrt)
-* [Testverlauf und Ergebnis](#testverlauf-und-ergebnis)
-* [Fehlerbild und aufgetretene Probleme](#fehlerbild-und-aufgetretene-probleme)
-* [Geplante Maßnahmen](#geplante-massnahmen)
-* [Durchgeführte Anpassungen](#durchgefuehrte-anpassungen)
+## Table of Contents
+* [Metadata](#metadata)
+* [Goal of the test drive](#goal-of-the-test-drive)
+* [Test course and result](#test-course-and-result)
+* [Error pattern and problems encountered](#error-pattern-and-problems-encountered)
+* [Planned measures](#planned-measures)
+* [Implemented adjustments](#implemented-adjustments)
 
-## Metadaten
-* **Datum:** 26.03.2026
-* **Ort:** Tiefgarage
-* **Fokus:** Lenkung & Fahrwerksmechanik
-* **Status:** Gescheitert
+## Metadata
+* **Date:** 2026-03-26
+* **Location:** Underground garage
+* **Focus:** Steering & chassis mechanics
+* **Status:** Failed
 
-## Ziel der Testfahrt
-Überprüfung und Evaluierung des Lenkverhaltens nach einer kürzlich durchgeführten Neuausrichtung des Servosavers.
+## Goal of the test drive
+Checking and evaluating the steering behavior after a recent realignment of the servo saver.
 
-## Testverlauf und Ergebnis
-Das primäre Testziel (Evaluierung des Servosavers) konnte aufgrund eines mechanischen Ausfalls nicht vollständig abgeschlossen werden.
+## Test course and result
+The primary test goal (evaluation of the servo saver) could not be fully completed due to a mechanical failure.
 
-## Fehlerbild und aufgetretene Probleme
-Während der Testfahrt hat sich die Verschraubung des Kugelgelenks an der **hinteren linken Radaufhängung** gelöst. Dies führte zum sofortigen Verlust der Fahrstabilität und machte einen sofortigen Abbruch des Tests unumgänglich, um Folgeschäden am Chassis oder Antriebsstrang zu vermeiden.
+## Error pattern and problems encountered
+During the test drive, the screw connection of the ball joint on the **rear left wheel suspension** loosened. This led to an immediate loss of driving stability and made an immediate abort of the test inevitable in order to avoid consequential damage to the chassis or drivetrain.
 
-## Geplante Maßnahmen
-Um das Problem dauerhaft zu beheben und präventiv an den anderen Radaufhängungen vorzugehen, wurden nach dem Abbruch folgende Schritte durchgeführt:
+## Planned measures
+In order to permanently solve the problem and take preventive action on the other wheel suspensions, the following steps were carried out after the abort:
 
-* **Sicherung der Kugelgelenke:** Die Verschraubungen aller vier Kugelgelenke der Radaufhängungen wurden demontiert, kontrolliert und anschließend mit flüssiger Schraubensicherung (Loctite) gegen erneutes Losvibrieren gesichert. *(Hinweis: Der Kontakt von Loctite mit den Kunststoff-Kugelpfannen wurde dabei überwacht/bereinigt).*
-* **Sicherheits-Check der Schraubverbindungen:** Alle restlichen Schrauben des Fahrzeugs, die in Metallgewinde greifen (nicht in Kunststoffbauteile gedreht sind), wurden auf korrekten und festen Sitz geprüft und, wo nötig, nachgezogen.
-<img src="https://github.com/kleinnconrad/RC100/blob/main/fotos/PXL_20260326_100028837.jpg" alt="schaden_3_test" width="50%">
-**Fazit für den nächsten Rollout:**
-Die mechanische Integrität der Radaufhängung sollte nun wiederhergestellt sein. Der ursprüngliche Test des Servosavers muss bei der nächsten Ausfahrt wiederholt werden.
+* **Securing the ball joints:** The screw connections of all four ball joints of the wheel suspensions were dismantled, checked and then secured against vibrating loose again with liquid threadlocker (Loctite). *(Note: The contact of Loctite with the plastic ball cups was monitored/cleaned).*
+* **Safety check of the screw connections:** All remaining screws of the vehicle that engage in metal threads (are not screwed into plastic components) were checked for correct and tight fit and tightened where necessary.
+<img src="https://github.com/kleinnconrad/RC100/blob/main/fotos/PXL_20260326_100028837.jpg" alt="damage_3_test" width="50%">
+**Conclusion for the next rollout:**
+The mechanical integrity of the wheel suspension should now be restored. The original test of the servo saver must be repeated during the next drive.
 
-## Durchgeführte Anpassungen
-Keine besonderen Feststellungen.
-
+## Implemented adjustments
+No special findings.

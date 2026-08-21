@@ -1,53 +1,53 @@
-## Antriebs-Dashboard: Speed-Ziele & Thermische Zonen
+## Drivetrain Dashboard: Speed Targets & Thermal Zones
 
 
-## Inhaltsverzeichnis
-* [Antriebs-Dashboard: Speed-Ziele & Thermische Zonen](#antriebs-dashboard-speed-ziele--thermische-zonen)
-  * [Lesehilfe für das Dashboard:](#lesehilfe-fur-das-dashboard)
-* [Die "Radlast %" Formel](#die-radlast--formel)
-  * [Die Berechnung](#die-berechnung)
-  * [Die Belastungs-Zonen (für 3650er Motoren / 4000kV an 3S)](#die-belastungs-zonen-fur-3650er-motoren--4000kv-an-3s)
+## Table of Contents
+* [Drivetrain Dashboard: Speed Targets & Thermal Zones](#drivetrain-dashboard-speed-targets--thermal-zones)
+  * [Reading guide for the dashboard:](#reading-guide-for-the-dashboard)
+* [The "Wheel Load %" Formula](#the-wheel-load--formula)
+  * [The calculation](#the-calculation)
+  * [The load zones (for 3650 motors / 4000kV on 3S)](#the-load-zones-for-3650-motors--4000kv-on-3s)
 
 
-Das folgende Dashboard visualisiert die physikalischen Grenzen des **Carten T410R** in Kombination mit dem spezifizierten **3660 Brushless Motor (3700KV an 3S)**. 
+The following dashboard visualizes the physical limits of the **Carten T410R** in combination with the specified **3660 Brushless Motor (3700KV on 3S)**. 
 
-Es zeigt den direkten Zusammenhang zwischen der gewählten Ritzelgröße, der resultierenden mechanischen Belastung (Radlast in %) und der erreichbaren Achsdrehzahl.
+It shows the direct correlation between the chosen pinion size, the resulting mechanical load (wheel load in %) and the achievable axle speed.
 
-![Antriebs-Dashboard mit Speed-Zielen](https://github.com/kleinnconrad/RC100/blob/main/fotos/1772373437236.png)
+![Drivetrain dashboard with speed targets](https://github.com/kleinnconrad/RC100/blob/main/fotos/1772373437236.png)
 
-### Lesehilfe für das Dashboard:
-* **Die gestrichelten Linien (Graustufen):** Markieren die benötigte Achsdrehzahl für unsere Meilensteine (100, 110, 120 und 130 km/h) bei einem Reifendurchmesser von 65 mm.
-* **Die rote Kurve (Achsdrehzahl):** Zeigt die theoretisch anliegende Drehzahl der Räder bei Vollgas pro Ritzel. Wo diese Kurve eine der gestrichelten Linien schneidet, wird das jeweilige Geschwindigkeitsziel erreicht.
-* **Die blaue Kurve (Radlast):** Zeigt die mechanische Belastung des Motors. 
-* **Die farbigen Zonen (Hintergrund):** Definieren die thermischen Toleranzgrenzen des 3660er Motors.
-  * 🟢 **Safe Zone (< 22 %):** Dauerlast problemlos möglich.
-  * 🟡 **Sweet Spot (22 % - 25 %):** optimal für Speedruns, thermisches Limit im Auge behalten.
-  *  **Gefahrenzone (> 25 %):** Akute Überhitzungsgefahr, nur für extreme Kurz-Sprints.
+### Reading guide for the dashboard:
+* **The dashed lines (grayscale):** Mark the required axle speed for our milestones (100, 110, 120 and 130 km/h) with a tire diameter of 65 mm.
+* **The red curve (axle speed):** Shows the theoretically applied speed of the wheels at full throttle per pinion. Where this curve intersects one of the dashed lines, the respective speed target is reached.
+* **The blue curve (wheel load):** Shows the mechanical load of the motor. 
+* **The colored zones (background):** Define the thermal tolerance limits of the 3660 motor.
+  * 🟢 **Safe Zone (< 22 %):** Continuous load possible without problems.
+  * 🟡 **Sweet Spot (22 % - 25 %):** optimal for speedruns, keep an eye on thermal limit.
+  *  **Danger Zone (> 25 %):** Acute risk of overheating, only for extreme short sprints.
 
-**Fazit der Visualisierung:** Das primäre Projektziel von **100 km/h** wird ab einem **35Z/36Z Ritzel** erreicht. Die Radlast befindet sich an diesem Punkt noch absolut sicher in der tiefgrünen Zone. Das Setup bietet mechanische Reserven bis ca. 125 km/h.
+**Conclusion of the visualization:** The primary project goal of **100 km/h** is achieved from a **35T/36T pinion**. The wheel load is at this point still absolutely safe in the deep green zone. The setup offers mechanical reserves up to approx. 125 km/h.
 
 
-## Die "Radlast %" Formel
+## The "Wheel Load %" Formula
 
-Die in unseren Skripten berechnete **Radlast in Prozent** ist ein empirischer Indikator für die mechanische Belastung des Motors. Sie basiert auf dem Kehrwert der Gesamtübersetzung (Final Drive Ratio, kurz FDR). 
+The **wheel load in percent** calculated in our scripts is an empirical indicator for the mechanical load on the motor. It is based on the reciprocal of the Final Drive Ratio (FDR). 
 
-Je kleiner die FDR (also je "länger" das Getriebe übersetzt ist), desto weniger Hebelwirkung hat der Motor. Er muss folglich mehr rohe Kraft aufwenden, um das Auto gegen den exponentiell steigenden Luftwiderstand anzuschieben.
+The smaller the FDR (i.e. the "taller" the gear ratio), the less leverage the motor has. It must consequently apply more raw power to push the car against the exponentially increasing air resistance.
 
-### Die Berechnung
-1. **Gesamtübersetzung (FDR) berechnen:**
-   FDR = (Hauptzahnrad / Motorritzel) * Interne Übersetzung
-   *(Beim Carten T410R beträgt die interne Übersetzung 2.47)*
+### The calculation
+1. **Calculate Final Drive Ratio (FDR):**
+   FDR = (Spur gear / Motor pinion) * Internal ratio
+   *(On the Carten T410R, the internal ratio is 2.47)*
 
-2. **Radlast-Faktor berechnen:**
-   Radlast (%) = (1 / FDR) * 100
+2. **Calculate wheel load factor:**
+   Wheel load (%) = (1 / FDR) * 100
 
-**Beispiel:** Bei einem 72Z Hauptzahnrad und einem 36Z Ritzel ergibt sich eine FDR von `(72 / 36) * 2.47 = 4.94`.
-Die Radlast beträgt somit `(1 / 4.94) * 100 = 20.2 %`.
+**Example:** With a 72T spur gear and a 36T pinion, the FDR is `(72 / 36) * 2.47 = 4.94`.
+The wheel load is thus `(1 / 4.94) * 100 = 20.2 %`.
 
-### Die Belastungs-Zonen (für 3650er Motoren / 4000kV an 3S)
-Diese Zonen haben sich in der Praxis als Richtwerte für die Temperatur- und Stromüberwachung etabliert:
+### The load zones (for 3650 motors / 4000kV on 3S)
+These zones have established themselves in practice as guide values for temperature and current monitoring:
 
-* **< 19.0 % (Grüne Zone):** Hohe Hebelwirkung. optimal für verwinkelte Strecken, Stop-and-Go und langes Bashing. Elektronik bleibt kühl.
-* **19.0 % - 22.0 % (Gelber Sweet Spot):** Ideale Balance für Speedruns. Das Auto erreicht Topspeed, Elektronik wird sehr warm, benötigt nach 1-2 Runs Abkühlung.
-* **22.0 % - 25.0 % (Rote Gefahrenzone):** Extreme Belastung. Ausschließlich für kurze, lineare Beschleunigungsrennen mit aktiver Lüfterkühlung geeignet.
-* **> 25.0 % (Hitzetod):** Die Hebelwirkung reicht nicht mehr aus. Der Motor zieht Blockierströme, wandelt Energie fast nur noch in Hitze um und riskiert die sofortige Zerstörung von ESC oder Rotor.
+* **< 19.0 % (Green Zone):** High leverage. optimal for twisty tracks, stop-and-go and long bashing. Electronics stay cool.
+* **19.0 % - 22.0 % (Yellow Sweet Spot):** Ideal balance for speedruns. The car reaches top speed, electronics get very warm, needs cooling down after 1-2 runs.
+* **22.0 % - 25.0 % (Red Danger Zone):** Extreme load. Exclusively suitable for short, linear acceleration races with active fan cooling.
+* **> 25.0 % (Heat Death):** The leverage is no longer sufficient. The motor draws stalling currents, converts energy almost entirely into heat and risks the immediate destruction of ESC or rotor.

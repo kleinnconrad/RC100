@@ -1,51 +1,44 @@
 adr:
   id: ADR-005
-  title: Auswahl der Fernsteuerungsanlage für 100 km/h Speedruns
-  status: entschieden
+  title: Selection of the remote control system for 100 km/h speedruns
+  status: decided
   date: '2026-08-20'
-  context: "Ein RC-Car, das mit 100 km/h (ca. 27,7 Meter pro Sekunde) fährt, legt\
-    \ in wenigen Sekunden \nenorme Distanzen zurück. Die Fernsteuerung (Transmitter)\
-    \ und der Empfänger (Receiver) \nmüssen daher zwingend eine stabile Funkverbindung\
-    \ und ein absolut verlässliches Fail-Safe \naufweisen, damit das Fahrzeug am Ende\
-    \ der Beschleunigungsstrecke nicht außer Kontrolle gerät. \nEs muss abgewogen\
-    \ werden zwischen maximaler Reichweite inkl. Gyro-Unterstützung und einem \nrobusten,\
-    \ ausfallsicheren MVP-Ansatz (Minimum Viable Product), der die Komplexität im\
-    \ Setup reduziert.\n"
+  context: "An RC car traveling at 100 km/h (approx. 27.7 meters per second) covers \nenormous distances in a few seconds. \nThe remote control (transmitter) \nand the receiver \nmust therefore absolutely have a stable radio connection \nand an absolutely reliable fail-safe \nso that the vehicle does not get out of control at the end \nof the acceleration stretch. \nA balance must be struck \nbetween maximum range incl. gyro support and a \nrobust, \nfailsafe MVP approach (Minimum Viable Product) that reduces the complexity in \nthe setup.\n"
   considered_alternatives:
   - option_id: 1
-    name: Standard RTR / Budget-Sender (z.B. FlySky FS-GT2)
+    name: Standard RTR / Budget Transmitter (e.g. FlySky FS-GT2)
     type: Low-End / Basic 2.4 GHz
-    evaluation: Sehr günstig, aber die Reichweite ist oft auf 100-150 Meter begrenzt.
-      Ein massives Sicherheitsrisiko bei Speedruns. Bietet zudem keine Gyro-Unterstützung
-      im Standard-Empfänger.
+    evaluation: Very cheap, but the range is often limited to 100-150 meters.
+      A massive security risk for speedruns. Also offers no gyro support
+      in the standard receiver.
   - option_id: 2
-    name: High-End Wettbewerbs-Sender (z.B. Sanwa MT-44 / Futaba 4PM)
+    name: High-End Competition Transmitter (e.g. Sanwa MT-44 / Futaba 4PM)
     type: Premium / Ultra-Low Latency
-    evaluation: Bietet stark geringe Latenzzeiten und detaillierte Setup-Möglichkeiten
-      auf einem Display. optimal für verwinkelte Rennstrecken, aber für das reine
-      Geradeausfahren (Speedrun) völlig überdimensioniert. Preislich oft weit über
+    evaluation: Offers very low latency and detailed setup options
+      on a display. Optimal for winding racetracks, but completely oversized for pure
+      straight-line driving (speedrun). Priced often well over
       250 €.
   - option_id: 3
     name: DumboRC X6
-    type: Mid-Range Budget-Geheimtipp
-    evaluation: Verzichtet auf ein Display und Telemetrie, bietet aber eine für diese
-      Preisklasse (~35 €) gigantische Reichweite von oft über 400 Metern. Die passenden
-      Empfänger (X6FG) verfügen über einen integrierten, einstellbaren Gyro für perfekten
-      Geradeauslauf.
+    type: Mid-Range Budget Secret Tip
+    evaluation: Forgoes a display and telemetry, but offers a gigantic range for this
+      price class (~35 €) of often over 400 meters. The matching
+      receivers (X6FG) have an integrated, adjustable gyro for perfect
+      straight-line stability.
   - option_id: 4
     name: Carson Reflex Wheel X1
-    type: Solider MVP-Ansatz (2-Kanal 2.4 GHz)
-    evaluation: Sehr zuverlässiges und bewährtes Einsteigersystem. Bietet zwar keinen
-      Gyro und etwas weniger Maximalreichweite als die DumboRC, punktet aber durch
-      absolute Einfachheit, ein stark robustes Fail-Safe und zwingend notwendige
-      Einstellmöglichkeiten (Dual Rate) für erste 100 km/h-Tests.
+    type: Solid MVP Approach (2-Channel 2.4 GHz)
+    evaluation: Very reliable and proven entry-level system. Although it offers no
+      gyro and slightly less maximum range than the DumboRC, it scores with
+      absolute simplicity, a highly robust fail-safe and absolutely necessary
+      setting options (Dual Rate) for initial 100 km/h tests.
   decision: X9S Radio + Mini Waterproof 4-Channel Receiver RG4CHWP
   tx_meta_transmitter:
     brand: Konect
     model: X9S Radio
-    type: 4-Kanal 2.4 GHz Pistolengriff-Sender
-  rationale: "Die Tests mit der Carson Reflex Wheel X1 zeigten eine unzureichende Lenkgenauigkeit, da das Servo in Abhängigkeit vom Lenkausschlag nicht reproduzierbar in die Neutralposition zurückkehrte. Zur Erhöhung der Steuerpräzision wurde die Fernsteuerung X9S Radio in Kombination mit dem Empfänger RG4CHWP für 152 € beschafft.\n"
+    type: 4-Channel 2.4 GHz Pistol Grip Transmitter
+  rationale: "The tests with the Carson Reflex Wheel X1 showed insufficient steering precision, as the servo did not reproducibly return to the neutral position depending on the steering angle. To increase steering precision, the X9S Radio remote control was purchased in combination with the RG4CHWP receiver for 152 €.\n"
   consequences:
-  - 'Empfängerinstallation: Der RG4CHWP Empfänger wird verbaut und das Fail-Safe zwingend auf Bremse/Neutral programmiert.'
-  - 'Schnittstellenkompatibilität: Die Betriebsspannung des Empfängers ist mit der BEC-Ausgangsspannung des Motorreglers abzugleichen.'
-  - 'Lenkwinkelbegrenzung: Die Steuerausschläge (Dual Rate) werden auf die Erfordernisse von Hochgeschwindigkeitsfahrten angepasst.'
+  - 'Receiver installation: The RG4CHWP receiver is installed and the fail-safe must absolutely be programmed to brake/neutral.'
+  - 'Interface compatibility: The operating voltage of the receiver must be matched with the BEC output voltage of the motor controller.'
+  - 'Steering angle limitation: The steering deflections (Dual Rate) are adapted to the requirements of high-speed driving.'

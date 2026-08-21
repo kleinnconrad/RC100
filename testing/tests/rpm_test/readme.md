@@ -1,37 +1,37 @@
-# Testprotokoll - Leerlaufdrehzahl & Schadensbericht
+# Test Log - Idle Speed & Damage Report
 
 
-## Inhaltsverzeichnis
-* [Versuchsaufbau](#versuchsaufbau)
-* [Theoretische Höchstgeschwindigkeit](#theoretische-hochstgeschwindigkeit)
-* [Entstandener Schaden](#entstandener-schaden)
+## Table of Contents
+* [Test Setup](#test-setup)
+* [Theoretical Top Speed](#theoretical-top-speed)
+* [Damage Incurred](#damage-incurred)
 
 
-**Datum:** 17.03.2026.  
-**Status:** abgeschlossen (mit Schäden an Kardanwelle und Cup Joints)
+**Date:** 2026-03-17.  
+**Status:** completed (with damage to driveshaft and cup joints)
 
-## Versuchsaufbau
+## Test Setup
 
-* **Messmethode:** Optische Drehzahlerfassung (RPM) mittels Lasertachometer.
-* **Testumgebung:** Unloaded Test (Fahrzeug aufgebockt, Antriebsstrang läuft ohne Bodenkontakt/Lastwiderstand).
-* **Durchführung:** Ein Reflexionsstreifen wurde zur sauberen Signalgebung auf die Außenflanke des rechten Hinterrades geklebt. Die Messung erfolgte bei 100 % Gashebelstellung über die Carson-Fernsteuerung.
-* **Ergebnis:** Das System lief stabil und ohne Aussetzer. Dennoch ist ein Schaden aufgetreten. Es wurde eine maximale Raddrehzahl von **11.200 RPM** erfasst.
+* **Measurement method:** Optical speed detection (RPM) using a laser tachometer.
+* **Test environment:** Unloaded test (vehicle jacked up, drivetrain runs without ground contact/load resistance).
+* **Execution:** A reflection strip was taped to the outer flank of the right rear wheel for clean signal generation. The measurement was taken at 100% throttle position via the Carson remote control.
+* **Result:** The system ran stably and without dropouts. Nevertheless, damage occurred. A maximum wheel speed of **11,200 RPM** was recorded.
 
-## Theoretische Höchstgeschwindigkeit
+## Theoretical Top Speed
 
-v = (d * π * rpm * 60) / 1.000.000
+v = (d * π * rpm * 60) / 1,000,000
 
-v = (64 * 3.14159 * 11200 * 60) / 1.000.000
-**v ≈ 135,11 km/h**
+v = (64 * 3.14159 * 11200 * 60) / 1,000,000
+**v ≈ 135.11 km/h**
 
-## Entstandener Schaden
+## Damage Incurred
 
-Durch die extreme Drehzahl sind die O Ringe, welche die Arretierungsstifte in den Cup Joints der Kardanwellenaufnahme fixieren verrutscht und die Arretierungsstifte wurden herausgeschleudert.
+Due to the extreme speed, the O-rings that fix the locking pins in the cup joints of the driveshaft mount slipped and the locking pins were thrown out.
 
-<img src="https://github.com/kleinnconrad/RC100/blob/main/fotos/PXL_20260318_072802628.MP.jpg" alt="Verlust der Arretierungsstifte" width="50%">
+<img src="https://github.com/kleinnconrad/RC100/blob/main/fotos/PXL_20260318_072802628.MP.jpg" alt="Loss of locking pins" width="50%">
 
-Zusätzlich hat sich bei > 25000 RPM an der Kardanwelle, diese soweit aufgepeitscht, dass sie den Servohalter touchiert hat. An beiden Komponenten sind passende Spuren zu sehen. Ein Rolltest mit der Kardanwelle legt nahe, dass sie noch gerade ist und der Kontakt daher nicht intensiv war.
+In addition, at > 25000 RPM on the driveshaft, it whipped up so much that it touched the servo mount. Matching marks can be seen on both components. A rolling test with the driveshaft suggests that it is still straight and the contact was therefore not intense.
 
-<img src="https://github.com/kleinnconrad/RC100/blob/main/fotos/PXL_20260318_134312851.jpg" alt="Kratzer an der Kardanwelle" width="50%">
+<img src="https://github.com/kleinnconrad/RC100/blob/main/fotos/PXL_20260318_134312851.jpg" alt="Scratches on the driveshaft" width="50%">
 
-<img src="https://github.com/kleinnconrad/RC100/blob/main/fotos/PXL_20260318_134339657.MP.jpg" alt="Kratzer Servohalter" width="50%">
+<img src="https://github.com/kleinnconrad/RC100/blob/main/fotos/PXL_20260318_134339657.MP.jpg" alt="Scratches servo mount" width="50%">

@@ -1,31 +1,30 @@
-# Testprotokoll: 2. Testfahrt
+# Test Log: 2. Test Drive
 
-## Inhaltsverzeichnis
-* [Metadaten](#metadaten)
-* [Ziel der Testfahrt](#ziel-der-testfahrt)
-* [Testverlauf und Ergebnis](#testverlauf-und-ergebnis)
-* [Fehlerbild und aufgetretene Probleme](#fehlerbild-und-aufgetretene-probleme)
-* [Geplante Maßnahmen](#geplante-massnahmen)
-* [Durchgeführte Anpassungen](#durchgefuehrte-anpassungen)
+## Table of Contents
+* [Metadata](#metadata)
+* [Goal of the test drive](#goal-of-the-test-drive)
+* [Test course and result](#test-course-and-result)
+* [Error pattern and problems encountered](#error-pattern-and-problems-encountered)
+* [Planned measures](#planned-measures)
+* [Implemented adjustments](#implemented-adjustments)
 
-## Metadaten
-* **Datum:** 24.03.2026
-* **Ort:** Tiefgarage
-* **Fokus:** Fehler der ersten Testfahrt
+## Metadata
+* **Date:** 2026-03-24
+* **Location:** Underground parking garage
+* **Focus:** Errors of the first test drive
 * **Status:** N/A
 
-## Ziel der Testfahrt
-Keine besonderen Feststellungen.
+## Goal of the test drive
+No special findings.
 
-## Testverlauf und Ergebnis
-Keine besonderen Feststellungen.
+## Test course and result
+No special findings.
 
-## Fehlerbild und aufgetretene Probleme
-Keine besonderen Feststellungen.
+## Error pattern and problems encountered
+No special findings.
 
-## Geplante Maßnahmen
-Keine besonderen Feststellungen.
+## Planned measures
+No special findings.
 
-## Durchgeführte Anpassungen
-Keine besonderen Feststellungen.
-
+## Implemented adjustments
+No special findings.

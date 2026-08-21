@@ -1,10 +1,10 @@
-<img src="https://github.com/kleinnconrad/RC100/blob/main/fotos/PXL_20260331_102912086.jpg" alt="Karosserie Detail 1" width="50%">
+<img src="https://github.com/kleinnconrad/RC100/blob/main/fotos/PXL_20260331_102912086.jpg" alt="Body Detail 1" width="50%">
 
-* **Karosserie-Montage (Lehrgeld gezahlt):** Bei den Bohrungen für die Karosseriehalterung kam es zu Fehlbohrungen (Abweichungen), da die Positionen auf der gewölbten Hülle nur grob gepeilt und gemessen wurden.
-  > **Learning für künftige Builds:** Manuelles Ausmessen ist bei Lexan zu fehleranfällig. Zukünftige Markierungen sollten mit einem Nivelliergerät (Kreuzlinienlaser) exakt vom Chassis auf die Karosserie projiziert werden, um millimetergenaue Bohrungen zu garantieren.
+* **Body Mounting (Lesson learned):** Incorrect drilling (deviations) occurred when drilling holes for the body mount, as the positions on the curved shell were only roughly sighted and measured.
+  > **Learning for future builds:** Manual measurement is too prone to error with Lexan. Future markings should be projected exactly from the chassis onto the body using a leveling device (cross-line laser) to guarantee millimeter-precise drilling.
 
-* **Aerodynamik-Beschnitt (Score & Snap):** Das Ausschneiden der Hülle erfolgte nicht rein mechanisch mit der Schere, sondern durch das Einritzen von Sollbruchstellen (mit einem Skalpell/Cuttermesser) und dem anschließenden, sauberen Abknicken des Lexans. Diese Methode verhindert Mikrorisse im Material und liefert hochpräzise Kanten.
+* **Aerodynamics Trimming (Score & Snap):** The cutting of the shell was not done purely mechanically with scissors, but by scoring predetermined breaking points (with a scalpel/cutter knife) and the subsequent, clean snapping off of the Lexan. This method prevents micro-cracks in the material and delivers high-precision edges.
 
-* **Lackierung (Target: Mazda Soul Red Crystal):** Das Ziel war ein tiefer, mehrschichtiger Candy-Look ("Bonbon-Effekt"). 
-  * **Prozess:** Es wurden 5 hauchdünne Schichten Rot (PS-15) aufgetragen, gefolgt von 2 mittleren Schichten Silber (PS-12) als Reflektor und abgeschlossen mit 2 dicken Schichten Schwarz (PS-5) als lichtdichter Hintergrund.
-  * **Ergebnis & Learning:** Der grundlegende Bonbon-Effekt wurde erzielt, allerdings ist das Rot am Ende nicht satt und tief genug geworden (das Silber schlägt zu stark durch). Für zukünftige Lackierungen müssen mehr/dickere Schichten Rot aufgetragen und der Silber-Anteil leicht reduziert werden.
+* **Painting (Target: Mazda Soul Red Crystal):** The goal was a deep, multi-layered candy look ("candy effect"). 
+  * **Process:** 5 wafer-thin layers of red (PS-15) were applied, followed by 2 medium layers of silver (PS-12) as a reflector and finished with 2 thick layers of black (PS-5) as an opaque background.
+  * **Result & Learning:** The basic candy effect was achieved, but the red ultimately did not turn out rich and deep enough (the silver shows through too strongly). For future paint jobs, more/thicker layers of red must be applied and the proportion of silver slightly reduced.

@@ -2,26 +2,26 @@ import math
 
 def calculate_max_speed():
     print("="*75)
-    print(" 🚀 Carten T410R Real-World Top-Speed Rechner v3.0 🚀")
+    print(" Carten T410R Real-World Top-Speed Calculator v3.0 ")
     print("="*75)
     
     try:
-        kv = float(input("Motor kV (z.B. 4000 oder 3700): "))
-        cells = int(input("LiPo Zellen (z.B. 3 für 3S): "))
-        diameter_mm = float(eval(input("Reifen-Durchmesser in mm (z.B. 65): ")))
+        kv = float(input("Motor kV (e.g. 4000 or 3700): "))
+        cells = int(input("LiPo Cells (e.g. 3 for 3S): "))
+        diameter_mm = float(eval(input("Tire diameter in mm (e.g. 65): ")))
         
-        motor_size = input("Motor Baugröße (3650 oder 3660): ").strip()
+        motor_size = input("Motor Size (3650 or 3660): ").strip()
         if motor_size == "3660":
-            max_load = 25.0  # Erhöhtes Limit für den größeren Motor
+            max_load = 25.0  # Increased limit for the larger motor
         else:
-            max_load = 22.0  # Standard-Limit
+            max_load = 22.0  # Standard limit
             motor_size = "3650 (Standard)"
             
     except Exception as e:
-        print(f"Eingabefehler: {e}")
+        print(f"Input error: {e}")
         return
 
-    print(f"\n-> Setze thermisches Limit für {motor_size} Motor automatisch auf {max_load} % Radlast.")
+    print(f"\n-> Setting thermal limit for {motor_size} motor automatically to {max_load} % wheel load.")
 
     v_max = cells * 4.2  
     v_nom = cells * 3.7  
@@ -61,22 +61,22 @@ def calculate_max_speed():
                 best_safe_load = load_pct
 
     print("\n" + "="*75)
-    print(" 🔋 MOTOR & AKKU DATEN")
+    print(" MOTOR & BATTERY DATA ")
     print("="*75)
-    print(f"Akku unter Last:      {v_nom:.1f} V (Realistischer Voltage Sag)")
-    print(f"Motor-U/min (Last):   {rpm_nom:,.0f} U/min".replace(',', '.'))
+    print(f"Battery under load:   {v_nom:.1f} V (Realistic Voltage Sag)")
+    print(f"Motor RPM (Load):     {rpm_nom:,.0f} RPM".replace(',', '.'))
     
     if best_safe_pinion:
-        print("\n✅ THERMISCH SICHERS MAXIMUM (Auf der Straße)")
-        print(f"Optimales Ritzel:     {best_safe_pinion} Zähne (Ratio: {best_safe_ratio:.2f})")
-        print(f"Tatsächliche Last:    {best_safe_load:.1f} % (Limit war {max_load} %)")
-        print(f"Realer Top-Speed:     {best_safe_speed_nom:.1f} km/h")
+        print("\nTHERMALLY SAFE MAXIMUM (On the road)")
+        print(f"Optimal Pinion:       {best_safe_pinion} Teeth (Ratio: {best_safe_ratio:.2f})")
+        print(f"Actual Load:          {best_safe_load:.1f} % (Limit was {max_load} %)")
+        print(f"Real Top Speed:       {best_safe_speed_nom:.1f} km/h")
     else:
-        print("\n❌ Kein Ritzel gefunden, das unter der angegebenen Radlast bleibt!")
+        print("\nERROR: No pinion found that stays below the specified wheel load!")
 
-    print("\n💀 ABSOLUTES CHASSIS-LIMIT (44Z - Vorsicht!)")
-    print(f"Tatsächliche Last:    {abs_load:.1f} %")
-    print(f"Realer Top-Speed:     {abs_speed_nom:.1f} km/h")
+    print("\nABSOLUTE CHASSIS LIMIT (44T - Caution!)")
+    print(f"Actual Load:          {abs_load:.1f} %")
+    print(f"Real Top Speed:       {abs_speed_nom:.1f} km/h")
     print("="*75)
 
 if __name__ == '__main__':

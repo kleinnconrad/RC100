@@ -1,26 +1,26 @@
 spec:
   meta:
-    type: CARTEN NBA360 Stahl Hauptzahnrad (48 DP, 68T)
-    mechanical_load_capacity: '> 100 km/h (ausgelegt für 3S / 120A Brushless-Systeme)'
+    type: CARTEN NBA360 Steel Spur Gear (48 DP, 68T)
+    mechanical_load_capacity: '> 100 km/h (designed for 3S / 120A Brushless Systems)'
   properties:
     material_and_construction:
-      gear_body: Stahl - CNC gefräst
-      mounting_interface: Standard 1:10 Tourenwagen 4-Loch-Aufnahme
-      mating_pinion: Gehärteter Stahl (zwingend erforderlich)
+      gear_body: Steel - CNC machined
+      mounting_interface: Standard 1:10 Touring car 4-hole mount
+      mating_pinion: Hardened steel (mandatory)
     mandatory_modifications:
       pinion_securing:
-        issue: Verrutschen des Motorritzels (Ursache für Getriebeschaden)
-        description: Um ein erneutes Verrutschen und Zerstören des Hauptzahnrads durch
-          asymmetrischen Eingriff zu verhindern, muss die Madenschraube des Hartstahl-Ritzels
-          zwingend mit mittelfester Schraubensicherung (z. B. Loctite 243 / blau)
-          auf der flachen Stelle der Motorwelle gesichert werden.
+        issue: Slipping of the motor pinion (cause of gearbox damage)
+        description: In order to prevent the main gear from slipping and being destroyed again by
+          asymmetrical engagement, the grub screw of the hard steel pinion
+          must absolutely be secured with medium-strength threadlocker (e.g. Loctite 243 / blue)
+          on the flat spot of the motor shaft.
       gear_mesh_calibration:
-        issue: Zahnflankenspiel bei > 11.000 U/min
-        description: Das Spiel zwischen Stahlritzel und Stahl-Hauptzahnrad muss mit
-          der bewährten Papiermethode exakt kalibriert werden. Ein zu enges Spiel
-          führt zu extremer Reibungshitze, Leistungsverlust und hohem Verschleiß.
+        issue: Gear backlash at > 11,000 RPM
+        description: The play between the steel pinion and the steel spur gear must be
+          calibrated exactly with the proven paper method. Too tight play
+          leads to extreme friction heat, power loss and high wear.
       material_selection:
-        issue: Wechsel zu Stahl-Hauptzahnrad
-        description: Aufgrund vorheriger Schäden an Kunststoff-Zahnrädern wurde auf
-          ein robusteres Stahl-Hauptzahnrad gewechselt. Dies erhöht die rotierende Masse,
-          sichert jedoch die mechanische Integrität des Antriebsstrangs bei hohen Drehmomenten.
+        issue: Switch to steel spur gear
+        description: Due to previous damage to plastic gears, a
+          more robust steel spur gear was chosen. This increases the rotating mass,
+          but secures the mechanical integrity of the drivetrain at high torques.

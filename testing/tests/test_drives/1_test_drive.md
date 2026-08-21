@@ -1,49 +1,48 @@
-# Testprotokoll: 1. Testfahrt
+# Test Log: 1. Test Drive
 
-## Inhaltsverzeichnis
-* [Metadaten](#metadaten)
-* [Ziel der Testfahrt](#ziel-der-testfahrt)
-* [Testverlauf und Ergebnis](#testverlauf-und-ergebnis)
-* [Fehlerbild und aufgetretene Probleme](#fehlerbild-und-aufgetretene-probleme)
-* [Geplante Maßnahmen](#geplante-massnahmen)
-* [Durchgeführte Anpassungen](#durchgefuehrte-anpassungen)
+## Table of Contents
+* [Metadata](#metadata)
+* [Goal of the test drive](#goal-of-the-test-drive)
+* [Test course and result](#test-course-and-result)
+* [Error pattern and problems encountered](#error-pattern-and-problems-encountered)
+* [Planned measures](#planned-measures)
+* [Implemented adjustments](#implemented-adjustments)
 
-## Metadaten
-* **Datum:** 17.03.2026
-* **Fokus:** Exploration
-* **Status:** Gescheitert (Testabbruch).
+## Metadata
+* **Date:** 2026-03-17
+* **Focus:** Exploration
+* **Status:** Failed (Test aborted).
 
-## Ziel der Testfahrt
-Keine besonderen Feststellungen.
+## Goal of the test drive
+No special findings.
 
-## Testverlauf und Ergebnis
-Keine besonderen Feststellungen.
+## Test course and result
+No special findings.
 
-## Fehlerbild und aufgetretene Probleme
-* **Kritischer Montagefehler (Antriebsstrang):** Die Madenschraube des Motorritzels war unzureichend fixiert (bzw. nicht korrekt auf der flachen Stelle der Motorwelle positioniert). Durch die hohen Fliehkräfte und Vibrationen ist das Hartstahl-Ritzel auf der Welle nach vorne gerutscht.
-* **Totalschaden Getriebe:** Das Verrutschen führte zu einem asymmetrischen Eingriff der Zahnräder. Das Hauptzahnrad (Spur Gear) aus Kunststoff wurde dadurch komplett abrasiert/zerstört. Gleichzeitig hat sich die Bohrung des Motorritzels durch die extreme Hebelwirkung und das Durchdrehen auf der Welle irreparabel verformt.
+## Error pattern and problems encountered
+* **Critical assembly error (drivetrain):** The grub screw of the motor pinion was insufficiently fixed (or not correctly positioned on the flat spot of the motor shaft). Due to the high centrifugal forces and vibrations, the hard steel pinion slipped forward on the shaft.
+* **Total loss of gearbox:** The slipping led to an asymmetrical engagement of the gears. The main gear (spur gear) made of plastic was completely shaved off/destroyed as a result. At the same time, the bore of the motor pinion deformed irreparably due to the extreme leverage and spinning on the shaft.
 
-* **Punch zu hoch eingestellt für die lange Übersetzung:**
-Der Motor konnte bei der Übersetzung von 43 zu 72 Zähnen und einem Punch von 5 nicht oder kaum andrehen. **Zwingend erforderlich ist es den Punch auf 1 einzustellen und das Fahrzeug etwas anzuschieben**. Bei der Testfahrt ist der ESC beim anfahren öfter in die Notabschaltung gegangen.
+* **Punch set too high for the tall gear ratio:**
+The motor could not or hardly start with the gear ratio of 43 to 72 teeth and a punch of 5. **It is absolutely necessary to set the punch to 1 and slightly push the vehicle to start**. During the test drive, the ESC often went into emergency shutdown when starting.
 
-* **Motor falsch gepolt:**
-Die gewählte Polung (technischer Vorwärtsgang) entsprach nicht dem physikalischen Vorwärtsgang. Unter der Vermutung die Drehrichtungen seien kommutativ, wurde bei der Testfahrt die Throttle Einstellung an der Fernsteuerung auf "REV" gesetzt. Dadurch wurde das Auto im technischen Rückwärtsgang nach vorne gefahren. Dies erklärt neben dem Punch und der langen Übersetzung das schwierige anfahren.
+* **Motor polarity reversed:**
+The chosen polarity (technical forward gear) did not correspond to the physical forward gear. Assuming the rotation directions were commutative, the throttle setting on the remote control was set to "REV" during the test drive. This caused the car to drive forward in the technical reverse gear. This explains the difficult starting in addition to the punch and the tall gear ratio.
 
-<img src="https://github.com/kleinnconrad/RC100/blob/main/fotos/PXL_20260317_162312395.jpg" alt="Schadensbild Antriebsstrang 1" width="30%">
-*Abbildung 1: Zustand des Antriebsstrangs nach dem Testabbruch.*
+<img src="https://github.com/kleinnconrad/RC100/blob/main/fotos/PXL_20260317_162312395.jpg" alt="Damage pattern drivetrain 1" width="30%">
+*Figure 1: Condition of the drivetrain after the test abort.*
 
-<img src="https://github.com/kleinnconrad/RC100/blob/main/fotos/PXL_20260317_162327676.MP.jpg" alt="Schadensbild Antriebsstrang 2" width="30%">
-*Abbildung 2: Detailaufnahme der Schäden an Hauptzahnrad und Ritzel.*
+<img src="https://github.com/kleinnconrad/RC100/blob/main/fotos/PXL_20260317_162327676.MP.jpg" alt="Damage pattern drivetrain 2" width="30%">
+*Figure 2: Detail shot of the damage to the main gear and pinion.*
 
-## Geplante Maßnahmen
-1. Beschaffung eines neuen 48DP Motorritzels aus gehärtetem Stahl (5mm Bohrung).
-2. Beschaffung eines Upgrade-Hauptzahnrads (z.B. Kimbrough 72T 48DP) kompatibel mit dem Carten T410R Mitnehmer.
-3. Sichere Montage des neuen Ritzels mit mittelfester Schraubensicherung (Loctite).
-4. Neukalibrierung des Hobbywing ESC an die Carson-Fernsteuerung (mechanische Endpunkte anlernen). 
-5. Punch unbedingt auf 1 setzen.
-6. Fahrzeug beim anfahren leicht anschieben, um Notabschaltungen des ESC zu verhindern.
-7. Motor umpolen.
+## Planned measures
+1. Procurement of a new 48DP motor pinion made of hardened steel (5mm bore).
+2. Procurement of an upgrade main gear (e.g. Kimbrough 72T 48DP) compatible with the Carten T410R hub.
+3. Secure mounting of the new pinion with medium strength threadlocker (Loctite).
+4. Recalibration of the Hobbywing ESC to the Carson remote control (teach mechanical endpoints).
+5. Absolutely set punch to 1.
+6. Push the vehicle slightly when starting to prevent emergency shutdowns of the ESC.
+7. Reverse motor polarity.
 
-## Durchgeführte Anpassungen
-Keine besonderen Feststellungen.
-
+## Implemented adjustments
+No special findings.

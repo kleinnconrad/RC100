@@ -1,52 +1,51 @@
 spec:
   meta:
     brand: Tamiya
-    system: 3-Schicht Metallic-Aufbau
-    typ: Spezial-Polycarbonatspray (Lexan) - Ätzt sich in den Kunststoff ein
-    eigenschaften: Hochflexibel, stark widerstandsfähig gegen Abblättern bei Crashes.
+    system: 3-layer metallic structure
+    typ: Special polycarbonate spray (Lexan) - Etches into the plastic
+    eigenschaften: Highly flexible, highly resistant to peeling in crashes.
     shopping_items:
-    - artikel_name: Tamiya PS-15 Metallic Rot (100ml)
-      referenz_link: Suche nach Tamiya PS-15 bei RC-Shops
+    - artikel_name: Tamiya PS-15 Metallic Red (100ml)
+      referenz_link: Search for Tamiya PS-15 at RC shops
       geschaetzter_preis_eur: 8.5
-    - artikel_name: Tamiya PS-12 Silber (100ml)
-      referenz_link: Suche nach Tamiya PS-12 bei RC-Shops
+    - artikel_name: Tamiya PS-12 Silver (100ml)
+      referenz_link: Search for Tamiya PS-12 at RC shops
       geschaetzter_preis_eur: 8.5
-    - artikel_name: Tamiya PS-5 Schwarz (100ml)
-      referenz_link: Suche nach Tamiya PS-5 bei RC-Shops
+    - artikel_name: Tamiya PS-5 Black (100ml)
+      referenz_link: Search for Tamiya PS-5 at RC shops
       geschaetzter_preis_eur: 8.5
   properties:
     vorbereitung_prep:
-      schritt_1_waschen: Karosserie von INNEN gründlich mit lauwarmem Wasser und einfachem
-        Spülmittel (ohne Pflegezusätze) auswaschen. Mit Küchenpapier trocknen. Das
-        entfernt Produktionsfett und verhindert, dass die Farbe abperlt.
-      schritt_2_abkleben: Die beiliegenden Scheibenaufkleber von INNEN auf die Fenster
-        kleben. Die Ränder der Aufkleber mit dem Fingernagel oder einem Zahnstocher
-        fest anrubbeln, damit später keine Farbe darunterlaufen kann.
-      schritt_3_anwaermen: Alle drei Sprühdosen für 10 Minuten in eine Schüssel mit
-        warmem (nicht kochendem!) Leitungswasser stellen. Der Druck steigt leicht,
-        die Farbe zerstäubt viel feiner und bildet keine dicken Tropfen beim Sprühen.
+      schritt_1_waschen: Wash the body thoroughly from the INSIDE with lukewarm water and simple
+        dish soap (without care additives). Dry with kitchen paper. This
+        removes production grease and prevents the paint from peeling off.
+      schritt_2_abkleben: Stick the included window decals from the INSIDE onto the windows.
+        Rub the edges of the decals firmly with your fingernail or a toothpick,
+        so that no paint can run under later.
+      schritt_3_anwaermen: Place all three spray cans in a bowl of
+        warm (not boiling!) tap water for 10 minutes. The pressure rises slightly,
+        the paint atomizes much finer and does not form thick drops when spraying.
     durchfuehrung_3_schicht:
-      regel_nummer_1: LEXAN WIRD IMMER VON INNEN LACKIERT! Die äußere, matte Schutzfolie
-        bleibt bis zum allerletzten Schritt auf der Karosserie!
+      regel_nummer_1: LEXAN IS ALWAYS PAINTED FROM THE INSIDE! The outer, matte protective film
+        stays on the body until the very last step!
       phase_1_hauptfarbe_ps15:
-        durchgaenge: 3 bis 4 hauchdünne Schichten
-        technik: Die ERSTE Schicht ist nur ein feiner Nebel (Klebeschicht). Sie MUSS
-          fleckig und durchsichtig aussehen! Nicht versuchen, es sofort deckend zu
-          machen. 10 Minuten warten. Dann die nächste dünne Schicht sprühen. Wiederholen,
-          bis das Rot aufgebraucht ist.
+        durchgaenge: 3 to 4 wafer-thin layers
+        technik: The FIRST layer is just a fine mist (tack coat). It MUST
+          look blotchy and transparent! Do not try to make it opaque immediately.
+          Wait 10 minutes. Then spray the next thin layer. Repeat
+          until the red is used up.
       phase_2_brillanz_ps12:
-        durchgaenge: 2 dünne Schichten
-        technik: Wenn das Rot komplett trocken ist (mindestens 30 Min warten), sprühst
-          du das Silber in 2 Durchgängen (mit 10 Min Pause) direkt auf das Rot. Dies
-          wirkt als Reflektor für die Metallic-Partikel und lässt das Rot stark leuchten.
+        durchgaenge: 2 thin layers
+        technik: When the red is completely dry (wait at least 30 mins), spray
+          the silver in 2 passes (with a 10 min break) directly onto the red. This
+          acts as a reflector for the metallic particles and makes the red shine brightly.
       phase_3_versiegelung_ps5:
-        durchgaenge: 1 bis 2 dünne Schichten
-        technik: Wenn das Silber trocken ist, sprühst du das Schwarz als letzte Schicht
-          darüber. Das blockt jegliches Licht von unten, macht das Rot stark satt
-          und sorgt dafür, dass dein Auto von innen hochprofessionell schwarz und
-          sauber aussieht.
+        durchgaenge: 1 to 2 thin layers
+        technik: When the silver is dry, spray the black as the final layer
+          over it. This blocks any light from below, makes the red very rich
+          and ensures that your car looks highly professional, black and clean from the inside.
     finish_und_montage:
-      schritt_1_masken_entfernen: Wenn das Schwarz handtrocken ist (nach ca. 1-2 Stunden),
-        die Fenstermasken von innen vorsichtig abziehen.
-      schritt_2_magic_moment: Jetzt die äußere, matte Schutzfolie der Karosserie abziehen.
-        Darunter kommt das spiegelglatte, perfekte Metallic-Rot zum Vorschein!
+      schritt_1_masken_entfernen: When the black is dry to the touch (after approx. 1-2 hours),
+        carefully peel off the window masks from the inside.
+      schritt_2_magic_moment: Now peel off the outer, matte protective film of the body.
+        Underneath, the mirror-smooth, perfect metallic red is revealed!
