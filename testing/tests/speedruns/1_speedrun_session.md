@@ -34,10 +34,10 @@ After the runs were completed, the chassis was subjected to a detailed visual an
 With a measured top speed of 103 km/h, the test series was a complete success. The chassis has largely withstood the high loads. The defects found are typical side effects in the high-speed range (rotational forces and vibrations) and can be eliminated through targeted, small optimizations to the drivetrain.
 
 <br>
-<img src="https://github.com/kleinnconrad/RC100/blob/main/fotos/20260419_121510.jpg?raw=true" width="50%">
+<img src="https://github.com/kleinnconrad/RC100/blob/main/photos/20260419_121510.jpg?raw=true" width="50%">
 <br><br>
-<img src="https://github.com/kleinnconrad/RC100/blob/main/fotos/PXL_20260419_125010016.MP.jpg?raw=true" width="50%">
+<img src="https://github.com/kleinnconrad/RC100/blob/main/photos/PXL_20260419_125010016.MP.jpg?raw=true" width="50%">
 <br><br>
-<img src="https://github.com/kleinnconrad/RC100/blob/main/fotos/PXL_20260419_125015566.MP.jpg?raw=true" width="50%">
+<img src="https://github.com/kleinnconrad/RC100/blob/main/photos/PXL_20260419_125015566.MP.jpg?raw=true" width="50%">
 <br><br>
-<img src="https://github.com/kleinnconrad/RC100/blob/main/fotos/Screenshot_20260419-122604.png?raw=true" width="50%">
+<img src="https://github.com/kleinnconrad/RC100/blob/main/photos/Screenshot_20260419-122604.png?raw=true" width="50%">

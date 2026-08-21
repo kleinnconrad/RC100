@@ -1,4 +1,4 @@
-<img src="https://github.com/kleinnconrad/RC100/blob/main/fotos/PXL_20260331_102912086.jpg" alt="Body Detail 1" width="50%">
+<img src="https://github.com/kleinnconrad/RC100/blob/main/photos/PXL_20260331_102912086.jpg" alt="Body Detail 1" width="50%">
 
 * **Body Mounting (Lesson learned):** Incorrect drilling (deviations) occurred when drilling holes for the body mount, as the positions on the curved shell were only roughly sighted and measured.
   > **Learning for future builds:** Manual measurement is too prone to error with Lexan. Future markings should be projected exactly from the chassis onto the body using a leveling device (cross-line laser) to guarantee millimeter-precise drilling.

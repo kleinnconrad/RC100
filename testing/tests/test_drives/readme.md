@@ -28,12 +28,12 @@ Overview of potential asphalt areas for the speedruns.
 
 ## Bauhaus
 
-<img src="https://github.com/kleinnconrad/RC100/blob/main/fotos/PXL_20260403_131559867.jpg?raw=true" width="50%" alt="Test track Bauhaus">
+<img src="https://github.com/kleinnconrad/RC100/blob/main/photos/PXL_20260403_131559867.jpg?raw=true" width="50%" alt="Test track Bauhaus">
 
 ## Metro
 
-<img src="https://github.com/kleinnconrad/RC100/blob/main/fotos/PXL_20260403_135110477.jpg?raw=true" width="50%" alt="Test track Metro">
+<img src="https://github.com/kleinnconrad/RC100/blob/main/photos/PXL_20260403_135110477.jpg?raw=true" width="50%" alt="Test track Metro">
 
 ## Hornbach
 
-<img src="https://github.com/kleinnconrad/RC100/blob/main/fotos/PXL_20260403_134353574.jpg?raw=true" width="50%" alt="Test track Hornbach">
+<img src="https://github.com/kleinnconrad/RC100/blob/main/photos/PXL_20260403_134353574.jpg?raw=true" width="50%" alt="Test track Hornbach">

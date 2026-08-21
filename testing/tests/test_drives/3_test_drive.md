@@ -28,7 +28,7 @@ In order to permanently solve the problem and take preventive action on the othe
 
 * **Securing the ball joints:** The screw connections of all four ball joints of the wheel suspensions were dismantled, checked and then secured against vibrating loose again with liquid threadlocker (Loctite). *(Note: The contact of Loctite with the plastic ball cups was monitored/cleaned).*
 * **Safety check of the screw connections:** All remaining screws of the vehicle that engage in metal threads (are not screwed into plastic components) were checked for correct and tight fit and tightened where necessary.
-<img src="https://github.com/kleinnconrad/RC100/blob/main/fotos/PXL_20260326_100028837.jpg" alt="damage_3_test" width="50%">
+<img src="https://github.com/kleinnconrad/RC100/blob/main/photos/PXL_20260326_100028837.jpg" alt="damage_3_test" width="50%">
 **Conclusion for the next rollout:**
 The mechanical integrity of the wheel suspension should now be restored. The original test of the servo saver must be repeated during the next drive.
 

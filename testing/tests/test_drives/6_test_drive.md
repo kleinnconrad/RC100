@@ -32,7 +32,7 @@ In order to finally get the driving behavior at the front end under control and 
 **Conclusion for the next rollout:**
 The shift of the center of gravity to the front was a partial success and counteracted the spongy front end. For the next tests, it must now be iteratively checked whether a further increase in weight is sufficient or whether a mechanical intervention in the form of a spool brings the final solution for direct and controllable handling.
 
-<img src="https://raw.githubusercontent.com/kleinnconrad/RC100/main/fotos/PXL_20260402_104401694.jpg" width="50%" alt="Setup Foto">
+<img src="https://raw.githubusercontent.com/kleinnconrad/RC100/main/photos/PXL_20260402_104401694.jpg" width="50%" alt="Setup Foto">
 
 ## Implemented adjustments
 No special findings.
