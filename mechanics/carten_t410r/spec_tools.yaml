@@ -1,35 +1,35 @@
 spec:
   meta:
-    beschreibung: Required tools for assembling the Carten T410R.
+    description: Required tools for assembling the Carten T410R.
   properties:
-    werkzeug_liste:
-      inbus_schraubendreher:
-        typ: Hex Wrenches
-        groessen: 1.5 mm, 2.0 mm, 2.5 mm
-        hinweis: Mandatory purchase! Carten uses metric M3 machine screws throughout the car
+    tool_list:
+      hex_wrenches:
+        type: Hex Wrenches
+        sizes: 1.5 mm, 2.0 mm, 2.5 mm
+        note: Mandatory purchase! Carten uses metric M3 machine screws throughout the car
           (no self-tapping screws). A high-quality hex wrench is highly
           important here, so as not to damage the screw heads and the hard plastic thread when screwing in.
         brand: Neewer
         model: Titanium RC Hex Wrench Set (1.5/2.0/2.5/3.0)
-      steckschluessel:
-        typ: RC Cross Wrench / Box Wrench
-        groessen: 5.5 mm and 7.0 mm
-        hinweis: The 5.5 mm is needed permanently for all M3 nuts in the chassis.
+      box_wrenches:
+        type: RC Cross Wrench / Box Wrench
+        sizes: 5.5 mm and 7.0 mm
+        note: The 5.5 mm is needed permanently for all M3 nuts in the chassis.
           The 7.0 mm is for the wheel nuts. The 10.0 mm mentioned in the Carten manual
           is not needed at all for this 1/10 model.
         status: Available (No purchase necessary)
-      klebstoffe_und_chemie:
-        schraubensicherung:
-          typ: Screw Cement / Threadlocker
-          hinweis: highly important! Goes on all screws that are screwed into metal
+      adhesives_and_chemicals:
+        threadlocker:
+          type: Screw Cement / Threadlocker
+          note: highly important! Goes on all screws that are screwed into metal
             (e.g. motor pinion). Often incorrectly labeled as 'GLUE' in the Carten manual.
             Never use for plastic!
           brand: Loctite
           model: 243 Medium Strength (Blue)
-      klebebaender:
-        panzertape:
-          typ: Glass Tape
-          hinweis: Mandatory for the T410R! The car has no classic plastic battery holders.
+      tapes:
+        glass_tape:
+          type: Glass Tape
+          note: Mandatory for the T410R! The car has no classic plastic battery holders.
             According to the manual, the tape is pulled through the slots in the carbon chassis
             to strap the LiPo battery down tightly.
           brand: Arrowmax

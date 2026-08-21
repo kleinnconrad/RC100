@@ -1,19 +1,19 @@
 spec:
   meta:
     brand: ZooRacing
-    modell: Hellcat
-    fahrzeugklasse: 1:10 On-Road Touring Car
-    breite_mm: 190
-    radstand_mm: 257
+    model: Hellcat
+    vehicle_class: 1:10 On-Road Touring Car
+    width_mm: 190
+    wheelbase_mm: 257
     material: Polycarbonate (Lexan)
-    materialstaerke_mm: 0.7
+    material_thickness_mm: 0.7
     shopping_item:
-      in_liste_aufnehmen: true
-      artikel_name: ZooRacing Hellcat 190mm Touring Car Body (0.7mm Regular)
-      kategorie: Body & Aerodynamics
-      referenz_link: Search at RC-KleinKram or Tonisport for 'ZooRacing Hellcat
+      add_to_list: true
+      item_name: ZooRacing Hellcat 190mm Touring Car Body (0.7mm Regular)
+      category: Body & Aerodynamics
+      reference_link: Search at RC-KleinKram or Tonisport for 'ZooRacing Hellcat
         0.7mm'
-      geschaetzter_preis_eur: 32.9
+      estimated_price_eur: 32.9
   properties:
     aerodynamic_features:
       front: Low-drawn nose and gentle hood angle reduce dynamic pressure
@@ -23,15 +23,15 @@ spec:
       rear_wing: Included high-downforce wing provides absolutely necessary rear stability
         at high speed.
     preparation_and_painting:
-      reinigung: The inside of the body must be washed out with dish soap before painting
+      cleaning: The inside of the body must be washed out with dish soap before painting
         to remove mold release agent residues from production.
-      lack_typ: Use exclusively polycarbonate spray (e.g. Tamiya PS colors).
+      paint_type: Use exclusively polycarbonate spray (e.g. Tamiya PS colors).
         Paint from the inside in several thin layers.
-      schutzfolie: Only remove the outer overspray protective film after completely painting
+      protective_film: Only remove the outer overspray protective film after completely painting
         and drilling the holes.
     mounting_instructions:
-      karosserieloecher: Do not pierce holes, but drill with a special body reamer
+      body_holes: Do not pierce holes, but drill with a special body reamer
         to avoid cracks in the Lexan.
       bumper_support: The front foam bumper of the chassis must mechanically support the front body overhang.
-      radkaesten: Cut out wheel arches with curved Lexan scissors and smooth edges
+      wheel_arches: Cut out wheel arches with curved Lexan scissors and smooth edges
         with fine sandpaper to prevent tearing under vibrations.

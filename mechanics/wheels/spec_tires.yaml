@@ -2,30 +2,30 @@ spec:
   meta:
     brand: Sweep Racing
     model: HANKOOK Tread Belted (SR-SSF-36AWPG)
-    typ: Fabric-reinforced rubber hollow chamber tire (Belted)
-    profil: Licensed Hankook tread (optimized for parking lot asphalt)
-    shore_haerte: 36° (Medium/Hard - ideal compromise of grip and durability with
+    type: Fabric-reinforced rubber hollow chamber tire (Belted)
+    tread: Licensed Hankook tread (optimized for parking lot asphalt)
+    shore_hardness: 36° (Medium/Hard - ideal compromise of grip and durability with
       extreme friction)
-    radmitnehmer: 12mm Hex - Suitable for kit hubs of the Carten
+    wheel_hub: 12mm Hex - Suitable for kit hubs of the Carten
       T410R
-    montage_status: Pre-glued (Industrially glued at the factory on spoke wheels)
+    assembly_status: Pre-glued (Industrially glued at the factory on spoke wheels)
     shopping_item:
-      in_liste_aufnehmen: true
-      artikel_name: Sweep HANKOOK Belted Tires 36deg Pre-glued (SR-SSF-36AWPG)
-      kategorie: Wheels & Tires
-      referenz_link: Search for Sweep SR-SSF-36AWPG at common RC shops
-      geschaetzter_preis_eur: 34.9
+      add_to_list: true
+      item_name: Sweep HANKOOK Belted Tires 36deg Pre-glued (SR-SSF-36AWPG)
+      category: Wheels & Tires
+      reference_link: Search for Sweep SR-SSF-36AWPG at common RC shops
+      estimated_price_eur: 34.9
   properties:
     setup_instructions:
-      ballooning_schutz: Thanks to the inner Kevlar/nylon fabric insert, the
+      ballooning_protection: Thanks to the inner Kevlar/nylon fabric insert, the
         tire does not expand at approx. 8,800 RPM (axle speed at 100 km/h). The aerodynamics
         of the ZooRacing Hellcat and the ride height remain constantly safe.
-      radmuttern_sicherung: Mandatory to use locknuts with an intact nylon ring (M4)
+      wheel_nut_securing: Mandatory to use locknuts with an intact nylon ring (M4)
         and tighten firmly. The brutal acceleration of the 3660 motor can spin off loose
         nuts immediately.
-      auswuchten: Despite industrial production, tires can have slight imbalances.
+      balancing: Despite industrial production, tires can have slight imbalances.
         In case of strong vibrations on the jacked-up chassis, balance the wheels (e.g.
         with putty lead in the rim) so as not to destroy the wheel bearings of the Carten T410R at 100 km/h.
-      einfahren_scrubbing: The smooth production layer on the rubber must first be worn off.
+      break_in_scrubbing: The smooth production layer on the rubber must first be worn off.
         Use the first test runs to calibrate the ESC to build up the grip
         for the final topspeed run.

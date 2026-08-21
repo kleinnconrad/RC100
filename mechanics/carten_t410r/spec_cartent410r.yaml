@@ -5,43 +5,43 @@ spec:
     part_number: NHA413
   properties:
     carten_t410r:
-      allgemein:
-        fahrzeugtyp: 1:10 Electric Touring Car (EP Touring Car)
-        lieferzustand: Kit - unassembled
-        einsatzbereich: On-Road / Asphalt / Carpet
-      abmessungen:
-        spurbreite_mm: 190
-        radstand_mm: 258
-      chassis_und_aufbau:
-        bodenplatte: 2.25 mm Eco-Carbon (carbon fiber reinforced composite material)
-        oberdeck: 2.0 mm Eco-Carbon
-        daempferbruecken: 3.0 mm Eco-Carbon (front & rear, various mounting points)
-        motorhalterung: CNC-machined aluminum
-        servohalterung: Floating Servo Mount (Aluminum)
-        akkuhalterung: Prepared for 2S Standard LiPo (Stickpack) or Shorty LiPo
-        karosseriehalter: Adjustable plastic posts
-      antriebsstrang:
-        antriebsart: 4WD four-wheel drive, central shaft drive
-        mittelantriebswelle: Aluminum (red anodized)
-        differentiale: Sealed bevel differentials (front & rear)
-        differential_zahnraeder: Metal gears
-        antriebswellen: Steel CVD (Constant Velocity Drives) on front and rear axle
-        hauptzahnradhalterung: Aluminum
-        radmitnehmer: 12 mm hex, aluminum
-        interne_untersetzung: 1:2.47 to 1:2.53
-        kugellager: Fully ball-beared (with rubber seals)
-      fahrwerk_und_federung:
-        stossdaempfer: Aluminum oil shock absorbers (with threaded coilover)
-        querlenkerhalter: Aluminum (Toe Blocks)
-        stabilisatoren: Front and rear included
-        geometrie_einstellung: Continuously adjustable via R/L threaded rods (Turnbuckles)
-        einstellbare_parameter:
+      general:
+        vehicle_type: 1:10 Electric Touring Car (EP Touring Car)
+        delivery_condition: Kit - unassembled
+        deployment_area: On-Road / Asphalt / Carpet
+      dimensions:
+        track_width_mm: 190
+        wheelbase_mm: 258
+      chassis_and_structure:
+        bottom_plate: 2.25 mm Eco-Carbon (carbon fiber reinforced composite material)
+        upper_deck: 2.0 mm Eco-Carbon
+        shock_towers: 3.0 mm Eco-Carbon (front & rear, various mounting points)
+        motor_mount: CNC-machined aluminum
+        servo_mount: Floating Servo Mount (Aluminum)
+        battery_mount: Prepared for 2S Standard LiPo (Stickpack) or Shorty LiPo
+        body_mounts: Adjustable plastic posts
+      drivetrain:
+        drive_type: 4WD four-wheel drive, central shaft drive
+        center_driveshaft: Aluminum (red anodized)
+        differentials: Sealed bevel differentials (front & rear)
+        differential_gears: Metal gears
+        driveshafts: Steel CVD (Constant Velocity Drives) on front and rear axle
+        spur_gear_mount: Aluminum
+        wheel_hubs: 12 mm hex, aluminum
+        internal_ratio: 1:2.47 to 1:2.53
+        ball_bearings: Fully ball-beared (with rubber seals)
+      suspension_and_springs:
+        shock_absorbers: Aluminum oil shock absorbers (with threaded coilover)
+        suspension_arm_mounts: Aluminum (Toe Blocks)
+        sway_bars: Front and rear included
+        geometry_adjustment: Continuously adjustable via R/L threaded rods (Turnbuckles)
+        adjustable_parameters:
         - Camber
         - Toe
         - Caster
         - Droop
         - Ride Height
         - Ackermann
-      lenkung:
-        lenksystem: Ball-bearing Dual-Bellcrank-System (Double arm)
-        lenkhebel_c_hubs: Composite plastic
+      steering:
+        steering_system: Ball-bearing Dual-Bellcrank-System (Double arm)
+        steering_knuckles_c_hubs: Composite plastic
