@@ -34,10 +34,10 @@ Nach Abschluss der Fahrten wurde das Chassis einer detaillierten Sicht- und Mech
 Mit einer gemessenen Spitzengeschwindigkeit von 103 km/h war die Testreihe ein voller Erfolg. Das Chassis hat den hohen Belastungen weitestgehend standgehalten. Die festgestellten Mängel sind typische Begleiterscheinungen im Hochgeschwindigkeitsbereich (Rotationskräfte und Vibrationen) und lassen sich durch gezielte, kleine Optimierungen am Antriebsstrang beheben.
 
 <br>
-<img src="https://github.com/kleinnconrad/RC100/blob/main/erprobung/fotos/20260419_121510.jpg?raw=true" width="50%">
+<img src="https://github.com/kleinnconrad/RC100/blob/main/fotos/20260419_121510.jpg?raw=true" width="50%">
 <br><br>
-<img src="https://github.com/kleinnconrad/RC100/blob/main/erprobung/fotos/PXL_20260419_125010016.MP.jpg?raw=true" width="50%">
+<img src="https://github.com/kleinnconrad/RC100/blob/main/fotos/PXL_20260419_125010016.MP.jpg?raw=true" width="50%">
 <br><br>
-<img src="https://github.com/kleinnconrad/RC100/blob/main/erprobung/fotos/PXL_20260419_125015566.MP.jpg?raw=true" width="50%">
+<img src="https://github.com/kleinnconrad/RC100/blob/main/fotos/PXL_20260419_125015566.MP.jpg?raw=true" width="50%">
 <br><br>
-<img src="https://github.com/kleinnconrad/RC100/blob/main/erprobung/fotos/Screenshot_20260419-122604.png?raw=true" width="50%">
+<img src="https://github.com/kleinnconrad/RC100/blob/main/fotos/Screenshot_20260419-122604.png?raw=true" width="50%">

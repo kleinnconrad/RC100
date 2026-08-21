@@ -30,7 +30,7 @@ Um das Fahrverhalten am Bug final in den Griff zu bekommen und das Auto exakt st
 **Fazit für den nächsten Rollout:**
 Die Verlagerung des Schwerpunktes nach vorne war ein Teilerfolg und hat dem schwammigen Bug entgegengewirkt. Für die nächsten Tests muss nun iterativ geprüft werden, ob eine weitere Erhöhung des Gewichts ausreicht oder ob ein mechanischer Eingriff in Form eines Spools die finale Lösung für ein direktes und kontrollierbares Handling bringt.
 
-<img src="https://raw.githubusercontent.com/kleinnconrad/RC100/main/erprobung/fotos/PXL_20260402_104401694.jpg" width="50%" alt="Setup Foto">
+<img src="https://raw.githubusercontent.com/kleinnconrad/RC100/main/fotos/PXL_20260402_104401694.jpg" width="50%" alt="Setup Foto">
 
 ## Durchgeführte Anpassungen
 Keine besonderen Feststellungen.

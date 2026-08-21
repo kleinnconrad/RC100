@@ -13,7 +13,7 @@ Das folgende Dashboard visualisiert die physikalischen Grenzen des **Carten T410
 
 Es zeigt den direkten Zusammenhang zwischen der gewählten Ritzelgröße, der resultierenden mechanischen Belastung (Radlast in %) und der erreichbaren Achsdrehzahl.
 
-![Antriebs-Dashboard mit Speed-Zielen](1772373437236.png)
+![Antriebs-Dashboard mit Speed-Zielen](https://github.com/kleinnconrad/RC100/blob/main/fotos/1772373437236.png)
 
 ### Lesehilfe für das Dashboard:
 * **Die gestrichelten Linien (Graustufen):** Markieren die benötigte Achsdrehzahl für unsere Meilensteine (100, 110, 120 und 130 km/h) bei einem Reifendurchmesser von 65 mm.

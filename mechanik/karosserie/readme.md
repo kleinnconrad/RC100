@@ -1,4 +1,4 @@
-<img src="https://github.com/kleinnconrad/RC100/blob/main/mechanik/plattform_agnostisch/karosserie/PXL_20260331_102912086.jpg" alt="Karosserie Detail 1" width="50%">
+<img src="https://github.com/kleinnconrad/RC100/blob/main/fotos/PXL_20260331_102912086.jpg" alt="Karosserie Detail 1" width="50%">
 
 * **Karosserie-Montage (Lehrgeld gezahlt):** Bei den Bohrungen für die Karosseriehalterung kam es zu Fehlbohrungen (Abweichungen), da die Positionen auf der gewölbten Hülle nur grob gepeilt und gemessen wurden.
   > **Learning für künftige Builds:** Manuelles Ausmessen ist bei Lexan zu fehleranfällig. Zukünftige Markierungen sollten mit einem Nivelliergerät (Kreuzlinienlaser) exakt vom Chassis auf die Karosserie projiziert werden, um millimetergenaue Bohrungen zu garantieren.

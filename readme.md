@@ -1,13 +1,13 @@
 # RC100: 1:10 RC-Fahrzeug für Geschwindigkeiten über 100 km/h
 
-Dieses Projekt umfasst die Entwicklung und den Aufbau eines Onroad-Tourenwagens im Maßstab 1:10 mit dem Konstruktionsziel einer jederzeit wiederholbaren Endgeschwindigkeit von über 100 km/h. Der Fokus liegt auf der Maximierung der Antriebsleistung bei gleichzeitiger Gewährleistung der mechanischen Zuverlässigkeit und Kosteneffizienz.
+Dieses Projekt umfasst die Systemarchitektur und den Aufbau eines Onroad-Tourenwagens im Maßstab 1:10 mit dem Konstruktionsziel einer jederzeit wiederholbaren Endgeschwindigkeit von über 100 km/h. Der Fokus liegt auf der Maximierung der Antriebsleistung bei gleichzeitiger Gewährleistung der Zuverlässigkeit und Kosteneffizienz.
 
 Die technische Herausforderung resultiert primär aus dem gewählten Maßstab und dem limitierten Reifendurchmesser von 64 Millimetern. Während Fahrzeuge ab dem Maßstab 1:8 durch höhere Masseträgheit, größere Abrollumfänge und einen längeren Radstand physikalische Vorteile aufweisen, erfordert der Maßstab 1:10 signifikant höhere Rotordrehzahlen. Dies führt zu hohen mechanischen Belastungen im Antriebsstrang. Das geringe Fahrzeuggewicht erfordert zudem präzise aerodynamische und fahrwerksseitige Abstimmungen zur Sicherstellung der Fahrstabilität bei hohen Geschwindigkeiten.
 
 <table>
   <tr>
-    <td><img src="https://github.com/kleinnconrad/RC100/blob/main/elektronik/fotos/PXL_20260315_113015136.jpg?raw=true" alt="Carten T410R JK" width="100%"></td>
-    <td><img src="https://github.com/kleinnconrad/RC100/blob/main/elektronik/fotos/PXL_20260319_133949504.jpg?raw=true" alt="Carten T410R CK" width="100%"></td>
+    <td><img src="https://github.com/kleinnconrad/RC100/blob/main/fotos/PXL_20260315_113015136.jpg?raw=true" alt="Carten T410R JK" width="100%"></td>
+    <td><img src="https://github.com/kleinnconrad/RC100/blob/main/fotos/PXL_20260319_133949504.jpg?raw=true" alt="Carten T410R CK" width="100%"></td>
   </tr>
 </table>
 
@@ -24,6 +24,7 @@ Die technische Herausforderung resultiert primär aus dem gewählten Maßstab un
 Das Projekt ist in themenspezifische Verzeichnisse gegliedert:
 * **`/architektur`**: Dokumentation grundlegender Systemdesigns und Architekturentscheidungen.
 * **`/elektronik`**: Auswahl und Spezifikation elektronischer Komponenten wie Motoren, Fahrtenregler und Akkumulatoren.
+* **`/fotos`**: Zentrales Verzeichnis für sämtliche Bilddateien und visuelle Dokumentationen des Projekts.
 * **`/mechanik`**: Chassis-Design, Konstruktionsdaten sowie die Spezifikation physischer Bauteile.
   * **`/carten_t410r`**: Fahrzeugspezifische Daten und Anleitungen.
   * **`/geometrie`**: Fahrwerkseinstellungen.
