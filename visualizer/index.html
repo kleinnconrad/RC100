@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RC100 Systemarchitektur & Spezifikationen</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Outfit:wght@400;700&display=swap" rel="stylesheet">
+    <!-- js-yaml CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/js-yaml/4.1.0/js-yaml.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="app">
+        <nav class="sidebar glass-panel">
+            <div class="logo">
+                <h1>RC100</h1>
+                <span class="badge">Visualizer</span>
+            </div>
+            <ul class="nav-links">
+                <li><button class="nav-btn active" data-view="adrs">Architecture Decisions</button></li>
+                <li><button class="nav-btn" data-view="specs">System Specifications</button></li>
+            </ul>
+        </nav>
+        
+        <main class="content-area">
+            <header class="top-bar glass-panel">
+                <h2 id="view-title">Architecture Decision Records</h2>
+                <div class="status-indicator">
+                    <span class="dot pulse"></span> Live Data
+                </div>
+            </header>
+
+            <div id="loader" class="loader-container">
+                <div class="spinner"></div>
+                <p>Lade Spezifikationen...</p>
+            </div>
+
+            <div id="adrs-view" class="view-container active">
+                <div class="adr-grid" id="adr-grid">
+                    <!-- ADR Cards will be injected here -->
+                </div>
+            </div>
+
+            <div id="specs-view" class="view-container">
+                <div class="spec-layout">
+                    <aside class="spec-sidebar glass-panel" id="spec-nav">
+                        <!-- Spec Navigation will be injected here -->
+                    </aside>
+                    <section class="spec-content glass-panel" id="spec-details">
+                        <!-- Spec Details will be injected here -->
+                        <div class="empty-state">Wählen Sie eine Komponente aus, um Details anzuzeigen.</div>
+                    </section>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- Background Decoration -->
+    <div class="bg-shape shape-1"></div>
+    <div class="bg-shape shape-2"></div>
+    <div class="bg-shape shape-3"></div>
+
+    <script src="app.js"></script>
+</body>
+</html>
