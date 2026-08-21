@@ -69,32 +69,32 @@ Zur Vermeidung thermischer oder mechanischer Überlastungen der Elektronikkompon
 Dieser Abschnitt dokumentiert die Erkenntnisse aus den bisherigen Tests & Speedruns im Maßstab 1:10 sowie die daraus resultierenden Modifikationen am Fahrzeug.
 
 ```mermaid
-mindmap
-  root((RC100 Erkenntnisse))
-    Fahrbetrieb("Fahrbetrieb & Umgebung")
-      Streckenwahl["`**Learning: Streckenwahl**<br/>Eine geeignete Strecke ist maßgeblich für den Erfolg.<br/>Es wird unbedingt sauberer Asphalt benötigt.<br/>Die Strecke sollte nach Möglichkeit nicht von Wänden<br/>oder Bordsteinen begrenzt sein.<br/>Eine Mindestbreite von 8 Metern ist nötig.`"]
-      Witterung["`**Learning: Witterung**<br/>Wichtig ist ebenfalls das Wetter.<br/>Es sollte auf Windstille und Trockenheit geachtet werden.`"]
-      Sicherheit["`**Learning: Sicherheit**<br/>Wenn die Bedingungen nicht passen und man kein gutes<br/>Gefühl hat, sollte kein Speedrun unternommen werden.`"]
-      Fahrpraxis["`**Learning: Fahrpraxis**<br/>Man muss lernen zu fahren. Es ist nötig, sich mit dem<br/>Fahrzeug und der Beschleunigungskurve vertraut zu machen.<br/>Wichtig ist es, das Fahrzeug ruhig zu steuern, wenn es<br/>weit entfernt ist.`"]
-    Fahrwerk("Fahrwerk & Geometrie")
-      Daempfung["`**Modifikation: Dämpfung & Federung**<br/>Es wurde ein sehr zähflüssiges Dämpferöl verwendet<br/>und die Federvorspannung maximiert.<br/>Harte Federungen sind absolut nötig, um Kontrollverlust<br/>durch Eintauchen zu verhindern.`"]
-      Geometrie["`**Modifikation: Fahrwerksgeometrie**<br/>Hinten Vorspur von 2,5 Grad und 0 Grad Sturz.<br/>Vorne 0 Grad Vorspur und 0 Grad Sturz.<br/>Hier sollten keine Experimente unternommen werden.`"]
-      Stabis["`**Modifikation: Querstabilisatoren**<br/>Die Stabilisatoren wurden ausgebaut.<br/>Sie sind für Speedruns unnötig und stellen eine<br/>potenzielle Fehlerquelle dar.`"]
-      Ausfederweg["`**Modifikation: Ausfederweg**<br/>Die Droopscrews wurden entfernt.<br/>Da die Strecke nicht manuell gereinigt wird, ist eine<br/>weitere Tieferlegung nicht zielführend.<br/>Die Schrauben sind für den regulären 1:10 Speedrun unnötig.`"]
-      Gewichtsverteilung["`**Learning: Gewichtsverteilung**<br/>Es muss auf eine ausgeglichene Links/Rechts-Gewichtsverteilung<br/>geachtet werden. Zudem darf die Front nicht zu leicht sein.`"]
-    Antrieb("Antriebsstrang")
-      Motorisierung["`**Learning: Motorisierung**<br/>Eine ausreichende Motorisierung ist ein kleineres<br/>Problem als oft angenommen. Hier sollte man nicht zu viel investieren.`"]
-      Motor_Getriebe["`**Modifikation: Motor & Getriebe**<br/>Einsatz eines 3660 Motors mit langer Übersetzung anstelle<br/>des üblichen 3650 Motors. Die Motorisierung muss der zur<br/>Verfügung stehenden Strecke angepasst werden.`"]
-      Diff_Vorne["`**Modifikation: Differential (Vorderachse)**<br/>Es wurde ein Frontspool eingebaut.<br/>Bei Geradeauslauf mit Höchstgeschwindigkeit muss Diff-Out<br/>unbedingt vermieden werden; Drehzahlausgleiche sind nicht erwünscht.`"]
-      Diff_Hinten["`**Learning: Differential (Hinterachse)**<br/>Das hintere Differential schwergängiger zu machen, ist nicht nötig.<br/>Der Frontspool reicht aus.`"]
-      Thermik["`**Learning: Thermisches Management**<br/>Probleme mit ESC- und Motortemperatur traten noch nicht auf.<br/>Das Problem ist offenbar überbewertet.`"]
-    Elektronik("Elektronik & Steuerung")
-      Steuerung["`**Learning: Steuerungskomponenten**<br/>An der Fernbedienung und dem Servo darf nicht gespart werden.<br/>Fehlende Präzision (z. B. durch Schleifkontaktpotentiometer)<br/>macht Lenkkorrekturen zur Glückssache. Es muss in eine<br/>Fernsteuerung mit Hall-Sensoren und ein vernünftiges<br/>Digital-Servo investiert werden.`"]
-      Hilfssysteme["`**Learning: Hilfssysteme**<br/>Technische Hilfsmittel wie Gaskurvensteuerung und/oder<br/>Gyro sollten in Betracht gezogen werden.`"]
-    Chassis("Chassis & Montage")
-      Material["`**Learning: Materialauswahl**<br/>Es sollten nicht alle Kunststoffteile durch Aluminium<br/>ersetzt werden. Es muss überlegt werden, welche Teile bei<br/>einem Crash zerstört werden dürfen. Werden leicht zu ersetzende<br/>Kunststoffteile durch Aluminium ersetzt, sucht sich die<br/>Aufprallenergie ungünstigere Wege.`"]
-      Schrauben["`**Learning: Schraubensicherung**<br/>Loctite bei Metallverbindungen ist absolute Pflicht.`"]
-      Karosserie["`**Learning: Karosserie**<br/>Die Karosserie sollte nicht lackiert werden.<br/>Eine klare Karosserie erlaubt jederzeit den notwendigen Blick auf die Technik.`"]
+timeline
+    title RC100 Erkenntnisse & Modifikationen
+    Fahrbetrieb & Umgebung
+        : Streckenwahl (Learning) : Eine geeignete Strecke ist maßgeblich für den Erfolg. Es wird unbedingt sauberer Asphalt benötigt. Die Strecke sollte nach Möglichkeit nicht von Wänden oder Bordsteinen begrenzt sein. Eine Mindestbreite von 8 Metern ist nötig.
+        : Witterung (Learning) : Wichtig ist ebenfalls das Wetter. Es sollte auf Windstille und Trockenheit geachtet werden.
+        : Sicherheit (Learning) : Wenn die Bedingungen nicht passen und man kein gutes Gefühl hat, sollte kein Speedrun unternommen werden.
+        : Fahrpraxis (Learning) : Man muss lernen zu fahren. Es ist nötig, sich mit dem Fahrzeug und der Beschleunigungskurve vertraut zu machen. Wichtig ist es, das Fahrzeug ruhig zu steuern, wenn es weit entfernt ist.
+    Fahrwerk & Geometrie
+        : Dämpfung & Federung (Modifikation) : Es wurde ein sehr zähflüssiges Dämpferöl verwendet und die Federvorspannung maximiert. Harte Federungen sind absolut nötig, um Kontrollverlust durch Eintauchen zu verhindern.
+        : Fahrwerksgeometrie (Modifikation) : Hinten Vorspur von 2,5 Grad und 0 Grad Sturz. Vorne 0 Grad Vorspur und 0 Grad Sturz. Hier sollten keine Experimente unternommen werden.
+        : Querstabilisatoren (Modifikation) : Die Stabilisatoren wurden ausgebaut. Sie sind für Speedruns unnötig und stellen eine potenzielle Fehlerquelle dar.
+        : Ausfederweg (Modifikation) : Die Droopscrews wurden entfernt. Da die Strecke nicht manuell gereinigt wird, ist eine weitere Tieferlegung nicht zielführend. Die Schrauben sind für den regulären 1:10 Speedrun unnötig.
+        : Gewichtsverteilung (Learning) : Es muss auf eine ausgeglichene Links/Rechts-Gewichtsverteilung geachtet werden. Zudem darf die Front nicht zu leicht sein.
+    Antriebsstrang
+        : Motorisierung (Learning) : Eine ausreichende Motorisierung ist ein kleineres Problem als oft angenommen. Hier sollte man nicht zu viel investieren.
+        : Motor & Getriebe (Modifikation) : Einsatz eines 3660 Motors mit langer Übersetzung anstelle des üblichen 3650 Motors. Die Motorisierung muss der zur Verfügung stehenden Strecke angepasst werden.
+        : Differential Vorderachse (Modifikation) : Es wurde ein Frontspool eingebaut. Bei Geradeauslauf mit Höchstgeschwindigkeit muss Diff-Out unbedingt vermieden werden; Drehzahlausgleiche sind nicht erwünscht.
+        : Differential Hinterachse (Learning) : Das hintere Differential schwergängiger zu machen, ist nicht nötig. Der Frontspool reicht aus.
+        : Thermisches Management (Learning) : Probleme mit ESC- und Motortemperatur traten noch nicht auf. Das Problem ist offenbar überbewertet.
+    Elektronik & Steuerung
+        : Steuerungskomponenten (Learning) : An der Fernbedienung und dem Servo darf nicht gespart werden. Fehlende Präzision (z. B. durch Schleifkontaktpotentiometer) macht Lenkkorrekturen zur Glückssache. Es muss in eine Fernsteuerung mit Hall-Sensoren und ein vernünftiges Digital-Servo investiert werden.
+        : Hilfssysteme (Learning) : Technische Hilfsmittel wie Gaskurvensteuerung und/oder Gyro sollten in Betracht gezogen werden.
+    Chassis & Montage
+        : Materialauswahl (Learning) : Es sollten nicht alle Kunststoffteile durch Aluminium ersetzt werden. Es muss überlegt werden, welche Teile bei einem Crash zerstört werden dürfen. Werden leicht zu ersetzende Kunststoffteile durch Aluminium ersetzt, sucht sich die Aufprallenergie ungünstigere Wege.
+        : Schraubensicherung (Learning) : Loctite bei Metallverbindungen ist absolute Pflicht.
+        : Karosserie (Learning) : Die Karosserie sollte nicht lackiert werden. Eine klare Karosserie erlaubt jederzeit den notwendigen Blick auf die Technik.
 ```
 
 ## Repository-Verwaltung und Automatisierung
