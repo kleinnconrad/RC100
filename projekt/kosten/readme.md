@@ -33,6 +33,7 @@
 | 19 | **Lenkung** | Savöx SC-1252MG+ Low-Profile Servo | SA_SC-1252MG+ | RCFOX | 1 | 52,72 € |
 | 20 | **Lenkung** | ALU CLAMP SERVO HORN 25T (HUD293409) | HUD293409 | RCFOX | 1 | 21,50 € |
 | 21 | **Ersatzteile** | CARTEN T410R - 1:10 4WD Tourenwagen Baukasten | 75-NHA102 | RC-KleinKram | 1 | 179,99 € |
+| 22 | **Mechanik** | CARTEN NBA360 Stahl Hauptzahnrad 48DP 68 Zähne | 75-NBA360 | - | 1 | 15,99 € |
 
 ---
 
@@ -40,6 +41,6 @@
 
 | Beschreibung | Betrag |
 |:---|---:|
-| **Reine Fahrzeugkosten:** | **601,50 €** |
+| **Reine Fahrzeugkosten:** | **617,49 €** |
 | Kosten für Tools, Infrastruktur & Ersatzteile (Pos. 2, 7, 8, 9, 11-14, 16, 17, 21): | 402,10 € |
-| **Gesamtkosten:** | **1003,60 €** |
+| **Gesamtkosten:** | **1019,59 €** |

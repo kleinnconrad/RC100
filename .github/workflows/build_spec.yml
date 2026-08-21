@@ -1,4 +1,4 @@
-name: Build Specs, Docs and Shopping List
+name: Build Specs and Docs
 
 on:
   push:
@@ -28,9 +28,6 @@ jobs:
 
 
 
-      # Schritt 3: Einkaufsliste generieren
-      - name: Run Shopping List Generator
-        run: python scripts/generate_shopping_list.py
 
       # Schritt 4: Alles zusammen committen
       - name: Commit and Push all changes
@@ -41,6 +38,6 @@ jobs:
           # Das -A (All) zwingt Git, jede noch so kleine Änderung im Projekt aufzunehmen!
           git add -A
           
-          git commit -m "chore(docs): auto-update specs, docs and shopping list [skip ci]" || echo "Keine Änderungen zu committen."
+          git commit -m "chore(docs): auto-update specs and docs [skip ci]" || echo "Keine Änderungen zu committen."
           git pull --rebase
           git push
