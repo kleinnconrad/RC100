@@ -68,34 +68,17 @@ Zur Vermeidung thermischer oder mechanischer Überlastungen der Elektronikkompon
 ## Learnings & Modifikationen (so far...)
 Dieser Abschnitt dokumentiert die Erkenntnisse aus den bisherigen Tests & Speedruns im Maßstab 1:10 sowie die daraus resultierenden Modifikationen am Fahrzeug.
 
-```mermaid
-timeline
-    title RC100 Erkenntnisse & Modifikationen
-    Fahrbetrieb & Umgebung
-        : Streckenwahl (Learning) : Eine geeignete Strecke ist maßgeblich für den Erfolg. Es wird unbedingt sauberer Asphalt benötigt. Die Strecke sollte nach Möglichkeit nicht von Wänden oder Bordsteinen begrenzt sein. Eine Mindestbreite von 8 Metern ist nötig.
-        : Witterung (Learning) : Wichtig ist ebenfalls das Wetter. Es sollte auf Windstille und Trockenheit geachtet werden.
-        : Sicherheit (Learning) : Wenn die Bedingungen nicht passen und man kein gutes Gefühl hat, sollte kein Speedrun unternommen werden.
-        : Fahrpraxis (Learning) : Man muss lernen zu fahren. Es ist nötig, sich mit dem Fahrzeug und der Beschleunigungskurve vertraut zu machen. Wichtig ist es, das Fahrzeug ruhig zu steuern, wenn es weit entfernt ist.
-    Fahrwerk & Geometrie
-        : Dämpfung & Federung (Modifikation) : Es wurde ein sehr zähflüssiges Dämpferöl verwendet und die Federvorspannung maximiert. Harte Federungen sind absolut nötig, um Kontrollverlust durch Eintauchen zu verhindern.
-        : Fahrwerksgeometrie (Modifikation) : Hinten Vorspur von 2,5 Grad und 0 Grad Sturz. Vorne 0 Grad Vorspur und 0 Grad Sturz. Hier sollten keine Experimente unternommen werden.
-        : Querstabilisatoren (Modifikation) : Die Stabilisatoren wurden ausgebaut. Sie sind für Speedruns unnötig und stellen eine potenzielle Fehlerquelle dar.
-        : Ausfederweg (Modifikation) : Die Droopscrews wurden entfernt. Da die Strecke nicht manuell gereinigt wird, ist eine weitere Tieferlegung nicht zielführend. Die Schrauben sind für den regulären 1:10 Speedrun unnötig.
-        : Gewichtsverteilung (Learning) : Es muss auf eine ausgeglichene Links/Rechts-Gewichtsverteilung geachtet werden. Zudem darf die Front nicht zu leicht sein.
-    Antriebsstrang
-        : Motorisierung (Learning) : Eine ausreichende Motorisierung ist ein kleineres Problem als oft angenommen. Hier sollte man nicht zu viel investieren.
-        : Motor & Getriebe (Modifikation) : Einsatz eines 3660 Motors mit langer Übersetzung anstelle des üblichen 3650 Motors. Die Motorisierung muss der zur Verfügung stehenden Strecke angepasst werden.
-        : Differential Vorderachse (Modifikation) : Es wurde ein Frontspool eingebaut. Bei Geradeauslauf mit Höchstgeschwindigkeit muss Diff-Out unbedingt vermieden werden; Drehzahlausgleiche sind nicht erwünscht.
-        : Differential Hinterachse (Learning) : Das hintere Differential schwergängiger zu machen, ist nicht nötig. Der Frontspool reicht aus.
-        : Thermisches Management (Learning) : Probleme mit ESC- und Motortemperatur traten noch nicht auf. Das Problem ist offenbar überbewertet.
-    Elektronik & Steuerung
-        : Steuerungskomponenten (Learning) : An der Fernbedienung und dem Servo darf nicht gespart werden. Fehlende Präzision (z. B. durch Schleifkontaktpotentiometer) macht Lenkkorrekturen zur Glückssache. Es muss in eine Fernsteuerung mit Hall-Sensoren und ein vernünftiges Digital-Servo investiert werden.
-        : Hilfssysteme (Learning) : Technische Hilfsmittel wie Gaskurvensteuerung und/oder Gyro sollten in Betracht gezogen werden.
-    Chassis & Montage
-        : Materialauswahl (Learning) : Es sollten nicht alle Kunststoffteile durch Aluminium ersetzt werden. Es muss überlegt werden, welche Teile bei einem Crash zerstört werden dürfen. Werden leicht zu ersetzende Kunststoffteile durch Aluminium ersetzt, sucht sich die Aufprallenergie ungünstigere Wege.
-        : Schraubensicherung (Learning) : Loctite bei Metallverbindungen ist absolute Pflicht.
-        : Karosserie (Learning) : Die Karosserie sollte nicht lackiert werden. Eine klare Karosserie erlaubt jederzeit den notwendigen Blick auf die Technik.
-```
+### Kachel-Übersicht
+
+| Fahrbetrieb & Umgebung | Fahrwerk & Geometrie |
+|:---|:---|
+| **[L] Streckenwahl**<br>Eine geeignete Strecke ist maßgeblich für den Erfolg. Es wird unbedingt sauberer Asphalt benötigt. Die Strecke sollte nach Möglichkeit nicht von Wänden oder Bordsteinen begrenzt sein. Eine Mindestbreite von 8 Metern ist nötig.<br><br>**[L] Witterung**<br>Wichtig ist ebenfalls das Wetter. Es sollte auf Windstille und Trockenheit geachtet werden.<br><br>**[L] Sicherheit**<br>Wenn die Bedingungen nicht passen und man kein gutes Gefühl hat, sollte kein Speedrun unternommen werden.<br><br>**[L] Fahrpraxis**<br>Man muss lernen zu fahren. Es ist nötig, sich mit dem Fahrzeug und der Beschleunigungskurve vertraut zu machen. Wichtig ist es, das Fahrzeug ruhig zu steuern, wenn es weit entfernt ist. | **[M] Dämpfung & Federung**<br>Es wurde ein sehr zähflüssiges Dämpferöl verwendet und die Federvorspannung maximiert. Harte Federungen sind absolut nötig, um Kontrollverlust durch Eintauchen zu verhindern.<br><br>**[M] Fahrwerksgeometrie**<br>Hinten Vorspur von 2,5 Grad und 0 Grad Sturz. Vorne 0 Grad Vorspur und 0 Grad Sturz. Hier sollten keine Experimente unternommen werden.<br><br>**[M] Querstabilisatoren**<br>Die Stabilisatoren wurden ausgebaut. Sie sind für Speedruns unnötig und stellen eine potenzielle Fehlerquelle dar.<br><br>**[M] Ausfederweg**<br>Die Droopscrews wurden entfernt. Da die Strecke nicht manuell gereinigt wird, ist eine weitere Tieferlegung nicht zielführend. Die Schrauben sind für den regulären 1:10 Speedrun unnötig.<br><br>**[L] Gewichtsverteilung**<br>Es muss auf eine ausgeglichene Links/Rechts-Gewichtsverteilung geachtet werden. Zudem darf die Front nicht zu leicht sein. |
+
+| Antriebsstrang | Elektronik & Steuerung | Chassis & Montage |
+|:---|:---|:---|
+| **[L] Motorisierung**<br>Eine ausreichende Motorisierung ist ein kleineres Problem als oft angenommen. Hier sollte man nicht zu viel investieren.<br><br>**[M] Motor & Getriebe**<br>Einsatz eines 3660 Motors mit langer Übersetzung anstelle des üblichen 3650 Motors. Die Motorisierung muss der zur Verfügung stehenden Strecke angepasst werden.<br><br>**[M] Differential (Vorne)**<br>Es wurde ein Frontspool eingebaut. Bei Geradeauslauf mit Höchstgeschwindigkeit muss Diff-Out unbedingt vermieden werden; Drehzahlausgleiche sind nicht erwünscht.<br><br>**[L] Differential (Hinten)**<br>Das hintere Differential schwergängiger zu machen, ist nicht nötig. Der Frontspool reicht aus.<br><br>**[L] Thermisches Management**<br>Probleme mit ESC- und Motortemperatur traten noch nicht auf. Das Problem ist offenbar überbewertet. | **[L] Steuerungskomponenten**<br>An der Fernbedienung und dem Servo darf nicht gespart werden. Fehlende Präzision macht Lenkkorrekturen zur Glückssache. Es muss in eine Fernsteuerung mit Hall-Sensoren und ein vernünftiges Digital-Servo investiert werden.<br><br>**[L] Hilfssysteme**<br>Technische Hilfsmittel wie Gaskurvensteuerung und/oder Gyro sollten in Betracht gezogen werden. | **[L] Materialauswahl**<br>Es sollten nicht alle Kunststoffteile durch Aluminium ersetzt werden. Es muss überlegt werden, welche Teile bei einem Crash zerstört werden dürfen. Werden leicht zu ersetzende Kunststoffteile durch Aluminium ersetzt, sucht sich die Aufprallenergie ungünstigere Wege.<br><br>**[L] Schraubensicherung**<br>Loctite bei Metallverbindungen ist absolute Pflicht.<br><br>**[L] Karosserie**<br>Die Karosserie sollte nicht lackiert werden. Eine klare Karosserie erlaubt jederzeit den notwendigen Blick auf die Technik. |
+
+*(Legende: **[L]** = Learning, **[M]** = Modifikation)*
 
 ## Repository-Verwaltung und Automatisierung
 Die Pflege der als YAML-Dateien formatierten Spezifikationen und Architekturentscheidungen löst automatisierte Prozesse aus:
