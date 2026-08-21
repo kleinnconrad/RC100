@@ -41,9 +41,9 @@ Für einen kompromisslosen Speedrun (exakt geradeaus, maximale Stabilität) gilt
 
 | Achse / Parameter | Einstellung | Physikalischer Grund für 100 km/h |
 | :--- | :--- | :--- |
-| **Vorderachse: Spur** | **0° (Neutral)** | Kein Bremswiderstand durch "schräg" stehende Räder. Das Lenkservo hält das Auto auf Kurs. |
-| **Hinterachse: Spur** | **2.5° bis 3° Vorspur** | **stark wichtig!** Der aerodynamische "Anker". Zwingt das Heck, immer hinter der Front zu bleiben. Ohne Vorspur dreht sich das Auto bei 80 km/h sofort um die eigene Achse. *(Beim Carten T410R oft durch die hinteren Querlenkerhalter / Toe-Blocks vorgegeben).* |
-| **Sturz (Vorne & Hinten)**| **-0.5° bis -1.0° (Leicht Negativ)**| Nicht komplett 0°, da sich der Gummi-Reifen bei 10.000 U/min durch die Fliehkraft in der Mitte minimal aufbläht (Ballooning). Der winzige negative Sturz kompensiert das, sodass die Lauffläche bei Top-Speed plan auf dem Asphalt bleibt. |
+| **Vorderachse: Spur** | **0° (Neutral)** | Minimierung des Rollwiderstands bei Geradeausfahrt. |
+| **Hinterachse: Spur** | **2,5° Vorspur** | Erhöhung der Fahrstabilität. Verhindert das Ausbrechen der Hinterachse bei hohen Geschwindigkeiten. (Beim Carten T410R durch die hinteren Querlenkerhalter vorgegeben). |
+| **Sturz (Vorne & Hinten)**| **0° (Neutral)** | Maximale Auflagefläche des Reifens bei Geradeausfahrt für optimale Traktion. |
 
 ### Einstellung am Chassis
 Beim Carten T410R wird die Geometrie über die **Spurstangen** (Turnbuckles – Metallstäbe mit Rechts-/Linksgewinde) eingestellt:
