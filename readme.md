@@ -65,7 +65,7 @@ Zur Vermeidung thermischer oder mechanischer Überlastungen der Elektronikkompon
 * **Limit-Rechner (`scripts/calc/max_speed.py`)**: Kalkuliert die erreichbare Endgeschwindigkeit unter Einbezug der spezifischen Motordaten, der Akkuspannung und definierter thermischer Toleranzgrenzen anhand der physischen Hardware-Spezifikationen.
 
 ## Learnings & Modifikationen (so far...)
-Dieser Abschnitt dokumentiert die Erkenntnisse aus den bisherigen Geschwindigkeitsfahrten im Maßstab 1:10 sowie die daraus resultierenden Modifikationen am Fahrzeug.
+Dieser Abschnitt dokumentiert die Erkenntnisse aus den bisherigen Tests & Speedruns im Maßstab 1:10 sowie die daraus resultierenden Modifikationen am Fahrzeug.
 
 | Nr. | Typ | Bereich | Thema | Beschreibung |
 |---|---|---|---|---|
