@@ -68,13 +68,44 @@ To avoid thermal or mechanical overload of the electronic components, custom-dev
 ## Learnings & Modifications (so far...)
 This section documents the findings from previous tests & speedruns in 1:10 scale as well as the resulting modifications to the vehicle.
 
-| Driving Operation & Environment | Suspension & Geometry |
-|:---|:---|
-| **[L] Track Selection**<br>A suitable track is crucial for success. Clean asphalt is absolutely necessary. The track should preferably not be bordered by walls or curbs. A minimum width of 8 meters is required.<br><br>**[L] Weather**<br>The weather is also important. Ensure there is no wind and conditions are dry.<br><br>**[L] Safety**<br>If the conditions are not right and you don't have a good feeling, no speedrun should be undertaken.<br><br>**[L] Driving Practice**<br>You must learn to drive. It is necessary to familiarize yourself with the vehicle and the acceleration curve. It is important to steer the vehicle smoothly when it is far away. | **[M] Damping & Springing**<br>Very viscous shock oil was used and spring preload maximized. Stiff suspension is absolutely necessary to prevent loss of control due to diving.<br><br>**[M] Suspension Geometry**<br>Rear toe-in of 2.5 degrees and 0 degrees camber. Front 0 degrees toe-in and 0 degrees camber. No experiments should be made here.<br><br>**[M] Sway Bars**<br>The sway bars were removed. They are unnecessary for speedruns and pose a potential source of error.<br><br>**[M] Droop**<br>The droop screws were removed. Since the track is not manually cleaned, further lowering is not constructive. The screws are unnecessary for the regular 1:10 speedrun.<br><br>**[L] Weight Distribution**<br>Care must be taken to ensure an even left/right weight distribution. Furthermore, the front must not be too light. |
+| Driving Operation & Environment |
+|:---|
+| **[L] Track Selection**<br>A suitable track is crucial for success. Clean asphalt is absolutely necessary. The track should preferably not be bordered by walls or curbs. A minimum width of 8 meters is required. |
+| **[L] Weather**<br>The weather is also important. Ensure there is no wind and conditions are dry. |
+| **[L] Safety**<br>If the conditions are not right and you don't have a good feeling, no speedrun should be undertaken. |
+| **[L] Driving Practice**<br>You must learn to drive. It is necessary to familiarize yourself with the vehicle and the acceleration curve. It is important to steer the vehicle smoothly when it is far away. |
 
-| Drivetrain | Electronics & Control | Chassis & Assembly |
-|:---|:---|:---|
-| **[L] Motorization**<br>Sufficient motorization is less of a problem than often assumed. You shouldn't invest too much here.<br><br>**[M] Motor & Gearing**<br>Use of a 3660 motor with a tall gear ratio instead of the usual 3650 motor. The motorization must be adapted to the available track.<br><br>**[M] Differential (Front)**<br>A front spool was installed. During straight-line running at maximum speed, diff-out must be absolutely avoided; speed compensation is not desired.<br><br>**[L] Differential (Rear)**<br>Making the rear differential stiffer is not necessary. The front spool is sufficient.<br><br>**[L] Thermal Management**<br>Problems with ESC and motor temperature have not occurred yet. The problem is apparently overrated. | **[L] Control Components**<br>Do not skimp on the remote control and servo. Lack of precision makes steering corrections a game of chance. You must invest in a remote control with Hall sensors and a decent digital servo.<br><br>**[L] Assistance Systems**<br>Technical aids like throttle curve control and/or a gyro should be considered.<br><br>**[L] Steering Mechanics**<br>The steering mechanism must move without resistance when disconnected from the servo. Mechanical resistance prevents the servo from returning precisely to the neutral position during slow steering inputs. In this state, the servo stops visibly but continues to draw current, indicated by audible noise, as it attempts to reach the neutral position.<br><br>**[L] Steering `Exponential Curve` (cubic polynomial)**<br>The steering exponential curve requires precise configuration. A setting of approximately -30 is recommended. | **[L] Material Selection**<br>Not all plastic parts should be replaced with aluminum. You must consider which parts are allowed to be destroyed in a crash. If easily replaceable plastic parts are replaced with aluminum, the impact energy finds more unfavorable paths.<br><br>**[L] Threadlocker**<br>Loctite on metal connections is absolutely mandatory.<br><br>**[L] Body**<br>The body should not be painted. A clear body allows a necessary view of the technology at all times.<br><br>**[M] C-Hub Assembly**<br>The mounting screws of the C-hubs were loosened to eliminate mechanical resistance. Excessive tightening prevents the steering from moving freely, resulting in the previously described issue of an inaccurate servo neutral return.<br><br>**[M] Servo Saver**<br>The servo saver was removed and an aluminum servo horn was mounted directly. This increases the risk of damage to the servo in the event of a crash. The servo saver was identified as a source of failure (steering oscillation) during speedruns. |
+| Suspension & Geometry |
+|:---|
+| **[M] Damping & Springing**<br>Very viscous shock oil was used and spring preload maximized. Stiff suspension is absolutely necessary to prevent loss of control due to diving. |
+| **[M] Suspension Geometry**<br>Rear toe-in of 2.5 degrees and 0 degrees camber. Front 0 degrees toe-in and 0 degrees camber. No experiments should be made here. |
+| **[M] Sway Bars**<br>The sway bars were removed. They are unnecessary for speedruns and pose a potential source of error. |
+| **[M] Droop**<br>The droop screws were removed. Since the track is not manually cleaned, further lowering is not constructive. The screws are unnecessary for the regular 1:10 speedrun. |
+| **[L] Weight Distribution**<br>Care must be taken to ensure an even left/right weight distribution. Furthermore, the front must not be too light. |
+
+| Drivetrain |
+|:---|
+| **[L] Motorization**<br>Sufficient motorization is less of a problem than often assumed. You shouldn't invest too much here. |
+| **[M] Motor & Gearing**<br>Use of a 3660 motor with a tall gear ratio instead of the usual 3650 motor. The motorization must be adapted to the available track. |
+| **[M] Differential (Front)**<br>A front spool was installed. During straight-line running at maximum speed, diff-out must be absolutely avoided; speed compensation is not desired. |
+| **[L] Differential (Rear)**<br>Making the rear differential stiffer is not necessary. The front spool is sufficient. |
+| **[L] Thermal Management**<br>Problems with ESC and motor temperature have not occurred yet. The problem is apparently overrated. |
+
+| Electronics & Control |
+|:---|
+| **[L] Control Components**<br>Do not skimp on the remote control and servo. Lack of precision makes steering corrections a game of chance. You must invest in a remote control with Hall sensors and a decent digital servo. |
+| **[L] Assistance Systems**<br>Technical aids like throttle curve control and/or a gyro should be considered. |
+| **[L] Steering Mechanics**<br>The steering mechanism must move without resistance when disconnected from the servo. Mechanical resistance prevents the servo from returning precisely to the neutral position during slow steering inputs. In this state, the servo stops visibly but continues to draw current, indicated by audible noise, as it attempts to reach the neutral position. |
+| **[L] Steering `Exponential Curve` (cubic polynomial)**<br>The steering exponential curve requires precise configuration. A setting of approximately -30 is recommended. |
+| **[L] Throttle Exponential Curve (cubic polynomial)**<br>The throttle exponential curve requires precise configuration. A setting of approximately -40 is recommended. |
+
+| Chassis & Assembly |
+|:---|
+| **[L] Material Selection**<br>Not all plastic parts should be replaced with aluminum. You must consider which parts are allowed to be destroyed in a crash. If easily replaceable plastic parts are replaced with aluminum, the impact energy finds more unfavorable paths. |
+| **[L] Threadlocker**<br>Loctite on metal connections is absolutely mandatory. |
+| **[L] Body**<br>The body should not be painted. A clear body allows a necessary view of the technology at all times. |
+| **[M] C-Hub Assembly**<br>The mounting screws of the C-hubs were loosened to eliminate mechanical resistance. Excessive tightening prevents the steering from moving freely, resulting in the previously described issue of an inaccurate servo neutral return. |
+| **[M] Servo Saver**<br>The servo saver was removed and an aluminum servo horn was mounted directly. This increases the risk of damage to the servo in the event of a crash. The servo saver was identified as a source of failure (steering oscillation) during speedruns. |
 
 *(Legend: **[L]** = Learning, **[M]** = Modification)*
 
