@@ -1,0 +1,17 @@
+spec:
+  meta:
+    brand: Ruddog
+    model: Glitch Buster
+    type: Receiver Capacitor / Voltage Stabilizer
+    features: Prevents voltage drops and receiver brown-outs
+    price_class: Low-Budget (~5 EUR)
+  properties:
+    mechanical_specifications:
+      connector: Standard JR/Futaba servo plug
+      case: Shrink-wrapped electrolytic capacitor
+    performance_specifications:
+      function: Buffers the BEC (Battery Eliminator Circuit) voltage to prevent sudden drops caused by high current draw from the steering servo.
+      compatibility: Universally compatible with all standard RC receivers.
+    installation:
+      mounting: Plugs directly into any available free port on the receiver (e.g., CH4, AUX, or BATT).
+      application: Highly recommended when using a gyro, as the constant micro-adjustments and counter-steering commands can lead to high-frequency current spikes, causing voltage fluctuations and subsequent servo jitter or receiver reboots.

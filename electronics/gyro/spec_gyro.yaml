@@ -1,0 +1,23 @@
+spec:
+  meta:
+    brand: SkyRC
+    model: GC301
+    type: Steering Gyro
+    features: Adjustable steering gain, remote gain support
+    price_class: Budget / Entry-Level (~25 EUR)
+  properties:
+    mechanical_specifications:
+      case: Plastic
+      dimensions_mm:
+        length: 21.0
+        width: 21.0
+        height: 11.0
+      weight_g: 3.6
+    performance_specifications:
+      operating_voltage: 4.0V - 8.4V
+      current_drain: 25mA
+      operating_temperature: -10°C to +45°C
+    installation:
+      mounting: Must be securely mounted flat and parallel to the chassis longitudinal axis using double-sided tape to avoid false readings from vibrations.
+      wiring: Connects between the steering servo and the receiver (CH1).
+      gain_control: Can be adjusted remotely via an auxiliary channel (CH3) or manually via the physical potentiometer on the gyro.

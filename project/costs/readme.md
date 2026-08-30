@@ -34,6 +34,8 @@
 | 20 | **Steering** | ALU CLAMP SERVO HORN 25T (HUD293409) | HUD293409 | RCFOX | 1 | 21,50 € |
 | 21 | **Spare Parts** | CARTEN T410R - 1:10 4WD Touring Car Kit | 75-NHA102 | RC-KleinKram | 1 | 179,99 € |
 | 22 | **Mechanics** | CARTEN NBA360 Steel Spur Gear 48DP 68 Teeth | 75-NBA360 | - | 1 | 15,99 € |
+| 23 | **Telemetry** | WFLY S01G GPS-Modul | - | - | 1 | 18,00 € |
+| 24 | **Steering** | SkyRC GC301 Gyro | - | - | 1 | 25,00 € |
 
 ---
 
@@ -41,6 +43,6 @@
 
 | Description | Amount |
 |:---|---:|
-| **Pure vehicle costs:** | **617,49 €** |
+| **Pure vehicle costs:** | **660,49 €** |
 | Costs for tools, infrastructure & spare parts (Pos. 2, 7, 8, 9, 11-14, 16, 17, 21): | 402,10 € |
-| **Total costs:** | **1019,59 €** |
+| **Total costs:** | **1062,59 €** |

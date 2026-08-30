@@ -1,0 +1,29 @@
+adr:
+  id: ADR-011
+  title: Selection of Gyro for vehicle stabilization
+  status: Decided
+  date: '2026-08-30'
+  context: "At high speeds of up to 100 km/h, the RC vehicle requires electronic stabilization to maintain a straight trajectory and prevent spin-outs. A gyro sensor detects unwanted rotational movements and automatically applies counter-steering via the steering servo. The selection of a gyro must balance reliability and cost. High-end gyros offer advanced features but exceed the current project budget."
+  considered_alternatives:
+  - option_id: 1
+    name: Futaba GYD470
+    type: Premium / High-End
+    evaluation: Provides high precision stabilization and integrates seamlessly with S.BUS systems. Exceeds the allocated project budget.
+  - option_id: 2
+    name: Power HD G1
+    type: Mid-Range
+    evaluation: Features an aluminum casing and high-voltage compatibility (up to 8.4V). Exceeds the budget allocated for initial gyro testing.
+  - option_id: 3
+    name: SkyRC GC301 Gyro
+    type: Budget / Entry-Level
+    evaluation: Provides essential stabilization functions and adjustable gain via a third channel. The low cost allows for initial proof-of-concept testing within the budget constraints. It may be necessary to install a Ruddog Glitch Buster capacitor to stabilize the voltage in the event of servo jitter.
+  decision: SkyRC GC301 Gyro
+  gyro_meta:
+    brand: SkyRC
+    model: GC301
+    type: Steering Gyro
+  rationale: "The decision is made in favor of the SkyRC GC301 Gyro. The primary factor is cost. The Futaba and Power HD alternatives exceed the project budget. The SkyRC GC301 provides a cost-effective method to implement electronic stabilization for initial testing. If the performance of the GC301 proves insufficient during high-speed tests, a budget increase for a higher-tier gyro can be considered in a future iteration."
+  consequences:
+  - 'Installation: The gyro must be mounted aligned with the longitudinal axis of the chassis to function correctly.'
+  - 'Calibration: The gyro gain must be adjusted. High gain causes steering oscillation, low gain provides insufficient stabilization.'
+  - 'Testing: Initial low-speed tests are required to verify the correct direction of the counter-steering before attempting high-speed runs.'
