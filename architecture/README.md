@@ -16,6 +16,7 @@ This directory contains all fundamental architecture and hardware decisions for 
 | **ADR-008** | 2026-02-25 | Selection of tires (belted rubber tires for asphalt) for 100 km/h speedruns | 🟢 Decided | Sweep HANKOOK Tread Belted tires Pre-glued set Pro-compound 36deg for Asphalt (SR-SSF-36AWPG) |
 | **ADR-009** | 2026-03-12 | Selection of the aerodynamic body for 100 km/h speedruns | 🟢 decided | ZooRacing Hellcat (190 mm, 0.7mm thickness) |
 | **ADR-010** | 2026-03-10 | Selection of the GPS measuring system to validate the 100 km/h mark | 🟢 decided | Ruddog GPS Performance Analyzer |
+| **ADR-011** | 2026-08-30 | Selection of Gyro for vehicle stabilization | 🟢 Decided | SkyRC GC301 Gyro |
 
 ---
 
@@ -411,6 +412,26 @@ saves a heavy, readable display directly on the vehicle.
 #### Consequences
 - Signal constraint: The GPS signal easily passes through lexan bodies, but is massively blocked by carbon fibers. The module must not be mounted directly *under* the carbon upper deck in the Carten T410R. The optimal position is on the foam bumper in the front.
 - Mounting: The device must be fixed very securely (e.g. with strong velcro or 3M Dual Lock) so that it does not fly away as a projectile in the event of a rollover at 100 km/h.
+
+
+---
+
+### ADR-011: Selection of Gyro for vehicle stabilization
+**Status:** Decided | **Date:** 2026-08-30
+
+#### Context
+At high speeds of up to 100 km/h, the RC vehicle requires electronic stabilization to maintain a straight trajectory and prevent spin-outs. A gyro sensor detects unwanted rotational movements and automatically applies counter-steering via the steering servo. The selection of a gyro must balance reliability and cost. High-end gyros offer advanced features but exceed the current project budget.
+
+#### Decision
+> **SkyRC GC301 Gyro**
+
+#### Rationale
+The decision is made in favor of the SkyRC GC301 Gyro. The primary factor is cost. The Futaba and Power HD alternatives exceed the project budget. The SkyRC GC301 provides a cost-effective method to implement electronic stabilization for initial testing. If the performance of the GC301 proves insufficient during high-speed tests, a budget increase for a higher-tier gyro can be considered in a future iteration.
+
+#### Consequences
+- Installation: The gyro must be mounted aligned with the longitudinal axis of the chassis to function correctly.
+- Calibration: The gyro gain must be adjusted. High gain causes steering oscillation, low gain provides insufficient stabilization.
+- Testing: Initial low-speed tests are required to verify the correct direction of the counter-steering before attempting high-speed runs.
 
 
 ---
