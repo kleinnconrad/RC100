@@ -104,6 +104,7 @@ This section documents the findings from previous tests & speedruns in 1:10 scal
 | **[L] Material Selection**<br>Not all plastic parts should be replaced with aluminum. You must consider which parts are allowed to be destroyed in a crash. If easily replaceable plastic parts are replaced with aluminum, the impact energy finds more unfavorable paths. |
 | **[L] Threadlocker**<br>Loctite on metal connections is absolutely mandatory. |
 | **[L] Body**<br>The body should not be painted. A clear body allows a necessary view of the technology at all times. |
+| **[L] Aerodynamics**<br>A wedge shape of the vehicle is necessary for efficient aerodynamics. To achieve this, the front body posts must be shortened as much as possible. |
 | **[M] C-Hub Assembly**<br>The mounting screws of the C-hubs were loosened to eliminate mechanical resistance. Excessive tightening prevents the steering from moving freely, resulting in the previously described issue of an inaccurate servo neutral return. |
 | **[M] Servo Saver**<br>The servo saver was removed and an aluminum servo horn was mounted directly. This increases the risk of damage to the servo in the event of a crash. The servo saver was identified as a source of failure (steering oscillation) during speedruns. |
 
