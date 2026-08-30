@@ -7,6 +7,9 @@ properties:
     rear_toe_deg: 2.5
     front_camber_deg: 0
     rear_camber_deg: 0
+    ride_height_front_mm: null
+    ride_height_rear_mm: null
+    spring_rate_stiffness: "hard"
     shock_oil_wt: 1000
     spring_preload_mm:
       front_left: 5
@@ -34,6 +37,7 @@ properties:
     motor_type: 3660
     motor_kv: 3700
     esc_a: 120
+    esc_punch_level: 1
     steering_torque_nm: 0.69
     steering_type: "digital"
     dual_rate: 40
@@ -41,3 +45,4 @@ properties:
     steering_curve: -30
     steering_trim_right: 15
     gyro_gain: 0
+    
