@@ -38,6 +38,7 @@ properties:
     motor_kv: 3700
     esc_a: 120
     esc_punch_level: 1
+    bec_voltage_v: 6.0
     steering_torque_nm: 0.69
     steering_type: "digital"
     dual_rate: 40
