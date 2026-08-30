@@ -30,8 +30,8 @@ properties:
     internal_gear_ratio: 2.47
     final_drive_ratio: 3.91
   electronics_and_control:
-    battery_type: "3S"
-    battery_capacity_mah: 5000
+    lipo_cells: 3
+    lipo_capacity_mah: 5000
     max_discharge_c: 50
     max_current_a: 250
     motor_type: 3660
