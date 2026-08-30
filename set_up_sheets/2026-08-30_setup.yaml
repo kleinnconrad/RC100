@@ -15,7 +15,7 @@ properties:
       rear_right: "5 mm"
     droop_screws: null
     sway_bars: null
-    servosaver: null
+    servo_saver: null
     tire_type: "belted treaded rubber"
     tire_width_rear: "24 mm"
     tire_width_front: "24 mm"
