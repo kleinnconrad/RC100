@@ -1,0 +1,41 @@
+meta:
+  date: "2026-08-30T14:10:10+02:00"
+  description: "Current vehicle setup"
+properties:
+  suspension_and_geometry:
+    front_toe: "0 deg"
+    rear_toe: "+2.5 deg"
+    front_camber: "0 deg"
+    rear_camber: "0 deg"
+    shock_oil: "#1000"
+    spring_preload:
+      front_left: "5 mm"
+      front_right: "5 mm"
+      rear_left: "5 mm"
+      rear_right: "5 mm"
+    droop_screws: null
+    sway_bars: null
+    servosaver: null
+    tire_type: "belted treaded rubber"
+    tire_width_rear: "24 mm"
+    tire_width_front: "24 mm"
+  drivetrain:
+    front_diff: "spool"
+    rear_diff: "open"
+    pinion_gear: "43t"
+    spur_gear: "68t"
+  electronics_and_control:
+    battery_type: "3S"
+    battery_capacity: "5000 mAh"
+    max_discharge: "50C"
+    max_current: "250 A"
+    motor_type: 3660
+    motor_kv: 3700
+    esc: "120 A"
+    steering_torque: "0.69 Nm"
+    steering_type: "digital"
+    dual_rate: 40
+    throttle_curve: -40
+    steering_curve: -30
+    steering_trim: "15R"
+    gyro_gain: "tbd"

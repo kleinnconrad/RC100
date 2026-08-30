@@ -32,10 +32,14 @@ The project is structured into topic-specific directories:
   * **`/paint`**: Color and painting data.
   * **`/wheels`**: Tire specifications.
 * **`/testing`**: Collection and evaluation of test results and performance measurement data.
+  * **`/error_list`**: Error logs and their resolutions.
   * **`/tests`**: Logs and data of test drives.
 * **`/project`**: General project management and overviews for cost control.
+  * **`/costs`**: Cost tracking and budget overviews.
+  * **`/follow_up_projects`**: Documentation of related follow-up projects.
 * **`/reddit`**: Feedback and discussions from the community.
 * **`/scripts`**: Automation scripts and calculation models for system design.
+* **`/set_up_sheets`**: Vehicle setup configurations.
 
 ## Hardware Architecture and Mechanics
 The project is divided into the focus areas mentioned above. The documentation of architecture decisions (ADRs) and the specifications of all mechanical and electronic components are consistently maintained as structured YAML files (`.yml` or `.yaml`). The formal hierarchical structure of these files is standardized as follows:
