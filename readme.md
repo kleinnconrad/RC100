@@ -1,8 +1,13 @@
 # 1:10 onroad RC car for speeds over 100 km/h
 
-This project covers the system architecture and configuration of an 1:10 scale on-road touring car with the design goal of a consistently repeatable top speed of over 100 km/h. The focus is on maximizing drive power while ensuring reliability and cost efficiency.
+This project covers the system architecture and configuration of an 1:10 scale on-road touring car with the design goal of a consistently repeatable top speed of over 100 km/h without risking the car to be damaged or destroyed. The focus is on maximizing drive power while ensuring reliability and cost efficiency.
 
 The technical challenge primarily results from the chosen scale and the limited tire diameter of 64 millimeters. While vehicles from 1:8 scale have physical advantages due to higher mass inertia, larger rolling circumferences, and a longer wheelbase, the 1:10 scale requires significantly higher rotor speeds. This leads to high mechanical stresses in the drivetrain. The low vehicle weight also requires precise aerodynamic and suspension tuning to ensure driving stability at high speeds.
+
+The most relevant artefacts of this repository are:
+* Architecture decision records (ADRs) in the `/architecture` directory
+* System specification in the `full_spec.yml` file
+* Vehicle setup configurations in the `/setup_sheets` directory
 
 <table>
   <tr>
@@ -38,7 +43,7 @@ The project is structured into topic-specific directories:
   * **`/costs`**: Cost tracking and budget overviews.
   * **`/follow_up_projects`**: Documentation of related follow-up projects.
 * **`/scripts`**: Automation scripts and calculation models for system design.
-* **`/set_up_sheets`**: Vehicle setup configurations.
+* **`/setup_sheets`**: Vehicle setup configurations.
 
 ## Artefacts (ADR, specs, setup sheets)
 The documentation of architecture decisions (ADRs), the specifications of all mechanical and electronic components, and the vehicle setup configurations are consistently maintained as structured YAML files (`.yml` or `.yaml`). The formal hierarchical structure of these artefacts is standardized as follows:

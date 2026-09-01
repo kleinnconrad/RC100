@@ -1,8 +1,8 @@
 meta:
-  date: "2026-09-01T14:10:10+02:00"
+  date: "2026-08-30T14:10:10+02:00"
   description: "Carten T410R speedrun setup"
-  version: "0.2.0"
-  top_speed_kmh: null
+  version: 0
+  top_speed_kmh: 103
 properties:
   suspension_and_geometry:
     front_toe_deg: 0
@@ -50,5 +50,5 @@ properties:
     steering_base_trim_right: 15
     steering_trim_left: 0
     steering_base_trim_left: 0
-    gyro_gain: 40
+    gyro_gain: null
     
