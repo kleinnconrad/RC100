@@ -1,11 +1,3 @@
-# Table of contents
-* [Summary of test drives](#summary-of-test-drives)
-* [Test track exploration: 100 km/h RC speedrun](#test-track-exploration-100-kmh-rc-speedrun)
-  * [Bauhaus](#bauhaus)
-  * [Metro](#metro)
-  * [Hornbach](#hornbach)
-
-
 # Summary of test drives
 
 | Test | date | location | focus | result / speed | status | planned measures / to-dos |
@@ -20,20 +12,3 @@
 | **8** | 2026-04-09 | underground garage | front end stability | driving behavior improved by hard servo saver and 141g additional weight on the bumper, but a slight residual restlessness remains. | 🟡 partial | cautious high-speed test run; preparation of a spool (plan B) on the front axle. |
 | **9** | 2026-04-16 | street | maximum speed | 71 km/h reached (abort after collision). Potential for 100 km/h realistic, but front end still felt spongy at high speed. | 🟡 partially successful / abort | look for larger, free track; implement further setup optimizations to stabilize the front end. |
 | **10**| 2026-04-16 | underground garage | front end stability & symmetry | front end calmer due to symmetry adjustment and 1.5° toe-in. Residual restlessness due to missing front weight and unlocked diffs. Rear dances slightly. | 🟢 / 🟡 residual restlessness | mount additional weight on front bumper again; check spool/diff lock for drivetrain optimization. |
-
-
-# Test track exploration: 100 km/h RC speedrun
-
-Overview of potential asphalt areas for the speedruns.
-
-## Bauhaus
-
-<img src="https://github.com/kleinnconrad/RC100/blob/main/photos/PXL_20260403_131559867.jpg?raw=true" width="50%" alt="test track Bauhaus">
-
-## Metro
-
-<img src="https://github.com/kleinnconrad/RC100/blob/main/photos/PXL_20260403_135110477.jpg?raw=true" width="50%" alt="test track Metro">
-
-## Hornbach
-
-<img src="https://github.com/kleinnconrad/RC100/blob/main/photos/PXL_20260403_134353574.jpg?raw=true" width="50%" alt="test track Hornbach">
