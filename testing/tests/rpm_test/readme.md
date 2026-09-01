@@ -1,4 +1,4 @@
-# Test log - idle speed & damage report
+# Test log - idle speed
 
 
 ## Table of contents
