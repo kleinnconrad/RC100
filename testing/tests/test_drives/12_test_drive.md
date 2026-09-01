@@ -1,11 +1,11 @@
-# Report 12. Test Drive
+# Report 12. Test drive
 
-## Table of Contents
-- [Basic Data and Setup](#basic-data-and-setup)
+## Table of contents
+- [Basic data and setup](#basic-data-and-setup)
 - [Results](#results)
 - [Measures](#measures)
 
-## Basic Data and Setup
+## Basic data and setup
 - **Date:** 2026-08-09
 - **Location:** Bauhaus
 - **Goal:** Checking the straight-line driving behavior during strong acceleration.
@@ -21,7 +21,7 @@
 - The vehicle breaks out to the left during strong acceleration. The cause is very likely torque twist due to the high-torque motorization.
 
 ## Measures
-- Replacement of the motor from a high-torque to a high-speed design (Priority 1). QuicRun 3652SL G2 Sensorless Motor 5400kV 3.175mm Shaft
+- Replacement of the motor from a high-torque to a high-speed design (priority 1). QuicRun 3652SL G2 sensorless motor 5400kV 3.175mm shaft
 - Increase in spring stiffness.
 - Checking the tires.
 - Checking servo and servo saver or steering precision

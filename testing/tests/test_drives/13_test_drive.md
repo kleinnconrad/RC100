@@ -1,15 +1,15 @@
-# Report 13. Test Drive
+# Report 13. Test drive
 
-## Table of Contents
-- [Basic Data and Setup](#basic-data-and-setup)
+## Table of contents
+- [Basic data and setup](#basic-data-and-setup)
 - [Results](#results)
 - [Measures](#measures)
 
-## Basic Data and Setup
+## Basic data and setup
 - **Date:** 2026-08-23
-- **Location:** Bauhaus Parking Lot
+- **Location:** Bauhaus parking lot
 - **Goal:** Evaluation of driving behavior following modifications to the suspension and steering components.
-- **Background:** The shock absorbers were filled with #1000 shock oil and spring preload was increased. A Konect X9S remote control and a Savöx servo were installed to increase steering precision. The steering exponential curve was set to linear. The C-Hub screws were loosened to minimize mechanical resistance and ensure an accurate return of the servo to the neutral position.
+- **Background:** The shock absorbers were filled with #1000 shock oil and spring preload was increased. A konect X9S remote control and a Savöx servo were installed to increase steering precision. The steering exponential curve was set to linear. The C-hub screws were loosened to minimize mechanical resistance and ensure an accurate return of the servo to the neutral position.
 
 ## Results
 - The vehicle exhibits increased stability.

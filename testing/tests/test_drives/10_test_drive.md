@@ -1,6 +1,6 @@
-# Test Log: 10. Test Drive
+# Test log: 10. Test drive
 
-## Table of Contents
+## Table of contents
 * [Metadata](#metadata)
 * [Goal of the test drive](#goal-of-the-test-drive)
 * [Test course and result](#test-course-and-result)
@@ -12,7 +12,7 @@
 * **Date:** 2026-04-16
 * **Location:** Underground garage
 * **Focus:** Front end stability and symmetry check (readjustment of chassis)
-* **Status:** Successful optimization / Residual restlessness present
+* **Status:** Successful optimization / residual restlessness present
 
 ## Goal of the test drive
 Checking the chassis optimizations made on the front axle. The focus was on the question of whether the adjustment of the camber angle and the wishbone angles as well as the setting of a toe-in of approx. 1.5° eliminate the spongy front end behavior. The test was deliberately carried out without the additional weight on the front bumper in order to isolate the purely mechanical stability of the chassis.

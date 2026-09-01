@@ -1,12 +1,12 @@
-## Chassis Geometry: Toe & Camber (The 100 km/h Setup)
+## Chassis geometry: Toe & camber (the 100 km/h setup)
 
 
-## Table of Contents
-* [Chassis Geometry: Toe & Camber (The 100 km/h Setup)](#chassis-geometry-toe--camber-the-100-kmh-setup)
+## Table of contents
+* [Chassis geometry: Toe & camber (the 100 km/h setup)](#chassis-geometry-toe--camber-the-100-kmh-setup)
   * [1. Toe](#1-toe)
   * [2. Camber](#2-camber)
-  * [Setup Plan (Carten T410R)](#setup-plan-carten-t410r)
-  * [Adjustment on the Chassis](#adjustment-on-the-chassis)
+  * [Setup plan (Carten T410R)](#setup-plan-carten-t410r)
+  * [Adjustment on the chassis](#adjustment-on-the-chassis)
 
 
 The chassis geometry decides at high speeds whether the car drives stable straight ahead or breaks out uncontrollably. Here are the most important physical parameters and our specific speedrun setup.
@@ -26,26 +26,26 @@ The camber describes the angle of the wheels, **when looking at the car from the
 
 
 
-* **Negative Camber:** The wheels tilt inwards towards the chassis center at the top (`/ \`).
+* **Negative camber:** The wheels tilt inwards towards the chassis center at the top (`/ \`).
   * *Effect:* When rolling in a corner, the outer wheel presses flat onto the asphalt and generates maximum grip.
-* **Positive Camber:** The wheels tilt outwards at the top (`\ /`).
+* **Positive camber:** The wheels tilt outwards at the top (`\ /`).
   * *Effect:* Drives unstable and has no use in on-road RC applications.
-* **Neutral Camber (0°):** The wheel is exactly vertical (`| |`).
+* **Neutral camber (0°):** The wheel is exactly vertical (`| |`).
   * *Effect:* Maximum contact patch on the straight (as long as the tire does not deform due to centrifugal force).
 
 ---
 
-### Setup Plan (Carten T410R)
+### Setup plan (Carten T410R)
 
 For an uncompromising speedrun (exactly straight ahead, maximum stability), the following basic setup applies:
 
-| Axle / Parameter | Setting | Physical Reason for 100 km/h |
+| Axle / parameter | setting | physical reason for 100 km/h |
 | :--- | :--- | :--- |
-| **Front Axle: Toe** | **0° (Neutral)** | Minimization of rolling resistance when driving straight ahead. |
-| **Rear Axle: Toe** | **2.5° Toe-in** | Increase in driving stability. Prevents the rear axle from breaking out at high speeds. (Predefined on the Carten T410R by the rear toe blocks). |
-| **Camber (Front & Rear)**| **0° (Neutral)** | Maximum contact patch of the tire when driving straight ahead for optimal traction. |
+| **Front axle: Toe** | **0° (neutral)** | minimization of rolling resistance when driving straight ahead. |
+| **Rear axle: Toe** | **2.5° toe-in** | increase in driving stability. Prevents the rear axle from breaking out at high speeds. (Predefined on the Carten T410R by the rear toe blocks). |
+| **Camber (front & rear)**| **0° (neutral)** | maximum contact patch of the tire when driving straight ahead for optimal traction. |
 
-### Adjustment on the Chassis
+### Adjustment on the chassis
 On the Carten T410R, the geometry is adjusted via the **turnbuckles** (metal rods with right/left-hand threads):
-* **Toe (Front):** Changing the length of the rods of the *steering linkage*.
+* **Toe (front):** Changing the length of the rods of the *steering linkage*.
 * **Camber:** Changing the length of the *upper wishbones*.

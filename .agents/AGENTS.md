@@ -4,6 +4,7 @@ This project is a hardware project at a hobbyist level. The target audience cons
 # Documentation Guidelines
 * **Language:** The English language must be used for all documentation within the repository.
 * **Formatting:** Bullet points (lists for structuring) are permitted and explicitly encouraged to increase readability.
+* **Capitalization:** Use upper case in Markdown files only if the word is the first word in a sentence, a proper name, or an acronym (e.g., "ADR"). Apply this sentence case rule to headings, list items, and table entries.
 * **Table of Contents:** As soon as a Markdown file contains more than one heading, a Table of Contents is strictly required at the beginning.
 * **Emojis:** Emojis are to be avoided throughout the entire repository.
 

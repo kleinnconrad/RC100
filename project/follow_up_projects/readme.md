@@ -1,28 +1,28 @@
-# Ideas for Follow-up Projects
+# Ideas for follow-up projects
 
-**Sensors/Telemetry** [![GitHub Repo](https://img.shields.io/badge/GitHub-Repository-blue?logo=github)](https://github.com/kleinnconrad/carten_telemetrie)
+**Sensors/telemetry** [![GitHub repo](https://img.shields.io/badge/GitHub-Repository-blue?logo=github)](https://github.com/kleinnconrad/carten_telemetrie)
 * Microcontroller/sensor solution for measuring ESC and motor temperature and the speed at the driveshaft. 
 
-**IoT Cloud Data Platform** [![GitHub Repo](https://img.shields.io/badge/GitHub-Repository-blue?logo=github)](https://github.com/kleinnconrad/carten_telemetrie)
+**IoT cloud data platform** [![GitHub repo](https://img.shields.io/badge/GitHub-Repository-blue?logo=github)](https://github.com/kleinnconrad/carten_telemetrie)
 * Setup of a real-time streaming pipeline (ESP32 via LTE) for GPS and ESC telemetry.
 * Implementation of a cloud infrastructure for scalable storage and processing of vehicle data.
 * Live dashboarding for real-time performance analysis during speedruns.
 
-**Hardware Scaling**
+**Hardware scaling**
 * Dual motor configuration for the Carten T410R chassis (CAD project).
 
-**Data Analytics (GPS and ESC Telemetry)**
+**Data analytics (GPS and ESC telemetry)**
 * Development of a regression model to estimate the real speed from ESC telemetry data.
 * Structured evaluation of relevant experiments and speedrun test runs.
 * Derivation of data-driven optimization approaches for maximum battery efficiency and absolute top speed.
 
-**Assistance Systems**
+**Assistance systems**
 * Integration of hardware and software for assisted driving with the Carten T410R.
 
-**Predictive Maintenance**
+**Predictive maintenance**
 * Development of a model for predicting thermal limits (motor/ESC) based on load profiles, RPM and ambient temperature.
 * Long-term analysis of voltage sag under full load for data-driven evaluation of battery degradation (state of health).
 
-**Computer Vision & FPV Systems**
-* Integration of an FPV camera system with On-Screen-Display (OSD) for overlaying relevant live telemetry (speed, temperatures, battery level).
-* Implementation of camera-based environment detection (e.g. via Raspberry Pi) to expand the assistance systems with lane detection and obstacle avoidance.
+**Computer vision & FPV systems**
+* Integration of an FPV camera system with on-screen-display (OSD) for overlaying relevant live telemetry (speed, temperatures, battery level).
+* Implementation of camera-based environment detection (e.g. via raspberry pi) to expand the assistance systems with lane detection and obstacle avoidance.

@@ -1,11 +1,11 @@
-# Report 14. Test Drive
+# Report 14. Test drive
 
-## Table of Contents
-- [Basic Data and Setup](#basic-data-and-setup)
+## Table of contents
+- [Basic data and setup](#basic-data-and-setup)
 - [Results](#results)
 - [Measures](#measures)
 
-## Basic Data and Setup
+## Basic data and setup
 - **Date:** 2026-09-01
 - **Location:** Underground car park
 - **Goal:** Evaluation of driving behavior with a Gyro

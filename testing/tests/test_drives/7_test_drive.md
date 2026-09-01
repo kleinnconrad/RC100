@@ -1,6 +1,6 @@
-# Test Log: 7. Test Drive
+# Test log: 7. Test drive
 
-## Table of Contents
+## Table of contents
 * [Metadata](#metadata)
 * [Goal of the test drive](#goal-of-the-test-drive)
 * [Test course and result](#test-course-and-result)
@@ -17,9 +17,9 @@
 ## Goal of the test drive
 Checking the driving stability on the front axle after implementing two targeted modifications: The attachment of 175g additional weight to the front bumper for further shift of center of gravity as well as the installation of an additional horseshoe spring on the servo horn for a harder setting of the servo saver. 
 
-<img src="https://raw.githubusercontent.com/kleinnconrad/RC100/main/photos/PXL_20260403_104427252.jpg" width="50%" alt="Damage pattern 1">
+<img src="https://raw.githubusercontent.com/kleinnconrad/RC100/main/photos/PXL_20260403_104427252.jpg" width="50%" alt="damage pattern 1">
 
-<img src="https://raw.githubusercontent.com/kleinnconrad/RC100/main/photos/PXL_20260403_104430293.jpg" width="50%" alt="Damage pattern 2">
+<img src="https://raw.githubusercontent.com/kleinnconrad/RC100/main/photos/PXL_20260403_104430293.jpg" width="50%" alt="damage pattern 2">
 
 ## Test course and result
 The measures were a success. The vehicle lay stable and the steering was significantly more precise due to the harder servo saver. **On the relatively short test track of just under 40 meters, 55 km/h could be reached effortlessly and in a controlled manner.**
@@ -27,7 +27,7 @@ The measures were a success. The vehicle lay stable and the steering was signifi
 ## Error pattern and problems encountered
 Unfortunately, a rear-end collision occurred during the test drive. The vehicle suffered a mechanical defect: The rear right wheel suspension was damaged, which led to an immediate abort of the test drive.
 
-<img src="https://raw.githubusercontent.com/kleinnconrad/RC100/main/photos/PXL_20260403_104437326.MP.jpg" width="50%" alt="Damage pattern 3">
+<img src="https://raw.githubusercontent.com/kleinnconrad/RC100/main/photos/PXL_20260403_104437326.MP.jpg" width="50%" alt="damage pattern 3">
 
 ## Planned measures
 The high-speed setup on the front axle has proven itself and remains in place for now. The next steps focus on repairing:

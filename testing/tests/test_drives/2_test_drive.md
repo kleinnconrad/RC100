@@ -1,6 +1,6 @@
-# Test Log: 2. Test Drive
+# Test log: 2. Test drive
 
-## Table of Contents
+## Table of contents
 * [Metadata](#metadata)
 * [Goal of the test drive](#goal-of-the-test-drive)
 * [Test course and result](#test-course-and-result)

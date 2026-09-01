@@ -1,6 +1,6 @@
-# Test Log: 8. Test Drive
+# Test log: 8. Test drive
 
-## Table of Contents
+## Table of contents
 * [Metadata](#metadata)
 * [Goal of the test drive](#goal-of-the-test-drive)
 * [Test course and result](#test-course-and-result)
@@ -12,12 +12,12 @@
 * **Date:** 2026-04-09
 * **Location:** Underground garage
 * **Focus:** Front end stability
-* **Status:** Partial / Expandable
+* **Status:** Partial / expandable
 
 ## Goal of the test drive
 Checking the driving behavior at the front end of the Carten T410R under two specific setup variants: 
-a) Servo saver sprung as hard as possible.
-b) Servo saver sprung as hard as possible in combination with 141g additional weight on the front bumper.
+a) servo saver sprung as hard as possible.
+b) servo saver sprung as hard as possible in combination with 141g additional weight on the front bumper.
 
 ## Test course and result
 The calmest driving behavior at the front end could be achieved with variant b (hard servo saver + 141g additional weight). A noticeable difference and an improvement compared to variant a was observed. However, the vehicle is still not 100% calm in the front area.
@@ -29,7 +29,7 @@ During the test drive, no accidents or mechanical defects occurred. The remainin
 The findings from variant b form the basis for the next steps:
 
 * **High-speed attempt:** A high-speed test run can be undertaken, provided the throttle curve is dosed very carefully and sensitively.
-* **Preparation spool (Plan B):** If the planned high-speed attempt fails due to the front end restlessness, which has not yet been completely eliminated, the next measure must be to install a spool on the front axle.
+* **Preparation spool (plan B):** If the planned high-speed attempt fails due to the front end restlessness, which has not yet been completely eliminated, the next measure must be to install a spool on the front axle.
 
 **Conclusion for the next rollout:**
 The combination of a hard servo saver and additional weight shows the right effect, but does not yet bring perfect smoothness. A cautious high-speed test is justifiable with the current setup. The option of installing a spool on the front axle remains as a technical backup for the next setup, in case the stability is again insufficient with increasing speed.
