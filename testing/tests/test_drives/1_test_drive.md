@@ -29,12 +29,6 @@ The motor could not or hardly start with the gear ratio of 43 to 72 teeth and a 
 * **Motor polarity reversed:**
 The chosen polarity (technical forward gear) did not correspond to the physical forward gear. Assuming the rotation directions were commutative, the throttle setting on the remote control was set to "REV" during the test drive. This caused the car to drive forward in the technical reverse gear. This explains the difficult starting in addition to the punch and the tall gear ratio.
 
-<img src="https://github.com/kleinnconrad/RC100/blob/main/photos/PXL_20260317_162312395.jpg" alt="damage pattern drivetrain 1" width="30%">
-*Figure 1: Condition of the drivetrain after the test abort.*
-
-<img src="https://github.com/kleinnconrad/RC100/blob/main/photos/PXL_20260317_162327676.MP.jpg" alt="damage pattern drivetrain 2" width="30%">
-*Figure 2: Detail shot of the damage to the main gear and pinion.*
-
 ## Planned measures
 1. Procurement of a new 48DP motor pinion made of hardened steel (5mm bore).
 2. Procurement of an upgrade main gear (e.g. Kimbrough 72T 48DP) compatible with the Carten T410R hub.
