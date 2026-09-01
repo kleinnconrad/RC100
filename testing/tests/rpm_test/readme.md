@@ -23,15 +23,3 @@ v = (d * π * rpm * 60) / 1,000,000
 
 v = (64 * 3.14159 * 11200 * 60) / 1,000,000
 **v ≈ 135.11 km/h**
-
-## Damage incurred
-
-Due to the extreme speed, the O-rings that fix the locking pins in the cup joints of the driveshaft mount slipped and the locking pins were thrown out.
-
-<img src="https://github.com/kleinnconrad/RC100/blob/main/photos/PXL_20260318_072802628.MP.jpg" alt="loss of locking pins" width="50%">
-
-In addition, at > 25000 RPM on the driveshaft, it whipped up so much that it touched the servo mount. Matching marks can be seen on both components. A rolling test with the driveshaft suggests that it is still straight and the contact was therefore not intense.
-
-<img src="https://github.com/kleinnconrad/RC100/blob/main/photos/PXL_20260318_134312851.jpg" alt="scratches on the driveshaft" width="50%">
-
-<img src="https://github.com/kleinnconrad/RC100/blob/main/photos/PXL_20260318_134339657.MP.jpg" alt="scratches servo mount" width="50%">
