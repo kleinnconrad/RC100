@@ -9,13 +9,6 @@ The artefacts of this repository are:
 * System specification in the `full_spec.yml` file
 * Vehicle setup configurations in the `/setup_sheets` directory
 
-<table>
-  <tr>
-    <td><img src="https://github.com/kleinnconrad/RC100/blob/main/photos/PXL_20260315_113015136.jpg?raw=true" alt="Carten T410R JK" width="100%"></td>
-    <td><img src="https://github.com/kleinnconrad/RC100/blob/main/photos/PXL_20260319_133949504.jpg?raw=true" alt="Carten T410R CK" width="100%"></td>
-  </tr>
-</table>
-
 ## Table of contents
 * [Repository structure](#repository-structure)
 * [Artefacts (ADR, specs, setup sheets)](#artefacts-adr-specs-setup-sheets)
