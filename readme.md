@@ -4,7 +4,7 @@ This project covers the system architecture and configuration of an 1:10 scale o
 
 The technical challenge primarily results from the chosen scale and the limited tire diameter of 64 millimeters. While vehicles from 1:8 scale have physical advantages due to higher mass inertia, larger rolling circumferences, and a longer wheelbase, the 1:10 scale requires significantly higher rotor speeds. This leads to high mechanical stresses in the drivetrain. The low vehicle weight also requires precise aerodynamic and suspension tuning to ensure driving stability at high speeds.
 
-The most relevant artefacts of this repository are:
+The artefacts of this repository are:
 * Architecture decision records (ADRs) in the `/architecture` directory
 * System specification in the `full_spec.yml` file
 * Vehicle setup configurations in the `/setup_sheets` directory
