@@ -9,6 +9,8 @@ The artefacts of this repository are:
 * System specification in the `full_spec.yml` file
 * Vehicle setup configurations in the `/setup_sheets` directory
 
+<img src="https://raw.githubusercontent.com/kleinnconrad/small-scale-rc-speedrun/main/photos/1788278341814.jpg" alt="RC Car Photo" width="100%">
+
 ## Table of contents
 * [Repository structure](#repository-structure)
 * [Artefacts (ADR, specs, setup sheets)](#artefacts-adr-specs-setup-sheets)
@@ -17,8 +19,6 @@ The artefacts of this repository are:
 * [Repository automation](#repository-automation)
 * [Follow-up project: Telemetry system](#follow-up-project-telemetry-system)
 * [Licensing](#licensing)
-
-<img src="https://raw.githubusercontent.com/kleinnconrad/small-scale-rc-speedrun/main/photos/1788278341814.jpg" alt="RC Car Photo" width="100%">
 
 ## Repository structure
 The project is structured into topic-specific directories:
