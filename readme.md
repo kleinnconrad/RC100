@@ -37,7 +37,6 @@ The project is structured into topic-specific directories:
 * **`/project`**: General project management and overviews for cost control.
   * **`/costs`**: Cost tracking and budget overviews.
   * **`/follow_up_projects`**: Documentation of related follow-up projects.
-* **`/reddit`**: Feedback and discussions from the community.
 * **`/scripts`**: Automation scripts and calculation models for system design.
 * **`/set_up_sheets`**: Vehicle setup configurations.
 
