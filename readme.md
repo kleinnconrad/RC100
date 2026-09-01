@@ -99,8 +99,8 @@ This section documents the findings from previous tests & speedruns in 1:10 scal
 | **[L] Control Components**<br>**Do not skimp on the remote control and servo**. Lack of precision makes steering corrections a game of chance. You must invest in a remote control with Hall sensors and a decent digital servo. |
 | **[L] Assistance Systems**<br>**Using a Gyro really makes a difference** and is highly recommended. |
 | **[L] Steering Mechanics**<br>The steering mechanism must move without resistance when disconnected from the servo. Mechanical resistance prevents the servo from returning precisely to the neutral position during slow steering inputs. In this state, the servo stops visibly but continues to draw current, indicated by audible noise, as it attempts to reach the neutral position. |
-| **[L] Steering `Exponential Curve` (cubic polynomial)**<br>The steering exponential curve requires precise configuration. A setting of approximately -30 is recommended. |
-| **[L] Throttle Exponential Curve (cubic polynomial)**<br>The throttle exponential curve requires precise configuration. A setting of approximately -40 is recommended. |
+| **[L] `Steering Exponential Curve` (cubic polynomial)**<br>The steering exponential curve requires precise configuration. A setting of approximately -30 is recommended. |
+| **[L] `Throttle Exponential Curve` (cubic polynomial)**<br>The throttle exponential curve requires precise configuration. A setting of approximately -40 is recommended. |
 
 | Chassis & Assembly |
 |:---|
