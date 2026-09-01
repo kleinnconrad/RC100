@@ -13,10 +13,10 @@ The technical challenge primarily results from the chosen scale and the limited 
 
 ## Table of contents
 * [Repository structure](#repository-structure)
-* [Hardware architecture and mechanics](#hardware-architecture-and-mechanics)
+* [Artefacts (ADR, specs, setup sheets)](#artefacts-adr-specs-setup-sheets)
 * [Calculation models for drivetrain design](#calculation-models-for-drivetrain-design)
 * [Learnings & modifications](#learnings--modifications)
-* [Repository management and automation](#repository-management-and-automation)
+* [Repository automation](#repository-automation)
 * [Follow-up project: Telemetry system](#follow-up-project-telemetry-system)
 * [Licensing](#licensing)
 
@@ -40,8 +40,8 @@ The project is structured into topic-specific directories:
 * **`/scripts`**: Automation scripts and calculation models for system design.
 * **`/set_up_sheets`**: Vehicle setup configurations.
 
-## Hardware architecture and mechanics
-The project is divided into the focus areas mentioned above. The documentation of architecture decisions (ADRs) and the specifications of all mechanical and electronic components are consistently maintained as structured YAML files (`.yml` or `.yaml`). The formal hierarchical structure of these files is standardized as follows:
+## Artefacts (ADR, specs, setup sheets)
+The documentation of architecture decisions (ADRs), the specifications of all mechanical and electronic components, and the vehicle setup configurations are consistently maintained as structured YAML files (`.yml` or `.yaml`). The formal hierarchical structure of these artefacts is standardized as follows:
 
 ```mermaid
 classDiagram
@@ -51,16 +51,44 @@ classDiagram
         +status: String
         +date: Date
         +context: Text
-        +considered_alternatives: List
         +decision: String
         +rationale: Text
+        +consequences: List
     }
+    class adr_alternative {
+        +option_id: Integer
+        +name: String
+        +type: String
+        +evaluation: Text
+    }
+    adr *-- adr_alternative : considered_alternatives
     
     class spec {
-        +meta: Object
         +properties: Object
         +integration_notes: Object
     }
+    class spec_meta {
+        +brand: String
+        +model: String
+        +type: String
+    }
+    spec *-- spec_meta : meta
+
+    class setup {
+    }
+    class setup_meta {
+        +date: Date
+        +description: String
+        +version: String
+        +top_speed_kmh: Float
+    }
+    class setup_properties {
+        +suspension_and_geometry: Object
+        +drivetrain: Object
+        +electronics_and_control: Object
+    }
+    setup *-- setup_meta : meta
+    setup *-- setup_properties : properties
 ```
 
 ## Calculation models for drivetrain design
@@ -80,10 +108,10 @@ This section documents the findings from previous tests & speedruns in 1:10 scal
 
 | Suspension & geometry |
 |:---|
-| **[M] Damping & springing**<br>Very viscous shock oil was used and spring preload maximized. Stiff suspension is absolutely necessary to prevent loss of control due to diving. |
+| **[M] Dampers & springs**<br>Very viscous shock oil was used and spring preload maximized. Stiff suspension is absolutely necessary to prevent loss of control due to diving. |
 | **[M] Suspension geometry**<br>Rear toe-in of 2.5 degrees and 0 degrees camber. Front 0 degrees toe-in and 0 degrees camber. No experiments should be made here. |
 | **[M] Sway bars**<br>The sway bars were removed. They are unnecessary for speedruns and pose a potential source of error. |
-| **[M] Droop**<br>The droop screws were removed. Since the track is not manually cleaned, further lowering is not constructive. The screws are unnecessary for the regular 1:10 speedrun. |
+| **[M] Droop screws**<br>The droop screws were removed. Since the track is not manually cleaned, further lowering is not constructive. The screws are unnecessary for the regular 1:10 speedrun. |
 | **[L] Weight distribution**<br>Care must be taken to ensure an even left/right weight distribution. Furthermore, the front must not be too light. |
 
 | Drivetrain |
@@ -113,7 +141,7 @@ This section documents the findings from previous tests & speedruns in 1:10 scal
 
 *(Legend: **[L]** = learning, **[M]** = modification)*
 
-## Repository management and automation
+## Repository automation
 Maintaining the specifications and architecture decisions formatted as YAML files triggers automated processes:
 * **Aggregation of specifications**: Individual hardware specifications are merged into a central specification file in the root directory.
 * **Cost overview**: Bill of materials and shopping lists are automatically derived from the specifications and updated.
