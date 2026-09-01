@@ -48,5 +48,5 @@ properties:
     steering_curve: -30
     steering_trim_right: 5
     steering_base_trim_right: 15
-    gyro_gain: 0
+    gyro_gain: null
     
