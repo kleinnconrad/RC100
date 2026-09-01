@@ -25,6 +25,8 @@ The artefacts of this repository are:
 * [Follow-up project: Telemetry system](#follow-up-project-telemetry-system)
 * [Licensing](#licensing)
 
+<img src="https://raw.githubusercontent.com/kleinnconrad/small-scale-rc-speedrun/main/photos/1788278341814.jpg" alt="RC Car Photo" width="100%">
+
 ## Repository structure
 The project is structured into topic-specific directories:
 * **`/architecture`**: Documentation of basic system designs and architecture decisions.
