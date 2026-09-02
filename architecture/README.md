@@ -1,38 +1,38 @@
-# Architecture decision records (ADRs)
+# Architecture Decision Records (ADRs)
 
 This directory contains all fundamental architecture and hardware decisions for the RC100 project. **This file is generated automatically. Please do not edit manually.**
 
 ## Overview
 
-| ID | date | title | status | decision |
+| ID | Date | Title | Status | Decision |
 | :--- | :--- | :--- | :--- | :--- |
-| **ADR-001** | 2026-03-06 | selection of the chassis platform and make-or-buy decision (100 km/h benchmark) | 🟢 decided | MAKE - Carten T410R |
-| **ADR-002** | 2026-03-06 | selection of the brushless motor combo for 100 km/h speedruns | 🟢 decided | hobbywing QuicRun WP10BL120 G2 combo (3660SL 3700KV) |
-| **ADR-003** | 2026-03-06 | selection of the LiPo battery for the 100 km/h goal. | 🟢 decided | absima GreenHorn line V2 (3S / 5000mAh / 50C / hardcase) |
-| **ADR-004** | 2026-03-06 | selection of the charger for 3S LiPo batteries | 🟢 decided | SkyRC S100neo |
-| **ADR-005** | 2026-08-20 | selection of the remote control system for 100 km/h speedruns | 🟢 decided | X9S radio + mini waterproof 4-channel receiver RG4CHWP |
-| **ADR-006** | 2026-08-21 | selection of the steering servo for precise high-speed control | 🟢 decided | Savöx SC-1252MG+ |
-| **ADR-007** | 2026-03-06 | selection of active and passive motor cooling for 3S speedruns | 🟢 decided | passive 36mm alu heat sink combined with active 40x40mm high-speed alu fan |
-| **ADR-008** | 2026-02-25 | selection of tires (belted rubber tires for asphalt) for 100 km/h speedruns | 🟢 decided | sweep HANKOOK tread belted tires pre-glued set pro-compound 36deg for asphalt (SR-SSF-36AWPG) |
-| **ADR-009** | 2026-03-12 | selection of the aerodynamic body for 100 km/h speedruns | 🟢 decided | ZooRacing hellcat (190 mm, 0.7mm thickness) |
-| **ADR-010** | 2026-03-10 | selection of the GPS measuring system to validate the 100 km/h mark | 🟢 decided | ruddog GPS performance analyzer |
-| **ADR-011** | 2026-08-30 | selection of Gyro for vehicle stabilization | 🟢 decided | SkyRC GC301 Gyro |
+| **ADR-001** | 2026-03-06 | Selection of the chassis platform and make-or-buy decision (100 km/h Benchmark) | 🟢 decided | MAKE - Carten T410R |
+| **ADR-002** | 2026-03-06 | Selection of the brushless motor combo for 100 km/h speedruns | 🟢 decided | Hobbywing QuicRun WP10BL120 G2 Combo (3660SL 3700KV) |
+| **ADR-003** | 2026-03-06 | Selection of the LiPo Battery for the 100 km/h Goal. | 🟢 decided | Absima GreenHorn Line V2 (3S / 5000mAh / 50C / Hardcase) |
+| **ADR-004** | 2026-03-06 | Selection of the charger for 3S LiPo batteries | 🟢 decided | SkyRC S100neo |
+| **ADR-005** | 2026-08-20 | Selection of the remote control system for 100 km/h speedruns | 🟢 decided | X9S Radio + Mini Waterproof 4-Channel Receiver RG4CHWP |
+| **ADR-006** | 2026-08-21 | Selection of the steering servo for precise high-speed control | 🟢 decided | Savöx SC-1252MG+ |
+| **ADR-007** | 2026-03-06 | Selection of active and passive motor cooling for 3S speedruns | 🟢 decided | Passive 36mm Alu Heat Sink combined with active 40x40mm High-Speed Alu Fan |
+| **ADR-008** | 2026-02-25 | Selection of tires (belted rubber tires for asphalt) for 100 km/h speedruns | 🟢 Decided | Sweep HANKOOK Tread Belted tires Pre-glued set Pro-compound 36deg for Asphalt (SR-SSF-36AWPG) |
+| **ADR-009** | 2026-03-12 | Selection of the aerodynamic body for 100 km/h speedruns | 🟢 decided | ZooRacing Hellcat (190 mm, 0.7mm thickness) |
+| **ADR-010** | 2026-03-10 | Selection of the GPS measuring system to validate the 100 km/h mark | 🟢 decided | Ruddog GPS Performance Analyzer |
+| **ADR-011** | 2026-08-30 | Selection of Gyro for vehicle stabilization | 🟢 Decided | SkyRC GC301 Gyro |
 
 ---
 
-## Detailed logs
+## Detailed Logs
 
-### ADR-001: Selection of the chassis platform and make-or-buy decision (100 km/h benchmark)
-**Status:** decided | **date:** 2026-03-06
+### ADR-001: Selection of the chassis platform and make-or-buy decision (100 km/h Benchmark)
+**Status:** decided | **Date:** 2026-03-06
 
 #### Context
 For the 100 km/h speedrun project, a mechanically stable basis is required. 
 The platform must withstand 
 extreme loads (approx. 44,000 rpm at the motor, massive 
 centrifugal forces on the axles). 
-The fundamental architecture question (make or buy) compares the construction of an own budget kit ("make") 
+The fundamental architecture question (Make or Buy) compares the construction of an own budget kit ("Make") 
 
-with the purchase of an expensive, pre-assembled high-end competition chassis ("buy"
+with the purchase of an expensive, pre-assembled high-end competition chassis ("Buy"
 ). 
 A critical risk for 3S use are differential gears made of plastic/composite, 
 which often cannot withstand the torque.
@@ -42,7 +42,7 @@ which often cannot withstand the torque.
 > **MAKE - Carten T410R**
 
 #### Rationale
-The decision is made in favor of the "make" option with the Carten T410R 
+The decision is made in favor of the "Make" option with the Carten T410R 
 (~ 180 €). 
 It is the only kit in the benchmark field of this price class that 
 combines the essential requirements 
@@ -51,7 +51,7 @@ for a 3S/100 km/h run out of the box:
 2. A robust shaft drive (eliminates the risk of skipping belts). 
 3. Differential gears made of sintered metal (solves the knockout criterion of shearing 
 plastic diffs). 
-The massive price advantage over the xray X4 '24 fully justifies 
+The massive price advantage over the Xray X4 '24 fully justifies 
 the increased manual setup effort.
 
 
@@ -63,7 +63,7 @@ the increased manual setup effort.
 ---
 
 ### ADR-002: Selection of the brushless motor combo for 100 km/h speedruns
-**Status:** decided | **date:** 2026-03-06
+**Status:** decided | **Date:** 2026-03-06
 
 #### Context
 In order to accelerate a 1/10 touring car (Carten T410R) to 100 km/h, 
@@ -78,10 +78,10 @@ whose electronic speed controller (ESC) can safely handle the high stall current
 
 
 #### Decision
-> **Hobbywing QuicRun WP10BL120 G2 combo (3660SL 3700KV)**
+> **Hobbywing QuicRun WP10BL120 G2 Combo (3660SL 3700KV)**
 
 #### Rationale
-The decision is made in favor of the hobbywing QuicRun G2 combo. It eliminates 
+The decision is made in favor of the Hobbywing QuicRun G2 Combo. It eliminates 
 the risk of failure of 
 no-name motors and offers an optimally coordinated architecture (firmware of ESC 
 and motor timing are optimally interlocked). 
@@ -94,19 +94,19 @@ most efficient solution on a budget under 100 €.
 
 
 #### Consequences
-- Packaging (installation space): The 3660 motor is 10 mm longer than the standard size. The ESC and the receiver must be placed correspondingly further back in the T410R chassis.
-- Pinion bore (IMPORTANT): Hobbywing usually delivers the 3660SL G2 with a 5.0 mm shaft (verify specifications with the dealer finally before ordering the pinion). A 48dp pinion with a 5 mm bore (e.g. Robinson racing) is absolutely required.
+- Packaging (Installation space): The 3660 motor is 10 mm longer than the standard size. The ESC and the receiver must be placed correspondingly further back in the T410R chassis.
+- Pinion bore (IMPORTANT): Hobbywing usually delivers the 3660SL G2 with a 5.0 mm shaft (verify specifications with the dealer finally before ordering the pinion). A 48dp pinion with a 5 mm bore (e.g. Robinson Racing) is absolutely required.
 - Power supply: The system voltage is strictly limited to 3S LiPo. A 4S operation would exceed the maximum permissible rotor speed of the motor.
 
 
 ---
 
-### ADR-003: Selection of the LiPo battery for the 100 km/h goal.
-**Status:** decided | **date:** 2026-03-06
+### ADR-003: Selection of the LiPo Battery for the 100 km/h Goal.
+**Status:** decided | **Date:** 2026-03-06
 
 #### Context
 In order to accelerate the RC100 project to over 100 km/h, the power source must be optimally 
-matched to the 4000kV motor and the 120A ESC (hobbywing QuicRun). 
+matched to the 4000kV motor and the 120A ESC (Hobbywing QuicRun). 
 A 2S LiPo (7.4V) would only deliver approx. 29,600 rpm, which is not sufficient for 100 km/h 
 with a normal gear ratio. Therefore, a 3S LiPo (11.1V) is absolutely necessary to 
 reach the calculated ~44,400 rpm. In addition, the battery must be able to briefly 
@@ -115,10 +115,10 @@ protected in the event of a crash at high speed.
 
 
 #### Decision
-> **Absima GreenHorn line V2 (3S / 5000mAh / 50C / hardcase)**
+> **Absima GreenHorn Line V2 (3S / 5000mAh / 50C / Hardcase)**
 
 #### Rationale
-The decision is made in favor of the absima GreenHorn V2 3S LiPo. With a 50C 
+The decision is made in favor of the Absima GreenHorn V2 3S LiPo. With a 50C 
 discharge rate, it offers 
 enough buffer for the massive current peaks when accelerating 
 the 64T/38T gearing. 
@@ -130,22 +130,22 @@ low contact resistance for the high currents.
 
 #### Consequences
 - Chassis modification: Since 3S hardcase batteries are approx. 35mm high, the upper carbon battery brace in the Carten T410R must be raised with 10mm spacers and longer M3 screws.
-- Connector compatibility: The hobbywing controller must absolutely be soldered with a matching XT60 connector (no tamiya connectors at these currents!).
-- Safety: Charging and storing the battery (55.5 wh) may only be done under supervision in a bat-safe or a fireproof LiPo bag.
+- Connector compatibility: The Hobbywing controller must absolutely be soldered with a matching XT60 connector (no Tamiya connectors at these currents!).
+- Safety: Charging and storing the battery (55.5 Wh) may only be done under supervision in a Bat-Safe or a fireproof LiPo bag.
 
 
 ---
 
 ### ADR-004: Selection of the charger for 3S LiPo batteries
-**Status:** decided | **date:** 2026-03-06
+**Status:** decided | **Date:** 2026-03-06
 
 #### Context
 Charging the 3S LiPo battery defined in ADR-003 (11.1V, 5000mAh, 55.5 
 Wh) requires a 
 safe and powerful charger. To gently charge the battery 
-with 1C (5 amps), 
-a charging power of at least 63 watts 
-(5 amps * 12.6V end-of-charge voltage) is required. 
+with 1C (5 Amps), 
+a charging power of at least 63 Watts 
+(5 Amps * 12.6V end-of-charge voltage) is required. 
 In addition, the charger must 
 exactly monitor the cell voltages (balancing) and be able to measure the internal 
 resistance of the cells to prevent fire hazards. The connector must 
@@ -159,12 +159,12 @@ high currents via an XT60 plug.
 #### Rationale
 The decision is made in favor of the SkyRC S100neo. It optimally covers the "sweet spot" 
 between safety, 
-performance and budget. The 100 watts of internal power (AC) are more than sufficient 
+performance and budget. The 100 Watts of internal power (AC) are more than sufficient 
 to gently fully charge the 3S 5000mAh LiPo in about an 
 hour. Particularly advantageous is 
 the XT60 connector firmly integrated into the front panel, which makes dangerous and error-prone 
 adapter cables 
-superfluous. This fits perfectly with the architecture decision of the absima battery.
+superfluous. This fits perfectly with the architecture decision of the Absima battery.
 
 
 #### Consequences
@@ -176,7 +176,7 @@ superfluous. This fits perfectly with the architecture decision of the absima ba
 ---
 
 ### ADR-005: Selection of the remote control system for 100 km/h speedruns
-**Status:** decided | **date:** 2026-08-20
+**Status:** decided | **Date:** 2026-08-20
 
 #### Context
 An RC car traveling at 100 km/h (approx. 27.7 meters per second) covers 
@@ -190,27 +190,27 @@ of the acceleration stretch.
 A balance must be struck 
 between maximum range incl. gyro support and a 
 robust, 
-failsafe MVP approach (minimum viable product) that reduces the complexity in 
+failsafe MVP approach (Minimum Viable Product) that reduces the complexity in 
 the setup.
 
 
 #### Decision
-> **X9S radio + mini waterproof 4-channel receiver RG4CHWP**
+> **X9S Radio + Mini Waterproof 4-Channel Receiver RG4CHWP**
 
 #### Rationale
-The tests with the carson reflex wheel X1 showed insufficient steering precision, as the servo did not reproducibly return to the neutral position depending on the steering angle. To increase steering precision, the X9S radio remote control was purchased in combination with the RG4CHWP receiver for 152 €.
+The tests with the Carson Reflex Wheel X1 showed insufficient steering precision, as the servo did not reproducibly return to the neutral position depending on the steering angle. To increase steering precision, the X9S Radio remote control was purchased in combination with the RG4CHWP receiver for 152 €.
 
 
 #### Consequences
 - Receiver installation: The RG4CHWP receiver is installed and the fail-safe must absolutely be programmed to brake/neutral.
 - Interface compatibility: The operating voltage of the receiver must be matched with the BEC output voltage of the motor controller.
-- Steering angle limitation: The steering deflections (dual rate) are adapted to the requirements of high-speed driving.
+- Steering angle limitation: The steering deflections (Dual Rate) are adapted to the requirements of high-speed driving.
 
 
 ---
 
 ### ADR-006: Selection of the steering servo for precise high-speed control
-**Status:** decided | **date:** 2026-08-21
+**Status:** decided | **Date:** 2026-08-21
 
 #### Context
 At speeds of 100 km/h, enormous aerodynamic and mechanical 
@@ -221,7 +221,7 @@ reaction time of the steering servo can immediately lead to loss of control
 and total failure. 
 In addition, space in a 1:10 touring car chassis 
 is limited. Since our MVP remote control 
-(Carson reflex wheel X1) does not have an electronic gyro, the servo must 
+(Carson Reflex Wheel X1) does not have an electronic gyro, the servo must 
 hold the 
 straight line mechanically very precisely and powerfully. A servo 
 with metal gears (robustness), 
@@ -239,13 +239,13 @@ Test drives showed that the previous setup did not provide the required steering
 #### Consequences
 - Servo horn: To minimize play in the steering system, a rigid aluminum lever (ALU CLAMP SERVO HORN - FUTABA, SAVÖX - 3-HOLE - 25T, item HUD293409) is mounted without a servo saver.
 - BEC voltage: The BEC output voltage of the controller is configured to 6.0V.
-- Dual-rate: The maximum steering angle is limited on the remote control to ensure stability at 100 km/h.
+- Dual-Rate: The maximum steering angle is limited on the remote control to ensure stability at 100 km/h.
 
 
 ---
 
 ### ADR-007: Selection of active and passive motor cooling for 3S speedruns
-**Status:** decided | **date:** 2026-03-06
+**Status:** decided | **Date:** 2026-03-06
 
 #### Context
 The targeted goal of 100 km/h requires the use of a 4000kV motor 
@@ -263,12 +263,12 @@ is absolutely necessary.
 
 
 #### Decision
-> **Passive 36mm alu heat sink combined with active 40x40mm high-speed alu fan**
+> **Passive 36mm Alu Heat Sink combined with active 40x40mm High-Speed Alu Fan**
 
 #### Rationale
 The decision is made in favor of a dual cooling system (active and passive). 
 The 36mm 
-aluminum clip-on heat sink fits perfectly on the hobbywing 3652SL motor. 
+aluminum clip-on heat sink fits perfectly on the Hobbywing 3652SL motor. 
 The 40mm 
 high-speed fan with aluminum frame offers the necessary hurricane 
 due to speeds of up to 20,000 rpm 
@@ -288,7 +288,7 @@ mini heat sink.
 ---
 
 ### ADR-008: Selection of tires (belted rubber tires for asphalt) for 100 km/h speedruns
-**Status:** Decided | **date:** 2026-02-25
+**Status:** Decided | **Date:** 2026-02-25
 
 #### Context
 At a target speed of 100 km/h and the associated high 
@@ -312,10 +312,10 @@ the tire tread (slick vs. grooved).
 
 
 #### Decision
-> **Sweep HANKOOK tread belted tires pre-glued set pro-compound 36deg for asphalt (SR-SSF-36AWPG)**
+> **Sweep HANKOOK Tread Belted tires Pre-glued set Pro-compound 36deg for Asphalt (SR-SSF-36AWPG)**
 
 #### Rationale
-The decision is made in favor of the pre-glued sweep HANKOOK tread 
+The decision is made in favor of the pre-glued Sweep HANKOOK Tread 
 Belted tires with 
 the harder 36-shore asphalt compound. Although a treadless 
 full slick physically 
@@ -340,7 +340,7 @@ Kevlar fabric (belt) guarantees absolute safety against critical expansion.
 ---
 
 ### ADR-009: Selection of the aerodynamic body for 100 km/h speedruns
-**Status:** decided | **date:** 2026-03-12
+**Status:** decided | **Date:** 2026-03-12
 
 #### Context
 At a target speed of 100 km/h (approx. 27.7 m/s), the body is 
@@ -356,10 +356,10 @@ Thin lexan (< 0.5 mm) deforms massively at 100 km/h.
 
 
 #### Decision
-> **ZooRacing hellcat (190 mm, 0.7mm thickness)**
+> **ZooRacing Hellcat (190 mm, 0.7mm thickness)**
 
 #### Rationale
-The decision is made in favor of the ZooRacing hellcat in the 0.7mm standard thickness. 
+The decision is made in favor of the ZooRacing Hellcat in the 0.7mm standard thickness. 
 It represents the 
 optimal compromise between minimum air resistance (for 
 reaching 100 km/h) and safe 
@@ -380,7 +380,7 @@ start to vibrate or rub against the tires.
 ---
 
 ### ADR-010: Selection of the GPS measuring system to validate the 100 km/h mark
-**Status:** decided | **date:** 2026-03-10
+**Status:** decided | **Date:** 2026-03-10
 
 #### Context
 The calculated mathematical models (axle speed, rolling resistance, 
@@ -396,28 +396,28 @@ and the aerodynamics.
 
 
 #### Decision
-> **Ruddog GPS performance analyzer**
+> **Ruddog GPS Performance Analyzer**
 
 #### Rationale
-The decision is made in favor of the ruddog GPS performance analyzer. It is 
+The decision is made in favor of the Ruddog GPS Performance Analyzer. It is 
 the perfect 'fit-for-purpose' 
-tool for this project. The 10hz sampling rate 
+tool for this project. The 10Hz sampling rate 
 guarantees that the exact top speed 
 is recorded, even if 
 it is only applied for a fraction of a second. The low weight 
-of 38g does not change the driving behavior of the Carten T410R, and the bluetooth app interface 
+of 38g does not change the driving behavior of the Carten T410R, and the Bluetooth app interface 
 saves a heavy, readable display directly on the vehicle.
 
 
 #### Consequences
 - Signal constraint: The GPS signal easily passes through lexan bodies, but is massively blocked by carbon fibers. The module must not be mounted directly *under* the carbon upper deck in the Carten T410R. The optimal position is on the foam bumper in the front.
-- Mounting: The device must be fixed very securely (e.g. with strong velcro or 3M dual lock) so that it does not fly away as a projectile in the event of a rollover at 100 km/h.
+- Mounting: The device must be fixed very securely (e.g. with strong velcro or 3M Dual Lock) so that it does not fly away as a projectile in the event of a rollover at 100 km/h.
 
 
 ---
 
 ### ADR-011: Selection of Gyro for vehicle stabilization
-**Status:** Decided | **date:** 2026-08-30
+**Status:** Decided | **Date:** 2026-08-30
 
 #### Context
 At high speeds of up to 100 km/h, the RC vehicle requires electronic stabilization to maintain a straight trajectory and prevent spin-outs. A gyro sensor detects unwanted rotational movements and automatically applies counter-steering via the steering servo. The selection of a gyro must balance reliability and cost. High-end gyros offer advanced features but exceed the current project budget.
@@ -426,7 +426,7 @@ At high speeds of up to 100 km/h, the RC vehicle requires electronic stabilizati
 > **SkyRC GC301 Gyro**
 
 #### Rationale
-The decision is made in favor of the SkyRC GC301 Gyro. The primary factor is cost. The futaba and power HD alternatives exceed the project budget. The SkyRC GC301 provides a cost-effective method to implement electronic stabilization for initial testing. If the performance of the GC301 proves insufficient during high-speed tests, a budget increase for a higher-tier gyro can be considered in a future iteration.
+The decision is made in favor of the SkyRC GC301 Gyro. The primary factor is cost. The Futaba and Power HD alternatives exceed the project budget. The SkyRC GC301 provides a cost-effective method to implement electronic stabilization for initial testing. If the performance of the GC301 proves insufficient during high-speed tests, a budget increase for a higher-tier gyro can be considered in a future iteration.
 
 #### Consequences
 - Installation: The gyro must be mounted aligned with the longitudinal axis of the chassis to function correctly.
