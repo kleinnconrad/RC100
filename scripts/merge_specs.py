@@ -28,11 +28,11 @@ def merge_specs():
             except Exception as e:
                 print(f"ERROR: Error reading {file}: {e}")
                 
-    with open('full_spec.yaml', 'w', encoding='utf-8') as f:
+    with open('specs/full_spec.yaml', 'w', encoding='utf-8') as f:
         # sort_keys=False keeps the clean order of the blocks
         yaml.dump(merged_data, f, allow_unicode=True, sort_keys=False)
         
-    print(f"SUCCESS: full_spec.yaml generated successfully! ({len(files)} modules merged)")
+    print(f"SUCCESS: specs/full_spec.yaml generated successfully! ({len(files)} modules merged)")
 
 if __name__ == '__main__':
     merge_specs()

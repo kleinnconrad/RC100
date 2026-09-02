@@ -23,14 +23,15 @@ The artefacts of this repository are:
 ## Repository structure
 The project is structured into topic-specific directories:
 * **`/architecture`**: Documentation of basic system designs and architecture decisions.
-* **`/electronics`**: Selection and specification of electronic components such as motors, electronic speed controllers, and batteries.
+* **`/specs`**: Specifications of the vehicle components.
+  * **`/electronics`**: Selection and specification of electronic components such as motors, electronic speed controllers, and batteries.
+  * **`/mechanics`**: Chassis design, construction data, and specification of physical components.
+    * **`/carten_t410r`**: Vehicle-specific data and instructions.
+    * **`/geometry`**: Suspension settings.
+    * **`/body`**: Body specifications.
+    * **`/paint`**: Color and painting data.
+    * **`/wheels`**: Tire specifications.
 * **`/photos`**: Central directory for all image files and visual documentation of the project.
-* **`/mechanics`**: Chassis design, construction data, and specification of physical components.
-  * **`/carten_t410r`**: Vehicle-specific data and instructions.
-  * **`/geometry`**: Suspension settings.
-  * **`/body`**: Body specifications.
-  * **`/paint`**: Color and painting data.
-  * **`/wheels`**: Tire specifications.
 * **`/testing`**: Collection and evaluation of test results and performance measurement data.
   * **`/error_list`**: Error logs and their resolutions.
   * **`/tests`**: Logs and data of test drives.
