@@ -21,20 +21,6 @@ Body:
         wing.
       rear_wing: Included high-downforce wing provides absolutely necessary rear stability
         at high speed.
-    preparation_and_painting:
-      cleaning: The inside of the body must be washed out with dish soap before painting
-        to remove mold release agent residues from production.
-      paint_type: Use exclusively polycarbonate spray (e.g. Tamiya PS colors). Paint
-        from the inside in several thin layers.
-      protective_film: Only remove the outer overspray protective film after completely
-        painting and drilling the holes.
-    mounting_instructions:
-      body_holes: Do not pierce holes, but drill with a special body reamer to avoid
-        cracks in the Lexan.
-      bumper_support: The front foam bumper of the chassis must mechanically support
-        the front body overhang.
-      wheel_arches: Cut out wheel arches with curved Lexan scissors and smooth edges
-        with fine sandpaper to prevent tearing under vibrations.
 Tools:
   meta:
     description: Required tools for assembling the Carten T410R.
@@ -147,42 +133,23 @@ Spur Gear:
           mechanical integrity of the drivetrain at high torques.
 Gearing:
   meta:
-    brand: Arrowmax
-    model: 'Motor pinion 42T (48dp / 3.17mm shaft) OR Robinson Racing 5mm bore 48dp
-      43teeth if 3660 motor is run with 5mm shaft: https://www.ebay.com/itm/234242275376'
-    part_number: 42T-48P
+    brand: Robinson Racing
+    model: 'Motor pinion 43T (48dp / 5mm shaft) OR Robinson Racing 5mm bore 48dp 43teeth
+      if 3660 motor is run with 5mm shaft: https://www.ebay.com/itm/234242275376'
+    part_number: 43T-48P
   properties:
     gearing_setup:
       spur_gear:
-        teeth: 72
-        type: Kit Standard
+        teeth: 68
+        type: steel
         module: 48dp
       motor_pinion:
-        teeth: 42
-        material: Hardcoated Alu or Steel
+        teeth: 43
+        material: steel
       calculated_values:
         internal_ratio: 2.47
-        total_ratio: 4.23
+        total_ratio: 3.91
         target_speed: '> 100 km/h'
-    adjustment_range_with_72t_spur_gear:
-      note: 'According to Carten manual (T410R with Gear Diff 2.47) drivable without
-        modifying the 72T spur gear:'
-      max_acceleration:
-        pinion: 21
-        ratio: 8.47
-      mid_range:
-        pinion: 31
-        ratio: 5.74
-      high_speed_range:
-        pinion_34: 5.23
-        pinion_35: 5.08
-        pinion_36: 4.94
-        pinion_37: 4.81
-      max_top_speed:
-        pinion_41: 4.34
-        pinion_42: 4.23
-        pinion_43: 4.14
-        pinion_44: 4.04
 Driveshaft And Joints:
   meta:
     component: Central Drive Shaft (Center Shaft)
@@ -282,56 +249,6 @@ Tires:
       break_in_scrubbing: The smooth production layer on the rubber must first be
         worn off. Use the first test runs to calibrate the ESC to build up the grip
         for the final topspeed run.
-Paint:
-  meta:
-    brand: Tamiya
-    system: 3-layer metallic structure
-    type: Special polycarbonate spray (Lexan) - Etches into the plastic
-    properties: Highly flexible, highly resistant to peeling in crashes.
-    shopping_items:
-    - item_name: Tamiya PS-15 Metallic Red (100ml)
-      reference_link: Search for Tamiya PS-15 at RC shops
-      estimated_price_eur: 8.5
-    - item_name: Tamiya PS-12 Silver (100ml)
-      reference_link: Search for Tamiya PS-12 at RC shops
-      estimated_price_eur: 8.5
-    - item_name: Tamiya PS-5 Black (100ml)
-      reference_link: Search for Tamiya PS-5 at RC shops
-      estimated_price_eur: 8.5
-  properties:
-    preparation_prep:
-      step_1_washing: Wash the body thoroughly from the INSIDE with lukewarm water
-        and simple dish soap (without care additives). Dry with kitchen paper. This
-        removes production grease and prevents the paint from peeling off.
-      step_2_masking: Stick the included window decals from the INSIDE onto the windows.
-        Rub the edges of the decals firmly with your fingernail or a toothpick, so
-        that no paint can run under later.
-      step_3_warming: Place all three spray cans in a bowl of warm (not boiling!)
-        tap water for 10 minutes. The pressure rises slightly, the paint atomizes
-        much finer and does not form thick drops when spraying.
-    execution_3_layers:
-      rule_number_1: LEXAN IS ALWAYS PAINTED FROM THE INSIDE! The outer, matte protective
-        film stays on the body until the very last step!
-      phase_1_main_color_ps15:
-        passes: 3 to 4 wafer-thin layers
-        technique: The FIRST layer is just a fine mist (tack coat). It MUST look blotchy
-          and transparent! Do not try to make it opaque immediately. Wait 10 minutes.
-          Then spray the next thin layer. Repeat until the red is used up.
-      phase_2_brilliance_ps12:
-        passes: 2 thin layers
-        technique: When the red is completely dry (wait at least 30 mins), spray the
-          silver in 2 passes (with a 10 min break) directly onto the red. This acts
-          as a reflector for the metallic particles and makes the red shine brightly.
-      phase_3_sealing_ps5:
-        passes: 1 to 2 thin layers
-        technique: When the silver is dry, spray the black as the final layer over
-          it. This blocks any light from below, makes the red very rich and ensures
-          that your car looks highly professional, black and clean from the inside.
-    finish_and_assembly:
-      step_1_remove_masks: When the black is dry to the touch (after approx. 1-2 hours),
-        carefully peel off the window masks from the inside.
-      step_2_magic_moment: Now peel off the outer, matte protective film of the body.
-        Underneath, the mirror-smooth, perfect metallic red is revealed!
 Brushless Combo:
   meta:
     description: Specification of the brushless powertrain for 100 km/h on 3S.
@@ -487,15 +404,6 @@ Battery:
         length_mm: 138
         width_mm: 46
         height_mm: 35
-  integration_notes:
-    issue: The Carten T410R is designed for 2S batteries (25mm height) from the factory.
-      This 3S battery is 35mm high.
-    solution: The upper carbon battery brace of the chassis must be 'raised'.
-    required_parts:
-    - 2x Spacers (Plastic or Alu) with approx. 10mm height
-    - 2x slightly longer M3 screws (approx. M3x16 or M3x18)
-    execution: Place spacers on the original aluminum posts, screw carbon brace on
-      top. No dremeling or milling on the chassis necessary.
 Charger:
   meta:
     brand: SkyRC
@@ -531,50 +439,6 @@ Charger:
         height: 62
       weight_g: 340
       control_interface: Simple 3-button control
-    lipo_safety_and_workflow:
-      charging_rule: Always charge the 5000mAh battery with '1C'. Set the charge current
-        on the charger to exactly 5.0A.
-      storage_rule: NEVER leave the battery empty in the corner after driving. Always
-        start the 'Storage' program on the S100neo to bring the cells to 3.8V storage
-        voltage.
-      fire_safety: Always charge and store batteries in a fireproof LiPo safe bag.
-Cooling:
-  properties:
-    cooling_motor:
-      component: Hobbywing QuicRun 3652SL (4000kV)
-      heatsink:
-        size: 36mm (Suitable for 540 / 3650 / 3652 sizes)
-        material: Aluminum
-        mounting: Clip-on heat sink
-      fan_active:
-        size: 40x40mm High-Speed Fan
-        rpm: 16,000 - 20,000 rpm
-        frame_material: Aluminum (for better heat dissipation)
-        suggested_brands:
-        - Surpass Hobby (Rocket Series)
-        - Yeah Racing (Tornado)
-        - WTF (Wild Turbo Fan)
-        power_supply: Connection to free receiver channel (e.g. CH3 or CH4), power
-          supply directly via the BEC of the ESC (6.0V/7.4V)
-    cooling_esc:
-      component: Hobbywing QuicRun WP 10BL120 G2
-      status: No modification necessary
-      description: The ESC has a screwed-on heat sink from the factory and an active
-        fan that is tuned to the 120A continuous load and is sufficient for 3S speedruns.
-    cooling_best_practices:
-      thermal_paste:
-        issue: Heat transfer
-        action: A tiny drop of PC thermal paste between the motor housing and the
-          aluminum heat sink massively improves heat transfer.
-      cable_management:
-        issue: Suction of the high-speed fan
-        action: All sensor cables and antennas must absolutely be fixed with cable
-          ties, so that they are not sucked into the rotor blades by the strong draft.
-      body_airflow:
-        issue: Heat buildup under the body
-        action: For speedruns, it is absolutely necessary to cut ventilation holes
-          in the windshield or the rear side windows, so that a cooling draft (airflow)
-          is created.
 Laser Tachometer:
   meta:
     type: Non-contact Laser Tachometer
