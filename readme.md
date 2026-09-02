@@ -6,7 +6,7 @@ The technical challenge primarily results from the chosen scale and the limited 
 
 The artefacts of this repository are:
 * Architecture decision records (ADRs) in the `/architecture` directory
-* System specification in the `full_spec.yml` file
+* System specification in the `specs/full_spec.yml` file
 * Vehicle setup configurations in the `/setup_sheets` directory
 
 <img src="https://raw.githubusercontent.com/kleinnconrad/small-scale-rc-speedrun/main/photos/1788278341814.jpg" alt="RC Car Photo" width="100%">
