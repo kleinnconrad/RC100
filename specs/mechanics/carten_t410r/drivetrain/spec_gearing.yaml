@@ -1,38 +1,19 @@
 spec:
   meta:
-    brand: Arrowmax
-    model: 'Motor pinion 42T (48dp / 3.17mm shaft) OR Robinson Racing 5mm bore 48dp
+    brand: Robinson Racing
+    model: 'Motor pinion 43T (48dp / 5mm shaft) OR Robinson Racing 5mm bore 48dp
       43teeth if 3660 motor is run with 5mm shaft: https://www.ebay.com/itm/234242275376'
-    part_number: 42T-48P
+    part_number: 43T-48P
   properties:
     gearing_setup:
       spur_gear:
-        teeth: 72
-        type: Kit Standard
+        teeth: 68
+        type: steel
         module: 48dp
       motor_pinion:
-        teeth: 42
-        material: Hardcoated Alu or Steel
+        teeth: 43
+        material: steel
       calculated_values:
         internal_ratio: 2.47
-        total_ratio: 4.23
+        total_ratio: 3.91
         target_speed: '> 100 km/h'
-    adjustment_range_with_72t_spur_gear:
-      note: 'According to Carten manual (T410R with Gear Diff 2.47) drivable without modifying the 72T
-        spur gear:'
-      max_acceleration:
-        pinion: 21
-        ratio: 8.47
-      mid_range:
-        pinion: 31
-        ratio: 5.74
-      high_speed_range:
-        pinion_34: 5.23
-        pinion_35: 5.08
-        pinion_36: 4.94
-        pinion_37: 4.81
-      max_top_speed:
-        pinion_41: 4.34
-        pinion_42: 4.23
-        pinion_43: 4.14
-        pinion_44: 4.04

@@ -23,12 +23,3 @@ spec:
         length_mm: 138
         width_mm: 46
         height_mm: 35
-  integration_notes:
-    issue: The Carten T410R is designed for 2S batteries (25mm height) from the factory. This
-      3S battery is 35mm high.
-    solution: The upper carbon battery brace of the chassis must be 'raised'.
-    required_parts:
-    - 2x Spacers (Plastic or Alu) with approx. 10mm height
-    - 2x slightly longer M3 screws (approx. M3x16 or M3x18)
-    execution: Place spacers on the original aluminum posts, screw carbon brace on top.
-      No dremeling or milling on the chassis necessary.

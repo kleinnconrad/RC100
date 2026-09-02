@@ -32,9 +32,3 @@ spec:
         height: 62
       weight_g: 340
       control_interface: Simple 3-button control
-    lipo_safety_and_workflow:
-      charging_rule: Always charge the 5000mAh battery with '1C'. Set the charge current
-        on the charger to exactly 5.0A.
-      storage_rule: NEVER leave the battery empty in the corner after driving. Always
-        start the 'Storage' program on the S100neo to bring the cells to 3.8V storage voltage.
-      fire_safety: Always charge and store batteries in a fireproof LiPo safe bag.
