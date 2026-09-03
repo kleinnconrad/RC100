@@ -26,6 +26,9 @@ def find_latest_setup_sheet(setup_dir: Path) -> Path | None:
 
     return latest_file
 
+import yaml
+import json
+
 def main():
     root_dir = Path(__file__).parent.parent
     setup_dir = root_dir / "setup_sheets"
@@ -39,9 +42,16 @@ def main():
         # Ensure docs directory exists
         docs_dir.mkdir(parents=True, exist_ok=True)
         
-        target_path = docs_dir / "latest_setup.yaml"
-        shutil.copy2(latest_file, target_path)
-        print(f"Copied to {target_path}")
+        target_path = docs_dir / "latest_setup.json"
+        
+        # Parse YAML and convert to JSON
+        with open(latest_file, 'r') as f:
+            data = yaml.safe_load(f)
+            
+        with open(target_path, 'w') as f:
+            json.dump(data, f)
+            
+        print(f"Converted to {target_path}")
     else:
         print("No setup sheets found.")
         exit(1)

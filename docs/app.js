@@ -5,13 +5,12 @@ document.addEventListener('DOMContentLoaded', () => {
 async function fetchData() {
     try {
         // Fetch the latest setup file
-        const response = await fetch('latest_setup.yaml');
+        const response = await fetch('latest_setup.json');
         if (!response.ok) {
             throw new Error(`HTTP error! status: ${response.status}`);
         }
         
-        const yamlText = await response.text();
-        const data = jsyaml.load(yamlText);
+        const data = await response.json();
         
         renderDashboard(data);
     } catch (error) {
