@@ -1,0 +1,42 @@
+name: Update Dashboard Data
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'setup_sheets/*_setup_sheet.yaml'
+      - 'setup_sheets/*_setup_sheet.yml'
+  workflow_dispatch:
+
+jobs:
+  update-dashboard:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Run Update Script
+        run: python scripts/update_latest_setup.py
+
+      - name: Commit and Push latest_setup.yaml
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          
+          if [[ -n "$(git status --porcelain docs/latest_setup.yaml)" ]]; then
+            git add docs/latest_setup.yaml
+            git commit -m "docs(dashboard): auto-update latest setup sheet [skip ci]"
+            git pull --rebase
+            git push
+          else
+            echo "No changes to docs/latest_setup.yaml detected."
+          fi

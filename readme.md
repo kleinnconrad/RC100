@@ -40,6 +40,7 @@ The project is structured into topic-specific directories:
   * **`/follow_up_projects`**: Documentation of related follow-up projects.
 * **`/scripts`**: Automation scripts and calculation models for system design.
 * **`/setup_sheets`**: Vehicle setup configurations.
+* **`/docs`**: Static web dashboard for visualizing the latest setup configurations.
 
 ## Artefacts (ADR, specs, setup sheets)
 The documentation of architecture decisions (ADRs), the specifications of all mechanical and electronic components, and the vehicle setup configurations are consistently maintained as structured YAML files (`.yml` or `.yaml`). The formal hierarchical structure of these artefacts is standardized as follows:

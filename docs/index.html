@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Speedrun Setup Dashboard</title>
+    <!-- Use js-yaml to parse yaml -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/js-yaml/4.1.0/js-yaml.min.js"></script>
+    <!-- Google Fonts for typography -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header-content">
+            <h1>Carten T410R Setup Dashboard</h1>
+            <p id="setup-date" class="subtitle">Loading latest setup...</p>
+        </div>
+    </header>
+
+    <main class="dashboard" id="dashboard-content" style="display: none;">
+        <!-- General Info Section -->
+        <section class="card" id="general-info">
+            <h2>General Configuration</h2>
+            <div class="grid-data" id="general-grid"></div>
+        </section>
+
+        <!-- Suspension & Geometry Section -->
+        <section class="card" id="suspension-info">
+            <h2>Suspension & Geometry</h2>
+            <div class="grid-data" id="suspension-grid"></div>
+        </section>
+
+        <!-- Drivetrain Section -->
+        <section class="card" id="drivetrain-info">
+            <h2>Drivetrain</h2>
+            <div class="grid-data" id="drivetrain-grid"></div>
+        </section>
+
+        <!-- Electronics & Control Section -->
+        <section class="card" id="electronics-info">
+            <h2>Electronics & Control</h2>
+            <div class="grid-data" id="electronics-grid"></div>
+        </section>
+    </main>
+
+    <!-- Loading State -->
+    <div id="loading" class="loading">
+        <div class="spinner"></div>
+        <p>Fetching Latest Data...</p>
+    </div>
+
+    <!-- Error State -->
+    <div id="error" class="error" style="display: none;">
+        <h2>Error Loading Setup Data</h2>
+        <p id="error-message">Could not fetch the latest setup sheet.</p>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
