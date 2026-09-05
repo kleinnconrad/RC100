@@ -9,8 +9,8 @@ properties:
     rear_toe_deg: 2.5
     front_camber_deg: 0
     rear_camber_deg: 0
-    ride_height_front_mm: null
-    ride_height_rear_mm: null
+    ride_height_front_mm: 13
+    ride_height_rear_mm: 15
     spring_rate_stiffness: "hard"
     shock_oil_wt: 1000
     spring_preload_mm:
