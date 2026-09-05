@@ -21,26 +21,22 @@ The artefacts of this repository are:
 * [Licensing](#licensing)
 
 ## Repository structure
-The project is structured into topic-specific directories:
-* **`/architecture`**: Documentation of basic system designs and architecture decisions.
-* **`/specs`**: Specifications of the vehicle components.
-  * **`/electronics`**: Selection and specification of electronic components such as motors, electronic speed controllers, and batteries.
-  * **`/mechanics`**: Chassis design, construction data, and specification of physical components.
-    * **`/carten_t410r`**: Vehicle-specific data and instructions.
-    * **`/geometry`**: Suspension settings.
-    * **`/body`**: Body specifications.
-    * **`/paint`**: Color and painting data.
-    * **`/wheels`**: Tire specifications.
-* **`/photos`**: Central directory for all image files and visual documentation of the project.
-* **`/testing`**: Collection and evaluation of test results and performance measurement data.
-  * **`/error_list`**: Error logs and their resolutions.
-  * **`/tests`**: Logs and data of test drives.
-* **`/project`**: General project management and overviews for cost control.
-  * **`/costs`**: Cost tracking and budget overviews.
-  * **`/follow_up_projects`**: Documentation of related follow-up projects.
-* **`/scripts`**: Automation scripts and calculation models for system design.
-* **`/setup_sheets`**: Vehicle setup configurations.
+* **`/architecture`**: Documentation of basic system designs
 * **`/docs`**: Static web dashboard for visualizing the latest setup configurations.
+* **`/photos`**: Central directory for all image files
+* **`/project`**: General project information
+  * **`/costs`**: Cost tracking
+  * **`/follow_up_projects`**: Documentation of related follow-up projects
+* **`/scripts`**: Automation scripts
+  * **`/calc`**: Calculation scripts
+  * **`/plots`**: Generated plots
+* **`/setup_sheets`**: Vehicle setup configurations
+* **`/specs`**: Specifications of the vehicle components
+  * **`/electronics`**: Selection and specification of electronic components such as motors, electronic speed controllers, and batteries
+  * **`/mechanics`**: Chassis design, construction data, and specification of physical components
+* **`/testing`**: Test results and performance measurement data
+  * **`/error_list`**: Error logs and their resolutions
+  * **`/tests`**: Logs and data of test drives
 
 ## Artefacts (ADR, specs, setup sheets)
 The documentation of architecture decisions (ADRs), the specifications of all mechanical and electronic components, and the vehicle setup configurations are consistently maintained as structured YAML files (`.yml` or `.yaml`). The formal hierarchical structure of these artefacts is standardized as follows:
