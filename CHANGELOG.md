@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.1](https://github.com/kleinnconrad/small-scale-rc-speedrun/compare/v1.1.0...v1.1.1) (2026-09-05)
+
+
+### Bug Fixes
+
+* add ride heigth to the setup_sheet and fix repo structure ([ec82257](https://github.com/kleinnconrad/small-scale-rc-speedrun/commit/ec82257cc457d3932b0909fb01e86b3d5832e2e0))
+
 ## [1.1.0](https://github.com/kleinnconrad/small-scale-rc-speedrun/compare/v1.0.1...v1.1.0) (2026-09-03)
 
 
