@@ -22,7 +22,7 @@ The artefacts of this repository are:
 
 ## Repository structure
 * **`/architecture`**: Documentation of basic system designs
-* **`/docs`**: Static web dashboard for visualizing the latest setup configurations.
+* **`/docs`**: Static web dashboard for visualizing the latest setup configurations
 * **`/photos`**: Central directory for all image files
 * **`/project`**: General project information
   * **`/costs`**: Cost tracking
